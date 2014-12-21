@@ -46,7 +46,7 @@
 @desert: #e3b57a;
 @field: #660;
 @garages: #996;
-@heath: #d6d99f;
+@heath: #E6E8C5;
 @parking: #f7efb7;
 @playground: #ccfff1;
 @power: #bbb;
