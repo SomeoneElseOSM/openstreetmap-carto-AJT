@@ -769,17 +769,6 @@
     }
   }
 
-  [industrial = 'warehouse']::industrial {
-    [zoom >= 15] {
-      text-name: "[name]";
-      text-size: 9;
-      text-fill: darken(@industrial, 60%);
-      text-face-name: @book-fonts;
-      text-halo-radius: 1;
-      text-wrap-width: 10;
-    }
-  }
-
   [landuse = 'commercial']::landuse {
     [zoom >= 15] {
       text-name: "[name]";
