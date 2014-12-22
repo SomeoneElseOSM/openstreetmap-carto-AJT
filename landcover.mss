@@ -437,7 +437,7 @@
 }
 
 #area-barriers {
-  [zoom >= 16] {
+  [zoom >= 15] {
     line-color: #444;
     line-width: 0.4;
     [barrier = 'hedge'] {
@@ -447,6 +447,10 @@
 }
 
 .barriers {
+  [zoom >= 13] {
+    line-width: 0.2;
+    line-color: #444;
+  }
   [zoom >= 16] {
     line-width: 0.4;
     line-color: #444;
@@ -455,8 +459,13 @@
     line-width: 0.4;
     line-color: #444;
   }
-  [barrier = 'hedge'][zoom >= 16] {
-    line-width: 3;
+  [barrier = 'hedge'][zoom >= 13] {
+    [zoom < 16] {
+      line-width: 1;
+    }
+    [zoom >= 16] {
+      line-width: 3;
+    }
     line-color: #aed1a0;
   }
 }
