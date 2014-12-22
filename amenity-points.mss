@@ -169,7 +169,7 @@
     point-placement: interior;
   }
 
-  [amenity = 'parking'][zoom >= 15]::amenity {
+  [amenity = 'parking'][zoom >= 13]::amenity {
     marker-file: url('symbols/parking.svg');
     marker-placement: interior;
     marker-clip: false;
