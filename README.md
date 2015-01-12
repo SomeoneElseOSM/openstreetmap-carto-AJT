@@ -17,4 +17,16 @@ So what to do?  The first thing was obvious - start using my own tiles rather th
 However, this approach is restricted to the stylistic elements supported by the parent OSM-carto style.  There are some changes (the zoom level and prominence with which elements are displayed, and adding new elements altogether) that need actual style changes.  Those changes were made here - but only those changes that can't be handled in lua.
 
 
+## Changes made at the stylesheet level
+
+On a PC browser at zoom level 13, the width of the display is roughly "a nice day's walk".  It therefore makes sense to show things from that level upwards.  Where there's a bit too much detail you can always zoom in for clarification.
+
+* Lightened landuse.  Lots more landuse is being added to OSM, and the default landuse in my bit of the UK is farmland and heath.  It therefore makes sense to use a significantly lighter colour for these.
+
+* Displayed hedges and barriers at lower zoom levels.  These are now displayed (as narrower lines) from zoom level 13 upwards and as before from zoom level 16.
+
+* Display parking from zoom level 13 instead of 16.  A rural layby can be hard to find, and there aren't so many of them that displaying at zoom 13 would cause a problem.
+
+* Display stiles on the map at the same level as gates.  A new icon for stiles based on the gate icon was created.
+
 
