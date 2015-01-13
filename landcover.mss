@@ -37,7 +37,7 @@
 @aerodrome: #ccc;
 @allotments: #e5c7ab;
 @apron: #e9d1ff;
-@attraction: #f2caea;
+@attraction: #FBEFF9;
 @barracks: #ff8f8f;
 @campsite: #ccff99; // also caravan_site, picnic_site
 @cemetery: #aacbaf; // also grave_yard

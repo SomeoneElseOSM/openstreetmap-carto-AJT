@@ -994,7 +994,7 @@
     text-placement: interior;
   }
 
-  [tourism = 'attraction'][zoom >= 16]::tourism {
+  [tourism = 'attraction'][zoom >= 14]::tourism {
     text-name: "[name]";
     text-size: 10;
     text-fill: #660033;
