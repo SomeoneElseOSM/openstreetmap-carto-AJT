@@ -228,8 +228,7 @@
     }
   }
 
-  [feature = 'landuse_recreation_ground'],
-  [feature = 'landuse_conservation'] {
+  [feature = 'landuse_recreation_ground'] {
     [zoom >= 10] {
       polygon-fill: @grass;
     }
