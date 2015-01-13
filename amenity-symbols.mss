@@ -104,6 +104,27 @@
     }
   }
 
+  [barrier = 'horse_stile']::barrier {
+    [zoom >= 15] {
+      point-file: url('symbols/horsestile.png');
+      point-placement: interior;
+    }
+  }
+
+  [barrier = 'cycle_barrier']::barrier {
+    [zoom >= 15] {
+      point-file: url('symbols/cyclebarrier.png');
+      point-placement: interior;
+    }
+  }
+
+  [barrier = 'cattle_grid']::barrier {
+    [zoom >= 15] {
+      point-file: url('symbols/cattlegrid.png');
+      point-placement: interior;
+    }
+  }
+
   [barrier = 'lift_gate'][zoom >= 16]::barrier {
     point-file: url('symbols/liftgate.png');
     point-placement: interior;

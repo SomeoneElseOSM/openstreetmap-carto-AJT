@@ -468,6 +468,14 @@
     }
     line-color: #aed1a0;
   }
+  [barrier = 'gate'][zoom >= 13] {
+    [zoom < 16] {
+      line-width: 1;
+    }
+    [zoom >= 16] {
+      line-width: 3;
+    }
+  }
 }
 
 #tree-row {
