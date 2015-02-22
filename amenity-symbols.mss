@@ -31,6 +31,11 @@
     }
   }
 
+  [highway = 'crossing'][zoom >= 17]::highway {
+    point-file: url('symbols/highway_crossing2.png');
+    point-placement: interior;
+  }
+
   [man_made = 'lighthouse'][zoom >= 15]::man_made {
     point-file: url('symbols/lighthouse.p.20.png');
     point-placement: interior;
