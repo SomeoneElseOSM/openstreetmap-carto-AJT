@@ -288,7 +288,7 @@
     point-placement: interior;
   }
 
-  [man_made = 'water_tower'][zoom >= 17]::man_made {
+  [man_made = 'water_tower'][zoom >= 16]::man_made {
     point-file: url('symbols/tower_water.p.20.png');
     point-placement: interior;
   }
