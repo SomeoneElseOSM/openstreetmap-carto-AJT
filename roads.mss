@@ -1648,7 +1648,11 @@
         [zoom >= 12] { line-width: 4; }
         [zoom >= 13] { line-width: 7; }
       }
-      [zoom >= 14] {
+      [zoom >= 14][zoom < 16] {
+        line-width: 11;
+        line-color: @runway-fill;
+      }
+      [zoom >= 17] {
         line-width: 18;
         line-color: @runway-fill;
       }
