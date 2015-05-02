@@ -1992,6 +1992,14 @@
     [feature = 'highway_footway'],
     [feature = 'highway_cycleway'],
     [feature = 'highway_bridleway'] {
+      [zoom >= 13] {
+        access/line-width: 3;
+        access/line-color: @private-marking;
+        access/line-dasharray: 6,8;
+        access/line-opacity: 0.5;
+        access/line-join: round;
+        access/line-cap: round;
+      }
       [zoom >= 15] {
         access/line-width: 6;
         access/line-color: @private-marking;
@@ -2010,6 +2018,14 @@
       access/line-join: round;
       access/line-cap: round;
       [zoom >= 16] { access/line-width: 6; }
+    }
+    [feature = 'highway_service'][zoom >= 13] {
+      access/line-width: 2;
+      access/line-color: @private-marking;
+      access/line-dasharray: 6,8;
+      access/line-opacity: 0.5;
+      access/line-join: round;
+      access/line-cap: round;
     }
   }
 }
