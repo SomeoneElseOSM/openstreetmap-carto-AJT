@@ -197,9 +197,30 @@
     }
   }
 
+  [feature = 'natural_wood'] {
+    [zoom >= 8] {
+      polygon-fill: @wood;
+    }
+  }
+
   [feature = 'landuse_forest'] {
     [zoom >= 8] {
-      polygon-fill: @forest;
+      polygon-fill: @wood;
+    }
+  }
+
+  [feature = 'natural_broadleaved'] {
+    [zoom >= 8] {
+      polygon-fill: @wood;
+    }
+    [zoom >= 14] {
+      polygon-pattern-file: url('symbols/wood.png');
+    }
+  }
+
+  [feature = 'natural_needleleaved'] {
+    [zoom >= 8] {
+      polygon-fill: @wood;
     }
     [zoom >= 14] {
       polygon-pattern-file: url('symbols/forest.png');
@@ -298,12 +319,6 @@
     [zoom >= 10] {
       polygon-fill: @construction;
       polygon-opacity: 0.7;
-    }
-  }
-
-  [feature = 'natural_wood'] {
-    [zoom >= 8] {
-      polygon-fill: @wood;
     }
   }
 
