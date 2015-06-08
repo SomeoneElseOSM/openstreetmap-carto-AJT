@@ -228,8 +228,23 @@
     point-placement: interior;
   }
 
-  [amenity = 'pub'][zoom >= 16]::amenity {
+  [amenity = 'pub'][zoom >= 15]::amenity {
     point-file: url('symbols/pub.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'realaleyes'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub.pyes.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'realaleno'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub.pno.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pubdead'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub.pdead.16.png');
     point-placement: interior;
   }
 
@@ -399,6 +414,9 @@
   }
 
   [amenity = 'pub']::amenity,
+  [amenity = 'realaleyes']::amenity,
+  [amenity = 'realaleno']::amenity,
+  [amenity = 'pubdead']::amenity,
   [amenity = 'restaurant']::amenity,
   [amenity = 'cafe']::amenity,
   [amenity = 'fast_food']::amenity,
