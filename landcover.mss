@@ -227,6 +227,15 @@
     }
   }
 
+  [feature = 'natural_mixedleaved'] {
+    [zoom >= 8] {
+      polygon-fill: @wood;
+    }
+    [zoom >= 14] {
+      polygon-pattern-file: url('symbols/wood_mixed.png');
+    }
+  }
+
   [feature = 'landuse_farmyard'][zoom >= 9] {
     polygon-fill: @farmyard;
       [zoom >= 16] {
