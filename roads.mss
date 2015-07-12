@@ -1,8 +1,8 @@
 /* For the main linear features, such as roads and railways. */
 
 @motorway-fill: #89a4cb;
-@trunk-fill: #94d494;
-@trunk-fill-alternative: #97d397;
+@trunk-fill: #dd9f9f;
+@trunk-fill-alternative: #dd9f9f;
 @primary-fill: #dd9f9f;
 @secondary-fill: #f9d6aa;
 @tertiary-fill: #f8f8ba;
@@ -2258,7 +2258,7 @@
     shield-size: 10;
     shield-fill: #fff;
     shield-placement: line;
-    shield-file: url("symbols/tru_shield[length].png");
+    shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
@@ -2309,7 +2309,7 @@
     shield-size: 10;
     shield-fill: #fff;
     shield-placement: line;
-    shield-file: url("symbols/tru_shield[length].png");
+    shield-file: url("symbols/pri_shield[length].png");
     shield-spacing: 750;
     shield-min-distance: 30;
     shield-face-name: @bold-fonts;
