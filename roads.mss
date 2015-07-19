@@ -24,7 +24,7 @@
 
 @default-casing: white;
 @motorway-casing: #7788a1;
-@trunk-casing: #7eae7e;
+@trunk-casing: #800000;
 @primary-casing: #c57b7e;
 @secondary-casing: #cca16a;
 @tertiary-casing: #c6c68a;
