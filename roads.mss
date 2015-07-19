@@ -15,7 +15,7 @@
 @footway-fill: salmon;
 @steps-fill: @footway-fill;
 @cycleway-fill: blue;
-@bridleway-fill: blue;
+@bridleway-fill: #0080FF;
 @track-fill: #996600;
 @aeroway-fill: #bbc;
 @runway-fill: @aeroway-fill;
