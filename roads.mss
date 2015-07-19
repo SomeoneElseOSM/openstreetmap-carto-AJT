@@ -2084,9 +2084,12 @@
     [feature = 'highway_living_street'],
     [feature = 'highway_track'],
     [feature = 'highway_path'],
+    [feature = 'highway_pathwide'],
     [feature = 'highway_footway'],
+    [feature = 'highway_footwaywide'],
     [feature = 'highway_cycleway'],
-    [feature = 'highway_bridleway'] {
+    [feature = 'highway_bridleway'],
+    [feature = 'highway_bridlewaywide'] {
       [zoom >= 13] {
         access/line-width: 3;
         access/line-color: @private-marking;
