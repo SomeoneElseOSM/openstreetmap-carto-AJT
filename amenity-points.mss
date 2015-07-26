@@ -3,6 +3,7 @@
 @park-text: #2c4b2c;
 @transportation-icon: #0092da;
 @transportation-text: #0066ff;
+@amenity-brown: #734a08;
 
 .points {
   [tourism = 'alpine_hut'][zoom >= 13]::tourism {
@@ -27,6 +28,11 @@
 
   [amenity = 'bar'][zoom >=17]::amenity {
     point-file: url('symbols/bar.p.20.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'concert_hall'][zoom >=17]::amenity {
+    point-file: url('symbols/concert_hall.18.svg');
     point-placement: interior;
   }
 
@@ -439,6 +445,16 @@
   }
 
   [amenity = 'bar'][zoom >= 17]::amenity {
+    text-name: "[name]";
+    text-size: 10;
+    text-fill: #734a08;
+    text-dy: 11;
+    text-face-name: @bold-fonts;
+    text-halo-radius: 1;
+    text-placement: interior;
+  }
+
+  [amenity = 'concert_hall'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
     text-fill: #734a08;
