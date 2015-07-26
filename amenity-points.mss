@@ -136,6 +136,11 @@
     point-placement: interior;
   }
 
+  [tourism = 'informationpnfs'][zoom >= 15]::tourism {
+    point-file: url('symbols/informationpnfs.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'embassy'][zoom >= 17]::amenity {
     point-file: url('symbols/embassy.png');
     point-placement: interior;
