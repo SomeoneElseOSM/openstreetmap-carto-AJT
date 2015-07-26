@@ -32,7 +32,7 @@
   }
 
   [amenity = 'concert_hall'][zoom >=17]::amenity {
-    point-file: url('symbols/concert_hall.18.svg');
+    point-file: url('symbols/nightclub.18.svg');
     point-placement: interior;
   }
 
