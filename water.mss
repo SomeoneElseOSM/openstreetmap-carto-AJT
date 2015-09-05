@@ -16,7 +16,7 @@
   [waterway = 'dock'],
   [waterway = 'mill_pond'],
   [waterway = 'canal'] {
-    [zoom >= 9]::waterway {
+    [zoom >= 10]::waterway {
       polygon-gamma: 0.75;
       polygon-fill: @water-color;
     }
@@ -32,7 +32,7 @@
   [landuse = 'reservoir']::landuse,
   [waterway = 'riverbank']::waterway,
   [landuse = 'water']::water {
-    [zoom >= 6] {
+    [zoom >= 9] {
       polygon-fill: @water-color;
       polygon-gamma: 0.75;
     }
@@ -80,10 +80,9 @@
 }
 
 #water-lines-low-zoom {
-  [waterway = 'river'][zoom >= 8][zoom < 12] {
+  [waterway = 'river'][zoom >= 9][zoom < 12] {
     line-color: @water-color;
-    line-width: 0.7;
-    [zoom >= 9] { line-width: 1.2; }
+    line-width: 1.2;
     [zoom >= 10] { line-width: 1.6; }
   }
 }
