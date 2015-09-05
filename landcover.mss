@@ -198,19 +198,19 @@
   }
 
   [feature = 'natural_wood'] {
-    [zoom >= 8] {
+    [zoom >= 9] {
       polygon-fill: @wood;
     }
   }
 
   [feature = 'landuse_forest'] {
-    [zoom >= 8] {
+    [zoom >= 9] {
       polygon-fill: @wood;
     }
   }
 
   [feature = 'natural_broadleaved'] {
-    [zoom >= 8] {
+    [zoom >= 9] {
       polygon-fill: @wood;
     }
     [zoom >= 14] {
@@ -219,7 +219,7 @@
   }
 
   [feature = 'natural_needleleaved'] {
-    [zoom >= 8] {
+    [zoom >= 9] {
       polygon-fill: @wood;
     }
     [zoom >= 14] {
@@ -228,7 +228,7 @@
   }
 
   [feature = 'natural_mixedleaved'] {
-    [zoom >= 8] {
+    [zoom >= 9] {
       polygon-fill: @wood;
     }
     [zoom >= 14] {
