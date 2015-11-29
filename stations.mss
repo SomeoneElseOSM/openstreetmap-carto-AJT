@@ -24,6 +24,7 @@
       point-file: url('symbols/station.png');
       text-size: 11;
       text-dy: -10;
+      [zoom >= 20] { text-size: 18; }
     }
   }
 
@@ -48,6 +49,7 @@
       [zoom >= 15] {
         text-size: 10;
         text-dy: -10;
+        [zoom >= 20] { text-size: 18; }
       }
     }
   }

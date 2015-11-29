@@ -10,6 +10,7 @@
     text-halo-radius: 1;
     text-fill: #222;
     text-size: 8;
+    [zoom >= 20] { text-size: 16; }
     text-face-name: @book-fonts;
   }
 }

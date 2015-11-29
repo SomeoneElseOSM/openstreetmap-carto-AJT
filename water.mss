@@ -240,6 +240,7 @@
     text-size: 10;
     text-halo-radius: 1;
     [zoom >= 14] { text-size: 12; }
+    [zoom >= 20] { text-size: 18; }
     [tunnel = 'yes'] { text-min-distance: 200; }
   }
 
@@ -248,6 +249,7 @@
     text-face-name: @oblique-fonts;
     text-halo-radius: 1;
     text-size: 10;
+    [zoom >= 20] { text-size: 18; }
     text-placement: line;
     text-fill: @water-text;
   }
@@ -255,6 +257,7 @@
   [waterway = 'stream'][zoom >= 15] {
     text-name: "[name]";
     text-size: 10;
+    [zoom >= 20] { text-size: 18; }
     text-face-name: @oblique-fonts;
     text-fill: @water-text;
     text-halo-radius: 1;
@@ -269,6 +272,7 @@
       text-name: "[name]";
       text-face-name: @oblique-fonts;
       text-size: 10;
+      [zoom >= 20] { text-size: 18; }
       text-fill: @water-text;
       text-spacing: 600;
       text-placement: line;
@@ -279,6 +283,7 @@
   [waterway = 'canal'][zoom >= 14] {
     text-name: "[name]";
     text-size: 10;
+    [zoom >= 20] { text-size: 18; }
     text-fill: @water-text;
     text-placement: line;
     text-face-name: @oblique-fonts;
@@ -297,8 +302,7 @@
     text-placement: line;
     text-spacing: 600;
     text-halo-radius: 1;
-    [zoom >= 14] {
-      text-size: 12;
-    }
+    [zoom >= 14] { text-size: 12; }
+    [zoom >= 20] { text-size: 18; }
   }
 }

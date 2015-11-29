@@ -15,6 +15,7 @@
     text-face-name: @book-fonts;
     text-fill: #444;
     text-size: 9;
+    [zoom >= 20] { text-size: 18; }
   }
 }
 
@@ -26,9 +27,8 @@
     text-face-name: @book-fonts;
     text-size: 8;
     text-fill: #444;
-    [zoom >= 18] {
-      text-size: 9;
-    }
+    [zoom >= 18] { text-size: 9; }
+    [zoom >= 20] { text-size: 18; }
   }
 }
 
@@ -39,6 +39,7 @@
   [zoom >= 17] {
     text-name: "[name]";
     text-size: 11;
+    [zoom >= 20] { text-size: 22; }
     text-fill: #444;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
