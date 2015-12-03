@@ -29,6 +29,8 @@ On a PC browser at zoom level 13, the width of the display is roughly "a nice da
 
 * Display stiles on the map at the same level as gates.  A new icon for stiles based on the gate icon was created.
 
+Other changes:
+
 * Render different sorts of trees (broadleaved/needleleaved/mixed)
 
 * Distinguished between narrow (footpath/path) and wide (track/road) PRoWs and non-PRoWs.
