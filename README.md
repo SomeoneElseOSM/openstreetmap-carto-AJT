@@ -29,4 +29,12 @@ On a PC browser at zoom level 13, the width of the display is roughly "a nice da
 
 * Display stiles on the map at the same level as gates.  A new icon for stiles based on the gate icon was created.
 
+* Render different sorts of trees (broadleaved/needleleaved/mixed)
 
+* Distinguished between narrow (footpath/path) and wide (track/road) PRoWs and non-PRoWs.
+
+* Render trunk as primary red, rather than green.
+
+* Made low-zoom tiles more road-specific.
+
+* Added support for zoom levels 19 and 20 (wider roads and z19, larger text at z20).
