@@ -364,6 +364,27 @@
     }
   }
 
+  [shop = 'electrical']::shop {
+    [zoom >= 17] {
+      point-file: url('symbols/shop_electrical.p.16.png');
+      point-placement: interior;
+    }
+  }
+
+  [shop = 'garden_centre']::shop {
+    [zoom >= 17] {
+      point-file: url('symbols/shop_gardencentre.p.16.png');
+      point-placement: interior;
+    }
+  }
+
+  [shop = 'jewellery']::shop {
+    [zoom >= 17] {
+      point-file: url('symbols/shop_jewellery.p.16.png');
+      point-placement: interior;
+    }
+  }
+
   [shop = 'convenience'][zoom >= 17]::shop {
     point-file: url('symbols/shop_convenience.p.16.png');
     point-placement: interior;
@@ -1270,6 +1291,9 @@
   [shop = 'bakery']::shop,
   [shop = 'clothes']::shop,
   [shop = 'charity']::shop,
+  [shop = 'electrical']::shop,
+  [shop = 'garden_centre']::shop,
+  [shop = 'jewellery']::shop,
   [shop = 'fashion']::shop,
   [shop = 'convenience']::shop,
   [shop = 'doityourself']::shop,
