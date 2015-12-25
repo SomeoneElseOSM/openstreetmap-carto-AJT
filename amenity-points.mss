@@ -410,6 +410,11 @@
     point-placement: interior;
   }
 
+  [shop = 'greengrocer'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_greengrocer.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'hairdresser'][zoom >= 17]::shop {
     point-file: url('symbols/shop_hairdresser.p.16.png');
     point-placement: interior;
@@ -1304,6 +1309,7 @@
   [shop = 'bicycle']::shop,
   [shop = 'estate_agent']::shop,
   [shop = 'florist']::shop,
+  [shop = 'greengrocer']::shop,
   [shop = 'nonspecific']::shop {
     [zoom >= 17] {
       text-name: "[name]";
