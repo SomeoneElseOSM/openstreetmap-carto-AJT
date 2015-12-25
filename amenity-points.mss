@@ -339,6 +339,11 @@
     point-placement: interior;
   }
 
+  [shop = 'antiques'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_antiques.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'bakery'][zoom >= 17]::shop {
     point-file: url('symbols/shop_bakery.p.16.png');
     point-placement: interior;
@@ -410,6 +415,11 @@
     point-placement: interior;
   }
 
+  [shop = 'funeral_directors'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_funeraldirectors.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'greengrocer'][zoom >= 17]::shop {
     point-file: url('symbols/shop_greengrocer.p.16.png');
     point-placement: interior;
@@ -417,6 +427,16 @@
 
   [shop = 'hairdresser'][zoom >= 17]::shop {
     point-file: url('symbols/shop_hairdresser.p.16.png');
+    point-placement: interior;
+  }
+
+  [shop = 'outdoor'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_outdoor.p.16.png');
+    point-placement: interior;
+  }
+
+  [shop = 'pawnbroker'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_pawnbroker.p.16.png');
     point-placement: interior;
   }
 
@@ -1293,6 +1313,7 @@
     text-placement: interior;
   }
 
+  [shop = 'antiques']::shop,
   [shop = 'bakery']::shop,
   [shop = 'clothes']::shop,
   [shop = 'charity']::shop,
@@ -1309,7 +1330,10 @@
   [shop = 'bicycle']::shop,
   [shop = 'estate_agent']::shop,
   [shop = 'florist']::shop,
+  [shop = 'funeral_directors']::shop,
   [shop = 'greengrocer']::shop,
+  [shop = 'outdoor']::shop,
+  [shop = 'pawnbroker']::shop,
   [shop = 'nonspecific']::shop {
     [zoom >= 17] {
       text-name: "[name]";
