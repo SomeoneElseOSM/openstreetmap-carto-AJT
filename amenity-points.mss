@@ -367,6 +367,11 @@
     point-placement: interior;
   }
 
+  [shop = 'estate_agent'][zoom >= 17]::shop {
+    point-file: url('symbols/estateagent.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'florist'][zoom >= 17]::shop {
     point-file: url('symbols/florist.p.16.png');
     point-placement: interior;
@@ -389,6 +394,11 @@
 
   [shop = 'bicycle'][zoom >= 17]::shop {
     point-file: url('symbols/shopping_bicycle.p.16.png');
+    point-placement: interior;
+  }
+
+  [shop = 'nonspecific'][zoom >= 17]::shop {
+    point-file: url('symbols/shopping_nonspecific.p.16.png');
     point-placement: interior;
   }
 
@@ -1244,7 +1254,9 @@
   [shop = 'car']::shop,
   [shop = 'car_repair']::shop,
   [shop = 'bicycle']::shop,
-  [shop = 'florist']::shop {
+  [shop = 'estate_agent']::shop,
+  [shop = 'florist']::shop,
+  [shop = 'nonspecific']::shop {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 8;
