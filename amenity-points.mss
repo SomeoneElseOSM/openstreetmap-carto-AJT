@@ -1036,6 +1036,18 @@
     }
   }
 
+  [highway = 'bus_stop']::highway {
+    [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 9;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: @transportation-text;
+      text-dy: 9;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+    }
+  }
+
   [tourism = 'camp_site'][zoom >= 17]::tourism {
     text-name: "[name]";
     text-size: 10;
