@@ -57,6 +57,11 @@
     point-placement: interior;
   }
 
+  [office = 'nonspecific'][zoom >= 17]::office {
+    point-file: url('symbols/office_nonspecific.p.16.png');
+    point-placement: interior;
+  }
+
   [highway = 'traffic_signals'][zoom >= 17]::highway {
     point-file: url('symbols/traffic_light.png');
     point-placement: interior;
@@ -974,6 +979,17 @@
   }
 
   [amenity = 'bank'][zoom >= 17]::amenity {
+    text-name: "[name]";
+    text-size: 9;
+    [zoom >= 20] { text-size: 18; }
+    text-fill: black;
+    text-dy: 9;
+    text-halo-radius: 1;
+    text-placement: interior;
+    text-face-name: @book-fonts;
+  }
+
+  [office = 'nonspecific'][zoom >= 17]::office {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
