@@ -200,8 +200,18 @@
     }
   }
 
+  [amenity = 'doctors'][zoom >= 17]::amenity {
+    point-file: url('symbols/health_doctors.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'dentist'][zoom >= 17]::amenity {
+    point-file: url('symbols/health_dentist.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'pharmacy'][zoom >= 17]::amenity {
-    point-file: url('symbols/pharmacy.p.16.png');
+    point-file: url('symbols/health_pharmacy.p.16.png');
     point-placement: interior;
   }
 
@@ -460,8 +470,13 @@
     point-placement: interior;
   }
 
-  [shop = 'nonspecific'][zoom >= 17]::shop {
+  [shop = 'shopnonspecific'][zoom >= 17]::shop {
     point-file: url('symbols/shopping_nonspecific.p.16.png');
+    point-placement: interior;
+  }
+
+  [shop = 'healthnonspecific'][zoom >= 17]::shop {
+    point-file: url('symbols/health_nonspecific.p.16.png');
     point-placement: interior;
   }
 
@@ -1047,6 +1062,20 @@
     text-face-name: @book-fonts;
   }
 
+  [shop = 'healthnonspecific']::shop {
+    [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 8;
+      [zoom >= 20] { text-size: 16; }
+      text-dy: 10;
+      text-fill: #da0092;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-wrap-width: 12;
+      text-placement: interior;
+    }
+  }
+
   [office = 'nonspecific'][zoom >= 17]::office {
     text-name: "[name]";
     text-size: 9;
@@ -1317,7 +1346,10 @@
     text-placement: interior;
   }
 
-  [amenity = 'pharmacy'][zoom >= 17]::amenity {
+  [amenity = 'doctors']::amenity,
+  [amenity = 'dentist']::amenity,
+  [amenity = 'pharmacy']::amenity { 
+    [zoom >= 17] {
     text-name: "[name]";
     text-size: 8;
     [zoom >= 20] { text-size: 16; }
@@ -1327,6 +1359,7 @@
     text-halo-radius: 1;
     text-wrap-width: 12;
     text-placement: interior;
+    }
   }
 
   [shop = 'antiques']::shop,
@@ -1350,7 +1383,7 @@
   [shop = 'greengrocer']::shop,
   [shop = 'outdoor']::shop,
   [shop = 'pawnbroker']::shop,
-  [shop = 'nonspecific']::shop {
+  [shop = 'shopnonspecific']::shop {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 8;
