@@ -84,6 +84,11 @@
     point-placement: interior;
   }
 
+  [railway = 'ventilation_shaft'][zoom >= 16]::railway {
+    point-file: url('symbols/ventshaft.png');
+    point-placement: interior;
+  }
+
   [man_made = 'mast'][zoom >= 17]::man_made {
     point-file: url('symbols/communications.p.20.png');
     point-placement: interior;
