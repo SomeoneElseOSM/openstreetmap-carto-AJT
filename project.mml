@@ -1756,6 +1756,6 @@
   "scale": 1,
   "metatile": 2,
   "name": "OpenStreetMap Carto AJT",
-  "description": "A faithful reimplementation of the standard OpenStreetMap style",
+  "description": "OSM Carto before recent changes, supporting lua consolidation of features via SomeoneElse-style",
   "attribution": ""
 }
