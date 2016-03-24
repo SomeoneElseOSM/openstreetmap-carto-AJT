@@ -116,7 +116,7 @@
 @casing-width-z19:                2;
 
 @sidewalk-width-z12:              2;
-@sidewalk-width-z13:              2;
+@sidewalk-width-z13:              1.5;
 @sidewalk-width-z14:              2;
 @sidewalk-width-z15:              2.8;
 @sidewalk-width-z17:              4;
@@ -1131,7 +1131,7 @@
           [zoom >= 17] { line-width: @secondary-width-z17 - 2 * @bridge-casing-width-z17; }
           [zoom >= 19] { line-width: @secondary-width-z19 - 2 * @bridge-casing-width-z19; }
         }
-        line-cap: round;
+        line-cap: butt;
         line-join: round;
       }
     }
@@ -1156,7 +1156,7 @@
           [zoom >= 17] { line-width: @secondary-width-z17 - 2 * @bridge-casing-width-z17; }
           [zoom >= 19] { line-width: @secondary-width-z19 - 2 * @bridge-casing-width-z19; }
         }
-        line-cap: round;
+        line-cap: butt;
         line-join: round;
       }
     }
@@ -1181,7 +1181,7 @@
           [zoom >= 17] { line-width: @tertiary-width-z17 - 2 * @bridge-casing-width-z17; }
           [zoom >= 19] { line-width: @tertiary-width-z19 - 2 * @bridge-casing-width-z19; }
         }
-        line-cap: round;
+        line-cap: butt;
         line-join: round;
       }
     }
@@ -1206,7 +1206,7 @@
           [zoom >= 17] { line-width: @tertiary-width-z17 - 2 * @bridge-casing-width-z17; }
           [zoom >= 19] { line-width: @tertiary-width-z19 - 2 * @bridge-casing-width-z19; }
         }
-        line-cap: round;
+        line-cap: butt;
         line-join: round;
       }
     }
@@ -1234,7 +1234,7 @@
           [zoom >= 17] { line-width: @residential-width-z17 - 2 * @bridge-casing-width-z17; }
           [zoom >= 19] { line-width: @residential-width-z19 - 2 * @bridge-casing-width-z19; }
         }
-        line-cap: round;
+        line-cap: butt;
         line-join: round;
       }
     }
