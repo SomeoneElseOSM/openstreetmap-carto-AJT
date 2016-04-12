@@ -1,5 +1,5 @@
 #necountries {
-  [zoom >= 1][zoom < 4] {
+  [zoom >= 1][zoom < 9] {
     line-width: 0.5;
     line-color: grey;
   }
