@@ -119,6 +119,7 @@
 @sidewalk-width-z13:              1.5;
 @sidewalk-width-z14:              2;
 @sidewalk-width-z15:              2.8;
+@sidewalk-width-z16:              2.8;
 @sidewalk-width-z17:              4;
 @sidewalk-width-z19:              8;
 
@@ -423,6 +424,31 @@
     [feature = 'highway_residential'],
     [feature = 'highway_unclassified'],
     [feature = 'highway_road'] {
+      [zoom >= 13] {
+        line-color: @residential-casing;
+        line-width: @residential-width-z13;
+        [zoom >= 14] { line-width: @residential-width-z14; }
+        [zoom >= 15] { line-width: @residential-width-z15; }
+        [zoom >= 16] { line-width: @residential-width-z16; }
+        [zoom >= 17] { line-width: @residential-width-z17; }
+        [zoom >= 19] { line-width: @residential-width-z19; }
+        .roads-casing {
+          line-join: round;
+          line-cap: round;
+        }
+        .tunnels-casing {
+          line-dasharray: 4,2;
+        }
+        .bridges-casing {
+          [zoom >= 14] {
+            line-color: @bridge-casing;
+            line-join: round;
+          }
+        }
+      }
+    }
+
+    [feature = 'highway_unclassified_sidewalk'] {
       [zoom >= 13] {
         line-color: @residential-casing;
         line-width: @residential-width-z13;
@@ -1239,10 +1265,39 @@
       }
     }
 
+      /* Note that the sidewalk-width numbers for unclassified don't always match the zoom.  This is deliberate because at some zooms unclassifieds are quite narrow. */
+    [feature = 'highway_unclassified_sidewalk'] {
+      [zoom >= 13] {
+        line-width: @residential-width-z13 - 2 * @residential-casing-width-z13;
+        [zoom >= 14] { line-width: @residential-width-z14 - 2 * @sidewalk-width-z13; }
+        [zoom >= 15] { line-width: @residential-width-z15 - 2 * @sidewalk-width-z14; }
+        [zoom >= 16] { line-width: @residential-width-z16 - 2 * @sidewalk-width-z15; }
+        [zoom >= 17] { line-width: @residential-width-z17 - 2 * @sidewalk-width-z17; }
+        [zoom >= 19] { line-width: @residential-width-z19 - 2 * @sidewalk-width-z19; }
+        .roads-fill, .bridges-fill {
+          line-color: @residential-fill;
+        }
+        .tunnels-fill {
+          line-color: @residential-tunnel-fill;
+        }
+        .bridges-fill {
+          line-width: @residential-width-z13 - 2 * @bridge-casing-width-z13;
+          [zoom >= 14] { line-width: @residential-width-z14 - 2 * @bridge-casing-width-z14; }
+          [zoom >= 15] { line-width: @residential-width-z15 - 2 * @bridge-casing-width-z15; }
+          [zoom >= 16] { line-width: @residential-width-z16 - 2 * @bridge-casing-width-z16; }
+          [zoom >= 17] { line-width: @residential-width-z17 - 2 * @bridge-casing-width-z17; }
+          [zoom >= 19] { line-width: @residential-width-z19 - 2 * @bridge-casing-width-z19; }
+        }
+        line-cap: butt;
+        line-join: round;
+      }
+    }
+
     [feature = 'highway_tertiary'][zoom >= 10][zoom < 13],
     [feature = 'highway_tertiary_sidewalk'][zoom >= 10][zoom < 13],
     [feature = 'highway_residential'][zoom >= 10][zoom < 13],
     [feature = 'highway_unclassified'][zoom >= 10][zoom < 13],
+    [feature = 'highway_unclassified_sidewalk'][zoom >= 10][zoom < 13],
     [feature = 'highway_road'][zoom >= 10][zoom < 13],
     [feature = 'highway_living_street'][zoom >= 12][zoom < 13] {
       line-width: 1;
@@ -2236,6 +2291,7 @@
     [feature = 'highway_tertiary'],
     [feature = 'highway_tertiary_sidewalk'],
     [feature = 'highway_unclassified'],
+    [feature = 'highway_unclassified_sidewalk'],
     [feature = 'highway_residential'],
     [feature = 'highway_road'],
     [feature = 'highway_living_street'] {
@@ -2273,6 +2329,7 @@
     [feature = 'highway_tertiary_sidewalk'],
     [feature = 'highway_tertiary_link'],
     [feature = 'highway_unclassified'],
+    [feature = 'highway_unclassified_sidewalk'],
     [feature = 'highway_residential'],
     [feature = 'highway_road'],
     [feature = 'highway_living_street'],
@@ -2587,6 +2644,19 @@
 
   [highway = 'unclassified'],
   [highway = 'residential'] {
+    [zoom >= 15][bridge = 'no'] {
+      text-name: "[ref]";
+      text-size: 10;
+      text-fill: #000;
+      text-face-name: @bold-fonts;
+      text-min-distance: 18;
+      text-halo-radius: 1;
+      text-spacing: 750;
+      text-clip: false;
+    }
+  }
+
+  [highway = 'unclassified_sidewalk'] {
     [zoom >= 15][bridge = 'no'] {
       text-name: "[ref]";
       text-size: 10;
