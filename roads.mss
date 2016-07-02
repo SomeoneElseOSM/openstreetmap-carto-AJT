@@ -13,7 +13,6 @@
 @road-fill: #ddd;
 @path-fill: black;
 @footway-fill: salmon;
-@steps-fill: @footway-fill;
 @cycleway-fill: blue;
 @bridleway-fill: #0080FF;
 @track-fill: #996600;
@@ -549,7 +548,10 @@
       }
     }
 
-    [feature = 'highway_steps'] {
+    /* casing for all sorts of steps the same; fill different */
+    [feature = 'highway_steps'],
+    [feature = 'highway_footwaysteps'],
+    [feature = 'highway_bridlewaysteps'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 6.5;
@@ -560,16 +562,8 @@
       }
     }
 
-    [feature = 'highway_bridleway'] {
-      .bridges-casing {
-        [zoom >= 14] {
-          line-width: 5.5;
-          line-color: @bridge-casing;
-          line-join: round;
-        }
-      }
-    }
-
+    /* casing for normal and wide bridleways the same; fill different */
+    [feature = 'highway_bridleway'],
     [feature = 'highway_bridlewaywide'] {
       .bridges-casing {
         [zoom >= 14] {
@@ -580,16 +574,8 @@
       }
     }
 
-    [feature = 'highway_footway'] {
-      .bridges-casing {
-        [zoom >= 14] {
-          line-width: 6;
-          line-color: @bridge-casing;
-          line-join: round;
-        }
-      }
-    }
-
+    /* casing for normal and wide footways the same; fill different */
+    [feature = 'highway_footway'],
     [feature = 'highway_footwaywide'] {
       .bridges-casing {
         [zoom >= 14] {
@@ -610,16 +596,8 @@
       }
     }
 
-    [feature = 'highway_path'] {
-      .bridges-casing {
-        [zoom >= 14] {
-          line-width: 4;
-          line-color: @bridge-casing;
-          line-join: round;
-        }
-      }
-    }
-
+    /* casing for normal and wide paths the same; fill different */
+    [feature = 'highway_path'],
     [feature = 'highway_pathwide'] {
       .bridges-casing {
         [zoom >= 14] {
@@ -736,16 +714,8 @@
   }
 
   ::bridges_background {
-    [feature = 'highway_bridleway'] {
-      .bridges-casing {
-        [zoom >= 14] {
-          line-width: 4;
-          line-color: @bridleway-casing;
-          line-join: round;
-        }
-      }
-    }
-
+    /* casing for normal and wide bridleways the same; fill different */
+    [feature = 'highway_bridleway'],
     [feature = 'highway_bridlewaywide'] {
       .bridges-casing {
         [zoom >= 14] {
@@ -756,16 +726,8 @@
       }
     }
 
-    [feature = 'highway_footway'] {
-      .bridges-casing {
-        [zoom >= 14] {
-          line-width: 4.5;
-          line-color: @footway-casing;
-          line-join: round;
-        }
-      }
-    }
-
+    /* casing for normal and wide footways the same; fill different */
+    [feature = 'highway_footway'],
     [feature = 'highway_footwaywide'] {
       .bridges-casing {
         [zoom >= 14] {
@@ -786,7 +748,10 @@
       }
     }
 
-    [feature = 'highway_steps'] {
+    /* casing for all sorts of steps the same; fill different */
+    [feature = 'highway_steps'],
+    [feature = 'highway_footwaysteps'],
+    [feature = 'highway_bridlewaysteps'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 5;
@@ -797,16 +762,8 @@
       }
     }
 
-    [feature = 'highway_path'] {
-      .bridges-casing {
-        [zoom >= 14] {
-          line-width: 2.5;
-          line-color: @path-casing;
-          line-join: round;
-        }
-      }
-    }
-
+    /* casing for normal and wide paths the same; fill different */
+    [feature = 'highway_path'],
     [feature = 'highway_pathwide'] {
       .bridges-casing {
         [zoom >= 14] {
@@ -1466,6 +1423,7 @@
       }
     }
 
+    /* fill for each sort of steps different */
     [feature = 'highway_steps'] {
       [zoom >= 13][zoom < 15] {
         .roads-fill, .tunnels-fill {
@@ -1474,7 +1432,7 @@
           line-opacity: 0.4;
         }
         b/line-width: 2;
-        b/line-color: @steps-fill;
+        b/line-color: @path-fill;
         b/line-dasharray: 1,3;
         b/line-cap: round;
         b/line-join: round;
@@ -1484,11 +1442,58 @@
     [feature = 'highway_steps'] {
       [zoom >= 15] {
         line-width: 5.0;
-        line-color: @steps-fill;
+        line-color: @path-fill;
         line-dasharray: 2,1;
       }
     }
 
+    [feature = 'highway_footwaysteps'] {
+      [zoom >= 13][zoom < 15] {
+        .roads-fill, .tunnels-fill {
+          line-width: 6;
+          line-color: @steps-casing;
+          line-opacity: 0.4;
+        }
+        b/line-width: 2;
+        b/line-color: @footway-fill;
+        b/line-dasharray: 1,3;
+        b/line-cap: round;
+        b/line-join: round;
+      }
+    }
+
+    [feature = 'highway_footwaysteps'] {
+      [zoom >= 15] {
+        line-width: 5.0;
+        line-color: @footway-fill;
+        line-dasharray: 2,1;
+      }
+    }
+
+    [feature = 'highway_bridlewaysteps'] {
+      [zoom >= 13][zoom < 15] {
+        .roads-fill, .tunnels-fill {
+          line-width: 6;
+          line-color: @steps-casing;
+          line-opacity: 0.4;
+        }
+        b/line-width: 2;
+        b/line-color: @bridleway-fill;
+        b/line-dasharray: 1,3;
+        b/line-cap: round;
+        b/line-join: round;
+      }
+    }
+
+    [feature = 'highway_bridlewaysteps'] {
+      [zoom >= 15] {
+        line-width: 5.0;
+        line-color: @bridleway-fill;
+        line-dasharray: 2,1;
+      }
+    }
+
+    /* fill for normal and wide bridleways different */
     [feature = 'highway_bridleway'] {
       [zoom >= 13] {
         .tunnels-fill {
@@ -1553,6 +1558,7 @@
       }
     }
 
+    /* fill for normal and wide footways different */
     [feature = 'highway_footway'] {
       [zoom >= 13] {
         .tunnels-fill {
@@ -1655,6 +1661,7 @@
     * paths that are e.g. horse=designated have actually been processed into one of the above
     * by style.lua transformations
     */
+    /* fill for normal and wide paths different */
     [feature = 'highway_path'] {
       [zoom >= 13] {
         .tunnels-fill {
@@ -2905,8 +2912,10 @@
 
   [highway = 'footway'],
   [highway = 'footwaywide'],
+  [highway = 'footwaysteps'],
   [highway = 'bridleway'],
   [highway = 'bridlewaywide'],
+  [highway = 'bridlewaysteps'],
   [highway = 'path'],
   [highway = 'pathwide'],
   [highway = 'steps'] {
