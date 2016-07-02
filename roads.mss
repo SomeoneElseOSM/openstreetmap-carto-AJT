@@ -570,7 +570,27 @@
       }
     }
 
+    [feature = 'highway_bridlewaywide'] {
+      .bridges-casing {
+        [zoom >= 14] {
+          line-width: 5.5;
+          line-color: @bridge-casing;
+          line-join: round;
+        }
+      }
+    }
+
     [feature = 'highway_footway'] {
+      .bridges-casing {
+        [zoom >= 14] {
+          line-width: 6;
+          line-color: @bridge-casing;
+          line-join: round;
+        }
+      }
+    }
+
+    [feature = 'highway_footwaywide'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 6;
@@ -591,6 +611,16 @@
     }
 
     [feature = 'highway_path'] {
+      .bridges-casing {
+        [zoom >= 14] {
+          line-width: 4;
+          line-color: @bridge-casing;
+          line-join: round;
+        }
+      }
+    }
+
+    [feature = 'highway_pathwide'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 4;
@@ -716,7 +746,27 @@
       }
     }
 
+    [feature = 'highway_bridlewaywide'] {
+      .bridges-casing {
+        [zoom >= 14] {
+          line-width: 4;
+          line-color: @bridleway-casing;
+          line-join: round;
+        }
+      }
+    }
+
     [feature = 'highway_footway'] {
+      .bridges-casing {
+        [zoom >= 14] {
+          line-width: 4.5;
+          line-color: @footway-casing;
+          line-join: round;
+        }
+      }
+    }
+
+    [feature = 'highway_footwaywide'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 4.5;
@@ -748,6 +798,16 @@
     }
 
     [feature = 'highway_path'] {
+      .bridges-casing {
+        [zoom >= 14] {
+          line-width: 2.5;
+          line-color: @path-casing;
+          line-join: round;
+        }
+      }
+    }
+
+    [feature = 'highway_pathwide'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 2.5;
@@ -970,7 +1030,6 @@
   }
 
   ::fill {
-
     /*
      * The construction rules for small roads are strange, since if construction is null its assumed that
      * it's a more major road. The line-width = 0 could be removed by playing with the query to set a construction
@@ -1593,8 +1652,8 @@
     }
 
     /*
-    * The above defininitions should override this when needed
-    * given the specitivity precedence.
+    * paths that are e.g. horse=designated have actually been processed into one of the above
+    * by style.lua transformations
     */
     [feature = 'highway_path'] {
       [zoom >= 13] {
