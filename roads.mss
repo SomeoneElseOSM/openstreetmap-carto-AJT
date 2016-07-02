@@ -560,8 +560,7 @@
       }
     }
 
-    [feature = 'highway_bridleway'],
-    [feature = 'highway_path'][horse = 'designated'] {
+    [feature = 'highway_bridleway'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 5.5;
@@ -571,8 +570,7 @@
       }
     }
 
-    [feature = 'highway_footway'],
-    [feature = 'highway_path'][foot = 'designated'] {
+    [feature = 'highway_footway'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 6;
@@ -582,8 +580,7 @@
       }
     }
 
-    [feature = 'highway_cycleway'],
-    [feature = 'highway_path'][bicycle = 'designated'] {
+    [feature = 'highway_cycleway'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 5.5;
@@ -709,8 +706,7 @@
   }
 
   ::bridges_background {
-    [feature = 'highway_bridleway'],
-    [feature = 'highway_path'][horse = 'designated'] {
+    [feature = 'highway_bridleway'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 4;
@@ -720,8 +716,7 @@
       }
     }
 
-    [feature = 'highway_footway'],
-    [feature = 'highway_path'][foot = 'designated'] {
+    [feature = 'highway_footway'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 4.5;
@@ -731,8 +726,7 @@
       }
     }
 
-    [feature = 'highway_cycleway'],
-    [feature = 'highway_path'][bicycle = 'designated'] {
+    [feature = 'highway_cycleway'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 4;
@@ -1436,8 +1430,7 @@
       }
     }
 
-    [feature = 'highway_bridleway'],
-    [feature = 'highway_path'][horse = 'designated'] {
+    [feature = 'highway_bridleway'] {
       [zoom >= 13] {
         .tunnels-fill {
           tunnelcasing/line-width: 5;
@@ -1501,8 +1494,7 @@
       }
     }
 
-    [feature = 'highway_footway'],
-    [feature = 'highway_path'][foot = 'designated'] {
+    [feature = 'highway_footway'] {
       [zoom >= 13] {
         .tunnels-fill {
           tunnelcasing/line-width: 5.5;
@@ -1568,8 +1560,7 @@
       }
     }
 
-    [feature = 'highway_cycleway'],
-    [feature = 'highway_path'][bicycle = 'designated'] {
+    [feature = 'highway_cycleway'] {
       [zoom >= 13] {
         .tunnels-fill {
           tunnelcasing/line-width: 5.5;
