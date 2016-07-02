@@ -2780,6 +2780,7 @@
     }
   }
   [highway = 'tertiary'],
+  [highway = 'tertiary_sidewalk'],
   [highway = 'tertiary_link'] {
     [zoom >= 15] {
       text-name: "[name]";
@@ -2903,8 +2904,11 @@
   }
 
   [highway = 'footway'],
-  [highway = 'cycleway'],
+  [highway = 'footwaywide'],
+  [highway = 'bridleway'],
+  [highway = 'bridlewaywide'],
   [highway = 'path'],
+  [highway = 'pathwide'],
   [highway = 'steps'] {
     [zoom >= 16] {
       text-name: "[name]";
