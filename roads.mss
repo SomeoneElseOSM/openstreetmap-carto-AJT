@@ -2827,6 +2827,7 @@
   }
   [highway = 'residential'],
   [highway = 'unclassified'],
+  [highway = 'unclassified_sidewalk'],
   [highway = 'road'] {
     [zoom >= 15] {
       text-name: "[name]";
