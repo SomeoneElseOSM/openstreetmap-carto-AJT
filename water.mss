@@ -32,7 +32,7 @@
   [landuse = 'reservoir']::landuse,
   [waterway = 'riverbank']::waterway,
   [landuse = 'water']::water {
-    [zoom >= 9] {
+    [zoom >= 6] {
       polygon-fill: @water-color;
       polygon-gamma: 0.75;
     }
