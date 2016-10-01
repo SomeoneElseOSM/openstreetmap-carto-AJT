@@ -46,6 +46,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'survey_point'][zoom >= 15]::man_made {
+    point-file: url('symbols/survey_point.png');
+    point-placement: interior;
+  }
+
   [natural = 'volcano'][zoom >= 11]::natural {
     point-file: url('symbols/volcano.png');
     point-placement: interior;
