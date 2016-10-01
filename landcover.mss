@@ -18,9 +18,9 @@
 
 @residential: #E1E1E1;      // Lch(89,0,0)
 @residential-line: #B9B9B9; // Lch(75,0,0)
-@retail: #FFD6D1;           // Lch(89,16,30)
+@retail: #f4dfdd;           // Lch(89,16,30)
 @retail-line: #D99C95;      // Lch(70,25,30)
-@commercial: #F2DAD9;       // Lch(89,8.5,25)
+@commercial: #ece0df;       // Lch(89,8.5,25)
 @commercial-line: #D1B2B0;  // Lch(75,12,25)
 @industrial: #EBDBE8;       // Lch(89,9,330)
 @industrial-line: #C6B3C3;  // Lch(75,11,330)
@@ -42,7 +42,7 @@
 @campsite: #ccff99; // also caravan_site, picnic_site
 @cemetery: #aacbaf; // also grave_yard
 @construction: #9d9d6c;
-@danger_area: pink;
+@danger_area: #fff4f8;
 @desert: #e3b57a;
 @field: #660;
 @garages: #996;
@@ -148,12 +148,9 @@
   }
 
   [feature = 'military_danger_area'] {
-    [zoom >= 9][zoom < 11] {
+    [zoom >= 9] {
       polygon-fill: @danger_area;
       polygon-opacity: 0.3;
-    }
-    [zoom >= 11] {
-      polygon-pattern-file: url('symbols/danger.png');
     }
   }
 
