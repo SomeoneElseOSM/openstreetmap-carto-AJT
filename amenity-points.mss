@@ -349,6 +349,11 @@
     point-placement: interior;
   }
 
+  [historic = 'ruins'][zoom >= 17]::historic {
+    point-file: url('symbols/historic_nonspecific.p.16.png');
+    point-placement: interior;
+  }
+
   [historic = 'archaeological_site'][zoom >= 16]::historic {
     point-file: url('symbols/tourist_archaeological2.glow.24.png');
     point-placement: interior;
@@ -732,7 +737,8 @@
     text-placement: interior;
   }
 
-  [historic = 'archaeological_site'][zoom >= 17]::historic {
+  [historic = 'archaeological_site'][zoom >= 17]::historic, 
+  [historic = 'ruins'][zoom >= 17]::historic {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }

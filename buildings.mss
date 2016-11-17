@@ -1,6 +1,6 @@
 @building: #bca9a9;
 @station: #d4aaaa;
-@supermarket: pink;
+@ruins: #ded4d4;
 @placeOfWorship: #777;
 @terminal: #cc99ff;
 
@@ -12,8 +12,8 @@
       polygon-clip: false;
     }
 
-    [building = 'supermarket'] {
-      polygon-fill: @supermarket;
+    [building = 'ruins'] {
+      polygon-fill: @ruins;
       polygon-opacity: 0.5;
       polygon-clip: false;
     }
@@ -40,6 +40,11 @@
   }
   [building != 'INT-light'][building != ''][zoom >= 12] {
     polygon-fill: @building;
+
+    [building = 'ruins']  {
+      polygon-fill: @ruins;
+    }
+
     polygon-opacity: 0.9;
     polygon-clip: false;
     [zoom >= 16] {
