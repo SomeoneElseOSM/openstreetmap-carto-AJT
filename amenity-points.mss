@@ -57,6 +57,13 @@
     point-placement: interior;
   }
 
+  [amenity = 'ferry_terminal']::amenity {
+    [zoom >= 16] {
+      point-file: url('symbols/bus_stop_small.png');
+      point-placement: interior;
+    }
+  }
+
   [office = 'nonspecific'][zoom >= 17]::office {
     point-file: url('symbols/office_nonspecific.p.16.png');
     point-placement: interior;
@@ -1180,6 +1187,18 @@
 
   [highway = 'bus_stop']::highway {
     [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 9;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: @transportation-text;
+      text-dy: 9;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+    }
+  }
+
+  [amenity = 'ferry_terminal']::amenity {
+    [zoom >= 16] {
       text-name: "[name]";
       text-size: 9;
       [zoom >= 20] { text-size: 18; }
