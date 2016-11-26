@@ -317,6 +317,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'pizza'][zoom >= 17]::amenity {
+    point-file: url('symbols/pizza.png');
+    point-placement: interior;
+  }
+
   [amenity = 'telephone'][zoom >= 17]::amenity {
     point-file: url('symbols/telephone.p.16.png');
     point-placement: interior;
@@ -544,6 +549,7 @@
   [amenity = 'cafe']::amenity,
   [amenity = 'fast_food']::amenity,
   [amenity = 'fish_and_chips']::amenity,
+  [amenity = 'pizza']::amenity,
   [amenity = 'biergarten']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
