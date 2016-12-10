@@ -498,6 +498,11 @@
     point-placement: interior;
   }
 
+  [shop = 'sports'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_sports.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'shopnonspecific'][zoom >= 17]::shop {
     point-file: url('symbols/shopping_nonspecific.p.16.png');
     point-placement: interior;
@@ -1429,6 +1434,7 @@
   [shop = 'greengrocer']::shop,
   [shop = 'outdoor']::shop,
   [shop = 'pawnbroker']::shop,
+  [shop = 'sports']::shop,
   [shop = 'shopnonspecific']::shop {
     [zoom >= 17] {
       text-name: "[name]";
