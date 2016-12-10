@@ -1248,6 +1248,7 @@
     text-wrap-width: 70;
   }
 
+  [landuse = 'harbour'][zoom >= 15]::landuse, 
   [leisure = 'marina'][zoom >= 15]::leisure {
     text-name: "[name]";
     text-size: 8;
