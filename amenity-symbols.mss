@@ -122,6 +122,13 @@
     }
   }
 
+  [barrier = 'kissing_gate']::barrier {
+    [zoom >= 15] {
+      point-file: url('symbols/kissinggate.png');
+      point-placement: interior;
+    }
+  }
+
   [barrier = 'stile']::barrier {
     [zoom >= 15] {
       point-file: url('symbols/stile.png');
