@@ -56,6 +56,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'cairn'][zoom >= 15]::man_made {
+    point-file: url('symbols/cairn.png');
+    point-placement: interior;
+  }
+
   [man_made = 'water_well'][zoom >= 17]::man_made {
     point-file: url('symbols/water_well.png');
     point-placement: interior;
