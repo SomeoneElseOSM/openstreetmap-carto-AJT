@@ -287,6 +287,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'pubfood'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub.pfood.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'realaleyes'][zoom >= 15]::amenity {
     point-file: url('symbols/pub.pyes.16.png');
     point-placement: interior;
@@ -577,6 +582,7 @@
   }
 
   [amenity = 'pub']::amenity,
+  [amenity = 'pubfood']::amenity,
   [amenity = 'realaleyes']::amenity,
   [amenity = 'realaleno']::amenity,
   [amenity = 'realaleyesfood']::amenity,
