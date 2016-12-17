@@ -297,6 +297,16 @@
     point-placement: interior;
   }
 
+  [amenity = 'realaleyesfood'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub.pyesfood.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'realalenofood'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub.pnofood.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'pubdead'][zoom >= 16]::amenity {
     point-file: url('symbols/pub.pdead.16.png');
     point-placement: interior;
@@ -569,6 +579,8 @@
   [amenity = 'pub']::amenity,
   [amenity = 'realaleyes']::amenity,
   [amenity = 'realaleno']::amenity,
+  [amenity = 'realaleyesfood']::amenity,
+  [amenity = 'realalenofood']::amenity,
   [amenity = 'pubdead']::amenity,
   [amenity = 'restaurant']::amenity,
   [amenity = 'cafe']::amenity,
