@@ -542,6 +542,11 @@
     point-file: url('symbols/transport_slipway.p.20.png');
     point-placement: interior;
   }
+
+  [leisure = 'bird_hide'][zoom >= 17]::leisure {
+    point-file: url('symbols/birdhide.p.16.png');
+    point-placement: interior;
+  }
 }
 
 
