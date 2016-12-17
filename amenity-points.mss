@@ -203,6 +203,11 @@
     point-placement: interior;
   }
 
+  [tourism = 'artwork'][zoom >= 17]::tourism {
+    point-file: url('symbols/artwork.p.16.png');
+    point-placement: interior;
+  }
+
   [tourism = 'museum'][zoom >= 17]::tourism {
     point-file: url('symbols/museum.p.16.png');
     point-placement: interior;
@@ -1295,6 +1300,7 @@
 
   [tourism = 'aquarium'][zoom >= 17]::tourism,
   [tourism = 'zoo'][zoom >= 17]::tourism,
+  [tourism = 'artwork'][zoom >= 17]::tourism,
   [tourism = 'museum'][zoom >= 17]::tourism {
     text-name: "[name]";
     text-size: 10;
