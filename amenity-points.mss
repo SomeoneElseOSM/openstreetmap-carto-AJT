@@ -213,6 +213,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'bench'][zoom >= 17]::amenity {
+    point-file: url('symbols/bench.png');
+    point-placement: interior;
+  }
+
   [amenity = 'parking'][zoom >= 13]::amenity {
     marker-file: url('symbols/parking.svg');
     marker-placement: interior;
@@ -1319,7 +1324,8 @@
   [tourism = 'aquarium'][zoom >= 17]::tourism,
   [tourism = 'zoo'][zoom >= 17]::tourism,
   [tourism = 'artwork'][zoom >= 17]::tourism,
-  [tourism = 'museum'][zoom >= 17]::tourism {
+  [tourism = 'museum'][zoom >= 17]::tourism,
+  [amenity = 'bench'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
