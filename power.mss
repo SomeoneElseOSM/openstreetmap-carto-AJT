@@ -1,5 +1,5 @@
 #power-line {
-  [zoom >= 14] {
+  [zoom >= 15] {
     line-width: 0.2;
     line-color: #777;
   }
@@ -16,9 +16,6 @@
 }
 
 #power-towers {
-  [zoom >= 14] {
-    point-file: url('symbols/power_tower_3x3.png');
-  }
   [zoom >= 15] {
     point-file: url('symbols/power_tower_5x5.png');
   }
