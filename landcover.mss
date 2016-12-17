@@ -453,7 +453,7 @@
       line-pattern-file: url('symbols/cliff2.png');
     }
   }
-  [man_made = 'embankment'][zoom >= 15]::man_made {
+  [man_made = 'embankment'][zoom >= 17]::man_made {
     line-pattern-file: url('symbols/cliff.png');
   }
 }
