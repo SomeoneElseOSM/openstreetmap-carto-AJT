@@ -1891,11 +1891,23 @@
     }
 
     [feature = 'railway_light_rail'],
-    [feature = 'railway_funicular'],
-    [feature = 'railway_narrow_gauge'] {
+    [feature = 'railway_funicular'] {
       [zoom >= 13] {
         line-width: 2;
         line-color: #666;
+        .tunnels-fill {
+          line-dasharray: 5,3;
+        }
+      }
+    }
+
+    [feature = 'railway_narrow_gauge'] {
+      [zoom >= 13] {
+        dark/line-width: 2;
+        dark/line-color: #666;
+        light/line-width: 0.67;
+        light/line-color: white;
+        light/line-dasharray: 0,1,8,1;
         .tunnels-fill {
           line-dasharray: 5,3;
         }
