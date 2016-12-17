@@ -332,6 +332,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'sundial'][zoom >= 17]::amenity {
+    point-file: url('symbols/sundial.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'emergency_phone'][zoom >= 17]::amenity {
     point-file: url('symbols/sosphone.png');
     point-placement: interior;
