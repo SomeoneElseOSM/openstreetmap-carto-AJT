@@ -208,6 +208,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'vending_machine'][zoom >= 19]::amenity {
+    point-file: url('symbols/vending.p.16.png');
+    point-placement: interior;
+  }
+
   [tourism = 'museum'][zoom >= 17]::tourism {
     point-file: url('symbols/museum.p.16.png');
     point-placement: interior;
