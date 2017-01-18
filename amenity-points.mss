@@ -1396,7 +1396,8 @@
 
   [man_made = 'lighthouse'][zoom >= 15]::man_made,
   [man_made = 'mast'][zoom >= 15]::man_made,
-  [man_made = 'chimney'][zoom >= 15]::man_made {
+  [man_made = 'chimney'][zoom >= 15]::man_made, 
+  [man_made = 'survey_point'][zoom >= 15]::man_made {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
