@@ -457,6 +457,13 @@
     }
   }
 
+  [shop = 'e-cigarette']::shop {
+    [zoom >= 17] {
+      point-file: url('symbols/shop_ecig.p.16.png');
+      point-placement: interior;
+    }
+  }
+
   [shop = 'electrical']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_electrical.p.16.png');
@@ -1476,6 +1483,7 @@
   [shop = 'bakery']::shop,
   [shop = 'clothes']::shop,
   [shop = 'charity']::shop,
+  [shop = 'e-cigarette']::shop,
   [shop = 'electrical']::shop,
   [shop = 'garden_centre']::shop,
   [shop = 'jewellery']::shop,
