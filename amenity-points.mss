@@ -292,37 +292,67 @@
     point-placement: interior;
   }
 
+  [amenity = 'pub_yyyy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyy.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yyyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyd.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yydy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydy.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydd.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_ynyy'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynyy.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_ynyd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynyd.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_ydyy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyy.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_ydyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyd.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yddy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddy.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'pub'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddd.p.16.png');
     point-placement: interior;
   }
 
-  [amenity = 'pubfood'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyd.p.16.png');
+  [amenity = 'pub_yndy'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_yndy.p.16.png');
     point-placement: interior;
   }
 
-  [amenity = 'realaleyes'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydd.p.16.png');
-    point-placement: interior;
-  }
-
-  [amenity = 'realaleno'][zoom >= 16]::amenity {
+  [amenity = 'pub_yndd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndd.p.16.png');
     point-placement: interior;
   }
 
-  [amenity = 'realaleyesfood'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyd.p.16.png');
-    point-placement: interior;
-  }
-
-  [amenity = 'realalenofood'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynyd.p.16.png');
-    point-placement: interior;
-  }
-
-  [amenity = 'pubdead'][zoom >= 16]::amenity {
+  [amenity = 'pub_nddd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_nddd.p.16.png');
     point-placement: interior;
   }
