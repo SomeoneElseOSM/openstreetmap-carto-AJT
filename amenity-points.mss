@@ -565,6 +565,11 @@
     point-placement: interior;
   }
 
+  [shop = 'vacant'][zoom >= 18]::shop {
+    point-file: url('symbols/office_nonspecific.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'car'][zoom >= 17]::shop {
     point-file: url('symbols/shopping_car.p.16.png');
     point-placement: interior;
@@ -1544,6 +1549,20 @@
       [zoom >= 20] { text-size: 16; }
       text-dy: 10;
       text-fill: #939;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-wrap-width: 12;
+      text-placement: interior;
+    }
+  }
+
+  [shop = 'vacant']::shop {
+    [zoom >= 18] {
+      text-name: "[ref]";
+      text-size: 8;
+      [zoom >= 20] { text-size: 16; }
+      text-dy: 10;
+      text-fill: black;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-wrap-width: 12;
