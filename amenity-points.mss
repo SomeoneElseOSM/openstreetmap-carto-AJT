@@ -646,6 +646,7 @@
   [amenity = 'pub_ynyy']::amenity,
   [amenity = 'pub_ynyd']::amenity,
   [amenity = 'pub_ydyy']::amenity,
+  [amenity = 'pub_ydyd']::amenity,
   [amenity = 'pub_yddy']::amenity,
   [amenity = 'pub_yndy']::amenity,
   [amenity = 'pub_yndd']::amenity,
