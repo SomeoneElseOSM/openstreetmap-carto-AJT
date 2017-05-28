@@ -1285,7 +1285,18 @@
     text-placement: interior;
   }
 
-  [amenity = 'fuel']::amenity,
+  [amenity = 'fuel']::amenity {
+    [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 9;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: #939;
+      text-dy: 9;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+    }
+  }
+
   [amenity = 'bus_station']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
