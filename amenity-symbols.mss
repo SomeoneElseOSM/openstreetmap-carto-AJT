@@ -66,6 +66,11 @@
     point-placement: interior;
   }
 
+  [highway = 'milestone'][zoom >= 17]::highway {
+    point-file: url('symbols/milestone.png');
+    point-placement: interior;
+  }
+
   [natural = 'cave_entrance'][zoom >= 15]::natural {
     point-file: url('symbols/poi_cave.p.16.png');
     point-placement: interior;
