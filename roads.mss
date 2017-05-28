@@ -2617,10 +2617,9 @@
   [feature = 'railway_light_rail'],
   [feature = 'railway_funicular'],
   [feature = 'railway_narrow_gauge'] {
-    [zoom >= 8][zoom < 13] {
+    [zoom >= 10][zoom < 13] {
       line-width: 1;
-      line-color: #ccc;
-      [zoom >= 10] { line-color: #aaa }
+      line-color: #aaa;
     }
   }
 }
