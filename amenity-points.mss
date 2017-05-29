@@ -685,6 +685,7 @@
   [amenity = 'pub_nddd']::amenity,
   [amenity = 'restaurant']::amenity,
   [amenity = 'cafe']::amenity,
+  [amenity = 'sundial']::amenity, 
   [amenity = 'fast_food']::amenity,
   [amenity = 'fish_and_chips']::amenity,
   [amenity = 'pizza']::amenity,
