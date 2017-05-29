@@ -1717,8 +1717,8 @@
           background/line-color: @ldpnwn-casing;
           background/line-cap: round;
           background/line-join: round;
-          background/line-width: 3;
-          .roads-fill { background/line-opacity: 0.4; }
+          background/line-width: 5;
+          .roads-fill { background/line-opacity: 0.1; }
         }
         line/line-color: @ldpnwn-fill;
         [zoom >= 13] { line/line-dasharray: 1,30; }
