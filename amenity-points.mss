@@ -392,6 +392,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'fast_food_chicken'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_chicken.png');
+    point-placement: interior;
+  }
+
   [amenity = 'fast_food_sandwich'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food_sandwich.png');
     point-placement: interior;
@@ -680,6 +685,7 @@
   [amenity = 'pizza']::amenity,
   [amenity = 'chinese']::amenity,
   [amenity = 'fast_food_indian']::amenity,
+  [amenity = 'fast_food_chicken']::amenity,
   [amenity = 'fast_food_sandwich']::amenity,
   [amenity = 'fast_food_coffee']::amenity,
   [amenity = 'biergarten']::amenity {
