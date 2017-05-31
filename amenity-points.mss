@@ -312,6 +312,26 @@
     point-placement: interior;
   }
 
+  [amenity = 'pub_yyyyy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyyy.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yyydy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydy.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yydyy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydyy.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yyddy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddy.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'pub_ynyy'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyy.p.16.png');
     point-placement: interior;
@@ -339,6 +359,26 @@
 
   [amenity = 'pub'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddd.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_ydyyy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyyy.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_ydydy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydy.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yddyy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddyy.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_ydddy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddy.p.16.png');
     point-placement: interior;
   }
 
@@ -671,15 +711,23 @@
   }
 
   [amenity = 'pub']::amenity,
+  [amenity = 'pub_ydddy']::amenity,
   [amenity = 'pub_yyyy']::amenity,
   [amenity = 'pub_yyyd']::amenity,
   [amenity = 'pub_yydy']::amenity,
   [amenity = 'pub_yydd']::amenity,
+  [amenity = 'pub_yyyyy']::amenity,
+  [amenity = 'pub_yyydy']::amenity,
+  [amenity = 'pub_yydyy']::amenity,
+  [amenity = 'pub_yyddy']::amenity,
   [amenity = 'pub_ynyy']::amenity,
   [amenity = 'pub_ynyd']::amenity,
   [amenity = 'pub_ydyy']::amenity,
   [amenity = 'pub_ydyd']::amenity,
   [amenity = 'pub_yddy']::amenity,
+  [amenity = 'pub_ydyyy']::amenity,
+  [amenity = 'pub_ydydy']::amenity,
+  [amenity = 'pub_yddyy']::amenity,
   [amenity = 'pub_yndy']::amenity,
   [amenity = 'pub_yndd']::amenity,
   [amenity = 'pub_nddd']::amenity,
