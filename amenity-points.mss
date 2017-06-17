@@ -417,18 +417,8 @@
     point-placement: interior;
   }
 
-  [amenity = 'fish_and_chips'][zoom >= 17]::amenity {
-    point-file: url('symbols/fishnchips.png');
-    point-placement: interior;
-  }
-
-  [amenity = 'pizza'][zoom >= 17]::amenity {
-    point-file: url('symbols/pizza.png');
-    point-placement: interior;
-  }
-
-  [amenity = 'fast_food_indian'][zoom >= 17]::amenity {
-    point-file: url('symbols/fast_food_indian.png');
+  [amenity = 'fast_food_burger'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_burger.png');
     point-placement: interior;
   }
 
@@ -437,13 +427,8 @@
     point-placement: interior;
   }
 
-  [amenity = 'fast_food_burger'][zoom >= 17]::amenity {
-    point-file: url('symbols/fast_food_burger.png');
-    point-placement: interior;
-  }
-
-  [amenity = 'fast_food_sandwich'][zoom >= 17]::amenity {
-    point-file: url('symbols/fast_food_sandwich.png');
+  [amenity = 'fast_food_chinese'][zoom >= 17]::amenity {
+    point-file: url('symbols/chinese.png');
     point-placement: interior;
   }
 
@@ -452,8 +437,38 @@
     point-placement: interior;
   }
 
-  [amenity = 'chinese'][zoom >= 17]::amenity {
-    point-file: url('symbols/chinese.png');
+  [amenity = 'fast_food_fish_and_chips'][zoom >= 17]::amenity {
+    point-file: url('symbols/fishnchips.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'fast_food_ice_cream'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_ice_cream.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'fast_food_indian'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_indian.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'fast_food_kebab'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_kebab.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'fast_food_pie'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_pie.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'fast_food_pizza'][zoom >= 17]::amenity {
+    point-file: url('symbols/pizza.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'fast_food_sandwich'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_sandwich.png');
     point-placement: interior;
   }
 
@@ -740,14 +755,17 @@
   [amenity = 'cafe']::amenity,
   [amenity = 'sundial']::amenity, 
   [amenity = 'fast_food']::amenity,
-  [amenity = 'fish_and_chips']::amenity,
-  [amenity = 'pizza']::amenity,
-  [amenity = 'chinese']::amenity,
-  [amenity = 'fast_food_indian']::amenity,
-  [amenity = 'fast_food_chicken']::amenity,
-  [amenity = 'fast_food_sandwich']::amenity,
-  [amenity = 'fast_food_coffee']::amenity,
   [amenity = 'fast_food_burger']::amenity,
+  [amenity = 'fast_food_chicken']::amenity,
+  [amenity = 'fast_food_chinese']::amenity,
+  [amenity = 'fast_food_coffee']::amenity,
+  [amenity = 'fast_food_fish_and_chips']::amenity,
+  [amenity = 'fast_food_ice_cream']::amenity,
+  [amenity = 'fast_food_indian']::amenity,
+  [amenity = 'fast_food_kebab']::amenity,
+  [amenity = 'fast_food_pie']::amenity,
+  [amenity = 'fast_food_pizza']::amenity,
+  [amenity = 'fast_food_sandwich']::amenity,
   [amenity = 'biergarten']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
