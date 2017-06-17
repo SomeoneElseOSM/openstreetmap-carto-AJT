@@ -672,6 +672,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'defibrillator'][zoom >= 17]::amenity {
+    point-file: url('symbols/health_defibrillator.p.16.png');
+    point-placement: interior;
+  }
+
   [leisure = 'playground'][zoom >= 17]::leisure {
     point-file: url('symbols/playground.p.20.png');
     point-placement: interior;
