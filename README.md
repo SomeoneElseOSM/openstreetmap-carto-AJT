@@ -42,3 +42,12 @@ Other changes:
 * Made low-zoom tiles more road-specific.
 
 * Added support for zoom levels 19 and 20 (wider roads and z19, larger text at z20).
+
+* Different icons for pubs and fast food places used depending on attributes such as cuisine.  See https://map.atownsend.org.uk/maps/map/map.html#zoom=17&lat=-24.987206&lon=135.08483 .
+
+* Render offices
+
+* Render walking routes https://map.atownsend.org.uk/maps/map/map.html#zoom=15&lat=-24.9959&lon=135.05924 .
+
+* Render sidewalks and verges on some road types https://map.atownsend.org.uk/maps/map/map.html#zoom=15&lat=-24.994&lon=135.01993 .
+
