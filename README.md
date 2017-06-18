@@ -51,3 +51,4 @@ Other changes:
 
 * Render sidewalks and verges on some road types https://map.atownsend.org.uk/maps/map/map.html#zoom=15&lat=-24.994&lon=135.01993 .
 
+* Render various sorts of towers and chimneys better (with name and icon as appropriate) https://map.atownsend.org.uk/maps/map/map.html#zoom=19&lat=53.960266&lon=-1.071566 .
