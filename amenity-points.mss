@@ -159,6 +159,31 @@
     point-placement: interior;
   }
 
+  [tourism = 'informationboard'][zoom >= 16]::tourism {
+    point-file: url('symbols/informationboard.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'informationmarker'][zoom >= 16]::tourism {
+    point-file: url('symbols/informationmarker.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'informationoffice'][zoom >= 16]::tourism {
+    point-file: url('symbols/informationoffice.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'informationplaque'][zoom >= 16]::tourism {
+    point-file: url('symbols/informationplaque.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'informationear'][zoom >= 16]::tourism {
+    point-file: url('symbols/informationear.png');
+    point-placement: interior;
+  }
+
   [tourism = 'informationpnfs'][zoom >= 15]::tourism {
     point-file: url('symbols/informationpnfs.p.16.png');
     point-placement: interior;
