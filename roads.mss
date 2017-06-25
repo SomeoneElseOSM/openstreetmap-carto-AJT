@@ -771,6 +771,7 @@
       }
     }
 
+    [feature = 'aeroway_grass_runway'], 
     [feature = 'aeroway_runway'] {
       .bridges-casing {
         [zoom >= 14] {
@@ -2113,6 +2114,25 @@
       }
     }
 
+    [feature = 'aeroway_grass_runway'] {
+      [zoom >= 13][zoom < 14] {
+        line-width: 2;
+        line-color: @runway-fill;
+      }
+      [zoom >= 14][zoom < 15] {
+        line-width: 5;
+        line-color: @runway-fill;
+      }
+      [zoom >= 15][zoom < 17] {
+        line-width: 11;
+        line-color: @runway-fill;
+      }
+      [zoom >= 17] {
+        line-width: 18;
+        line-color: @runway-fill;
+      }
+    }
+
     [feature = 'aeroway_runway'] {
       [zoom >= 11][zoom < 14] {
         line-width: 2;
@@ -2120,7 +2140,7 @@
         [zoom >= 12] { line-width: 4; }
         [zoom >= 13] { line-width: 7; }
       }
-      [zoom >= 14][zoom < 16] {
+      [zoom >= 14][zoom < 17] {
         line-width: 11;
         line-color: @runway-fill;
       }
@@ -2378,6 +2398,7 @@
     }
   }
 
+  [feature = 'aeroway_grass_runway'][zoom >= 11], 
   [feature = 'aeroway_runway'][zoom >= 11] {
     polygon-fill: @runway-fill;
   }
@@ -2869,6 +2890,7 @@
       text-clip: false;
     }
   }
+}
 
 #roads-text-name {
   [highway = 'motorway'],
@@ -3143,3 +3165,4 @@
     }
   }
 }
+
