@@ -381,7 +381,8 @@
     polygon-fill: @apron;
   }
 
-  [feature = 'aeroway_aerodrome'][zoom >= 12] {
+  [feature = 'aeroway_aerodrome'][zoom >= 12],
+  [feature = 'aeroway_large_aerodrome'][zoom >= 12] {
     polygon-fill: @aerodrome;
     polygon-opacity: 0.2;
     line-width: 0.2;

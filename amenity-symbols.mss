@@ -10,7 +10,7 @@
     text-placement: interior;
   }
 
-  [aeroway = 'aerodrome'][zoom >= 10][zoom < 13]::aeroway {
+  [aeroway = 'large_aerodrome'][zoom >= 10][zoom < 13]::aeroway {
     [zoom < 11] {
       point-file: url('symbols/aerodrome.p.16.png');
       text-dy: -12;
