@@ -51,6 +51,7 @@
 
 @tunnel-casing: grey;
 @bridge-casing: black;
+@levee-casing: #999999;
 
 @motorway-tunnel-fill: lighten(@motorway-fill, 25%);
 @trunk-tunnel-fill: lighten(@trunk-fill, 10%);
@@ -133,7 +134,7 @@
 @bridge-casing-width-z17:         0.75;
 @bridge-casing-width-z19:         1.5;
 
-.roads-casing, .bridges-casing, .tunnels-casing {
+.roads-casing, .bridges-casing, .levees-casing, .tunnels-casing {
   ::casing_links {
     [feature = 'highway_raceway'] {
       [zoom >= 12] {
@@ -636,6 +637,14 @@
           line-join: round;
         }
       }
+      .levees-casing {
+        [zoom >= 14] {
+          line-width: 6.5;
+          [zoom >= 15] { line-width: 9.5; }
+          line-color: @levee-casing;
+          line-join: round;
+        }
+      }
     }
 
     /* casing for normal and wide bridleways the same; fill different */
@@ -645,6 +654,13 @@
         [zoom >= 14] {
           line-width: 5.5;
           line-color: @bridge-casing;
+          line-join: round;
+        }
+      }
+      .levees-casing {
+        [zoom >= 14] {
+          line-width: 5.5;
+          line-color: @levee-casing;
           line-join: round;
         }
       }
@@ -660,20 +676,16 @@
           line-join: round;
         }
       }
-    }
-
-    /* casing for ldpnwn currently not defined */
-    /*
-    [feature = 'highway_ldpnwn'] {
-      .bridges-casing {
+      .levees-casing {
         [zoom >= 14] {
-          line-width: 5.5;
-          line-color: @bridge-casing;
+          line-width: 6;
+          line-color: @levee-casing;
           line-join: round;
         }
       }
     }
-    */
+
+    /* casing for ldpnwn not needed */
 
     /* casing for normal and wide paths the same; fill different */
     [feature = 'highway_path'],
@@ -685,6 +697,13 @@
           line-join: round;
         }
       }
+      .levees-casing {
+        [zoom >= 14] {
+          line-width: 4;
+          line-color: @levee-casing;
+          line-join: round;
+        }
+      }
     }
 
     [feature = 'highway_track'],
@@ -692,6 +711,28 @@
       .bridges-casing {
         [zoom >= 13] {
           line-color: @bridge-casing;
+          line-join: round;
+          line-width: 4.4;
+          [tracktype = 'grade1'] {
+            line-width: 5.2;
+          }
+          [tracktype = 'grade2'] {
+            line-width: 4.8;
+          }
+        }
+        [zoom >= 15] {
+          line-width: 5;
+          [tracktype = 'grade1'] {
+            line-width: 6;
+          }
+          [tracktype = 'grade2'] {
+            line-width: 5.5;
+          }
+        }
+      }
+      .levees-casing {
+        [zoom >= 13] {
+          line-color: @levee-casing;
           line-join: round;
           line-width: 4.4;
           [tracktype = 'grade1'] {
@@ -805,6 +846,13 @@
           line-join: round;
         }
       }
+      .levees-casing {
+        [zoom >= 14] {
+          line-width: 4;
+          line-color: @bridleway-casing;
+          line-join: round;
+        }
+      }
     }
 
     /* casing for normal and wide footways the same; fill different */
@@ -817,26 +865,30 @@
           line-join: round;
         }
       }
-    }
-
-    /* casing for ldpnwn currently not defined */
-    /*
-    [feature = 'highway_ldpnwn'] {
-      .bridges-casing {
+      .levees-casing {
         [zoom >= 14] {
-          line-width: 4;
-          line-color: @ldpnwn-casing;
+          line-width: 4.5;
+          line-color: @footway-casing;
           line-join: round;
         }
       }
     }
-    */
+
+    /* casing for ldpnwn not needed */
 
     /* casing for all sorts of steps the same; fill different */
     [feature = 'highway_steps'],
     [feature = 'highway_footwaysteps'],
     [feature = 'highway_bridlewaysteps'] {
       .bridges-casing {
+        [zoom >= 14] {
+          line-width: 5;
+          [zoom >= 15] { line-width: 8; }
+          line-color: @steps-casing;
+          line-join: round;
+        }
+      }
+      .levees-casing {
         [zoom >= 14] {
           line-width: 5;
           [zoom >= 15] { line-width: 8; }
@@ -856,12 +908,41 @@
           line-join: round;
         }
       }
+      .levees-casing {
+        [zoom >= 14] {
+          line-width: 2.5;
+          line-color: @path-casing;
+          line-join: round;
+        }
+      }
     }
 
     [feature = 'highway_track'],
     [feature = 'highway_track_graded'] {
       /* We don't set opacity here, so it's 1.0. Aside from that, it's basically a copy of roads-fill::background in the track part of ::fill */
       .bridges-casing {
+        [zoom >= 13] {
+          line-color: @track-casing;
+          line-join: round;
+          line-width: 2.4;
+          [tracktype = 'grade1'] {
+            line-width: 3.2;
+          }
+          [tracktype = 'grade2'] {
+            line-width: 2.8;
+          }
+        }
+        [zoom >= 15] {
+          line-width: 3;
+          [tracktype = 'grade1'] {
+            line-width: 4;
+          }
+          [tracktype = 'grade2'] {
+            line-width: 3.5;
+          }
+        }
+      }
+      .levees-casing {
         [zoom >= 13] {
           line-color: @track-casing;
           line-join: round;
@@ -943,7 +1024,7 @@
   }
 }
 
-.roads-fill,.bridges-fill,.tunnels-fill {
+.roads-fill,.bridges-fill,.levees-fill,.tunnels-fill {
   ::fill_links {
     [feature = 'highway_motorway_link'] {
       [zoom >= 12] {
@@ -1598,6 +1679,10 @@
           [zoom >= 13] { line/line-width: 1.2; }
           [zoom >= 14] { line/line-width: 1.5; }
         }
+        .levees-fill {
+          [zoom >= 13] { line/line-width: 1.2; }
+          [zoom >= 14] { line/line-width: 1.5; }
+        }
         .tunnels-fill {
           line/line-width: 2;
           line/line-opacity: 0.5;
@@ -1627,6 +1712,10 @@
           line/line-width: 1.2;
         }
         .bridges-fill {
+          [zoom >= 13] { line/line-width: 1.2; }
+          [zoom >= 14] { line/line-width: 1.5; }
+        }
+        .levees-fill {
           [zoom >= 13] { line/line-width: 1.2; }
           [zoom >= 14] { line/line-width: 1.5; }
         }
@@ -1666,6 +1755,10 @@
           [zoom >= 13] { line/line-width: 1.5; }
           [zoom >= 14] { line/line-width: 2; }
         }
+        .levees-fill {
+          [zoom >= 13] { line/line-width: 1.5; }
+          [zoom >= 14] { line/line-width: 2; }
+        }
         .tunnels-fill {
           line/line-width: 2.5;
           line/line-opacity: 0.5;
@@ -1696,6 +1789,10 @@
           line/line-width: 1.5;
         }
         .bridges-fill {
+          [zoom >= 13] { line/line-width: 1.5; }
+          [zoom >= 14] { line/line-width: 2; }
+        }
+        .levees-fill {
           [zoom >= 13] { line/line-width: 1.5; }
           [zoom >= 14] { line/line-width: 2; }
         }
@@ -1730,6 +1827,10 @@
           line/line-width: 4;
         }
         .bridges-fill {
+          [zoom >= 13] { line/line-width: 1.2; }
+          [zoom >= 14] { line/line-width: 1.5; }
+        }
+        .levees-fill {
           [zoom >= 13] { line/line-width: 1.2; }
           [zoom >= 14] { line/line-width: 1.5; }
         }
