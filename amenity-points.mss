@@ -1529,6 +1529,13 @@
   [tourism = 'zoo'][zoom >= 17]::tourism,
   [tourism = 'artwork'][zoom >= 17]::tourism,
   [tourism = 'museum'][zoom >= 17]::tourism,
+  [tourism = 'information'][zoom >= 17]::tourism,
+  [tourism = 'informationboard'][zoom >= 17]::tourism,
+  [tourism = 'informationmarker'][zoom >= 17]::tourism,
+  [tourism = 'informationoffice'][zoom >= 17]::tourism,
+  [tourism = 'informationplaque'][zoom >= 17]::tourism,
+  [tourism = 'informationear'][zoom >= 17]::tourism,
+  [tourism = 'informationpnfs'][zoom >= 17]::tourism,
   [amenity = 'bench'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
