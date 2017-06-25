@@ -457,6 +457,12 @@
   [man_made = 'embankment'][zoom >= 17]::man_made {
     line-pattern-file: url('symbols/cliff.png');
   }
+  [man_made = 'levee'][zoom >= 13]::man_made {
+    line-pattern-file: url('symbols/embankment.png');
+  }
+  [man_made = 'levee'][zoom >= 17]::man_made {
+    line-pattern-file: url('symbols/embankment2.png');
+  }
 }
 
 #area-barriers {

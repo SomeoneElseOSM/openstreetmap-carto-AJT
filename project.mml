@@ -541,7 +541,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select way,\"natural\",man_made from planet_osm_line where \"natural\" = 'cliff' or man_made = 'embankment') as cliffs",
+        "table": "(select way,\"natural\",man_made from planet_osm_line where \"natural\" = 'cliff' or man_made = 'embankment' or man_made = 'levee') as cliffs",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
