@@ -692,6 +692,11 @@
     point-placement: interior;
   }
 
+  [shop = 'car_parts'][zoom >= 17]::shop {
+    point-file: url('symbols/shopping_car_parts.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'bicycle'][zoom >= 17]::shop {
     point-file: url('symbols/shopping_bicycle.p.16.png');
     point-placement: interior;
@@ -1688,6 +1693,7 @@
   [shop = 'butcher']::shop,
   [shop = 'car']::shop,
   [shop = 'car_repair']::shop,
+  [shop = 'car_parts']::shop,
   [shop = 'bicycle']::shop,
   [shop = 'estate_agent']::shop,
   [shop = 'florist']::shop,
