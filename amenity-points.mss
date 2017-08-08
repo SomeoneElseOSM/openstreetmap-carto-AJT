@@ -707,6 +707,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'car_wash'][zoom >= 17]::shop {
+    point-file: url('symbols/amenity_car_wash.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'bicycle'][zoom >= 17]::shop {
     point-file: url('symbols/shopping_bicycle.p.16.png');
     point-placement: interior;
@@ -1704,6 +1709,7 @@
   [shop = 'car']::shop,
   [shop = 'car_repair']::shop,
   [shop = 'car_parts']::shop,
+  [amenity = 'car_wash']::amenity,
   [shop = 'bicycle']::shop,
   [shop = 'estate_agent']::shop,
   [shop = 'florist']::shop,
