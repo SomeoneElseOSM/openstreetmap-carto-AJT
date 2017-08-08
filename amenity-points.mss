@@ -41,6 +41,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'bicycle_parking'][zoom >= 19]::amenity {
+    point-file: url('symbols/bicycle_parking.p.20.png');
+    point-placement: interior;
+  }
+
   [amenity = 'bus_stop']::amenity,
   [highway = 'bus_stop']::highway {
     [zoom >= 16] {
