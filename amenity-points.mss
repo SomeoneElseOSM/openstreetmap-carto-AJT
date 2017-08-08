@@ -238,6 +238,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'waste_basket'][zoom >= 19]::amenity {
+    point-file: url('symbols/waste_basket.p.16.png');
+    point-placement: interior;
+  }
+
   [tourism = 'museum'][zoom >= 17]::tourism {
     point-file: url('symbols/museum.p.16.png');
     point-placement: interior;
