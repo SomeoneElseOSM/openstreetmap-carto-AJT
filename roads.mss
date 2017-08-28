@@ -354,23 +354,26 @@
 
     [feature = 'highway_secondary_verge'] {
       [zoom >= 12] {
-        line-color: @secondary-verge-casing;
+        line-color: @secondary-sidewalk-casing;
         line-width: @secondary-width-z12;
-        [zoom >= 13] { line-width: @secondary-width-z13; }
-        [zoom >= 15] { line-width: @secondary-width-z15; }
-        [zoom >= 17] { line-width: @secondary-width-z17; }
-        [zoom >= 19] { line-width: @secondary-width-z19; }
-        .roads-casing {
-          line-join: round;
-          line-cap: round;
-        }
-        .tunnels-casing {
-          line-dasharray: 4,2;
-        }
-        .bridges-casing {
-          [zoom >= 13] {
-            line-color: @bridge-casing;
+        [zoom >= 13] { 
+          line-color: @secondary-verge-casing;
+          line-width: @secondary-width-z13;
+          [zoom >= 15] { line-width: @secondary-width-z15; }
+          [zoom >= 17] { line-width: @secondary-width-z17; }
+          [zoom >= 19] { line-width: @secondary-width-z19; }
+          .roads-casing {
             line-join: round;
+            line-cap: round;
+          }
+          .tunnels-casing {
+            line-dasharray: 4,2;
+          }
+          .bridges-casing {
+            [zoom >= 13] {
+              line-color: @bridge-casing;
+              line-join: round;
+            }
           }
         }
       }
