@@ -25,6 +25,8 @@
 @motorway-casing: #7788a1;
 @trunk-casing: #800000;
 @primary-casing: #c57b7e;
+@primary-sidewalk-casing: #c57b7e;
+@primary-verge-casing: #99cc00;
 @secondary-sidewalk-casing: #cca16a;
 @secondary-verge-casing: #99cc00;
 @tertiary-sidewalk-casing: #c6c68a;
@@ -374,6 +376,54 @@
     [feature = 'highway_primary'] {
       [zoom >= 12] {
         line-color: @primary-casing;
+        line-width: @primary-width-z12;
+        [zoom >= 13] { line-width: @primary-width-z13; }
+        [zoom >= 14] { line-width: @primary-width-z14; }
+        [zoom >= 15] { line-width: @primary-width-z15; }
+        [zoom >= 17] { line-width: @primary-width-z17; }
+        [zoom >= 18] { line-width: @primary-width-z18; }
+        [zoom >= 19] { line-width: @primary-width-z19; }
+        .roads-casing {
+          line-join: round;
+          line-cap: round;
+        }
+        .tunnels-casing {
+          line-dasharray: 4,2;
+        }
+        .bridges-casing {
+          line-join: round;
+          [zoom >= 13] { line-color: @bridge-casing; }
+        }
+      }
+    }
+
+    [feature = 'highway_primary_sidewalk'] {
+      [zoom >= 12] {
+        line-color: @primary-sidewalk-casing;
+        line-width: @primary-width-z12;
+        [zoom >= 13] { line-width: @primary-width-z13; }
+        [zoom >= 14] { line-width: @primary-width-z14; }
+        [zoom >= 15] { line-width: @primary-width-z15; }
+        [zoom >= 17] { line-width: @primary-width-z17; }
+        [zoom >= 18] { line-width: @primary-width-z18; }
+        [zoom >= 19] { line-width: @primary-width-z19; }
+        .roads-casing {
+          line-join: round;
+          line-cap: round;
+        }
+        .tunnels-casing {
+          line-dasharray: 4,2;
+        }
+        .bridges-casing {
+          line-join: round;
+          [zoom >= 13] { line-color: @bridge-casing; }
+        }
+      }
+    }
+
+    [feature = 'highway_primary_verge'] {
+      [zoom >= 12] {
+        line-color: @primary-verge-casing;
         line-width: @primary-width-z12;
         [zoom >= 13] { line-width: @primary-width-z13; }
         [zoom >= 14] { line-width: @primary-width-z14; }
@@ -1415,6 +1465,93 @@
       }
     }
 
+    [feature = 'highway_primary_sidewalk'] {
+      [zoom >= 12] {
+        line-width: @primary-width-z12 - 2 * @casing-width-z12;
+        [zoom >= 13] { line-width: @primary-width-z13 - 2 * @sidewalk-width-z13; }
+        [zoom >= 14] { line-width: @primary-width-z14 - 2 * @sidewalk-width-z14; }
+        [zoom >= 15] { line-width: @primary-width-z15 - 2 * @sidewalk-width-z15; }
+        [zoom >= 17] { line-width: @primary-width-z17 - 2 * @sidewalk-width-z17; }
+        [zoom >= 18] { line-width: @primary-width-z18 - 2 * @sidewalk-width-z18; }
+        [zoom >= 19] { line-width: @primary-width-z19 - 2 * @sidewalk-width-z19; }
+        .roads-fill, .bridges-fill {
+          line-color: @primary-fill;
+        }
+        .tunnels-fill {
+          line-color: @primary-tunnel-fill;
+        }
+        .bridges-fill {
+          line-width: @primary-width-z12 - 2 * @bridge-casing-width-z12;
+          [zoom >= 13] { line-width: @primary-width-z13 - 2 * @bridge-casing-width-z13; }
+          [zoom >= 14] { line-width: @primary-width-z14 - 2 * @bridge-casing-width-z14; }
+          [zoom >= 15] { line-width: @primary-width-z15 - 2 * @bridge-casing-width-z15; }
+          [zoom >= 17] { line-width: @primary-width-z17 - 2 * @bridge-casing-width-z17; }
+          [zoom >= 18] { line-width: @primary-width-z18 - 2 * @bridge-casing-width-z18; }
+          [zoom >= 19] { line-width: @primary-width-z19 - 2 * @bridge-casing-width-z19; }
+        }
+        line-cap: round;
+        line-join: round;
+      }
+    }
+
+    [feature = 'highway_primary_verge'] {
+      [zoom >= 12] {
+        line-width: @primary-width-z12 - 2 * @casing-width-z12;
+        [zoom >= 13] { line-width: @primary-width-z13 - 2 * @verge-width-z13; }
+        [zoom >= 14] { line-width: @primary-width-z14 - 2 * @verge-width-z14; }
+        [zoom >= 15] { line-width: @primary-width-z15 - 2 * @verge-width-z15; }
+        [zoom >= 17] { line-width: @primary-width-z17 - 2 * @verge-width-z17; }
+        [zoom >= 18] { line-width: @primary-width-z18 - 2 * @verge-width-z18; }
+        [zoom >= 19] { line-width: @primary-width-z19 - 2 * @verge-width-z19; }
+        .roads-fill, .bridges-fill {
+          line-color: @primary-fill;
+        }
+        .tunnels-fill {
+          line-color: @primary-tunnel-fill;
+        }
+        .bridges-fill {
+          line-width: @primary-width-z12 - 2 * @bridge-casing-width-z12;
+          [zoom >= 13] { line-width: @primary-width-z13 - 2 * @bridge-casing-width-z13; }
+          [zoom >= 14] { line-width: @primary-width-z14 - 2 * @bridge-casing-width-z14; }
+          [zoom >= 15] { line-width: @primary-width-z15 - 2 * @bridge-casing-width-z15; }
+          [zoom >= 17] { line-width: @primary-width-z17 - 2 * @bridge-casing-width-z17; }
+          [zoom >= 18] { line-width: @primary-width-z18 - 2 * @bridge-casing-width-z18; }
+          [zoom >= 19] { line-width: @primary-width-z19 - 2 * @bridge-casing-width-z19; }
+        }
+        line-cap: round;
+        line-join: round;
+      }
+    }
+
+    [feature = 'highway_secondary'] {
+      [zoom >= 12] {
+        line-width: @secondary-width-z12 - 2 * @casing-width-z12;
+        [zoom >= 13] { line-width: @secondary-width-z13 - 2 * @casing-width-z13; }
+        [zoom >= 14] { line-width: @secondary-width-z14 - 2 * @casing-width-z14; }
+        [zoom >= 15] { line-width: @secondary-width-z15 - 2 * @casing-width-z15; }
+        [zoom >= 17] { line-width: @secondary-width-z17 - 2 * @casing-width-z17; }
+        [zoom >= 18] { line-width: @secondary-width-z18 - 2 * @casing-width-z18; }
+        [zoom >= 19] { line-width: @secondary-width-z19 - 2 * @casing-width-z19; }
+        .roads-fill, .bridges-fill {
+          line-color: @secondary-fill;
+        }
+        .tunnels-fill {
+          line-color: @secondary-tunnel-fill;
+        }
+        .bridges-fill {
+          line-width: @secondary-width-z12 - 2 * @bridge-casing-width-z12;
+          [zoom >= 13] { line-width: @secondary-width-z13 - 2 * @bridge-casing-width-z13; }
+          [zoom >= 14] { line-width: @secondary-width-z14 - 2 * @bridge-casing-width-z14; }
+          [zoom >= 15] { line-width: @secondary-width-z15 - 2 * @bridge-casing-width-z15; }
+          [zoom >= 17] { line-width: @secondary-width-z17 - 2 * @bridge-casing-width-z17; }
+          [zoom >= 18] { line-width: @secondary-width-z18 - 2 * @bridge-casing-width-z18; }
+          [zoom >= 19] { line-width: @secondary-width-z19 - 2 * @bridge-casing-width-z19; }
+        }
+        line-cap: butt;
+        line-join: round;
+      }
+    }
+
     [feature = 'highway_secondary_sidewalk'] {
       [zoom >= 12] {
         line-width: @secondary-width-z12 - 2 * @casing-width-z12;
@@ -1473,29 +1610,27 @@
       }
     }
 
-    [feature = 'highway_secondary'] {
-      [zoom >= 12] {
-        line-width: @secondary-width-z12 - 2 * @casing-width-z12;
-        [zoom >= 13] { line-width: @secondary-width-z13 - 2 * @casing-width-z13; }
-        [zoom >= 14] { line-width: @secondary-width-z14 - 2 * @casing-width-z14; }
-        [zoom >= 15] { line-width: @secondary-width-z15 - 2 * @casing-width-z15; }
-        [zoom >= 17] { line-width: @secondary-width-z17 - 2 * @casing-width-z17; }
-        [zoom >= 18] { line-width: @secondary-width-z18 - 2 * @casing-width-z18; }
-        [zoom >= 19] { line-width: @secondary-width-z19 - 2 * @casing-width-z19; }
+    [feature = 'highway_tertiary'] {
+      [zoom >= 13] {
+        line-width: @tertiary-width-z13 - 2 * @casing-width-z13;
+        [zoom >= 14] { line-width: @tertiary-width-z14 - 2 * @casing-width-z14; }
+        [zoom >= 15] { line-width: @tertiary-width-z15 - 2 * @casing-width-z15; }
+        [zoom >= 17] { line-width: @tertiary-width-z17 - 2 * @casing-width-z17; }
+        [zoom >= 18] { line-width: @tertiary-width-z18 - 2 * @casing-width-z18; }
+        [zoom >= 19] { line-width: @tertiary-width-z19 - 2 * @casing-width-z19; }
         .roads-fill, .bridges-fill {
-          line-color: @secondary-fill;
+          line-color: @tertiary-fill;
         }
         .tunnels-fill {
-          line-color: @secondary-tunnel-fill;
+          line-color: @tertiary-tunnel-fill;
         }
         .bridges-fill {
-          line-width: @secondary-width-z12 - 2 * @bridge-casing-width-z12;
-          [zoom >= 13] { line-width: @secondary-width-z13 - 2 * @bridge-casing-width-z13; }
-          [zoom >= 14] { line-width: @secondary-width-z14 - 2 * @bridge-casing-width-z14; }
-          [zoom >= 15] { line-width: @secondary-width-z15 - 2 * @bridge-casing-width-z15; }
-          [zoom >= 17] { line-width: @secondary-width-z17 - 2 * @bridge-casing-width-z17; }
-          [zoom >= 18] { line-width: @secondary-width-z18 - 2 * @bridge-casing-width-z18; }
-          [zoom >= 19] { line-width: @secondary-width-z19 - 2 * @bridge-casing-width-z19; }
+          line-width: @tertiary-width-z13 - 2 * @bridge-casing-width-z13;
+          [zoom >= 14] { line-width: @tertiary-width-z14 - 2 * @bridge-casing-width-z14; }
+          [zoom >= 15] { line-width: @tertiary-width-z15 - 2 * @bridge-casing-width-z15; }
+          [zoom >= 17] { line-width: @tertiary-width-z17 - 2 * @bridge-casing-width-z17; }
+          [zoom >= 18] { line-width: @tertiary-width-z18 - 2 * @bridge-casing-width-z18; }
+          [zoom >= 19] { line-width: @tertiary-width-z19 - 2 * @bridge-casing-width-z19; }
         }
         line-cap: butt;
         line-join: round;
@@ -1537,33 +1672,6 @@
         [zoom >= 17] { line-width: @tertiary-width-z17 - 2 * @verge-width-z17; }
         [zoom >= 18] { line-width: @tertiary-width-z18 - 2 * @verge-width-z18; }
         [zoom >= 19] { line-width: @tertiary-width-z19 - 2 * @verge-width-z19; }
-        .roads-fill, .bridges-fill {
-          line-color: @tertiary-fill;
-        }
-        .tunnels-fill {
-          line-color: @tertiary-tunnel-fill;
-        }
-        .bridges-fill {
-          line-width: @tertiary-width-z13 - 2 * @bridge-casing-width-z13;
-          [zoom >= 14] { line-width: @tertiary-width-z14 - 2 * @bridge-casing-width-z14; }
-          [zoom >= 15] { line-width: @tertiary-width-z15 - 2 * @bridge-casing-width-z15; }
-          [zoom >= 17] { line-width: @tertiary-width-z17 - 2 * @bridge-casing-width-z17; }
-          [zoom >= 18] { line-width: @tertiary-width-z18 - 2 * @bridge-casing-width-z18; }
-          [zoom >= 19] { line-width: @tertiary-width-z19 - 2 * @bridge-casing-width-z19; }
-        }
-        line-cap: butt;
-        line-join: round;
-      }
-    }
-
-    [feature = 'highway_tertiary'] {
-      [zoom >= 13] {
-        line-width: @tertiary-width-z13 - 2 * @casing-width-z13;
-        [zoom >= 14] { line-width: @tertiary-width-z14 - 2 * @casing-width-z14; }
-        [zoom >= 15] { line-width: @tertiary-width-z15 - 2 * @casing-width-z15; }
-        [zoom >= 17] { line-width: @tertiary-width-z17 - 2 * @casing-width-z17; }
-        [zoom >= 18] { line-width: @tertiary-width-z18 - 2 * @casing-width-z18; }
-        [zoom >= 19] { line-width: @tertiary-width-z19 - 2 * @casing-width-z19; }
         .roads-fill, .bridges-fill {
           line-color: @tertiary-fill;
         }
