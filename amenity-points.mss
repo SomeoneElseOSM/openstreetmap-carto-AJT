@@ -248,6 +248,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'left_luggage'][zoom >= 18]::amenity {
+    point-file: url('symbols/left_luggage.p.16.png');
+    point-placement: interior;
+  }
+
   [tourism = 'museum'][zoom >= 17]::tourism {
     point-file: url('symbols/museum.p.16.png');
     point-placement: interior;
