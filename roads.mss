@@ -2926,6 +2926,8 @@
     [feature = 'highway_trunk'],
     [feature = 'highway_trunk_link'],
     [feature = 'highway_primary'],
+    [feature = 'highway_primary_sidewalk'],
+    [feature = 'highway_primary_verge'],
     [feature = 'highway_primary_link'],
     [feature = 'highway_secondary'],
     [feature = 'highway_secondary_sidewalk'],
@@ -3016,6 +3018,8 @@
   }
 
   [feature = 'highway_primary'],
+  [feature = 'highway_primary_sidewalk'],
+  [feature = 'highway_primary_verge'],
   [feature = 'highway_primary_link'] {
     [zoom >= 8][zoom < 12] {
       line-width: 0.5;
@@ -3128,7 +3132,9 @@
     shield-face-name: @bold-fonts;
   }
 
-  [highway = 'primary'][zoom >= 11][zoom < 13] {
+  [highway = 'primary'][zoom >= 11][zoom < 13], 
+  [highway = 'primary_sidewalk'][zoom >= 11][zoom < 13], 
+  [highway = 'primary_verge'][zoom >= 11][zoom < 13] {
     shield-name: "[ref]";
     shield-size: 10;
     shield-fill: #fff;
@@ -3139,28 +3145,8 @@
     shield-face-name: @bold-fonts;
   }
 
-  [highway = 'secondary'][zoom >= 12][zoom < 13] {
-    shield-name: "[ref]";
-    shield-size: 10;
-    shield-fill: #fff;
-    shield-placement: line;
-    shield-file: url("symbols/sec_shield[length].png");
-    shield-spacing: 750;
-    shield-min-distance: 30;
-    shield-face-name: @bold-fonts;
-  }
-
-  [highway = 'secondary_sidewalk'][zoom >= 12][zoom < 13] {
-    shield-name: "[ref]";
-    shield-size: 10;
-    shield-fill: #fff;
-    shield-placement: line;
-    shield-file: url("symbols/sec_shield[length].png");
-    shield-spacing: 750;
-    shield-min-distance: 30;
-    shield-face-name: @bold-fonts;
-  }
-  
+  [highway = 'secondary'][zoom >= 12][zoom < 13], 
+  [highway = 'secondary_sidewalk'][zoom >= 12][zoom < 13], 
   [highway = 'secondary_verge'][zoom >= 12][zoom < 13] {
     shield-name: "[ref]";
     shield-size: 10;
@@ -3202,7 +3188,9 @@
     shield-avoid-edges: true;
   }
 
-  [highway = 'primary'][zoom >= 13] {
+  [highway = 'primary'][zoom >= 13], 
+  [highway = 'primary_sidewalk'][zoom >= 13], 
+  [highway = 'primary_verge'][zoom >= 13] {
     shield-name: "[ref]";
     shield-size: 10;
     shield-fill: #fff;
@@ -3214,30 +3202,8 @@
     shield-avoid-edges: true;
   }
 
-  [highway = 'secondary'][bridge = 'no'][zoom >= 13] {
-    shield-name: "[ref]";
-    shield-size: 10;
-    shield-fill: #fff;
-    shield-placement: line;
-    shield-file: url("symbols/sec_shield[length].png");
-    shield-spacing: 750;
-    shield-min-distance: 30;
-    shield-face-name: @bold-fonts;
-    shield-avoid-edges: true;
-  }
-
-  [highway = 'secondary_sidewalk'][bridge = 'no'][zoom >= 13] {
-    shield-name: "[ref]";
-    shield-size: 10;
-    shield-fill: #fff;
-    shield-placement: line;
-    shield-file: url("symbols/sec_shield[length].png");
-    shield-spacing: 750;
-    shield-min-distance: 30;
-    shield-face-name: @bold-fonts;
-    shield-avoid-edges: true;
-  }
-
+  [highway = 'secondary'][bridge = 'no'][zoom >= 13], 
+  [highway = 'secondary_sidewalk'][bridge = 'no'][zoom >= 13], 
   [highway = 'secondary_verge'][bridge = 'no'][zoom >= 13] {
     shield-name: "[ref]";
     shield-size: 10;
@@ -3250,30 +3216,8 @@
     shield-avoid-edges: true;
   }
 
-  [highway = 'tertiary'][bridge = 'no'][zoom >= 13] {
-    shield-name: "[ref]";
-    shield-size: 10;
-    shield-fill: #fff;
-    shield-placement: line;
-    shield-file: url("symbols/ter_shield[length].png");
-    shield-spacing: 750;
-    shield-min-distance: 30;
-    shield-face-name: @bold-fonts;
-    shield-avoid-edges: true;
-  }
-
-  [highway = 'tertiary_sidewalk'][bridge = 'no'][zoom >= 13] {
-    shield-name: "[ref]";
-    shield-size: 10;
-    shield-fill: #fff;
-    shield-placement: line;
-    shield-file: url("symbols/ter_shield[length].png");
-    shield-spacing: 750;
-    shield-min-distance: 30;
-    shield-face-name: @bold-fonts;
-    shield-avoid-edges: true;
-  }
-
+  [highway = 'tertiary'][bridge = 'no'][zoom >= 13], 
+  [highway = 'tertiary_sidewalk'][bridge = 'no'][zoom >= 13], 
   [highway = 'tertiary_verge'][bridge = 'no'][zoom >= 13] {
     shield-name: "[ref]";
     shield-size: 10;
@@ -3287,19 +3231,6 @@
   }
 
   [highway = 'unclassified'],
-  [highway = 'residential'] {
-    [zoom >= 15][bridge = 'no'] {
-      text-name: "[ref]";
-      text-size: 10;
-      text-fill: #000;
-      text-face-name: @bold-fonts;
-      text-min-distance: 18;
-      text-halo-radius: 1;
-      text-spacing: 750;
-      text-clip: false;
-    }
-  }
-
   [highway = 'unclassified_sidewalk'],
   [highway = 'unclassified_verge'] {
     [zoom >= 15][bridge = 'no'] {
@@ -3321,6 +3252,8 @@
   [highway = 'trunk'],
   [highway = 'trunk_link'],
   [highway = 'primary'],
+  [highway = 'primary_sidewalk'],
+  [highway = 'primary_verge'],
   [highway = 'primary_link'] {
     [zoom >= 13] {
       text-name: "[name]";
