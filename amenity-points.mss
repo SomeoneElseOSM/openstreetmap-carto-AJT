@@ -253,6 +253,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'parcel_locker'][zoom >= 18]::amenity {
+    point-file: url('symbols/parcel_locker.p.16.png');
+    point-placement: interior;
+  }
+
   [tourism = 'museum'][zoom >= 17]::tourism {
     point-file: url('symbols/museum.p.16.png');
     point-placement: interior;
@@ -829,6 +834,22 @@
       text-placement: interior;
     }
   }
+
+  [amenity = 'left_luggage']::amenity, 
+  [amenity = 'parcel_locker']::amenity {
+    [zoom >= 18] {
+      text-name: "[name]";
+      text-fill: #734a08;
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-dy: 9;
+      text-face-name: @bold-fonts;
+      text-halo-radius: 1;
+      text-wrap-width: 34;
+      text-placement: interior;
+    }
+  }
+
 
   [amenity = 'bar'][zoom >= 17]::amenity {
     text-name: "[name]";
