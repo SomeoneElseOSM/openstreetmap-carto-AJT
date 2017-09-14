@@ -1681,6 +1681,8 @@
   [man_made = 'lighthouse'][zoom >= 15]::man_made,
   [man_made = 'mast'][zoom >= 15]::man_made,
   [man_made = 'chimney'][zoom >= 15]::man_made, 
+  [man_made = 'cairn'][zoom >= 15]::man_made,
+  [man_made = 'water_well'][zoom >= 17]::man_made,
   [man_made = 'survey_point'][zoom >= 15]::man_made {
     text-name: "[name]";
     text-size: 9;
