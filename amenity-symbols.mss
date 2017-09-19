@@ -104,7 +104,7 @@
     point-placement: interior;
   }
 
-  [railway = 'ventilation_shaft'][zoom >= 16]::railway {
+  [man_made = 'ventilation_shaft'][zoom >= 16]::railway {
     point-file: url('symbols/ventshaft.png');
     point-placement: interior;
   }

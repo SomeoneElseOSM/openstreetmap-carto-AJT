@@ -557,7 +557,7 @@
     point-placement: interior;
   }
 
-  [man_made = 'water_tower'][zoom >= 16]::man_made {
+  [man_made = 'water_tower'][zoom >= 15]::man_made {
     point-file: url('symbols/tower_water.p.20.png');
     point-placement: interior;
   }
@@ -808,7 +808,6 @@
   [amenity = 'pub_nddd']::amenity,
   [amenity = 'restaurant']::amenity,
   [amenity = 'cafe']::amenity,
-  [amenity = 'sundial']::amenity, 
   [amenity = 'fast_food']::amenity,
   [amenity = 'fast_food_burger']::amenity,
   [amenity = 'fast_food_chicken']::amenity,
@@ -839,13 +838,12 @@
   [amenity = 'parcel_locker']::amenity {
     [zoom >= 18] {
       text-name: "[name]";
-      text-fill: #734a08;
       text-size: 10;
       [zoom >= 20] { text-size: 18; }
-      text-dy: 9;
-      text-face-name: @bold-fonts;
+      text-dy: 10;
+      text-fill: #734a08;
+      text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-wrap-width: 34;
       text-placement: interior;
     }
   }
@@ -874,8 +872,7 @@
   }
 
   [amenity = 'library']::amenity,
-  [amenity = 'theatre']::amenity,
-  [amenity = 'courthouse']::amenity {
+  [amenity = 'theatre']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 10;
@@ -888,11 +885,46 @@
     }
   }
 
+
+  [man_made = 'cairn']::man_made,
+  [man_made = 'survey_point']::man_made {
+    [zoom >= 15] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: #734a08;
+      text-dy: 12;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+    }
+  }
+
+  [tourism = 'viewpoint']::tourism {
+    [zoom >= 16] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: #734a08;
+      text-dy: 12;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+    }
+  }
+
   [amenity = 'toilets']::amenity,
+  [amenity = 'post_office']::amenity,
+  [amenity = 'courthouse']::amenity,
+  [amenity = 'police']::amenity,
+  [amenity = 'fire_station']::amenity,
+  [amenity = 'prison']::amenity,
+  [amenity = 'embassy']::amenity,
   [leisure = 'playground']::leisure, 
   [leisure = 'picnic_table']::leisure,
   [leisure = 'slipway']::leisure,
-  [leisure = 'bird_hide']::leisure {
+  [leisure = 'bird_hide']::leisure,
+  [man_made = 'water_well']::man_made {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 10;
@@ -931,27 +963,18 @@
     }
   }
 
-  [amenity = 'police'][zoom >= 17]::amenity {
+  [amenity = 'car_sharing'][zoom >= 17]::amenity,
+  [amenity = 'bicycle_rental'][zoom >= 17]::amenity,
+  [amenity = 'bicycle_parking'][zoom >= 19]::amenity {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 9;
+    text-dy: 11;
     [zoom >= 20] { text-size: 18; }
-    text-fill: #734a08;
-    text-dy: 10;
-    text-face-name: @book-fonts;
-    text-halo-radius: 1;
-    text-wrap-width: 30;
-    text-placement: interior;
-  }
-
-  [amenity = 'fire_station'][zoom >= 17]::amenity {
-    text-name: "[name]";
-    text-size: 10;
-    [zoom >= 20] { text-size: 18; }
-    text-fill: #734a08;
+    text-fill: @transportation-text;
     text-dy: 9;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-wrap-width: 30;
+    text-wrap-width: 34;
     text-placement: interior;
   }
 
@@ -1036,7 +1059,8 @@
     }
   }
 
-  [natural = 'cave_entrance'][zoom >= 15]::natural {
+  [natural = 'cave_entrance'][zoom >= 15]::natural,
+  [natural = 'tree'][zoom >= 16]::natural {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
@@ -1385,6 +1409,7 @@
     ele/text-placement: interior;
   }
 
+  [amenity = 'atm'][zoom >= 17]::amenity,
   [amenity = 'bank'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 9;
@@ -1446,17 +1471,6 @@
       text-halo-radius: 1;
       text-placement: interior;
     }
-  }
-
-  [amenity = 'embassy'][zoom >= 17]::amenity {
-    text-name: "[name]";
-    text-size: 9;
-    [zoom >= 20] { text-size: 18; }
-    text-fill: #0066ff;
-    text-dy: 8;
-    text-face-name: @book-fonts;
-    text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [tourism = 'guest_house'][zoom >= 17]::tourism {
@@ -1587,6 +1601,7 @@
     [zoom >= 20] { text-size: 18; }
   }
 
+  [amenity = 'recycling'][zoom >= 16]::amenity,
   [tourism = 'picnic_site'][zoom >= 16]::tourism {
     text-name: "[name]";
     text-size: 10;
@@ -1601,6 +1616,9 @@
   [tourism = 'aquarium'][zoom >= 17]::tourism,
   [tourism = 'zoo'][zoom >= 17]::tourism,
   [tourism = 'artwork'][zoom >= 17]::tourism,
+  [amenity = 'sundial'][zoom >= 17]::amenity, 
+  [amenity = 'post_box'][zoom >= 17]::amenity, 
+  [amenity = 'telephone'][zoom >= 17]::amenity, 
   [tourism = 'museum'][zoom >= 17]::tourism,
   [tourism = 'information'][zoom >= 17]::tourism,
   [tourism = 'informationboard'][zoom >= 17]::tourism,
@@ -1620,12 +1638,12 @@
     text-placement: interior;
   }
 
-  [amenity = 'prison'][zoom >= 17]::amenity {
+  [amenity = 'drinking_water'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
+    text-dy: 12;
     text-fill: #734a08;
-    text-dy: 16;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-placement: interior;
@@ -1680,10 +1698,11 @@
 
   [man_made = 'lighthouse'][zoom >= 15]::man_made,
   [man_made = 'mast'][zoom >= 15]::man_made,
-  [man_made = 'chimney'][zoom >= 15]::man_made, 
-  [man_made = 'cairn'][zoom >= 15]::man_made,
-  [man_made = 'water_well'][zoom >= 17]::man_made,
-  [man_made = 'survey_point'][zoom >= 15]::man_made {
+  [man_made = 'chimney'][zoom >= 15]::man_made,
+  [man_made = 'water_tower'][zoom >= 15]::man_made,
+  [man_made = 'power_wind'][zoom >= 15]::man_made,
+  [man_made = 'ventilation_shaft'][zoom >= 15]::man_made,
+  [man_made = 'windmill'][zoom >= 17]::man_made {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
@@ -1704,18 +1723,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 2;
     text-wrap-width: 12;
-    text-placement: interior;
-  }
-
-  [man_made = 'windmill'][zoom >= 17]::man_made {
-    text-name: "[name]";
-    text-size: 9;
-    [zoom >= 20] { text-size: 18; }
-    text-fill: #734a08;
-    text-dy: 12;
-    text-face-name: @book-fonts;
-    text-halo-radius: 1;
-    text-wrap-width: 20;
     text-placement: interior;
   }
 
