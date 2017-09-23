@@ -139,4 +139,23 @@
       text-fill: @placenames-light;
     }
   }
+  [place = 'legend_text'] {
+    [zoom >= 16] {
+      text-name: "[name]";
+      text-size: 8;
+      text-fill: @placenames-light;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1.5;
+      text-min-distance: 10;
+    }
+    [zoom >= 17] {
+      text-size: 12;
+    }
+    [zoom >= 18] {
+      text-size: 18;
+    }
+    [zoom >= 19] {
+      text-size: 24;
+    }
+  }
 }
