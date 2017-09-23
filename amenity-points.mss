@@ -1696,6 +1696,32 @@
     text-placement: interior;
   }
 
+  [amenity  = 'emergency_phone'][zoom >= 17]::barrier,
+  [barrier  = 'gate'][zoom >= 15]::barrier,
+  [barrier  = 'kissing_gate'][zoom >= 15]::barrier,
+  [barrier  = 'stile'][zoom >= 15]::barrier,
+  [barrier  = 'horse_stile'][zoom >= 15]::barrier,
+  [barrier  = 'cycle_barrier'][zoom >= 15]::barrier,
+  [barrier  = 'cattle_grid'][zoom >= 15]::barrier,
+  [barrier  = 'lift_gate'][zoom >= 16]::barrier,
+  [barrier  = 'bollard'][zoom >= 16]::barrier,
+  [barrier  = 'block'][zoom >= 16]::barrier,
+  [highway  = 'crossing'][zoom >= 17]::highway,
+  [highway  = 'milestone'][zoom >= 17]::highway,
+  [highway  = 'mini_roundabout'][zoom >= 15]::highway,
+  [highway  = 'traffic_signals'][zoom >= 17]::highway {
+    text-name: "[name]";
+    text-size: 9;
+    [zoom >= 20] { text-size: 18; }
+    text-fill: #000033;
+    text-dy: 16;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-wrap-width: 12;
+    text-placement: interior;
+  }
+
+
   [man_made = 'lighthouse'][zoom >= 15]::man_made,
   [man_made = 'mast'][zoom >= 15]::man_made,
   [man_made = 'chimney'][zoom >= 15]::man_made,
