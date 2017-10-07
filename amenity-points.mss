@@ -532,6 +532,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'shopmobility'][zoom >= 17]::amenity {
+    point-file: url('symbols/shopmobility.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'emergency_phone'][zoom >= 17]::amenity {
     point-file: url('symbols/sosphone.png');
     point-placement: interior;
@@ -1622,6 +1627,7 @@
   [tourism = 'zoo'][zoom >= 17]::tourism,
   [tourism = 'artwork'][zoom >= 17]::tourism,
   [amenity = 'sundial'][zoom >= 17]::amenity, 
+  [amenity = 'shopmobility'][zoom >= 17]::amenity, 
   [amenity = 'post_box'][zoom >= 17]::amenity, 
   [amenity = 'telephone'][zoom >= 17]::amenity, 
   [tourism = 'museum'][zoom >= 17]::tourism,
