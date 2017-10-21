@@ -1734,6 +1734,18 @@
   }
 
 
+  [man_made = 'sluice_gate'][zoom >= 15]::man_made {
+    text-name: "[name]";
+    text-size: 9;
+    [zoom >= 20] { text-size: 18; }
+    text-fill: #6699cc;
+    text-dy: 16;
+    text-face-name: @book-fonts;
+    text-halo-radius: 2;
+    text-wrap-width: 12;
+    text-placement: interior;
+  }
+
   [man_made = 'lighthouse'][zoom >= 15]::man_made,
   [man_made = 'mast'][zoom >= 15]::man_made,
   [man_made = 'chimney'][zoom >= 15]::man_made,

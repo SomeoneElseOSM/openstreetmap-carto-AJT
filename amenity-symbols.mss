@@ -41,6 +41,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'sluice_gate'][zoom >= 15]::man_made {
+    point-file: url('symbols/sluice.png');
+    point-placement: interior;
+  }
+
   [natural = 'peak'][zoom >= 11]::natural {
     point-file: url('symbols/peak.png');
     point-placement: interior;
