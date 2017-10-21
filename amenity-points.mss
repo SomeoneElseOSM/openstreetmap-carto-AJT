@@ -274,7 +274,17 @@
   }
 
   [amenity = 'parking'][zoom >= 13]::amenity {
-    marker-file: url('symbols/parking.svg');
+    marker-file: url('symbols/parking_free.png');
+    marker-placement: interior;
+    marker-clip: false;
+    marker-fill: @transportation-icon;
+    [access != ''][access != 'public'][access != 'yes'] {
+      marker-opacity: 0.33;
+    }
+  }
+
+  [amenity = 'parking_pay'][zoom >= 13]::amenity {
+    marker-file: url('symbols/parking_pay.png');
     marker-placement: interior;
     marker-clip: false;
     marker-fill: @transportation-icon;
@@ -958,7 +968,8 @@
     text-placement: interior;
   }
 
-  [amenity = 'parking'][zoom >= 17]::amenity {
+  [amenity = 'parking'][zoom >= 17]::amenity,
+  [amenity = 'parking_pay'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
