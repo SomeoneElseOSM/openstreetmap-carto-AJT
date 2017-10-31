@@ -907,6 +907,7 @@
 
 
   [man_made = 'cairn']::man_made,
+  [man_made = 'boundary_stone']::man_made,
   [man_made = 'survey_point']::man_made {
     [zoom >= 15] {
       text-name: "[name]";
