@@ -305,4 +305,16 @@
     [zoom >= 14] { text-size: 12; }
     [zoom >= 20] { text-size: 18; }
   }
+
+  [waterway = 'weir'][zoom >= 15] {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-face-name: @oblique-fonts;
+    text-fill: #666666;
+    text-halo-radius: 0.5;
+    text-spacing: 600;
+    text-placement: line;
+    text-dy: 8;
+  }
 }
