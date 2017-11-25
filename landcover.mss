@@ -38,6 +38,7 @@
 @allotments: #e5c7ab;
 @apron: #e9d1ff;
 @attraction: #FBEFF9;
+@historic: #f2e9e9;
 @barracks: #ff8f8f;
 @campsite: #ccff99; // also caravan_site, picnic_site
 @cemetery: #aacbaf; // also grave_yard
@@ -80,6 +81,10 @@
 
   [feature = 'tourism_attraction'][zoom >= 10] {
     polygon-fill: @attraction;
+  }
+
+  [feature = 'landuse_historic'][zoom >= 10] {
+    polygon-fill: @historic;
   }
 
   [feature = 'landuse_quarry'][zoom >= 11] {
