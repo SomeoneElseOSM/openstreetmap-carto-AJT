@@ -26,6 +26,7 @@
 @industrial-line: #C6B3C3;  // Lch(75,11,330)
 @railway: @industrial;
 @railway-line: @industrial-line;
+@landfill: #d6d6c2;
 @farmland: #F4EBDF;
 @farmland-line: #C8B69E;    // Lch(75,15,80)
 
@@ -326,11 +327,17 @@
   }
 
   [feature = 'landuse_brownfield'],
-  [feature = 'landuse_landfill'],
   [feature = 'landuse_greenfield'],
   [feature = 'landuse_construction'] {
     [zoom >= 10] {
       polygon-fill: @construction;
+      polygon-opacity: 0.7;
+    }
+  }
+
+  [feature = 'landuse_landfill'] {
+    [zoom >= 10] {
+      polygon-fill: @landfill;
       polygon-opacity: 0.7;
     }
   }
