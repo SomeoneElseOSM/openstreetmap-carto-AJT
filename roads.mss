@@ -3158,26 +3158,6 @@
   }
 }
 
-#guideways {
-  [zoom >= 11][zoom < 13] {
-    line-width: 0.6;
-    line-color: #6666ff;
-    [zoom >= 12] { line-width: 1; }
-  }
-  [zoom >= 13] {
-    line-width: 3;
-    line-color: #6666ff;
-    line-join: round;
-    b/line-width: 1;
-    b/line-color: white;
-    b/line-dasharray: 8,12;
-    b/line-join: round;
-  }
-  [zoom >= 14] {
-    b/line-dasharray: 0,11,8,1;
-  }
-}
-
 #roads-text-ref-low-zoom {
   [highway = 'motorway'][length < 9] {
     [zoom >= 10][zoom < 13] {
