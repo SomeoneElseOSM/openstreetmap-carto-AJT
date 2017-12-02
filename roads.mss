@@ -911,6 +911,7 @@
     }
 
     [feature = 'railway_rail'],
+    [feature = 'railway_bus_guideway'],
     [feature = 'railway_preserved'],
     [feature = 'railway_monorail'][zoom >= 14] {
       .bridges-casing {
@@ -1101,6 +1102,7 @@
     }
 
     [feature = 'railway_rail'][zoom >= 13],
+    [feature = 'railway_bus_guideway'][zoom >= 13],
     [feature = 'railway_preserved'][zoom >= 14],
     [feature = 'railway_monorail'][zoom >= 14] {
       .bridges-casing {
@@ -2398,6 +2400,60 @@
       }
     }
 
+    [feature = 'railway_bus_guideway'] {
+      [zoom >= 13] {
+        .roads-fill, .bridges-fill {
+          dark/line-color: #6699ff;
+          [feature = 'railway_bus_guideway']                       { dark/line-width: 3; }
+          [feature = 'railway_bus_guideway']                       { dark/line-join: round; }
+          light/line-color: white;
+          [feature = 'railway_bus_guideway']                       { light/line-width: 1; }
+          [feature = 'railway_bus_guideway']                       { light/line-dasharray: 8,12; }
+          light/line-join: round;
+          [feature = 'railway_bus_guideway'][zoom >= 14]           { light/line-dasharray: 0,11,8,1; }
+        }
+        .tunnels-fill {
+          a/line-width: 3;
+          b/line-width: 3;
+          c/line-width: 3;
+          d/line-width: 3;
+          e/line-width: 3;
+          f/line-width: 3;
+          g/line-width: 3;
+          a/line-color: #ffffff;
+          b/line-color: #fdfdfd;
+          c/line-color: #ececec;
+          d/line-color: #cacaca;
+          e/line-color: #afafaf;
+          f/line-color: #a1a1a1;
+          g/line-color: #9b9b9b;
+          a/line-dasharray: 1,9;
+          b/line-dasharray: 0,1,1,8;
+          c/line-dasharray: 0,2,1,7;
+          d/line-dasharray: 0,3,1,6;
+          e/line-dasharray: 0,4,1,5;
+          f/line-dasharray: 0,5,1,4;
+          g/line-dasharray: 0,6,1,3;
+          a/line-join: round;
+          b/line-join: round;
+          c/line-join: round;
+          d/line-join: round;
+          e/line-join: round;
+          f/line-join: round;
+          g/line-join: round;
+          [feature = 'railway_INT-spur-siding-yard'] {
+            a/line-width: 2;
+            b/line-width: 2;
+            c/line-width: 2;
+            d/line-width: 2;
+            e/line-width: 2;
+            f/line-width: 2;
+            g/line-width: 2;
+          }
+        }
+      }
+    }
+
     [feature = 'railway_light_rail'],
     [feature = 'railway_funicular'] {
       [zoom >= 13] {
@@ -3047,6 +3103,18 @@
       line-color: #aaa;
       [zoom >= 9] { line-width: 1; }
       [zoom >= 10] { line-width: 2; }
+      .tunnels-casing {
+        line-dasharray: 5,2;
+      }
+    }
+  }
+
+  [feature = 'railway_bus_guideway'] {
+    [zoom >= 10][zoom < 13] {
+      line-width: 0.5;
+      line-color: #6699ff;
+      [zoom >= 11] { line-width: 0.6; }
+      [zoom >= 12] { line-width: 1; }
       .tunnels-casing {
         line-dasharray: 5,2;
       }
