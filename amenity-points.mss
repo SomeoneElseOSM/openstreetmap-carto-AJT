@@ -79,6 +79,11 @@
     point-placement: interior;
   }
 
+  [leisure = 'fitness_station'][zoom >= 19]::leisure {
+    point-file: url('symbols/leisure_fitnessstation.p.16.png');
+    point-placement: interior;
+  }
+
   [highway = 'traffic_signals'][zoom >= 17]::highway {
     point-file: url('symbols/traffic_light.png');
     point-placement: interior;
@@ -1468,6 +1473,7 @@
     text-face-name: @book-fonts;
   }
 
+  [leisure = 'fitness_station'][zoom >= 19]::leisure,
   [leisure = 'nonspecific'][zoom >= 17]::leisure {
     text-name: "[name]";
     text-size: 9;
