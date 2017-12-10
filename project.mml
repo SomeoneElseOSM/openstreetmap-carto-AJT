@@ -161,14 +161,14 @@
       "geometry": "linestring",
       "extent": [
         -179.99999692067183,
-        -84.96651228427099,
+        -85.05112877980659,
         179.99999692067183,
-        84.96651228427098
+        85.05112877980659
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "      (select way,waterway\n      from planet_osm_line\n      where waterway in ('stream','drain','ditch')\n        and (tunnel is null or tunnel != 'yes')\n      ) as water_lines_casing",
-        "extent": "-20037508,-19929239,20037508,19929239",
+        "table": "      (select way,waterway,case when tunnel in ('yes','culvert') then 'yes' else 'no' end as int_tunnel \n      from planet_osm_line\n      where waterway in ('stream','drain','ditch')\n        and (tunnel is null or tunnel != 'yes')\n      ) as water_lines_casing",
+        "extent": "-20037508,-20037508,20037508,20037508",
         "key_field": "",
         "geometry_field": "way",
         "dbname": "gis"
@@ -184,14 +184,14 @@
       "geometry": "linestring",
       "extent": [
         -179.99999692067183,
-        -84.96651228427099,
+        -85.05112877980659,
         179.99999692067183,
-        84.96651228427098
+        85.05112877980659
       ],
       "Datasource": {
         "type": "postgis",
         "table": "      (select way,waterway\n      from planet_osm_line\n      where waterway='river'\n      ) as water_lines_low_zoom",
-        "extent": "-20037508,-19929239,20037508,19929239",
+        "extent": "-20037508,-20037508,20037508,20037508",
         "key_field": "",
         "geometry_field": "way",
         "dbname": "gis"
@@ -207,14 +207,14 @@
       "geometry": "polygon",
       "extent": [
         -179.99999692067183,
-        -84.96651228427099,
+        -85.05112877980659,
         179.99999692067183,
-        84.96651228427098
+        85.05112877980659
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "      (select way,\"natural\",waterway,landuse,name\n      from planet_osm_polygon\n      where (waterway in ('dock','mill_pond','riverbank','canal')\n         or landuse in ('reservoir','water','basin')\n         or \"natural\" in ('lake','water','land','glacier','mud'))\n         and building is null\n      order by z_order,way_area desc\n      ) as water_areas",
-        "extent": "-20037508,-19929239,20037508,19929239",
+        "table": "(SELECT\n    way, \"natural\", waterway, landuse, name, way_area/(!pixel_width!*!pixel_height!) AS way_pixels\n  FROM planet_osm_polygon\n  WHERE\n    (waterway IN ('dock', 'riverbank', 'canal')\n      OR landuse IN ('reservoir','basin')\n      OR \"natural\" IN ('lake','water','land','glacier','mud'))\n    AND building IS NULL\n    AND way_area/(!pixel_width!*!pixel_height!) > 0.01\n  ORDER BY z_order, way_area) AS water_areas",
+        "extent": "-20037508,-20037508,20037508,20037508",
         "key_field": "",
         "geometry_field": "way",
         "dbname": "gis"
@@ -253,20 +253,20 @@
       "geometry": "linestring",
       "extent": [
         -179.99999692067183,
-        -84.96651228427099,
+        -85.05112877980659,
         179.99999692067183,
-        84.96651228427098
+        85.05112877980659
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "      (select way,waterway,lock,name,tunnel\n      from planet_osm_line\n      where waterway in ('weir','river','canal','derelict_canal','stream','drain','ditch','wadi')\n        and (bridge is null or bridge not in ('yes','true','1','aqueduct'))\n      order by z_order\n      ) as water_lines",
-        "extent": "-20037508,-19929239,20037508,19929239",
+        "table": "      (select way,waterway,lock,name,case when tunnel in ('yes','culvert') then 'yes' else 'no' end as int_tunnel, 'no' as bridge\n      from planet_osm_line\n      where waterway in ('weir','river','canal','derelict_canal','stream','drain','ditch','wadi')\n        and (bridge is null or bridge not in ('yes','aqueduct'))\n      order by z_order\n      ) as water_lines",
+        "extent": "-20037508,-20037508,20037508,20037508",
         "key_field": "",
         "geometry_field": "way",
         "dbname": "gis"
       },
       "id": "water-lines",
-      "class": "",
+      "class": "water-lines",
       "srs-name": "900913",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
@@ -856,20 +856,20 @@
       "geometry": "linestring",
       "extent": [
         -179.99999692067183,
-        -84.96651228427099,
+        -85.05112877980659,
         179.99999692067183,
-        84.96651228427098
+        85.05112877980659
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select way,name from planet_osm_line where waterway in ('canal','river') and bridge in ('yes','true','1','aqueduct') order by z_order) as waterway_bridges",
-        "extent": "-20037508,-19929239,20037508,19929239",
+        "table": "(select way,waterway,name,case when tunnel in ('yes','culvert') then 'yes' else 'no' end as int_tunnel, 'yes' as bridge from planet_osm_line where waterway in ('river','canal','derelict_canal','stream','drain','ditch','wadi') and bridge in ('yes','aqueduct') order by z_order) as waterway_bridges",
+        "extent": "-20037508,-20037508,20037508,20037508",
         "key_field": "",
         "geometry_field": "way",
         "dbname": "gis"
       },
       "id": "waterway-bridges",
-      "class": "",
+      "class": "water-lines",
       "srs-name": "900913",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "advanced": {},
@@ -1666,14 +1666,14 @@
       "geometry": "linestring",
       "extent": [
         -179.99999692067183,
-        -84.96651228427099,
+        -85.05112877980659,
         179.99999692067183,
-        84.96651228427098
+        85.05112877980659
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "      (select way,waterway,lock,name,tunnel\n      from planet_osm_line\n      where waterway in ('weir','river','canal','derelict_canal','stream','drain','ditch','wadi')\n       order by z_order\n      ) as water_lines_text",
-        "extent": "-20037508,-19929239,20037508,19929239",
+        "table": "      (select way,waterway,lock,name,case when tunnel in ('yes','culvert') then 'yes' else 'no' end as int_tunnel\n      from planet_osm_line\n      where waterway in ('weir','river','canal','derelict_canal','stream','drain','ditch','wadi')\n       order by z_order\n      ) as water_lines_text",
+        "extent": "-20037508,-20037508,20037508,20037508",
         "key_field": "",
         "geometry_field": "way",
         "dbname": "gis"
