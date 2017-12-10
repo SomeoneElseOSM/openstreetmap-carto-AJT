@@ -933,8 +933,9 @@
       }
     }
 
-    [feature = 'railway_disused'],
+    [feature = 'railway_dismantled'],
     [feature = 'railway_abandoned'],
+    [feature = 'railway_disused'],
     [feature = 'railway_construction'],
     [feature = 'railway_miniature'][zoom >= 15],
     [feature = 'railway_INT-preserved-ssy'][zoom >= 14] {
@@ -2562,13 +2563,38 @@
       }
     }
 
-    [feature = 'railway_abandoned'],
-    [feature = 'railway_disused'],
-    [feature = 'railway_construction'] {
+    [feature = 'railway_dismantled'] {
+      [zoom >= 13] {
+        line-color: grey;
+        line-width: 2;
+        line-dasharray: 2,8;
+        line-join: round;
+      }
+    }
+
+    [feature = 'railway_abandoned'] {
+      [zoom >= 13] {
+        line-color: grey;
+        line-width: 2;
+        line-dasharray: 2,6;
+        line-join: round;
+      }
+    }
+
+    [feature = 'railway_disused'] {
       [zoom >= 13] {
         line-color: grey;
         line-width: 2;
         line-dasharray: 2,4;
+        line-join: round;
+      }
+    }
+
+    [feature = 'railway_construction'] {
+      [zoom >= 13] {
+        line-color: grey;
+        line-width: 2;
+        line-dasharray: 3,6;
         line-join: round;
       }
     }
