@@ -2895,7 +2895,7 @@
   [zoom >= 11] {
     ref/text-name: "[ref]";
     ref/text-size: 10;
-    ref/text-fill: #6666ff;
+    ref/text-fill: black;
     ref/text-min-distance: 2;
     ref/text-face-name: @oblique-fonts;
     ref/text-halo-radius: 1.5;
