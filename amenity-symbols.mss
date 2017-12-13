@@ -184,4 +184,11 @@
       point-placement: interior;
     }
   }
+
+  [barrier = 'door'] {
+    [zoom >= 19] {
+      point-file: url('symbols/door.png');
+      point-placement: interior;
+    }
+  }
 }

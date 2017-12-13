@@ -1756,6 +1756,7 @@
   [barrier  = 'lift_gate'][zoom >= 16]::barrier,
   [barrier  = 'bollard'][zoom >= 16]::barrier,
   [barrier  = 'block'][zoom >= 16]::barrier,
+  [barrier  = 'door'][zoom >= 19]::barrier,
   [highway  = 'crossing'][zoom >= 17]::highway,
   [highway  = 'milestone'][zoom >= 17]::highway,
   [highway  = 'mini_roundabout'][zoom >= 15]::highway,
