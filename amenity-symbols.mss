@@ -177,6 +177,11 @@
     point-placement: interior;
   }
 
+  [barrier = 'toll_booth'][zoom >= 16]::barrier {
+    point-file: url('symbols/tollbooth.png');
+    point-placement: interior;
+  }
+
   [barrier = 'bollard'],
   [barrier = 'block'] {
     [zoom >= 16] {
