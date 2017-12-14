@@ -504,81 +504,46 @@
   }
 
   [barrier = 'wall'] {
-    [zoom >= 13][zoom < 16] {
-      line-width: 0.4;
-      line-color: #444;
-    }
-    [zoom >= 16] {
-      line-width: 0.8;
-      line-color: #444;
-    }
-    [zoom >= 19] {
-      line-width: 1.6;
-      line-color: #444;
-    }
-    [zoom >= 20] {
-      line-width: 3.2;
-      line-color: #444;
-    }
-    [zoom >= 21] {
-      line-width: 4.8;
-      line-color: #444;
-    }
-    [zoom >= 22] {
-      line-width: 6.4;
-      line-color: #444;
-    }
+    [zoom >= 13] { line-width: 0.4; }
+    [zoom >= 16] { line-width: 0.8; }
+    [zoom >= 19] { line-width: 1.6; }
+    [zoom >= 20] { line-width: 3.2; }
+    [zoom >= 21] { line-width: 4.8; }
+    [zoom >= 22] { line-width: 6.4; }
+    line-color: #444;
+    line-cap: round;
+  }
+
+  [barrier = 'stile'] {
+    [zoom >= 13] { line-width: 0.3; }
+    [zoom >= 16] { line-width: 0.6; }
+    [zoom >= 19] { line-width: 1.2; }
+    [zoom >= 20] { line-width: 2.4; }
+    [zoom >= 21] { line-width: 3.6; }
+    [zoom >= 22] { line-width: 4.8; }
+    line-color: black;
     line-cap: round;
   }
 
   [barrier = 'fence'],
   [barrier = 'kerb'] {
-    [zoom >= 13][zoom < 16] {
-      line-width: 0.2;
-      line-color: #444;
-    }
-    [zoom >= 16] {
-      line-width: 0.4;
-      line-color: #444;
-    }
-    [zoom >= 19] {
-      line-width: 0.8;
-      line-color: #444;
-    }
-    [zoom >= 20] {
-      line-width: 1.6;
-      line-color: #444;
-    }
-    [zoom >= 21] {
-      line-width: 2.4;
-      line-color: #444;
-    }
-    [zoom >= 22] {
-      line-width: 3.2;
-      line-color: #444;
-    }
+    [zoom >= 13] { line-width: 0.2; }
+    [zoom >= 16] { line-width: 0.4; }
+    [zoom >= 19] { line-width: 0.8; }
+    [zoom >= 20] { line-width: 1.6; }
+    [zoom >= 21] { line-width: 2.4; }
+    [zoom >= 22] { line-width: 3.2; }
+    line-color: #444;
     line-cap: round;
   }
 
   [barrier = 'hedge'] {
-    [zoom >= 13][zoom < 16] {
-      line-width: 1;
-    }
-    [zoom >= 16] {
-      line-width: 3;
-    }
-    [zoom >= 19] {
-      line-width: 6;
-    }
-    [zoom >= 20] {
-      line-width: 12;
-    }
-    [zoom >= 21] {
-      line-width: 24;
-    }
-    [zoom >= 22] {
-      line-width: 48;
-    }
+    [zoom >= 13] { line-width: 1; }
+    [zoom >= 16] { line-width: 3; }
+    [zoom >= 19] { line-width: 6; }
+    [zoom >= 20] { line-width: 12; }
+    [zoom >= 21] { line-width: 24; }
+    [zoom >= 22] { line-width: 48; }
     line-color: #aed1a0;
     line-cap: round;
   }
@@ -597,34 +562,26 @@
     [zoom >= 16] {
       line-width: 3;
       b/line-width: 1;
-      b/line-color: white;
-      b/line-join: round;
     }
     [zoom >= 19] {
       line-width: 6;
       b/line-width: 2;
-      b/line-color: white;
-      b/line-join: round;
     }
     [zoom >= 20] {
       line-width: 12;
       b/line-width: 4;
-      b/line-color: white;
-      b/line-join: round;
     }
     [zoom >= 21] {
       line-width: 24;
       b/line-width: 8;
-      b/line-color: white;
-      b/line-join: round;
     }
     [zoom >= 22] {
       line-width: 48;
       b/line-width: 16;
-      b/line-color: white;
-      b/line-join: round;
     }
     line-color: #444;
+    b/line-color: white;
+    b/line-join: round;
   }
 }
 

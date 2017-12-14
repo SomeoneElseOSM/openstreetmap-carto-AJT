@@ -132,7 +132,15 @@
   [highway = 'gate']::highway,
   [barrier = 'gate']::barrier {
     [zoom >= 15] {
-      point-file: url('symbols/gate2.png');
+      point-file: url('symbols/gate.png');
+      point-placement: interior;
+    }
+    [zoom >= 17] {
+      point-file: url('symbols/gatex2.png');
+      point-placement: interior;
+    }
+    [zoom >= 21] {
+      point-file: url('symbols/gatex3.png');
       point-placement: interior;
     }
   }
@@ -142,11 +150,27 @@
       point-file: url('symbols/kissinggate.png');
       point-placement: interior;
     }
+    [zoom >= 17] {
+      point-file: url('symbols/kissinggatex2.png');
+      point-placement: interior;
+    }
+    [zoom >= 21] {
+      point-file: url('symbols/kissinggatex3.png');
+      point-placement: interior;
+    }
   }
 
   [barrier = 'stile']::barrier {
     [zoom >= 15] {
       point-file: url('symbols/stile.png');
+      point-placement: interior;
+    }
+    [zoom >= 17] {
+      point-file: url('symbols/stilex2.png');
+      point-placement: interior;
+    }
+    [zoom >= 21] {
+      point-file: url('symbols/stilex3.png');
       point-placement: interior;
     }
   }
@@ -168,6 +192,14 @@
   [barrier = 'cattle_grid']::barrier {
     [zoom >= 15] {
       point-file: url('symbols/cattlegrid.png');
+      point-placement: interior;
+    }
+    [zoom >= 17] {
+      point-file: url('symbols/cattlegridx2.png');
+      point-placement: interior;
+    }
+    [zoom >= 21] {
+      point-file: url('symbols/cattlegridx3.png');
       point-placement: interior;
     }
   }
