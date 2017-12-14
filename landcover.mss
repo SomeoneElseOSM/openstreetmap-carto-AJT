@@ -497,12 +497,37 @@
     line-width: 0.4;
     line-color: #444;
   }
+
   [barrier = 'embankment'][zoom >= 14] {
     line-width: 0.4;
     line-color: #444;
   }
-  [barrier = 'hedge'][zoom >= 13] {
-    [zoom < 16] {
+
+  [barrier = 'fence'],
+  [barrier = 'kerb'] {
+    [zoom >= 13][zoom < 16] {
+      line-width: 0.2;
+      line-color: #444;
+    }
+    [zoom >= 16] {
+      line-width: 0.4;
+      line-color: #444;
+    }
+  }
+
+  [barrier = 'wall'] {
+    [zoom >= 13][zoom < 16] {
+      line-width: 0.4;
+      line-color: #444;
+    }
+    [zoom >= 16] {
+      line-width: 0.8;
+      line-color: #444;
+    }
+  }
+
+  [barrier = 'hedge'] {
+    [zoom >= 13][zoom < 16] {
       line-width: 1;
     }
     [zoom >= 16] {
@@ -510,8 +535,9 @@
     }
     line-color: #aed1a0;
   }
-  [barrier = 'gate'][zoom >= 13] {
-    [zoom < 16] {
+
+  [barrier = 'gate'] {
+    [zoom >= 13][zoom < 16] {
       line-width: 1;
     }
     [zoom >= 16] {
