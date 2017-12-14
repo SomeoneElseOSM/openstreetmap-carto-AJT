@@ -180,11 +180,27 @@
       point-file: url('symbols/horsestile.png');
       point-placement: interior;
     }
+    [zoom >= 17] {
+      point-file: url('symbols/horsestilex2.png');
+      point-placement: interior;
+    }
+    [zoom >= 21] {
+      point-file: url('symbols/horsestilex3.png');
+      point-placement: interior;
+    }
   }
 
   [barrier = 'cycle_barrier']::barrier {
     [zoom >= 15] {
       point-file: url('symbols/cyclebarrier.png');
+      point-placement: interior;
+    }
+    [zoom >= 17] {
+      point-file: url('symbols/cyclebarrierx2.png');
+      point-placement: interior;
+    }
+    [zoom >= 21] {
+      point-file: url('symbols/cyclebarrierx3.png');
       point-placement: interior;
     }
   }
