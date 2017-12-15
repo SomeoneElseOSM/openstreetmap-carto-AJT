@@ -568,11 +568,11 @@
     [zoom >= 13]
     {
       line-width: 1;
-      [zoom >= 16] { line-width: 3; }
-      [zoom >= 19] { line-width: 6; }
-      [zoom >= 20] { line-width: 12; }
-      [zoom >= 21] { line-width: 24; }
-      [zoom >= 22] { line-width: 48; }
+      [zoom >= 16] { line-width: 2; }
+      [zoom >= 19] { line-width: 4; }
+      [zoom >= 20] { line-width: 8; }
+      [zoom >= 21] { line-width: 12; }
+      [zoom >= 22] { line-width: 16; }
 
       line-color: #444;
     }
