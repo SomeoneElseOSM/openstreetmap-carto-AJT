@@ -2928,7 +2928,7 @@
     [zoom >= 12] {
       name/text-name: "[name]";
       name/text-size: 9;
-      name/text-fill: #6666ff;
+      name/text-fill: black;
       name/text-dy: -9;
       name/text-face-name: @oblique-fonts;
       name/text-halo-radius: 1;
