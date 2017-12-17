@@ -15,6 +15,7 @@
 @footway-fill: salmon;
 @ldpnwn-fill: purple;
 @ldpncn-fill: #4b00a2;
+@ldpnhn-fill: #cc0000;
 @bridleway-fill: #0080FF;
 @track-fill: #996600;
 @aeroway-fill: #bbc;
@@ -43,6 +44,7 @@
 @steps-casing: @default-casing;
 @ldpnwn-casing: @default-casing;
 @ldpncn-casing: @default-casing;
+@ldpnhn-casing: @default-casing;
 @bridleway-casing: @default-casing;
 @track-casing: @default-casing;
 
@@ -823,6 +825,7 @@
 
     /* casing for ldpnwn not needed */
     /* casing for ldpncn not needed */
+    /* casing for ldpnhn not needed */
 
     /* casing for normal and wide paths the same; fill different */
     [feature = 'highway_path'],
@@ -1015,6 +1018,7 @@
 
     /* casing for ldpnwn not needed */
     /* casing for ldpncn not needed */
+    /* casing for ldpnhn not needed */
 
     /* casing for all sorts of steps the same; fill different */
     [feature = 'highway_steps'],
@@ -2208,6 +2212,44 @@
       }
     }
 
+    /* fill for ldpnhn */
+    [feature = 'highway_ldpnhn'] {
+      [zoom >= 13] {
+        .tunnels-fill {
+          tunnelcasing/line-width: 5.5;
+          tunnelcasing/line-color: @tunnel-casing;
+          tunnelcasing/line-dasharray: 4,2;
+        }
+        .roads-fill, .tunnels-fill {
+          background/line-color: @ldpnhn-casing;
+          background/line-cap: round;
+          background/line-join: round;
+          background/line-width: 5;
+          .roads-fill { background/line-opacity: 0.1; }
+        }
+        line/line-color: @ldpnhn-fill;
+        [zoom >= 13] { line/line-dasharray: 1,60; }
+        [zoom >= 15] { line/line-dasharray: 1,120; }
+        line/line-join: round;
+        line/line-cap: round;
+        .roads-fill {
+          line/line-width: 4;
+        }
+        .bridges-fill {
+          [zoom >= 13] { line/line-width: 1.2; }
+          [zoom >= 14] { line/line-width: 1.5; }
+        }
+        .levees-fill {
+          [zoom >= 13] { line/line-width: 1.2; }
+          [zoom >= 14] { line/line-width: 1.5; }
+        }
+        .tunnels-fill {
+          line/line-width: 2;
+          line/line-opacity: 0.5;
+        }
+      }
+    }
+
     /*
     * paths that are e.g. horse=designated have actually been processed into one of the above
     * by style.lua transformations
@@ -2883,6 +2925,7 @@
   [feature = 'highway_footway'],
   [feature = 'highway_ldpnwn'],
   [feature = 'highway_ldpncn'],
+  [feature = 'highway_ldpnhn'],
   [feature = 'highway_path'] {
     [zoom >= 14] {
       line-color: grey;
@@ -2926,6 +2969,7 @@
   [feature = 'highway_footway'],
   [feature = 'highway_ldpnwn'],
   [feature = 'highway_ldpncn'],
+  [feature = 'highway_ldpnhn'],
   [feature = 'highway_path'] {
     [zoom >= 14] {
       polygon-fill: #ededed;
@@ -3077,6 +3121,7 @@
     [feature = 'highway_footwaywide'],
     [feature = 'highway_ldpnwn'],
     [feature = 'highway_ldpncn'],
+    [feature = 'highway_ldpnhn'],
     [feature = 'highway_bridleway'],
     [feature = 'highway_bridlewaywide'] {
       [zoom >= 13] {
@@ -3600,6 +3645,28 @@
     [zoom >= 14] {
       text-name: "[name]";
       text-fill: @ldpncn-fill;
+      text-size: 9;
+      text-halo-radius: 1;
+      text-halo-fill: rgba(255,255,255,0.8);
+      text-spacing: 200;
+      text-clip: false;
+      text-placement: line;
+      text-face-name: @book-fonts;
+      text-dy: 14;
+      [zoom >= 16] {
+        text-spacing: 400;
+      }
+    }
+    [zoom >= 17] {
+      text-size: 11;
+      text-dy: 18;
+    }
+  }
+
+  [highway = 'ldpnhn'] {
+    [zoom >= 14] {
+      text-name: "[name]";
+      text-fill: @ldpnhn-fill;
       text-size: 9;
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.8);
