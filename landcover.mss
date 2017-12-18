@@ -597,6 +597,35 @@
       line-color: #444;
     }
   }
+
+  [barrier = 'ford'] {
+    [zoom >= 16]
+    {
+      line-width: 3;
+      b/line-width: 1;
+
+      [zoom >= 19] {
+        line-width: 6;
+        b/line-width: 2;
+      }
+      [zoom >= 20] {
+        line-width: 12;
+        b/line-width: 4;
+      }
+      [zoom >= 21] {
+        line-width: 24;
+        b/line-width: 8;
+      }
+      [zoom >= 22] {
+        line-width: 48;
+        b/line-width: 16;
+      }
+
+      b/line-color: white;
+      b/line-join: round;
+      line-color: @water-color;
+    }
+  }
 }
 
 #tree-row {
