@@ -489,11 +489,6 @@
 }
 
 .barriers {
-  [barrier = 'embankment'][zoom >= 14] {
-    line-width: 0.4;
-    line-color: #444;
-  }
-
   [barrier = 'wall'] {
     [zoom >= 13]
     {
