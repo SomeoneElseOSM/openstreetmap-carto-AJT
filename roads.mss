@@ -2277,7 +2277,7 @@
 
     [feature = 'highway_steps'] {
       [zoom >= 15] {
-        line-width: 5.0;
+        line-width: 2.0;
         line-color: @path-fill;
         line-dasharray: 2,1;
       }
