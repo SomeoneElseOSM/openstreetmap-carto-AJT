@@ -2300,7 +2300,7 @@
 
     [feature = 'highway_footwaysteps'] {
       [zoom >= 15] {
-        line-width: 5.0;
+        line-width: 4.0;
         line-color: @footway-fill;
         line-dasharray: 2,1;
       }
@@ -2323,7 +2323,7 @@
 
     [feature = 'highway_bridlewaysteps'] {
       [zoom >= 15] {
-        line-width: 5.0;
+        line-width: 3.0;
         line-color: @bridleway-fill;
         line-dasharray: 2,1;
       }
