@@ -1377,6 +1377,7 @@
 
     [feature = 'railway_disused'],
     [feature = 'railway_abandoned'],
+    [feature = 'railway_dismantled'],
     [feature = 'railway_construction'],
     [feature = 'railway_miniature'][zoom >= 15],
     [feature = 'railway_INT-preserved-ssy'][zoom >= 14] {
