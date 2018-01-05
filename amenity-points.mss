@@ -204,6 +204,31 @@
     point-placement: interior;
   }
 
+  [tourism = 'informationncndudgeon'][zoom >= 15]::tourism {
+    point-file: url('symbols/informationncndudgeon.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'informationncnmccoll'][zoom >= 15]::tourism {
+    point-file: url('symbols/informationncnmccoll.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'informationncnmills'][zoom >= 15]::tourism {
+    point-file: url('symbols/informationncnmills.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'informationncnrowe'][zoom >= 15]::tourism {
+    point-file: url('symbols/informationncnrowe.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'informationncnunknown'][zoom >= 15]::tourism {
+    point-file: url('symbols/informationncnunknown.png');
+    point-placement: interior;
+  }
+
   [amenity = 'embassy'][zoom >= 17]::amenity {
     point-file: url('symbols/embassy.png');
     point-placement: interior;
@@ -1683,6 +1708,21 @@
     [zoom >= 20] { text-size: 18; }
     text-dy: 10;
     text-fill: #734a08;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-placement: interior;
+  }
+
+  [tourism = 'informationncndudgeon'][zoom >= 17]::tourism,
+  [tourism = 'informationncnmccoll'][zoom >= 17]::tourism,
+  [tourism = 'informationncnmills'][zoom >= 17]::tourism,
+  [tourism = 'informationncnrowe'][zoom >= 17]::tourism,
+  [tourism = 'informationncnunknown'][zoom >= 17]::tourism {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-dy: 10;
+    text-fill: #4b00a2;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-placement: interior;
