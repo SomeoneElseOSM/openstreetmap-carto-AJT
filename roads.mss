@@ -1146,6 +1146,13 @@
           line-join: round;
         }
       }
+      .levees-casing {
+        [zoom >= 14] {
+          line-width: 5.5;
+          line-color: @levee-casing;
+          line-join: round;
+        }
+      }
     }
 
     [feature = 'railway_light_rail'],
@@ -1155,6 +1162,13 @@
         [zoom >= 14] {
           line-width: 5.5;
           line-color: black;
+          line-join: round;
+        }
+      }
+      .levees-casing {
+        [zoom >= 14] {
+          line-width: 5.5;
+          line-color: @levee-casing;
           line-join: round;
         }
       }
@@ -1171,6 +1185,13 @@
           line-join: round;
         }
       }
+      .levees-casing {
+        [zoom >= 13] {
+          line-width: 6.5;
+          line-color: @levee-casing;
+          line-join: round;
+        }
+      }
     }
 
     [feature = 'railway_INT-spur-siding-yard'] {
@@ -1178,6 +1199,13 @@
         [zoom >= 13] {
           line-width: 5.7;
           line-color: black;
+          line-join: round;
+        }
+      }
+      .levees-casing {
+        [zoom >= 13] {
+          line-width: 5.7;
+          line-color: @levee-casing;
           line-join: round;
         }
       }
@@ -1193,6 +1221,13 @@
         [zoom >= 13] {
           line-width: 6;
           line-color: black;
+          line-join: round;
+        }
+      }
+      .levees-casing {
+        [zoom >= 13] {
+          line-width: 6;
+          line-color: @levee-casing;
           line-join: round;
         }
       }
@@ -1358,7 +1393,7 @@
     [feature = 'railway_bus_guideway'][zoom >= 13],
     [feature = 'railway_preserved'][zoom >= 14],
     [feature = 'railway_monorail'][zoom >= 14] {
-      .bridges-casing {
+      .bridges-casing, .levees-casing {
         line-width: 5;
         line-color: white;
         line-join: round;
@@ -1366,7 +1401,7 @@
     }
 
     [feature = 'railway_INT-spur-siding-yard'] {
-      .bridges-casing {
+      .bridges-casing, .levees-casing {
         [zoom >= 13] {
           line-width: 4;
           line-color: white;
@@ -1381,7 +1416,7 @@
     [feature = 'railway_construction'],
     [feature = 'railway_miniature'][zoom >= 15],
     [feature = 'railway_INT-preserved-ssy'][zoom >= 14] {
-      .bridges-casing {
+      .bridges-casing, .levees-casing {
         [zoom >= 13] {
           line-width: 4.5;
           line-color: white;
@@ -1391,7 +1426,7 @@
     }
 
     [feature = 'railway_subway'] {
-      .bridges-casing {
+      .bridges-casing, .levees-casing {
         [zoom >= 14] {
           line-width: 4;
           line-color: white;
@@ -1403,7 +1438,7 @@
     [feature = 'railway_light_rail'],
     [feature = 'railway_funicular'],
     [feature = 'railway_narrow_gauge'] {
-      .bridges-casing {
+      .bridges-casing, .levees-casing {
         [zoom >= 14] {
           line-width: 4;
           line-color: white;
@@ -2771,12 +2806,12 @@
     [feature = 'railway_rail'],
     [feature = 'railway_INT-spur-siding-yard'] {
       [zoom >= 13] {
-        .roads-fill, .bridges-fill {
+        .roads-fill, .bridges-fill, .levees-fill {
           dark/line-color: #999999;
           [feature = 'railway_rail']                               { dark/line-width: 3; }
           [feature = 'railway_INT-spur-siding-yard']               { dark/line-width: 2; }
           [feature = 'railway_rail']                               { dark/line-join: round; }
-          [feature = 'railway_INT-spur-siding-yard'] .bridges-fill { dark/line-join: round; }
+          [feature = 'railway_INT-spur-siding-yard'] .bridges-fill, .levees-fill { dark/line-join: round; }
           light/line-color: white;
           [feature = 'railway_rail']                               { light/line-width: 1; }
           [feature = 'railway_INT-spur-siding-yard']               { light/line-width: 0.8; }
@@ -2829,7 +2864,7 @@
 
     [feature = 'railway_bus_guideway'] {
       [zoom >= 13] {
-        .roads-fill, .bridges-fill {
+        .roads-fill, .bridges-fill, .levees-fill {
           dark/line-color: #6699ff;
           [feature = 'railway_bus_guideway']                       { dark/line-width: 3; }
           [feature = 'railway_bus_guideway']                       { dark/line-join: round; }
@@ -2934,7 +2969,7 @@
           line-dasharray: 5,3;
         }
       }
-      .bridges-fill {
+      .bridges-fill, .levees-fill {
         [zoom >= 14] {
           line-width: 2;
           line-color: #999;
@@ -4085,4 +4120,3 @@
     }
   }
 }
-
