@@ -132,6 +132,16 @@
         [zoom >= 18] { bridgecasing/line-width: 13; }
       }
     }
+    [bridge = 'levee'] {
+      [zoom >= 14] {
+        bridgecasing/line-color: @levee-casing;
+        bridgecasing/line-join: round;
+        bridgecasing/line-width: 6;
+        [zoom >= 15] { bridgecasing/line-width: 7; }
+        [zoom >= 17] { bridgecasing/line-width: 11; }
+        [zoom >= 18] { bridgecasing/line-width: 13; }
+      }
+    }
     line-color: @water-color;
     line-width: 2;
     [zoom >= 13] { line-width: 3; }
@@ -161,6 +171,18 @@
       [bridge = 'yes'] {
         [zoom >= 14] {
           bridgecasing/line-color: black;
+          bridgecasing/line-join: round;
+          bridgecasing/line-width: 3;
+          [waterway = 'stream'][zoom >= 15] { bridgecasing/line-width: 4; }
+          bridgeglow/line-color: white;
+          bridgeglow/line-join: round;
+          bridgeglow/line-width: 2;
+          [waterway = 'stream'][zoom >= 15] { bridgeglow/line-width: 3; }
+        }
+      }
+      [bridge = 'levee'] {
+        [zoom >= 14] {
+          bridgecasing/line-color: @levee-casing;
           bridgecasing/line-join: round;
           bridgecasing/line-width: 3;
           [waterway = 'stream'][zoom >= 15] { bridgecasing/line-width: 4; }
