@@ -567,6 +567,41 @@
     point-placement: interior;
   }
 
+  [amenity = 'boothtelephone'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothtelephone.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'boothdefibrillator'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothdefibrillator.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'boothlibrary'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothlibrary.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'boothbicyclerepairstation'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothbicyclerepairstation.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'boothatm'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothatm.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'boothinformation'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothinformation.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'boothdisused'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothdisused.png');
+    point-placement: interior;
+  }
+
   [amenity = 'sundial'][zoom >= 17]::amenity {
     point-file: url('symbols/sundial.p.16.png');
     point-placement: interior;
@@ -1693,6 +1728,13 @@
   [amenity = 'shopmobility'][zoom >= 17]::amenity, 
   [amenity = 'post_box'][zoom >= 17]::amenity, 
   [amenity = 'telephone'][zoom >= 17]::amenity, 
+  [amenity = 'boothtelephone'][zoom >= 17]::amenity, 
+  [amenity = 'boothdefibrillator'][zoom >= 17]::amenity, 
+  [amenity = 'boothlibrary'][zoom >= 17]::amenity, 
+  [amenity = 'boothbicycleepairstation'][zoom >= 17]::amenity, 
+  [amenity = 'boothatm'][zoom >= 17]::amenity, 
+  [amenity = 'boothinformation'][zoom >= 17]::amenity, 
+  [amenity = 'boothdisused'][zoom >= 17]::amenity, 
   [tourism = 'museum'][zoom >= 17]::tourism,
   [tourism = 'information'][zoom >= 17]::tourism,
   [tourism = 'informationboard'][zoom >= 17]::tourism,
