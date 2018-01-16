@@ -81,6 +81,9 @@
     [zoom >= 11] {
       text-size: 11;
     }
+    [zoom >= 12] {
+      text-size: 13;
+    }
     [zoom >= 14] {
       text-size: 15;
       text-fill: @placenames-light;
@@ -97,6 +100,10 @@
     text-halo-radius: 1.5;
     text-min-distance: 10;
     [zoom >= 14] {
+      text-size: 13;
+      text-fill: @placenames-light;
+    }
+    [zoom >= 15] {
       text-size: 14;
       text-fill: @placenames-light;
     }
