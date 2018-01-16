@@ -1731,7 +1731,7 @@
   [amenity = 'boothtelephone'][zoom >= 17]::amenity, 
   [amenity = 'boothdefibrillator'][zoom >= 17]::amenity, 
   [amenity = 'boothlibrary'][zoom >= 17]::amenity, 
-  [amenity = 'boothbicycleepairstation'][zoom >= 17]::amenity, 
+  [amenity = 'boothbicyclerepairstation'][zoom >= 17]::amenity, 
   [amenity = 'boothatm'][zoom >= 17]::amenity, 
   [amenity = 'boothinformation'][zoom >= 17]::amenity, 
   [amenity = 'boothdisused'][zoom >= 17]::amenity, 
