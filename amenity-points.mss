@@ -852,6 +852,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'fire_extinguisher'][zoom >= 17]::amenity {
+    point-file: url('symbols/fireextinguisher.png');
+    point-placement: interior;
+  }
+
   [leisure = 'playground'][zoom >= 17]::leisure {
     point-file: url('symbols/playground.p.20.png');
     point-placement: interior;
