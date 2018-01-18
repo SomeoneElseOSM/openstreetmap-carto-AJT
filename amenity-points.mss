@@ -1879,6 +1879,7 @@
   [man_made = 'water_tower'][zoom >= 15]::man_made,
   [man_made = 'power_wind'][zoom >= 15]::man_made,
   [man_made = 'ventilation_shaft'][zoom >= 15]::man_made,
+  [man_made = 'mounting_block'][zoom >= 17]::man_made,
   [man_made = 'windmill'][zoom >= 17]::man_made {
     text-name: "[name]";
     text-size: 9;
