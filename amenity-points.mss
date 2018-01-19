@@ -257,8 +257,13 @@
     point-placement: interior;
   }
 
-  [man_made = 'chimney'][zoom >= 17]::man_made {
+  [man_made = 'chimney'][zoom >= 15]::man_made {
     point-file: url('symbols/chimney.p.20.png');
+    point-placement: interior;
+  }
+
+  [man_made = 'illuminationtower'][zoom >= 17]::man_made {
+    point-file: url('symbols/illuminationtower.png');
     point-placement: interior;
   }
 
@@ -1879,6 +1884,7 @@
   [man_made = 'water_tower'][zoom >= 15]::man_made,
   [man_made = 'power_wind'][zoom >= 15]::man_made,
   [man_made = 'ventilation_shaft'][zoom >= 15]::man_made,
+  [man_made = 'illuminationtower'][zoom >= 17]::man_made,
   [man_made = 'mounting_block'][zoom >= 17]::man_made,
   [man_made = 'windmill'][zoom >= 17]::man_made {
     text-name: "[name]";
