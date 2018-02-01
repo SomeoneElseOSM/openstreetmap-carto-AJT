@@ -54,7 +54,6 @@
 @residential-construction: #aaa;
 @service-construction: #aaa;
 
-@permissive-marking: #cf9;
 @destination-marking: #c2e0ff;
 @private-marking: #efa9a9;
 
@@ -3410,30 +3409,6 @@
 }
 
 .access::fill {
-  [access = 'permissive'] {
-    [feature = 'highway_unclassified'],
-    [feature = 'highway_residential'],
-    [feature = 'highway_footway'] {
-      [zoom >= 15] {
-        access/line-width: 6;
-        access/line-color: @permissive-marking;
-        access/line-dasharray: 6,8;
-        access/line-cap: round;
-        access/line-join: round;
-        access/line-opacity: 0.5;
-      }
-    }
-    [feature = 'highway_service'][service = 'INT-normal'][zoom >= 15],
-    [feature = 'highway_service'][zoom >= 16] {
-      access/line-width: 3;
-      access/line-color: @permissive-marking;
-      access/line-dasharray: 6,8;
-      access/line-cap: round;
-      access/line-join: round;
-      access/line-opacity: 0.5;
-      [zoom >= 16] { access/line-width: 6; }
-    }
-  }
   [access = 'destination'] {
     [feature = 'highway_secondary'],
     [feature = 'highway_secondary_sidewalk'],
