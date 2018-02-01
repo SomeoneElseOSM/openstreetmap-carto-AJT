@@ -1,7 +1,7 @@
 // --- Parks, woods, other green things ---
 
 @forest: #bedab3;
-@grass: #cfeca8; // also meadow, common, garden, village_green, conservation
+@grass: #cfeca8; // also common, garden, village_green, conservation
 @golf_course: #b5e3b5;
 @natural: #c6e4b4; // also grassland
 @park: #b6fdb6; // also recreation_ground
@@ -32,6 +32,8 @@
 
 @farmyard: #EFD6B5;         // Lch(87,20,80)
 @farmyard-line: #D1B48C;    // Lch(75,25,80)
+
+@meadow: #e8f6d5; 
 
 // --- Other ----
 
@@ -160,10 +162,15 @@
     }
   }
 
-  [feature = 'landuse_meadow'],
   [feature = 'landuse_grass'] {
     [zoom >= 10] {
       polygon-fill: @grass;
+    }
+  }
+
+  [feature = 'landuse_meadow'] {
+    [zoom >= 10] {
+      polygon-fill: @meadow;
     }
   }
 
