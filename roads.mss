@@ -54,7 +54,7 @@
 @residential-construction: #aaa;
 @service-construction: #aaa;
 
-@destination-marking: #c2e0ff;
+@destination-marking: #ffe9cc;
 @private-marking: #efa9a9;
 
 @tunnel-casing: grey;
@@ -3423,8 +3423,19 @@
     [feature = 'highway_unclassified_ford'],
     [feature = 'highway_residential'],
     [feature = 'highway_road'],
-    [feature = 'highway_living_street'] {
-      [zoom >= 15] {
+    [feature = 'highway_living_street'],
+    [feature = 'highway_track'],
+    [feature = 'highway_track_graded'],
+    [feature = 'highway_path'],
+    [feature = 'highway_pathwide'],
+    [feature = 'highway_footway'],
+    [feature = 'highway_footwaywide'],
+    [feature = 'highway_ldpnwn'],
+    [feature = 'highway_ldpncn'],
+    [feature = 'highway_ldpnhn'],
+    [feature = 'highway_bridleway'],
+    [feature = 'highway_bridlewaywide'] {
+    [zoom >= 15] {
         access/line-width: 6;
         access/line-color: @destination-marking;
         access/line-dasharray: 6,8;
