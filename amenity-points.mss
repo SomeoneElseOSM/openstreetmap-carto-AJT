@@ -877,6 +877,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'bbq'][zoom >= 17]::amenity {
+    point-file: url('symbols/bbq.png');
+    point-placement: interior;
+  }
+
   [leisure = 'slipway'][zoom >= 17]::leisure {
     point-file: url('symbols/transport_slipway.p.20.png');
     point-placement: interior;
@@ -1038,6 +1043,7 @@
   [amenity = 'embassy']::amenity,
   [leisure = 'playground']::leisure, 
   [leisure = 'picnic_table']::leisure,
+  [amenity = 'bbq']::amenity,
   [leisure = 'slipway']::leisure,
   [leisure = 'bird_hide']::leisure,
   [man_made = 'water_well']::man_made {
