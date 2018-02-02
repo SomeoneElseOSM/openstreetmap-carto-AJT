@@ -250,16 +250,19 @@
     text-fill: @water-text;
   }
 
-  [waterway = 'stream'][zoom >= 15] {
-    text-name: "[name]";
-    text-size: 10;
-    [zoom >= 20] { text-size: 18; }
-    text-face-name: @oblique-fonts;
-    text-fill: @water-text;
-    text-halo-radius: 1;
-    text-spacing: 600;
-    text-placement: line;
-    text-dy: 8;
+  [waterway = 'stream'],
+  [waterway = 'wadi'] {
+    [zoom >= 15] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-face-name: @oblique-fonts;
+      text-fill: @water-text;
+      text-halo-radius: 1;
+      text-spacing: 600;
+      text-placement: line;
+      text-dy: 8;
+    }
   }
 
   [waterway = 'drain'],
