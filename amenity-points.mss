@@ -283,6 +283,11 @@
     point-placement: interior;
   }
 
+  [tourism = 'advertising_column'][zoom >= 17]::tourism {
+    point-file: url('symbols/advertising.png');
+    point-placement: interior;
+  }
+
   [amenity = 'vending_machine'][zoom >= 19]::amenity {
     point-file: url('symbols/vending.p.16.png');
     point-placement: interior;
@@ -1746,6 +1751,7 @@
   [tourism = 'aquarium'][zoom >= 17]::tourism,
   [tourism = 'zoo'][zoom >= 17]::tourism,
   [tourism = 'artwork'][zoom >= 17]::tourism,
+  [tourism = 'advertising_column'][zoom >= 17]::tourism,
   [amenity = 'sundial'][zoom >= 17]::amenity, 
   [amenity = 'shopmobility'][zoom >= 17]::amenity, 
   [amenity = 'post_box'][zoom >= 17]::amenity, 
