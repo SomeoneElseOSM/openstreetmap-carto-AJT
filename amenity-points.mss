@@ -134,6 +134,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'charging_station'][zoom >= 17]::amenity {
+    point-file: url('symbols/charging_station.png');
+    point-placement: interior;
+  }
+
   [tourism = 'guest_house'][zoom >= 17]::tourism {
     point-file: url('symbols/guest_house.p.16.png');
     point-placement: interior;
@@ -1619,7 +1624,8 @@
     text-placement: interior;
   }
 
-  [amenity = 'fuel']::amenity {
+  [amenity = 'fuel']::amenity,
+  [amenity = 'charging_station']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 9;
