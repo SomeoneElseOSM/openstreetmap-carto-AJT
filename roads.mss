@@ -3626,8 +3626,17 @@
 #trams {
   [railway = 'tram'][zoom >= 13] {
     line-color: #444;
-    line-width: 1;
+    line-width: 0.5;
+    [zoom >= 14] {
+      line-width: 0.66;
+    }
     [zoom >= 15] {
+      line-width: 0.75;
+    }
+    [zoom >= 16] {
+      line-width: 1;
+    }
+    [zoom >= 17] {
       line-width: 2;
       [bridge = 'yes'] {
         line-width: 5;
