@@ -277,6 +277,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'observationtower'][zoom >= 17]::man_made {
+    point-file: url('symbols/observationtower.png');
+    point-placement: interior;
+  }
+
   [tourism = 'aquarium'][zoom >= 17]::tourism, 
   [tourism = 'zoo'][zoom >= 17]::tourism {
     point-file: url('symbols/historic_nonspecific.p.16.png');
@@ -1909,6 +1914,7 @@
   [man_made = 'ventilation_shaft'][zoom >= 15]::man_made,
   [man_made = 'illuminationtower'][zoom >= 17]::man_made,
   [man_made = 'defensivetower'][zoom >= 17]::man_made,
+  [man_made = 'observationtower'][zoom >= 17]::man_made,
   [man_made = 'mounting_block'][zoom >= 17]::man_made,
   [man_made = 'windmill'][zoom >= 17]::man_made {
     text-name: "[name]";
