@@ -650,6 +650,9 @@
   [amenity = 'toilets'][zoom >= 17]::amenity {
     point-file: url('symbols/toilets.p.20.png');
     point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
   }
 
   [amenity = 'drinking_water'][zoom >= 17]::amenity {
