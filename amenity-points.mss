@@ -287,6 +287,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'aircraftcontroltower'][zoom >= 17]::man_made {
+    point-file: url('symbols/aircraftcontroltower.png');
+    point-placement: interior;
+  }
+
   [tourism = 'aquarium'][zoom >= 17]::tourism, 
   [tourism = 'zoo'][zoom >= 17]::tourism {
     point-file: url('symbols/historic_nonspecific.p.16.png');
@@ -1924,6 +1929,7 @@
   [man_made = 'defensivetower'][zoom >= 17]::man_made,
   [man_made = 'observationtower'][zoom >= 17]::man_made,
   [man_made = 'clocktower'][zoom >= 17]::man_made,
+  [man_made = 'aircraftcontroltower'][zoom >= 17]::man_made,
   [man_made = 'mounting_block'][zoom >= 17]::man_made,
   [man_made = 'windmill'][zoom >= 17]::man_made {
     text-name: "[name]";
