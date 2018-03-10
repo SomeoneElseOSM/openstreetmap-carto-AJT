@@ -14,7 +14,7 @@ mkdir -p data/land-polygons-split-3857
 
 # world_boundaries
 echo "downloading world_boundaries..."
-curl -z "data/world_boundaries-spherical.tgz" -L -o "data/world_boundaries-spherical.tgz" "http://planet.openstreetmap.org/historical-shapefiles/world_boundaries-spherical.tgz"
+curl -z "data/world_boundaries-spherical.tgz" -L -o "data/world_boundaries-spherical.tgz" "https://planet.openstreetmap.org/historical-shapefiles/world_boundaries-spherical.tgz"
 echo "expanding world_boundaries..."
 tar -xzf data/world_boundaries-spherical.tgz -C data/
 
