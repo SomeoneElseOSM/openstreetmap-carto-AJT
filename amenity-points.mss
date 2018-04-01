@@ -547,8 +547,13 @@
     point-placement: interior;
   }
 
-  [amenity = 'recycling'][zoom >= 16]::amenity {
+  [amenity = 'recycling'][zoom >= 19]::amenity {
     point-file: url('symbols/recycling.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'recyclingcentre'][zoom >= 16]::amenity {
+    point-file: url('symbols/recyclingcentre.p.16.png');
     point-placement: interior;
   }
 
@@ -1779,7 +1784,8 @@
     [zoom >= 20] { text-size: 18; }
   }
 
-  [amenity = 'recycling'][zoom >= 16]::amenity,
+  [amenity = 'recycling'][zoom >= 19]::amenity,
+  [amenity = 'recyclingcentre'][zoom >= 16]::amenity,
   [tourism = 'picnic_site'][zoom >= 16]::tourism {
     text-name: "[name]";
     text-size: 10;
