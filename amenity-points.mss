@@ -895,6 +895,11 @@
     point-placement: interior;
   }
 
+  [shop = 'deli'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_deli.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'sports'][zoom >= 17]::shop {
     point-file: url('symbols/shop_sports.p.16.png');
     point-placement: interior;
@@ -2036,6 +2041,7 @@
   [shop = 'car_parts']::shop,
   [amenity = 'car_wash']::amenity,
   [shop = 'bicycle']::shop,
+  [shop = 'deli']::shop,
   [shop = 'estate_agent']::shop,
   [shop = 'florist']::shop,
   [shop = 'funeral_directors']::shop,
