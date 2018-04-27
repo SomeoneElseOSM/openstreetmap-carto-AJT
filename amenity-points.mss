@@ -39,11 +39,17 @@
   [amenity = 'bicycle_rental'][zoom >= 17]::amenity {
     point-file: url('symbols/rental_bicycle.p.20.png');
     point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
   }
 
   [amenity = 'bicycle_parking'][zoom >= 19]::amenity {
     point-file: url('symbols/bicycle_parking.p.20.png');
     point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
   }
 
   [amenity = 'bus_stop']::amenity,
@@ -112,6 +118,9 @@
   [amenity = 'car_sharing'][zoom >= 16]::amenity {
     point-file: url('symbols/car_share.p.16.png');
     point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
   }
 
   [tourism = 'chalet'][zoom >= 17]::tourism {
@@ -1162,6 +1171,9 @@
     text-halo-radius: 1;
     text-wrap-width: 34;
     text-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      text-fill: #66ccaf;
+    }
   }
 
   [amenity = 'place_of_worship'][zoom >= 17]::amenity {
