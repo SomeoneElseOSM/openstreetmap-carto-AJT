@@ -692,7 +692,15 @@
   }
 
   [amenity = 'toilets'][zoom >= 17]::amenity {
-    point-file: url('symbols/toilets.p.20.png');
+    point-file: url('symbols/toilets_free.p.20.png');
+    point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
+  [amenity = 'toilets_pay'][zoom >= 17]::amenity {
+    point-file: url('symbols/toilets_pay.p.20.png');
     point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
@@ -1107,6 +1115,7 @@
   }
 
   [amenity = 'toilets']::amenity,
+  [amenity = 'toilets_pay']::amenity,
   [amenity = 'post_office']::amenity,
   [amenity = 'courthouse']::amenity,
   [amenity = 'police']::amenity,
