@@ -1241,6 +1241,17 @@
     text-placement: interior;
   }
 
+  [natural = 'heath'][zoom >= 13]::natural {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-fill: darken(@heath, 50%);
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-wrap-width: 10;
+    text-placement: interior;
+  }
+
   [natural = 'peak']::natural,
   [natural = 'volcano']::natural {
     [zoom >= 13] {
