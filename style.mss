@@ -52,7 +52,7 @@ be used because Mapnik does not support SBIT TTF.
 /*
 A regular style.
 */
-@book-fonts:    "Noto Sans UI Regular",
+@book-fonts:    "Noto Sans Regular",
                 "Noto Sans CJK JP Regular",
                 "Noto Sans Armenian Regular",
                 "Noto Sans Balinese Regular",
@@ -124,7 +124,7 @@ A regular style.
 A bold style is available for almost all scripts. Bold text is heavier than
 regular text and can be used for emphasis. Fallback is a regular style.
 */
-@bold-fonts:    "Noto Sans UI Bold",
+@bold-fonts:    "Noto Sans Bold",
                 "Noto Sans CJK JP Bold",
                 "Noto Sans Armenian Bold",
                 "Noto Sans Bengali UI Bold",
