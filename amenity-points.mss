@@ -4,6 +4,7 @@
 @transportation-icon: #0092da;
 @transportation-text: #0066ff;
 @amenity-brown: #734a08;
+@default-wrap-width: 68;
 
 .points {
   [tourism = 'alpine_hut'][zoom >= 13]::tourism {
@@ -1029,7 +1030,7 @@
       text-dy: 9;
       text-face-name: @bold-fonts;
       text-halo-radius: 1;
-      text-wrap-width: 34;
+      text-wrap-width: @default-wrap-width;
       text-placement: interior;
     }
   }
@@ -1160,7 +1161,7 @@
     text-dy: 9;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-wrap-width: 34;
+    text-wrap-width: @default-wrap-width;
     text-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       text-fill: #66ccaf;
@@ -1178,7 +1179,7 @@
     text-dy: 9;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-wrap-width: 34;
+    text-wrap-width: @default-wrap-width;
     text-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       text-fill: #66ccaf;
@@ -1193,7 +1194,7 @@
     text-dy: 12;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-wrap-width: 30;
+    text-wrap-width: @default-wrap-width;
     text-placement: interior;
   }
 
@@ -1311,7 +1312,7 @@
     text-dy: 15;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-wrap-width: 20;
+    text-wrap-width: @default-wrap-width;
     text-placement: interior;
   }
 
@@ -1355,7 +1356,7 @@
       text-fill: darken(@stadium, 30%);
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-wrap-width: 10;
+      text-wrap-width: @default-wrap-width;
       text-placement: interior;
     }
   }
@@ -1380,7 +1381,7 @@
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.6);
-      text-wrap-width: 30;
+      text-wrap-width: @default-wrap-width;
       text-placement: interior;
     }
   }
@@ -1648,7 +1649,7 @@
       text-fill: #da0092;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-wrap-width: 12;
+      text-wrap-width: @default-wrap-width;
       text-placement: interior;
     }
   }
@@ -1660,6 +1661,7 @@
     text-fill: black;
     text-dy: 9;
     text-halo-radius: 1;
+    text-wrap-width: @default-wrap-width;
     text-placement: interior;
     text-face-name: @book-fonts;
   }
@@ -1672,6 +1674,7 @@
     text-fill: #044704;
     text-dy: 9;
     text-halo-radius: 1;
+    text-wrap-width: @default-wrap-width;
     text-placement: interior;
     text-face-name: @book-fonts;
   }
@@ -1803,7 +1806,7 @@
     text-fill: @marina-text;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-wrap-width: 30;
+    text-wrap-width: @default-wrap-width;
     text-placement: interior;
     [zoom >= 17] { text-size: 10; }
     [zoom >= 20] { text-size: 18; }
@@ -1815,7 +1818,7 @@
     text-fill: #734a08;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-wrap-width: 30;
+    text-wrap-width: @default-wrap-width;
     text-placement: interior;
     [zoom >= 16] { text-size: 10; }
     [zoom >= 20] { text-size: 18; }
@@ -2090,7 +2093,7 @@
       text-fill: #939;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-wrap-width: 12;
+      text-wrap-width: @default-wrap-width;
       text-placement: interior;
     }
   }
