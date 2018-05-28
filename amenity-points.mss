@@ -708,6 +708,11 @@
     }
   }
 
+  [amenity = 'musical_instrument'][zoom >= 21]::amenity {
+    point-file: url('symbols/musical_instrument.p.20.png');
+    point-placement: interior;
+  }
+
   [amenity = 'drinking_water'][zoom >= 17]::amenity {
     point-file: url('symbols/food_drinkingtap.p.20.png');
     point-placement: interior;
@@ -1042,6 +1047,19 @@
       text-size: 10;
       [zoom >= 20] { text-size: 18; }
       text-dy: 10;
+      text-fill: #734a08;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+    }
+  }
+
+  [amenity = 'musical_instrument']::amenity {
+    [zoom >= 21] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-dy: 12;
       text-fill: #734a08;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
