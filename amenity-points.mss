@@ -700,8 +700,40 @@
     }
   }
 
+  [amenity = 'toilets_free_m'][zoom >= 17]::amenity {
+    point-file: url('symbols/toilets_free_m.p.20.png');
+    point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
+  [amenity = 'toilets_free_w'][zoom >= 17]::amenity {
+    point-file: url('symbols/toilets_free_w.p.20.png');
+    point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
   [amenity = 'toilets_pay'][zoom >= 17]::amenity {
     point-file: url('symbols/toilets_pay.p.20.png');
+    point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
+  [amenity = 'toilets_pay_m'][zoom >= 17]::amenity {
+    point-file: url('symbols/toilets_pay_m.p.20.png');
+    point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
+  [amenity = 'toilets_pay_w'][zoom >= 17]::amenity {
+    point-file: url('symbols/toilets_pay_w.p.20.png');
     point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
@@ -1134,7 +1166,11 @@
   }
 
   [amenity = 'toilets']::amenity,
+  [amenity = 'toilets_free_m']::amenity,
+  [amenity = 'toilets_free_w']::amenity,
   [amenity = 'toilets_pay']::amenity,
+  [amenity = 'toilets_pay_m']::amenity,
+  [amenity = 'toilets_pay_w']::amenity,
   [amenity = 'post_office']::amenity,
   [amenity = 'courthouse']::amenity,
   [amenity = 'police']::amenity,
