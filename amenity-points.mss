@@ -900,6 +900,11 @@
     point-placement: interior;
   }
 
+  [shop = 'laundry'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_laundry.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'bookmaker'][zoom >= 17]::shop {
     point-file: url('symbols/shop_bookmaker.p.16.png');
     point-placement: interior;
@@ -2122,6 +2127,7 @@
   [shop = 'hairdresser']::shop,
   [shop = 'beauty']::shop,
   [shop = 'gift']::shop,
+  [shop = 'laundry']::shop,
   [shop = 'bookmaker']::shop,
   [shop = 'furniture']::shop,
   [shop = 'butcher']::shop,
