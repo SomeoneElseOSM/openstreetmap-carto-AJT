@@ -915,6 +915,11 @@
     point-placement: interior;
   }
 
+  [shop = 'books'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_book.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'bookmaker'][zoom >= 17]::shop {
     point-file: url('symbols/shop_bookmaker.p.16.png');
     point-placement: interior;
@@ -2140,6 +2145,7 @@
   [shop = 'laundry']::shop,
   [shop = 'pet']::shop,
   [shop = 'travel_agent']::shop,
+  [shop = 'books']::shop,
   [shop = 'bookmaker']::shop,
   [shop = 'furniture']::shop,
   [shop = 'butcher']::shop,
