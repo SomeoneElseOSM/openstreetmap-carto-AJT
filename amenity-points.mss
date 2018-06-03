@@ -1272,40 +1272,11 @@
     text-placement: interior;
   }
 
-  [natural = 'wood'][zoom >= 15]::natural {
-    text-name: "[name]";
-    text-size: 10;
-    [zoom >= 20] { text-size: 18; }
-    text-fill: darken(@wood, 50%);
-    text-face-name: @book-fonts;
-    text-halo-radius: 1;
-    text-wrap-width: 10;
-    text-placement: interior;
-  }
-
-  [natural = 'broadleaved'][zoom >= 15]::natural {
-    text-name: "[name]";
-    text-size: 10;
-    [zoom >= 20] { text-size: 18; }
-    text-fill: darken(@wood, 50%);
-    text-face-name: @book-fonts;
-    text-halo-radius: 1;
-    text-wrap-width: 10;
-    text-placement: interior;
-  }
-
-  [natural = 'needleleaved'][zoom >= 15]::natural {
-    text-name: "[name]";
-    text-size: 10;
-    [zoom >= 20] { text-size: 18; }
-    text-fill: darken(@wood, 50%);
-    text-face-name: @book-fonts;
-    text-halo-radius: 1;
-    text-wrap-width: 10;
-    text-placement: interior;
-  }
-
-  [natural = 'mixedleaved'][zoom >= 15]::natural {
+  [natural = 'wood'][zoom >= 15]::natural,
+  [natural = 'broadleaved'][zoom >= 15]::natural,
+  [natural = 'needleleaved'][zoom >= 15]::natural,
+  [natural = 'mixedleaved'][zoom >= 15]::natural,
+  [natural = 'wetland'][zoom >= 15]::natural {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
