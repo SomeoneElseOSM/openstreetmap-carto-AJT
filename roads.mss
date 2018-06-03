@@ -2604,8 +2604,8 @@
           .roads-fill { background/line-opacity: 0.1; }
         }
         line/line-color: @ldpnhn-fill;
-        [zoom >= 13] { line/line-dasharray: 1,60; }
-        [zoom >= 15] { line/line-dasharray: 1,120; }
+        [zoom >= 13] { line/line-dasharray: 1,30; }
+        [zoom >= 15] { line/line-dasharray: 1,60; }
         line/line-join: round;
         line/line-cap: round;
         .roads-fill {
