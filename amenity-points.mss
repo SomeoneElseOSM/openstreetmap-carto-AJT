@@ -980,6 +980,11 @@
     point-placement: interior;
   }
 
+  [shop = 'alcohol'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_alcohol.p.20.png');
+    point-placement: interior;
+  }
+
   [shop = 'shopnonspecific'][zoom >= 17]::shop {
     point-file: url('symbols/shopping_nonspecific.p.16.png');
     point-placement: interior;
@@ -2133,12 +2138,13 @@
   [shop = 'outdoor']::shop,
   [shop = 'pawnbroker']::shop,
   [shop = 'sports']::shop,
+  [shop = 'alcohol']::shop,
   [shop = 'shopnonspecific']::shop {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 8;
       [zoom >= 20] { text-size: 16; }
-      text-dy: 10;
+      text-dy: 12;
       text-fill: #939;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
