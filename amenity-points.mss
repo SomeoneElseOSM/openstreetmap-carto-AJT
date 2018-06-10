@@ -765,8 +765,58 @@
     point-placement: interior;
   }
 
+  [historic = 'warmemorial'][zoom >= 17]::historic {
+    point-file: url('symbols/memorial_warmemorial.png');
+    point-placement: interior;
+  }
+
+  [historic = 'memorialplaque'][zoom >= 17]::historic {
+    point-file: url('symbols/memorial_plaque.png');
+    point-placement: interior;
+  }
+
+  [historic = 'memorialpavementplaque'][zoom >= 17]::historic {
+    point-file: url('symbols/memorial_pavementplaque.png');
+    point-placement: interior;
+  }
+
+  [historic = 'memorialstatue'][zoom >= 17]::historic {
+    point-file: url('symbols/memorial_statue.png');
+    point-placement: interior;
+  }
+
+  [historic = 'memorialsculpture'][zoom >= 17]::historic {
+    point-file: url('symbols/memorial_sculpture.png');
+    point-placement: interior;
+  }
+
+  [historic = 'memorialcross'][zoom >= 17]::historic {
+    point-file: url('symbols/memorial_cross.png');
+    point-placement: interior;
+  }
+
+  [historic = 'memorialstone'][zoom >= 17]::historic {
+    point-file: url('symbols/memorial_stone.png');
+    point-placement: interior;
+  }
+
+  [historic = 'memorialplate'][zoom >= 17]::historic {
+    point-file: url('symbols/memorial_plate.png');
+    point-placement: interior;
+  }
+
+  [historic = 'memorialbench'][zoom >= 17]::historic {
+    point-file: url('symbols/memorial_bench.png');
+    point-placement: interior;
+  }
+
+  [historic = 'memorialgrave'][zoom >= 17]::historic {
+    point-file: url('symbols/memorial_grave.png');
+    point-placement: interior;
+  }
+
   [historic = 'memorial'][zoom >= 17]::historic {
-    point-file: url('symbols/tourist_memorial.p.20.png');
+    point-file: url('symbols/memorial_nonspecific.png');
     point-placement: interior;
   }
 
@@ -1351,6 +1401,16 @@
     text-placement: interior;
   }
 
+  [historic = 'warmemorial'][zoom >= 17]::historic, 
+  [historic = 'memorialplaque'][zoom >= 17]::historic, 
+  [historic = 'memorialpavementplaque'][zoom >= 17]::historic, 
+  [historic = 'memorialstatue'][zoom >= 17]::historic, 
+  [historic = 'memorialsculpture'][zoom >= 17]::historic, 
+  [historic = 'memorialcross'][zoom >= 17]::historic, 
+  [historic = 'memorialstone'][zoom >= 17]::historic, 
+  [historic = 'memorialplate'][zoom >= 17]::historic, 
+  [historic = 'memorialbench'][zoom >= 17]::historic, 
+  [historic = 'memorialgrave'][zoom >= 17]::historic, 
   [historic = 'memorial'][zoom >= 17]::historic {
     text-name: "[name]";
     text-size: 9;
