@@ -815,6 +815,11 @@
     point-placement: interior;
   }
 
+  [historic = 'memorialobelisk'][zoom >= 17]::historic {
+    point-file: url('symbols/memorial_obelisk.png');
+    point-placement: interior;
+  }
+
   [historic = 'memorial'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_nonspecific.png');
     point-placement: interior;
@@ -1411,6 +1416,7 @@
   [historic = 'memorialplate'][zoom >= 17]::historic, 
   [historic = 'memorialbench'][zoom >= 17]::historic, 
   [historic = 'memorialgrave'][zoom >= 17]::historic, 
+  [historic = 'memorialobelisk'][zoom >= 17]::historic, 
   [historic = 'memorial'][zoom >= 17]::historic {
     text-name: "[name]";
     text-size: 9;
