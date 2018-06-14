@@ -990,6 +990,11 @@
     point-placement: interior;
   }
 
+  [shop = 'art'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_art.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'pawnbroker'][zoom >= 17]::shop {
     point-file: url('symbols/shop_pawnbroker.p.16.png');
     point-placement: interior;
@@ -2212,6 +2217,7 @@
   [shop = 'funeral_directors']::shop,
   [shop = 'greengrocer']::shop,
   [shop = 'outdoor']::shop,
+  [shop = 'art']::shop,
   [shop = 'pawnbroker']::shop,
   [shop = 'sports']::shop,
   [shop = 'alcohol']::shop,
