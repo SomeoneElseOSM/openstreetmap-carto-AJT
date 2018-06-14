@@ -1055,6 +1055,11 @@
     point-placement: interior;
   }
 
+  [shop = 'computer'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_computer.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'shopnonspecific'][zoom >= 17]::shop {
     point-file: url('symbols/shopping_nonspecific.p.16.png');
     point-placement: interior;
@@ -2223,6 +2228,7 @@
   [shop = 'alcohol']::shop,
   [shop = 'confectionery']::shop,
   [shop = 'mobile_phone']::shop,
+  [shop = 'computer']::shop,
   [shop = 'shopnonspecific']::shop {
     [zoom >= 17] {
       text-name: "[name]";
