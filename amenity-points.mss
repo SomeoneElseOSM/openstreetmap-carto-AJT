@@ -348,6 +348,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'grit_bin'][zoom >= 19]::amenity {
+    point-file: url('symbols/grit_bin.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'left_luggage'][zoom >= 18]::amenity {
     point-file: url('symbols/left_luggage.p.16.png');
     point-placement: interior;
