@@ -322,6 +322,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'maypole'][zoom >= 17]::man_made {
+    point-file: url('symbols/maypole.png');
+    point-placement: interior;
+  }
+
   [tourism = 'aquarium'][zoom >= 17]::tourism, 
   [tourism = 'zoo'][zoom >= 17]::tourism {
     point-file: url('symbols/historic_nonspecific.p.16.png');
@@ -2141,6 +2146,7 @@
   [man_made = 'squaretower'][zoom >= 17]::man_made,
   [man_made = 'churchtower'][zoom >= 17]::man_made,
   [man_made = 'churchspire'][zoom >= 17]::man_made,
+  [man_made = 'maypole'][zoom >= 17]::man_made,
   [man_made = 'mounting_block'][zoom >= 17]::man_made,
   [man_made = 'windmill'][zoom >= 17]::man_made {
     text-name: "[name]";
