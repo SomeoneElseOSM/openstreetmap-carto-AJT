@@ -96,6 +96,16 @@
     point-placement: interior;
   }
 
+  [highway = 'streetlamp_electric'][zoom >= 19]::highway {
+    point-file: url('symbols/streetlamp_electric.png');
+    point-placement: interior;
+  }
+
+  [highway = 'streetlamp_gas'][zoom >= 19]::highway {
+    point-file: url('symbols/streetlamp_gas.png');
+    point-placement: interior;
+  }
+
   [amenity = 'cafe'][zoom >=17]::amenity {
     point-file: url('symbols/cafe.p.16.png');
     point-placement: interior;
