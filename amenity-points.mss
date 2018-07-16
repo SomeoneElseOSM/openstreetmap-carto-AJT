@@ -1095,7 +1095,12 @@
     point-placement: interior;
   }
 
-  [amenity = 'fire_extinguisher'][zoom >= 17]::amenity {
+  [amenity = 'life_ring'][zoom >= 19]::amenity {
+    point-file: url('symbols/life_ring.png');
+        point-placement: interior;
+  }
+
+  [amenity = 'fire_extinguisher'][zoom >= 19]::amenity {
     point-file: url('symbols/fireextinguisher.png');
     point-placement: interior;
   }
