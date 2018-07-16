@@ -1020,6 +1020,11 @@
     point-placement: interior;
   }
 
+  [shop = 'music'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_music.png');
+    point-placement: interior;
+  }
+
   [shop = 'vacant'][zoom >= 18]::shop {
     point-file: url('symbols/office_nonspecific.p.16.png');
     point-placement: interior;
@@ -2250,6 +2255,7 @@
   [shop = 'outdoor']::shop,
   [shop = 'art']::shop,
   [shop = 'pawnbroker']::shop,
+  [shop = 'music']::shop,
   [shop = 'sports']::shop,
   [shop = 'alcohol']::shop,
   [shop = 'confectionery']::shop,
