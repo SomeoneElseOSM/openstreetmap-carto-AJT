@@ -3839,6 +3839,21 @@
   }
 }
 
+#railways-text-name {
+  [railway = 'platform'] {
+    [zoom >= 13] {
+      text-name: "[name]";
+      text-size: 8;
+      text-fill: black;
+      text-spacing: 300;
+      text-clip: false;
+      text-placement: line;
+      text-face-name: @book-fonts;
+      text-halo-radius: 0;
+    }
+  }
+}
+
 #roads-text-name {
   [highway = 'motorway'],
   [highway = 'motorway_link'],
@@ -3982,6 +3997,24 @@
 
 #roads-area-text-name {
   [highway = 'pedestrian'] {
+    [zoom >= 15] {
+      text-name: "[name]";
+      text-size: 8;
+      text-face-name: @book-fonts;
+      text-placement: interior;
+      text-wrap-width: 30;
+    }
+    [zoom >= 16] {
+      text-size: 9;
+    }
+    [zoom >= 17] {
+      text-size: 11;
+    }
+  }
+}
+
+#railways-area-text-name {
+  [railway = 'platform'] {
     [zoom >= 15] {
       text-name: "[name]";
       text-size: 8;
