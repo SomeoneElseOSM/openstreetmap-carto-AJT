@@ -1035,6 +1035,11 @@
     point-placement: interior;
   }
 
+  [shop = 'toys'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_toys.png');
+    point-placement: interior;
+  }
+
   [shop = 'vacant'][zoom >= 18]::shop {
     point-file: url('symbols/office_nonspecific.p.16.png');
     point-placement: interior;
@@ -2268,6 +2273,7 @@
   [shop = 'music']::shop,
   [shop = 'motorcycle']::shop,
   [shop = 'farm']::shop,
+  [shop = 'toys']::shop,
   [shop = 'sports']::shop,
   [shop = 'alcohol']::shop,
   [shop = 'confectionery']::shop,
