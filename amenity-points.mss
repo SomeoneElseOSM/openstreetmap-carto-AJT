@@ -1040,6 +1040,11 @@
     point-placement: interior;
   }
 
+  [shop = 'tattoo'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_tattoo.png');
+    point-placement: interior;
+  }
+
   [shop = 'vacant'][zoom >= 18]::shop {
     point-file: url('symbols/office_nonspecific.p.16.png');
     point-placement: interior;
@@ -2274,6 +2279,7 @@
   [shop = 'motorcycle']::shop,
   [shop = 'farm']::shop,
   [shop = 'toys']::shop,
+  [shop = 'tattoo']::shop,
   [shop = 'sports']::shop,
   [shop = 'alcohol']::shop,
   [shop = 'confectionery']::shop,
