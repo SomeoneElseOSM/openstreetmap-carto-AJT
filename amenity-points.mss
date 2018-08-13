@@ -1469,7 +1469,7 @@
   }
 
   [natural = 'cave_entrance'][zoom >= 15]::natural,
-  [natural = 'tree'][zoom >= 16]::natural {
+  [natural = 'tree'][zoom >= 18]::natural {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
