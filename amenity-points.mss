@@ -692,6 +692,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'bicycle_repair_station'][zoom >= 17]::amenity {
+    point-file: url('symbols/bicyclerepairstation.png');
+    point-placement: interior;
+  }
+
   [amenity = 'sundial'][zoom >= 17]::amenity {
     point-file: url('symbols/sundial.p.16.png');
     point-placement: interior;
@@ -2043,6 +2048,7 @@
   [amenity = 'boothatm'][zoom >= 17]::amenity, 
   [amenity = 'boothinformation'][zoom >= 17]::amenity, 
   [amenity = 'boothdisused'][zoom >= 17]::amenity, 
+  [amenity = 'bicycle_repair_station'][zoom >= 17]::amenity, 
   [tourism = 'museum'][zoom >= 17]::tourism,
   [tourism = 'information'][zoom >= 17]::tourism,
   [tourism = 'informationboard'][zoom >= 17]::tourism,
