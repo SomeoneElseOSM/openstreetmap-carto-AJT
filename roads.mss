@@ -2537,7 +2537,8 @@
         line/line-join: round;
         line/line-cap: round;
         .roads-fill {
-          line/line-width: 4;
+          [zoom >= 13] { line/line-width: 2; }
+          [zoom >= 15] { line/line-width: 4; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.2; }
@@ -2575,7 +2576,8 @@
         line/line-join: round;
         line/line-cap: round;
         .roads-fill {
-          line/line-width: 4;
+          [zoom >= 13] { line/line-width: 2; }
+          [zoom >= 15] { line/line-width: 4; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.2; }
@@ -2613,7 +2615,8 @@
         line/line-join: round;
         line/line-cap: round;
         .roads-fill {
-          line/line-width: 4;
+          [zoom >= 13] { line/line-width: 2; }
+          [zoom >= 15] { line/line-width: 4; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.2; }
@@ -2651,7 +2654,8 @@
         line/line-join: round;
         line/line-cap: round;
         .roads-fill {
-          line/line-width: 4;
+          [zoom >= 13] { line/line-width: 2; }
+          [zoom >= 15] { line/line-width: 4; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.2; }
