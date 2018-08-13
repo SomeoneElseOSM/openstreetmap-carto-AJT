@@ -2193,6 +2193,7 @@
   [man_made = 'churchspire'][zoom >= 17]::man_made,
   [man_made = 'maypole'][zoom >= 17]::man_made,
   [man_made = 'mounting_block'][zoom >= 17]::man_made,
+  [man_made = 'monitoringwater'][zoom >= 17]::man_made,
   [man_made = 'windmill'][zoom >= 17]::man_made {
     text-name: "[name]";
     text-size: 9;

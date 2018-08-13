@@ -124,6 +124,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'monitoringwater'][zoom >= 17]::man_made {
+    point-file: url('symbols/monitoringwater.png');
+    point-placement: interior;
+  }
+
   [man_made = 'mast'][zoom >= 17]::man_made {
     point-file: url('symbols/communications.p.20.png');
     point-placement: interior;
