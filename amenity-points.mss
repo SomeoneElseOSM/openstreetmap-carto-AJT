@@ -692,7 +692,7 @@
     point-placement: interior;
   }
 
-  [amenity = 'bicycle_repair_station'][zoom >= 17]::amenity {
+  [amenity = 'bicycle_repair_station'][zoom >= 19]::amenity {
     point-file: url('symbols/bicyclerepairstation.png');
     point-placement: interior;
   }
@@ -1077,6 +1077,11 @@
 
   [amenity = 'car_wash'][zoom >= 17]::shop {
     point-file: url('symbols/amenity_car_wash.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'compressed_air'][zoom >= 19]::shop {
+    point-file: url('symbols/amenity_compressed_air.png');
     point-placement: interior;
   }
 
@@ -2048,7 +2053,6 @@
   [amenity = 'boothatm'][zoom >= 17]::amenity, 
   [amenity = 'boothinformation'][zoom >= 17]::amenity, 
   [amenity = 'boothdisused'][zoom >= 17]::amenity, 
-  [amenity = 'bicycle_repair_station'][zoom >= 17]::amenity, 
   [tourism = 'museum'][zoom >= 17]::tourism,
   [tourism = 'information'][zoom >= 17]::tourism,
   [tourism = 'informationboard'][zoom >= 17]::tourism,
@@ -2059,6 +2063,17 @@
   [tourism = 'informationear'][zoom >= 17]::tourism,
   [tourism = 'informationpnfs'][zoom >= 17]::tourism,
   [amenity = 'bench'][zoom >= 17]::amenity {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-dy: 10;
+    text-fill: #734a08;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-placement: interior;
+  }
+
+  [amenity = 'bicycle_repair_station'][zoom >= 19]::amenity {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
@@ -2300,6 +2315,20 @@
   [shop = 'computer']::shop,
   [shop = 'shopnonspecific']::shop {
     [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 8;
+      [zoom >= 20] { text-size: 16; }
+      text-dy: 12;
+      text-fill: #939;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-wrap-width: @default-wrap-width;
+      text-placement: interior;
+    }
+  }
+
+  [amenity = 'compressed_air']::amenity {
+    [zoom >= 19] {
       text-name: "[name]";
       text-size: 8;
       [zoom >= 20] { text-size: 16; }
