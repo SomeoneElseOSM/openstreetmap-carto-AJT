@@ -2227,6 +2227,15 @@
     text-placement: interior;
   }
 
+  [man_made = 'lcn_ref'][zoom >= 17]::man_made {
+    ref/text-name: "[ref]";
+    ref/text-size: 12;
+    ref/text-fill: black;
+    ref/text-min-distance: 2;
+    ref/text-face-name: @oblique-fonts;
+    ref/text-halo-radius: 1.5;
+  }
+
   [man_made = 'works'][zoom >= 15]::man_made {
     text-name: "[name]";
     text-size: 9;
