@@ -80,10 +80,20 @@
 
 #water-lines-casing {
   [waterway='stream'],
-  [waterway='ditch'],
   [waterway='drain'] {
     [int_tunnel = 'no'] {
       [zoom >= 13] {
+        line-width: 1.5;
+        line-color: white;
+        [waterway='stream'][zoom >= 15] {
+          line-width: 2.5;
+        }
+      }
+    }
+  }
+  [waterway='ditch'] {
+     [int_tunnel = 'no'] {
+      [zoom >= 14] {
         line-width: 1.5;
         line-color: white;
         [waterway='stream'][zoom >= 15] {
@@ -165,9 +175,50 @@
   }
 
   [waterway = 'stream'],
-  [waterway = 'ditch'],
   [waterway = 'drain'] {
     [zoom >= 13] {
+      [bridge = 'yes'] {
+        [zoom >= 14] {
+          bridgecasing/line-color: black;
+          bridgecasing/line-join: round;
+          bridgecasing/line-width: 3;
+          [waterway = 'stream'][zoom >= 15] { bridgecasing/line-width: 4; }
+          bridgeglow/line-color: white;
+          bridgeglow/line-join: round;
+          bridgeglow/line-width: 2;
+          [waterway = 'stream'][zoom >= 15] { bridgeglow/line-width: 3; }
+        }
+      }
+      [bridge = 'levee'] {
+        [zoom >= 14] {
+          bridgecasing/line-color: @levee-casing;
+          bridgecasing/line-join: round;
+          bridgecasing/line-width: 3;
+          [waterway = 'stream'][zoom >= 15] { bridgecasing/line-width: 4; }
+          bridgeglow/line-color: white;
+          bridgeglow/line-join: round;
+          bridgeglow/line-width: 2;
+          [waterway = 'stream'][zoom >= 15] { bridgeglow/line-width: 3; }
+        }
+      }
+      line-width: 1;
+      line-color: @water-color;
+      [waterway = 'stream'][zoom >= 15] {
+        line-width: 2;
+      }
+      [int_tunnel = 'yes'][zoom >= 15] {
+        line-width: 2.5;
+        [waterway = 'stream'] { line-width: 3.5; }
+        line-dasharray: 4,2;
+        a/line-width: 1;
+        [waterway = 'stream'] { a/line-width: 2; }
+        a/line-color: #f3f7f7;
+      }
+    }
+  }
+
+  [waterway = 'ditch'] {
+    [zoom >= 14] {
       [bridge = 'yes'] {
         [zoom >= 14] {
           bridgecasing/line-color: black;

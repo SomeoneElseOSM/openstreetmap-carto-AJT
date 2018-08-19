@@ -497,7 +497,7 @@
 
 .barriers {
   [barrier = 'wall'] {
-    [zoom >= 13]
+    [zoom >= 14]
     {
       line-width: 0.4;
       [zoom >= 16] { line-width: 0.8; }
@@ -512,7 +512,7 @@
   }
 
   [barrier = 'stile'] {
-    [zoom >= 13] 
+    [zoom >= 14] 
     { 
       line-width: 0.3; 
       [zoom >= 16] { line-width: 0.6; }
@@ -528,7 +528,7 @@
 
   [barrier = 'fence'],
   [barrier = 'kerb'] {
-    [zoom >= 13] 
+    [zoom >= 14] 
     {
       line-width: 0.2; 
       [zoom >= 16] { line-width: 0.4; }
@@ -543,7 +543,7 @@
   }
 
   [barrier = 'hedge'] {
-    [zoom >= 13]
+    [zoom >= 14]
     {
       line-width: 1; 
       [zoom >= 16] { line-width: 3; }
@@ -558,7 +558,7 @@
   }
 
   [barrier = 'gate'] {
-    [zoom >= 13]
+    [zoom >= 14]
     {
       line-width: 1;
       [zoom >= 16] { line-width: 2; }

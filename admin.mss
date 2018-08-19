@@ -93,14 +93,15 @@
       polygon-fill: green;
     }
     ::line {
-      opacity: 0.15;
-      line-color: green;
-      line-width: 1.5;
-      line-dasharray: 4,2;
-      [zoom >= 10] {
-        line-width: 3;
+      [zoom >= 14] {
+        opacity: 0.15;
+        line-color: green;
+        line-width: 1.5;
         line-dasharray: 6,2;
         line-join: bevel;
+        [zoom >= 17] {
+          line-width: 3;
+	}
       }
     }
   }
