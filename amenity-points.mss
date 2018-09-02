@@ -572,7 +572,7 @@
     point-placement: interior;
   }
 
-  [amenity = 'biergarten'][zoom >= 16]::amenity {
+  [amenity = 'biergarten'][zoom >= 17]::amenity {
     point-file: url('symbols/biergarten.p.16.png');
     point-placement: interior;
   }
