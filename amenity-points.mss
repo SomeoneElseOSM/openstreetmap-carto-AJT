@@ -332,9 +332,12 @@
     point-placement: interior;
   }
 
-  [man_made = 'maypole'][zoom >= 17]::man_made {
+  [man_made = 'maypole'][zoom >= 16]::man_made {
     point-file: url('symbols/maypole.png');
     point-placement: interior;
+    [zoom >= 18] {
+      point-file: url('symbols/maypole_large.png');
+    }
   }
 
   [tourism = 'aquarium'][zoom >= 17]::tourism, 
