@@ -361,6 +361,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'vending_excrement'][zoom >= 19]::amenity {
+    point-file: url('symbols/vending_excrement.png');
+    point-placement: interior;
+  }
+
   [amenity = 'waste_basket'][zoom >= 19]::amenity {
     point-file: url('symbols/waste_basket.p.16.png');
     point-placement: interior;
