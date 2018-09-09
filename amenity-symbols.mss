@@ -230,6 +230,13 @@
     }
   }
 
+  [barrier = 'stepping_stones']::barrier {
+    [zoom >= 15] {
+      point-file: url('symbols/stepping_stones.png');
+      point-placement: interior;
+    }
+  }
+
   [barrier = 'lift_gate'][zoom >= 16]::barrier {
     point-file: url('symbols/liftgate.png');
     point-placement: interior;

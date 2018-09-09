@@ -2172,6 +2172,7 @@
   [barrier  = 'horse_stile'][zoom >= 15]::barrier,
   [barrier  = 'cycle_barrier'][zoom >= 15]::barrier,
   [barrier  = 'cattle_grid'][zoom >= 15]::barrier,
+  [barrier  = 'stepping_stones'][zoom >= 15]::barrier,
   [barrier  = 'lift_gate'][zoom >= 16]::barrier,
   [barrier  = 'toll_booth'][zoom >= 16]::barrier,
   [barrier  = 'bollard'][zoom >= 16]::barrier,
