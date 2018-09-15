@@ -3568,7 +3568,7 @@
       access/line-cap: round;
       [zoom >= 16] { access/line-width: 6; }
     }
-    [feature = 'highway_service'][zoom >= 13][zoom < 15] {
+    [feature = 'highway_service'][service = 'INT-normal'][zoom >= 13][zoom < 15] {
       access/line-width: 2;
       access/line-color: @private-marking;
       access/line-dasharray: 6,8;
