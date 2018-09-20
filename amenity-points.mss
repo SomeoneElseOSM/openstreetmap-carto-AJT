@@ -700,6 +700,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'public_bookcase'][zoom >= 17]::amenity {
+    point-file: url('symbols/publicbookcase.png');
+    point-placement: interior;
+  }
+
   [amenity = 'bicycle_repair_station'][zoom >= 19]::amenity {
     point-file: url('symbols/bicyclerepairstation.png');
     point-placement: interior;
