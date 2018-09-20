@@ -2066,6 +2066,7 @@
   [amenity = 'boothatm'][zoom >= 17]::amenity, 
   [amenity = 'boothinformation'][zoom >= 17]::amenity, 
   [amenity = 'boothdisused'][zoom >= 17]::amenity, 
+  [amenity = 'public_bookcase'][zoom >= 17]::amenity, 
   [tourism = 'museum'][zoom >= 17]::tourism,
   [tourism = 'information'][zoom >= 17]::tourism,
   [tourism = 'informationboard'][zoom >= 17]::tourism,
