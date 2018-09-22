@@ -3131,10 +3131,14 @@
         line-color: @runway-fill;
       }
       [zoom >= 14][zoom < 15] {
-        line-width: 5;
+        line-width: 4;
         line-color: @runway-fill;
       }
-      [zoom >= 15][zoom < 17] {
+      [zoom >= 15][zoom < 16] {
+        line-width: 7;
+        line-color: @runway-fill;
+      }
+      [zoom >= 16][zoom < 17] {
         line-width: 11;
         line-color: @runway-fill;
       }
