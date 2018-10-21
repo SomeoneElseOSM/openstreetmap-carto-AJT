@@ -2369,8 +2369,27 @@
     [zoom >= 18] {
       text-name: "[ref]";
       text-size: 8;
-      [zoom >= 20] { text-size: 16; }
-      text-dy: 10;
+      text-dy: 20;
+      [zoom >= 20]
+        {
+	  text-size: 16;
+          text-dy: 20;
+	}
+      [zoom >= 21]
+        {
+	  text-size: 16;
+          text-dy: 40;
+	}
+      [zoom >= 22]
+        {
+	  text-size: 16;
+          text-dy: 60;
+	}
+      [zoom >= 24]
+        {
+	  text-size: 16;
+          text-dy: 20;
+	}
       text-fill: black;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
