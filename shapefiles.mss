@@ -1,10 +1,3 @@
-#necountries {
-  [zoom >= 1][zoom < 9] {
-    line-width: 0.5;
-    line-color: grey;
-  }
-}
-
 #nepopulated {
   [zoom >= 3][zoom < 5] {
     [SCALERANK = 0],

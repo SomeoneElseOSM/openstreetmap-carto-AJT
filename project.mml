@@ -93,25 +93,6 @@
       "name": "builtup"
     },
     {
-      "geometry": "linestring",
-      "extent": [
-        -140.99778,
-        -54.89681,
-        141.03385176001382,
-        70.16419
-      ],
-      "id": "necountries",
-      "class": "",
-      "Datasource": {
-        "file": "data/ne_110m_admin_0_boundary_lines_land/ne_110m_admin_0_boundary_lines_land.shp",
-        "type": "shape"
-      },
-      "srs-name": "WGS84",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "advanced": {},
-      "name": "necountries"
-    },
-    {
       "geometry": "polygon",
       "extent": [
         -179.99999692067183,
