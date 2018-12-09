@@ -431,6 +431,21 @@
     point-placement: interior;
   }
 
+  [amenity = 'ambulance_station'][zoom >= 17]::amenity {
+    point-file: url('symbols/health_ambulance.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'mountain_rescue'][zoom >= 17]::amenity {
+    point-file: url('symbols/health_mountainrescue.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'mountain_rescue_box'][zoom >= 17]::amenity {
+    point-file: url('symbols/health_mountainrescuebox.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'place_of_worship'][zoom >= 16]::amenity {
     point-file: url('symbols/place_of_worship3.p.16.png');
     point-placement: interior;
@@ -2277,7 +2292,10 @@
 
   [amenity = 'doctors']::amenity,
   [amenity = 'dentist']::amenity,
-  [amenity = 'pharmacy']::amenity { 
+  [amenity = 'pharmacy']::amenity,
+  [amenity = 'ambulance_station']::amenity,
+  [amenity = 'mountain_rescue']::amenity,
+  [amenity = 'mountain_rescue_box']::amenity { 
     [zoom >= 17] {
     text-name: "[name]";
     text-size: 8;
