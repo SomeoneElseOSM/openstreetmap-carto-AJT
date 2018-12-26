@@ -1161,6 +1161,9 @@
   [amenity = 'defibrillator'][zoom >= 17]::amenity {
     point-file: url('symbols/health_defibrillator.p.16.png');
     point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
   }
 
   [amenity = 'life_ring'][zoom >= 19]::amenity {
