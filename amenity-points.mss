@@ -340,8 +340,12 @@
     }
   }
 
-  [tourism = 'aquarium'][zoom >= 17]::tourism, 
-  [tourism = 'zoo'][zoom >= 17]::tourism {
+  [tourism = 'zoo'][zoom >= 15]::tourism {
+    point-file: url('symbols/historic_nonspecific.p.16.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'aquarium'][zoom >= 17]::tourism {
     point-file: url('symbols/historic_nonspecific.p.16.png');
     point-placement: interior;
   }
@@ -2082,7 +2086,6 @@
   }
 
   [tourism = 'aquarium'][zoom >= 17]::tourism,
-  [tourism = 'zoo'][zoom >= 17]::tourism,
   [tourism = 'artwork'][zoom >= 17]::tourism,
   [tourism = 'advertising_column'][zoom >= 17]::tourism,
   [amenity = 'sundial'][zoom >= 17]::amenity, 
@@ -2107,6 +2110,17 @@
   [tourism = 'informationear'][zoom >= 17]::tourism,
   [tourism = 'informationpnfs'][zoom >= 17]::tourism,
   [amenity = 'bench'][zoom >= 17]::amenity {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-dy: 10;
+    text-fill: #734a08;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-placement: interior;
+  }
+
+  [tourism = 'zoo'][zoom >= 15]::tourism {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
