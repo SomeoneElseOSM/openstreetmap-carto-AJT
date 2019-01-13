@@ -803,7 +803,7 @@
     point-placement: interior;
   }
 
-  [amenity = 'prison'][zoom >= 17]::amenity {
+  [amenity = 'prison'][zoom >= 15]::amenity {
     point-file: url('symbols/amenity_prison.p.20.png');
     point-placement: interior;
   }
@@ -1371,7 +1371,6 @@
   [amenity = 'courthouse']::amenity,
   [amenity = 'police']::amenity,
   [amenity = 'fire_station']::amenity,
-  [amenity = 'prison']::amenity,
   [amenity = 'embassy']::amenity,
   [leisure = 'playground']::leisure, 
   [leisure = 'picnic_table']::leisure,
@@ -1380,6 +1379,19 @@
   [leisure = 'bird_hide']::leisure,
   [man_made = 'water_well']::man_made {
     [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: #734a08;
+      text-dy: 12;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+    }
+  }
+
+  [amenity = 'prison']::amenity {
+    [zoom >= 15] {
       text-name: "[name]";
       text-size: 10;
       [zoom >= 20] { text-size: 18; }
