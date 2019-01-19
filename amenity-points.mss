@@ -1616,6 +1616,7 @@
   [landuse = 'village_green']::landuse,
   [leisure = 'common']::leisure,
   [leisure = 'garden']::leisure,
+  [leisure = 'golfgreen']::leisure,
   [leisure = 'golf_course']::leisure,
   [leisure = 'nature_reserve']::leisure {
     [way_area >= 150000][zoom >= 14],

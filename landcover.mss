@@ -2,6 +2,7 @@
 
 @forest: #bedab3;
 @grass: #cfeca8; // also common, garden, village_green, conservation
+@golfgreen: #b9e382;
 @golf_course: #b5e3b5;
 @natural: #c6e4b4; // also grassland
 @park: #b6fdb6; // also recreation_ground
@@ -192,6 +193,10 @@
 
   [feature = 'leisure_garden'][zoom >= 10] {
     polygon-fill: @grass;
+  }
+
+  [feature = 'leisure_golfgreen'][zoom >= 10] {
+    polygon-fill: @golfgreen;
   }
 
   [feature = 'leisure_golf_course'][zoom >= 10] {
