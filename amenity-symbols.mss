@@ -119,6 +119,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'golfballwasher'][zoom >= 18]::man_made {
+    point-file: url('symbols/golfballwasher.png');
+    point-placement: interior;
+  }
+
   [man_made = 'mounting_block'][zoom >= 17]::railway {
     point-file: url('symbols/mountingblock.png');
     point-placement: interior;
