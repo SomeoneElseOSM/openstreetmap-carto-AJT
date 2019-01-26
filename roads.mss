@@ -56,8 +56,8 @@
 @residential-construction: #aaa;
 @service-construction: #aaa;
 
-@destination-marking: #ffe9cc;
-@private-marking: #efa9a9;
+@destination-marking: #ffff99;
+@private-marking: #ffcc99;
 
 @tunnel-casing: grey;
 @bridge-casing: black;
