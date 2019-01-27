@@ -81,6 +81,11 @@
     point-placement: interior;
   }
 
+  [office = 'craftbrewery'][zoom >= 17]::office {
+    point-file: url('symbols/brewery_craft.p.16.png');
+    point-placement: interior;
+  }
+
   [leisure = 'nonspecific'][zoom >= 17]::leisure {
     point-file: url('symbols/leisure_nonspecific.p.16.png');
     point-placement: interior;
@@ -1903,16 +1908,19 @@
     }
   }
 
-  [office = 'nonspecific'][zoom >= 17]::office {
-    text-name: "[name]";
-    text-size: 9;
-    [zoom >= 20] { text-size: 18; }
-    text-fill: black;
-    text-dy: 9;
-    text-halo-radius: 1;
-    text-wrap-width: @default-wrap-width;
-    text-placement: interior;
-    text-face-name: @book-fonts;
+  [office = 'nonspecific'],
+  [office = 'craftbrewery']::office {
+    [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 9;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: black;
+      text-dy: 9;
+      text-halo-radius: 1;
+      text-wrap-width: @default-wrap-width;
+      text-placement: interior;
+      text-face-name: @book-fonts;
+    }
   }
 
   [leisure = 'fitness_station'][zoom >= 19]::leisure,
