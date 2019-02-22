@@ -1287,6 +1287,7 @@
   [amenity = 'pub_ndddd']::amenity,
   [amenity = 'restaurant']::amenity,
   [amenity = 'cafe']::amenity,
+  [amenity = 'vending_machine']::amenity,
   [amenity = 'fast_food']::amenity,
   [amenity = 'fast_food_burger']::amenity,
   [amenity = 'fast_food_chicken']::amenity,
