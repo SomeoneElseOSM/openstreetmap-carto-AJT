@@ -734,6 +734,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'restaccomm'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaccomm.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'fast_food'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food.png');
     point-placement: interior;
@@ -1382,6 +1387,7 @@
   [amenity = 'pub_ynddddn']::amenity,
   [amenity = 'pub_ndddddd']::amenity,
   [amenity = 'restaurant']::amenity,
+  [amenity = 'restaccomm']::amenity,
   [amenity = 'cafe']::amenity,
   [amenity = 'vending_machine']::amenity,
   [amenity = 'fast_food']::amenity,
