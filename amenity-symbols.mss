@@ -129,6 +129,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'footwear_decontamination'][zoom >= 17]::railway {
+    point-file: url('symbols/decontamination.png');
+    point-placement: interior;
+  }
+
   [man_made = 'monitoringwater'][zoom >= 17]::man_made {
     point-file: url('symbols/monitoringwater.png');
     point-placement: interior;
