@@ -32,6 +32,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'baraccomm'][zoom >= 17]::amenity {
+    point-file: url('symbols/baraccomm.p.20.png');
+    point-placement: interior;
+  }
+
   [amenity = 'concert_hall'][zoom >=17]::amenity {
     point-file: url('symbols/nightclub.18.svg');
     point-placement: interior;
@@ -113,6 +118,11 @@
 
   [amenity = 'cafe'][zoom >=17]::amenity {
     point-file: url('symbols/cafe.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafeaccomm'][zoom >= 17]::amenity {
+    point-file: url('symbols/cafeaccomm.p.16.png');
     point-placement: interior;
   }
 
@@ -1394,6 +1404,7 @@
   [amenity = 'restaurant']::amenity,
   [amenity = 'restaccomm']::amenity,
   [amenity = 'cafe']::amenity,
+  [amenity = 'cafeaccomm']::amenity,
   [amenity = 'vending_machine']::amenity,
   [amenity = 'fast_food']::amenity,
   [amenity = 'fast_food_burger']::amenity,
@@ -1449,7 +1460,8 @@
   }
 
 
-  [amenity = 'bar'][zoom >= 17]::amenity {
+  [amenity = 'bar'][zoom >= 17 ]::amenity,
+  [amenity = 'baraccomm'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
