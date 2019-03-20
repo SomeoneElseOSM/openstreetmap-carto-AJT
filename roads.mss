@@ -2991,6 +2991,9 @@
         line/line-dasharray: 6,3;
         line/line-join: round;
         line/line-cap: round;
+        [access = 'no'] {
+          line/line-opacity: 0.5;
+	}
         .tunnels-fill {
           line/line-width: 2;
           line/line-opacity: 0.5;
@@ -3825,7 +3828,7 @@
         access/line-width: 3;
         access/line-color: @private-marking;
         access/line-dasharray: 6,8;
-        access/line-opacity: 0.5;
+        access/line-opacity: 0.2;
         access/line-join: round;
         access/line-cap: round;
       }
@@ -3833,7 +3836,7 @@
         access/line-width: 6;
         access/line-color: @private-marking;
         access/line-dasharray: 6,8;
-        access/line-opacity: 0.5;
+        access/line-opacity: 0.2;
         access/line-join: round;
         access/line-cap: round;
       }
