@@ -322,6 +322,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'clockpedestal'][zoom >= 17]::man_made {
+    point-file: url('symbols/clockpedestal.png');
+    point-placement: interior;
+  }
+
   [man_made = 'aircraftcontroltower'][zoom >= 17]::man_made {
     point-file: url('symbols/aircraftcontroltower.png');
     point-placement: interior;
@@ -939,6 +944,11 @@
 
   [amenity = 'drinking_water'][zoom >= 17]::amenity {
     point-file: url('symbols/food_drinkingtap.p.20.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'fountain'][zoom >= 17]::amenity {
+    point-file: url('symbols/fountain.png');
     point-placement: interior;
   }
 
@@ -2334,6 +2344,17 @@
     text-placement: interior;
   }
 
+  [amenity = 'fountain'][zoom >= 17]::amenity {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-dy: 12;
+    text-fill: #3e2bf6;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-placement: interior;
+  }
+
   [tourism = 'attraction'][zoom >= 14]::tourism {
     text-name: "[name]";
     text-size: 10;
@@ -2432,6 +2453,7 @@
   [man_made = 'defensivetower'][zoom >= 17]::man_made,
   [man_made = 'observationtower'][zoom >= 17]::man_made,
   [man_made = 'clocktower'][zoom >= 17]::man_made,
+  [man_made = 'clockpedestal'][zoom >= 17]::man_made,
   [man_made = 'aircraftcontroltower'][zoom >= 17]::man_made,
   [man_made = 'radartower'][zoom >= 17]::man_made,
   [man_made = 'squaretower'][zoom >= 17]::man_made,
