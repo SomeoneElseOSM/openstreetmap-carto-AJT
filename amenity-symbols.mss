@@ -86,6 +86,11 @@
     point-placement: interior;
   }
 
+  [natural = 'climbing'][zoom >= 17]::natural {
+    point-file: url('symbols/climbing.17.png');
+    point-placement: interior;
+  }
+
   [natural = 'spring'][zoom >= 14]::natural {
     point-file: url('symbols/spring.png');
     point-placement: interior;
