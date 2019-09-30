@@ -59,6 +59,8 @@
 @sand: #ffdf88;
 @school: #f0f0d8; // also university, college, hospital, kindergarten
 
+@placenames: #222;
+
 #landcover {
  [feature = 'leisure_swimming_pool'][zoom >= 14] {
     polygon-fill: @water-color;
@@ -487,6 +489,23 @@
   }
   [man_made = 'levee'][zoom >= 17]::man_made {
     line-pattern-file: url('symbols/embankment2.png');
+  }
+}
+
+#lineartext {
+  [natural = 'cliff'][zoom >= 13],
+  [man_made = 'embankment'][zoom >= 17],
+  [man_made = 'levee'][zoom >= 14] {
+    text-name: "[name]";
+    text-dy: 9;
+    text-face-name: @oblique-fonts;
+    text-placement: line;
+    text-fill: @placenames;
+    text-spacing: 400;
+    text-size: 10;
+    text-halo-radius: 1;
+    [zoom >= 14] { text-size: 12; }
+    [zoom >= 20] { text-size: 18; }
   }
 }
 
