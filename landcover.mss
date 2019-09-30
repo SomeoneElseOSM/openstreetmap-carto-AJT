@@ -496,7 +496,8 @@
   [natural = 'cliff'][zoom >= 13],
   [man_made = 'embankment'][zoom >= 17],
   [man_made = 'levee'][zoom >= 14],
-  [barrier = 'wall'][zoom >= 17] {
+  [barrier = 'wall'][zoom >= 17],
+  [barrier = 'gate'][zoom >= 17] {
     text-name: "[name]";
     text-dy: 9;
     text-face-name: @oblique-fonts;
