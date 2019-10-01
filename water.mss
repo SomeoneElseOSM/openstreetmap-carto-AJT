@@ -304,14 +304,16 @@
     [int_tunnel = 'yes'] { text-min-distance: 200; }
   }
 
-  [waterway = 'canal'][zoom >= 13][zoom < 14] {
+  [waterway = 'canal'][zoom >= 13] {
     text-name: "[name]";
     text-face-name: @oblique-fonts;
-    text-halo-radius: 1;
-    text-size: 10;
-    [zoom >= 20] { text-size: 18; }
     text-placement: line;
     text-fill: @water-text;
+    text-spacing: 600;
+    text-size: 10;
+    text-halo-radius: 1;
+    [zoom >= 14] { text-size: 12; }
+    [zoom >= 20] { text-size: 18; }
   }
 
   [waterway = 'stream'],
