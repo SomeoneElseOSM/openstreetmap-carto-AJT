@@ -3811,19 +3811,7 @@
     [feature = 'highway_unclassified_ford'],
     [feature = 'highway_residential'],
     [feature = 'highway_road'],
-    [feature = 'highway_living_street'],
-    [feature = 'highway_track'],
-    [feature = 'highway_track_graded'],
-    [feature = 'highway_path'],
-    [feature = 'highway_pathwide'],
-    [feature = 'highway_footway'],
-    [feature = 'highway_footwaywide'],
-    [feature = 'highway_ldpnwn'],
-    [feature = 'highway_ldpncn'],
-    [feature = 'highway_ldpmtb'],
-    [feature = 'highway_ldpnhn'],
-    [feature = 'highway_bridleway'],
-    [feature = 'highway_bridlewaywide'] {
+    [feature = 'highway_living_street'] {
       [zoom >= 13] {
         access/line-width: 3;
         access/line-color: @private-marking;
@@ -3837,6 +3825,39 @@
         access/line-color: @private-marking;
         access/line-dasharray: 6,8;
         access/line-opacity: 0.2;
+        access/line-join: round;
+        access/line-cap: round;
+      }
+    }
+    [feature = 'highway_track'],
+    [feature = 'highway_track_graded'],
+    [feature = 'highway_path'],
+    [feature = 'highway_pathwide'],
+    [feature = 'highway_footway'],
+    [feature = 'highway_footwaywide'],
+    [feature = 'highway_bridleway'],
+    [feature = 'highway_bridlewaywide'] {
+      [zoom >= 13] {
+        access/line-width: 3;
+        access/line-color: @private-marking;
+        access/line-dasharray: 6,8;
+        access/line-opacity: 0.4;
+        access/line-join: round;
+        access/line-cap: round;
+      }
+      [zoom >= 15] {
+        access/line-width: 6;
+        access/line-color: @private-marking;
+        access/line-dasharray: 6,8;
+        access/line-opacity: 0.5;
+        access/line-join: round;
+        access/line-cap: round;
+      }
+      [zoom >= 17] {
+        access/line-width: 6;
+        access/line-color: @private-marking;
+        access/line-dasharray: 6,12;
+        access/line-opacity: 0.8;
         access/line-join: round;
         access/line-cap: round;
       }
