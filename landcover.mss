@@ -509,6 +509,19 @@
     [zoom >= 14] { text-size: 12; }
     [zoom >= 20] { text-size: 18; }
   }
+
+  [natural = 'valley'][zoom >= 11] {
+    text-name: "[name]";
+    text-dy: 9;
+    text-face-name: @oblique-fonts;
+    text-placement: line;
+    text-fill: @placenames;
+    text-spacing: 200;
+    text-size: 8;
+    text-halo-radius: 1;
+    [zoom >= 14] { text-size: 10; }
+    [zoom >= 20] { text-size: 16; }
+  }
 }
 
 #area-barriers {
