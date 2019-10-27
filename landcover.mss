@@ -520,7 +520,18 @@
     text-size: 8;
     text-halo-radius: 1;
     [zoom >= 14] { text-size: 10; }
-    [zoom >= 20] { text-size: 16; }
+    [zoom >= 16] { 
+      text-size: 10; 
+      text-spacing: 400;
+    }
+    [zoom >= 17] { 
+      text-size: 10; 
+      text-spacing: 600;
+    }
+    [zoom >= 20] { 
+      text-size: 16; 
+      text-spacing: 1000;
+    }
   }
 }
 
