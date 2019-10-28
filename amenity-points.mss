@@ -1661,6 +1661,54 @@
     text-placement: interior;
   }
 
+  [natural = 'bigprompeak']::natural {
+    [zoom >= 11] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: brown;
+      text-dy: 7;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+      ele/text-name: "[ele]";
+      ele/text-size: 9;
+      [zoom >= 20] { ele/text-size: 18; }
+      ele/text-fill: brown;
+      ele/text-dy: 6;
+      ele/text-face-name: @oblique-fonts;
+      ele/text-halo-radius: 1;
+      ele/text-placement: interior;
+      [name != ''] {
+        ele/text-dy: 19;
+      }
+    }
+  }
+
+  [natural = 'bigpeak']::natural {
+    [zoom >= 12] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: brown;
+      text-dy: 7;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+      ele/text-name: "[ele]";
+      ele/text-size: 9;
+      [zoom >= 20] { ele/text-size: 18; }
+      ele/text-fill: brown;
+      ele/text-dy: 6;
+      ele/text-face-name: @oblique-fonts;
+      ele/text-halo-radius: 1;
+      ele/text-placement: interior;
+      [name != ''] {
+        ele/text-dy: 19;
+      }
+    }
+  }
+
   [natural = 'peak']::natural,
   [natural = 'volcano']::natural {
     [zoom >= 13] {

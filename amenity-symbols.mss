@@ -46,6 +46,16 @@
     point-placement: interior;
   }
 
+  [natural = 'bigprompeak'][zoom >= 10]::natural {
+    point-file: url('symbols/peak.png');
+    point-placement: interior;
+  }
+
+  [natural = 'bigpeak'][zoom >= 10]::natural {
+    point-file: url('symbols/peak.png');
+    point-placement: interior;
+  }
+
   [natural = 'peak'][zoom >= 11]::natural {
     point-file: url('symbols/peak.png');
     point-placement: interior;
