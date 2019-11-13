@@ -292,6 +292,11 @@
     }
   }
 
+  [man_made = 'bigmast'][zoom >= 12]::man_made {
+    point-file: url('symbols/communications.p.20.png');
+    point-placement: interior;
+  }
+
   [man_made = 'mast'][zoom >= 17]::man_made {
     point-file: url('symbols/communications.p.20.png');
     point-placement: interior;
@@ -2493,6 +2498,7 @@
   }
 
   [man_made = 'lighthouse'][zoom >= 15]::man_made,
+  [man_made = 'bigmast'][zoom >= 13]::man_made,
   [man_made = 'mast'][zoom >= 15]::man_made,
   [man_made = 'chimney'][zoom >= 15]::man_made,
   [man_made = 'water_tower'][zoom >= 15]::man_made,

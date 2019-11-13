@@ -159,11 +159,6 @@
     point-placement: interior;
   }
 
-  [man_made = 'mast'][zoom >= 17]::man_made {
-    point-file: url('symbols/communications.p.20.png');
-    point-placement: interior;
-  }
-
   [highway = 'mini_roundabout'][zoom >= 15]::highway {
     point-file: url('symbols/mini_round.png');
     point-placement: interior;
