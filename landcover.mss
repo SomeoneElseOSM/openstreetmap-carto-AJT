@@ -35,6 +35,7 @@
 @farmyard-line: #D1B48C;    // Lch(75,25,80)
 
 @meadow: #e8f6d5; 
+@farmgrass: #eeefda; 
 
 // --- Other ----
 
@@ -174,6 +175,16 @@
   [feature = 'landuse_meadow'] {
     [zoom >= 10] {
       polygon-fill: @meadow;
+    }
+  }
+
+  [feature = 'landuse_farmgrass'] {
+    [zoom >= 10] {
+      polygon-fill: @farmgrass;
+      [zoom >= 16] {
+        line-width: .5;
+        line-color: @farmland-line;
+      }
     }
   }
 

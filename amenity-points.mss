@@ -1942,6 +1942,7 @@
   }
 
   [landuse = 'meadow']::landuse,
+  [landuse = 'farmgrass']::landuse,
   [landuse = 'grass']::landuse  {
     [zoom >= 15] {
       text-name: "[name]";
