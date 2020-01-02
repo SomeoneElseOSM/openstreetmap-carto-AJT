@@ -1720,7 +1720,8 @@
   }
 
   [natural = 'peak']::natural,
-  [natural = 'volcano']::natural {
+  [natural = 'volcano']::natural,
+  [natural = 'saddle']::natural {
     [zoom >= 13] {
       text-name: "[name]";
       text-size: 10;

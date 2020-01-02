@@ -61,6 +61,11 @@
     point-placement: interior;
   }
 
+  [natural = 'saddle'][zoom >= 11]::natural {
+    point-file: url('symbols/saddle.png');
+    point-placement: interior;
+  }
+
   [natural = 'volcano'][zoom >= 11]::natural {
     point-file: url('symbols/volcano.png');
     point-placement: interior;
