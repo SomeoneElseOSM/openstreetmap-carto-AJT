@@ -327,6 +327,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'bigobservationtower'][zoom >= 14]::man_made {
+    point-file: url('symbols/observationtower.png');
+    point-placement: interior;
+  }
+
   [man_made = 'clocktower'][zoom >= 17]::man_made {
     point-file: url('symbols/clocktower.png');
     point-placement: interior;
@@ -2515,6 +2520,7 @@
   [man_made = 'illuminationtower'][zoom >= 17]::man_made,
   [man_made = 'defensivetower'][zoom >= 17]::man_made,
   [man_made = 'observationtower'][zoom >= 17]::man_made,
+  [man_made = 'bigobservationtower'][zoom >= 14]::man_made,
   [man_made = 'clocktower'][zoom >= 17]::man_made,
   [man_made = 'clockpedestal'][zoom >= 17]::man_made,
   [man_made = 'aircraftcontroltower'][zoom >= 17]::man_made,
