@@ -944,13 +944,43 @@
     point-placement: interior;
   }
 
-  [amenity = 'pub_ydddnyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnyd.p.16.png');
+  [amenity = 'pub_ydddnydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnydd.p.16.png');
     point-placement: interior;
   }
 
-  [amenity = 'pub_ydddnny'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnny.p.16.png');
+  [amenity = 'pub_ydddnydl'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnydl.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_ydddnydn'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnydn.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_ydddnydy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnydy.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_ydddnnyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnyd.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_ydddnnyl'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnyl.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_ydddnnyn'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnyn.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_ydddnnyy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnyy.p.16.png');
     point-placement: interior;
   }
 
@@ -1024,8 +1054,8 @@
     point-placement: interior;
   }
 
-  [amenity = 'pub_ndddddd'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ndddddd.p.16.png');
+  [amenity = 'pub_nddddddd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_nddddddd.p.16.png');
     point-placement: interior;
   }
 
@@ -1671,8 +1701,14 @@
   [amenity = 'pub']::amenity,
   [amenity = 'pub_ydddydy']::amenity,
   [amenity = 'pub_ydddydn']::amenity,
-  [amenity = 'pub_ydddnyd']::amenity,
-  [amenity = 'pub_ydddnny']::amenity,
+  [amenity = 'pub_ydddnydd']::amenity,
+  [amenity = 'pub_ydddnydl']::amenity,
+  [amenity = 'pub_ydddnydn']::amenity,
+  [amenity = 'pub_ydddnydy']::amenity,
+  [amenity = 'pub_ydddnnyd']::amenity,
+  [amenity = 'pub_ydddnnyl']::amenity,
+  [amenity = 'pub_ydddnnyn']::amenity,
+  [amenity = 'pub_ydddnnyy']::amenity,
   [amenity = 'pub_ydddnnnd']::amenity,
   [amenity = 'pub_ydddnnnl']::amenity,
   [amenity = 'pub_ydddnnnn']::amenity,
@@ -1767,7 +1803,7 @@
   [amenity = 'pub_ynddddnl']::amenity,
   [amenity = 'pub_ynddddnn']::amenity,
   [amenity = 'pub_ynddddny']::amenity,
-  [amenity = 'pub_ndddddd']::amenity,
+  [amenity = 'pub_nddddddd']::amenity,
   [amenity = 'restaurant']::amenity,
   [amenity = 'restaccomm']::amenity,
   [amenity = 'cafe']::amenity,
