@@ -23,17 +23,62 @@
   }
 
   [amenity = 'bank'][zoom >= 17]::amenity {
-    point-file: url('symbols/bank2.p.16.png');
+    point-file: url('symbols/am_bank_d.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bank_l'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bank_l.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bank_n'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bank_n.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bank_y'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bank_y.png');
     point-placement: interior;
   }
 
   [amenity = 'bar'][zoom >=17]::amenity {
-    point-file: url('symbols/bar.p.20.png');
+    point-file: url('symbols/am_bar_dd.png');
     point-placement: interior;
   }
 
-  [amenity = 'baraccomm'][zoom >= 17]::amenity {
-    point-file: url('symbols/baraccomm.p.20.png');
+  [amenity = 'bar_dl'][zoom >=17]::amenity {
+    point-file: url('symbols/am_bar_dl.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_dn'][zoom >=17]::amenity {
+    point-file: url('symbols/am_bar_dn.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_dy'][zoom >=17]::amenity {
+    point-file: url('symbols/am_bar_dy.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_yd'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bar_yd.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_yl'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bar_yl.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_yn'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bar_yn.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_yy'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bar_yy.png');
     point-placement: interior;
   }
 
@@ -117,12 +162,42 @@
   }
 
   [amenity = 'cafe'][zoom >=17]::amenity {
-    point-file: url('symbols/cafe.p.16.png');
+    point-file: url('symbols/am_cafe_dd.png');
     point-placement: interior;
   }
 
-  [amenity = 'cafeaccomm'][zoom >= 17]::amenity {
-    point-file: url('symbols/cafeaccomm.p.16.png');
+  [amenity = 'cafe_dl'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_dl.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_dn'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_dn.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_dy'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_dy.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_yd'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_yd.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_yl'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_yl.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_yn'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_yn.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_yy'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_yy.png');
     point-placement: interior;
   }
 
@@ -466,7 +541,22 @@
   }
 
   [amenity = 'pharmacy'][zoom >= 17]::amenity {
-    point-file: url('symbols/health_pharmacy.p.16.png');
+    point-file: url('symbols/am_pharmacy_d.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pharmacy_l'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_pharmacy_l.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pharmacy_n'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_pharmacy_n.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pharmacy_y'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_pharmacy_y.png');
     point-placement: interior;
   }
 
@@ -1861,7 +1951,13 @@
   [amenity = 'restaurant']::amenity,
   [amenity = 'restaccomm']::amenity,
   [amenity = 'cafe']::amenity,
-  [amenity = 'cafeaccomm']::amenity,
+  [amenity = 'cafe_dl']::amenity,
+  [amenity = 'cafe_dn']::amenity,
+  [amenity = 'cafe_dy']::amenity,
+  [amenity = 'cafe_yd']::amenity,
+  [amenity = 'cafe_yl']::amenity,
+  [amenity = 'cafe_yn']::amenity,
+  [amenity = 'cafe_yy']::amenity,
   [amenity = 'vending_machine']::amenity,
   [amenity = 'fast_food']::amenity,
   [amenity = 'fast_food_burger']::amenity,
@@ -1918,7 +2014,13 @@
 
 
   [amenity = 'bar'][zoom >= 17 ]::amenity,
-  [amenity = 'baraccomm'][zoom >= 17]::amenity {
+  [amenity = 'bar_dl'][zoom >= 17]::amenity, 
+  [amenity = 'bar_dn'][zoom >= 17]::amenity, 
+  [amenity = 'bar_dy'][zoom >= 17]::amenity, 
+  [amenity = 'bar_yd'][zoom >= 17]::amenity, 
+  [amenity = 'bar_yl'][zoom >= 17]::amenity, 
+  [amenity = 'bar_yn'][zoom >= 17]::amenity, 
+  [amenity = 'bar_yy'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
@@ -2561,7 +2663,10 @@
   }
 
   [amenity = 'atm'][zoom >= 17]::amenity,
-  [amenity = 'bank'][zoom >= 17]::amenity {
+  [amenity = 'bank'][zoom >= 17]::amenity,
+  [amenity = 'bank_l'][zoom >= 17]::amenity,
+  [amenity = 'bank_n'][zoom >= 17]::amenity,
+  [amenity = 'bank_y'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
@@ -3027,6 +3132,9 @@
   [amenity = 'doctors']::amenity,
   [amenity = 'dentist']::amenity,
   [amenity = 'pharmacy']::amenity,
+  [amenity = 'pharmacy_l']::amenity,
+  [amenity = 'pharmacy_n']::amenity,
+  [amenity = 'pharmacy_y']::amenity,
   [amenity = 'ambulance_station']::amenity,
   [amenity = 'mountain_rescue']::amenity,
   [amenity = 'mountain_rescue_box']::amenity { 
