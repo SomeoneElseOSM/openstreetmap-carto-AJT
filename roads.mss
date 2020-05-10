@@ -3374,6 +3374,9 @@
         line-width: 2;
         line-dasharray: 3,6;
         line-join: round;
+        .tunnels-fill {
+          line-color: silver;
+        }
       }
     }
 
