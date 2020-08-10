@@ -889,23 +889,63 @@
     point-placement: interior;
   }
 
-  [amenity = 'pub_yydynnyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnyd.p.16.png');
+  [amenity = 'pub_yydynnydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnydd.p.16.png');
     point-placement: interior;
   }
 
-  [amenity = 'pub_yydynnyl'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnyl.p.16.png');
+  [amenity = 'pub_yydynnydg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnydg.p.16.png');
     point-placement: interior;
   }
 
-  [amenity = 'pub_yydynnyn'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnyn.p.16.png');
+  [amenity = 'pub_yydynnydo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnydo.p.16.png');
     point-placement: interior;
   }
 
-  [amenity = 'pub_yydynnyy'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnyy.p.16.png');
+  [amenity = 'pub_yydynnyld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnyld.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yydynnylg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnylg.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yydynnylo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnylo.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yydynnynd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnynd.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yydynnyng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnyng.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yydynnyno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnyno.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yydynnyyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnyyd.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yydynnyyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnyyg.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pub_yydynnyyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnyyo.p.16.png');
     point-placement: interior;
   }
 
@@ -2233,10 +2273,18 @@
   [amenity = 'pub_yydynydl']::amenity,
   [amenity = 'pub_yydynydn']::amenity,
   [amenity = 'pub_yydynydy']::amenity,
-  [amenity = 'pub_yydynnyd']::amenity,
-  [amenity = 'pub_yydynnyl']::amenity,
-  [amenity = 'pub_yydynnyn']::amenity,
-  [amenity = 'pub_yydynnyy']::amenity,
+  [amenity = 'pub_yydynnydd']::amenity,
+  [amenity = 'pub_yydynnydg']::amenity,
+  [amenity = 'pub_yydynnydo']::amenity,
+  [amenity = 'pub_yydynnyld']::amenity,
+  [amenity = 'pub_yydynnylg']::amenity,
+  [amenity = 'pub_yydynnylo']::amenity,
+  [amenity = 'pub_yydynnynd']::amenity,
+  [amenity = 'pub_yydynnyng']::amenity,
+  [amenity = 'pub_yydynnyno']::amenity,
+  [amenity = 'pub_yydynnyyd']::amenity,
+  [amenity = 'pub_yydynnyyg']::amenity,
+  [amenity = 'pub_yydynnyyo']::amenity,
   [amenity = 'pub_yydynnnd']::amenity,
   [amenity = 'pub_yydynnnl']::amenity,
   [amenity = 'pub_yydynnnn']::amenity,
