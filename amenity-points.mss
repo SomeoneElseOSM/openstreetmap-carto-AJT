@@ -1629,6 +1629,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'pub_cddddddd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_cddddddd.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'pub_nddddddd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_nddddddd.p.16.png');
     point-placement: interior;
@@ -2475,6 +2480,7 @@
   [amenity = 'pub_ynddddnl']::amenity,
   [amenity = 'pub_ynddddnn']::amenity,
   [amenity = 'pub_ynddddny']::amenity,
+  [amenity = 'pub_cddddddd']::amenity,
   [amenity = 'pub_nddddddd']::amenity,
   [amenity = 'restaurant']::amenity,
   [amenity = 'restaccomm']::amenity,
