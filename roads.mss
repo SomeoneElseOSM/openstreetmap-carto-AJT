@@ -3838,6 +3838,12 @@
     [feature = 'highway_pathwide'],
     [feature = 'highway_footway'],
     [feature = 'highway_footwaywide'],
+    [feature = 'highway_ucrnarrow'],
+    [feature = 'highway_ucrwide'],
+    [feature = 'highway_boatnarrow'],
+    [feature = 'highway_boatwide'],
+    [feature = 'highway_rbynarrow'],
+    [feature = 'highway_rbywide'],
     [feature = 'highway_bridleway'],
     [feature = 'highway_bridlewaywide'] {
       [zoom >= 13] {
