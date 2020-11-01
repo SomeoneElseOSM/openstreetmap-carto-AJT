@@ -44,7 +44,7 @@
 @apron: #e9d1ff;
 @attraction: #FBEFF9;
 @historic: #f2e9e9;
-@barracks: #ff8f8f;
+@barracks: #ffc7c7;
 @campsite: #ccff99; // also caravan_site, picnic_site
 @cemetery: #aacbaf; // also grave_yard
 @construction: #9d9d6c;
