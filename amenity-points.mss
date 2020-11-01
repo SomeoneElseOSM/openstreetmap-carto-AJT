@@ -510,6 +510,46 @@
     point-placement: interior;
   }
 
+  [amenity = 'playground_swing'][zoom >= 18]::amenity {
+    point-file: url('symbols/playground_swing.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'playground_structure'][zoom >= 18]::amenity {
+    point-file: url('symbols/playground_structure.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'playground_climbingframe'][zoom >= 18]::amenity {
+    point-file: url('symbols/playground_climbingframe.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'playground_slide'][zoom >= 18]::amenity {
+    point-file: url('symbols/playground_slide.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'playground_springy'][zoom >= 18]::amenity {
+    point-file: url('symbols/playground_springy.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'playground_zipwire'][zoom >= 18]::amenity {
+    point-file: url('symbols/playground_zipwire.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'playground_seesaw'][zoom >= 18]::amenity {
+    point-file: url('symbols/playground_seesaw.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'playground_roundabout'][zoom >= 18]::amenity {
+    point-file: url('symbols/playground_roundabout.png');
+    point-placement: interior;
+  }
+
   [amenity = 'parking'][zoom >= 13]::amenity {
     marker-file: url('symbols/parking_free.png');
     marker-placement: interior;
