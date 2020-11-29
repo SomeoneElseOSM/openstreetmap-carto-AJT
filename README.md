@@ -1,54 +1,47 @@
 # OpenStreetMap Carto (AJT)
 
-This is based on a version of https://github.com/gravitystorm/openstreetmap-carto as of summer 2014.  Most of OSM-carto's [Readme](https://github.com/gravitystorm/openstreetmap-carto/blob/master/README.md) still applies, so I'll not duplicate that here.
+[This project](https://github.com/SomeoneElseOSM/openstreetmap-carto-AJT) is one of four projects that together are used to create and display the map that is visible [here](https://map.atownsend.org.uk/maps/map/map.html).
 
-## Why?  A bit of history.
+The three projects are:
 
-The initial problem that I was trying to solve was that OSM's "standard" style, being international, didn't understand England and Wales' curious acces rights mechanisms.  In OSM, the "designation" tag is used to describe this.  It's quite common to have a private road over which you have explicit legal foot-only access, and OSM's "standard" map can't be expected to show it because it's very much a local oddity.
+* [SomeoneElse-style](https://github.com/SomeoneElseOSM/SomeoneElse-style) - the lua preprocessing.
+* [openstreetmap-carto-AJT](https://github.com/SomeoneElseOSM/openstreetmap-carto-AJT) - the Carto style.
+* [SomeoneElse-style-legend)(https://github.com/SomeoneElseOSM/SomeoneElse-style-legend) - the data used to generate the map legend.
+* [SomeoneElse-map](https://github.com/SomeoneElseOSM/SomeoneElse-map) - a simple Leaflet map.
 
-I therefore created https://github.com/SomeoneElseOSM/designation-style which was a lua style file that changes the rendering database contents so that footpaths, paths and tracks instead contain "designation" information.  The OSM standard style file can still be used, but where a "footpath" appears on the map it now explicitly means "designation=public_footpath" rather than "highway=footway".
+The map style is designed for "England and Wales-based rural pedestrians".  The example map area also covers Ireland and Scotland.
 
-This makes sense for a couple of reasons - there are only so many different concepts that you can communicate at once from one item on a map, even more so on a mobile phone screen (which is what I'd usually be using).  The other reason is that it's far, far easier than expanding the style rules within highway rendering to support a completely new concept in addition to the ones that it already handles.
+The links from the top of the [example map](https://map.atownsend.org.uk/maps/map/map.html) are designed to answer common questions like "what is this map" on an ["about"](https://map.atownsend.org.uk/maps/map/about.html) page.  That page also addresses common questions about OSM-based maps (is it accurate and up to date, how do I fix it, what do people know about me if I use this map?).  There's also a [change log](https://map.atownsend.org.uk/maps/map/changelog.html) that shows updates to the map style as they are released.
 
-In summer 2014 a number of changes were made to OSM's standard style that made it decidely less useful for displaying maps that aren't of city centres.  See for example issues [542](https://github.com/gravitystorm/openstreetmap-carto/pull/542) [612](https://github.com/gravitystorm/openstreetmap-carto/issues/612) [641](https://github.com/gravitystorm/openstreetmap-carto/issues/641) [747](https://github.com/gravitystorm/openstreetmap-carto/pull/747) and [765](https://github.com/gravitystorm/openstreetmap-carto/issues/765).  It [became clear](https://github.com/gravitystorm/openstreetmap-carto/pull/747#issuecomment-50188728) that the primary goal of OSM-carto was something that looks nice rather than a map usable for navigation.
+What the map is designed to show varies by zoom level.  Roughly speaking:
 
-So what to do?  The first thing was obvious - start using my own tiles rather than osm.org's.  I created https://github.com/SomeoneElseOSM/SomeoneElse-style to incorporate the "designation" changes and fix a number of rendering issues (e.g. names for portions of landuse).  That also adds a few things back to the map like abandoned railways and guest houses.
+* At the lowest zoom levels only large scale features (coastline, motorways) are visible.
+* At zoom level 6 lakes are added.
+* Up to zoom level 12 progressively more man-made and natural features are added.  Roads are shown, but not paths and tracks.
+* At zoom level 13 foot, bicycle and horse navigation features are added, including public rights of way and named long distance paths.
+* Zoom level 14 adds hedges and ditches
+* Zoom level 15 adds the first "destination" points of interest (see the [legend](https://map.atownsend.org.uk/maps/map/map.html#zoom=15&lat=-24.99388&lon=135.18359)).
+* Higher zoom levels show progressively more detail - zoom in on the legend to see.
+* The [example map](https://map.atownsend.org.uk/maps/map/map.html) supports native zoom levels up to 24 because it uses a [forked version of mod_tile](https://github.com/SomeoneElseOSM/mod_tile/tree/zoom) that has been modified to support it.
 
-However, this approach is restricted to the stylistic elements supported by the parent OSM-carto style.  There are some changes (the zoom level and prominence with which elements are displayed, and adding new elements altogether) that need actual style changes.  Those changes were made here - but only those changes that can't be handled in lua.
+The general principle is that things that people map should be shown.  Sometimes there are multiple tags used to express the same concept; both forms of tagging will be shown.  Commonly-used typos are also shown as the desired feature.  If there's a conflict between being useful and being pretty, being useful wins.
+
+The "heavy lifting" of converting complicated tagging combinations (for example, pubs with different features) into something to be rendered is done here in style.lua, with the Carto CSS part of the project just rendering one of the couple of hundred of icons it corresponds to.
+
+## Where this style came from
+
+The initial problem that I was trying to solve was that OSM's "standard" style, being international, didn't understand England and Wales' curious acces rights mechanisms.  In OSM, the "designation" tag is used to describe this.  It's quite common in England and Wales to have a private road over which you have explicit legal foot-only access, and OSM's "standard" map can't be expected to show it because it's very much a local oddity.
+
+I therefore created https://github.com/SomeoneElseOSM/designation-style which was a lua style file that changes the rendering database contents so that footpaths, paths and tracks instead contain "designation" information.  This worked with OSM's Carto CSS style at the time, but subsequent changes meant that the styles diverged.
+
+## How it can be used now
+
+This Carto CSS map style is only really useful with the preprocessing done in [this project](https://github.com/SomeoneElseOSM/SomeoneElse-style), as many tag/value combinations that are rendered here are only added by the pre-processing.
+
+A "soup to nuts" installation guide for this map style can be found in the OSM wiki [here](https://wiki.openstreetmap.org/wiki/User:SomeoneElse/Ubuntu_1804_tileserver_load).  It can also be used with the guides on the [switch2osm](https://switch2osm.org/serving-tiles/) site, but:
+
+* you'll need to use the appropriate stylesheet - "[openstreetmap-carto-AJT](https://github.com/SomeoneElseOSM/openstreetmap-carto-AJT)" instead of "[openstreetmap-carto](https://github.com/gravitystorm/openstreetmap-carto)".
+* you'll need to use the correct [style.lua](https://github.com/SomeoneElseOSM/SomeoneElse-style/blob/master/style.lua) throughout.
+* If you want to render zoom levels up to 24 you'll need to get the "[zoom](https://github.com/SomeoneElseOSM/mod_tile/tree/zoom)" version of "mod_tile" and ensure you are building that from source.
 
 
-## Changes made at the stylesheet level
-
-On a PC browser at zoom level 13, the width of the display is roughly "a nice day's walk".  It therefore makes sense to show things from that level upwards.  Where there's a bit too much detail you can always zoom in for clarification.
-
-* Lightened landuse.  Lots more landuse is being added to OSM, and the default landuse in my bit of the UK is farmland and heath.  It therefore makes sense to use a significantly lighter colour for these.
-
-* Displayed hedges and barriers at lower zoom levels.  These are now displayed (as narrower lines) from zoom level 13 upwards and as before from zoom level 16.
-
-* Display parking from zoom level 13 instead of 16.  A rural layby can be hard to find, and there aren't so many of them that displaying at zoom 13 would cause a problem.
-
-* Display stiles on the map at the same level as gates.  A new icon for stiles based on the gate icon was created.
-
-* Display secondary and tertiary roads with sidewalks (using a wider casing to show the sidewalk)
-
-Other changes:
-
-* Render different sorts of trees (broadleaved/needleleaved/mixed)
-
-* Distinguished between narrow (footpath/path) and wide (track/road) PRoWs and non-PRoWs.
-
-* Render trunk as primary red, rather than green.
-
-* Made low-zoom tiles more road-specific.
-
-* Added support for zoom levels 19 and 20 (wider roads and z19, larger text at z20).
-
-* Different icons for pubs and fast food places used depending on attributes such as cuisine.  See https://map.atownsend.org.uk/maps/map/map.html#zoom=17&lat=-24.987206&lon=135.08483 .
-
-* Render offices
-
-* Render walking routes https://map.atownsend.org.uk/maps/map/map.html#zoom=15&lat=-24.9959&lon=135.05924 .
-
-* Render sidewalks and verges on some road types https://map.atownsend.org.uk/maps/map/map.html#zoom=15&lat=-24.994&lon=135.01993 .
-
-* Render various sorts of towers and chimneys better (with name and icon as appropriate) https://map.atownsend.org.uk/maps/map/map.html#zoom=19&lat=53.960266&lon=-1.071566 .
