@@ -30,7 +30,7 @@ The "heavy lifting" of converting complicated tagging combinations (for example,
 
 ## Where this style came from
 
-The initial problem that I was trying to solve was that OSM's "standard" style, being international, didn't understand England and Wales' curious acces rights mechanisms.  In OSM, the "designation" tag is used to describe this.  It's quite common in England and Wales to have a private road over which you have explicit legal foot-only access, and OSM's "standard" map can't be expected to show it because it's very much a local oddity.
+The initial problem that I was trying to solve was that OSM's "standard" style, being international, didn't understand England and Wales' curious access rights mechanisms.  In OSM, the "designation" tag is used to describe this.  It's quite common in England and Wales to have a private road over which you have explicit legal foot-only access, and OSM's "standard" map can't be expected to show it because it's very much a local oddity.
 
 I therefore created https://github.com/SomeoneElseOSM/designation-style which was a lua style file that changes the rendering database contents so that footpaths, paths and tracks instead contain "designation" information.  This worked with OSM's Carto CSS style at the time, but subsequent changes meant that the styles diverged.
 
