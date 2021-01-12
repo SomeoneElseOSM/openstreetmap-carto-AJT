@@ -1952,22 +1952,27 @@
     point-placement: interior;
   }
 
-  [historic = 'naturalstone'][zoom >= 17]::historic {
+  [historic = 'naturalstone'][zoom >= 16]::historic {
     point-file: url('symbols/natural_stone.png');
     point-placement: interior;
   }
 
-  [historic = 'historicstone'][zoom >= 17]::historic {
+  [historic = 'historicstone'][zoom >= 16]::historic {
     point-file: url('symbols/historic_stone.png');
     point-placement: interior;
   }
 
-  [historic = 'runestone'][zoom >= 17]::historic {
+  [historic = 'historicstandingstone'][zoom >= 16]::historic {
+    point-file: url('symbols/standing_stone.png');
+    point-placement: interior;
+  }
+
+  [historic = 'runestone'][zoom >= 16]::historic {
     point-file: url('symbols/rune_stone.png');
     point-placement: interior;
   }
 
-  [historic = 'oghamstone'][zoom >= 17]::historic {
+  [historic = 'oghamstone'][zoom >= 16]::historic {
     point-file: url('symbols/ogham_stone.png');
     point-placement: interior;
   }
@@ -2913,10 +2918,11 @@
   [historic = 'memorialsculpture'][zoom >= 17]::historic, 
   [historic = 'memorialcross'][zoom >= 17]::historic, 
   [historic = 'memorialstone'][zoom >= 17]::historic, 
-  [historic = 'naturalstone'][zoom >= 17]::historic, 
-  [historic = 'historicstone'][zoom >= 17]::historic, 
-  [historic = 'runestone'][zoom >= 17]::historic, 
-  [historic = 'oghamstone'][zoom >= 17]::historic, 
+  [historic = 'naturalstone'][zoom >= 16]::historic, 
+  [historic = 'historicstone'][zoom >= 16]::historic, 
+  [historic = 'historicstandingstone'][zoom >= 16]::historic, 
+  [historic = 'runestone'][zoom >= 16]::historic, 
+  [historic = 'oghamstone'][zoom >= 16]::historic, 
   [historic = 'memorialplate'][zoom >= 17]::historic, 
   [historic = 'memorialbench'][zoom >= 17]::historic, 
   [historic = 'memorialgrave'][zoom >= 17]::historic, 
