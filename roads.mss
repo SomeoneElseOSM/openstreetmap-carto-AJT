@@ -1033,7 +1033,7 @@
     /* casing for normal and wide bridleways the same; fill different */
     [feature = 'highway_bridlewaynarrow'],
     [feature = 'highway_bridlewaywide'],
-    [feature = 'highway_intbridleway'],
+    [feature = 'highway_intbridlewaynarrow'],
     [feature = 'highway_intbridlewaywide'],
     [feature = 'highway_rbynarrow'],
     [feature = 'highway_rbywide'],
@@ -1061,7 +1061,7 @@
     /* casing for normal and wide footways the same; fill different */
     [feature = 'highway_footwaynarrow'],
     [feature = 'highway_footwaywide'],
-    [feature = 'highway_intfootway'],
+    [feature = 'highway_intfootwaynarrow'],
     [feature = 'highway_intfootwaywide'] {
       .bridges-casing {
         [zoom >= 14] {
@@ -1087,7 +1087,7 @@
     /* casing for normal and wide paths the same; fill different */
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
-    [feature = 'highway_intpath'],
+    [feature = 'highway_intpathnarrow'],
     [feature = 'highway_intpathwide'] {
       .bridges-casing {
         [zoom >= 14] {
@@ -1275,7 +1275,7 @@
     /* casing for normal and wide bridleways the same; fill different */
     [feature = 'highway_bridlewaynarrow'],
     [feature = 'highway_bridlewaywide'],
-    [feature = 'highway_intbridleway'],
+    [feature = 'highway_intbridlewaynarrow'],
     [feature = 'highway_intbridlewaywide'],
     [feature = 'highway_rbynarrow'],
     [feature = 'highway_rbywide'],
@@ -1303,7 +1303,7 @@
     /* casing for normal and wide footways the same; fill different */
     [feature = 'highway_footwaynarrow'],
     [feature = 'highway_footwaywide'],
-    [feature = 'highway_intfootway'],
+    [feature = 'highway_intfootwaynarrow'],
     [feature = 'highway_intfootwaywide'] {
       .bridges-casing {
         [zoom >= 14] {
@@ -1351,7 +1351,7 @@
     /* casing for normal and wide paths the same; fill different */
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
-    [feature = 'highway_intpath'],
+    [feature = 'highway_intpathnarrow'],
     [feature = 'highway_intpathwide'] {
       .bridges-casing {
         [zoom >= 14] {
@@ -2686,7 +2686,7 @@
       }
     }
 
-    [feature = 'highway_intbridleway'] {
+    [feature = 'highway_intbridlewaynarrow'] {
       [zoom >= 13] {
         .tunnels-fill {
           tunnelcasing/line-width: 5;
@@ -2832,7 +2832,7 @@
       }
     }
 
-    [feature = 'highway_intfootway'] {
+    [feature = 'highway_intfootwaynarrow'] {
       [zoom >= 13] {
         .tunnels-fill {
           tunnelcasing/line-width: 5.5;
@@ -3133,7 +3133,7 @@
       }
     }
 
-    [feature = 'highway_intpath'] {
+    [feature = 'highway_intpathnarrow'] {
       [zoom >= 13] {
         .tunnels-fill {
           tunnelcasing/line-width: 5.5;
@@ -3974,11 +3974,11 @@
     [feature = 'highway_track_graded'],
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
-    [feature = 'highway_intpath'],
+    [feature = 'highway_intpathnarrow'],
     [feature = 'highway_intpathwide'],
     [feature = 'highway_footwaynarrow'],
     [feature = 'highway_footwaywide'],
-    [feature = 'highway_intfootway'],
+    [feature = 'highway_intfootwaynarrow'],
     [feature = 'highway_intfootwaywide'],
     [feature = 'highway_ldpnwn'],
     [feature = 'highway_ldpncn'],
@@ -3993,7 +3993,7 @@
     [feature = 'highway_rbywide'],
     [feature = 'highway_bridlewaynarrow'],
     [feature = 'highway_bridlewaywide'],
-    [feature = 'highway_intbridleway'],
+    [feature = 'highway_intbridlewaynarrow'],
     [feature = 'highway_intbridlewaywide'] {
     [zoom >= 15] {
         access/line-width: 6;
@@ -4061,11 +4061,11 @@
     [feature = 'highway_track_graded'],
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
-    [feature = 'highway_intpath'],
+    [feature = 'highway_intpathnarrow'],
     [feature = 'highway_intpathwide'],
     [feature = 'highway_footwaynarrow'],
     [feature = 'highway_footwaywide'],
-    [feature = 'highway_intfootway'],
+    [feature = 'highway_intfootwaynarrow'],
     [feature = 'highway_intfootwaywide'],
     [feature = 'highway_ucrnarrow'],
     [feature = 'highway_ucrwide'],
@@ -4075,7 +4075,7 @@
     [feature = 'highway_rbywide'],
     [feature = 'highway_bridlewaynarrow'],
     [feature = 'highway_bridlewaywide'],
-    [feature = 'highway_intbridleway'],
+    [feature = 'highway_intbridlewaynarrow'],
     [feature = 'highway_intbridlewaywide'] {
       [zoom >= 13] {
         access/line-width: 3;
@@ -4601,12 +4601,12 @@
   /* Text for most highway types is displayed in the same way */
   [highway = 'footwaynarrow'],
   [highway = 'footwaywide'],
-  [highway = 'intfootway'],
+  [highway = 'intfootwaynarrow'],
   [highway = 'intfootwaywide'],
   [highway = 'footwaysteps'],
   [highway = 'bridlewaynarrow'],
   [highway = 'bridlewaywide'],
-  [highway = 'intbridleway'],
+  [highway = 'intbridlewaynarrow'],
   [highway = 'intbridlewaywide'],
   [highway = 'bridlewaysteps'],
   [highway = 'rbynarrow'],
@@ -4618,7 +4618,7 @@
   [highway = 'unpaved'],
   [highway = 'pathnarrow'],
   [highway = 'pathwide'],
-  [highway = 'intpath'],
+  [highway = 'intpathnarrow'],
   [highway = 'intpathwide'],
   [highway = 'steps'] {
     [zoom >= 16] {
