@@ -3696,6 +3696,7 @@
   [man_made = 'mounting_block'][zoom >= 17]::man_made,
   [man_made = 'footwear_decontamination'][zoom >= 17]::man_made,
   [man_made = 'monitoringwater'][zoom >= 17]::man_made,
+  [man_made = 'monitoringweather'][zoom >= 17]::man_made,
   [man_made = 'mineshaft'][zoom >= 17]::man_made,
   [man_made = 'windmill'][zoom >= 17]::man_made {
     text-name: "[name]";

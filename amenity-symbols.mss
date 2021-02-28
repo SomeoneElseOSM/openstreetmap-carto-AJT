@@ -159,6 +159,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'monitoringweather'][zoom >= 17]::man_made {
+    point-file: url('symbols/monitoringweather.png');
+    point-placement: interior;
+  }
+
   [man_made = 'mineshaft'][zoom >= 17]::man_made {
     point-file: url('symbols/poi_mine.p.16.png');
     point-placement: interior;
