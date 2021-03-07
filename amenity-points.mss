@@ -3699,6 +3699,7 @@
   [man_made = 'monitoringweather'][zoom >= 17]::man_made,
   [man_made = 'monitoringearthquake'][zoom >= 17]::man_made,
   [man_made = 'monitoringrainfall'][zoom >= 17]::man_made,
+  [man_made = 'monitoringsky'][zoom >= 17]::man_made,
   [man_made = 'mineshaft'][zoom >= 17]::man_made,
   [man_made = 'windmill'][zoom >= 17]::man_made {
     text-name: "[name]";
