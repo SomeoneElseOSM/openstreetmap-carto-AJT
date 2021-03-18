@@ -205,6 +205,21 @@
     }
   }
 
+  [barrier = 'gate_locked']::barrier {
+    [zoom >= 15] {
+      point-file: url('symbols/gate_locked.png');
+      point-placement: interior;
+    }
+    [zoom >= 17] {
+      point-file: url('symbols/gate_lockedx2.png');
+      point-placement: interior;
+    }
+    [zoom >= 21] {
+      point-file: url('symbols/gate_lockedx3.png');
+      point-placement: interior;
+    }
+  }
+
   [barrier = 'kissing_gate']::barrier {
     [zoom >= 15] {
       point-file: url('symbols/kissinggate.png');

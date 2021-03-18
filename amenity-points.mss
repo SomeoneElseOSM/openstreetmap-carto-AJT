@@ -3634,6 +3634,7 @@
 
   [amenity  = 'emergency_phone'][zoom >= 17]::barrier,
   [barrier  = 'gate'][zoom >= 15]::barrier,
+  [barrier  = 'gate_locked'][zoom >= 15]::barrier,
   [barrier  = 'kissing_gate'][zoom >= 15]::barrier,
   [barrier  = 'stile'][zoom >= 15]::barrier,
   [barrier  = 'horse_stile'][zoom >= 15]::barrier,
