@@ -652,6 +652,16 @@
     }
   }
 
+  [amenity = 'holy_spring'][zoom >= 14]::amenity {
+    point-file: url('symbols/holy_spring.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'holy_well'][zoom >= 14]::amenity {
+    point-file: url('symbols/holy_well.png');
+    point-placement: interior;
+  }
+
   [amenity = 'police'][zoom >= 17]::amenity {
     point-file: url('symbols/police.p.16.png');
     point-placement: interior;
@@ -2735,6 +2745,19 @@
     }
   }
 
+  [amenity = 'holy_well']::man_made {
+    [zoom >= 14] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: #734a08;
+      text-dy: 12;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+    }
+  }
+
   [amenity = 'prison']::amenity {
     [zoom >= 15] {
       text-name: "[name]";
@@ -3224,6 +3247,18 @@
   }
 
   [natural = 'spring'][zoom >= 16]::natural {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-fill: #6699cc;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-wrap-width: 20;
+    text-placement: interior;
+    text-dy: 6;
+  }
+
+  [amenity = 'holy_spring'][zoom >= 16]::natural {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
