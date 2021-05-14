@@ -1990,6 +1990,11 @@
     point-placement: interior;
   }
 
+  [historic = 'massrock'][zoom >= 16]::historic {
+    point-file: url('symbols/mass_rock.png');
+    point-placement: interior;
+  }
+
   [historic = 'oghamstone'][zoom >= 16]::historic {
     point-file: url('symbols/ogham_stone.png');
     point-placement: interior;
@@ -2954,6 +2959,7 @@
   [historic = 'historicstone'][zoom >= 16]::historic, 
   [historic = 'historicstandingstone'][zoom >= 16]::historic, 
   [historic = 'runestone'][zoom >= 16]::historic, 
+  [historic = 'massrock'][zoom >= 16]::historic, 
   [historic = 'oghamstone'][zoom >= 16]::historic, 
   [historic = 'memorialplate'][zoom >= 17]::historic, 
   [historic = 'memorialbench'][zoom >= 17]::historic, 
