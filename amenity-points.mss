@@ -1787,8 +1787,38 @@
     point-placement: interior;
   }
 
-  [amenity = 'boothtelephone'][zoom >= 17]::amenity {
-    point-file: url('symbols/boothtelephone.png');
+  [amenity = 'boothtelephonered'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothtelephonered.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'boothtelephoneblack'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothtelephoneblack.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'boothtelephonewhite'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothtelephonewhite.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'boothtelephoneblue'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothtelephoneblue.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'boothtelephonegreen'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothtelephonegreen.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'boothtelephonegrey'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothtelephonegrey.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'boothtelephonegold'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothtelephonegold.png');
     point-placement: interior;
   }
 
@@ -3538,7 +3568,13 @@
   [amenity = 'shopmobility'][zoom >= 17]::amenity, 
   [amenity = 'post_box'][zoom >= 17]::amenity, 
   [amenity = 'telephone'][zoom >= 17]::amenity, 
-  [amenity = 'boothtelephone'][zoom >= 17]::amenity, 
+  [amenity = 'boothtelephonered'][zoom >= 17]::amenity, 
+  [amenity = 'boothtelephoneblack'][zoom >= 17]::amenity, 
+  [amenity = 'boothtelephonewhite'][zoom >= 17]::amenity, 
+  [amenity = 'boothtelephoneblue'][zoom >= 17]::amenity, 
+  [amenity = 'boothtelephonegreen'][zoom >= 17]::amenity, 
+  [amenity = 'boothtelephonegrey'][zoom >= 17]::amenity, 
+  [amenity = 'boothtelephonegold'][zoom >= 17]::amenity, 
   [amenity = 'boothdefibrillator'][zoom >= 17]::amenity, 
   [amenity = 'boothlibrary'][zoom >= 17]::amenity, 
   [amenity = 'boothbicyclerepairstation'][zoom >= 17]::amenity, 
