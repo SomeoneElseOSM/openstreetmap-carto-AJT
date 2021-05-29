@@ -111,6 +111,22 @@
     }
   }
 
+  [amenity = 'motorcycle_parking'][zoom >= 19]::amenity {
+    point-file: url('symbols/motorcycle_parking.p.20.png');
+    point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
+  [amenity = 'motorcycle_parking_pay'][zoom >= 19]::amenity {
+    point-file: url('symbols/motorcycle_parking_pay.p.20.png');
+    point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
   [amenity = 'bus_stop']::amenity,
   [highway = 'bus_stop']::highway {
     [zoom >= 16] {
@@ -2836,7 +2852,9 @@
   [amenity = 'car_sharing'][zoom >= 17]::amenity,
   [amenity = 'bicycle_rental'][zoom >= 17]::amenity,
   [amenity = 'bicycle_parking'][zoom >= 19]::amenity,
-  [amenity = 'bicycle_parking_pay'][zoom >= 19]::amenity {
+  [amenity = 'bicycle_parking_pay'][zoom >= 19]::amenity,
+  [amenity = 'motorcycle_parking'][zoom >= 19]::amenity,
+  [amenity = 'motorcycle_parking_pay'][zoom >= 19]::amenity {
     text-name: "[name]";
     text-size: 9;
     text-dy: 11;
