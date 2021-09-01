@@ -2086,6 +2086,11 @@
     point-placement: interior;
   }
 
+  [shop = 'ecosupermarket'][zoom >= 16]::shop {
+    point-file: url('symbols/shop_ecosupermarket.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'antiques'][zoom >= 17]::shop {
     point-file: url('symbols/shop_antiques.p.16.png');
     point-placement: interior;
@@ -2153,6 +2158,11 @@
 
   [shop = 'convenience'][zoom >= 17]::shop {
     point-file: url('symbols/shop_convenience.p.16.png');
+    point-placement: interior;
+  }
+
+  [shop = 'ecoconv'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_ecoconv.p.16.png');
     point-placement: interior;
   }
 
@@ -3876,6 +3886,7 @@
   [shop = 'jewellery']::shop,
   [shop = 'fashion']::shop,
   [shop = 'convenience']::shop,
+  [shop = 'ecoconv']::shop,
   [shop = 'doityourself']::shop,
   [shop = 'hairdresser']::shop,
   [shop = 'beauty']::shop,
@@ -3973,6 +3984,7 @@
   }
 
   [shop = 'supermarket']::shop,
+  [shop = 'ecosupermarket']::shop,
   [shop = 'department_store']::shop {
     [zoom >= 16] {
       text-name: "[name]";
