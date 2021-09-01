@@ -2983,6 +2983,7 @@
   }
 
   [natural = 'cave_entrance'][zoom >= 15]::natural,
+  [natural = 'sinkhole'][zoom >= 15]::natural,
   [natural = 'climbing'][zoom >= 17]::natural,
   [natural = 'tree'][zoom >= 18]::natural {
     text-name: "[name]";

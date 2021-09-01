@@ -101,6 +101,11 @@
     point-placement: interior;
   }
 
+  [natural = 'sinkhole'][zoom >= 15]::natural {
+    point-file: url('symbols/poi_sinkhole.p.16.png');
+    point-placement: interior;
+  }
+
   [natural = 'climbing'][zoom >= 17]::natural {
     point-file: url('symbols/climbing.17.png');
     point-placement: interior;
