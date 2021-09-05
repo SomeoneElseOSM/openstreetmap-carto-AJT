@@ -2185,6 +2185,16 @@
     point-placement: interior;
   }
 
+  [shop = 'health_food'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_healthfood.p.16.png');
+    point-placement: interior;
+  }
+
+  [shop = 'ecohealth_food'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_ecohealthfood.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'department_store'][zoom >= 16]::shop {
     point-file: url('symbols/department_store.p.16.png');
     point-placement: interior;
@@ -3919,6 +3929,8 @@
   [shop = 'fashion']::shop,
   [shop = 'convenience']::shop,
   [shop = 'ecoconv']::shop,
+  [shop = 'health_food']::shop,
+  [shop = 'ecohealth_food']::shop,
   [shop = 'doityourself']::shop,
   [shop = 'hairdresser']::shop,
   [shop = 'beauty']::shop,
