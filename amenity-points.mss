@@ -2154,6 +2154,13 @@
     }
   }
 
+  [shop = 'electronics']::shop {
+    [zoom >= 17] {
+      point-file: url('symbols/shop_electronics.p.16.png');
+      point-placement: interior;
+    }
+  }
+
   [shop = 'garden_centre']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_gardencentre.p.16.png');
@@ -3901,6 +3908,7 @@
   [shop = 'discount']::shop,
   [shop = 'e-cigarette']::shop,
   [shop = 'electrical']::shop,
+  [shop = 'electronics']::shop,
   [shop = 'garden_centre']::shop,
   [shop = 'jewellery']::shop,
   [shop = 'fashion']::shop,
