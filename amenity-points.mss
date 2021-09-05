@@ -2250,6 +2250,11 @@
     point-placement: interior;
   }
 
+  [shop = 'stationery'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_stationery.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'bookmaker'][zoom >= 17]::shop {
     point-file: url('symbols/shop_bookmaker.p.16.png');
     point-placement: interior;
@@ -3922,6 +3927,7 @@
   [shop = 'pet']::shop,
   [shop = 'travel_agent']::shop,
   [shop = 'books']::shop,
+  [shop = 'stationery']::shop,
   [shop = 'bookmaker']::shop,
   [shop = 'furniture']::shop,
   [shop = 'homeware']::shop,
