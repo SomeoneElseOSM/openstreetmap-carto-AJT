@@ -2195,6 +2195,11 @@
     point-placement: interior;
   }
 
+  [shop = 'catalogue'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_catalogue.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'department_store'][zoom >= 16]::shop {
     point-file: url('symbols/department_store.p.16.png');
     point-placement: interior;
@@ -3931,6 +3936,7 @@
   [shop = 'ecoconv']::shop,
   [shop = 'health_food']::shop,
   [shop = 'ecohealth_food']::shop,
+  [shop = 'catalogue']::shop,
   [shop = 'doityourself']::shop,
   [shop = 'hairdresser']::shop,
   [shop = 'beauty']::shop,
