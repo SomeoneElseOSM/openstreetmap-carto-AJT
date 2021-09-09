@@ -2305,6 +2305,11 @@
     point-placement: interior;
   }
 
+  [shop = 'musical_instrument'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_musical_instrument.png');
+    point-placement: interior;
+  }
+
   [shop = 'motorcycle'][zoom >= 17]::shop {
     point-file: url('symbols/shop_motorcycle.png');
     point-placement: interior;
@@ -3964,6 +3969,7 @@
   [shop = 'art']::shop,
   [shop = 'pawnbroker']::shop,
   [shop = 'music']::shop,
+  [shop = 'musical_instrument']::shop,
   [shop = 'motorcycle']::shop,
   [shop = 'farm']::shop,
   [shop = 'toys']::shop,
