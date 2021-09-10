@@ -2292,6 +2292,11 @@
     point-placement: interior;
   }
 
+  [shop = 'storage_rental'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_storage_rental.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'outdoor'][zoom >= 17]::shop {
     point-file: url('symbols/shop_outdoor.p.16.png');
     point-placement: interior;
@@ -3967,6 +3972,7 @@
   [shop = 'bookmaker']::shop,
   [shop = 'furniture']::shop,
   [shop = 'homeware']::shop,
+  [shop = 'storage_rental']::shop,
   [shop = 'butcher']::shop,
   [shop = 'car']::shop,
   [shop = 'car_repair']::shop,
