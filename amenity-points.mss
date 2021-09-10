@@ -2126,6 +2126,13 @@
     }
   }
 
+  [shop = 'shoe_repair_etc']::shop {
+    [zoom >= 17] {
+      point-file: url('symbols/shop_shoe_repair_etc.p.16.png');
+      point-placement: interior;
+    }
+  }
+
   [shop = 'charity']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_charity.p.16.png');
@@ -3934,6 +3941,7 @@
   [shop = 'optician']::shop,
   [shop = 'clothes']::shop,
   [shop = 'shoes']::shop,
+  [shop = 'shoe_repair_etc']::shop,
   [shop = 'charity']::shop,
   [shop = 'discount']::shop,
   [shop = 'e-cigarette']::shop,
