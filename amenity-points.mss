@@ -2310,6 +2310,11 @@
     point-placement: interior;
   }
 
+  [shop = 'locksmith'][zoom >= 17]::amenity {
+    point-file: url('symbols/shop_locksmith.png');
+    point-placement: interior;
+  }
+
   [shop = 'motorcycle'][zoom >= 17]::shop {
     point-file: url('symbols/shop_motorcycle.png');
     point-placement: interior;
@@ -3970,6 +3975,7 @@
   [shop = 'pawnbroker']::shop,
   [shop = 'music']::shop,
   [shop = 'musical_instrument']::shop,
+  [shop = 'locksmith']::shop,
   [shop = 'motorcycle']::shop,
   [shop = 'farm']::shop,
   [shop = 'toys']::shop,
