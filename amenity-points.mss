@@ -2106,6 +2106,11 @@
     point-placement: interior;
   }
 
+  [shop = 'coffee'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_coffee.png');
+    point-placement: interior;
+  }
+
   [shop = 'optician'][zoom >= 17]::shop {
     point-file: url('symbols/shop_optician.p.16.png');
     point-placement: interior;
@@ -3949,6 +3954,7 @@
   [shop = 'antiques']::shop,
   [shop = 'bakery']::shop,
   [shop = 'seafood']::shop,
+  [shop = 'coffee']::shop,
   [shop = 'optician']::shop,
   [shop = 'clothes']::shop,
   [shop = 'shoes']::shop,
