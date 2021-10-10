@@ -2121,6 +2121,11 @@
     point-placement: interior;
   }
 
+  [shop = 'copyshop'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_copyshop.png');
+    point-placement: interior;
+  }
+
   [shop = 'clothes']::shop,
   [shop = 'fashion']::shop {
     [zoom >= 17] {
@@ -3986,6 +3991,7 @@
   [shop = 'homeware']::shop,
   [shop = 'storage_rental']::shop,
   [shop = 'butcher']::shop,
+  [shop = 'copyshop']::shop,
   [shop = 'car']::shop,
   [shop = 'car_repair']::shop,
   [shop = 'car_parts']::shop,
