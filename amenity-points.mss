@@ -2817,16 +2817,18 @@
 
 
   [building != 'no']::building {
-  [zoom >= 17] {
-    text-name: "[name]";
-    text-size: 11;
-    [zoom >= 20] { text-size: 22; }
-    text-fill: #444;
-    text-face-name: @book-fonts;
-    text-halo-radius: 1;
-    text-wrap-width: 20;
-    text-halo-fill: rgba(255,255,255,0.5);
-    text-placement: interior;
+    [building != ''] {
+    [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 11;
+      [zoom >= 20] { text-size: 22; }
+      text-fill: #444;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-wrap-width: 20;
+      text-halo-fill: rgba(255,255,255,0.5);
+      text-placement: interior;
+      }
     }
   }
 
