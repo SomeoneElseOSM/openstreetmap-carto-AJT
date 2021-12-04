@@ -474,6 +474,22 @@
     }
   }
 
+  [man_made = 'flagpole'][zoom >= 16]::man_made {
+    point-file: url('symbols/flagpole.png');
+    point-placement: interior;
+    [zoom >= 18] {
+      point-file: url('symbols/flagpole_large.png');
+    }
+  }
+
+  [man_made = 'flagpole_red'][zoom >= 16]::man_made {
+    point-file: url('symbols/flagpole_red.png');
+    point-placement: interior;
+    [zoom >= 18] {
+      point-file: url('symbols/flagpole_large_red.png');
+    }
+  }
+
   [tourism = 'zoo'][zoom >= 15]::tourism {
     point-file: url('symbols/historic_nonspecific.p.16.png');
     point-placement: interior;
@@ -3885,6 +3901,8 @@
   [man_made = 'churchtower'][zoom >= 17]::man_made,
   [man_made = 'churchspire'][zoom >= 17]::man_made,
   [man_made = 'maypole'][zoom >= 17]::man_made,
+  [man_made = 'flagpole'][zoom >= 17]::man_made,
+  [man_made = 'flagpole_red'][zoom >= 17]::man_made,
   [man_made = 'mounting_block'][zoom >= 17]::man_made,
   [man_made = 'footwear_decontamination'][zoom >= 17]::man_made,
   [man_made = 'monitoringwater'][zoom >= 17]::man_made,
