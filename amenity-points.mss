@@ -482,7 +482,7 @@
     }
   }
 
-  [man_made = 'flagpole_red'][zoom >= 16]::man_made {
+  [man_made = 'flagpole_red'][zoom >= 15]::man_made {
     point-file: url('symbols/flagpole_red.png');
     point-placement: interior;
     [zoom >= 18] {
@@ -3900,9 +3900,6 @@
   [man_made = 'squaretower'][zoom >= 17]::man_made,
   [man_made = 'churchtower'][zoom >= 17]::man_made,
   [man_made = 'churchspire'][zoom >= 17]::man_made,
-  [man_made = 'maypole'][zoom >= 17]::man_made,
-  [man_made = 'flagpole'][zoom >= 17]::man_made,
-  [man_made = 'flagpole_red'][zoom >= 17]::man_made,
   [man_made = 'mounting_block'][zoom >= 17]::man_made,
   [man_made = 'footwear_decontamination'][zoom >= 17]::man_made,
   [man_made = 'monitoringwater'][zoom >= 17]::man_made,
@@ -3917,6 +3914,33 @@
     [zoom >= 20] { text-size: 18; }
     text-fill: #000033;
     text-dy: 16;
+    text-face-name: @book-fonts;
+    text-halo-radius: 2;
+    text-wrap-width: 12;
+    text-placement: interior;
+  }
+
+  [man_made = 'flagpole'][zoom >= 17]::man_made,
+  [man_made = 'maypole'][zoom >= 17]::man_made {
+    text-name: "[name]";
+    text-size: 9;
+    [zoom >= 20] { text-size: 18; }
+    text-fill: #000033;
+    text-dy: 16;
+    [zoom >= 18] { text-dy: 32; }
+    text-face-name: @book-fonts;
+    text-halo-radius: 2;
+    text-wrap-width: 12;
+    text-placement: interior;
+  }
+
+  [man_made = 'flagpole_red'][zoom >= 15]::man_made {
+    text-name: "[name]";
+    text-size: 9;
+    [zoom >= 20] { text-size: 18; }
+    text-fill: @military-text;
+    text-dy: 16;
+    [zoom >= 18] { text-dy: 32; }
     text-face-name: @book-fonts;
     text-halo-radius: 2;
     text-wrap-width: 12;
