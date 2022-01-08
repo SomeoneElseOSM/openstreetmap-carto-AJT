@@ -87,6 +87,16 @@
     point-placement: interior;
   }
 
+  [amenity = 'taxi'][zoom >= 17]::amenity {
+    point-file: url('symbols/taxi_stand.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'taxi_office'][zoom >= 17]::amenity {
+    point-file: url('symbols/taxi_office.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'bicycle_rental'][zoom >= 17]::amenity {
     point-file: url('symbols/rental_bicycle.p.20.png');
     point-placement: interior;
@@ -2969,6 +2979,8 @@
   }
 
   [amenity = 'car_sharing'][zoom >= 17]::amenity,
+  [amenity = 'taxi'][zoom >= 17]::amenity,
+  [amenity = 'taxi_office'][zoom >= 17]::amenity,
   [amenity = 'bicycle_rental'][zoom >= 17]::amenity,
   [amenity = 'scooter_rental'][zoom >= 17]::amenity,
   [amenity = 'bicycle_parking'][zoom >= 19]::amenity,
