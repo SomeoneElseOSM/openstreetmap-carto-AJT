@@ -3174,6 +3174,8 @@
   [natural = 'water']::natural,
   [natural = 'lake']::natural,
   [landuse = 'reservoir']::landuse,
+  [natural = 'intermittentwater']::natural,
+  [natural = 'flood_prone']::natural,
   [landuse = 'basin']::landuse {
     [zoom >= 15] {
       text-name: "[name]";
