@@ -83,6 +83,12 @@
       polygon-pattern-file: url('symbols/marsh.png');
     }
   }
+
+  [natural = 'intermittentwetland'] {
+    [zoom >= 13] {
+      polygon-pattern-file: url('symbols/intermittentwetland.png');
+    }
+  }
 }
 
 #glaciers-text {
