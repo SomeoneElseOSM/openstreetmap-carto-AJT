@@ -51,6 +51,16 @@
     }
   }
 
+  [natural = 'intermittentwater']::natural {
+    [zoom >= 6] {
+      polygon-pattern-file: url('symbols/intwater_blue_hatch.png');
+      polygon-pattern-alignment: global;
+      line-color: @water-color;
+      line-width: 3;
+      line-opacity: 0.329;
+    }
+  }
+
   [natural = 'mud'][zoom >= 13]::natural {
     polygon-pattern-file: url('symbols/mud.png');
   }
