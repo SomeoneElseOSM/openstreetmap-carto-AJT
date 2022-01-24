@@ -278,7 +278,7 @@
         line-color: @trunk-casing;
         .roads-casing {
           line-join: round;
-          line-cap: round;
+          line-cap: butt;
         }
         .tunnels-casing {
           line-dasharray: 4,2;
@@ -289,6 +289,7 @@
         }
         .levees-casing {
           line-join: round;
+          line-cap: butt;
           [zoom >= 13] { line-color: @trunk-levee-casing; }
         }
       }
@@ -306,7 +307,7 @@
         [zoom >= 19] { line-width: @primary-width-z19; }
         .roads-casing {
           line-join: round;
-          line-cap: round;
+          line-cap: butt;
         }
         .tunnels-casing {
           line-dasharray: 4,2;
@@ -317,6 +318,7 @@
         }
         .levees-casing {
           line-join: round;
+          line-cap: butt;
           [zoom >= 13] { line-color: @primary-levee-casing; }
         }
       }
@@ -333,7 +335,7 @@
         [zoom >= 18] { line-width: @secondary-width-z18; }
         [zoom >= 19] { line-width: @secondary-width-z19; }
         .roads-casing {
-          line-cap: round;
+          line-cap: butt;
           line-join: round;
         }
         .tunnels-casing {
@@ -348,6 +350,7 @@
         .levees-casing {
           [zoom >= 13] {
             line-color: @secondary-levee-casing;
+            line-cap: butt;
             line-join: round;
           }
         }
@@ -364,7 +367,7 @@
         [zoom >= 18] { line-width: @tertiary-width-z18; }
         [zoom >= 19] { line-width: @tertiary-width-z19; }
         .roads-casing {
-          line-cap: round;
+          line-cap: butt;
           line-join: round;
         }
         .tunnels-casing {
@@ -379,6 +382,7 @@
         .levees-casing {
           [zoom >= 14] {
             line-color: @tertiary-levee-casing;
+            line-cap: butt;
             line-join: round;
           }
         }
@@ -427,7 +431,7 @@
         [zoom >= 19] { line-width: @trunk-width-z19; }
         .roads-casing {
           line-join: round;
-          line-cap: round;
+          line-cap: butt;
         }
         .tunnels-casing {
           line-dasharray: 4,2;
@@ -438,6 +442,7 @@
         }
         .levees-casing {
           line-join: round;
+          line-cap: butt;
           [zoom >= 13] { line-color: @trunk-levee-casing; }
         }
       }
@@ -455,7 +460,7 @@
         [zoom >= 19] { line-width: @primary-width-z19; }
         .roads-casing {
           line-join: round;
-          line-cap: round;
+          line-cap: butt;
         }
         .tunnels-casing {
           line-dasharray: 4,2;
@@ -466,6 +471,7 @@
         }
         .levees-casing {
           line-join: round;
+          line-cap: butt;
           [zoom >= 13] { line-color: @primary-levee-casing; }
         }
       }
@@ -483,7 +489,7 @@
         [zoom >= 19] { line-width: @primary-width-z19; }
         .roads-casing {
           line-join: round;
-          line-cap: round;
+          line-cap: butt;
         }
         .tunnels-casing {
           line-dasharray: 4,2;
@@ -494,6 +500,7 @@
         }
         .levees-casing {
           line-join: round;
+          line-cap: butt;
           [zoom >= 13] { line-color: @primary-levee-casing; }
         }
       }
@@ -511,7 +518,7 @@
         [zoom >= 19] { line-width: @primary-width-z19; }
         .roads-casing {
           line-join: round;
-          line-cap: round;
+          line-cap: butt;
         }
         .tunnels-casing {
           line-dasharray: 4,2;
@@ -522,6 +529,7 @@
         }
         .levees-casing {
           line-join: round;
+          line-cap: butt;
           [zoom >= 13] { line-color: @primary-levee-casing; }
         }
       }
@@ -539,7 +547,7 @@
         [zoom >= 19] { line-width: @secondary-width-z19; }
         .roads-casing {
           line-join: round;
-          line-cap: round;
+          line-cap: butt;
         }
         .tunnels-casing {
           line-dasharray: 4,2;
@@ -553,6 +561,7 @@
         .levees-casing {
           [zoom >= 13] {
             line-color: @secondary-levee-casing;
+            line-cap: butt;
             line-join: round;
           }
         }
@@ -573,7 +582,7 @@
           [zoom >= 19] { line-width: @secondary-width-z19; }
           .roads-casing {
             line-join: round;
-            line-cap: round;
+            line-cap: butt;
           }
           .tunnels-casing {
             line-dasharray: 4,2;
@@ -587,6 +596,7 @@
           .levees-casing {
             [zoom >= 13] {
               line-color: @secondary-levee-casing;
+              line-cap: butt;
               line-join: round;
             }
           }
@@ -606,7 +616,7 @@
         [zoom >= 19] { line-width: @secondary-width-z19; }
         .roads-casing {
           line-join: round;
-          line-cap: round;
+          line-cap: butt;
         }
         .tunnels-casing {
           line-dasharray: 4,2;
@@ -620,6 +630,7 @@
         .levees-casing {
           [zoom >= 13] {
             line-color: @secondary-levee-casing;
+            line-cap: butt;
             line-join: round;
           }
         }
@@ -637,7 +648,7 @@
         [zoom >= 19] { line-width: @tertiary-width-z19; }
         .roads-casing {
           line-join: round;
-          line-cap: round;
+          line-cap: butt;
         }
         .tunnels-casing {
           line-dasharray: 4,2;
@@ -651,6 +662,7 @@
         .levees-casing {
           [zoom >= 14] {
             line-color: @tertiary-levee-casing;
+            line-cap: butt;
             line-join: round;
           }
         }
@@ -668,7 +680,7 @@
         [zoom >= 19] { line-width: @tertiary-width-z19; }
         .roads-casing {
           line-join: round;
-          line-cap: round;
+          line-cap: butt;
         }
         .tunnels-casing {
           line-dasharray: 4,2;
@@ -682,6 +694,7 @@
         .levees-casing {
           [zoom >= 14] {
             line-color: @tertiary-levee-casing;
+            line-cap: butt;
             line-join: round;
           }
         }
@@ -699,7 +712,7 @@
         [zoom >= 19] { line-width: @tertiary-width-z19; }
         .roads-casing {
           line-join: round;
-          line-cap: round;
+          line-cap: butt;
         }
         .tunnels-casing {
           line-dasharray: 4,2;
@@ -713,6 +726,7 @@
         .levees-casing {
           [zoom >= 14] {
             line-color: @tertiary-levee-casing;
+            line-cap: butt;
             line-join: round;
           }
         }
@@ -730,7 +744,7 @@
         [zoom >= 19] { line-width: @tertiary-width-z19; }
         .roads-casing {
           line-join: round;
-          line-cap: round;
+          line-cap: butt;
         }
         .tunnels-casing {
           line-dasharray: 4,2;
@@ -744,6 +758,7 @@
         .levees-casing {
           [zoom >= 14] {
             line-color: @tertiary-levee-casing;
+            line-cap: butt;
             line-join: round;
           }
         }
