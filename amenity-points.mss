@@ -508,6 +508,14 @@
     }
   }
 
+  [man_made = 'windsock'][zoom >= 15]::man_made {
+    point-file: url('symbols/windsock.png');
+    point-placement: interior;
+    [zoom >= 18] {
+      point-file: url('symbols/windsock_large.png');
+    }
+  }
+
   [tourism = 'zoo'][zoom >= 15]::tourism {
     point-file: url('symbols/historic_nonspecific.p.16.png');
     point-placement: interior;
@@ -3956,7 +3964,8 @@
   }
 
   [man_made = 'flagpole'][zoom >= 17]::man_made,
-  [man_made = 'maypole'][zoom >= 17]::man_made {
+  [man_made = 'maypole'][zoom >= 17]::man_made,
+  [man_made = 'windsock'][zoom >= 17]::man_made {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
