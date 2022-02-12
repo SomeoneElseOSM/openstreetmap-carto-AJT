@@ -175,12 +175,12 @@
 
   [office = 'craftbrewery'][zoom >= 17]::office {
     point-file: url('symbols/brewery_craft.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [leisure = 'nonspecific'][zoom >= 17]::leisure {
     point-file: url('symbols/leisure_nonspecific.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [leisure = 'fitness_station'][zoom >= 19]::leisure {
@@ -737,1022 +737,1022 @@
 
   [amenity = 'pub_yyyynyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnydd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnydg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnydg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnydo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnydo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnyld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnyld.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnylg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnylg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnylo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnylo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnynd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnynd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnyng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnyng.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnyno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnyno.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnyyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnyyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnyyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnyyg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnyyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnyyo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnndd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnndg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnndo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnld.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnlg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnlo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnnd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnng.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnno.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnyg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnyo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnydd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnydg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnydg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnydo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnydo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnyld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnyld.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnylg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnylg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnylo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnylo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnynd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnynd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnyng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnyng.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnyno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnyno.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnyyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnyyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnyyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnyyg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnyyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnyyo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnndd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnndg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnndo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnld.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnlg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnlo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnnd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnng.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnno.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnyg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnyo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynydd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynydl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynydl.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynydn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynydn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynydy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynydy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnydd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnydg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnydg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnydo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnydo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnyld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnyld.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnylg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnylg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnylo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnylo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnynd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnynd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnyng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnyng.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnyno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnyno.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnyyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnyyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnyyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnyyg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnyyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnyyo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnndd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnndg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnndo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnld.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnlg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnlo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnnd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnng.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnno.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnyg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnyo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnydd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnydl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnydl.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnydn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnydn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnydy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnydy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnydd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnydg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnydg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnydo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnydo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnyld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnyld.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnylg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnylg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnylo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnylo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnynd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnynd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnyng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnyng.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnyno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnyno.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnyyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnyyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnyyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnyyg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnyyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnyyo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnndd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnndg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnndo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnld.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnlg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnlo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnnd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnng.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnno.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnyg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnyo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyyydy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyyydn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydydy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydydn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydyl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydyl.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydyn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydyn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydyy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydyy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydnd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydnl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydnl.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydnn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydnn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydny'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydny.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddydddd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddydddd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddydddg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddydddg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddydddo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddydddo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddyddld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyddld.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddyddlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyddlg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddyddlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyddlo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddyddnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyddnd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddyddng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyddng.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddyddno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyddno.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddyddyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyddyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddyddyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyddyg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddyddyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyddyo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynyydddd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynyydddl'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddl.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynyydddn'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynyydddy'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynydddy'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynydddnd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddnd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynydddnl'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddnl.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynydddnn'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddnn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynydddny'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddny.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydyyndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyyndd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnyl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnyl.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnyn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnyn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnyy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnyy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnnd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnnl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnnl.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnnn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnnn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnny'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnny.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yddynyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yddynnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynnd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnndd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydyyydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyyydd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydydd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yddyydy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddyydy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yddyydn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddyydn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddydy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddydnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydnd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddydnl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydnl.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddydnn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydnn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddydny'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydny.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnydd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnydl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnydl.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnydn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnydn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnydy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnydy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnyl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnyl.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnyn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnyn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnyy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnyy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnndd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnndg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnndo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnld.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnlg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnlo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnnd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnng.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnno.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnyg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnyo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddyd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddyl'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddyl.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddyn'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddyn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddyy'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddyy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddndd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddndd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddndg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddndg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddndo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddndo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnld'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnld.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnlg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnlg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnlo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnlo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnnd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnnd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnng'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnng.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnno'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnno.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnyd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnyd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnyg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnyg.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnyo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnyo.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynddddy'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddy.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynddddnd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddnd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynddddnl'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddnl.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynddddnn'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddnn.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_ynddddny'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddny.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_cddddddd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_cddddddd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'pub_nddddddd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_nddddddd.p.16.png');
-    point-placement: interior;
+    point-placement: centroid;
   }
 
   [amenity = 'biergarten'][zoom >= 17]::amenity {
