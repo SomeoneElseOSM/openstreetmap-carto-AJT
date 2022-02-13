@@ -2294,6 +2294,11 @@
     point-placement: interior;
   }
 
+  [shop = 'ecogreengrocer'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_ecogreengrocer.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'hairdresser'][zoom >= 17]::shop {
     point-file: url('symbols/shop_hairdresser.p.16.png');
     point-placement: interior;
@@ -4092,6 +4097,7 @@
   [shop = 'florist']::shop,
   [shop = 'funeral_directors']::shop,
   [shop = 'greengrocer']::shop,
+  [shop = 'ecogreengrocer']::shop,
   [shop = 'outdoor']::shop,
   [shop = 'art']::shop,
   [shop = 'pawnbroker']::shop,
