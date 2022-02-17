@@ -1910,6 +1910,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'boothmuseum'][zoom >= 17]::amenity {
+    point-file: url('symbols/boothmuseum.png');
+    point-placement: interior;
+  }
+
   [amenity = 'boothdisused'][zoom >= 17]::amenity {
     point-file: url('symbols/boothdisused.png');
     point-placement: interior;
@@ -3759,6 +3764,7 @@
   [amenity = 'boothatm'][zoom >= 17]::amenity, 
   [amenity = 'boothinformation'][zoom >= 17]::amenity, 
   [amenity = 'boothartwork'][zoom >= 17]::amenity, 
+  [amenity = 'boothmuseum'][zoom >= 17]::amenity, 
   [amenity = 'boothdisused'][zoom >= 17]::amenity, 
   [amenity = 'public_bookcase'][zoom >= 17]::amenity, 
   [tourism = 'museum'][zoom >= 17]::tourism,
