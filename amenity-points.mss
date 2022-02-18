@@ -1760,6 +1760,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'tourismstation'][zoom >= 15]::amenity {
+    point-file: url('symbols/station.png');
+    point-placement: interior;
+  }
+
   [amenity = 'recycling'][zoom >= 19]::amenity {
     point-file: url('symbols/recycling.p.16.png');
     point-placement: interior;
@@ -2792,6 +2797,20 @@
       text-face-name: @bold-fonts;
       text-halo-radius: 1;
       text-wrap-width: @default-wrap-width;
+      text-placement: interior;
+    }
+  }
+
+  [amenity = 'tourismstation']::amenity {
+    [zoom >= 15] {
+      text-name: "[name]";
+      text-fill: #734a08;
+      text-size: 9;
+      [zoom >= 20] { text-size: 18; }
+      text-dy: -8;
+      text-face-name: @bold-fonts;
+      text-halo-radius: 1;
+      text-wrap-width: 0;
       text-placement: interior;
     }
   }
