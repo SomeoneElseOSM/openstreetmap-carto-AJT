@@ -42,43 +42,84 @@
     point-placement: interior;
   }
 
-  [amenity = 'bar'][zoom >=17]::amenity {
-    point-file: url('symbols/am_bar_dd.png');
+  [amenity = 'bar'][zoom >=17]::amenity,
+  [amenity = 'bar_ddd'][zoom >=17]::amenity {
+    point-file: url('symbols/am_bar_ddd.png');
     point-placement: interior;
   }
 
-  [amenity = 'bar_dl'][zoom >=17]::amenity {
-    point-file: url('symbols/am_bar_dl.png');
+  [amenity = 'bar_dld'][zoom >=17]::amenity {
+    point-file: url('symbols/am_bar_dld.png');
     point-placement: interior;
   }
 
-  [amenity = 'bar_dn'][zoom >=17]::amenity {
-    point-file: url('symbols/am_bar_dn.png');
+  [amenity = 'bar_dnd'][zoom >=17]::amenity {
+    point-file: url('symbols/am_bar_dnd.png');
     point-placement: interior;
   }
 
-  [amenity = 'bar_dy'][zoom >=17]::amenity {
-    point-file: url('symbols/am_bar_dy.png');
+  [amenity = 'bar_dyd'][zoom >=17]::amenity {
+    point-file: url('symbols/am_bar_dyd.png');
     point-placement: interior;
   }
 
-  [amenity = 'bar_yd'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_bar_yd.png');
+  [amenity = 'bar_ydd'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bar_ydd.png');
     point-placement: interior;
   }
 
-  [amenity = 'bar_yl'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_bar_yl.png');
+  [amenity = 'bar_yld'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bar_yld.png');
     point-placement: interior;
   }
 
-  [amenity = 'bar_yn'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_bar_yn.png');
+  [amenity = 'bar_ynd'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bar_ynd.png');
     point-placement: interior;
   }
 
-  [amenity = 'bar_yy'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_bar_yy.png');
+  [amenity = 'bar_yyd'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bar_yyd.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_ddy'][zoom >=17]::amenity {
+    point-file: url('symbols/am_bar_ddy.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_dly'][zoom >=17]::amenity {
+    point-file: url('symbols/am_bar_dly.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_dny'][zoom >=17]::amenity {
+    point-file: url('symbols/am_bar_dny.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_dyy'][zoom >=17]::amenity {
+    point-file: url('symbols/am_bar_dyy.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_ydy'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bar_ydy.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_yly'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bar_yly.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_yny'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bar_yny.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'bar_yyy'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bar_yyy.png');
     point-placement: interior;
   }
 
@@ -2894,13 +2935,22 @@
 
 
   [amenity = 'bar'][zoom >= 17 ]::amenity,
-  [amenity = 'bar_dl'][zoom >= 17]::amenity, 
-  [amenity = 'bar_dn'][zoom >= 17]::amenity, 
-  [amenity = 'bar_dy'][zoom >= 17]::amenity, 
-  [amenity = 'bar_yd'][zoom >= 17]::amenity, 
-  [amenity = 'bar_yl'][zoom >= 17]::amenity, 
-  [amenity = 'bar_yn'][zoom >= 17]::amenity, 
-  [amenity = 'bar_yy'][zoom >= 17]::amenity {
+  [amenity = 'bar_ddd'][zoom >= 17]::amenity, 
+  [amenity = 'bar_dld'][zoom >= 17]::amenity, 
+  [amenity = 'bar_dnd'][zoom >= 17]::amenity, 
+  [amenity = 'bar_dyd'][zoom >= 17]::amenity, 
+  [amenity = 'bar_ydd'][zoom >= 17]::amenity, 
+  [amenity = 'bar_yld'][zoom >= 17]::amenity, 
+  [amenity = 'bar_ynd'][zoom >= 17]::amenity, 
+  [amenity = 'bar_yyd'][zoom >= 17]::amenity,
+  [amenity = 'bar_ddy'][zoom >= 17]::amenity, 
+  [amenity = 'bar_dly'][zoom >= 17]::amenity, 
+  [amenity = 'bar_dny'][zoom >= 17]::amenity, 
+  [amenity = 'bar_dyy'][zoom >= 17]::amenity, 
+  [amenity = 'bar_ydy'][zoom >= 17]::amenity, 
+  [amenity = 'bar_yly'][zoom >= 17]::amenity, 
+  [amenity = 'bar_yny'][zoom >= 17]::amenity, 
+  [amenity = 'bar_yyy'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
