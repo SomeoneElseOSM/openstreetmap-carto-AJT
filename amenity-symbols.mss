@@ -76,6 +76,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'markeraerial'][zoom >= 17]::man_made {
+    point-file: url('symbols/markeraerial.png');
+    point-placement: interior;
+  }
+
   [man_made = 'survey_point'][zoom >= 15]::man_made {
     point-file: url('symbols/survey_point.png');
     point-placement: interior;
