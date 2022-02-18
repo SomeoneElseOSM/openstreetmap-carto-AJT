@@ -203,43 +203,84 @@
     point-placement: interior;
   }
 
-  [amenity = 'cafe'][zoom >=17]::amenity {
-    point-file: url('symbols/am_cafe_dd.png');
+  [amenity = 'cafe'][zoom >=17]::amenity,
+  [amenity = 'cafe_ddd'][zoom >=17]::amenity {
+    point-file: url('symbols/am_cafe_ddd.png');
     point-placement: interior;
   }
 
-  [amenity = 'cafe_dl'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_cafe_dl.png');
+  [amenity = 'cafe_dld'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_dld.png');
     point-placement: interior;
   }
 
-  [amenity = 'cafe_dn'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_cafe_dn.png');
+  [amenity = 'cafe_dnd'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_dnd.png');
     point-placement: interior;
   }
 
-  [amenity = 'cafe_dy'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_cafe_dy.png');
+  [amenity = 'cafe_dyd'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_dyd.png');
     point-placement: interior;
   }
 
-  [amenity = 'cafe_yd'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_cafe_yd.png');
+  [amenity = 'cafe_ydd'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_ydd.png');
     point-placement: interior;
   }
 
-  [amenity = 'cafe_yl'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_cafe_yl.png');
+  [amenity = 'cafe_yld'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_yld.png');
     point-placement: interior;
   }
 
-  [amenity = 'cafe_yn'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_cafe_yn.png');
+  [amenity = 'cafe_ynd'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_ynd.png');
     point-placement: interior;
   }
 
-  [amenity = 'cafe_yy'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_cafe_yy.png');
+  [amenity = 'cafe_yyd'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_yyd.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_ddy'][zoom >=17]::amenity {
+    point-file: url('symbols/am_cafe_ddy.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_dly'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_dly.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_dny'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_dny.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_dyy'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_dyy.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_ydy'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_ydy.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_yly'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_yly.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_yny'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_yny.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'cafe_yyy'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_cafe_yyy.png');
     point-placement: interior;
   }
 
@@ -2767,13 +2808,22 @@
   [amenity = 'restaurant']::amenity,
   [amenity = 'restaccomm']::amenity,
   [amenity = 'cafe']::amenity,
-  [amenity = 'cafe_dl']::amenity,
-  [amenity = 'cafe_dn']::amenity,
-  [amenity = 'cafe_dy']::amenity,
-  [amenity = 'cafe_yd']::amenity,
-  [amenity = 'cafe_yl']::amenity,
-  [amenity = 'cafe_yn']::amenity,
-  [amenity = 'cafe_yy']::amenity,
+  [amenity = 'cafe_ddd']::amenity,
+  [amenity = 'cafe_dld']::amenity,
+  [amenity = 'cafe_dnd']::amenity,
+  [amenity = 'cafe_dyd']::amenity,
+  [amenity = 'cafe_ydd']::amenity,
+  [amenity = 'cafe_yld']::amenity,
+  [amenity = 'cafe_ynd']::amenity,
+  [amenity = 'cafe_yyd']::amenity,
+  [amenity = 'cafe_ddy']::amenity,
+  [amenity = 'cafe_dly']::amenity,
+  [amenity = 'cafe_dny']::amenity,
+  [amenity = 'cafe_dyy']::amenity,
+  [amenity = 'cafe_ydy']::amenity,
+  [amenity = 'cafe_yly']::amenity,
+  [amenity = 'cafe_yny']::amenity,
+  [amenity = 'cafe_yyy']::amenity,
   [amenity = 'vending_machine']::amenity,
   [amenity = 'fast_food']::amenity,
   [amenity = 'fast_food_burger']::amenity,
