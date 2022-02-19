@@ -1422,8 +1422,33 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyydydn'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydydn.p.16.png');
+  [amenity = 'pub_yyydydny'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydydny.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydydnl'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydydnl.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydydnn'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydydnn.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydydndg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydydndg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydydndo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydydndo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydydndd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydydndd.p.16.png');
     point-placement: centroid;
   }
 
@@ -1452,8 +1477,18 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yydyydnl'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydyydnl.p.16.png');
+  [amenity = 'pub_yydyydnlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydyydnlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydyydnlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydyydnlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydyydnld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydyydnld.p.16.png');
     point-placement: centroid;
   }
 
@@ -1582,8 +1617,18 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_ydydnnyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnyd.p.16.png');
+  [amenity = 'pub_ydydnnydg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnydg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnydo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnydo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnydd.p.16.png');
     point-placement: centroid;
   }
 
@@ -1602,18 +1647,48 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_ydydnnnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnnd.p.16.png');
+  [amenity = 'pub_ydydnnndg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnndg.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_ydydnnnl'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnnl.p.16.png');
+  [amenity = 'pub_ydydnnndo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnndo.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_ydydnnnn'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnnn.p.16.png');
+  [amenity = 'pub_ydydnnndd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnndd.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnnlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnnlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnnld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnld.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnnng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnnno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnnnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnnd.p.16.png');
     point-placement: centroid;
   }
 
@@ -1917,8 +1992,18 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_ynddddnd'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynddddnd.p.16.png');
+  [amenity = 'pub_ynddddndg'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynddddndg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynddddndo'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynddddndo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynddddndd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynddddndd.p.16.png');
     point-placement: centroid;
   }
 
@@ -1932,8 +2017,18 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_ynddddny'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynddddny.p.16.png');
+  [amenity = 'pub_ynddddnyg'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynddddnyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynddddnyo'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynddddnyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynddddnyd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynddddnyd.p.16.png');
     point-placement: centroid;
   }
 
@@ -2907,13 +3002,20 @@
   [amenity = 'pub_yyyyydndo']::amenity,
   [amenity = 'pub_yyyyydndd']::amenity,
   [amenity = 'pub_yyydydy']::amenity,
-  [amenity = 'pub_yyydydn']::amenity,
+  [amenity = 'pub_yyydydny']::amenity,
+  [amenity = 'pub_yyydydnl']::amenity,
+  [amenity = 'pub_yyydydnn']::amenity,
+  [amenity = 'pub_yyydydndg']::amenity,
+  [amenity = 'pub_yyydydndo']::amenity,
+  [amenity = 'pub_yyydydndd']::amenity,
   [amenity = 'pub_yydyydyd']::amenity,
   [amenity = 'pub_yydyydyl']::amenity,
   [amenity = 'pub_yydyydyn']::amenity,
   [amenity = 'pub_yydyydyy']::amenity,
   [amenity = 'pub_yydyydnd']::amenity,
-  [amenity = 'pub_yydyydnl']::amenity,
+  [amenity = 'pub_yydyydnlg']::amenity,
+  [amenity = 'pub_yydyydnlo']::amenity,
+  [amenity = 'pub_yydyydnld']::amenity,
   [amenity = 'pub_yydyydnn']::amenity,
   [amenity = 'pub_yydyydny']::amenity,
   [amenity = 'pub_yyddydddd']::amenity,
@@ -2939,13 +3041,21 @@
   [amenity = 'pub_ynydddny']::amenity,
   [amenity = 'pub_ydyyndd']::amenity,
   [amenity = 'pub_ydydnyd']::amenity,
-  [amenity = 'pub_ydydnnyd']::amenity,
+  [amenity = 'pub_ydydnnydg']::amenity,
+  [amenity = 'pub_ydydnnydo']::amenity,
+  [amenity = 'pub_ydydnnydd']::amenity,
   [amenity = 'pub_ydydnnyl']::amenity,
   [amenity = 'pub_ydydnnyn']::amenity,
   [amenity = 'pub_ydydnnyy']::amenity,
-  [amenity = 'pub_ydydnnnd']::amenity,
-  [amenity = 'pub_ydydnnnl']::amenity,
-  [amenity = 'pub_ydydnnnn']::amenity,
+  [amenity = 'pub_ydydnnndg']::amenity,
+  [amenity = 'pub_ydydnnndo']::amenity,
+  [amenity = 'pub_ydydnnndd']::amenity,
+  [amenity = 'pub_ydydnnnlg']::amenity,
+  [amenity = 'pub_ydydnnnlo']::amenity,
+  [amenity = 'pub_ydydnnnld']::amenity,
+  [amenity = 'pub_ydydnnnng']::amenity,
+  [amenity = 'pub_ydydnnnno']::amenity,
+  [amenity = 'pub_ydydnnnnd']::amenity,
   [amenity = 'pub_ydydnnnyg']::amenity,
   [amenity = 'pub_ydydnnnyo']::amenity,
   [amenity = 'pub_ydydnnnyd']::amenity,
@@ -2972,10 +3082,14 @@
   [amenity = 'pub_yndyddnyg']::amenity,
   [amenity = 'pub_yndyddnyo']::amenity,
   [amenity = 'pub_ynddddy']::amenity,
-  [amenity = 'pub_ynddddnd']::amenity,
+  [amenity = 'pub_ynddddndg']::amenity,
+  [amenity = 'pub_ynddddndo']::amenity,
+  [amenity = 'pub_ynddddndd']::amenity,
   [amenity = 'pub_ynddddnl']::amenity,
   [amenity = 'pub_ynddddnn']::amenity,
-  [amenity = 'pub_ynddddny']::amenity,
+  [amenity = 'pub_ynddddnyg']::amenity,
+  [amenity = 'pub_ynddddnyo']::amenity,
+  [amenity = 'pub_ynddddnyd']::amenity,
   [amenity = 'pub_cddddddd']::amenity,
   [amenity = 'pub_nddddddd']::amenity,
   [amenity = 'restaurant']::amenity,
