@@ -603,6 +603,21 @@
     }
   }
 
+  [barrier = 'pitchline'] {
+    [zoom >= 14] 
+    {
+      line-width: 0.2; 
+      [zoom >= 16] { line-width: 0.4; }
+      [zoom >= 19] { line-width: 0.8; }
+      [zoom >= 20] { line-width: 1.6; }
+      [zoom >= 21] { line-width: 2.4; }
+      [zoom >= 22] { line-width: 3.2; }
+
+      line-color: white;
+      line-cap: round;
+    }
+  }
+
   [barrier = 'hedge'] {
     [zoom >= 14]
     {
