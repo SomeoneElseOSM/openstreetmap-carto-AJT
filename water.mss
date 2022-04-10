@@ -147,13 +147,22 @@
     line-cap: round;
   }
 
-  [waterway = 'wadi'][zoom >= 13] {
+  [waterway = 'intstream'][zoom >= 13] {
     line-color: @water-color;
-    line-width: 1;
-    line-dasharray: 4,4;
+    line-width: 1.5;
+    line-dasharray: 4,8;
     line-cap: round;
     line-join: round;
-    [zoom >= 16] { line-width: 2; }
+    [zoom >= 16] { line-width: 3; }
+  }
+
+  [waterway = 'intriver'][zoom >= 13] {
+    line-color: @water-color;
+    line-width: 3;
+    line-dasharray: 4,8;
+    line-cap: round;
+    line-join: round;
+    [zoom >= 16] { line-width: 6; }
   }
 
   [waterway = 'canal'][zoom >= 12],
@@ -343,7 +352,8 @@
   }
 
   [waterway = 'stream'],
-  [waterway = 'wadi'] {
+  [waterway = 'intriver'],
+  [waterway = 'intstream'] {
     [zoom >= 15] {
       text-name: "[name]";
       text-size: 10;
