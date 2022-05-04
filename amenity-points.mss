@@ -219,6 +219,11 @@
     point-placement: centroid;
   }
 
+  [office = 'craftcider'][zoom >= 17]::office {
+    point-file: url('symbols/cider_craft.p.16.png');
+    point-placement: centroid;
+  }
+
   [leisure = 'nonspecific'][zoom >= 17]::leisure {
     point-file: url('symbols/leisure_nonspecific.p.16.png');
     point-placement: centroid;
@@ -3924,7 +3929,8 @@
   }
 
   [office = 'nonspecific'],
-  [office = 'craftbrewery']::office {
+  [office = 'craftbrewery']::office,
+  [office = 'craftcider']::office {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 9;
