@@ -947,8 +947,63 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyydnyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnyd.p.16.png');
+  [amenity = 'pub_yyydnydyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydyd.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydld.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydnd.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnyddg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnyddg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnyddo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnyddo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnyddd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnyddd.p.16.png');
     point-placement: centroid;
   }
 
@@ -3016,7 +3071,18 @@
   [amenity = 'pub_yyyynnnyd']::amenity,
   [amenity = 'pub_yyyynnnyg']::amenity,
   [amenity = 'pub_yyyynnnyo']::amenity,
-  [amenity = 'pub_yyydnyd']::amenity,
+  [amenity = 'pub_yyydnydyg']::amenity,
+  [amenity = 'pub_yyydnydyo']::amenity,
+  [amenity = 'pub_yyydnydyd']::amenity,
+  [amenity = 'pub_yyydnydlg']::amenity,
+  [amenity = 'pub_yyydnydlo']::amenity,
+  [amenity = 'pub_yyydnydld']::amenity,
+  [amenity = 'pub_yyydnydng']::amenity,
+  [amenity = 'pub_yyydnydno']::amenity,
+  [amenity = 'pub_yyydnydnd']::amenity,
+  [amenity = 'pub_yyydnyddg']::amenity,
+  [amenity = 'pub_yyydnyddo']::amenity,
+  [amenity = 'pub_yyydnyddd']::amenity,
   [amenity = 'pub_yyydnnydd']::amenity,
   [amenity = 'pub_yyydnnydg']::amenity,
   [amenity = 'pub_yyydnnydo']::amenity,
