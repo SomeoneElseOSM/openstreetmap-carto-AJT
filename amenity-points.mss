@@ -186,6 +186,17 @@
     }
   }
 
+  [amenity = 'entrancemain'][zoom >= 18]::amenity {
+    point-file: url('symbols/entrancemain_18.png');
+    [zoom >= 20] {
+      point-file: url('symbols/entrancemain_20.png');
+    }
+    [zoom >= 22] {
+      point-file: url('symbols/entrancemain_22.png');
+    }
+    point-placement: interior;
+  }
+
   [amenity = 'bus_stop']::amenity,
   [highway = 'bus_stop']::highway {
     [zoom >= 16] {
