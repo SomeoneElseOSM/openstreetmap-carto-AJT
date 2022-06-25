@@ -6,17 +6,10 @@ UNZIP_OPTS=-qqun
 # create and populate data dir
 
 mkdir -p data/
-mkdir -p data/world_boundaries
 mkdir -p data/simplified-land-polygons-complete-3857
 mkdir -p data/ne_110m_admin_0_boundary_lines_land
 mkdir -p data/ne_10m_populated_places
 mkdir -p data/land-polygons-split-3857
-
-# world_boundaries
-echo "downloading world_boundaries..."
-curl -z "data/world_boundaries-spherical.tgz" -L -o "data/world_boundaries-spherical.tgz" "https://planet.openstreetmap.org/historical-shapefiles/world_boundaries-spherical.tgz"
-echo "expanding world_boundaries..."
-tar -xzf data/world_boundaries-spherical.tgz -C data/
 
 # simplified-land-polygons-complete-3857
 echo "downloading simplified-land-polygons-complete-3857..."

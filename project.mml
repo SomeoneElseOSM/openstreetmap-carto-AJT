@@ -76,25 +76,6 @@
     {
       "geometry": "polygon",
       "extent": [
-        -179.12960815429688,
-        -52.982724914179855,
-        178.4432525634766,
-        70.87402746981634
-      ],
-      "id": "builtup",
-      "class": "",
-      "Datasource": {
-        "file": "data/world_boundaries/builtup_area.shp",
-        "type": "shape"
-      },
-      "srs-name": "900913",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "advanced": {},
-      "name": "builtup"
-    },
-    {
-      "geometry": "polygon",
-      "extent": [
         -179.99999692067183,
         -84.96651228427099,
         179.99999692067183,
