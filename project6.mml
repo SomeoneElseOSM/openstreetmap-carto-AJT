@@ -1,0 +1,1780 @@
+{
+  "bounds": [
+    -2.1753,
+    52.6747,
+    -0.8679,
+    53.5811
+  ],
+  "center": [
+    -1.4447,
+    53.0891,
+    8
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style6.mss",
+    "admin.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -85.051,
+        179.99999692067183,
+        83.66933299999998
+      ],
+      "id": "world",
+      "class": "",
+      "Datasource": {
+        "file": "data/simplified-land-polygons-complete-3857/simplified_land_polygons.shp",
+        "type": "shape"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "world"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -85.051,
+        179.99999692067183,
+        83.66933299999998
+      ],
+      "id": "coast-poly",
+      "class": "",
+      "Datasource": {
+        "file": "data/land-polygons-split-3857/land_polygons.shp",
+        "type": "shape"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "coast-poly"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way, name, religion,\ncoalesce (aeroway, amenity, landuse, leisure, military, \"natural\", power, tourism, highway) as feature from (\nselect way, COALESCE(name,'') AS name, \n('aeroway_' || (case when aeroway in ('apron', 'aerodrome', 'large_aerodrome') then aeroway else null end)) as aeroway,\n('amenity_' || (case when amenity in ('parking', 'parking_pay', 'university', 'college', 'school', 'hospital', 'kindergarten', 'grave_yard') then amenity else null end)) as amenity,\n('landuse_' || (case when landuse in ('quarry', 'vineyard', 'orchard', 'cemetery', 'grave_yard', 'residential', 'garages', 'field', 'meadow', 'grass', 'allotments', 'forest', 'farmyard', 'farm', 'farmland', 'farmgrass', 'recreation_ground', 'conservation', 'village_green', 'retail', 'industrial', 'industrialbuilding', 'railway', 'commercial', 'unnamedcommercial', 'brownfield', 'landfill', 'greenfield', 'construction', 'historic') then landuse else null end)) as landuse,\n('leisure_' || (case when leisure in ('swimming_pool', 'playground', 'park', 'recreation_ground', 'common', 'garden', 'golfgreen', 'golf_course', 'picnic_table','sports_centre','stadium','pitch','track') then leisure else null end)) as leisure,\n('military_' || (case when military in ('barracks', 'danger_area') then military else null end)) as military,\n('natural_' || (case when \"natural\" in ('beach','desert','heath','mud','grassland','wood','broadleaved','needleleaved','mixedleaved','sand','scrub','wetland') then \"natural\" else null end)) as \"natural\",\n('power_' || (case when power in ('station','sub_station','substation','generator') then power else null end)) as power,\n('tourism_' || (case when  tourism in ('attraction', 'camp_site', 'caravan_site', 'picnic_site', 'zoo') then tourism else null end)) as tourism,\n('highway_' || (case when highway in ('services', 'rest_area') then highway else null end)) as highway,\ncase when religion in ('christian','jewish') then religion else 'INT-generic'::text end as religion\n       from planet_osm_polygon\n       where landuse is not null\n          or leisure is not null\n          or aeroway in ('apron','aerodrome','large_aerodrome')\n          or amenity in ('parking','parking_pay', 'university','college','school','hospital','kindergarten','grave_yard')\n          or military in ('barracks','danger_area')\n          or \"natural\" in ('beach','desert','heath','mud','grassland','wood','broadleaved','needleleaved','mixedleaved','sand','scrub','wetland')\n          or power in ('station','sub_station','substation','generator')\n          or tourism in ('attraction','camp_site','caravan_site','picnic_site','zoo')\n          or highway in ('services','rest_area')\n       order by z_order,way_area desc\n      ) as landcover\n) as features",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "",
+        "dbname": "gis6"
+      },
+      "id": "landcover",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "landcover"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way\nfrom planet_osm_line\nwhere man_made='cutline'\n) as landcover_line",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "landcover-line",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "landcover-line"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -85.05112877980659,
+        179.99999692067183,
+        85.05112877980659
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,waterway,case when tunnel in ('yes','culvert') then 'yes' else 'no' end as int_tunnel \n      from planet_osm_line\n      where waterway in ('stream','drain','ditch')\n        and (tunnel is null or tunnel != 'yes')\n      ) as water_lines_casing",
+        "extent": "-20037508,-20037508,20037508,20037508",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "water-lines-casing",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "water-lines-casing"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -85.05112877980659,
+        179.99999692067183,
+        85.05112877980659
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,waterway\n      from planet_osm_line\n      where waterway='river'\n      ) as water_lines_low_zoom",
+        "extent": "-20037508,-20037508,20037508,20037508",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "water-lines-low-zoom",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "water-lines-low-zoom"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -85.05112877980659,
+        179.99999692067183,
+        85.05112877980659
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(SELECT\n    way, \"natural\", waterway, landuse, name, way_area/(!pixel_width!*!pixel_height!) AS way_pixels\n  FROM planet_osm_polygon\n  WHERE\n    (waterway IN ('dock', 'riverbank', 'canal')\n      OR landuse IN ('reservoir','basin')\n      OR \"natural\" IN ('lake','water','intermittentwater','flood_prone','land','glacier','mud'))\n    AND building IS NULL\n    AND way_area/(!pixel_width!*!pixel_height!) > 0.01\n  ORDER BY z_order, way_area) AS water_areas",
+        "extent": "-20037508,-20037508,20037508,20037508",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "water-areas",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "water-areas"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,\"natural\"\n      from planet_osm_polygon\n      where \"natural\" in ('marsh','wetland','intermittentwetland') and building is null\n      order by z_order,way_area desc\n      ) as water_areas_overlay",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "water-areas-overlay",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "water-areas-overlay"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -85.05112877980659,
+        179.99999692067183,
+        85.05112877980659
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,waterway,lock,name,case when tunnel in ('yes','culvert') then 'yes' else 'no' end as int_tunnel, 'no' as bridge\n      from planet_osm_line\n      where waterway in ('weir','river','canal','derelict_canal','stream','drain','ditch','pipeline','intstream','intriver')\n        and (bridge is null or bridge not in ('yes','aqueduct','levee'))\n      order by z_order\n      ) as water_lines",
+        "extent": "-20037508,-20037508,20037508,20037508",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "water-lines",
+      "class": "water-lines",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "water-lines"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,name from planet_osm_line where waterway='dam') as dam",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "dam",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "dam"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way from planet_osm_polygon where leisure ='marina') as marinas_area",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "marinas-area",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "marinas-area"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,man_made from planet_osm_polygon where man_made in ('pier','breakwater','groyne')) as piers_area",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "piers-area",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "piers-area"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,man_made from planet_osm_line where man_made in ('pier','breakwater','groyne')) as piers",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6",
+        "id": "roads-fill",
+        "project": "openstreetmap-carto-ajt",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "piers",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "piers"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,waterway from planet_osm_point where waterway='lock_gate') as locks",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "locks",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "locks"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,coalesce(('highway_' || highway), ('railway_' ||(case when railway='preserved' and service in ('spur','siding','yard') then 'INT-preserved-ssy'::text when (railway='rail' and service in ('spur','siding','yard'))  then 'INT-spur-siding-yard' when railway in ('light_rail', 'narrow_gauge', 'funicular', 'rail', 'bus_guideway', 'subway', 'tram', 'spur', 'siding', 'monorail', 'platform', 'preserved', 'disused', 'abandoned', 'dismantled', 'construction', 'miniature', 'turntable') then railway else null end)), ('aeroway_' || aeroway)) as feature, horse, foot, bicycle, tracktype, case when access in ('permissive') then 'permissive'::text when access in ('destination') then 'destination'::text when access in ('no', 'private') then 'no'::text else null end as access, construction, case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as service, case when oneway in ('yes', '-1') and highway in ('motorway','motorway_link','trunk','trunk_link','primary','primary_link','primary_sidewalk','primary_verge','secondary','secondary_sidewalk','secondary_verge','secondary_link','tertiary_sidewalk','tertiary_verge','tertiary_ford','tertiary','tertiary_link','residential','unclassified','unclassified_sidewalk','unclassified_verge','unclassified_ford','road','service','service_ford','pedestrian','raceway','living_street','construction') then oneway else null end as oneway, case when layer is null then '0' else layer end as layernotnull from planet_osm_line where (highway in ('motorway', 'motorway_link', 'trunk', 'trunk_link', 'primary', 'primary_link', 'primary_sidewalk','primary_verge','secondary', 'secondary_sidewalk','secondary_verge','secondary_link', 'tertiary_sidewalk','tertiary_verge','tertiary_ford','tertiary', 'tertiary_link', 'residential', 'road', 'unclassified', 'unclassified_sidewalk', 'unclassified_verge', 'unclassified_ford', 'service', 'service_ford', 'pedestrian', 'living_street', 'raceway', 'unpaved', 'ucrnarrow', 'ucrwide', 'boatnarrow', 'boatwide', 'rbynarrow', 'rbywide', 'bridlewaynarrow', 'bridlewaywide', 'intbridlewaynarrow', 'intbridlewaywide', 'bridlewaysteps', 'footwaynarrow', 'footwaywide', 'intfootwaynarrow', 'intfootwaywide', 'footwaysteps', 'ldpnwn', 'ldpncn', 'ldpmtb', 'ldpnhn', 'pathnarrow', 'pathwide', 'intpathnarrow', 'intpathwide', 'track', 'track_graded', 'steps', 'platform', 'proposed', 'construction')  or aeroway in ('runway','grass_runway','taxiway') or railway in ('light_rail', 'subway', 'narrow_gauge',  'rail', 'bus_guideway', 'spur', 'siding', 'preserved', 'funicular', 'tram', 'monorail', 'platform', 'miniature', 'turntable',  'disused', 'abandoned', 'dismantled', 'construction')) and (tunnel='yes' or tunnel='building_passage' or covered='yes') order by layernotnull, z_order) as tunnels",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "tunnels",
+      "class": "tunnels-fill tunnels-casing access directions",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "tunnels",
+      "properties": {
+        "group-by": "layernotnull"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way from planet_osm_line where \"historic\"='citywalls') as citywalls",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "citywalls",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "citywalls"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way from planet_osm_line where \"historic\"='castle_walls') as castlewalls",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "castlewalls",
+      "class": "castlewalls",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "castlewalls"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way from planet_osm_polygon where \"historic\"='castle_walls') as castlewalls_poly",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "castlewalls-poly",
+      "class": "castlewalls",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "castlewalls-poly"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,landuse,leisure\n       from planet_osm_polygon\n       where (landuse = 'military') and building is null\n      ) as landuse_overlay",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "landuse-overlay",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "landuse-overlay"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way, barrier from planet_osm_line where barrier is not null) as line_barriers",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "line-barriers",
+      "class": "barriers",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "line-barriers"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,\"natural\",man_made from planet_osm_line where \"natural\" = 'cliff' or man_made = 'embankment' or man_made = 'levee') as cliffs",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "cliffs",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "cliffs"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,\"natural\",man_made,barrier,name from planet_osm_line where \"natural\" = 'cliff' or \"natural\" = 'valley' or man_made = 'embankment' or man_made = 'levee' or barrier = 'wall' or barrier = 'gate') as lineartext",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "lineartext",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "lineartext"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,barrier from planet_osm_polygon where barrier is not null) as area_barriers",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "area-barriers",
+      "class": "barriers",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "area-barriers"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,\"natural\" from planet_osm_line where \"natural\" = 'tree_row') as tree_row",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "tree-row",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "tree-row"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way from planet_osm_line where route='ferry' ) as ferry_routes",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "ferry-routes",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "ferry-routes"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select distinct on (p.way) p.way as way,l.highway as int_tc_type,case when l.service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as int_tc_service\n       from planet_osm_point p\n       join planet_osm_line l\n        on ST_DWithin(p.way,l.way,0.1)\n       join (values\n        ('tertiary_sidewalk',1),\n        ('tertiary_verge',1),\n        ('tertiary_ford',1),\n        ('tertiary',2),\n        ('unclassified',3),\n        ('unclassified_sidewalk',3),\n        ('unclassified_verge',3),\n        ('unclassified_ford',3),\n        ('residential',4),\n        ('living_street',5),\n        ('service',6),\n        ('service_ford',6)\n       ) as v (highway,prio)\n        on v.highway=l.highway\n       where p.highway='turning_circle' or p.highway='turning_loop' \n       order by p.way,v.prio\n      ) as turning_circle_casing",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "turning-circle-casing",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "turning-circle-casing"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,coalesce(('highway_' || (case when highway in ('residential','unclassified','unclassified_sidewalk','unclassified_verge','unclassified_ford','pedestrian','service','service_ford','footwaynarrow','footwaywide','intfootwaynarrow','intfootwaywide','footwaysteps','ldpnwn','ldpncn','ldpmtb','ldpnhn','track', 'track_graded','pathnarrow','pathwide', 'intpathnarrow', 'intpathwide', 'platform') then 'footwaynarrow' else null end)), ('railway_' || (case when railway in ('platform') then railway else null end))) as feature from planet_osm_polygon\n       where highway in ('residential','unclassified','unclassified_sidewalk','unclassified_verge','unclassified_ford','pedestrian','service','service_ford','footwaynarrow','footwaywide','intfootwaynarrow','intfootwaywide','footwaysteps','track', 'track_graded','pathnarrow','pathwide', 'intpathnarrow', 'intpathwide', 'platform')\n          or railway in ('platform')\n       order by z_order,way_area desc) as highway_area_casing",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "highway-area-casing",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "highway-area-casing"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,coalesce(('highway_' || highway), ('railway_' ||(case when railway='preserved' and service in ('spur','siding','yard') then 'INT-preserved-ssy'::text when (railway='rail' and service in ('spur','siding','yard'))  then 'INT-spur-siding-yard' when railway in ('light_rail', 'narrow_gauge', 'funicular', 'rail', 'bus_guideway', 'subway', 'tram', 'spur', 'siding', 'monorail', 'platform', 'preserved', 'disused', 'abandoned', 'dismantled', 'construction', 'miniature', 'turntable') then railway else null end)), ('aeroway_' || aeroway)) as feature, horse, foot, bicycle, tracktype, case when access in ('permissive') then 'permissive'::text when access in ('destination') then 'destination'::text when access in ('no', 'private') then 'no'::text else null end as access, construction, case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as service, case when oneway in ('yes', '-1') and highway in ('motorway','motorway_link','trunk','trunk_link','primary','primary_link','primary_sidewalk','primary_verge','secondary','secondary_sidewalk','secondary_verge','secondary_link','tertiary_sidewalk','tertiary_verge','tertiary_ford','tertiary','tertiary_link','residential','unclassified','unclassified_sidewalk','unclassified_verge','unclassified_ford','road','service','service_ford','pedestrian','raceway','living_street','construction') then oneway else null end as oneway, case when layer is null then '0' else layer end as layernotnull from planet_osm_line where (highway in ('motorway', 'motorway_link', 'trunk', 'trunk_link', 'primary', 'primary_link', 'primary_sidewalk','primary_verge','secondary', 'secondary_sidewalk','secondary_verge','secondary_link', 'tertiary_sidewalk','tertiary_verge','tertiary_ford','tertiary', 'tertiary_link', 'residential', 'road', 'unclassified', 'unclassified_sidewalk', 'unclassified_verge', 'unclassified_ford', 'service', 'service_ford', 'pedestrian', 'living_street', 'raceway', 'unpaved', 'ucrnarrow', 'ucrwide', 'boatnarrow', 'boatwide', 'rbynarrow', 'rbywide', 'bridlewaynarrow', 'bridlewaywide', 'intbridlewaynarrow', 'intbridlewaywide', 'bridlewaysteps', 'footwaynarrow', 'footwaywide', 'intfootwaynarrow', 'intfootwaywide', 'footwaysteps', 'ldpnwn', 'ldpncn', 'ldpmtb', 'ldpnhn', 'pathnarrow', 'pathwide', 'intpathnarrow', 'intpathwide', 'track', 'track_graded', 'steps', 'platform', 'proposed', 'construction')  or aeroway in ('runway','grass_runway','taxiway') or railway in ('light_rail', 'subway', 'narrow_gauge',  'rail', 'bus_guideway', 'spur', 'siding', 'preserved', 'funicular', 'tram', 'monorail', 'platform', 'miniature', 'turntable',  'disused', 'abandoned', 'dismantled', 'construction')) and bridge='levee' and (layer is null or (layer in ('0','1','2','3','4','5'))) order by layernotnull, z_order) as levees",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "levees",
+      "class": "levees-fill levees-casing access directions",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "levees",
+      "properties": {
+        "group-by": "layernotnull"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,coalesce(('highway_' || highway), ('railway_' ||(case when railway='preserved' and service in ('spur','siding','yard') then 'INT-preserved-ssy'::text when (railway='rail' and service in ('spur','siding','yard'))  then 'INT-spur-siding-yard' when railway in ('light_rail', 'narrow_gauge', 'funicular', 'rail', 'bus_guideway', 'subway', 'tram', 'spur', 'siding', 'monorail', 'platform', 'preserved',  'disused', 'abandoned', 'dismantled', 'construction', 'miniature', 'turntable') then railway else null end)), ('aeroway_' || aeroway)) as feature, horse, foot, bicycle, tracktype, case when access in ('permissive') then 'permissive'::text when access in ('destination') then 'destination'::text when access in ('no', 'private') then 'no'::text else null end as access, construction, case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as service, case when oneway in ('yes', '-1') and highway in ('motorway','motorway_link','trunk','trunk_link','primary','primary_link','primary_sidewalk','primary_verge','secondary','secondary_sidewalk','secondary_verge','secondary_link','tertiary_sidewalk','tertiary_verge','tertiary_ford','tertiary','tertiary_link','residential','unclassified','unclassified_sidewalk','unclassified_verge','unclassified_ford','road','service','service_ford','pedestrian','raceway','living_street','construction') then oneway else null end as oneway, case when layer is null then '0' else layer end as layernotnull from planet_osm_line where (highway in ('motorway', 'motorway_link', 'trunk', 'trunk_link', 'primary', 'primary_link', 'primary_sidewalk','primary_verge','secondary', 'secondary_sidewalk','secondary_verge','secondary_link', 'tertiary_sidewalk','tertiary_verge','tertiary_ford','tertiary', 'tertiary_link', 'residential', 'road', 'unclassified', 'unclassified_sidewalk', 'unclassified_verge', 'unclassified_ford', 'service', 'service_ford', 'pedestrian', 'living_street', 'raceway', 'unpaved', 'ucrnarrow', 'ucrwide', 'boatnarrow', 'boatwide', 'rbynarrow', 'rbywide', 'bridlewaynarrow', 'bridlewaywide', 'intbridlewaynarrow', 'intbridlewaywide', 'bridlewaysteps', 'footwaynarrow', 'footwaywide', 'intfootwaynarrow', 'intfootwaywide', 'footwaysteps', 'ldpnwn', 'ldpncn', 'ldpmtb', 'ldpnhn', 'pathnarrow', 'pathwide', 'intpathnarrow', 'intpathwide', 'track', 'track_graded', 'steps', 'platform', 'proposed', 'construction')  or aeroway in ('runway','grass_runway','taxiway') or railway in ('light_rail', 'subway', 'narrow_gauge',  'rail', 'bus_guideway', 'spur', 'siding', 'preserved', 'funicular', 'tram', 'monorail', 'platform', 'miniature', 'turntable',  'disused', 'abandoned', 'dismantled', 'construction')) and (tunnel is null or not tunnel in ('yes','building_passage')) and (covered is null or not covered='yes') and (bridge is null or not bridge in ('yes','true','1','viaduct','levee')) order by z_order)  as roads",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "roads-casing",
+      "class": "roads-casing",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "roads-casing"
+    },
+    {
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,coalesce(('highway_' || (case when highway in ('residential','unclassified','unclassified_sidewalk','unclassified_verge','unclassified_ford','pedestrian','service','service_ford','footwaynarrow','footwaywide', 'intfootwaynarrow','intfootwaywide', 'footwaysteps', 'ldpnwn','ldpncn','ldpmtb','ldpnhn','living_street','track', 'track_graded','pathnarrow','pathwide', 'intpathnarrow', 'intpathwide', 'platform','services') then 'footwaynarrow' else null end)), ('railway_' || (case when railway in ('platform') then railway else null end)), (('aeroway_' || case when aeroway in ('runway','grass_runway','taxiway','helipad') then aeroway else null end))) as feature from planet_osm_polygon\n       where highway in ('residential','unclassified','unclassified_sidewalk','unclassified_verge','unclassified_ford','pedestrian','service','service_ford','footwaynarrow','footwaywide', 'intfootwaynarrow','intfootwaywide', 'footwaysteps', 'living_street','track', 'track_graded','pathnarrow','pathwide', 'intpathnarrow', 'intpathwide', 'platform','services')\n          or railway in ('platform')\n          or aeroway in ('runway','grass_runway','taxiway','helipad')\n       order by z_order,way_area desc) as highway_area_fill",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "highway-area-fill",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "highway-area-fill"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,building,railway,amenity from planet_osm_polygon\n       where railway='station'\n          or building in ('station','supermarket')\n          or amenity='place_of_worship'\n       order by z_order,way_area desc) as buildings_lz",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "buildings-lz",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "buildings-lz"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,aeroway,\n        case\n         when building in ('garage','roof','garages','service','shed','shelter','cabin','storage_tank','tank','support','glasshouse','greenhouse','mobile_home','kiosk','silo','canopy','tent') then 'INT-light'::text\n         else building\n        end as building\n       from planet_osm_polygon\n       where (building is not null\n         and building not in ('no','station','supermarket','planned')\n         and (railway is null or railway != 'station')\n         and (amenity is null or amenity != 'place_of_worship'))\n          or aeroway = 'terminal'\n       order by z_order,way_area desc) as buildings",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "buildings",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "buildings"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,coalesce(('highway_' || highway), ('railway_' ||(case when railway='preserved' and service in ('spur','siding','yard') then 'INT-preserved-ssy'::text when (railway='rail' and service in ('spur','siding','yard'))  then 'INT-spur-siding-yard' when railway in ('light_rail', 'narrow_gauge', 'funicular', 'rail', 'bus_guideway', 'subway', 'tram', 'spur', 'siding', 'monorail', 'platform', 'preserved',  'disused', 'abandoned', 'dismantled', 'construction', 'miniature', 'turntable') then railway else null end)), ('aeroway_' || aeroway)) as feature, horse, foot, bicycle, tracktype, case when access in ('permissive') then 'permissive'::text when access in ('destination') then 'destination'::text when access in ('no', 'private') then 'no'::text else null end as access, construction, case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as service, case when oneway in ('yes', '-1') and highway in ('motorway','motorway_link','trunk','trunk_link','primary','primary_link','primary_sidewalk','primary_verge','secondary','secondary_sidewalk','secondary_verge','secondary_link','tertiary_sidewalk','tertiary_verge','tertiary_ford','tertiary','tertiary_link','residential','unclassified','unclassified_sidewalk','unclassified_verge','unclassified_ford','road','service','service_ford','pedestrian','raceway','living_street','construction') then oneway else null end as oneway, case when layer is null then '0' else layer end as layernotnull from planet_osm_line where (highway in ('motorway', 'motorway_link', 'trunk', 'trunk_link', 'primary', 'primary_link', 'primary_sidewalk','primary_verge','secondary', 'secondary_sidewalk','secondary_verge','secondary_link', 'tertiary_sidewalk','tertiary_verge','tertiary_ford','tertiary', 'tertiary_link', 'residential', 'road', 'unclassified', 'unclassified_sidewalk', 'unclassified_verge', 'unclassified_ford', 'service', 'service_ford', 'pedestrian', 'living_street', 'raceway', 'unpaved', 'ucrnarrow', 'ucrwide', 'boatnarrow', 'boatwide', 'rbynarrow', 'rbywide', 'bridlewaynarrow', 'bridlewaywide', 'intbridlewaynarrow', 'intbridlewaywide', 'bridlewaysteps', 'footwaynarrow', 'footwaywide', 'intfootwaynarrow', 'intfootwaywide', 'footwaysteps', 'ldpnwn', 'ldpncn', 'ldpmtb', 'ldpnhn', 'pathnarrow', 'pathwide', 'intpathnarrow', 'intpathwide', 'track', 'track_graded', 'steps', 'platform', 'proposed', 'construction')  or aeroway in ('runway','grass_runway','taxiway') or railway in ('light_rail', 'subway', 'narrow_gauge',  'rail', 'bus_guideway', 'spur', 'siding', 'preserved', 'funicular', 'tram', 'monorail', 'platform', 'miniature', 'turntable',  'disused', 'abandoned', 'dismantled', 'construction')) and (tunnel is null or not tunnel in ('yes','building_passage')) and (covered is null or not covered='yes') and (bridge is null or not bridge in ('yes','true','1','viaduct','levee')) order by z_order)  as roads_fill",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "roads-fill",
+      "class": "roads-fill access directions",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "roads-fill"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select distinct on (p.way) p.way as way,l.highway as int_tc_type,case when l.service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as int_tc_service\n       from planet_osm_point p\n       join planet_osm_line l\n        on ST_DWithin(p.way,l.way,0.1)\n       join (values\n        ('tertiary_sidewalk',1),\n        ('tertiary_verge',1),\n        ('tertiary_ford',1),\n        ('tertiary',2),\n        ('unclassified',3),\n        ('unclassified_sidewalk',3),\n        ('unclassified_verge',3),\n        ('unclassified_ford',3),\n        ('residential',4),\n        ('living_street',5),\n        ('service',6),\n        ('service_ford',6)\n       ) as v (highway,prio)\n        on v.highway=l.highway\n       where p.highway='turning_circle' or p.highway='turning_loop' \n       order by p.way,v.prio\n      ) as turning_circle_fill",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "turning-circle-fill",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "turning-circle-fill"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,aerialway from planet_osm_line where aerialway is not null) as aerialways",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "aerialways",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "aerialways"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,coalesce(('highway_' || (case when highway is not null then highway else null end)), ('railway_' || (case when (railway='rail' and service in ('spur','siding','yard'))  then 'INT-spur-siding-yard' when railway in ('rail','bus_guideway','tram','light_rail','funicular','narrow_gauge') then railway else null end))) as feature,tunnel\n       from planet_osm_roads\n       where highway is not null\n          or (railway is not null and railway!='preserved' and (service is null or service not in ('spur','siding','yard')))\n       order by z_order\n      ) as roads_low_zoom",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "roads-low-zoom",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "roads-low-zoom"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -85.05112877980659,
+        179.99999692067183,
+        85.05112877980659
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,waterway,name,case when tunnel in ('yes','culvert') then 'yes' else 'no' end as int_tunnel, 'yes' as bridge from planet_osm_line where waterway in ('river','canal','derelict_canal','stream','drain','ditch','pipeline','intstream','intriver') and bridge in ('yes','aqueduct','levee') order by z_order) as waterway_bridges",
+        "extent": "-20037508,-20037508,20037508,20037508",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "waterway-bridges",
+      "class": "water-lines",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "waterway-bridges"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,coalesce(('highway_' || highway), ('railway_' ||(case when railway='preserved' and service in ('spur','siding','yard') then 'INT-preserved-ssy'::text when (railway='rail' and service in ('spur','siding','yard'))  then 'INT-spur-siding-yard' when railway in ('light_rail', 'narrow_gauge', 'funicular', 'rail', 'bus_guideway', 'subway', 'tram', 'spur', 'siding', 'monorail', 'platform', 'preserved',  'disused', 'abandoned', 'dismantled', 'construction', 'miniature', 'turntable') then railway else null end)), ('aeroway_' || aeroway)) as feature, horse, foot, bicycle, tracktype, case when access in ('permissive') then 'permissive'::text when access in ('destination') then 'destination'::text when access in ('no', 'private') then 'no'::text else null end as access, construction, case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as service, case when oneway in ('yes', '-1') and highway in ('motorway','motorway_link','trunk','trunk_link','primary','primary_link','primary_sidewalk','primary_verge','secondary','secondary_sidewalk','secondary_verge','secondary_link','tertiary_sidewalk','tertiary_verge','tertiary_ford','tertiary','tertiary_link','residential','unclassified','unclassified_sidewalk','unclassified_verge','unclassified_ford','road','service','service_ford','pedestrian','raceway','living_street','construction') then oneway else null end as oneway, case when layer is null then '0' else layer end as layernotnull from planet_osm_line where (highway in ('motorway', 'motorway_link', 'trunk', 'trunk_link', 'primary', 'primary_link', 'primary_sidewalk','primary_verge','secondary', 'secondary_sidewalk','secondary_verge','secondary_link', 'tertiary_sidewalk','tertiary_verge','tertiary_ford','tertiary', 'tertiary_link', 'residential', 'road', 'unclassified', 'unclassified_sidewalk', 'unclassified_verge', 'unclassified_ford','service', 'service_ford', 'pedestrian', 'living_street', 'raceway', 'unpaved', 'ucrnarrow', 'ucrwide', 'boatnarrow', 'boatwide', 'rbynarrow', 'rbywide', 'bridlewaynarrow', 'bridlewaywide', 'intbridlewaynarrow', 'intbridlewaywide', 'bridlewaysteps', 'footwaynarrow', 'footwaywide', 'intfootwaynarrow', 'intfootwaywide', 'footwaysteps', 'ldpnwn', 'ldpncn', 'ldpmtb', 'ldpnhn', 'pathnarrow', 'pathwide', 'intpathnarrow', 'intpathwide', 'track', 'track_graded', 'steps', 'platform', 'proposed', 'construction')  or aeroway in ('runway','grass_runway','taxiway') or railway in ('light_rail', 'subway', 'narrow_gauge',  'rail', 'bus_guideway', 'spur', 'siding', 'preserved', 'funicular', 'tram', 'monorail', 'platform', 'miniature', 'turntable',  'disused', 'abandoned', 'dismantled', 'construction')) and bridge in ('yes','true','1','viaduct') and (layer is null or (layer in ('0','1','2','3','4','5'))) order by layernotnull, z_order) as bridges",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "bridges",
+      "class": "bridges-fill bridges-casing access directions",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "bridges",
+      "properties": {
+        "group-by": "layernotnull"
+      }
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,railway,bridge from planet_osm_line where railway='tram' and (tunnel is null or tunnel != 'yes')) as trams",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "trams",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "trams"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,admin_level\n       from planet_osm_roads\n       where \"boundary\"='administrative'\n         and admin_level in ('0','1','2','3','4')\n       ) as admin_01234",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "admin-01234",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "admin-01234"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,admin_level\n       from planet_osm_roads\n       where \"boundary\"='administrative'\n         and admin_level in ('5','6','7','8')\n       ) as admin_5678",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "admin-5678",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "admin-5678"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,admin_level\n       from planet_osm_roads\n       where \"boundary\"='administrative'\n         and admin_level in ('9', '10')\n       ) as admin_other",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "admin-other",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "admin-other"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way from planet_osm_line where \"power\"='minor_line') as power_minorline",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "power-minorline",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "power-minorline"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way from planet_osm_line where \"power\"='line') as power_line",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "power-line",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "power-line"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.58997888396897,
+        -85.051,
+        179.38330358817018,
+        82.48332318035943
+      ],
+      "id": "nepopulated",
+      "class": "",
+      "Datasource": {
+        "file": "data/ne_10m_populated_places/ne_10m_populated_places_fixed.shp",
+        "type": "shape",
+        "encoding": "windows-1252"
+      },
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {
+        "encoding": "windows-1252"
+      },
+      "name": "nepopulated"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,place,name,ref\n       from planet_osm_point\n       where place in ('country','state')\n      ) as placenames_large",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "placenames-large",
+      "class": "country state",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "placenames-large"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,place,name,ref\n       from planet_osm_point\n       where place in ('city','town') and capital='yes'\n      ) as placenames_capital",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "placenames-capital",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "placenames-capital"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,place,name\n      from planet_osm_point\n      where place in ('city','town')\n        and (capital is null or capital != 'yes')\n      ) as placenames_medium",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "placenames-medium",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "placenames-medium"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,place,name\n      from planet_osm_point\n      where place in ('suburb','village','hamlet','neighbourhood','locality','isolated_dwelling','farm','legend_text')\n      ) as placenames_small",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "placenames-small",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "placenames-small"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,name,railway,aerialway,disused\n      from planet_osm_point\n      where railway in ('station','halt','tram_stop','subway_entrance')\n         or aerialway='station'\n      ) as stations",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "stations",
+      "class": "stations",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "stations"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,name,railway,aerialway,disused\n      from planet_osm_polygon\n      where railway in ('station','halt','tram_stop')\n         or aerialway='station'\n      ) as stations_poly",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "stations-poly",
+      "class": "stations",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "stations-poly"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,name,way_area\n      from planet_osm_polygon\n      where \"natural\"='glacier' and building is null\n      order by way_area desc\n      ) as glaciers_text",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "glaciers-text",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "glaciers-text"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select *\n      from planet_osm_point\n      where aeroway in ('aerodrome','large_aerodrome','helipad')\n         or barrier in ('bollard','gate','gate_locked','kissing_gate','stile','horse_stile','cycle_barrier','door','cattle_grid','ford','stepping_stones','lift_gate','toll_booth','block')\n         or highway in ('mini_roundabout','gate','crossing','milestone')\n         or man_made in ('lighthouse','power_wind','windmill','bigmast','mast','survey_point','boundary_stone','markeraerial','water_well','bigchimney','chimney','illuminationtower','defensivetower','observationtower','bigobservationtower','clocktower','aircraftcontroltower','radartower','squaretower','churchtower','churchspire','maypole','flagpole','flagpole_red','windsock','cairn','ventilation_shaft','golfballwasher','mounting_block','footwear_decontamination','sluice_gate','monitoringwater','monitoringweather','monitoringearthquake','monitoringrainfall','monitoringsky','lcn_ref','mineshaft')\n         or (power='generator' and (\"generator:source\"='wind' or power_source='wind'))\n         or \"natural\" in ('peak','bigpeak','bigprompeak','saddle','volcano','spring','tree','cave_entrance','climbing','sinkhole')\n         or railway in ('level_crossing')\n      ) as amenity_symbols",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "amenity-symbols",
+      "class": "symbols",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "amenity-symbols"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select *\n      from planet_osm_polygon\n      where aeroway in ('aerodrome','large_aerodrome','helipad')\n         or barrier in ('bollard','gate','gate_locked','kissing_gate','stile','horse_stile','cycle_barrier','door','cattle_grid','ford','stepping_stones','lift_gate','toll_booth','block')\n         or highway in ('mini_roundabout','gate','crossing','milestone')\n         or man_made in ('lighthouse','power_wind','windmill','bigmast','mast','survey_point','boundary_stone','markeraerial','water_well','bigchimney','chimney','illuminationtower','defensivetower','observationtower','bigobservationtower','clocktower','aircraftcontroltower','radartower','squaretower','churchtower','churchspire','maypole','flagpole','flagpole_red','windsock','cairn','ventilation_shaft','golfballwasher','mounting_block','footwear_decontamination','sluice_gate','monitoringwater','monitoringweather','monitoringearthquake','monitoringrainfall','monitoringsky','lcn_ref','mineshaft')\n         or (power='generator' and (\"generator:source\"='wind' or power_source='wind'))\n         or \"natural\" in ('peak','bigpeak','bigprompeak','saddle','volcano','spring','tree','cave_entrance','climbing','sinkhole')\n         or railway='level_crossing'\n      ) as amenity_symbols_poly",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "amenity-symbols-poly",
+      "class": "symbols",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "amenity-symbols-poly"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,amenity,barrier,shop,office,tourism,highway,man_made,access,religion,waterway,lock,historic,leisure,landuse\n      from planet_osm_point\n      where amenity is not null\n         or barrier is not null\n         or shop is not null\n         or office is not null\n         or tourism in ('alpine_hut','camp_site','picnic_site','caravan_site','guest_house','hostel','hotel','motel','museum','viewpoint','bed_and_breakfast','information','informationboard','informationmarker','informationroutemarker','informationoffice','informationplaque','informationear','informationpnfs','informationncndudgeon','informationncnmccoll','informationncnmills','informationncnrowe','informationncnunknown','chalet','zoo','aquarium','artwork','advertising_column')\n         or highway in ('bus_stop','crossing','milestone','mini_roundabout','traffic_signals','streetlamp_electric','streetlamp_gas','ford','stepping_stones')\n         or man_made in ('bigmast','mast','water_tower','bigchimney','chimney','illuminationtower','defensivetower','observationtower','bigobservationtower','clocktower','aircraftcontroltower','radartower','squaretower','churchtower','churchspire','maypole','flagpole','flagpole_red','windsock')\n         or historic in ('warmemorial','memorialplaque','memorialpavementplaque','memorialstatue','memorialsculpture','memorialcross','memorialstone','memorialplate','memorialbench','memorialgrave','memorialobelisk','memorial','archaeological_site','naturalstone','historicstone','historicstandingstone','runestone','massrock','oghamstone','nonspecific')\n         or waterway='lock'\n         or lock='yes'\n         or leisure is not null\n         or landuse='harbour'\n      ) as amenity_points",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "amenity-points",
+      "class": "points",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "amenity-points"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,amenity,barrier,shop,office,tourism,highway,man_made,access,religion,waterway,lock,historic,leisure\n      from planet_osm_polygon\n      where amenity is not null\n         or barrier is not null\n         or shop is not null\n         or office is not null\n         or tourism in ('alpine_hut','camp_site','picnic_site','caravan_site','guest_house','hostel','hotel','motel','museum','viewpoint','bed_and_breakfast','information','informationboard','informationmarker','informationroutemarker','informationoffice','informationplaque','informationear','informationpnfs','informationncndudgeon','informationncnmccoll','informationncnmills','informationncnrowe','informationncnunknown','chalet','zoo','aquarium','artwork','advertising_column')\n         or highway in ('bus_stop','crossing','milestone','mini_roundabout','traffic_signals','streetlamp_electric','streetlamp_gas')\n         or man_made in ('bigmast','mast','water_tower','bigchimney','chimney','illuminationtower','defensivetower','observationtower','bigobservationtower','clocktower','aircraftcontroltower','radartower','squaretower','churchtower','churchspire','maypole','flagpole','flagpole_red','windsock')\n         or historic in ('warmemorial','memorialplaque','memorialpavementplaque','memorialstatue','memorialsculpture','memorialcross','memorialstone','memorialplate','memorialbench','memorialgrave','memorialobelisk','memorial','archaeological_site','naturalstone','historicstone','historicstandingstone','runestone','massrock','oghamstone','nonspecific')\n         or leisure is not null\n      ) as amenity_points_poly",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "amenity-points-poly",
+      "class": "points",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "amenity-points-poly"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way from planet_osm_point where power='tower') as power_towers",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "power-towers",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "power-towers"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way from planet_osm_point where power='pole') as power_poles",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "power-poles",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "power-poles"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,highway,ref,char_length(ref) as length\n       from planet_osm_roads\n       where highway in ('motorway','trunk','primary','primary_sidewalk','primary_verge','secondary','secondary_sidewalk','secondary_verge')\n         and ref is not null\n         and char_length(ref) between 1 and 8\n      ) as roads_text_ref_low_zoom",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "roads-text-ref-low-zoom",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "roads-text-ref-low-zoom"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "     (select way,ref,name\n      from planet_osm_point\n      where highway='motorway_junction'\n     ) as highway_junctions",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "highway-junctions",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "highway-junctions"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,coalesce(highway,aeroway) as highway,ref,char_length(ref) as length,\n       case when bridge in ('yes','true','1') then 'yes'::text else 'no'::text end as bridge\n       from planet_osm_line\n       where (highway is not null or aeroway is not null)\n         and ref is not null\n         and char_length(ref) between 1 and 8\n      ) as roads_text_ref",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "roads-text-ref",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "roads-text-ref"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way, highway, name\n       from planet_osm_polygon\n       where highway='pedestrian'\n         and name is not null\n      ) as roads_area_text_name",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "roads-area-text-name",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "roads-area-text-name"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way, railway, name\n       from planet_osm_polygon\n       where railway='platform'\n         and name is not null\n      ) as railways_area_text_name",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "railways-area-text-name",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "railways-area-text-name"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way, highway, name\n       from planet_osm_line\n       where highway in ('motorway','motorway_link','trunk','trunk_link','primary','primary_link','primary_sidewalk','primary_verge','secondary','secondary_sidewalk','secondary_verge','secondary_link','tertiary_sidewalk','tertiary_verge','tertiary_ford','tertiary','tertiary_link','residential','unclassified','unclassified_sidewalk','unclassified_verge','unclassified_ford','road','service','service_ford','pedestrian','raceway','living_street', 'construction','proposed') \n         and name is not null\n      ) as roads_text_name",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "roads-text-name",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "roads-text-name"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way, railway, name\n       from planet_osm_line\n       where railway in ('platform') \n         and name is not null\n      ) as railways_text_name",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "railways-text-name",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "railways-text-name"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way, highway, name\n       from planet_osm_line\n       where highway in ('unpaved', 'ucrnarrow', 'ucrwide', 'boatnarrow', 'boatwide', 'rbynarrow', 'rbywide', 'bridlewaynarrow', 'bridlewaywide', 'intbridlewaynarrow', 'intbridlewaywide', 'bridlewaysteps', 'footwaynarrow', 'footwaywide', 'intfootwaynarrow', 'intfootwaywide', 'footwaysteps', 'ldpnwn', 'ldpncn', 'ldpmtb', 'ldpnhn', 'pathnarrow', 'pathwide', 'intpathnarrow', 'intpathwide', 'track', 'track_graded', 'steps') \n         and name is not null\n      ) as paths_text_name",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "paths-text-name",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "paths-text-name"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,amenity,barrier,shop,office,access,leisure,landuse,man_made,\"natural\",place,tourism,highway,ele,name,ref,military,aeroway,building,waterway,historic,NULL as way_area\n       from planet_osm_point\n       where amenity is not null\n          or barrier is not null\n          or shop is not null\n          or office is not null\n          or leisure is not null\n          or landuse is not null\n          or tourism is not null\n          or highway in ('bus_stop','crossing','milestone','mini_roundabout','traffic_signals','streetlamp_electric','streetlamp_gas')\n         or \"natural\" is not null\n          or man_made in ('lighthouse','power_wind','water_tower','windmill','bigmast','mast','survey_point','boundary_stone','markeraerial','water_well','bigchimney','chimney','illuminationtower','defensivetower','observationtower','bigobservationtower','clocktower','aircraftcontroltower','radartower','squaretower','churchtower','churchspire','maypole','flagpole','flagpole_red','windsock','cairn','ventilation_shaft','golfballwasher','mounting_block','footwear_decontamination','sluice_gate','monitoringwater','monitoringweather','monitoringearthquake','monitoringrainfall','monitoringsky','lcn_ref','mineshaft')\n          or place='island'\n          or military='danger_area'\n          or aeroway='gate'\n          or building is not null\n          or waterway='lock'\n          or historic in ('warmemorial','memorialplaque','memorialpavementplaque','memorialstatue','memorialsculpture','memorialcross','memorialstone','memorialplate','memorialbench','memorialgrave','memorialobelisk','memorial','archaeological_site','naturalstone','historicstone','historicstandingstone','runestone','massrock','oghamstone','nonspecific')\n      ) as text",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "text",
+      "class": "text",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "text"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,aeroway,barrier,shop,office,access,amenity,leisure,landuse,man_made,\"natural\",place,tourism,highway,NULL as ele,name,ref,military,building,waterway,historic,way_area\n       from planet_osm_polygon\n       where amenity is not null\n          or barrier is not null\n         or shop is not null\n         or office is not null\n          or leisure is not null\n          or landuse is not null\n          or tourism is not null\n          or highway in ('bus_stop','crossing','milestone','mini_roundabout','traffic_signals','streetlamp_electric','streetlamp_gas')\n         or \"natural\" is not null\n          or man_made in ('lighthouse','power_wind','windmill','bigmast','mast','survey_point','boundary_stone','markeraerial','water_well','bigchimney','chimney','illuminationtower','defensivetower','observationtower','bigobservationtower','clocktower','aircraftcontroltower','radartower','squaretower','churchtower','churchspire','maypole','flagpole','flagpole_red','windsock','cairn','ventilation_shaft','golfballwasher','mounting_block','footwear_decontamination','sluice_gate','monitoringwater','monitoringweather','monitoringearthquake','monitoringrainfall','monitoringsky','lcn_ref','mineshaft')\n          or place='island'\n          or military='danger_area'\n          or historic in ('warmemorial','memorialplaque','memorialpavementplaque','memorialstatue','memorialsculpture','memorialcross','memorialstone','memorialplate','memorialbench','memorialgrave','memorialobelisk','memorial','archaeological_site','naturalstone','historicstone','historicstandingstone','runestone','massrock','oghamstone','nonspecific')\n      ) as text_poly",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "text-poly",
+      "class": "text",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "text-poly"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select name, way, way_area, amenity from planet_osm_polygon where building is not null  and building not in ('no','station','supermarket')) as building_text",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "building-text",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "building-text"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way from planet_osm_line where \"addr:interpolation\" is not null) as interpolation",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "interpolation",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "interpolation"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,\"addr:housenumber\" from planet_osm_polygon where \"addr:housenumber\" is not null and building is not null\n       union\n       select way,\"addr:housenumber\" from planet_osm_point where \"addr:housenumber\" is not null\n      ) as housenumbers",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "housenumbers",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "housenumbers"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,\"addr:housename\" from planet_osm_polygon where \"addr:housename\" is not null and building is not null\n       union\n       select way,\"addr:housename\" from planet_osm_point where \"addr:housename\" is not null\n      ) as housenames",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "housenames",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "housenames"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -179.99999692067183,
+        -85.05112877980659,
+        179.99999692067183,
+        85.05112877980659
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "      (select way,waterway,lock,name,case when tunnel in ('yes','culvert') then 'yes' else 'no' end as int_tunnel\n      from planet_osm_line\n      where waterway in ('weir','river','canal','derelict_canal','stream','drain','ditch','pipeline','intstream','intriver')\n       order by z_order\n      ) as water_lines_text",
+        "extent": "-20037508,-20037508,20037508,20037508",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "water-lines-text",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "water-lines-text"
+    },
+    {
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427098,
+        179.99999692067183,
+        84.96651228427099
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way, name, admin_level from planet_osm_polygon where \"boundary\" = 'administrative' and admin_level in ('0','1','2','3','4','5','6','7','8','9','10')) as admin_text",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "custom",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "dbname": "gis6"
+      },
+      "id": "admin-text",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "admin-text",
+      "geometry": "linestring"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,way_area,name,boundary from planet_osm_polygon where (boundary='national_park' or leisure='nature_reserve') and building is null) as national_park_boundaries",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "nature-reserve-boundaries",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "nature-reserve-boundaries"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999692067183,
+        -84.96651228427099,
+        179.99999692067183,
+        84.96651228427098
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "(select way,name,tourism from planet_osm_polygon where tourism='theme_park') as theme_park",
+        "extent": "-20037508,-19929239,20037508,19929239",
+        "key_field": "",
+        "geometry_field": "way",
+        "dbname": "gis6"
+      },
+      "id": "theme-park",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "theme-park"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "OpenStreetMap Carto AJT (sidewalk)",
+  "description": "OSM Carto before recent changes, supporting lua consolidation of features via SomeoneElse-style, including sidewalk/verge rendering",
+  "attribution": ""
+}
