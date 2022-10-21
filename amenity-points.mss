@@ -2737,7 +2737,12 @@
   }
 
   [historic = 'archaeological_site'][zoom >= 16]::historic {
-    point-file: url('symbols/tourist_archaeological2.glow.24.png');
+    point-file: url('symbols/historic_archaelogical.png');
+    point-placement: interior;
+  }
+
+  [historic = 'palaeontological_site'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_palaeontological.png');
     point-placement: interior;
   }
 
@@ -3919,6 +3924,7 @@
   }
 
   [historic = 'archaeological_site'][zoom >= 17]::historic, 
+  [historic = 'palaeontological_site'][zoom >= 17]::historic, 
   [historic = 'nonspecific'][zoom >= 17]::historic {
     text-name: "[name]";
     text-size: 9;
