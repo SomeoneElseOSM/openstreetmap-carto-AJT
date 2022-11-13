@@ -429,6 +429,11 @@
     point-placement: interior;
   }
 
+  [tourism = 'informationsign'][zoom >= 16]::tourism {
+    point-file: url('symbols/informationsign.png');
+    point-placement: interior;
+  }
+
   [tourism = 'informationmarker'][zoom >= 16]::tourism {
     point-file: url('symbols/informationmarker.png');
     point-placement: interior;
@@ -4519,6 +4524,7 @@
   [tourism = 'museum'][zoom >= 17]::tourism,
   [tourism = 'information'][zoom >= 17]::tourism,
   [tourism = 'informationboard'][zoom >= 17]::tourism,
+  [tourism = 'informationsign'][zoom >= 17]::tourism,
   [tourism = 'informationmarker'][zoom >= 17]::tourism,
   [tourism = 'informationroutemarker'][zoom >= 17]::tourism,
   [tourism = 'informationoffice'][zoom >= 17]::tourism,
