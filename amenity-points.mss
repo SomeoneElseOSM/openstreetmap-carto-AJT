@@ -434,6 +434,11 @@
     point-placement: interior;
   }
 
+  [tourism = 'militarysign'][zoom >= 16]::tourism {
+    point-file: url('symbols/militarysign.png');
+    point-placement: interior;
+  }
+
   [tourism = 'informationmarker'][zoom >= 16]::tourism {
     point-file: url('symbols/informationmarker.png');
     point-placement: interior;
@@ -4525,6 +4530,7 @@
   [tourism = 'information'][zoom >= 17]::tourism,
   [tourism = 'informationboard'][zoom >= 17]::tourism,
   [tourism = 'informationsign'][zoom >= 17]::tourism,
+  [tourism = 'militarysign'][zoom >= 17]::tourism,
   [tourism = 'informationmarker'][zoom >= 17]::tourism,
   [tourism = 'informationroutemarker'][zoom >= 17]::tourism,
   [tourism = 'informationoffice'][zoom >= 17]::tourism,
