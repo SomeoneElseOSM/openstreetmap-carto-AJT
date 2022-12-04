@@ -8,7 +8,7 @@
 @tertiary-fill: #f8f8ba;
 @unclassified-fill: #ffffff;
 @service-fill: #ffffff;
-@living_street-fill: #ffffff;
+@living_street-fill: #F0F0F0;
 @pedestrian-fill: #ededed;
 @road-fill: #ddd;
 @path-fill: black;
