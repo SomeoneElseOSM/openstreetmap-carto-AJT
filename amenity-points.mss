@@ -379,6 +379,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'lifeboat'][zoom >= 17]::amenity {
+    point-file: url('symbols/lifeboat.png');
+    point-placement: interior;
+  }
+
   [amenity = 'fuel'][zoom >= 17]::amenity {
     point-file: url('symbols/fuel.p.16.png');
     point-placement: interior;
@@ -4696,6 +4701,7 @@
     text-placement: interior;
   }
 
+  [amenity = 'lifeboat'][zoom >= 17]::amenity,
   [man_made = 'lighthouse'][zoom >= 15]::man_made,
   [man_made = 'bigmast'][zoom >= 13]::man_made,
   [man_made = 'mast'][zoom >= 15]::man_made,
