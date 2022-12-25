@@ -1257,7 +1257,8 @@
     }
 
     [feature = 'highway_track'],
-    [feature = 'highway_track_graded'] {
+    [feature = 'highway_track_graded'],
+    [feature = 'highway_gallop'] {
       .bridges-casing {
         [zoom >= 13] {
           line-color: @bridge-casing;
@@ -1521,7 +1522,8 @@
     }
 
     [feature = 'highway_track'],
-    [feature = 'highway_track_graded'] {
+    [feature = 'highway_track_graded'],
+    [feature = 'highway_gallop'] {
       /* We don't set opacity here, so it's 1.0. Aside from that, it's basically a copy of roads-fill::background in the track part of ::fill */
       .bridges-casing {
         [zoom >= 13] {
@@ -3572,6 +3574,47 @@
       }
     }
 
+    [feature = 'highway_gallop'] {
+      [zoom >= 13] {
+        .tunnels-fill {
+          tunnelcasing/line-color: @tunnel-casing;
+          tunnelcasing/line-dasharray: 4,2;
+          tunnelcasing/line-width: 4.4;
+          [zoom >= 15]{
+            tunnelcasing/line-width: 5;
+          }
+        }
+
+        /* The casing - leisure=track green */
+        .roads-fill, .tunnels-fill {
+          background/line-opacity: 0.4;
+          background/line-color: #74dcba;
+          background/line-join: round;
+          background/line-cap: round;
+          background/line-width: 7.2;
+
+          [zoom >= 15] {
+            background/line-width: 9;
+          }
+        }
+
+        /* Set the properties of the path black inside */
+        line/line-color: @path-fill;
+        line/line-dasharray: 5,4,2,4;
+        line/line-cap: round;
+        line/line-join: round;
+        line/line-opacity: 0.8;
+        line/line-clip:false;
+
+        /* ~80% of higher zoom sizes */
+        line/line-width: 1.2;
+
+        [zoom >= 15] {
+          line/line-width: 1.5;
+        }
+      }
+    }
+
     /* The new bit */
     [feature = 'highway_pathnarrow'] {
       [tracktype = 'grade5'] {
@@ -4229,6 +4272,7 @@
     [feature = 'highway_living_street_ford'],
     [feature = 'highway_track'],
     [feature = 'highway_track_graded'],
+    [feature = 'highway_gallop'],
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
     [feature = 'highway_intpathnarrow'],
@@ -4319,6 +4363,7 @@
     }
     [feature = 'highway_track'],
     [feature = 'highway_track_graded'],
+    [feature = 'highway_gallop'],
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
     [feature = 'highway_intpathnarrow'],
@@ -4883,7 +4928,8 @@
   [highway = 'pathwide'],
   [highway = 'intpathnarrow'],
   [highway = 'intpathwide'],
-  [highway = 'steps'] {
+  [highway = 'steps'],
+  [highway = 'gallop'] {
     [zoom >= 16] {
       text-name: "[name]";
       text-fill: #222;
