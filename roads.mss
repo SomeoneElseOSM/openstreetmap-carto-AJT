@@ -1257,7 +1257,6 @@
     }
 
     [feature = 'highway_track'],
-    [feature = 'highway_track_graded'],
     [feature = 'highway_gallop'] {
       .bridges-casing {
         [zoom >= 13] {
@@ -1522,7 +1521,6 @@
     }
 
     [feature = 'highway_track'],
-    [feature = 'highway_track_graded'],
     [feature = 'highway_gallop'] {
       /* We don't set opacity here, so it's 1.0. Aside from that, it's basically a copy of roads-fill::background in the track part of ::fill */
       .bridges-casing {
@@ -3476,8 +3474,7 @@
       }
     }
 
-    [feature = 'highway_track'],
-    [feature = 'highway_track_graded'] {
+    [feature = 'highway_track'] {
       [zoom >= 13] {
         .tunnels-fill {
           tunnelcasing/line-color: @tunnel-casing;
@@ -4151,8 +4148,7 @@
     }
   }
 
-  [feature = 'highway_track'], 
-  [feature = 'highway_track_graded'] {
+  [feature = 'highway_track'] {
     [zoom >= 14] {
       line-color: @track-fill;
       line-width: 2;
@@ -4195,8 +4191,7 @@
     }
   }
 
-  [feature = 'highway_track'], 
-  [feature = 'highway_track_graded'] {
+  [feature = 'highway_track'] {
     [zoom >= 14] {
       polygon-fill: #dfcc66;
     }
@@ -4271,7 +4266,6 @@
     [feature = 'highway_living_street_verge'],
     [feature = 'highway_living_street_ford'],
     [feature = 'highway_track'],
-    [feature = 'highway_track_graded'],
     [feature = 'highway_gallop'],
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
@@ -4362,7 +4356,6 @@
       }
     }
     [feature = 'highway_track'],
-    [feature = 'highway_track_graded'],
     [feature = 'highway_gallop'],
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
@@ -4888,8 +4881,7 @@
 }
 
 #paths-text-name {
-  [highway = 'track'], 
-  [highway = 'track_graded'] {
+  [highway = 'track'] {
     [zoom >= 15] {
       text-name: "[name]";
       text-size: 8;
