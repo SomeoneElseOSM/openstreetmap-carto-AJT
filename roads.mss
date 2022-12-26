@@ -1239,7 +1239,9 @@
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
     [feature = 'highway_intpathnarrow'],
-    [feature = 'highway_intpathwide'] {
+    [feature = 'highway_intpathwide'],
+    [feature = 'highway_leisuretrack'],
+    [feature = 'highway_gallop'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 4;
@@ -1256,8 +1258,7 @@
       }
     }
 
-    [feature = 'highway_track'],
-    [feature = 'highway_gallop'] {
+    [feature = 'highway_track'] {
       .bridges-casing {
         [zoom >= 13] {
           line-color: @bridge-casing;
@@ -1503,7 +1504,9 @@
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
     [feature = 'highway_intpathnarrow'],
-    [feature = 'highway_intpathwide'] {
+    [feature = 'highway_intpathwide'],
+    [feature = 'highway_leisuretrack'],
+    [feature = 'highway_gallop'] {
       .bridges-casing {
         [zoom >= 14] {
           line-width: 2.5;
@@ -1520,8 +1523,7 @@
       }
     }
 
-    [feature = 'highway_track'],
-    [feature = 'highway_gallop'] {
+    [feature = 'highway_track'] {
       /* We don't set opacity here, so it's 1.0. Aside from that, it's basically a copy of roads-fill::background in the track part of ::fill */
       .bridges-casing {
         [zoom >= 13] {
@@ -3358,7 +3360,8 @@
     * by style.lua transformations
     */
     /* fill for normal and wide paths different */
-    [feature = 'highway_pathnarrow'] {
+    [feature = 'highway_pathnarrow'],
+    [feature = 'highway_leisuretrack'] {
       [zoom >= 13] {
         .tunnels-fill {
           tunnelcasing/line-width: 5.5;
@@ -4266,7 +4269,6 @@
     [feature = 'highway_living_street_verge'],
     [feature = 'highway_living_street_ford'],
     [feature = 'highway_track'],
-    [feature = 'highway_gallop'],
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
     [feature = 'highway_intpathnarrow'],
@@ -4275,6 +4277,8 @@
     [feature = 'highway_footwaywide'],
     [feature = 'highway_intfootwaynarrow'],
     [feature = 'highway_intfootwaywide'],
+    [feature = 'highway_leisuretrack'],
+    [feature = 'highway_gallop'],
     [feature = 'highway_ldpnwn'],
     [feature = 'highway_ldpncn'],
     [feature = 'highway_ldpmtb'],
@@ -4356,7 +4360,6 @@
       }
     }
     [feature = 'highway_track'],
-    [feature = 'highway_gallop'],
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
     [feature = 'highway_intpathnarrow'],
@@ -4374,7 +4377,9 @@
     [feature = 'highway_bridlewaynarrow'],
     [feature = 'highway_bridlewaywide'],
     [feature = 'highway_intbridlewaynarrow'],
-    [feature = 'highway_intbridlewaywide'] {
+    [feature = 'highway_intbridlewaywide'],
+    [feature = 'highway_leisuretrack'],
+    [feature = 'highway_gallop'] {
       [zoom >= 13] {
         access/line-width: 3;
         access/line-color: @private-marking;
@@ -4921,6 +4926,7 @@
   [highway = 'intpathnarrow'],
   [highway = 'intpathwide'],
   [highway = 'steps'],
+  [highway = 'leisuretrack'],
   [highway = 'gallop'] {
     [zoom >= 16] {
       text-name: "[name]";
