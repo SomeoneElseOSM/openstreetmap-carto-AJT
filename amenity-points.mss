@@ -394,6 +394,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'fuel_w'][zoom >= 17]::amenity {
+    point-file: url('symbols/fuel_w.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'charging_station'][zoom >= 17]::amenity {
     point-file: url('symbols/charging_station.png');
     point-placement: interior;
@@ -4395,6 +4400,7 @@
 
   [amenity = 'fuel']::amenity,
   [amenity = 'fuel_e']::amenity,
+  [amenity = 'fuel_w']::amenity,
   [amenity = 'charging_station']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
