@@ -2,6 +2,8 @@
 layers/
 data/
 *.xml
+*.xml.new
+*.xml.old
 node_modules/
 tmp
 localconfig.json
