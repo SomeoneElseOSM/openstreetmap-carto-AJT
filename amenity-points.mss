@@ -749,6 +749,51 @@
     point-placement: interior;
   }
 
+  [amenity = 'pitch_tabletennis'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_tabletennis.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pitch_soccer'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_soccer.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pitch_basketball'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_basketball.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pitch_cricket'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_cricket.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pitch_skateboard'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_skateboard.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pitch_climbing'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_climbing.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pitch_rugby'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_rugby.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pitch_chess'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_chess.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pitch_tennis'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_tennis.png');
+    point-placement: interior;
+  }
+
   [amenity = 'parking'][zoom >= 13]::amenity {
     marker-file: url('symbols/parking_free.png');
     marker-placement: interior;
@@ -4572,6 +4617,32 @@
     [zoom >= 20] { text-size: 18; }
     text-dy: 10;
     text-fill: #734a08;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-placement: interior;
+  }
+
+  [amenity = 'playground_swing'][zoom >= 18]::amenity,
+  [amenity = 'playground_structure'][zoom >= 18]::amenity,
+  [amenity = 'playground_slide'][zoom >= 18]::amenity,
+  [amenity = 'playground_springy'][zoom >= 18]::amenity,
+  [amenity = 'playground_zipwire'][zoom >= 18]::amenity,
+  [amenity = 'playground_seesaw'][zoom >= 18]::amenity,
+  [amenity = 'playground_roundabout'][zoom >= 18]::amenity,
+  [amenity = 'pitch_tabletennis'][zoom >= 18]::amenity,
+  [amenity = 'pitch_soccer'][zoom >= 18]::amenity,
+  [amenity = 'pitch_basketball'][zoom >= 18]::amenity,
+  [amenity = 'pitch_cricket'][zoom >= 18]::amenity,
+  [amenity = 'pitch_skateboard'][zoom >= 18]::amenity,
+  [amenity = 'pitch_climbing'][zoom >= 18]::amenity,
+  [amenity = 'pitch_rugby'][zoom >= 18]::amenity,
+  [amenity = 'pitch_chess'][zoom >= 18]::amenity,
+  [amenity = 'pitch_tennis'][zoom >= 18]::amenity {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-dy: 10;
+    text-fill: #008c27;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-placement: interior;
