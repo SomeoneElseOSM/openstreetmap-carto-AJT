@@ -364,7 +364,12 @@
     }
   }
 
-  [tourism = 'chalet'][zoom >= 17]::tourism {
+  [tourism = 'chalet'][zoom >= 16]::tourism {
+    point-file: url('symbols/chalet.p.16.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'singlechalet'][zoom >= 17]::tourism {
     point-file: url('symbols/chalet.p.16.png');
     point-placement: interior;
   }
@@ -4415,10 +4420,23 @@
     text-face-name: @book-fonts;
   }
 
+  [tourism = 'chalet']::tourism {
+    [zoom >= 16] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: #0066ff;
+      text-dy: 11;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+    }
+  }
+
   [tourism = 'hotel']::tourism,
   [tourism = 'motel']::tourism,
   [tourism = 'hostel']::tourism,
-  [tourism = 'chalet']::tourism {
+  [tourism = 'singlechalet']::tourism {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 10;
