@@ -435,6 +435,10 @@
     polygon-pattern-file: url('symbols/rocks_pattern.png');
   }
 
+  [feature = 'natural_scree'][zoom >= 13] {
+    polygon-pattern-file: url('symbols/scree_pattern.png');
+  }
+
   [feature = 'highway_services'],
   [feature = 'highway_rest_area'] {
     [zoom >= 14] {
