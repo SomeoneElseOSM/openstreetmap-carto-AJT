@@ -439,6 +439,10 @@
     polygon-pattern-file: url('symbols/scree_pattern.png');
   }
 
+  [feature = 'natural_shingle'][zoom >= 13] {
+    polygon-pattern-file: url('symbols/shingle_pattern.png');
+  }
+
   [feature = 'highway_services'],
   [feature = 'highway_rest_area'] {
     [zoom >= 14] {
