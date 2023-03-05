@@ -431,6 +431,10 @@
     polygon-pattern-file: url('symbols/beach.png');
   }
 
+  [feature = 'natural_bare_rock'][zoom >= 13] {
+    polygon-pattern-file: url('symbols/rocks_pattern.png');
+  }
+
   [feature = 'highway_services'],
   [feature = 'highway_rest_area'] {
     [zoom >= 14] {

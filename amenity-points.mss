@@ -3874,6 +3874,7 @@
   [natural = 'needleleaved'][zoom >= 15]::natural,
   [natural = 'mixedleaved'][zoom >= 15]::natural,
   [natural = 'beach'][zoom >= 15]::natural,
+  [natural = 'bare_rock'][zoom >= 15]::natural,
   [natural = 'wetland'][zoom >= 15]::natural {
     text-name: "[name]";
     text-size: 10;
