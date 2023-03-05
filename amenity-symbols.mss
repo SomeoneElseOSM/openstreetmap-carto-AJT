@@ -139,6 +139,12 @@
     }
   }
 
+  [natural = 'shrub'][zoom >= 17]::natural {
+    point-file: url('symbols/shrub2.png');
+    point-ignore-placement: true;
+    point-placement: interior;
+  }
+
   [power = 'generator']['generator:source' = 'wind']::power,
   [power = 'generator'][power_source = 'wind']::power,
   [man_made = 'power_wind'] {
