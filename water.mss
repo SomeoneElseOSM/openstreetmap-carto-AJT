@@ -71,7 +71,7 @@
     }
   }
 
-  [natural = 'mud'][zoom >= 13]::natural {
+  [natural = 'mud'][zoom >= 10]::natural {
     polygon-pattern-file: url('symbols/mud.png');
   }
 }

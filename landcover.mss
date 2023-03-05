@@ -427,19 +427,19 @@
     line-color: saturate(darken(@aerodrome, 40%), 20%);
   }
 
-  [feature = 'natural_beach'][zoom >= 13] {
+  [feature = 'natural_beach'][zoom >= 10] {
     polygon-pattern-file: url('symbols/beach.png');
   }
 
-  [feature = 'natural_bare_rock'][zoom >= 13] {
+  [feature = 'natural_bare_rock'][zoom >= 10] {
     polygon-pattern-file: url('symbols/rocks_pattern.png');
   }
 
-  [feature = 'natural_scree'][zoom >= 13] {
+  [feature = 'natural_scree'][zoom >= 10] {
     polygon-pattern-file: url('symbols/scree_pattern.png');
   }
 
-  [feature = 'natural_shingle'][zoom >= 13] {
+  [feature = 'natural_shingle'][zoom >= 10] {
     polygon-pattern-file: url('symbols/shingle_pattern.png');
   }
 
