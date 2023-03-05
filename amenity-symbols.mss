@@ -125,6 +125,11 @@
     point-placement: interior;
   }
 
+  [natural = 'rock'][zoom >= 17]::natural {
+    point-file: url('symbols/rock.17.png');
+    point-placement: interior;
+  }
+
   [natural = 'spring'][zoom >= 14]::natural {
     point-file: url('symbols/spring.png');
     point-placement: interior;
