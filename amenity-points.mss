@@ -3874,10 +3874,14 @@
   [natural = 'needleleaved'][zoom >= 15]::natural,
   [natural = 'mixedleaved'][zoom >= 15]::natural,
   [natural = 'beach'][zoom >= 15]::natural,
+  [natural = 'tidal_beach'][zoom >= 15]::natural,
   [natural = 'bare_rock'][zoom >= 15]::natural,
+  [natural = 'tidal_rock'][zoom >= 15]::natural,
   [natural = 'reef'][zoom >= 15]::natural,
   [natural = 'scree'][zoom >= 15]::natural,
+  [natural = 'tidal_scree'][zoom >= 15]::natural,
   [natural = 'shingle'][zoom >= 15]::natural,
+  [natural = 'tidal_shingle'][zoom >= 15]::natural,
   [natural = 'wetland'][zoom >= 15]::natural {
     text-name: "[name]";
     text-size: 10;
@@ -3944,6 +3948,7 @@
     }
   }
 
+  [natural = 'hill']::natural,
   [natural = 'peak']::natural,
   [natural = 'volcano']::natural,
   [natural = 'saddle']::natural {

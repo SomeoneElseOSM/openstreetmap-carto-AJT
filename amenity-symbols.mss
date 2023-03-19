@@ -70,6 +70,11 @@
     point-placement: interior;
   }
 
+  [natural = 'hill'][zoom >= 13]::natural {
+    point-file: url('symbols/peak.png');
+    point-placement: interior;
+  }
+
   [natural = 'saddle'][zoom >= 11]::natural {
     point-file: url('symbols/saddle.png');
     point-placement: interior;

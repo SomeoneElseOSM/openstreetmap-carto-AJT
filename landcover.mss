@@ -375,6 +375,10 @@
     polygon-fill: @sand;
   }
 
+  [feature = 'natural_tidal_sand'][zoom >= 10] {
+    polygon-pattern-file: url('symbols/tidal_sand.png');
+  }
+
   [feature = 'natural_heath'][zoom >= 10] {
     polygon-fill: @heath;
   }
@@ -431,8 +435,16 @@
     polygon-pattern-file: url('symbols/beach.png');
   }
 
+  [feature = 'natural_tidal_beach'][zoom >= 10] {
+    polygon-pattern-file: url('symbols/tidal_beach.png');
+  }
+
   [feature = 'natural_bare_rock'][zoom >= 10] {
     polygon-pattern-file: url('symbols/rocks_pattern.png');
+  }
+
+  [feature = 'natural_tidal_rock'][zoom >= 10] {
+    polygon-pattern-file: url('symbols/tidal_rocks_pattern.png');
   }
 
   [feature = 'natural_reef'][zoom >= 10] {
@@ -443,8 +455,16 @@
     polygon-pattern-file: url('symbols/scree_pattern.png');
   }
 
+  [feature = 'natural_tidal_scree'][zoom >= 10] {
+    polygon-pattern-file: url('symbols/tidal_scree_pattern.png');
+  }
+
   [feature = 'natural_shingle'][zoom >= 10] {
     polygon-pattern-file: url('symbols/shingle_pattern.png');
+  }
+
+  [feature = 'natural_tidal_shingle'][zoom >= 10] {
+    polygon-pattern-file: url('symbols/tidal_shingle_pattern.png');
   }
 
   [feature = 'highway_services'],
