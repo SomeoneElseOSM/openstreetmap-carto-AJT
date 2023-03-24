@@ -2776,6 +2776,11 @@
     point-placement: interior;
   }
 
+  [historic = 'historicstonecircle'][zoom >= 16]::historic {
+    point-file: url('symbols/stone_circle.png');
+    point-placement: interior;
+  }
+
   [historic = 'runestone'][zoom >= 16]::historic {
     point-file: url('symbols/rune_stone.png');
     point-placement: interior;
@@ -4000,6 +4005,7 @@
   [historic = 'naturalstone'][zoom >= 16]::historic, 
   [historic = 'historicstone'][zoom >= 16]::historic, 
   [historic = 'historicstandingstone'][zoom >= 16]::historic, 
+  [historic = 'historicstonecircle'][zoom >= 16]::historic, 
   [historic = 'runestone'][zoom >= 16]::historic, 
   [historic = 'massrock'][zoom >= 16]::historic, 
   [historic = 'oghamstone'][zoom >= 16]::historic, 
