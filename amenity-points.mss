@@ -2781,6 +2781,11 @@
     point-placement: interior;
   }
 
+  [historic = 'historicmegalithtomb'][zoom >= 16]::historic {
+    point-file: url('symbols/megalith_tomb.png');
+    point-placement: interior;
+  }
+
   [historic = 'runestone'][zoom >= 16]::historic {
     point-file: url('symbols/rune_stone.png');
     point-placement: interior;
@@ -4006,6 +4011,7 @@
   [historic = 'historicstone'][zoom >= 16]::historic, 
   [historic = 'historicstandingstone'][zoom >= 16]::historic, 
   [historic = 'historicstonecircle'][zoom >= 16]::historic, 
+  [historic = 'historicmegalithtomb'][zoom >= 16]::historic, 
   [historic = 'runestone'][zoom >= 16]::historic, 
   [historic = 'massrock'][zoom >= 16]::historic, 
   [historic = 'oghamstone'][zoom >= 16]::historic, 
