@@ -2777,17 +2777,17 @@
   }
 
   [historic = 'historicstonecircle'][zoom >= 16]::historic {
-    point-file: url('symbols/stone_circle.png');
+    point-file: url('symbols/historic_stone_circle.png');
     point-placement: interior;
   }
 
   [historic = 'historicmegalithtomb'][zoom >= 16]::historic {
-    point-file: url('symbols/megalith_tomb.png');
+    point-file: url('symbols/historic_megalith_tomb.png');
     point-placement: interior;
   }
 
   [historic = 'historicstonerow'][zoom >= 16]::historic {
-    point-file: url('symbols/stone_row.png');
+    point-file: url('symbols/historic_stone_row.png');
     point-placement: interior;
   }
 
@@ -2838,6 +2838,16 @@
 
   [historic = 'archaeological_site'][zoom >= 16]::historic {
     point-file: url('symbols/historic_archaelogical.png');
+    point-placement: interior;
+  }
+
+  [historic = 'historicfortification'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_fortification.png');
+    point-placement: interior;
+  }
+
+  [historic = 'historictumulus'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_tumulus.png');
     point-placement: interior;
   }
 
@@ -4039,6 +4049,8 @@
 
   [historic = 'archaeological_site'][zoom >= 17]::historic, 
   [historic = 'palaeontological_site'][zoom >= 17]::historic, 
+  [historic = 'historicfortification'][zoom >= 17]::historic, 
+  [historic = 'historictumulus'][zoom >= 17]::historic, 
   [historic = 'nonspecific'][zoom >= 17]::historic {
     text-name: "[name]";
     text-size: 9;
