@@ -2846,6 +2846,11 @@
     point-placement: interior;
   }
 
+  [historic = 'historicringfort'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_ringfort.png');
+    point-placement: interior;
+  }
+
   [historic = 'historictumulus'][zoom >= 16]::historic {
     point-file: url('symbols/historic_tumulus.png');
     point-placement: interior;
@@ -4050,6 +4055,7 @@
   [historic = 'archaeological_site'][zoom >= 17]::historic, 
   [historic = 'palaeontological_site'][zoom >= 17]::historic, 
   [historic = 'historicfortification'][zoom >= 17]::historic, 
+  [historic = 'historicringfort'][zoom >= 17]::historic, 
   [historic = 'historictumulus'][zoom >= 17]::historic, 
   [historic = 'nonspecific'][zoom >= 17]::historic {
     text-name: "[name]";
