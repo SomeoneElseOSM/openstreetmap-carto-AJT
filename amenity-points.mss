@@ -2871,6 +2871,11 @@
     point-placement: interior;
   }
 
+  [historic = 'historiccrannog'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_crannog.png');
+    point-placement: interior;
+  }
+
   [historic = 'historictumulus'][zoom >= 16]::historic {
     point-file: url('symbols/historic_tumulus.png');
     point-placement: interior;
@@ -4080,6 +4085,7 @@
   [historic = 'historicarchmotte'][zoom >= 17]::historic, 
   [historic = 'historicarchcastle'][zoom >= 17]::historic, 
   [historic = 'historicpromontoryfort'][zoom >= 17]::historic, 
+  [historic = 'historiccrannog'][zoom >= 17]::historic, 
   [historic = 'historictumulus'][zoom >= 17]::historic, 
   [historic = 'nonspecific'][zoom >= 17]::historic {
     text-name: "[name]";
