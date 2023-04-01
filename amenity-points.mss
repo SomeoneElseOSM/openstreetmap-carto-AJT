@@ -2811,6 +2811,11 @@
     point-placement: interior;
   }
 
+  [historic = 'manor'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_manor.png');
+    point-placement: interior;
+  }
+
   [historic = 'mineshaft'][zoom >= 17]::historic {
     point-file: url('symbols/historic_mine.png');
     point-placement: interior;
@@ -4072,6 +4077,7 @@
   [historic = 'massrock'][zoom >= 16]::historic, 
   [historic = 'oghamstone'][zoom >= 16]::historic, 
   [historic = 'castle'][zoom >= 16]::historic, 
+  [historic = 'manor'][zoom >= 16]::historic, 
   [historic = 'mineshaft'][zoom >= 17]::historic, 
   [historic = 'memorialplate'][zoom >= 17]::historic, 
   [historic = 'memorialbench'][zoom >= 17]::historic, 
