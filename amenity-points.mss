@@ -2816,6 +2816,31 @@
     point-placement: interior;
   }
 
+  [historic = 'historicsquaretower'][zoom >= 16]::historic {
+    point-file: url('symbols/historicsquaretower.png');
+    point-placement: interior;
+  }
+
+  [historic = 'historicroundtower'][zoom >= 16]::historic {
+    point-file: url('symbols/historicroundtower.png');
+    point-placement: interior;
+  }
+
+  [historic = 'historicdefensivetower'][zoom >= 16]::historic {
+    point-file: url('symbols/historicdefensivetower.png');
+    point-placement: interior;
+  }
+
+  [historic = 'historicobservationtower'][zoom >= 16]::historic {
+    point-file: url('symbols/historicobservationtower.png');
+    point-placement: interior;
+  }
+
+  [historic = 'historicchurchtower'][zoom >= 16]::historic {
+    point-file: url('symbols/historicchurchtower.png');
+    point-placement: interior;
+  }
+
   [historic = 'mineshaft'][zoom >= 17]::historic {
     point-file: url('symbols/historic_mine.png');
     point-placement: interior;
@@ -4078,6 +4103,11 @@
   [historic = 'oghamstone'][zoom >= 16]::historic, 
   [historic = 'castle'][zoom >= 16]::historic, 
   [historic = 'manor'][zoom >= 16]::historic, 
+  [historic = 'historicsquaretower'][zoom >= 16]::historic, 
+  [historic = 'historicroundtower'][zoom >= 16]::historic, 
+  [historic = 'historicdefensivetower'][zoom >= 16]::historic, 
+  [historic = 'historicobservastiontower'][zoom >= 16]::historic, 
+  [historic = 'historicchurchtower'][zoom >= 16]::historic, 
   [historic = 'mineshaft'][zoom >= 17]::historic, 
   [historic = 'memorialplate'][zoom >= 17]::historic, 
   [historic = 'memorialbench'][zoom >= 17]::historic, 
