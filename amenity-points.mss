@@ -1808,13 +1808,43 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_ynyydddy'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynyydddy.p.16.png');
+  [amenity = 'pub_ynydddyyg'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynydddyyg.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_ynydddy'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynydddy.p.16.png');
+  [amenity = 'pub_ynydddyyo'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynydddyyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynydddyyd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynydddyyd.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynydddyl'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynydddyl.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynydddyn'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynydddyn.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynydddydg'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynydddydg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynydddydo'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynydddydo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynydddydd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynydddydd.p.16.png');
     point-placement: centroid;
   }
 
@@ -3568,7 +3598,14 @@
   [amenity = 'pub_ynyydddl']::amenity,
   [amenity = 'pub_ynyydddn']::amenity,
   [amenity = 'pub_ynyydddy']::amenity,
-  [amenity = 'pub_ynydddy']::amenity,
+  [amenity = 'pub_ynydddyyg']::amenity,
+  [amenity = 'pub_ynydddyyo']::amenity,
+  [amenity = 'pub_ynydddyyd']::amenity,
+  [amenity = 'pub_ynydddyl']::amenity,
+  [amenity = 'pub_ynydddyn']::amenity,
+  [amenity = 'pub_ynydddydg']::amenity,
+  [amenity = 'pub_ynydddydo']::amenity,
+  [amenity = 'pub_ynydddydd']::amenity,
   [amenity = 'pub_ynydddndg']::amenity,
   [amenity = 'pub_ynydddndo']::amenity,
   [amenity = 'pub_ynydddndd']::amenity,
