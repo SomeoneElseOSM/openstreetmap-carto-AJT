@@ -2856,6 +2856,11 @@
     point-placement: interior;
   }
 
+  [historic = 'battlefield'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_battlefield.png');
+    point-placement: interior;
+  }
+
   [historic = 'historicsquaretower'][zoom >= 16]::historic {
     point-file: url('symbols/historicsquaretower.png');
     point-placement: interior;
@@ -4152,6 +4157,7 @@
   [historic = 'manor'][zoom >= 16]::historic, 
   [historic = 'monastery'][zoom >= 16]::historic, 
   [historic = 'city_gate'][zoom >= 16]::historic, 
+  [historic = 'battlefield'][zoom >= 16]::historic, 
   [historic = 'historicsquaretower'][zoom >= 16]::historic, 
   [historic = 'historicroundtower'][zoom >= 16]::historic, 
   [historic = 'historicdefensivetower'][zoom >= 16]::historic, 
