@@ -2851,6 +2851,11 @@
     point-placement: interior;
   }
 
+  [historic = 'city_gate'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_citygate.png');
+    point-placement: interior;
+  }
+
   [historic = 'historicsquaretower'][zoom >= 16]::historic {
     point-file: url('symbols/historicsquaretower.png');
     point-placement: interior;
@@ -4146,6 +4151,7 @@
   [historic = 'castle'][zoom >= 16]::historic, 
   [historic = 'manor'][zoom >= 16]::historic, 
   [historic = 'monastery'][zoom >= 16]::historic, 
+  [historic = 'city_gate'][zoom >= 16]::historic, 
   [historic = 'historicsquaretower'][zoom >= 16]::historic, 
   [historic = 'historicroundtower'][zoom >= 16]::historic, 
   [historic = 'historicdefensivetower'][zoom >= 16]::historic, 
