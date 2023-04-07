@@ -2846,6 +2846,11 @@
     point-placement: interior;
   }
 
+  [historic = 'monastery'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_monastery.png');
+    point-placement: interior;
+  }
+
   [historic = 'historicsquaretower'][zoom >= 16]::historic {
     point-file: url('symbols/historicsquaretower.png');
     point-placement: interior;
@@ -4140,6 +4145,7 @@
   [historic = 'oghamstone'][zoom >= 16]::historic, 
   [historic = 'castle'][zoom >= 16]::historic, 
   [historic = 'manor'][zoom >= 16]::historic, 
+  [historic = 'monastery'][zoom >= 16]::historic, 
   [historic = 'historicsquaretower'][zoom >= 16]::historic, 
   [historic = 'historicroundtower'][zoom >= 16]::historic, 
   [historic = 'historicdefensivetower'][zoom >= 16]::historic, 
