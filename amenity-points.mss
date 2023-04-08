@@ -2876,6 +2876,11 @@
     point-placement: interior;
   }
 
+  [historic = 'dovecote'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_dovecote.png');
+    point-placement: interior;
+  }
+
   [historic = 'historicsquaretower'][zoom >= 16]::historic {
     point-file: url('symbols/historicsquaretower.png');
     point-placement: interior;
@@ -4176,6 +4181,7 @@
   [historic = 'stocks'][zoom >= 17]::historic, 
   [historic = 'well'][zoom >= 17]::historic, 
   [historic = 'cross'][zoom >= 17]::historic, 
+  [historic = 'dovecote'][zoom >= 17]::historic, 
   [historic = 'historicsquaretower'][zoom >= 16]::historic, 
   [historic = 'historicroundtower'][zoom >= 16]::historic, 
   [historic = 'historicdefensivetower'][zoom >= 16]::historic, 
