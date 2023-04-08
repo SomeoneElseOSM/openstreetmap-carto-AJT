@@ -539,6 +539,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'monastery'][zoom > 17]::amenity {
+    point-file: url('symbols/amenity_monastery.png');
+    point-placement: interior;
+  }
+
   [waterway = 'lock']::waterway,
   [lock = 'yes']::lock {
     [zoom >= 15] {
@@ -4597,7 +4602,8 @@
 
   [office = 'nonspecific'],
   [office = 'craftbrewery']::office,
-  [office = 'craftcider']::office {
+  [office = 'craftcider']::office,
+  [amenity = 'monastery']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 9;
