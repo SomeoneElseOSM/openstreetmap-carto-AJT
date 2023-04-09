@@ -2886,6 +2886,11 @@
     point-placement: interior;
   }
 
+  [historic = 'church'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_church.png');
+    point-placement: interior;
+  }
+
   [historic = 'historicsquaretower'][zoom >= 16]::historic {
     point-file: url('symbols/historicsquaretower.png');
     point-placement: interior;
@@ -4187,6 +4192,7 @@
   [historic = 'well'][zoom >= 17]::historic, 
   [historic = 'cross'][zoom >= 17]::historic, 
   [historic = 'dovecote'][zoom >= 17]::historic, 
+  [historic = 'church'][zoom >= 17]::historic, 
   [historic = 'historicsquaretower'][zoom >= 16]::historic, 
   [historic = 'historicroundtower'][zoom >= 16]::historic, 
   [historic = 'historicdefensivetower'][zoom >= 16]::historic, 
