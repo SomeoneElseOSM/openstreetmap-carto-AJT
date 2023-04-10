@@ -627,6 +627,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'militarybunker'][zoom >= 17]::man_made {
+    point-file: url('symbols/militarybunker.png');
+    point-placement: interior;
+  }
+
   [man_made = 'maypole'][zoom >= 16]::man_made {
     point-file: url('symbols/maypole.png');
     point-placement: interior;
@@ -5050,6 +5055,7 @@
   [man_made = 'squaretower'][zoom >= 17]::man_made,
   [man_made = 'churchtower'][zoom >= 17]::man_made,
   [man_made = 'churchspire'][zoom >= 17]::man_made,
+  [man_made = 'militarybunker'][zoom >= 17]::man_made,
   [man_made = 'mounting_block'][zoom >= 17]::man_made,
   [man_made = 'footwear_decontamination'][zoom >= 17]::man_made,
   [man_made = 'monitoringwater'][zoom >= 17]::man_made,
