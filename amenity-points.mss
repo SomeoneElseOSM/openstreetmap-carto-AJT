@@ -2896,6 +2896,11 @@
     point-placement: interior;
   }
 
+  [historic = 'bunker'][zoom >= 17]::historic {
+    point-file: url('symbols/historicbunker.png');
+    point-placement: interior;
+  }
+
   [historic = 'historicsquaretower'][zoom >= 16]::historic {
     point-file: url('symbols/historicsquaretower.png');
     point-placement: interior;
@@ -4198,6 +4203,7 @@
   [historic = 'cross'][zoom >= 17]::historic, 
   [historic = 'dovecote'][zoom >= 17]::historic, 
   [historic = 'church'][zoom >= 17]::historic, 
+  [historic = 'bunker'][zoom >= 17]::historic, 
   [historic = 'historicsquaretower'][zoom >= 16]::historic, 
   [historic = 'historicroundtower'][zoom >= 16]::historic, 
   [historic = 'historicdefensivetower'][zoom >= 16]::historic, 
