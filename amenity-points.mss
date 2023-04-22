@@ -2891,6 +2891,11 @@
     point-placement: interior;
   }
 
+  [historic = 'pinfold'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_pinfold.png');
+    point-placement: interior;
+  }
+
   [historic = 'church'][zoom >= 16]::historic {
     point-file: url('symbols/historic_church.png');
     point-placement: interior;
@@ -4202,6 +4207,7 @@
   [historic = 'well'][zoom >= 17]::historic, 
   [historic = 'cross'][zoom >= 17]::historic, 
   [historic = 'dovecote'][zoom >= 17]::historic, 
+  [historic = 'pinfold'][zoom >= 17]::historic, 
   [historic = 'church'][zoom >= 17]::historic, 
   [historic = 'bunker'][zoom >= 17]::historic, 
   [historic = 'historicsquaretower'][zoom >= 16]::historic, 
