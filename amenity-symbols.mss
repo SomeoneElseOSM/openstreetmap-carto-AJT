@@ -26,7 +26,7 @@
   [aeroway = 'aerodrome'][zoom >= 14]::aeroway {
     text-name: "[name]";
     text-size: 8;
-    text-fill: #6692da;
+    text-fill: #734a08;
     text-face-name: @oblique-fonts;
     text-halo-radius: 1;
     text-placement: interior;
