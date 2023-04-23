@@ -583,13 +583,29 @@
 }
 
 #area-barriers {
-  [zoom >= 15] {
-    line-color: #444;
-    line-width: 0.4;
-    [barrier = 'hedge'] {
+  [barrier = 'hedge'] {
+    [zoom >= 15] {
+      line-color: #444;
+      line-width: 0.4;
       polygon-fill: #aed1a0;
     }
   }
+
+  [barrier = 'hedgeline'] {
+    [zoom >= 14]
+    {
+      line-width: 1; 
+      [zoom >= 16] { line-width: 3; }
+      [zoom >= 19] { line-width: 6; }
+      [zoom >= 20] { line-width: 12; }
+      [zoom >= 21] { line-width: 24; }
+      [zoom >= 22] { line-width: 48; }
+
+      line-color: #aed1a0;
+      line-cap: round;
+    }
+  }
+
 }
 
 .barriers {
@@ -654,7 +670,8 @@
     }
   }
 
-  [barrier = 'hedge'] {
+  [barrier = 'hedge'],
+  [barrier = 'hedgeline'] {
     [zoom >= 14]
     {
       line-width: 1; 
