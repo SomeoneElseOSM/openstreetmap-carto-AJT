@@ -242,7 +242,7 @@
       polygon-fill: @wood;
     }
     [zoom >= 14] {
-      polygon-pattern-file: url('symbols/wood.png');
+      polygon-pattern-file: url('symbols/wood_broadleaved_pattern.png');
     }
   }
 
@@ -251,7 +251,7 @@
       polygon-fill: @wood;
     }
     [zoom >= 14] {
-      polygon-pattern-file: url('symbols/forest.png');
+      polygon-pattern-file: url('symbols/wood_needleleaved_pattern.png');
     }
   }
 
@@ -260,7 +260,7 @@
       polygon-fill: @wood;
     }
     [zoom >= 14] {
-      polygon-pattern-file: url('symbols/wood_mixed.png');
+      polygon-pattern-file: url('symbols/wood_mixed_pattern.png');
     }
   }
 
