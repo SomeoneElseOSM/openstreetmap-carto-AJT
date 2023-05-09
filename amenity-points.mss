@@ -4327,7 +4327,8 @@
     }
   }
 
-  [landuse = 'quarry']::landuse {
+  [landuse = 'quarry']::landuse,
+  [landuse = 'historicquarry']::landuse {
     [zoom >= 15] {
       text-name: "[name]";
       text-size: 9;

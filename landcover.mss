@@ -100,6 +100,12 @@
     line-color: grey;
   }
 
+  [feature = 'landuse_historicquarry'][zoom >= 11] {
+    polygon-pattern-file: url('symbols/historic_quarry.png');
+    line-width: 0.5;
+    line-color: grey;
+  }
+
   [feature = 'landuse_vineyard'] {
     [zoom >= 10][zoom < 13] {
       polygon-fill: @vineyard;
