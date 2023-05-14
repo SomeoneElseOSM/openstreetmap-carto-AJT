@@ -2961,6 +2961,11 @@
     point-placement: interior;
   }
 
+  [historic = 'wreck'][zoom >= 17]::historic {
+    point-file: url('symbols/historic_wreck.png');
+    point-placement: interior;
+  }
+
   [historic = 'nonspecific'][zoom >= 17]::historic {
     point-file: url('symbols/historic_nonspecific.p.16.png');
     point-placement: interior;
@@ -4242,6 +4247,7 @@
   [historic = 'historicpromontoryfort'][zoom >= 17]::historic, 
   [historic = 'historiccrannog'][zoom >= 17]::historic, 
   [historic = 'historictumulus'][zoom >= 17]::historic, 
+  [historic = 'wreck'][zoom >= 17]::historic, 
   [historic = 'nonspecific'][zoom >= 17]::historic {
     text-name: "[name]";
     text-size: 9;
