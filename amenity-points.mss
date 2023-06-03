@@ -913,6 +913,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'watering_place'][zoom >= 14]::amenity {
+    point-file: url('symbols/wateringplace.png');
+    point-placement: interior;
+  }
+
   [amenity = 'police'][zoom >= 17]::amenity {
     point-file: url('symbols/police.p.16.png');
     point-placement: interior;
@@ -4556,6 +4561,18 @@
   }
 
   [amenity = 'holy_spring'][zoom >= 16]::natural {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-fill: #6699cc;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-wrap-width: 20;
+    text-placement: interior;
+    text-dy: 6;
+  }
+
+  [amenity = 'watering_place'][zoom >= 16]::natural {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
