@@ -45,7 +45,7 @@
     point-placement: interior;
   }
 
-  [man_made = 'cross'][zoom >= 15]::man_made {
+  [man_made = 'cross'][zoom >= 16]::man_made {
     point-file: url('symbols/manmade_cross.png');
     point-placement: interior;
   }

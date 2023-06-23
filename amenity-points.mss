@@ -240,6 +240,11 @@
     point-placement: centroid;
   }
 
+  [leisure = 'bandstand'][zoom >= 17]::leisure {
+    point-file: url('symbols/bandstand.png');
+    point-placement: centroid;
+  }
+
   [leisure = 'fitness_station'][zoom >= 19]::leisure {
     point-file: url('symbols/leisure_fitnessstation.p.16.png');
     point-placement: interior;
@@ -4671,6 +4676,7 @@
   }
 
   [leisure = 'fitness_station'][zoom >= 19]::leisure,
+  [leisure = 'bandstand'][zoom >= 17]::leisure,
   [leisure = 'nonspecific'][zoom >= 17]::leisure {
     text-name: "[name]";
     text-size: 9;
@@ -5078,7 +5084,7 @@
   }
 
   [amenity = 'lifeboat'][zoom >= 17]::amenity,
-  [man_made = 'cross'][zoom >= 15]::man_made,
+  [man_made = 'cross'][zoom >= 16]::man_made,
   [man_made = 'lighthouse'][zoom >= 15]::man_made,
   [man_made = 'bigmast'][zoom >= 13]::man_made,
   [man_made = 'mast'][zoom >= 15]::man_made,
