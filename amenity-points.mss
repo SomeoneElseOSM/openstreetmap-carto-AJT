@@ -5078,6 +5078,7 @@
   }
 
   [amenity = 'lifeboat'][zoom >= 17]::amenity,
+  [man_made = 'cross'][zoom >= 15]::man_made,
   [man_made = 'lighthouse'][zoom >= 15]::man_made,
   [man_made = 'bigmast'][zoom >= 13]::man_made,
   [man_made = 'mast'][zoom >= 15]::man_made,

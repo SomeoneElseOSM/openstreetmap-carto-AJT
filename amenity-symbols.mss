@@ -45,6 +45,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'cross'][zoom >= 15]::man_made {
+    point-file: url('symbols/manmade_cross.png');
+    point-placement: interior;
+  }
+
   [man_made = 'lighthouse'][zoom >= 15]::man_made {
     point-file: url('symbols/lighthouse.p.20.png');
     point-placement: interior;
