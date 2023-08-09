@@ -3449,6 +3449,16 @@
     point-file: url('symbols/birdhide.p.16.png');
     point-placement: interior;
   }
+
+  [leisure = 'hunting_stand'][zoom >= 17]::leisure {
+    point-file: url('symbols/huntingstand.p.16.png');
+    point-placement: interior;
+  }
+
+  [leisure = 'grouse_butt'][zoom >= 17]::leisure {
+    point-file: url('symbols/grousebutt.p.16.png');
+    point-placement: interior;
+  }
 }
 
 
@@ -3979,6 +3989,8 @@
   [amenity = 'bbq']::amenity,
   [leisure = 'slipway']::leisure,
   [leisure = 'bird_hide']::leisure,
+  [leisure = 'hunting_stand']::leisure,
+  [leisure = 'grouse_butt']::leisure,
   [man_made = 'water_well']::man_made {
     [zoom >= 17] {
       text-name: "[name]";
