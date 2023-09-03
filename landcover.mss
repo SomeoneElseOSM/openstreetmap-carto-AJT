@@ -184,6 +184,15 @@
     }
   }
 
+  [feature = 'landuse_wetmeadow'] {
+    [zoom >= 10] {
+      polygon-fill: @meadow;
+    }
+    [zoom >= 14] {
+      polygon-pattern-file: url('symbols/wet_meadow_pattern.png');
+    }
+  }
+
   [feature = 'landuse_farmgrass'] {
     [zoom >= 10] {
       polygon-fill: @farmgrass;
