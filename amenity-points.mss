@@ -4440,6 +4440,8 @@
 
   [landuse = 'meadow']::landuse,
   [landuse = 'wetmeadow']::landuse,
+  [landuse = 'saltmarsh']::landuse,
+  [landuse = 'reedbed']::landuse,
   [landuse = 'farmgrass']::landuse,
   [landuse = 'grass']::landuse  {
     [zoom >= 15] {
