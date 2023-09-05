@@ -4440,10 +4440,21 @@
     }
   }
 
+  [landuse = 'saltmarsh']::landuse,
+  [landuse = 'reedbed']::landuse {
+    [zoom >= 13] {
+      text-name: "[name]";
+      text-size: 9;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: darken(@grass, 65%);
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-wrap-width: 10;
+    }
+  }
+
   [landuse = 'meadow']::landuse,
   [landuse = 'wetmeadow']::landuse,
-  [landuse = 'saltmarsh']::landuse,
-  [landuse = 'reedbed']::landuse,
   [landuse = 'farmgrass']::landuse,
   [landuse = 'grass']::landuse  {
     [zoom >= 15] {

@@ -194,13 +194,13 @@
   }
 
   [feature = 'landuse_saltmarsh'] {
-    [zoom >= 13] {
+    [zoom >= 10] {
       polygon-pattern-file: url('symbols/saltmarsh_pattern.png');
     }
   }
 
   [feature = 'landuse_reedbed'] {
-    [zoom >= 13] {
+    [zoom >= 10] {
       polygon-pattern-file: url('symbols/reedbed_pattern.png');
     }
   }
