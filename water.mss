@@ -70,14 +70,6 @@
       line-opacity: 0.329;
     }
   }
-
-  [natural = 'mud'][zoom >= 10]::natural {
-    polygon-pattern-file: url('symbols/mud.png');
-  }
-
-  [natural = 'tidal_mud'][zoom >= 10]::natural {
-    polygon-pattern-file: url('symbols/tidal_mud.png');
-  }
 }
 
 #water-areas-overlay {
@@ -92,6 +84,14 @@
     [zoom >= 13] {
       polygon-pattern-file: url('symbols/intermittentwetland.png');
     }
+  }
+
+  [natural = 'mud'][zoom >= 10]::natural {
+    polygon-pattern-file: url('symbols/mud.png');
+  }
+
+  [natural = 'tidal_mud'][zoom >= 10]::natural {
+    polygon-pattern-file: url('symbols/tidal_mud.png');
   }
 }
 

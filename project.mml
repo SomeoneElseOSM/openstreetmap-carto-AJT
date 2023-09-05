@@ -175,7 +175,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(SELECT\n    way, \"natural\", waterway, landuse, name, way_area/(!pixel_width!*!pixel_height!) AS way_pixels\n  FROM planet_osm_polygon\n  WHERE\n    (waterway IN ('dock', 'riverbank', 'canal')\n      OR landuse IN ('reservoir','basin')\n      OR \"natural\" IN ('lake','water','intermittentwater','flood_prone','land','glacier','mud','tidal_mud'))\n    AND building IS NULL\n    AND way_area/(!pixel_width!*!pixel_height!) > 0.01\n  ORDER BY z_order, way_area) AS water_areas",
+        "table": "(SELECT\n    way, \"natural\", waterway, landuse, name, way_area/(!pixel_width!*!pixel_height!) AS way_pixels\n  FROM planet_osm_polygon\n  WHERE\n    (waterway IN ('dock', 'riverbank', 'canal')\n      OR landuse IN ('reservoir','basin')\n      OR \"natural\" IN ('lake','water','intermittentwater','flood_prone','land','glacier'))\n    AND building IS NULL\n    AND way_area/(!pixel_width!*!pixel_height!) > 0.01\n  ORDER BY z_order, way_area) AS water_areas",
         "extent": "-20037508,-20037508,20037508,20037508",
         "key_field": "",
         "geometry_field": "way",
@@ -198,7 +198,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "      (select way,\"natural\"\n      from planet_osm_polygon\n      where \"natural\" in ('marsh','wetland','intermittentwetland') and building is null\n      order by z_order,way_area desc\n      ) as water_areas_overlay",
+        "table": "      (select way,\"natural\"\n      from planet_osm_polygon\n      where \"natural\" in ('marsh','wetland','intermittentwetland','mud','tidal_mud') and building is null\n      order by z_order,way_area desc\n      ) as water_areas_overlay",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",

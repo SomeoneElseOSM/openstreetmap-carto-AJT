@@ -4201,6 +4201,8 @@
   [natural = 'sinkhole'][zoom >= 15]::natural,
   [natural = 'climbing'][zoom >= 17]::natural,
   [natural = 'rock'][zoom >= 17]::natural,
+  [natural = 'mud'][zoom >= 13]::natural,
+  [natural = 'tidal_mud'][zoom >= 13]::natural,
   [natural = 'tree'][zoom >= 18]::natural,
   [natural = 'shrub'][zoom >= 19]::natural {
     text-name: "[name]";
