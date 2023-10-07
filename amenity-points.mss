@@ -2866,6 +2866,11 @@
     point-placement: interior;
   }
 
+  [historic = 'martello_tower'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_martello.png');
+    point-placement: interior;
+  }
+
   [historic = 'monastery'][zoom >= 16]::historic {
     point-file: url('symbols/historic_monastery.png');
     point-placement: interior;
@@ -4239,6 +4244,7 @@
   [historic = 'oghamstone'][zoom >= 16]::historic, 
   [historic = 'castle'][zoom >= 16]::historic, 
   [historic = 'manor'][zoom >= 16]::historic, 
+  [historic = 'martello_tower'][zoom >= 16]::historic, 
   [historic = 'monastery'][zoom >= 16]::historic, 
   [historic = 'city_gate'][zoom >= 16]::historic, 
   [historic = 'battlefield'][zoom >= 16]::historic, 
