@@ -478,6 +478,10 @@
     polygon-pattern-file: url('symbols/reef_pattern.png');
   }
 
+  [feature = 'natural_reefsand'][zoom >= 10] {
+    polygon-pattern-file: url('symbols/reefsand_pattern.png');
+  }
+
   [feature = 'natural_scree'][zoom >= 10] {
     polygon-pattern-file: url('symbols/scree_pattern.png');
   }
