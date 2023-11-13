@@ -32,6 +32,15 @@
     text-placement: interior;
   }
 
+  [aeroway = 'military_aerodrome'][zoom >= 12]::aeroway {
+    text-name: "[name]";
+    text-size: 8;
+    text-fill: #99001a;
+    text-face-name: @oblique-fonts;
+    text-halo-radius: 1;
+    text-placement: interior;
+  }
+
   [railway = 'level_crossing'][zoom >= 14]::railway {
     point-file: url('symbols/level_crossing.png');
     point-placement: interior;
