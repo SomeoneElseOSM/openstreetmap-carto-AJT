@@ -680,7 +680,10 @@
   }
 
   [tourism = 'artwork'][zoom >= 17]::tourism {
-    point-file: url('symbols/artwork.p.16.png');
+    point-file: url('symbols/artwork.p16.png');
+    [zoom >= 20] {
+      point-file: url('symbols/artwork.p24.png');
+    }
     point-placement: interior;
   }
 
@@ -725,7 +728,13 @@
   }
 
   [amenity = 'bench'][zoom >= 17]::amenity {
-    point-file: url('symbols/bench.png');
+    point-file: url('symbols/bench.p07.png');
+    [zoom >= 19] {
+      point-file: url('symbols/bench.p14.png');
+    }
+    [zoom >= 20] {
+      point-file: url('symbols/bench.p21.png');
+    }
     point-placement: interior;
   }
 

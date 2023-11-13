@@ -155,11 +155,17 @@
   }
 
   [natural = 'tree'][zoom >= 16]::natural {
-    point-file: url('symbols/tree.png');
+    point-file: url('symbols/tree.p03.png');
     point-ignore-placement: true;
     point-placement: interior;
     [zoom >= 17] {
-      point-file: url('symbols/tree2.png');
+      point-file: url('symbols/tree.p05.png');
+    }
+    [zoom >= 18] {
+      point-file: url('symbols/tree.p15.png');
+    }
+    [zoom >= 20] {
+      point-file: url('symbols/tree.p20.png');
     }
   }
 
