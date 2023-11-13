@@ -730,42 +730,90 @@
   }
 
   [amenity = 'playground_swing'][zoom >= 18]::amenity {
-    point-file: url('symbols/playground_swing.png');
+    point-file: url('symbols/playground_swing.p07.png');
+    [zoom >= 19] {
+      point-file: url('symbols/playground_swing.p14.png');
+    }
+    [zoom >= 20] {
+      point-file: url('symbols/playground_swing.p21.png');
+    }
     point-placement: interior;
   }
 
   [amenity = 'playground_structure'][zoom >= 18]::amenity {
-    point-file: url('symbols/playground_structure.png');
+    point-file: url('symbols/playground_structure.p07.png');
+    [zoom >= 19] {
+      point-file: url('symbols/playground_structure.p14.png');
+    }
+    [zoom >= 20] {
+      point-file: url('symbols/playground_structure.p21.png');
+    }
     point-placement: interior;
   }
 
   [amenity = 'playground_climbingframe'][zoom >= 18]::amenity {
-    point-file: url('symbols/playground_climbingframe.png');
+    point-file: url('symbols/playground_climbingframe.p07.png');
+    [zoom >= 19] {
+      point-file: url('symbols/playground_climbingframe.p14.png');
+    }
+    [zoom >= 20] {
+      point-file: url('symbols/playground_climbingframe.p21.png');
+    }
     point-placement: interior;
   }
 
   [amenity = 'playground_slide'][zoom >= 18]::amenity {
-    point-file: url('symbols/playground_slide.png');
+    point-file: url('symbols/playground_slide.p07.png');
+    [zoom >= 19] {
+      point-file: url('symbols/playground_slide.p14.png');
+    }
+    [zoom >= 20] {
+      point-file: url('symbols/playground_slide.p21.png');
+    }
     point-placement: interior;
   }
 
   [amenity = 'playground_springy'][zoom >= 18]::amenity {
-    point-file: url('symbols/playground_springy.png');
+    point-file: url('symbols/playground_springy.p07.png');
+    [zoom >= 19] {
+      point-file: url('symbols/playground_springy.p14.png');
+    }
+    [zoom >= 20] {
+      point-file: url('symbols/playground_springy.p21.png');
+    }
     point-placement: interior;
   }
 
   [amenity = 'playground_zipwire'][zoom >= 18]::amenity {
-    point-file: url('symbols/playground_zipwire.png');
+    point-file: url('symbols/playground_zipwire.p07.png');
+    [zoom >= 19] {
+      point-file: url('symbols/playground_zipwire.p14.png');
+    }
+    [zoom >= 20] {
+      point-file: url('symbols/playground_zipwire.p21.png');
+    }
     point-placement: interior;
   }
 
   [amenity = 'playground_seesaw'][zoom >= 18]::amenity {
-    point-file: url('symbols/playground_seesaw.png');
+    point-file: url('symbols/playground_seesaw.p07.png');
+    [zoom >= 19] {
+      point-file: url('symbols/playground_seesaw.p14.png');
+    }
+    [zoom >= 20] {
+      point-file: url('symbols/playground_seesaw.p21.png');
+    }
     point-placement: interior;
   }
 
   [amenity = 'playground_roundabout'][zoom >= 18]::amenity {
-    point-file: url('symbols/playground_roundabout.png');
+    point-file: url('symbols/playground_roundabout.p07.png');
+    [zoom >= 19] {
+      point-file: url('symbols/playground_roundabout.p14.png');
+    }
+    [zoom >= 20] {
+      point-file: url('symbols/playground_roundabout.p21.png');
+    }
     point-placement: interior;
   }
 
