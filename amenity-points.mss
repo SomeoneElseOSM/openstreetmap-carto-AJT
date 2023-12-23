@@ -3525,14 +3525,30 @@
 
 
 .text {
-  [place = 'island'][zoom >= 12]::place {
-    text-name: "[name]";
-    text-fill: #000;
-    text-size: 9;
-    [zoom >= 20] { text-size: 18; }
-    text-face-name: @oblique-fonts;
-    text-halo-radius: 1;
-    text-placement: interior;
+  [place = 'island']::place {
+    [way_area >= 600000000000][zoom >= 6],
+    [way_area >= 100000000000][zoom >= 7],
+    [way_area >= 800000000][zoom >= 8],
+    [way_area >= 50000000][zoom >= 9],
+    [way_area >= 20000000][zoom >= 10],
+    [way_area >= 6000000][zoom >= 11],
+    [way_area >= 800000][zoom >= 12],
+    [way_area >= 200000][zoom >= 13],
+    [way_area >= 100000][zoom >= 14],
+    [way_area >= 50000][zoom >= 15],
+    [way_area >= 10000][zoom >= 16],
+    [way_area >= 2000][zoom >= 17],
+    [way_area >= 1000][zoom >= 18],
+    [way_area >= 200][zoom >= 19],
+      [zoom >= 20] {
+      text-name: "[name]";
+      text-fill: #000;
+      text-size: 9;
+      [zoom >= 20] { text-size: 18; }
+      text-face-name: @oblique-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+    }
   }
 
   [amenity = 'pub']::amenity,
