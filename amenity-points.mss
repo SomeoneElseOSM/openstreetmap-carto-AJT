@@ -2803,6 +2803,54 @@
     }
   }
 
+  [amenity = 'shower'][zoom >= 17]::amenity {
+    point-file: url('symbols/shower_free.p.20.png');
+    point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
+  [amenity = 'shower_free_m'][zoom >= 17]::amenity {
+    point-file: url('symbols/shower_free_m.p.20.png');
+    point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
+  [amenity = 'shower_free_w'][zoom >= 17]::amenity {
+    point-file: url('symbols/shower_free_w.p.20.png');
+    point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
+  [amenity = 'shower_pay'][zoom >= 17]::amenity {
+    point-file: url('symbols/shower_pay.p.20.png');
+    point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
+  [amenity = 'shower_pay_m'][zoom >= 17]::amenity {
+    point-file: url('symbols/shower_pay_m.p.20.png');
+    point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
+  [amenity = 'shower_pay_w'][zoom >= 17]::amenity {
+    point-file: url('symbols/shower_pay_w.p.20.png');
+    point-placement: interior;
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
   [amenity = 'musical_instrument'][zoom >= 21]::amenity {
     point-file: url('symbols/musical_instrument.p.20.png');
     point-placement: interior;
@@ -4057,6 +4105,12 @@
   [amenity = 'toilets_pay']::amenity,
   [amenity = 'toilets_pay_m']::amenity,
   [amenity = 'toilets_pay_w']::amenity,
+  [amenity = 'shower']::amenity,
+  [amenity = 'shower_free_m']::amenity,
+  [amenity = 'shower_free_w']::amenity,
+  [amenity = 'shower_pay']::amenity,
+  [amenity = 'shower_pay_m']::amenity,
+  [amenity = 'shower_pay_w']::amenity,
   [amenity = 'post_office']::amenity,
   [amenity = 'courthouse']::amenity,
   [amenity = 'police']::amenity,
