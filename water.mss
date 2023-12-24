@@ -198,6 +198,12 @@
     [zoom >= 15] { line-width: 6; }
     [zoom >= 17] { line-width: 10; }
     [zoom >= 18] { line-width: 12; }
+    [zoom >= 19] { line-width: 23; }
+    [zoom >= 20] { line-width: 45; }
+    [zoom >= 21] { line-width: 89; }
+    [zoom >= 22] { line-width: 177; }
+    [zoom >= 23] { line-width: 353; }
+    [zoom >= 24] { line-width: 705; }
     line-cap: round;
     line-join: round;
     [int_tunnel = 'yes'] {
@@ -210,6 +216,12 @@
       [zoom >= 15] { a/line-width: 3; }
       [zoom >= 17] { a/line-width: 7; }
       [zoom >= 18] { a/line-width: 8; }
+      [zoom >= 19] { a/line-width: 15; }
+      [zoom >= 20] { a/line-width: 29; }
+      [zoom >= 21] { a/line-width: 57; }
+      [zoom >= 22] { a/line-width: 113; }
+      [zoom >= 23] { a/line-width: 225; }
+      [zoom >= 24] { a/line-width: 449; }
     }
   }
 
