@@ -3106,6 +3106,11 @@
     point-placement: interior;
   }
 
+  [historic = 'aircraft'][zoom >= 17]::historic {
+    point-file: url('symbols/historic_aircraft.png');
+    point-placement: interior;
+  }
+
   [historic = 'aircraft_wreck'][zoom >= 17]::historic {
     point-file: url('symbols/historic_aircraftwreck.png');
     point-placement: interior;
@@ -4451,6 +4456,7 @@
   [historic = 'historiccrannog'][zoom >= 17]::historic, 
   [historic = 'historictumulus'][zoom >= 17]::historic, 
   [historic = 'aircraft_wreck'][zoom >= 17]::historic, 
+  [historic = 'aircraft'][zoom >= 17]::historic, 
   [historic = 'ship'][zoom >= 17]::historic, 
   [historic = 'wreck'][zoom >= 17]::historic, 
   [historic = 'nonspecific'][zoom >= 17]::historic {
