@@ -3116,6 +3116,11 @@
     point-placement: interior;
   }
 
+  [historic = 'water_pump'][zoom >= 17]::historic {
+    point-file: url('symbols/historic_waterpump.png');
+    point-placement: interior;
+  }
+
   [historic = 'windmill'][zoom >= 17]::historic {
     point-file: url('symbols/historic_windmill.png');
     point-placement: interior;
@@ -4472,6 +4477,7 @@
   [historic = 'historictumulus'][zoom >= 17]::historic, 
   [historic = 'aircraft_wreck'][zoom >= 17]::historic, 
   [historic = 'aircraft'][zoom >= 17]::historic, 
+  [historic = 'water_pump'][zoom >= 17]::historic, 
   [historic = 'windmill'][zoom >= 17]::historic, 
   [historic = 'watermill'][zoom >= 17]::historic, 
   [historic = 'mill'][zoom >= 17]::historic, 
