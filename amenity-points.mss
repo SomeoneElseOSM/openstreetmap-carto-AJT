@@ -3082,7 +3082,7 @@
   }
 
   [historic = 'monument'][zoom >= 17]::historic {
-    point-file: url('symbols/monument.png');
+    point-file: url('symbols/historic_monument.png');
     point-placement: interior;
   }
 
