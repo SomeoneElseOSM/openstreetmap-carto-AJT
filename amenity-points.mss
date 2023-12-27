@@ -2966,6 +2966,11 @@
     point-placement: interior;
   }
 
+  [historic = 'folly'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_folly.png');
+    point-placement: interior;
+  }
+
   [historic = 'manor'][zoom >= 16]::historic {
     point-file: url('symbols/historic_manor.png');
     point-placement: interior;
@@ -4381,6 +4386,7 @@
   [historic = 'massrock'][zoom >= 16]::historic, 
   [historic = 'oghamstone'][zoom >= 16]::historic, 
   [historic = 'castle'][zoom >= 16]::historic, 
+  [historic = 'folly'][zoom >= 17]::historic, 
   [historic = 'manor'][zoom >= 16]::historic, 
   [historic = 'martello_tower'][zoom >= 16]::historic, 
   [historic = 'monastery'][zoom >= 16]::historic, 
