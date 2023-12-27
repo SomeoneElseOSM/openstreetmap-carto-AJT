@@ -2996,6 +2996,11 @@
     point-placement: interior;
   }
 
+  [historic = 'cannon'][zoom >= 17]::historic {
+    point-file: url('symbols/historic_cannon.png');
+    point-placement: interior;
+  }
+
   [historic = 'stocks'][zoom >= 17]::historic {
     point-file: url('symbols/historic_stocks.png');
     point-placement: interior;
@@ -4392,6 +4397,7 @@
   [historic = 'monastery'][zoom >= 16]::historic, 
   [historic = 'city_gate'][zoom >= 16]::historic, 
   [historic = 'battlefield'][zoom >= 16]::historic, 
+  [historic = 'cannon'][zoom >= 17]::historic, 
   [historic = 'stocks'][zoom >= 17]::historic, 
   [historic = 'well'][zoom >= 17]::historic, 
   [historic = 'cross'][zoom >= 17]::historic, 
