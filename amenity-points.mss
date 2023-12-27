@@ -3081,6 +3081,11 @@
     point-placement: interior;
   }
 
+  [historic = 'monument'][zoom >= 17]::historic {
+    point-file: url('symbols/monument.png');
+    point-placement: interior;
+  }
+
   [historic = 'aircraft_wreck'][zoom >= 17]::historic {
     point-file: url('symbols/historic_aircraftwreck.png');
     point-placement: interior;
@@ -4393,7 +4398,8 @@
   [historic = 'memorialbench'][zoom >= 17]::historic, 
   [historic = 'memorialgrave'][zoom >= 17]::historic, 
   [historic = 'memorialobelisk'][zoom >= 17]::historic, 
-  [historic = 'memorial'][zoom >= 17]::historic {
+  [historic = 'memorial'][zoom >= 17]::historic,
+  [historic = 'monument'][zoom >= 17]::historic {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
