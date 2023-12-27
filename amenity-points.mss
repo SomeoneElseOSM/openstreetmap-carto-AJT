@@ -3066,6 +3066,11 @@
     point-placement: interior;
   }
 
+  [historic = 'kiln'][zoom >= 17]::historic {
+    point-file: url('symbols/historic_kiln.png');
+    point-placement: interior;
+  }
+
   [historic = 'memorialplate'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_plate.png');
     point-placement: interior;
@@ -4411,6 +4416,7 @@
   [historic = 'historicobservastiontower'][zoom >= 16]::historic, 
   [historic = 'historicchurchtower'][zoom >= 16]::historic, 
   [historic = 'mineshaft'][zoom >= 17]::historic, 
+  [historic = 'kiln'][zoom >= 17]::historic, 
   [historic = 'memorialplate'][zoom >= 17]::historic, 
   [historic = 'memorialbench'][zoom >= 17]::historic, 
   [historic = 'memorialgrave'][zoom >= 17]::historic, 
