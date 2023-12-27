@@ -3136,6 +3136,11 @@
     point-placement: interior;
   }
 
+  [historic = 'tank'][zoom >= 17]::historic {
+    point-file: url('symbols/historic_tank.png');
+    point-placement: interior;
+  }
+
   [historic = 'ship'][zoom >= 17]::historic {
     point-file: url('symbols/historic_ship.png');
     point-placement: interior;
@@ -4481,6 +4486,7 @@
   [historic = 'windmill'][zoom >= 17]::historic, 
   [historic = 'watermill'][zoom >= 17]::historic, 
   [historic = 'mill'][zoom >= 17]::historic, 
+  [historic = 'tank'][zoom >= 17]::historic, 
   [historic = 'ship'][zoom >= 17]::historic, 
   [historic = 'wreck'][zoom >= 17]::historic, 
   [historic = 'nonspecific'][zoom >= 17]::historic {
