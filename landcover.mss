@@ -1,7 +1,7 @@
 // --- Parks, woods, other green things ---
 
 @forest: #bedab3;
-@grass: #cfeca8; // also common, garden, village_green, conservation
+@grass: #cfeca8; // also common, garden, village_green
 @golfgreen: #b9e382;
 @golf_course: #b5e3b5;
 @natural: #c6e4b4; // also grassland
@@ -172,7 +172,8 @@
     }
   }
 
-  [feature = 'landuse_grass'] {
+  [feature = 'landuse_grass'],
+  [feature = 'landuse_unnamedgrass'] {
     [zoom >= 10] {
       polygon-fill: @grass;
     }
