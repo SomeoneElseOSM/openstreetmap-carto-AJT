@@ -94,16 +94,22 @@
     polygon-fill: @historic;
   }
 
-  [feature = 'landuse_quarry'][zoom >= 11] {
-    polygon-pattern-file: url('symbols/quarry2.png');
-    line-width: 0.5;
-    line-color: grey;
+  [feature = 'landuse_quarry'],
+  [feature = 'landuse_unnamedquarry'] {
+    [zoom >= 11] {
+      polygon-pattern-file: url('symbols/quarry2.png');
+      line-width: 0.5;
+      line-color: grey;
+    }
   }
 
-  [feature = 'landuse_historicquarry'][zoom >= 11] {
-    polygon-pattern-file: url('symbols/historic_quarry.png');
-    line-width: 0.5;
-    line-color: grey;
+  [feature = 'landuse_historicquarry'],
+  [feature = 'landuse_unnamedhistoricquarry'] {
+    [zoom >= 11] {
+      polygon-pattern-file: url('symbols/historic_quarry.png');
+      line-width: 0.5;
+      line-color: grey;
+    }
   }
 
   [feature = 'landuse_vineyard'] {
@@ -115,8 +121,11 @@
     }
   }
 
-  [feature = 'landuse_orchard'][zoom >= 10] {
-    polygon-pattern-file: url('symbols/orchard.png');
+  [feature = 'landuse_orchard'],
+  [feature = 'landuse_unnamedorchard'] {
+    [zoom >= 10] {
+      polygon-pattern-file: url('symbols/orchard.png');
+    }
   }
 
   [feature = 'landuse_cemetery'],
@@ -179,7 +188,8 @@
     }
   }
 
-  [feature = 'landuse_meadow'] {
+  [feature = 'landuse_meadow'],
+  [feature = 'landuse_unnamedmeadow'] {
     [zoom >= 10] {
       polygon-fill: @meadow;
     }
@@ -206,7 +216,8 @@
     }
   }
 
-  [feature = 'landuse_farmgrass'] {
+  [feature = 'landuse_farmgrass'],
+  [feature = 'landuse_unnamedfarmgrass'] {
     [zoom >= 10] {
       polygon-fill: @farmgrass;
       [zoom >= 16] {
@@ -244,7 +255,8 @@
     polygon-fill: @golf_course;
   }
 
-  [feature = 'landuse_allotments'] {
+  [feature = 'landuse_allotments'],
+  [feature = 'landuse_unnamedallotments'] {
     [zoom >= 10][zoom < 14] {
       polygon-fill: @allotments;
     }
@@ -259,7 +271,8 @@
     }
   }
 
-  [feature = 'landuse_forest'] {
+  [feature = 'landuse_forest'],
+  [feature = 'landuse_unnamedforest'] {
     [zoom >= 9] {
       polygon-fill: @forest;
     }
@@ -292,7 +305,9 @@
     }
   }
 
-  [feature = 'landuse_farmyard'][zoom >= 9] {
+  [feature = 'landuse_farmyard'],
+  [feature = 'landuse_unnamedfarmyard'] {
+    [zoom >= 9] {
     polygon-fill: @farmyard;
       [zoom >= 16] {
         line-width: 0.5;
@@ -301,10 +316,11 @@
           line-width: 0.7;
         }
       }
+    }
   }
 
-  [feature = 'landuse_farm'],
-  [feature = 'landuse_farmland'] {
+  [feature = 'landuse_farmland'],
+  [feature = 'landuse_unnamedfarmland'] {
     [zoom >= 9] {
       polygon-fill: @farmland;
       [zoom >= 16] {

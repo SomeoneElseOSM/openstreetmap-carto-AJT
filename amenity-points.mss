@@ -235,7 +235,7 @@
     point-placement: centroid;
   }
 
-  [leisure = 'nonspecific'][zoom >= 17]::leisure {
+  [leisure = 'leisurenonspecific'][zoom >= 17]::leisure {
     point-file: url('symbols/leisure_nonspecific.p.16.png');
     point-placement: centroid;
   }
@@ -4922,7 +4922,7 @@
 
   [leisure = 'fitness_station'][zoom >= 19]::leisure,
   [leisure = 'bandstand'][zoom >= 17]::leisure,
-  [leisure = 'nonspecific'][zoom >= 17]::leisure {
+  [leisure = 'leisurenonspecific'][zoom >= 17]::leisure {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
