@@ -896,6 +896,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'pitch_hockey'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_hockey.png');
+    point-placement: interior;
+  }
+
   [amenity = 'pitch_polo'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_polo.png');
     point-placement: interior;
@@ -5205,6 +5210,7 @@
   [amenity = 'pitch_bowls'][zoom >= 18]::amenity,
   [amenity = 'pitch_equestrian'][zoom >= 18]::amenity,
   [amenity = 'pitch_gaa'][zoom >= 18]::amenity,
+  [amenity = 'pitch_hockey'][zoom >= 18]::amenity,
   [amenity = 'pitch_polo'][zoom >= 18]::amenity {
     text-name: "[name]";
     text-size: 10;
