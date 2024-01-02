@@ -871,6 +871,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'pitch_athletics'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_athletics.png');
+    point-placement: interior;
+  }
+
   [amenity = 'pitch_boules'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_boules.png');
     point-placement: interior;
@@ -5195,6 +5200,7 @@
   [amenity = 'pitch_rugby'][zoom >= 18]::amenity,
   [amenity = 'pitch_chess'][zoom >= 18]::amenity,
   [amenity = 'pitch_tennis'][zoom >= 18]::amenity,
+  [amenity = 'pitch_athletics'][zoom >= 18]::amenity,
   [amenity = 'pitch_boules'][zoom >= 18]::amenity,
   [amenity = 'pitch_bowls'][zoom >= 18]::amenity,
   [amenity = 'pitch_equestrian'][zoom >= 18]::amenity,
