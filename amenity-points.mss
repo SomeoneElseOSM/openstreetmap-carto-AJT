@@ -831,6 +831,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'pitch_tennis'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_tennis.png');
+    point-placement: interior;
+  }
+
   [amenity = 'pitch_soccer'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_soccer.png');
     point-placement: interior;
@@ -866,8 +871,28 @@
     point-placement: interior;
   }
 
-  [amenity = 'pitch_tennis'][zoom >= 18]::amenity {
-    point-file: url('symbols/pitch_tennis.png');
+  [amenity = 'pitch_boules'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_boules.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pitch_bowls'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_bowls.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pitch_equestrian'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_equestrian.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pitch_gaa'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_gaa.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'pitch_polo'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_polo.png');
     point-placement: interior;
   }
 
@@ -5169,7 +5194,12 @@
   [amenity = 'pitch_climbing'][zoom >= 18]::amenity,
   [amenity = 'pitch_rugby'][zoom >= 18]::amenity,
   [amenity = 'pitch_chess'][zoom >= 18]::amenity,
-  [amenity = 'pitch_tennis'][zoom >= 18]::amenity {
+  [amenity = 'pitch_tennis'][zoom >= 18]::amenity,
+  [amenity = 'pitch_boules'][zoom >= 18]::amenity,
+  [amenity = 'pitch_bowls'][zoom >= 18]::amenity,
+  [amenity = 'pitch_equestrian'][zoom >= 18]::amenity,
+  [amenity = 'pitch_gaa'][zoom >= 18]::amenity,
+  [amenity = 'pitch_polo'][zoom >= 18]::amenity {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
