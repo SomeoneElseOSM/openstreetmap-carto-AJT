@@ -537,7 +537,8 @@
     }
   }
 
-  [feature = 'leisure_pitch'][zoom >= 10] {
+  [feature = 'leisure_pitch'][zoom >= 10],
+  [feature = 'leisure_unnamedpitch'][zoom >= 10] {
     polygon-fill: @pitch;
     [zoom >= 15] {
       line-width: 0.5;

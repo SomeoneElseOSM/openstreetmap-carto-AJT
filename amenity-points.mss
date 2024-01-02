@@ -921,6 +921,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'pitch_shooting'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_shooting.png');
+    point-placement: interior;
+  }
+
   [amenity = 'parking'][zoom >= 13]::amenity {
     marker-file: url('symbols/parking_free.png');
     marker-placement: interior;
@@ -5229,7 +5234,8 @@
   [amenity = 'pitch_hockey'][zoom >= 18]::amenity,
   [amenity = 'pitch_multi'][zoom >= 18]::amenity,
   [amenity = 'pitch_netball'][zoom >= 18]::amenity,
-  [amenity = 'pitch_polo'][zoom >= 18]::amenity {
+  [amenity = 'pitch_polo'][zoom >= 18]::amenity,
+  [amenity = 'pitch_shooting'][zoom >= 18]::amenity {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
