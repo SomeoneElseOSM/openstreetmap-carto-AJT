@@ -4206,6 +4206,19 @@
     }
   }
 
+  [man_made = 'markeraerial']::man_made {
+    [zoom >= 19] {
+      text-name: "[ref]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: #9900cc;
+      text-dy: 12;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+    }
+  }
+
   [tourism = 'viewpoint']::tourism {
     [zoom >= 16] {
       text-name: "[name]";
