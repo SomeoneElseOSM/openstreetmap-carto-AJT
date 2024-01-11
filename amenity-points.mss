@@ -702,6 +702,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'bottle_return'][zoom >= 19]::amenity {
+    point-file: url('symbols/bottle_return.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'waste_basket'][zoom >= 19]::amenity {
     point-file: url('symbols/waste_basket.p.16.png');
     point-placement: interior;
@@ -4057,6 +4062,8 @@
   [amenity = 'cafe_yny']::amenity,
   [amenity = 'cafe_yyy']::amenity,
   [amenity = 'vending_machine']::amenity,
+  [amenity = 'vending_excrement']::amenity,
+  [amenity = 'bottle_return']::amenity,
   [amenity = 'fast_food']::amenity,
   [amenity = 'fast_food_burger']::amenity,
   [amenity = 'fast_food_chicken']::amenity,
