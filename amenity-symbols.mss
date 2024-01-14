@@ -184,6 +184,11 @@
     }
   }
 
+  [man_made = 'watermill'][zoom >= 16]::man_made {
+    point-file: url('symbols/watermill.png');
+    point-placement: interior;
+  }
+
   [man_made = 'windmill'][zoom >= 16]::man_made {
     point-file: url('symbols/windmill.png');
     point-placement: interior;
