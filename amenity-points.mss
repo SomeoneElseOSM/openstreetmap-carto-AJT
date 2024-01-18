@@ -4592,7 +4592,14 @@
   [natural = 'intermittentwater']::natural,
   [natural = 'flood_prone']::natural,
   [landuse = 'basin']::landuse {
-    [zoom >= 15] {
+    [way_area >= 800000000][zoom >= 9],
+    [way_area >= 60000000][zoom >= 10],
+    [way_area >= 20000000][zoom >= 11],
+    [way_area >= 6000000][zoom >= 12],
+    [way_area >= 800000][zoom >= 13],
+    [way_area >= 200000][zoom >= 14],
+    [way_area >= 70000][zoom >= 15],
+    [zoom >= 16] {
       text-name: "[name]";
       text-size: 12;
       [zoom >= 20] { text-size: 24; }
