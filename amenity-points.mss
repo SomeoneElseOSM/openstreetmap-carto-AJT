@@ -3056,9 +3056,11 @@
     point-placement: interior;
   }
 
-  [historic = 'battlefield'][zoom >= 16]::historic {
-    point-file: url('symbols/historic_battlefield.png');
-    point-placement: interior;
+  [historic = 'battlefield']::historic {
+    [zoom >= 16] {
+      point-file: url('symbols/historic_battlefield.png');
+      point-placement: interior;
+    }
   }
 
   [historic = 'cannon'][zoom >= 17]::historic {
@@ -3718,7 +3720,7 @@
     [way_area >= 2000][zoom >= 17],
     [way_area >= 1000][zoom >= 18],
     [way_area >= 200][zoom >= 19],
-      [zoom >= 20] {
+    [zoom >= 20] {
       text-name: "[name]";
       text-fill: #000;
       text-size: 9;
@@ -4521,7 +4523,6 @@
   [historic = 'martello_tower'][zoom >= 16]::historic, 
   [historic = 'monastery'][zoom >= 16]::historic, 
   [historic = 'city_gate'][zoom >= 16]::historic, 
-  [historic = 'battlefield'][zoom >= 16]::historic, 
   [historic = 'cannon'][zoom >= 17]::historic, 
   [historic = 'stocks'][zoom >= 17]::historic, 
   [historic = 'well'][zoom >= 17]::historic, 
@@ -4554,6 +4555,23 @@
     text-halo-radius: 1;
     text-wrap-width: 20;
     text-placement: interior;
+  }
+
+  [historic = 'battlefield']::historic {
+    [way_area >= 1700000][zoom >= 13],
+    [way_area >= 1400000][zoom >= 14],
+    [way_area >= 1000000][zoom >= 15],
+    [zoom >= 16] {
+      text-name: "[name]";
+      text-size: 9;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: brown;
+      text-dy: 13;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-wrap-width: 20;
+      text-placement: interior;
+    }
   }
 
   [historic = 'archaeological_site'][zoom >= 17]::historic, 
