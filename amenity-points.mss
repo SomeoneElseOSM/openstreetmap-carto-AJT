@@ -4557,6 +4557,16 @@
     text-placement: interior;
   }
 
+  [historic = 'archaeological_site']::historic, 
+  [historic = 'palaeontological_site']::historic, 
+  [historic = 'historicfortification']::historic, 
+  [historic = 'historicringfort']::historic, 
+  [historic = 'historichillfort']::historic, 
+  [historic = 'historicarchmotte']::historic, 
+  [historic = 'historicarchcastle']::historic, 
+  [historic = 'historicpromontoryfort']::historic, 
+  [historic = 'historiccrannog']::historic, 
+  [historic = 'historictumulus']::historic, 
   [historic = 'battlefield']::historic {
     [way_area >= 1700000][zoom >= 13],
     [way_area >= 1400000][zoom >= 14],
@@ -4574,16 +4584,6 @@
     }
   }
 
-  [historic = 'archaeological_site'][zoom >= 17]::historic, 
-  [historic = 'palaeontological_site'][zoom >= 17]::historic, 
-  [historic = 'historicfortification'][zoom >= 17]::historic, 
-  [historic = 'historicringfort'][zoom >= 17]::historic, 
-  [historic = 'historichillfort'][zoom >= 17]::historic, 
-  [historic = 'historicarchmotte'][zoom >= 17]::historic, 
-  [historic = 'historicarchcastle'][zoom >= 17]::historic, 
-  [historic = 'historicpromontoryfort'][zoom >= 17]::historic, 
-  [historic = 'historiccrannog'][zoom >= 17]::historic, 
-  [historic = 'historictumulus'][zoom >= 17]::historic, 
   [historic = 'aircraft_wreck'][zoom >= 17]::historic, 
   [historic = 'aircraft'][zoom >= 17]::historic, 
   [historic = 'water_pump'][zoom >= 17]::historic, 
