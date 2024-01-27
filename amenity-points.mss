@@ -4711,8 +4711,7 @@
     }
   }
 
-  [landuse = 'cemetery']::landuse,
-  [landuse = 'grave_yard']::landuse  {
+  [landuse = 'cemetery']::landuse {
     [zoom >= 15] {
       text-name: "[name]";
       text-size: 9;

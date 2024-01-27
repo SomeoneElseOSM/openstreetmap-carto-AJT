@@ -46,7 +46,7 @@
 @historic: #f2e9e9;
 @barracks: #ffc7c7;
 @campsite: #ccff99; // also caravan_site, picnic_site
-@cemetery: #aacbaf; // also grave_yard
+@cemetery: #aacbaf;
 @construction: #9d9d6c;
 @danger_area: #fff4f8;
 @desert: #e3b57a;
@@ -128,9 +128,7 @@
     }
   }
 
-  [feature = 'landuse_cemetery'],
-  [feature = 'landuse_grave_yard'],
-  [feature = 'amenity_grave_yard'] {
+  [feature = 'landuse_cemetery'] {
     [zoom >= 10][zoom < 14] {
       polygon-fill: @cemetery;
     }
