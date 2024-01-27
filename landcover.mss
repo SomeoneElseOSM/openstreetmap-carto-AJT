@@ -128,7 +128,8 @@
     }
   }
 
-  [feature = 'landuse_cemetery'] {
+  [feature = 'landuse_cemetery'],
+  [feature = 'landuse_unnamedcemetery'] {
     [zoom >= 10][zoom < 14] {
       polygon-fill: @cemetery;
     }
@@ -139,15 +140,17 @@
     }
   }
 
-  [feature = 'landuse_residential'][zoom >= 10] {
-    polygon-fill: @residential;
-    [zoom >= 16] {
-      line-width: .5;
-      line-color: @residential-line;
-      [name != ''] {
-        line-width: 0.7;
+  [feature = 'landuse_residential'],
+  [feature = 'landuse_unnamedresidential'] {
+    [zoom >= 10] {
+      polygon-fill: @residential;
+      [zoom >= 16] {
+        line-width: .5;
+        line-color: @residential-line;
+        [name != ''] {
+          line-width: 0.7;
+        }
       }
-
     }
   }
 
