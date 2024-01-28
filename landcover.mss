@@ -266,7 +266,8 @@
     }
   }
 
-  [feature = 'natural_wood'] {
+  [feature = 'natural_wood'],
+  [feature = 'natural_unnamedwood'] {
     [zoom >= 9] {
       polygon-fill: @wood;
     }
@@ -279,7 +280,8 @@
     }
   }
 
-  [feature = 'natural_broadleaved'] {
+  [feature = 'natural_broadleaved'],
+  [feature = 'natural_unnamedbroadleaved'] {
     [zoom >= 9] {
       polygon-fill: @wood;
     }
@@ -288,7 +290,8 @@
     }
   }
 
-  [feature = 'natural_needleleaved'] {
+  [feature = 'natural_needleleaved'],
+  [feature = 'natural_unnamedneedleleaved'] {
     [zoom >= 9] {
       polygon-fill: @wood;
     }
@@ -297,7 +300,8 @@
     }
   }
 
-  [feature = 'natural_mixedleaved'] {
+  [feature = 'natural_mixedleaved'],
+  [feature = 'natural_unnamedmixedleaved'] {
     [zoom >= 9] {
       polygon-fill: @wood;
     }
@@ -429,8 +433,11 @@
     polygon-pattern-file: url('symbols/tidal_sand.png');
   }
 
-  [feature = 'natural_heath'][zoom >= 10] {
-    polygon-fill: @heath;
+  [feature = 'natural_heath'],
+  [feature = 'natural_unnamedheath'] {
+    [zoom >= 10] {
+      polygon-fill: @heath;
+    }
   }
 
   [feature = 'natural_grassland'][zoom >= 10] {
