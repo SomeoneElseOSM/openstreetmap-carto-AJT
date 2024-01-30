@@ -5240,7 +5240,6 @@
   [tourism = 'informationboard'][zoom >= 17]::tourism,
   [tourism = 'informationsign'][zoom >= 17]::tourism,
   [tourism = 'militarysign'][zoom >= 17]::tourism,
-  [tourism = 'informationmarker'][zoom >= 17]::tourism,
   [tourism = 'informationroutemarker'][zoom >= 17]::tourism,
   [tourism = 'informationoffice'][zoom >= 17]::tourism,
   [tourism = 'informationplaque'][zoom >= 17]::tourism,
@@ -5250,6 +5249,20 @@
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
+    text-dy: 10;
+    text-fill: #734a08;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-placement: interior;
+  }
+
+  [tourism = 'informationmarker'][zoom >= 17]::tourism {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { 
+      text-size: 18;
+      text-name: "[ele]";
+    }
     text-dy: 10;
     text-fill: #734a08;
     text-face-name: @book-fonts;
