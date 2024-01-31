@@ -5213,7 +5213,6 @@
   }
 
   [tourism = 'aquarium'][zoom >= 17]::tourism,
-  [tourism = 'artwork'][zoom >= 17]::tourism,
   [tourism = 'advertising_column'][zoom >= 17]::tourism,
   [amenity = 'sundial'][zoom >= 17]::amenity, 
   [amenity = 'shopmobility'][zoom >= 17]::amenity, 
@@ -5250,6 +5249,17 @@
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
     text-dy: 10;
+    text-fill: #734a08;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-placement: interior;
+  }
+
+  [tourism = 'artwork'][zoom >= 17]::tourism {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-dy: 20;
     text-fill: #734a08;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
