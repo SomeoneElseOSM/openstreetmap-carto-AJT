@@ -4519,9 +4519,7 @@
   [historic = 'oghamstone'][zoom >= 16]::historic, 
   [historic = 'castle'][zoom >= 16]::historic, 
   [historic = 'folly'][zoom >= 17]::historic, 
-  [historic = 'manor'][zoom >= 16]::historic, 
   [historic = 'martello_tower'][zoom >= 16]::historic, 
-  [historic = 'monastery'][zoom >= 16]::historic, 
   [historic = 'city_gate'][zoom >= 16]::historic, 
   [historic = 'cannon'][zoom >= 17]::historic, 
   [historic = 'stocks'][zoom >= 17]::historic, 
@@ -4536,7 +4534,6 @@
   [historic = 'historicdefensivetower'][zoom >= 16]::historic, 
   [historic = 'historicobservastiontower'][zoom >= 16]::historic, 
   [historic = 'historicchurchtower'][zoom >= 16]::historic, 
-  [historic = 'mineshaft'][zoom >= 17]::historic, 
   [historic = 'ice_house'][zoom >= 17]::historic, 
   [historic = 'kiln'][zoom >= 17]::historic, 
   [historic = 'memorialplate'][zoom >= 17]::historic, 
@@ -4567,10 +4564,14 @@
   [historic = 'historicpromontoryfort']::historic, 
   [historic = 'historiccrannog']::historic, 
   [historic = 'historictumulus']::historic, 
-  [historic = 'battlefield']::historic {
+  [historic = 'manor']::historic, 
+  [historic = 'mineshaft']::historic, 
+  [historic = 'monastery']::historic, 
+  [historic = 'battlefield']::historic,
+  [historic = 'nonspecific']::historic {
     [way_area >= 1700000][zoom >= 13],
-    [way_area >= 1400000][zoom >= 14],
-    [way_area >= 1000000][zoom >= 15],
+    [way_area >= 1100000][zoom >= 14],
+    [way_area >=  530000][zoom >= 15],
     [zoom >= 16] {
       text-name: "[name]";
       text-size: 9;
@@ -4592,8 +4593,7 @@
   [historic = 'mill'][zoom >= 17]::historic, 
   [historic = 'tank'][zoom >= 17]::historic, 
   [historic = 'ship'][zoom >= 17]::historic, 
-  [historic = 'wreck'][zoom >= 17]::historic, 
-  [historic = 'nonspecific'][zoom >= 17]::historic {
+  [historic = 'wreck'][zoom >= 17]::historic {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
