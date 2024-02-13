@@ -5121,7 +5121,12 @@
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 9;
-      [zoom >= 20] { text-size: 18; }
+      [zoom >= 20] { 
+        text-size: 18;
+      }
+      [zoom >= 21] { 
+        text-name: "[ele]";
+      }
       text-fill: @transportation-text;
       text-dy: 9;
       text-face-name: @book-fonts;
