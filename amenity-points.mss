@@ -197,14 +197,43 @@
     point-placement: interior;
   }
 
-  [amenity = 'bus_stop']::amenity,
-  [highway = 'bus_stop']::highway {
+  [highway = 'bus_stop_nothing']::highway {
     [zoom >= 16] {
       point-file: url('symbols/bus_stop_small.png');
       point-placement: interior;
     }
     [zoom >= 17] {
-      point-file: url('symbols/bus_stop.p.12.png');
+      point-file: url('symbols/bus_stop_nothing.png');
+    }
+  }
+
+  [highway = 'bus_stop_pole']::highway {
+    [zoom >= 16] {
+      point-file: url('symbols/bus_stop_small.png');
+      point-placement: interior;
+    }
+    [zoom >= 17] {
+      point-file: url('symbols/bus_stop_pole.png');
+    }
+  }
+
+  [highway = 'bus_stop_timetable']::highway {
+    [zoom >= 16] {
+      point-file: url('symbols/bus_stop_small.png');
+      point-placement: interior;
+    }
+    [zoom >= 17] {
+      point-file: url('symbols/bus_stop_timetable.png');
+    }
+  }
+
+  [highway = 'bus_stop_realtime']::highway {
+    [zoom >= 16] {
+      point-file: url('symbols/bus_stop_small.png');
+      point-placement: interior;
+    }
+    [zoom >= 17] {
+      point-file: url('symbols/bus_stop_realtime.png');
     }
   }
 
@@ -5117,7 +5146,10 @@
     }
   }
 
-  [highway = 'bus_stop']::highway {
+  [highway = 'bus_stop_nothing']::highway,
+  [highway = 'bus_stop_pole']::highway,
+  [highway = 'bus_stop_timetable']::highway,
+  [highway = 'bus_stop_realtime']::highway {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 9;
