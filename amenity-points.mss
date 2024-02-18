@@ -205,6 +205,9 @@
     [zoom >= 17] {
       point-file: url('symbols/bus_stop_nothing.png');
     }
+    [zoom >= 19] {
+      point-file: url('symbols/bus_stop_nothing_24.png');
+    }
   }
 
   [highway = 'bus_stop_pole']::highway {
@@ -214,6 +217,9 @@
     }
     [zoom >= 17] {
       point-file: url('symbols/bus_stop_pole.png');
+    }
+    [zoom >= 19] {
+      point-file: url('symbols/bus_stop_pole_24.png');
     }
   }
 
@@ -225,6 +231,9 @@
     [zoom >= 17] {
       point-file: url('symbols/bus_stop_timetable.png');
     }
+    [zoom >= 19] {
+      point-file: url('symbols/bus_stop_timetable_24.png');
+    }
   }
 
   [highway = 'bus_stop_realtime']::highway {
@@ -234,6 +243,9 @@
     }
     [zoom >= 17] {
       point-file: url('symbols/bus_stop_realtime.png');
+    }
+    [zoom >= 19] {
+      point-file: url('symbols/bus_stop_realtime_24.png');
     }
   }
 
@@ -245,6 +257,9 @@
     [zoom >= 17] {
       point-file: url('symbols/bus_stop_speech_timetable.png');
     }
+    [zoom >= 19] {
+      point-file: url('symbols/bus_stop_speech_timetable_24.png');
+    }
   }
 
   [highway = 'bus_stop_speech_realtime']::highway {
@@ -254,6 +269,9 @@
     }
     [zoom >= 17] {
       point-file: url('symbols/bus_stop_speech_realtime.png');
+    }
+    [zoom >= 19] {
+      point-file: url('symbols/bus_stop_speech_realtime_24.png');
     }
   }
 
@@ -5175,16 +5193,17 @@
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 9;
-      [zoom >= 20] { 
-        text-size: 18;
-      }
-      [zoom >= 21] { 
-        text-name: "[ele]";
-      }
       text-fill: @transportation-text;
       text-dy: 9;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
+      [zoom >= 19] { 
+        text-size: 18;
+        text-dy: 18;
+      }
+      [zoom >= 21] { 
+        text-name: "[ele]";
+      }
     }
   }
 
