@@ -5507,6 +5507,7 @@
   [barrier  = 'gate_locked'][zoom >= 15]::barrier,
   [barrier  = 'kissing_gate'][zoom >= 15]::barrier,
   [barrier  = 'stile'][zoom >= 15]::barrier,
+  [barrier  = 'dog_gate_stile'][zoom >= 15]::barrier,
   [barrier  = 'horse_stile'][zoom >= 15]::barrier,
   [barrier  = 'cycle_barrier'][zoom >= 15]::barrier,
   [barrier  = 'cattle_grid'][zoom >= 15]::barrier,

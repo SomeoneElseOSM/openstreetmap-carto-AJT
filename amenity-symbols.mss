@@ -313,6 +313,21 @@
     }
   }
 
+  [barrier = 'dog_gate_stile']::barrier {
+    [zoom >= 15] {
+      point-file: url('symbols/dstile.png');
+      point-placement: interior;
+    }
+    [zoom >= 17] {
+      point-file: url('symbols/dstilex2.png');
+      point-placement: interior;
+    }
+    [zoom >= 21] {
+      point-file: url('symbols/dstilex3.png');
+      point-placement: interior;
+    }
+  }
+
   [barrier = 'horse_stile']::barrier {
     [zoom >= 15] {
       point-file: url('symbols/horsestile.png');
