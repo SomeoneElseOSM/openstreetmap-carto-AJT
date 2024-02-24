@@ -196,6 +196,9 @@
 
   [man_made = 'ventilation_shaft'][zoom >= 16]::railway {
     point-file: url('symbols/ventshaft.png');
+    [zoom >= 17] {
+      point-file: url('symbols/ventshaft_17.png');
+    }
     point-placement: interior;
   }
 
