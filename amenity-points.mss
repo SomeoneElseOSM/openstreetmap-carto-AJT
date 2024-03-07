@@ -1132,8 +1132,63 @@
     point-placement: interior;
   }
 
-  [amenity = 'pub_yyyynyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynyd.p.16.png');
+  [amenity = 'pub_yyyynydyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydyd.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydld.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydnd.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynyddg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynyddg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynyddo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynyddo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynyddd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynyddd.p.16.png');
     point-placement: centroid;
   }
 
@@ -3839,7 +3894,18 @@
   [amenity = 'pub_ydddnnnyd']::amenity,
   [amenity = 'pub_ydddnnnyg']::amenity,
   [amenity = 'pub_ydddnnnyo']::amenity,
-  [amenity = 'pub_yyyynyd']::amenity,
+  [amenity = 'pub_yyyynydyg']::amenity,
+  [amenity = 'pub_yyyynydyo']::amenity,
+  [amenity = 'pub_yyyynydyd']::amenity,
+  [amenity = 'pub_yyyynydlg']::amenity,
+  [amenity = 'pub_yyyynydlo']::amenity,
+  [amenity = 'pub_yyyynydld']::amenity,
+  [amenity = 'pub_yyyynydng']::amenity,
+  [amenity = 'pub_yyyynydno']::amenity,
+  [amenity = 'pub_yyyynydnd']::amenity,
+  [amenity = 'pub_yyyynyddg']::amenity,
+  [amenity = 'pub_yyyynyddo']::amenity,
+  [amenity = 'pub_yyyynyddd']::amenity,
   [amenity = 'pub_yyyynnydd']::amenity,
   [amenity = 'pub_yyyynnydg']::amenity,
   [amenity = 'pub_yyyynnydo']::amenity,
