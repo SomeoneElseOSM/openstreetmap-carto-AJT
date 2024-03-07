@@ -1662,8 +1662,18 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddnydn'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnydn.p.16.png');
+  [amenity = 'pub_yyddnydng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnydng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnydno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnydno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnydnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnydnd.p.16.png');
     point-placement: centroid;
   }
 
@@ -4100,7 +4110,9 @@
   [amenity = 'pub_yyddnyddo']::amenity,
   [amenity = 'pub_yyddnyddd']::amenity,
   [amenity = 'pub_yyddnydl']::amenity,
-  [amenity = 'pub_yyddnydn']::amenity,
+  [amenity = 'pub_yyddnydng']::amenity,
+  [amenity = 'pub_yyddnydno']::amenity,
+  [amenity = 'pub_yyddnydnd']::amenity,
   [amenity = 'pub_yyddnydy']::amenity,
   [amenity = 'pub_yyddnnydd']::amenity,
   [amenity = 'pub_yyddnnydg']::amenity,
