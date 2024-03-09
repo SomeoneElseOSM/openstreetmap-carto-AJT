@@ -2311,18 +2311,52 @@
     point-placement: centroid;
   }
 
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub no
+// accommodation yes
+// wheelchair limited
+// beer garden unchecked
   [amenity = 'pub_yyddynyl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynyl.p.16.png');
     point-placement: centroid;
   }
 
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub no
+// accommodation yes
+// wheelchair no
+// beer garden unchecked
   [amenity = 'pub_yyddynyn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynyn.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddynyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddynyd.p.16.png');
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub no
+// accommodation yes
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_yyddynydg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynydg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynydo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynydo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynydd.p.16.png');
     point-placement: centroid;
   }
 
@@ -5244,7 +5278,6 @@
   [amenity = 'pub_yyyynnyyg']::amenity,
   [amenity = 'pub_yyyynnyyo']::amenity,
   [amenity = 'pub_yyyynnyyd']::amenity,
-
   [amenity = 'pub_yyyynnylg']::amenity,
   [amenity = 'pub_yyyynnylo']::amenity,
   [amenity = 'pub_yyyynnyld']::amenity,
@@ -5371,7 +5404,9 @@
   [amenity = 'pub_yyddynyy']::amenity,
   [amenity = 'pub_yyddynyl']::amenity,
   [amenity = 'pub_yyddynyn']::amenity,
-  [amenity = 'pub_yyddynyd']::amenity,
+  [amenity = 'pub_yyddynydg']::amenity,
+  [amenity = 'pub_yyddynydo']::amenity,
+  [amenity = 'pub_yyddynydd']::amenity,
   [amenity = 'pub_yyddynnyg']::amenity,
   [amenity = 'pub_yyddynnyo']::amenity,
   [amenity = 'pub_yyddynnyd']::amenity,
