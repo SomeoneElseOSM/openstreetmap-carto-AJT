@@ -1132,721 +1132,72 @@
     point-placement: interior;
   }
 
-  [amenity = 'pub_yyyynydyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynydyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynydyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynydyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynydyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynydyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynydlg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynydlg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynydlo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynydlo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynydld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynydld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynydng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynydng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynydno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynydno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynydnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynydnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynyddg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynyddg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynyddo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynyddo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynyddd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynyddd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnydd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnydd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnydg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnydg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnydo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnydo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnyld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnyld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnylg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnylg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnylo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnylo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnynd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnynd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnyng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnyng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnyno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnyno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnyyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnyyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnyyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnyyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnyyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnyyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnndd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnndd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnndg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnndg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnndo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnndo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnnld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnnld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnnlg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnnlg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnnlo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnnlo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnnnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnnnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnnng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnnng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnnno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnnno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnnyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnnyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnnyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnnyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyyynnnyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyyynnnyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnydyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnydyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnydyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnydyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnydyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnydyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnydlg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnydlg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnydlo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnydlo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnydld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnydld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnydng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnydng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnydno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnydno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnydnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnydnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnyddg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnyddg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnyddo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnyddo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnyddd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnyddd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnydd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnydd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnydg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnydg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnydo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnydo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnyld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnyld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnylg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnylg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnylo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnylo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnynd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnynd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnyng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnyng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnyno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnyno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnyyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnyyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnyyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnyyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnyyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnyyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnndd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnndd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnndg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnndg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnndo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnndo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnnld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnnld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnnlg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnnlg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnnlo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnnlo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnnnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnnnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnnng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnnng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnnno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnnno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnnyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnnyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnnyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnnyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyydnnnyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyydnnnyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynydd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynydd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynydlg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynydlg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynydlo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynydlo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynydld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynydld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynydng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynydng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynydno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynydno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynydnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynydnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynydy'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynydy.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnydd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnydd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnydg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnydg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnydo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnydo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnyld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnyld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnylg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnylg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnylo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnylo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnynd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnynd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnyng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnyng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnyno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnyno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnyyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnyyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnyyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnyyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnyyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnyyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnndd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnndd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnndg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnndg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnndo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnndo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnnld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnnld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnnlg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnnlg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnnlo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnnlo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnnnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnnnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnnng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnnng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnnno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnnno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnnyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnnyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnnyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnnyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydynnnyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydynnnyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnyddg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnyddg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnyddo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnyddo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnyddd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnyddd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnydl'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnydl.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnydng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnydng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnydno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnydno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnydnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnydnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnydy'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnydy.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnydd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnydd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnydg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnydg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnydo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnydo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnyld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnyld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnylg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnylg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnylo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnylo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnynd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnynd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnyng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnyng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnyno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnyno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnyyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnyyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnyyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnyyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnyyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnyyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnndd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnndd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnndg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnndg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnndo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnndo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnnld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnnld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnnlg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnnlg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnnlo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnnlo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnnnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnnnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnnng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnnng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnnno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnnno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnnyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnnyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnnyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnnyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yyddnnnyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddnnnyo.p.16.png');
-    point-placement: centroid;
-  }
-
+// Pubs
+// pub_123456789
+// 1  ync   open	       open, closed, closed due to covid
+// 2  ynd   real_ale           yes, no, don't know
+// 3  yd    food	       yes, don't know
+// 4  yd    noncarpeted floor  yes, don't know
+// 5  yn    microbrewery       yes, no
+// 6  ynd   micropub	       yes, no, don't know
+// 7  yn    accommodation      yes, no
+// 8  ylnd  wheelchair	       yes, limited, no, don't know
+// 9  god.  beer_garden	       beer garden, outside seating, don't know, unset for unchecked
+
+// open, ale, food, floor, microbrewery yes
+// micropub unchecked because no examples yet
+// accommodation yes
+// wheelchair yes
+// beer garden unchecked
   [amenity = 'pub_yyyyydyy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydyy.p.16.png');
     point-placement: centroid;
   }
 
+// wheelchair limited
   [amenity = 'pub_yyyyydyl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydyl.p.16.png');
     point-placement: centroid;
   }
 
+// wheelchair no
   [amenity = 'pub_yyyyydyn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydyn.p.16.png');
     point-placement: centroid;
   }
 
+// wheelchair don't know
   [amenity = 'pub_yyyyydyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydyd.p.16.png');
     point-placement: centroid;
   }
 
+// open, ale, food, floor, microbrewery yes
+// micropub unchecked because no examples yet
+// accommodation no
+// wheelchair yes
+// beer garden
   [amenity = 'pub_yyyyydnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydnyg.p.16.png');
     point-placement: centroid;
   }
 
+// outside seating
   [amenity = 'pub_yyyyydnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydnyo.p.16.png');
     point-placement: centroid;
   }
 
+// don't know
   [amenity = 'pub_yyyyydnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydnyd.p.16.png');
     point-placement: centroid;
   }
 
+// open, ale, food, floor, microbrewery yes
+// micropub unchecked because no examples yet
+// accommodation no
+// wheelchair limited
   [amenity = 'pub_yyyyydnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydnlg.p.16.png');
     point-placement: centroid;
@@ -1862,11 +1213,20 @@
     point-placement: centroid;
   }
 
+// open, ale, food, floor, microbrewery yes
+// micropub unchecked because no examples yet
+// accommodation no
+// wheelchair no
   [amenity = 'pub_yyyyydnn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydnn.p.16.png');
     point-placement: centroid;
   }
 
+// open, ale, food, floor, microbrewery yes
+// micropub unchecked because no examples yet
+// accommodation no
+// wheelchair don't know
+// beer garden
   [amenity = 'pub_yyyyydndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydndg.p.16.png');
     point-placement: centroid;
@@ -1882,6 +1242,265 @@
     point-placement: centroid;
   }
 
+// open, ale, food, floor yes
+// microbrewery no
+// micropub yes
+// accommodation don't know (no examples yet)
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_yyyynydyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food, floor yes
+// microbrewery no
+// micropub yes
+// accommodation don't know (no examples yet)
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_yyyynydlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food, floor yes
+// microbrewery no
+// micropub yes
+// accommodation don't know (no examples yet)
+// wheelchair no
+// beer garden
+  [amenity = 'pub_yyyynydng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynydnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynydnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food, floor yes
+// microbrewery no
+// micropub yes
+// accommodation don't know (no examples yet)
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_yyyynyddg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynyddg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynyddo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynyddo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynyddd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynyddd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food, floor yes
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_yyyynnyyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnyyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnyyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnyyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnyyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnyyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food, floor yes
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_yyyynnylg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnylg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnylo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnylo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnyld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnyld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food, floor yes
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair no
+// beer garden
+  [amenity = 'pub_yyyynnyng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnyng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnyno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnyno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnynd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnynd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food, floor yes
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_yyyynnydg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnydg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnydo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnydo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnydd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food, floor yes
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_yyyynnnyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnnyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnnyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnnyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnnyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnnyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food, floor yes
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_yyyynnnlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnnlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnnlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnnlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnnld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnnld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food, floor yes
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair no
+// beer garden
+  [amenity = 'pub_yyyynnnng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnnng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnnno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnnno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnnnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnnnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food, floor yes
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_yyyynnndg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnndg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnndo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnndo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyyynnndd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyyynnndd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food yes
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation yes
+// wheelchair yes
+// beer garden unchecked
   [amenity = 'pub_yyydydyy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydyy.p.16.png');
     point-placement: centroid;
@@ -1897,6 +1516,13 @@
     point-placement: centroid;
   }
 
+// open, ale, food yes
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation yes
+// wheelchair don't know
+// beer garden
   [amenity = 'pub_yyydydydg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydydg.p.16.png');
     point-placement: centroid;
@@ -1912,11 +1538,25 @@
     point-placement: centroid;
   }
 
+// open, ale, food yes
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair yes
+// beer garden unchecked
   [amenity = 'pub_yyydydny'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydny.p.16.png');
     point-placement: centroid;
   }
 
+// open, ale, food yes
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair limited
+// beer garden
   [amenity = 'pub_yyydydnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydnlg.p.16.png');
     point-placement: centroid;
@@ -1932,11 +1572,25 @@
     point-placement: centroid;
   }
 
+// open, ale, food yes
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair no
+// beer garden unchecked
   [amenity = 'pub_yyydydnn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydnn.p.16.png');
     point-placement: centroid;
   }
 
+// open, ale, food yes
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair don't know
+// beer garden
   [amenity = 'pub_yyydydndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydndg.p.16.png');
     point-placement: centroid;
@@ -1952,8 +1606,280 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yydyydyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydyydyd.p.16.png');
+// open, ale, food yes
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_yyydnydyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food yes
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_yyydnydlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food yes
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair no
+// beer garden
+  [amenity = 'pub_yyydnydng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnydnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnydnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food yes
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_yyydnyddg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnyddg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnyddo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnyddo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnyddd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnyddd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_yyydnnyyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnyyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnyyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnyyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnyyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnyyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_yyydnnylg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnylg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnylo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnylo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnyld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnyld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair no
+// beer garden
+  [amenity = 'pub_yyydnnyng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnyng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnyno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnyno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnynd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnynd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_yyydnnydg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnydg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnydo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnydo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnydd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_yyydnnnyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnnyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnnyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnnyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnnyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnnyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_yyydnnnlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnnlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnnlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnnlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnnld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnnld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair no
+// beer garden
+  [amenity = 'pub_yyydnnnng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnnng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnnno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnnno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnnnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnnnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale, food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_yyydnnndg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnndg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnndo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnndo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyydnnndd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyydnnndd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery yes
+// micropub don't know
+// accommodation yes
+// wheelchair
+// beer garden unchecked
+  [amenity = 'pub_yydyydyy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydyydyy.p.16.png');
     point-placement: centroid;
   }
 
@@ -1967,26 +1893,32 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yydyydyy'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydyydyy.p.16.png');
+  [amenity = 'pub_yydyydyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydyydyd.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yydyydndg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydyydndg.p.16.png');
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair yes
+// beer garden unchecked
+  [amenity = 'pub_yydyydny'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydyydny.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yydyydndo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydyydndo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yydyydndd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydyydndd.p.16.png');
-    point-placement: centroid;
-  }
-
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair limited
+// beer garden
   [amenity = 'pub_yydyydnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydnlg.p.16.png');
     point-placement: centroid;
@@ -2002,6 +1934,14 @@
     point-placement: centroid;
   }
 
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair no
+// beer garden
   [amenity = 'pub_yydyydnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydnng.p.16.png');
     point-placement: centroid;
@@ -2017,71 +1957,293 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yydyydny'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yydyydny.p.16.png');
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_yydyydndg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydyydndg.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddydddd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddydddd.p.16.png');
+  [amenity = 'pub_yydyydndo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydyydndo.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddydddg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddydddg.p.16.png');
+  [amenity = 'pub_yydyydndd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydyydndd.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddydddo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddydddo.p.16.png');
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair yes
+// beer garden unchecked
+  [amenity = 'pub_yydynydy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynydy.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddyddld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddyddld.p.16.png');
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair limited
+// beer garden 
+  [amenity = 'pub_yydynydlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynydlg.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddyddlg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddyddlg.p.16.png');
+  [amenity = 'pub_yydynydlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynydlo.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddyddlo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddyddlo.p.16.png');
+  [amenity = 'pub_yydynydld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynydld.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddyddnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddyddnd.p.16.png');
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair no
+// beer garden 
+  [amenity = 'pub_yydynydng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynydng.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddyddng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddyddng.p.16.png');
+  [amenity = 'pub_yydynydno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynydno.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddyddno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddyddno.p.16.png');
+  [amenity = 'pub_yydynydnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynydnd.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddyddyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddyddyd.p.16.png');
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair don't know
+// beer garden unchecked
+  [amenity = 'pub_yydynydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynydd.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddyddyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddyddyg.p.16.png');
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_yydynnyyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnyyg.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yyddyddyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddyddyo.p.16.png');
+  [amenity = 'pub_yydynnyyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnyyo.p.16.png');
     point-placement: centroid;
   }
 
+  [amenity = 'pub_yydynnyyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnyyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_yydynnylg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnylg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnylo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnylo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnyld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnyld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair no
+// beer garden
+  [amenity = 'pub_yydynnyng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnyng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnyno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnyno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnynd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnynd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_yydynnydg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnydg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnydo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnydo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnydd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_yydynnnyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnnyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnnyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnnyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnnyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnnyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_yydynnnlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnnlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnnlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnnlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnnld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnnld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair no
+// beer garden
+  [amenity = 'pub_yydynnnng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnnng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnnno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnnno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnnnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnnnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor yes
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_yydynnndg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnndg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnndo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnndo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yydynnndd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yydynnndd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub yes
+// accommodation don't know
+// wheelchair yes
+// beer garden 
   [amenity = 'pub_yyddyydyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyydyg.p.16.png');
     point-placement: centroid;
@@ -2097,21 +2259,430 @@
     point-placement: centroid;
   }
 
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub yes
+// accommodation don't know
+// wheelchair limited
+// beer garden unchecked
   [amenity = 'pub_yyddyydl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyydl.p.16.png');
     point-placement: centroid;
   }
 
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub yes
+// accommodation don't know
+// wheelchair no
+// beer garden unchecked
   [amenity = 'pub_yyddyydn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyydn.p.16.png');
     point-placement: centroid;
   }
 
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub yes
+// accommodation don't know
+// wheelchair don't know
+// beer garden unchecked
   [amenity = 'pub_yyddyydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyydd.p.16.png');
     point-placement: centroid;
   }
 
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub no
+// accommodation yes
+// wheelchair yes
+// beer garden unchecked
+  [amenity = 'pub_yyddynyy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynyy.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynyl'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynyl.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynyn'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynyn.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub no
+// accommodation no
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_yyddynnyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynnyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynnyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynnyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynnyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynnyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub no
+// accommodation no
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_yyddynnlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynnlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynnlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynnlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynnld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynnld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub no
+// accommodation no
+// wheelchair no
+// beer garden
+  [amenity = 'pub_yyddynnng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynnng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynnno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynnno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynnnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynnnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub no
+// accommodation no
+// wheelchair don't know
+// beer garden 
+  [amenity = 'pub_yyddynndg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynndg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynndo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynndo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynndd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynndd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair yes
+// beer garden unchecked
+  [amenity = 'pub_yyddnydy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnydy.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair limited
+// beer garden unchecked
+  [amenity = 'pub_yyddnydl'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnydl.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair no
+// beer garden 
+  [amenity = 'pub_yyddnydng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnydng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnydno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnydno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnydnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnydnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair don't know
+// beer garden 
+  [amenity = 'pub_yyddnyddg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnyddg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnyddo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnyddo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnyddd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnyddd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair yes
+// beer garden 
+  [amenity = 'pub_yyddnnyyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnyyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnyyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnyyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnyyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnyyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair limited
+// beer garden 
+  [amenity = 'pub_yyddnnylg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnylg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnylo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnylo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnyld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnyld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair no
+// beer garden 
+  [amenity = 'pub_yyddnnyng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnyng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnyno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnyno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnynd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnynd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair don't know
+// beer garden 
+  [amenity = 'pub_yyddnnydg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnydg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnydo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnydo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnydd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair yes
+// beer garden 
+  [amenity = 'pub_yyddnnnyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnnyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnnyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnnyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnnyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnnyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair limited
+// beer garden 
+  [amenity = 'pub_yyddnnnlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnnlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnnlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnnlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnnld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnnld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair no
+// beer garden 
+  [amenity = 'pub_yyddnnnng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnnng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnnno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnnno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnnnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnnnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open, ale yes
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair don't know
+// beer garden 
+  [amenity = 'pub_yyddnnndg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnndg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnndo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnndo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddnnndd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddnnndd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale no
+// food yes
+// floor yes
+// microbrewery don't know
+// micropub don't know
+// accommodation don't know
+// wheelchair yes
+// beer garden 
   [amenity = 'pub_ynyydddyg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddyg.p.16.png');
     point-placement: centroid;
@@ -2127,6 +2698,15 @@
     point-placement: centroid;
   }
 
+// open yes
+// ale no
+// food yes
+// floor yes
+// microbrewery don't know
+// micropub don't know
+// accommodation don't know
+// wheelchair limited
+// beer garden 
   [amenity = 'pub_ynyydddlg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddlg.p.16.png');
     point-placement: centroid;
@@ -2142,6 +2722,15 @@
     point-placement: centroid;
   }
 
+// open yes
+// ale no
+// food yes
+// floor yes
+// microbrewery don't know
+// micropub don't know
+// accommodation don't know
+// wheelchair no
+// beer garden 
   [amenity = 'pub_ynyydddng'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddng.p.16.png');
     point-placement: centroid;
@@ -2157,6 +2746,15 @@
     point-placement: centroid;
   }
 
+// open yes
+// ale no
+// food yes
+// floor yes
+// microbrewery don't know
+// micropub don't know
+// accommodation don't know
+// wheelchair don't know
+// beer garden 
   [amenity = 'pub_ynyyddddg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyyddddg.p.16.png');
     point-placement: centroid;
@@ -2172,6 +2770,15 @@
     point-placement: centroid;
   }
 
+// open yes
+// ale no
+// food yes
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation yes
+// wheelchair yes
+// beer garden 
   [amenity = 'pub_ynydddyyg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddyyg.p.16.png');
     point-placement: centroid;
@@ -2187,16 +2794,43 @@
     point-placement: centroid;
   }
 
+// open yes
+// ale no
+// food yes
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation yes
+// wheelchair limited
+// beer garden unchecked
   [amenity = 'pub_ynydddyl'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddyl.p.16.png');
     point-placement: centroid;
   }
 
+// open yes
+// ale no
+// food yes
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation yes
+// wheelchair no
+// beer garden unchecked
   [amenity = 'pub_ynydddyn'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddyn.p.16.png');
     point-placement: centroid;
   }
 
+// open yes
+// ale no
+// food yes
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation yes
+// wheelchair don't know
+// beer garden
   [amenity = 'pub_ynydddydg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddydg.p.16.png');
     point-placement: centroid;
@@ -2212,31 +2846,15 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_ynydddndg'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynydddndg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ynydddndo'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynydddndo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ynydddndd'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynydddndd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ynydddnl'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynydddnl.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ynydddnn'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynydddnn.p.16.png');
-    point-placement: centroid;
-  }
-
+// open yes
+// ale no
+// food yes
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation no
+// wheelchair yes
+// beer garden
   [amenity = 'pub_ynydddnyg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddnyg.p.16.png');
     point-placement: centroid;
@@ -2252,508 +2870,69 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_ydyynddyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyynddyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydyynddyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyynddyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydyynddyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyynddyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydyynddlg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyynddlg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydyynddlo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyynddlo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydyynddld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyynddld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydyynddng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyynddng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydyynddno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyynddno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydyynddnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyynddnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydyyndddg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyyndddg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydyyndddo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyyndddo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydyyndddd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyyndddd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnydy'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnydy.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnydl'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnydl.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnydn'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnydn.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnyddg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnyddg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnyddo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnyddo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnyddd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnyddd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnydg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnydg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnydo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnydo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnydd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnydd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnyl'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnyl.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnyng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnyng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnyno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnyno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnynd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnynd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnyyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnyyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnyyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnyyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnyyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnyyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnndg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnndg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnndo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnndo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnndd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnndd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnnlg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnnlg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnnlo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnnlo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnnld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnnld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnnng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnnng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnnno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnnno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnnnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnnnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnnyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnnyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnnyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnnyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydnnnyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydnnnyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddynyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddynyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddynndyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddynndyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddynndyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddynndyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddynndyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddynndyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddynndlg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddynndlg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddynndlo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddynndlo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddynndld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddynndld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddynndng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddynndng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddynndno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddynndno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddynndnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddynndnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddynnddg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddynnddg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddynnddo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddynnddo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddynnddd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddynnddd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnndd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydyyydd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydyyydd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydyddy'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydyddy.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydyddl'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydyddl.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydyddn'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydyddn.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydydddg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydydddg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydydddo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydydddo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydydydddd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydydydddd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddyydy'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddyydy.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddyydng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddyydng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddyydno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddyydno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yddyydnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yddyydnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddydy'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddydy.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddydndg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddydndg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddydndo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddydndo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddydndd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddydndd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddydnl'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddydnl.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddydnn'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddydnn.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddydnyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddydnyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddydnyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddydnyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddydnyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddydnyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnydd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnydd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnydl'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnydl.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnydn'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnydn.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnydy'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnydy.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnydg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnydg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnydo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnydo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnydd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnydd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnylg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnylg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnylo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnylo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnyld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnyld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnyn'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnyn.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnyyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnyyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnyyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnyyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnyyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnyyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnndd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnndd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnndg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnndg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnndo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnndo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnnld'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnnld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnnlg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnnlg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnnlo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnnlo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnnnd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnnnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnnng'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnnng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnnno'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnnno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnnyd'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnnyd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnnyg'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnnyg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ydddnnnyo'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_ydddnnnyo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yndyddyd'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_yndyddyd.p.16.png');
+// open yes
+// ale no
+// food yes
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation no
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_ynydddnl'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynydddnl.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale no
+// food yes
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation no
+// wheelchair no
+// beer garden
+  [amenity = 'pub_ynydddnn'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynydddnn.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale no
+// food yes
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation no
+// wheelchair no
+// beer garden
+  [amenity = 'pub_ynydddndg'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynydddndg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynydddndo'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynydddndo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynydddndd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynydddndd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale no
+// food don't know
+// floor yes
+// microbrewery don't know
+// micropub don't know
+// accommodation yes
+// wheelchair yes
+// beer garden unchecked
+  [amenity = 'pub_yndyddyy'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_yndyddyy.p.16.png');
     point-placement: centroid;
   }
 
@@ -2767,61 +2946,20 @@
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yndyddyy'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_yndyddyy.p.16.png');
+  [amenity = 'pub_yndyddyd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_yndyddyd.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_yndyddndd'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_yndyddndd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yndyddndg'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_yndyddndg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yndyddndo'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_yndyddndo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yndyddnld'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_yndyddnld.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yndyddnlg'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_yndyddnlg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yndyddnlo'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_yndyddnlo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yndyddnnd'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_yndyddnnd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yndyddnng'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_yndyddnng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yndyddnno'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_yndyddnno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_yndyddnyd'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_yndyddnyd.p.16.png');
-    point-placement: centroid;
-  }
-
+// open yes
+// ale no
+// food don't know
+// floor yes
+// microbrewery don't know
+// micropub don't know
+// accommodation no
+// wheelchair yes
+// beer garden
   [amenity = 'pub_yndyddnyg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnyg.p.16.png');
     point-placement: centroid;
@@ -2832,46 +2970,106 @@
     point-placement: centroid;
   }
 
+  [amenity = 'pub_yndyddnyd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_yndyddnyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale no
+// food don't know
+// floor yes
+// microbrewery don't know
+// micropub don't know
+// accommodation no
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_yndyddnlg'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_yndyddnlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yndyddnlo'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_yndyddnlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yndyddnld'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_yndyddnld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale no
+// food don't know
+// floor yes
+// microbrewery don't know
+// micropub don't know
+// accommodation no
+// wheelchair no
+// beer garden
+  [amenity = 'pub_yndyddnng'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_yndyddnng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yndyddnno'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_yndyddnno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yndyddnnd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_yndyddnnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale no
+// food don't know
+// floor yes
+// microbrewery don't know
+// micropub don't know
+// accommodation no
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_yndyddndg'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_yndyddndg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yndyddndo'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_yndyddndo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yndyddndd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_yndyddndd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale no
+// food don't know
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation yes
+// wheelchair unchecked
+// beer garden unchecked
   [amenity = 'pub_ynddddy'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddy.p.16.png');
     point-placement: centroid;
   }
 
-  [amenity = 'pub_ynddddndg'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynddddndg.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ynddddndo'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynddddndo.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ynddddndd'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynddddndd.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ynddddnl'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynddddnl.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ynddddnng'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynddddnng.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ynddddnno'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynddddnno.p.16.png');
-    point-placement: centroid;
-  }
-
-  [amenity = 'pub_ynddddnnd'][zoom >= 16]::amenity {
-    point-file: url('symbols/pub_ynddddnnd.p.16.png');
-    point-placement: centroid;
-  }
-
+// open yes
+// ale no
+// food don't know
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation no
+// wheelchair yes
+// beer garden
   [amenity = 'pub_ynddddnyg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddnyg.p.16.png');
     point-placement: centroid;
@@ -2887,11 +3085,1020 @@
     point-placement: centroid;
   }
 
+// open yes
+// ale no
+// food don't know
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation no
+// wheelchair limited
+// beer garden unchecked
+  [amenity = 'pub_ynddddnl'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynddddnl.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale no
+// food don't know
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation no
+// wheelchair no
+// beer garden 
+  [amenity = 'pub_ynddddnng'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynddddnng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynddddnno'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynddddnno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynddddnnd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynddddnnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale no
+// food don't know
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation no
+// wheelchair don't know
+// beer garden 
+  [amenity = 'pub_ynddddndg'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynddddndg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynddddndo'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynddddndo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ynddddndd'][zoom >= 16]::amenity {
+    point-file: url('symbols/pub_ynddddndd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor yes
+// microbrewery yes
+// micropub don't know
+// accommodation don't know
+// wheelchair unchecked
+// beer garden unchecked
+  [amenity = 'pub_ydyyydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyyydd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor yes
+// microbrewery no
+// micropub don't know
+// accommodation don't know
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_ydyynddyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyynddyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydyynddyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyynddyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydyynddyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyynddyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor yes
+// microbrewery no
+// micropub don't know
+// accommodation don't know
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_ydyynddlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyynddlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydyynddlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyynddlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydyynddld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyynddld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor yes
+// microbrewery no
+// micropub don't know
+// accommodation don't know
+// wheelchair no
+// beer garden
+  [amenity = 'pub_ydyynddng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyynddng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydyynddno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyynddno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydyynddnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyynddnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor yes
+// microbrewery no
+// micropub don't know
+// accommodation don't know
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_ydyyndddg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyyndddg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydyyndddo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyyndddo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydyyndddd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydyyndddd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation don't know
+// wheelchair yes
+// beer garden unchecked
+  [amenity = 'pub_ydydyddy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydyddy.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation don't know
+// wheelchair limited
+// beer garden unchecked
+  [amenity = 'pub_ydydyddl'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydyddl.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation don't know
+// wheelchair no
+// beer garden unchecked
+  [amenity = 'pub_ydydyddn'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydyddn.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation don't know
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_ydydydddg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydydddg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydydddo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydydddo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydydddd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydydddd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair yes
+// beer garden unchecked
+  [amenity = 'pub_ydydnydy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnydy.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair limited
+// beer garden unchecked
+  [amenity = 'pub_ydydnydl'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnydl.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair no
+// beer garden unchecked
+  [amenity = 'pub_ydydnydn'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnydn.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair don't know
+// beer garden unchecked
+  [amenity = 'pub_ydydnyddg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnyddg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnyddo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnyddo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnyddd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnyddd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_ydydnnyyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnyyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnyyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnyyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnyyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnyyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair limited
+// beer garden unchecked
+  [amenity = 'pub_ydydnnyl'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnyl.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair no
+// beer garden
+  [amenity = 'pub_ydydnnyng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnyng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnyno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnyno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnynd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnynd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_ydydnnydg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnydg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnydo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnydo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnydd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair no
+// beer garden
+  [amenity = 'pub_ydydnnyng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnyng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnyno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnyno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnynd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnynd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation don't know
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_ydydnnnyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnnyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnnyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_ydydnnnlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnnlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnnld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair no
+// beer garden
+  [amenity = 'pub_ydydnnnng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnnno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnnnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnnnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food yes
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_ydydnnndg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnndg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnndo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnndo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydydnnndd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydydnnndd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor yes
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair yes
+// beer garden unchecked
+  [amenity = 'pub_yddyydy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddyydy.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor yes
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_yddyydng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddyydng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yddyydno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddyydno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yddyydnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddyydnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor yes
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair unchecked
+// beer garden unchecked
+  [amenity = 'pub_yddynyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddynyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor yes
+// microbrewery no
+// micropub no
+// accommodation don't know
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_yddynndyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddynndyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yddynndyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddynndyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yddynndyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddynndyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor yes
+// microbrewery no
+// micropub no
+// accommodation don't know
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_yddynndlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddynndlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yddynndlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddynndlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yddynndld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddynndld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor yes
+// microbrewery no
+// micropub no
+// accommodation don't know
+// wheelchair no
+// beer garden
+  [amenity = 'pub_yddynndng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddynndng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yddynndno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddynndno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yddynndnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddynndnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor yes
+// microbrewery no
+// micropub no
+// accommodation don't know
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_yddynnddg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddynnddg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yddynnddo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddynnddo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yddynnddd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yddynnddd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation yes
+// wheelchair unchecked
+// beer garden unchecked
+  [amenity = 'pub_ydddydy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddydy.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_ydddydnyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddydnyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddydnyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddydnyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddydnyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddydnyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair limited
+// beer garden unchecked
+  [amenity = 'pub_ydddydnl'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddydnl.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair no
+// beer garden unchecked
+  [amenity = 'pub_ydddydnn'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddydnn.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery yes
+// micropub don't know
+// accommodation no
+// wheelchair don't know
+// beer garden 
+  [amenity = 'pub_ydddydndg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddydndg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddydndo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddydndo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddydndd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddydndd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair yes
+// beer garden unchecked
+  [amenity = 'pub_ydddnydy'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnydy.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair limited
+// beer garden unchecked
+  [amenity = 'pub_ydddnydl'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnydl.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair no
+// beer garden unchecked
+  [amenity = 'pub_ydddnydn'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnydn.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub yes
+// accommodation don't know
+// wheelchair don't know
+// beer garden unchecked
+  [amenity = 'pub_ydddnydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnydd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair yes
+// beer garden 
+  [amenity = 'pub_ydddnnyyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnyyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnyyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnyyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnyyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnyyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair limited
+// beer garden 
+  [amenity = 'pub_ydddnnylg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnylg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnylo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnylo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnyld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnyld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair no
+// beer garden unchecked
+  [amenity = 'pub_ydddnnyn'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnyn.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation yes
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_ydddnnydg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnydg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnydo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnydo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnydd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnydd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair yes
+// beer garden
+  [amenity = 'pub_ydddnnnyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnnyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnnyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnnyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnnyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnnyd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair limited
+// beer garden
+  [amenity = 'pub_ydddnnnlg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnnlg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnnlo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnnlo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnnld'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnnld.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair no
+// beer garden
+  [amenity = 'pub_ydddnnnng'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnnng.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnnno'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnnno.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnnnd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnnnd.p.16.png');
+    point-placement: centroid;
+  }
+
+// open yes
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery no
+// micropub no
+// accommodation no
+// wheelchair don't know
+// beer garden
+  [amenity = 'pub_ydddnnndg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnndg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnndo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnndo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_ydddnnndd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnndd.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_ydddnnndd.p.16.png');
+    point-placement: centroid;
+  }
+
+// closed due to covid
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation don't know
+// wheelchair don't know
+// beer garden unchecked
   [amenity = 'pub_cddddddd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_cddddddd.p.16.png');
     point-placement: centroid;
   }
 
+// closed 
+// ale don't know
+// food don't know
+// floor don't know
+// microbrewery don't know
+// micropub don't know
+// accommodation don't know
+// wheelchair don't know
+// beer garden unchecked
   [amenity = 'pub_nddddddd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_nddddddd.p.16.png');
     point-placement: centroid;
@@ -4008,178 +5215,6 @@
     }
   }
 
-  [amenity = 'pub']::amenity,
-  [amenity = 'pub_ydddydy']::amenity,
-  [amenity = 'pub_ydddydndg']::amenity,
-  [amenity = 'pub_ydddydndo']::amenity,
-  [amenity = 'pub_ydddydndd']::amenity,
-  [amenity = 'pub_ydddydnl']::amenity,
-  [amenity = 'pub_ydddydnn']::amenity,
-  [amenity = 'pub_ydddydnyg']::amenity,
-  [amenity = 'pub_ydddydnyo']::amenity,
-  [amenity = 'pub_ydddydnyd']::amenity,
-  [amenity = 'pub_ydddnydd']::amenity,
-  [amenity = 'pub_ydddnydl']::amenity,
-  [amenity = 'pub_ydddnydn']::amenity,
-  [amenity = 'pub_ydddnydy']::amenity,
-  [amenity = 'pub_ydddnnydg']::amenity,
-  [amenity = 'pub_ydddnnydo']::amenity,
-  [amenity = 'pub_ydddnnydd']::amenity,
-  [amenity = 'pub_ydddnnylg']::amenity,
-  [amenity = 'pub_ydddnnylo']::amenity,
-  [amenity = 'pub_ydddnnyld']::amenity,
-  [amenity = 'pub_ydddnnyn']::amenity,
-  [amenity = 'pub_ydddnnyyg']::amenity,
-  [amenity = 'pub_ydddnnyyo']::amenity,
-  [amenity = 'pub_ydddnnyyd']::amenity,
-  [amenity = 'pub_ydddnnndd']::amenity,
-  [amenity = 'pub_ydddnnndg']::amenity,
-  [amenity = 'pub_ydddnnndo']::amenity,
-  [amenity = 'pub_ydddnnnld']::amenity,
-  [amenity = 'pub_ydddnnnlg']::amenity,
-  [amenity = 'pub_ydddnnnlo']::amenity,
-  [amenity = 'pub_ydddnnnnd']::amenity,
-  [amenity = 'pub_ydddnnnng']::amenity,
-  [amenity = 'pub_ydddnnnno']::amenity,
-  [amenity = 'pub_ydddnnnyd']::amenity,
-  [amenity = 'pub_ydddnnnyg']::amenity,
-  [amenity = 'pub_ydddnnnyo']::amenity,
-  [amenity = 'pub_yyyynydyg']::amenity,
-  [amenity = 'pub_yyyynydyo']::amenity,
-  [amenity = 'pub_yyyynydyd']::amenity,
-  [amenity = 'pub_yyyynydlg']::amenity,
-  [amenity = 'pub_yyyynydlo']::amenity,
-  [amenity = 'pub_yyyynydld']::amenity,
-  [amenity = 'pub_yyyynydng']::amenity,
-  [amenity = 'pub_yyyynydno']::amenity,
-  [amenity = 'pub_yyyynydnd']::amenity,
-  [amenity = 'pub_yyyynyddg']::amenity,
-  [amenity = 'pub_yyyynyddo']::amenity,
-  [amenity = 'pub_yyyynyddd']::amenity,
-  [amenity = 'pub_yyyynnydd']::amenity,
-  [amenity = 'pub_yyyynnydg']::amenity,
-  [amenity = 'pub_yyyynnydo']::amenity,
-  [amenity = 'pub_yyyynnyld']::amenity,
-  [amenity = 'pub_yyyynnylg']::amenity,
-  [amenity = 'pub_yyyynnylo']::amenity,
-  [amenity = 'pub_yyyynnynd']::amenity,
-  [amenity = 'pub_yyyynnyng']::amenity,
-  [amenity = 'pub_yyyynnyno']::amenity,
-  [amenity = 'pub_yyyynnyyd']::amenity,
-  [amenity = 'pub_yyyynnyyg']::amenity,
-  [amenity = 'pub_yyyynnyyo']::amenity,
-  [amenity = 'pub_yyyynnndd']::amenity,
-  [amenity = 'pub_yyyynnndg']::amenity,
-  [amenity = 'pub_yyyynnndo']::amenity,
-  [amenity = 'pub_yyyynnnld']::amenity,
-  [amenity = 'pub_yyyynnnlg']::amenity,
-  [amenity = 'pub_yyyynnnlo']::amenity,
-  [amenity = 'pub_yyyynnnnd']::amenity,
-  [amenity = 'pub_yyyynnnng']::amenity,
-  [amenity = 'pub_yyyynnnno']::amenity,
-  [amenity = 'pub_yyyynnnyd']::amenity,
-  [amenity = 'pub_yyyynnnyg']::amenity,
-  [amenity = 'pub_yyyynnnyo']::amenity,
-  [amenity = 'pub_yyydnydyg']::amenity,
-  [amenity = 'pub_yyydnydyo']::amenity,
-  [amenity = 'pub_yyydnydyd']::amenity,
-  [amenity = 'pub_yyydnydlg']::amenity,
-  [amenity = 'pub_yyydnydlo']::amenity,
-  [amenity = 'pub_yyydnydld']::amenity,
-  [amenity = 'pub_yyydnydng']::amenity,
-  [amenity = 'pub_yyydnydno']::amenity,
-  [amenity = 'pub_yyydnydnd']::amenity,
-  [amenity = 'pub_yyydnyddg']::amenity,
-  [amenity = 'pub_yyydnyddo']::amenity,
-  [amenity = 'pub_yyydnyddd']::amenity,
-  [amenity = 'pub_yyydnnydd']::amenity,
-  [amenity = 'pub_yyydnnydg']::amenity,
-  [amenity = 'pub_yyydnnydo']::amenity,
-  [amenity = 'pub_yyydnnyld']::amenity,
-  [amenity = 'pub_yyydnnylg']::amenity,
-  [amenity = 'pub_yyydnnylo']::amenity,
-  [amenity = 'pub_yyydnnynd']::amenity,
-  [amenity = 'pub_yyydnnyng']::amenity,
-  [amenity = 'pub_yyydnnyno']::amenity,
-  [amenity = 'pub_yyydnnyyd']::amenity,
-  [amenity = 'pub_yyydnnyyg']::amenity,
-  [amenity = 'pub_yyydnnyyo']::amenity,
-  [amenity = 'pub_yyydnnndd']::amenity,
-  [amenity = 'pub_yyydnnndg']::amenity,
-  [amenity = 'pub_yyydnnndo']::amenity,
-  [amenity = 'pub_yyydnnnld']::amenity,
-  [amenity = 'pub_yyydnnnlg']::amenity,
-  [amenity = 'pub_yyydnnnlo']::amenity,
-  [amenity = 'pub_yyydnnnnd']::amenity,
-  [amenity = 'pub_yyydnnnng']::amenity,
-  [amenity = 'pub_yyydnnnno']::amenity,
-  [amenity = 'pub_yyydnnnyd']::amenity,
-  [amenity = 'pub_yyydnnnyg']::amenity,
-  [amenity = 'pub_yyydnnnyo']::amenity,
-  [amenity = 'pub_yydynydd']::amenity,
-  [amenity = 'pub_yydynydlg']::amenity,
-  [amenity = 'pub_yydynydlo']::amenity,
-  [amenity = 'pub_yydynydld']::amenity,
-  [amenity = 'pub_yydynydng']::amenity,
-  [amenity = 'pub_yydynydno']::amenity,
-  [amenity = 'pub_yydynydnd']::amenity,
-  [amenity = 'pub_yydynydy']::amenity,
-  [amenity = 'pub_yydynnydd']::amenity,
-  [amenity = 'pub_yydynnydg']::amenity,
-  [amenity = 'pub_yydynnydo']::amenity,
-  [amenity = 'pub_yydynnyld']::amenity,
-  [amenity = 'pub_yydynnylg']::amenity,
-  [amenity = 'pub_yydynnylo']::amenity,
-  [amenity = 'pub_yydynnynd']::amenity,
-  [amenity = 'pub_yydynnyng']::amenity,
-  [amenity = 'pub_yydynnyno']::amenity,
-  [amenity = 'pub_yydynnyyd']::amenity,
-  [amenity = 'pub_yydynnyyg']::amenity,
-  [amenity = 'pub_yydynnyyo']::amenity,
-  [amenity = 'pub_yydynnndd']::amenity,
-  [amenity = 'pub_yydynnndg']::amenity,
-  [amenity = 'pub_yydynnndo']::amenity,
-  [amenity = 'pub_yydynnnld']::amenity,
-  [amenity = 'pub_yydynnnlg']::amenity,
-  [amenity = 'pub_yydynnnlo']::amenity,
-  [amenity = 'pub_yydynnnnd']::amenity,
-  [amenity = 'pub_yydynnnng']::amenity,
-  [amenity = 'pub_yydynnnno']::amenity,
-  [amenity = 'pub_yydynnnyd']::amenity,
-  [amenity = 'pub_yydynnnyg']::amenity,
-  [amenity = 'pub_yydynnnyo']::amenity,
-  [amenity = 'pub_yyddnyddg']::amenity,
-  [amenity = 'pub_yyddnyddo']::amenity,
-  [amenity = 'pub_yyddnyddd']::amenity,
-  [amenity = 'pub_yyddnydl']::amenity,
-  [amenity = 'pub_yyddnydng']::amenity,
-  [amenity = 'pub_yyddnydno']::amenity,
-  [amenity = 'pub_yyddnydnd']::amenity,
-  [amenity = 'pub_yyddnydy']::amenity,
-  [amenity = 'pub_yyddnnydd']::amenity,
-  [amenity = 'pub_yyddnnydg']::amenity,
-  [amenity = 'pub_yyddnnydo']::amenity,
-  [amenity = 'pub_yyddnnyld']::amenity,
-  [amenity = 'pub_yyddnnylg']::amenity,
-  [amenity = 'pub_yyddnnylo']::amenity,
-  [amenity = 'pub_yyddnnynd']::amenity,
-  [amenity = 'pub_yyddnnyng']::amenity,
-  [amenity = 'pub_yyddnnyno']::amenity,
-  [amenity = 'pub_yyddnnyyd']::amenity,
-  [amenity = 'pub_yyddnnyyg']::amenity,
-  [amenity = 'pub_yyddnnyyo']::amenity,
-  [amenity = 'pub_yyddnnndd']::amenity,
-  [amenity = 'pub_yyddnnndg']::amenity,
-  [amenity = 'pub_yyddnnndo']::amenity,
-  [amenity = 'pub_yyddnnnld']::amenity,
-  [amenity = 'pub_yyddnnnlg']::amenity,
-  [amenity = 'pub_yyddnnnlo']::amenity,
-  [amenity = 'pub_yyddnnnnd']::amenity,
-  [amenity = 'pub_yyddnnnng']::amenity,
-  [amenity = 'pub_yyddnnnno']::amenity,
-  [amenity = 'pub_yyddnnnyd']::amenity,
-  [amenity = 'pub_yyddnnnyg']::amenity,
-  [amenity = 'pub_yyddnnnyo']::amenity,
   [amenity = 'pub_yyyyydyy']::amenity,
   [amenity = 'pub_yyyyydyl']::amenity,
   [amenity = 'pub_yyyyydyn']::amenity,
@@ -4194,6 +5229,43 @@
   [amenity = 'pub_yyyyydndg']::amenity,
   [amenity = 'pub_yyyyydndo']::amenity,
   [amenity = 'pub_yyyyydndd']::amenity,
+  [amenity = 'pub_yyyynydyg']::amenity,
+  [amenity = 'pub_yyyynydyo']::amenity,
+  [amenity = 'pub_yyyynydyd']::amenity,
+  [amenity = 'pub_yyyynydlg']::amenity,
+  [amenity = 'pub_yyyynydlo']::amenity,
+  [amenity = 'pub_yyyynydld']::amenity,
+  [amenity = 'pub_yyyynydng']::amenity,
+  [amenity = 'pub_yyyynydno']::amenity,
+  [amenity = 'pub_yyyynydnd']::amenity,
+  [amenity = 'pub_yyyynyddg']::amenity,
+  [amenity = 'pub_yyyynyddo']::amenity,
+  [amenity = 'pub_yyyynyddd']::amenity,
+  [amenity = 'pub_yyyynnyyg']::amenity,
+  [amenity = 'pub_yyyynnyyo']::amenity,
+  [amenity = 'pub_yyyynnyyd']::amenity,
+
+  [amenity = 'pub_yyyynnylg']::amenity,
+  [amenity = 'pub_yyyynnylo']::amenity,
+  [amenity = 'pub_yyyynnyld']::amenity,
+  [amenity = 'pub_yyyynnyng']::amenity,
+  [amenity = 'pub_yyyynnyno']::amenity,
+  [amenity = 'pub_yyyynnynd']::amenity,
+  [amenity = 'pub_yyyynnydg']::amenity,
+  [amenity = 'pub_yyyynnydo']::amenity,
+  [amenity = 'pub_yyyynnydd']::amenity,
+  [amenity = 'pub_yyyynnnyg']::amenity,
+  [amenity = 'pub_yyyynnnyo']::amenity,
+  [amenity = 'pub_yyyynnnyd']::amenity,
+  [amenity = 'pub_yyyynnnlg']::amenity,
+  [amenity = 'pub_yyyynnnlo']::amenity,
+  [amenity = 'pub_yyyynnnld']::amenity,
+  [amenity = 'pub_yyyynnnng']::amenity,
+  [amenity = 'pub_yyyynnnno']::amenity,
+  [amenity = 'pub_yyyynnnnd']::amenity,
+  [amenity = 'pub_yyyynnndg']::amenity,
+  [amenity = 'pub_yyyynnndo']::amenity,
+  [amenity = 'pub_yyyynnndd']::amenity,
   [amenity = 'pub_yyydydyy']::amenity,
   [amenity = 'pub_yyydydyl']::amenity,
   [amenity = 'pub_yyydydyn']::amenity,
@@ -4208,38 +5280,142 @@
   [amenity = 'pub_yyydydndg']::amenity,
   [amenity = 'pub_yyydydndo']::amenity,
   [amenity = 'pub_yyydydndd']::amenity,
-  [amenity = 'pub_yydyydyd']::amenity,
+  [amenity = 'pub_yyydnydyg']::amenity,
+  [amenity = 'pub_yyydnydyo']::amenity,
+  [amenity = 'pub_yyydnydyd']::amenity,
+  [amenity = 'pub_yyydnydlg']::amenity,
+  [amenity = 'pub_yyydnydlo']::amenity,
+  [amenity = 'pub_yyydnydld']::amenity,
+  [amenity = 'pub_yyydnydng']::amenity,
+  [amenity = 'pub_yyydnydno']::amenity,
+  [amenity = 'pub_yyydnydnd']::amenity,
+  [amenity = 'pub_yyydnyddg']::amenity,
+  [amenity = 'pub_yyydnyddo']::amenity,
+  [amenity = 'pub_yyydnyddd']::amenity,
+  [amenity = 'pub_yyydnnyyg']::amenity,
+  [amenity = 'pub_yyydnnyyo']::amenity,
+  [amenity = 'pub_yyydnnyyd']::amenity,
+  [amenity = 'pub_yyydnnylg']::amenity,
+  [amenity = 'pub_yyydnnylo']::amenity,
+  [amenity = 'pub_yyydnnyld']::amenity,
+  [amenity = 'pub_yyydnnyng']::amenity,
+  [amenity = 'pub_yyydnnyno']::amenity,
+  [amenity = 'pub_yyydnnynd']::amenity,
+  [amenity = 'pub_yyydnnydg']::amenity,
+  [amenity = 'pub_yyydnnydo']::amenity,
+  [amenity = 'pub_yyydnnydd']::amenity,
+  [amenity = 'pub_yyydnnnyg']::amenity,
+  [amenity = 'pub_yyydnnnyo']::amenity,
+  [amenity = 'pub_yyydnnnyd']::amenity,
+  [amenity = 'pub_yyydnnnlg']::amenity,
+  [amenity = 'pub_yyydnnnlo']::amenity,
+  [amenity = 'pub_yyydnnnld']::amenity,
+  [amenity = 'pub_yyydnnnng']::amenity,
+  [amenity = 'pub_yyydnnnno']::amenity,
+  [amenity = 'pub_yyydnnnnd']::amenity,
+  [amenity = 'pub_yyydnnndg']::amenity,
+  [amenity = 'pub_yyydnnndo']::amenity,
+  [amenity = 'pub_yyydnnndd']::amenity,
+  [amenity = 'pub_yydyydyy']::amenity,
   [amenity = 'pub_yydyydyl']::amenity,
   [amenity = 'pub_yydyydyn']::amenity,
-  [amenity = 'pub_yydyydyy']::amenity,
-  [amenity = 'pub_yydyydndg']::amenity,
-  [amenity = 'pub_yydyydndo']::amenity,
-  [amenity = 'pub_yydyydndd']::amenity,
+  [amenity = 'pub_yydyydyd']::amenity,
+  [amenity = 'pub_yydyydny']::amenity,
   [amenity = 'pub_yydyydnlg']::amenity,
   [amenity = 'pub_yydyydnlo']::amenity,
   [amenity = 'pub_yydyydnld']::amenity,
   [amenity = 'pub_yydyydnng']::amenity,
   [amenity = 'pub_yydyydnno']::amenity,
   [amenity = 'pub_yydyydnnd']::amenity,
-  [amenity = 'pub_yydyydny']::amenity,
-  [amenity = 'pub_yyddydddd']::amenity,
-  [amenity = 'pub_yyddydddg']::amenity,
-  [amenity = 'pub_yyddydddo']::amenity,
-  [amenity = 'pub_yyddyddld']::amenity,
-  [amenity = 'pub_yyddyddlg']::amenity,
-  [amenity = 'pub_yyddyddlo']::amenity,
-  [amenity = 'pub_yyddyddnd']::amenity,
-  [amenity = 'pub_yyddyddng']::amenity,
-  [amenity = 'pub_yyddyddno']::amenity,
-  [amenity = 'pub_yyddyddyd']::amenity,
-  [amenity = 'pub_yyddyddyg']::amenity,
-  [amenity = 'pub_yyddyddyo']::amenity,
+  [amenity = 'pub_yydyydndg']::amenity,
+  [amenity = 'pub_yydyydndo']::amenity,
+  [amenity = 'pub_yydyydndd']::amenity,
+  [amenity = 'pub_yydynydy']::amenity,
+  [amenity = 'pub_yydynydlg']::amenity,
+  [amenity = 'pub_yydynydlo']::amenity,
+  [amenity = 'pub_yydynydld']::amenity,
+  [amenity = 'pub_yydynydng']::amenity,
+  [amenity = 'pub_yydynydno']::amenity,
+  [amenity = 'pub_yydynydnd']::amenity,
+  [amenity = 'pub_yydynydd']::amenity,
+  [amenity = 'pub_yydynnyyg']::amenity,
+  [amenity = 'pub_yydynnyyo']::amenity,
+  [amenity = 'pub_yydynnyyd']::amenity,
+  [amenity = 'pub_yydynnylg']::amenity,
+  [amenity = 'pub_yydynnylo']::amenity,
+  [amenity = 'pub_yydynnyld']::amenity,
+  [amenity = 'pub_yydynnyng']::amenity,
+  [amenity = 'pub_yydynnyno']::amenity,
+  [amenity = 'pub_yydynnynd']::amenity,
+  [amenity = 'pub_yydynnydg']::amenity,
+  [amenity = 'pub_yydynnydo']::amenity,
+  [amenity = 'pub_yydynnydd']::amenity,
+  [amenity = 'pub_yydynnnyg']::amenity,
+  [amenity = 'pub_yydynnnyo']::amenity,
+  [amenity = 'pub_yydynnnyd']::amenity,
+  [amenity = 'pub_yydynnnlg']::amenity,
+  [amenity = 'pub_yydynnnlo']::amenity,
+  [amenity = 'pub_yydynnnld']::amenity,
+  [amenity = 'pub_yydynnnng']::amenity,
+  [amenity = 'pub_yydynnnno']::amenity,
+  [amenity = 'pub_yydynnnnd']::amenity,
+  [amenity = 'pub_yydynnndg']::amenity,
+  [amenity = 'pub_yydynnndo']::amenity,
+  [amenity = 'pub_yydynnndd']::amenity,
   [amenity = 'pub_yyddyydyg']::amenity,
   [amenity = 'pub_yyddyydyo']::amenity,
   [amenity = 'pub_yyddyydyd']::amenity,
   [amenity = 'pub_yyddyydl']::amenity,
   [amenity = 'pub_yyddyydn']::amenity,
   [amenity = 'pub_yyddyydd']::amenity,
+  [amenity = 'pub_yyddynyy']::amenity,
+  [amenity = 'pub_yyddynyl']::amenity,
+  [amenity = 'pub_yyddynyn']::amenity,
+  [amenity = 'pub_yyddynyd']::amenity,
+  [amenity = 'pub_yyddynnyg']::amenity,
+  [amenity = 'pub_yyddynnyo']::amenity,
+  [amenity = 'pub_yyddynnyd']::amenity,
+  [amenity = 'pub_yyddynnlg']::amenity,
+  [amenity = 'pub_yyddynnlo']::amenity,
+  [amenity = 'pub_yyddynnld']::amenity,
+  [amenity = 'pub_yyddynnng']::amenity,
+  [amenity = 'pub_yyddynnno']::amenity,
+  [amenity = 'pub_yyddynnnd']::amenity,
+  [amenity = 'pub_yyddynndg']::amenity,
+  [amenity = 'pub_yyddynndo']::amenity,
+  [amenity = 'pub_yyddynndd']::amenity,
+  [amenity = 'pub_yyddnydy']::amenity,
+  [amenity = 'pub_yyddnydl']::amenity,
+  [amenity = 'pub_yyddnydng']::amenity,
+  [amenity = 'pub_yyddnydno']::amenity,
+  [amenity = 'pub_yyddnydnd']::amenity,
+  [amenity = 'pub_yyddnyddg']::amenity,
+  [amenity = 'pub_yyddnyddo']::amenity,
+  [amenity = 'pub_yyddnyddd']::amenity,
+  [amenity = 'pub_yyddnnyyg']::amenity,
+  [amenity = 'pub_yyddnnyyo']::amenity,
+  [amenity = 'pub_yyddnnyyd']::amenity,
+  [amenity = 'pub_yyddnnylg']::amenity,
+  [amenity = 'pub_yyddnnylo']::amenity,
+  [amenity = 'pub_yyddnnyld']::amenity,
+  [amenity = 'pub_yyddnnyng']::amenity,
+  [amenity = 'pub_yyddnnyno']::amenity,
+  [amenity = 'pub_yyddnnynd']::amenity,
+  [amenity = 'pub_yyddnnydg']::amenity,
+  [amenity = 'pub_yyddnnydo']::amenity,
+  [amenity = 'pub_yyddnnydd']::amenity,
+  [amenity = 'pub_yyddnnnyg']::amenity,
+  [amenity = 'pub_yyddnnnyo']::amenity,
+  [amenity = 'pub_yyddnnnyd']::amenity,
+  [amenity = 'pub_yyddnnnlg']::amenity,
+  [amenity = 'pub_yyddnnnlo']::amenity,
+  [amenity = 'pub_yyddnnnld']::amenity,
+  [amenity = 'pub_yyddnnnng']::amenity,
+  [amenity = 'pub_yyddnnnno']::amenity,
+  [amenity = 'pub_yyddnnnnd']::amenity,
+  [amenity = 'pub_yyddnnndg']::amenity,
+  [amenity = 'pub_yyddnnndo']::amenity,
+  [amenity = 'pub_yyddnnndd']::amenity,
   [amenity = 'pub_ynyydddyg']::amenity,
   [amenity = 'pub_ynyydddyo']::amenity,
   [amenity = 'pub_ynyydddyd']::amenity,
@@ -4260,14 +5436,42 @@
   [amenity = 'pub_ynydddydg']::amenity,
   [amenity = 'pub_ynydddydo']::amenity,
   [amenity = 'pub_ynydddydd']::amenity,
-  [amenity = 'pub_ynydddndg']::amenity,
-  [amenity = 'pub_ynydddndo']::amenity,
-  [amenity = 'pub_ynydddndd']::amenity,
-  [amenity = 'pub_ynydddnl']::amenity,
-  [amenity = 'pub_ynydddnn']::amenity,
   [amenity = 'pub_ynydddnyg']::amenity,
   [amenity = 'pub_ynydddnyo']::amenity,
   [amenity = 'pub_ynydddnyd']::amenity,
+  [amenity = 'pub_ynydddnl']::amenity,
+  [amenity = 'pub_ynydddnn']::amenity,
+  [amenity = 'pub_ynydddndg']::amenity,
+  [amenity = 'pub_ynydddndo']::amenity,
+  [amenity = 'pub_ynydddndd']::amenity,
+  [amenity = 'pub_yndyddyy']::amenity,
+  [amenity = 'pub_yndyddyl']::amenity,
+  [amenity = 'pub_yndyddyn']::amenity,
+  [amenity = 'pub_yndyddyd']::amenity,
+  [amenity = 'pub_yndyddnyg']::amenity,
+  [amenity = 'pub_yndyddnyo']::amenity,
+  [amenity = 'pub_yndyddnyd']::amenity,
+  [amenity = 'pub_yndyddnlg']::amenity,
+  [amenity = 'pub_yndyddnlo']::amenity,
+  [amenity = 'pub_yndyddnld']::amenity,
+  [amenity = 'pub_yndyddnng']::amenity,
+  [amenity = 'pub_yndyddnno']::amenity,
+  [amenity = 'pub_yndyddnnd']::amenity,
+  [amenity = 'pub_yndyddndg']::amenity,
+  [amenity = 'pub_yndyddndo']::amenity,
+  [amenity = 'pub_yndyddndd']::amenity,
+  [amenity = 'pub_ynddddy']::amenity,
+  [amenity = 'pub_ynddddnyg']::amenity,
+  [amenity = 'pub_ynddddnyo']::amenity,
+  [amenity = 'pub_ynddddnyd']::amenity,
+  [amenity = 'pub_ynddddnl']::amenity,
+  [amenity = 'pub_ynddddnng']::amenity,
+  [amenity = 'pub_ynddddnno']::amenity,
+  [amenity = 'pub_ynddddnnd']::amenity,
+  [amenity = 'pub_ynddddndg']::amenity,
+  [amenity = 'pub_ynddddndo']::amenity,
+  [amenity = 'pub_ynddddndd']::amenity,
+  [amenity = 'pub_ydyyydd']::amenity,
   [amenity = 'pub_ydyynddyg']::amenity,
   [amenity = 'pub_ydyynddyo']::amenity,
   [amenity = 'pub_ydyynddyd']::amenity,
@@ -4280,35 +5484,45 @@
   [amenity = 'pub_ydyyndddg']::amenity,
   [amenity = 'pub_ydyyndddo']::amenity,
   [amenity = 'pub_ydyyndddd']::amenity,
+  [amenity = 'pub_ydydyddy']::amenity,
+  [amenity = 'pub_ydydyddl']::amenity,
+  [amenity = 'pub_ydydyddn']::amenity,
+  [amenity = 'pub_ydydydddg']::amenity,
+  [amenity = 'pub_ydydydddo']::amenity,
+  [amenity = 'pub_ydydydddd']::amenity,
   [amenity = 'pub_ydydnydy']::amenity,
   [amenity = 'pub_ydydnydl']::amenity,
   [amenity = 'pub_ydydnydn']::amenity,
   [amenity = 'pub_ydydnyddg']::amenity,
   [amenity = 'pub_ydydnyddo']::amenity,
   [amenity = 'pub_ydydnyddd']::amenity,
-  [amenity = 'pub_ydydnnydg']::amenity,
-  [amenity = 'pub_ydydnnydo']::amenity,
-  [amenity = 'pub_ydydnnydd']::amenity,
+  [amenity = 'pub_ydydnnyyg']::amenity,
+  [amenity = 'pub_ydydnnyyo']::amenity,
+  [amenity = 'pub_ydydnnyyd']::amenity,
   [amenity = 'pub_ydydnnyl']::amenity,
   [amenity = 'pub_ydydnnyng']::amenity,
   [amenity = 'pub_ydydnnyno']::amenity,
   [amenity = 'pub_ydydnnynd']::amenity,
-  [amenity = 'pub_ydydnnyyg']::amenity,
-  [amenity = 'pub_ydydnnyyo']::amenity,
-  [amenity = 'pub_ydydnnyyd']::amenity,
-  [amenity = 'pub_ydydnnndg']::amenity,
-  [amenity = 'pub_ydydnnndo']::amenity,
-  [amenity = 'pub_ydydnnndd']::amenity,
+  [amenity = 'pub_ydydnnydg']::amenity,
+  [amenity = 'pub_ydydnnydo']::amenity,
+  [amenity = 'pub_ydydnnydd']::amenity,
+  [amenity = 'pub_ydydnnnyg']::amenity,
+  [amenity = 'pub_ydydnnnyo']::amenity,
+  [amenity = 'pub_ydydnnnyd']::amenity,
   [amenity = 'pub_ydydnnnlg']::amenity,
   [amenity = 'pub_ydydnnnlo']::amenity,
   [amenity = 'pub_ydydnnnld']::amenity,
   [amenity = 'pub_ydydnnnng']::amenity,
   [amenity = 'pub_ydydnnnno']::amenity,
   [amenity = 'pub_ydydnnnnd']::amenity,
-  [amenity = 'pub_ydydnnnyg']::amenity,
-  [amenity = 'pub_ydydnnnyo']::amenity,
-  [amenity = 'pub_ydydnnnyd']::amenity,
-  [amenity = 'pub_yddynydyg']::amenity,
+  [amenity = 'pub_ydydnnndg']::amenity,
+  [amenity = 'pub_ydydnnndo']::amenity,
+  [amenity = 'pub_ydydnnndd']::amenity,
+  [amenity = 'pub_yddyydy']::amenity,
+  [amenity = 'pub_yddyydng']::amenity,
+  [amenity = 'pub_yddyydno']::amenity,
+  [amenity = 'pub_yddyydnd']::amenity,
+  [amenity = 'pub_yddynndyg']::amenity,
   [amenity = 'pub_yddynndyo']::amenity,
   [amenity = 'pub_yddynndyd']::amenity,
   [amenity = 'pub_yddynndlg']::amenity,
@@ -4320,44 +5534,42 @@
   [amenity = 'pub_yddynnddg']::amenity,
   [amenity = 'pub_yddynnddo']::amenity,
   [amenity = 'pub_yddynnddd']::amenity,
-  [amenity = 'pub_ydyyydd']::amenity,
-  [amenity = 'pub_ydydyddy']::amenity,
-  [amenity = 'pub_ydydyddl']::amenity,
-  [amenity = 'pub_ydydyddn']::amenity,
-  [amenity = 'pub_ydydydddg']::amenity,
-  [amenity = 'pub_ydydydddo']::amenity,
-  [amenity = 'pub_ydydydddd']::amenity,
-  [amenity = 'pub_yddyydy']::amenity,
-  [amenity = 'pub_yddyydng']::amenity,
-  [amenity = 'pub_yddyydno']::amenity,
-  [amenity = 'pub_yddyydnd']::amenity,
-  [amenity = 'pub_yndyddyd']::amenity,
-  [amenity = 'pub_yndyddyl']::amenity,
-  [amenity = 'pub_yndyddyn']::amenity,
-  [amenity = 'pub_yndyddyy']::amenity,
-  [amenity = 'pub_yndyddndd']::amenity,
-  [amenity = 'pub_yndyddndg']::amenity,
-  [amenity = 'pub_yndyddndo']::amenity,
-  [amenity = 'pub_yndyddnld']::amenity,
-  [amenity = 'pub_yndyddnlg']::amenity,
-  [amenity = 'pub_yndyddnlo']::amenity,
-  [amenity = 'pub_yndyddnnd']::amenity,
-  [amenity = 'pub_yndyddnng']::amenity,
-  [amenity = 'pub_yndyddnno']::amenity,
-  [amenity = 'pub_yndyddnyd']::amenity,
-  [amenity = 'pub_yndyddnyg']::amenity,
-  [amenity = 'pub_yndyddnyo']::amenity,
-  [amenity = 'pub_ynddddy']::amenity,
-  [amenity = 'pub_ynddddndg']::amenity,
-  [amenity = 'pub_ynddddndo']::amenity,
-  [amenity = 'pub_ynddddndd']::amenity,
-  [amenity = 'pub_ynddddnl']::amenity,
-  [amenity = 'pub_ynddddnng']::amenity,
-  [amenity = 'pub_ynddddnno']::amenity,
-  [amenity = 'pub_ynddddnnd']::amenity,
-  [amenity = 'pub_ynddddnyg']::amenity,
-  [amenity = 'pub_ynddddnyo']::amenity,
-  [amenity = 'pub_ynddddnyd']::amenity,
+  [amenity = 'pub_ydddydy']::amenity,
+  [amenity = 'pub_ydddydnyg']::amenity,
+  [amenity = 'pub_ydddydnyo']::amenity,
+  [amenity = 'pub_ydddydnyd']::amenity,
+  [amenity = 'pub_ydddydnl']::amenity,
+  [amenity = 'pub_ydddydnn']::amenity,
+  [amenity = 'pub_ydddydndg']::amenity,
+  [amenity = 'pub_ydddydndo']::amenity,
+  [amenity = 'pub_ydddydndd']::amenity,
+  [amenity = 'pub_ydddnydy']::amenity,
+  [amenity = 'pub_ydddnydl']::amenity,
+  [amenity = 'pub_ydddnydn']::amenity,
+  [amenity = 'pub_ydddnydd']::amenity,
+  [amenity = 'pub_ydddnnyyg']::amenity,
+  [amenity = 'pub_ydddnnyyo']::amenity,
+  [amenity = 'pub_ydddnnyyd']::amenity,
+  [amenity = 'pub_ydddnnylg']::amenity,
+  [amenity = 'pub_ydddnnylo']::amenity,
+  [amenity = 'pub_ydddnnyld']::amenity,
+  [amenity = 'pub_ydddnnyn']::amenity,
+  [amenity = 'pub_ydddnnydg']::amenity,
+  [amenity = 'pub_ydddnnydo']::amenity,
+  [amenity = 'pub_ydddnnydd']::amenity,
+  [amenity = 'pub_ydddnnnyg']::amenity,
+  [amenity = 'pub_ydddnnnyo']::amenity,
+  [amenity = 'pub_ydddnnnyd']::amenity,
+  [amenity = 'pub_ydddnnnlg']::amenity,
+  [amenity = 'pub_ydddnnnlo']::amenity,
+  [amenity = 'pub_ydddnnnld']::amenity,
+  [amenity = 'pub_ydddnnnng']::amenity,
+  [amenity = 'pub_ydddnnnno']::amenity,
+  [amenity = 'pub_ydddnnnnd']::amenity,
+  [amenity = 'pub_ydddnnndg']::amenity,
+  [amenity = 'pub_ydddnnndo']::amenity,
+  [amenity = 'pub_ydddnnndd']::amenity,
+  [amenity = 'pub']::amenity,
   [amenity = 'pub_cddddddd']::amenity,
   [amenity = 'pub_nddddddd']::amenity,
   [amenity = 'restaurant']::amenity,
