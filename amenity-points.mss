@@ -2305,9 +2305,19 @@
 // micropub no
 // accommodation yes
 // wheelchair yes
-// beer garden unchecked
-  [amenity = 'pub_yyddynyy'][zoom >= 15]::amenity {
-    point-file: url('symbols/pub_yyddynyy.p.16.png');
+// beer garden 
+  [amenity = 'pub_yyddynyyg'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynyyg.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynyyo'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynyyo.p.16.png');
+    point-placement: centroid;
+  }
+
+  [amenity = 'pub_yyddynyyd'][zoom >= 15]::amenity {
+    point-file: url('symbols/pub_yyddynyyd.p.16.png');
     point-placement: centroid;
   }
 
@@ -5401,7 +5411,9 @@
   [amenity = 'pub_yyddyydl']::amenity,
   [amenity = 'pub_yyddyydn']::amenity,
   [amenity = 'pub_yyddyydd']::amenity,
-  [amenity = 'pub_yyddynyy']::amenity,
+  [amenity = 'pub_yyddynyyg']::amenity,
+  [amenity = 'pub_yyddynyyo']::amenity,
+  [amenity = 'pub_yyddynyyd']::amenity,
   [amenity = 'pub_yyddynyl']::amenity,
   [amenity = 'pub_yyddynyn']::amenity,
   [amenity = 'pub_yyddynydg']::amenity,
