@@ -223,6 +223,15 @@
     }
   }
 
+  [highway = 'bus_stop_disused_pole']::highway {
+    [zoom >= 17] {
+      point-file: url('symbols/bus_stop_disused_pole.png');
+    }
+    [zoom >= 19] {
+      point-file: url('symbols/bus_stop_disused_pole_24.png');
+    }
+  }
+
   [highway = 'bus_stop_timetable']::highway {
     [zoom >= 16] {
       point-file: url('symbols/bus_stop_small.png');
@@ -6694,6 +6703,7 @@
 
   [highway = 'bus_stop_nothing']::highway,
   [highway = 'bus_stop_pole']::highway,
+  [highway = 'bus_stop_disused_pole']::highway,
   [highway = 'bus_stop_timetable']::highway,
   [highway = 'bus_stop_realtime']::highway,
   [highway = 'bus_stop_speech_timetable']::highway,
