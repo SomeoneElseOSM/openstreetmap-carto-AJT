@@ -124,6 +124,11 @@
     point-placement: interior;
   }
 
+  [man_made = 'outfall'][zoom >= 17]::man_made {
+    point-file: url('symbols/outfall.png');
+    point-placement: interior;
+  }
+
   [highway = 'milestone'][zoom >= 17]::highway {
     point-file: url('symbols/milestone.png');
     point-placement: interior;
