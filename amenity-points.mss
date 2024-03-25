@@ -5790,12 +5790,27 @@
   }
 
   [man_made = 'cairn']::man_made,
-  [man_made = 'boundary_stone']::man_made,
   [man_made = 'survey_point']::man_made {
     [zoom >= 15] {
       text-name: "[name]";
       text-size: 10;
       [zoom >= 20] { text-size: 18; }
+      text-fill: #734a08;
+      text-dy: 12;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+    }
+  }
+
+  [man_made = 'boundary_stone']::man_made {
+    [zoom >= 15] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] {
+         text-size: 18;
+         text-name: "[ele]";
+      }
       text-fill: #734a08;
       text-dy: 12;
       text-face-name: @book-fonts;
@@ -7037,7 +7052,6 @@
   [barrier  = 'block'][zoom >= 16]::barrier,
   [barrier  = 'door'][zoom >= 19]::barrier,
   [highway  = 'crossing'][zoom >= 17]::highway,
-  [highway  = 'milestone'][zoom >= 17]::highway,
   [highway  = 'mini_roundabout'][zoom >= 15]::highway,
   [highway  = 'traffic_signals'][zoom >= 17]::highway {
     text-name: "[name]";
@@ -7051,6 +7065,20 @@
     text-placement: interior;
   }
 
+  [highway  = 'milestone'][zoom >= 17]::highway {
+    text-name: "[name]";
+    text-size: 9;
+    [zoom >= 20] {
+      text-size: 18; 
+      text-name: "[ele]";
+    }
+    text-fill: #000033;
+    text-dy: 16;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-wrap-width: 12;
+    text-placement: interior;
+  }
 
   [man_made = 'sluice_gate'][zoom >= 15]::man_made {
     text-name: "[name]";
