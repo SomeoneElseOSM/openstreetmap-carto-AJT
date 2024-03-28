@@ -6726,6 +6726,7 @@
     }
   }
 
+  [highway = 'board_realtime']::highway,
   [highway = 'bus_stop_nothing']::highway,
   [highway = 'bus_stop_pole']::highway,
   [highway = 'bus_stop_disused_pole']::highway,
