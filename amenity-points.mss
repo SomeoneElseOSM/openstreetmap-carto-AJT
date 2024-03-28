@@ -197,6 +197,15 @@
     point-placement: interior;
   }
 
+  [highway = 'board_realtime']::highway {
+    [zoom >= 17] {
+      point-file: url('symbols/board_realtime.png');
+    }
+    [zoom >= 19] {
+      point-file: url('symbols/board_realtime_24.png');
+    }
+  }
+
   [highway = 'bus_stop_nothing']::highway {
     [zoom >= 16] {
       point-file: url('symbols/bus_stop_small.png');
