@@ -19,13 +19,15 @@ unzip $UNZIP_OPTS data/simplified-land-polygons-complete-3857.zip simplified-lan
 
 # ne_110m_admin_0_boundary_lines_land
 echo "downloading ne_110m_admin_0_boundary_lines_land..."
-curl -z data/ne_110m_admin_0_boundary_lines_land.zip -L -o data/ne_110m_admin_0_boundary_lines_land.zip https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_boundary_lines_land.zip
+curl -z data/ne_110m_admin_0_boundary_lines_land.zip -L -o data/ne_110m_admin_0_boundary_lines_land.zip https://naciscdn.org/naturalearth/110m/cultural/ne_110m_admin_0_boundary_lines_land.zip
+# https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_boundary_lines_land.zip
 echo "expanding ne_110m_admin_0_boundary_lines_land..."
 unzip $UNZIP_OPTS data/ne_110m_admin_0_boundary_lines_land.zip ne_110m_admin_0_boundary_lines_land.shp ne_110m_admin_0_boundary_lines_land.shx ne_110m_admin_0_boundary_lines_land.prj ne_110m_admin_0_boundary_lines_land.dbf  -d data/ne_110m_admin_0_boundary_lines_land/
 
 # ne_10m_populated_places
 echo "downloading ne_10m_populated_places..."
-curl -z data/ne_10m_populated_places.zip -L -o data/ne_10m_populated_places.zip http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_populated_places.zip
+curl -z data/ne_10m_populated_places.zip -L -o data/ne_10m_populated_places.zip https://naciscdn.org/naturalearth/10m/cultural/ne_10m_populated_places.zip
+# http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_populated_places.zip
 echo "expanding ne_10m_populated_places..."
 unzip $UNZIP_OPTS data/ne_10m_populated_places.zip ne_10m_populated_places.shp ne_10m_populated_places.shx ne_10m_populated_places.prj ne_10m_populated_places.dbf ne_10m_populated_places.cpg  -d data/ne_10m_populated_places/
 
