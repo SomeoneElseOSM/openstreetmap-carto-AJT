@@ -6839,7 +6839,24 @@
     text-placement: interior;
   }
 
-  [tourism = 'aquarium'][zoom >= 17]::tourism,
+  [tourism = 'aquarium']::tourism,
+  [tourism = 'museum']::tourism,
+  [tourism = 'informationoffice']::tourism {
+    [way_area >= 150000][zoom >= 14],
+    [way_area >= 80000][zoom >= 15],
+    [way_area >= 10000][zoom >= 16],
+    [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-dy: 10;
+      text-fill: #734a08;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+    }
+  }
+
   [tourism = 'advertising_column'][zoom >= 17]::tourism,
   [amenity = 'sundial'][zoom >= 17]::amenity, 
   [amenity = 'shopmobility'][zoom >= 17]::amenity, 
@@ -6861,14 +6878,12 @@
   [amenity = 'boothmuseum'][zoom >= 17]::amenity, 
   [amenity = 'boothdisused'][zoom >= 17]::amenity, 
   [amenity = 'public_bookcase'][zoom >= 17]::amenity, 
-  [tourism = 'museum'][zoom >= 17]::tourism,
   [tourism = 'information'][zoom >= 17]::tourism,
   [tourism = 'informationboard'][zoom >= 17]::tourism,
   [tourism = 'informationpublictransport'][zoom >= 17]::tourism,
   [tourism = 'informationsign'][zoom >= 17]::tourism,
   [tourism = 'militarysign'][zoom >= 17]::tourism,
   [tourism = 'informationroutemarker'][zoom >= 17]::tourism,
-  [tourism = 'informationoffice'][zoom >= 17]::tourism,
   [tourism = 'informationplaque'][zoom >= 17]::tourism,
   [tourism = 'informationear'][zoom >= 17]::tourism,
   [tourism = 'informationpnfs'][zoom >= 17]::tourism,
