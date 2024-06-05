@@ -4176,6 +4176,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'boatyard'][zoom >= 17]::amenity {
+    point-file: url('symbols/boatyard.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'tourismstation'][zoom >= 15]::amenity {
     point-file: url('symbols/station.png');
     point-placement: interior;
@@ -6708,6 +6713,18 @@
   [amenity = 'fuel_l']::amenity,
   [amenity = 'fuel_w']::amenity,
   [amenity = 'charging_station']::amenity {
+    [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 9;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: #939;
+      text-dy: 9;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+    }
+  }
+
+  [amenity = 'boatyard']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 9;
