@@ -4478,7 +4478,12 @@
   }
 
   [amenity = 'drinking_water'][zoom >= 17]::amenity {
-    point-file: url('symbols/food_drinkingtap.p.20.png');
+    point-file: url('symbols/tap_drinking.p.20.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'nondrinking_water'][zoom >= 17]::amenity {
+    point-file: url('symbols/tap_nondrinking.p.20.png');
     point-placement: interior;
   }
 
