@@ -7021,7 +7021,8 @@
     text-placement: interior;
   }
 
-  [amenity = 'drinking_water'][zoom >= 17]::amenity {
+  [amenity = 'drinking_water'][zoom >= 17]::amenity,
+  [amenity = 'nondrinking_water'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
