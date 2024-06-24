@@ -5223,6 +5223,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'fire_hydrant'][zoom >= 22]::amenity {
+    point-file: url('symbols/firehydrant.png');
+    point-placement: interior;
+  }
+
   [leisure = 'playground'][zoom >= 17]::leisure {
     point-file: url('symbols/playground.p.20.png');
     point-placement: interior;
