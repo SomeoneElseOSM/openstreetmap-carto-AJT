@@ -436,6 +436,11 @@
     point-placement: interior;
   }
 
+  [tourism = 'camp_pitch'][zoom >= 19]::tourism {
+    point-file: url('symbols/camp_pitch.png');
+    point-placement: interior;
+  }
+
   [highway = 'ford'][zoom >= 16]::highway {
     point-file: url('symbols/transport_ford.p.16.png');
     point-placement: interior;
@@ -6840,6 +6845,17 @@
   }
 
   [tourism = 'camp_site'][zoom >= 17]::tourism {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-fill: #0066ff;
+    text-dy: 15;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-wrap-width: 70;
+  }
+
+  [tourism = 'camp_pitch'][zoom >= 21]::tourism {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
