@@ -519,13 +519,58 @@
     point-placement: interior;
   }
 
+  [tourism = 'tourism_guest_nydn'][zoom >= 17]::tourism {
+    point-file: url('symbols/tourism_guest_nydn.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'tourism_guest_yyyy'][zoom >= 17]::tourism {
+    point-file: url('symbols/tourism_guest_yyyy.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'tourism_guest_yyyn'][zoom >= 17]::tourism {
+    point-file: url('symbols/tourism_guest_yyyn.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'tourism_guest_dynd'][zoom >= 17]::tourism {
+    point-file: url('symbols/tourism_guest_dynd.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'tourism_guest_nynn'][zoom >= 17]::tourism {
+    point-file: url('symbols/tourism_guest_nynn.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'tourism_guest_yddd'][zoom >= 17]::tourism {
+    point-file: url('symbols/tourism_guest_yddd.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'tourism_guest_ynnn'][zoom >= 17]::tourism {
+    point-file: url('symbols/tourism_guest_ynnn.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'tourism_guest_ynyn'][zoom >= 17]::tourism {
+    point-file: url('symbols/tourism_guest_ynyn.png');
+    point-placement: interior;
+  }
+
+  [tourism = 'tourism_guest_yynd'][zoom >= 17]::tourism {
+    point-file: url('symbols/tourism_guest_yynd.png');
+    point-placement: interior;
+  }
+
   [amenity = 'hospital'][zoom >= 15]::amenity {
     point-file: url('symbols/hospital.p.16.png');
     point-placement: interior;
   }
 
   [tourism = 'hostel'][zoom >= 17]::tourism {
-    point-file: url('symbols/hostel.p.20.png');
+    point-file: url('symbols/tourism_guest_yyyy.png');
     point-placement: interior;
   }
 
@@ -6695,23 +6740,22 @@
     }
   }
 
-  [tourism = 'guest_house'][zoom >= 17]::tourism {
+  [tourism = 'guest_house'][zoom >= 17]::tourism,
+  [tourism = 'bed_and_breakfast'][zoom >= 17]::tourism,
+  [tourism = 'tourism_guest_nydn'][zoom >= 17]::tourism,
+  [tourism = 'tourism_guest_yyyy'][zoom >= 17]::tourism,
+  [tourism = 'tourism_guest_yyyn'][zoom >= 17]::tourism,
+  [tourism = 'tourism_guest_dynd'][zoom >= 17]::tourism,
+  [tourism = 'tourism_guest_nynn'][zoom >= 17]::tourism,
+  [tourism = 'tourism_guest_yddd'][zoom >= 17]::tourism,
+  [tourism = 'tourism_guest_ynnn'][zoom >= 17]::tourism,
+  [tourism = 'tourism_guest_ynyn'][zoom >= 17]::tourism,
+  [tourism = 'tourism_guest_yynd'][zoom >= 17]::tourism  {
     text-name: "[name]";
     text-size: 8;
     [zoom >= 20] { text-size: 16; }
     text-fill: #0066ff;
     text-dy: 10;
-    text-face-name: @book-fonts;
-    text-halo-radius: 1;
-    text-placement: interior;
-  }
-
-  [tourism = 'bed_and_breakfast'][zoom >= 17]::tourism {
-    text-name: "[name]";
-    text-size: 8;
-    [zoom >= 20] { text-size: 16; }
-    text-fill: #0066ff;
-    text-dy: 8;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-placement: interior;
