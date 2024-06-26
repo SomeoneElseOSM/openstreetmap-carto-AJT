@@ -320,6 +320,11 @@
     point-placement: centroid;
   }
 
+  [leisure = 'golf_course'][zoom >= 16]::leisure {
+    point-file: url('symbols/leisure_golf.png');
+    point-placement: centroid;
+  }
+
   [leisure = 'leisurenonspecific'][zoom >= 17]::leisure {
     point-file: url('symbols/leisure_nonspecific.p.16.png');
     point-placement: centroid;
@@ -6345,7 +6350,6 @@
   [leisure = 'common']::leisure,
   [leisure = 'garden']::leisure,
   [leisure = 'golfgreen']::leisure,
-  [leisure = 'golf_course']::leisure,
   [leisure = 'nature_reserve']::leisure {
     [way_area >= 150000][zoom >= 14],
     [way_area >= 80000][zoom >= 15],
@@ -6355,6 +6359,24 @@
       text-size: 11;
       [zoom >= 20] { text-size: 22; }
       text-fill: @park-text;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-halo-fill: rgba(255,255,255,0.6);
+      text-wrap-width: @default-wrap-width;
+      text-placement: interior;
+    }
+  }
+
+  [leisure = 'golf_course']::leisure {
+    [way_area >= 150000][zoom >= 14],
+    [way_area >= 80000][zoom >= 15],
+    [way_area >= 20000][zoom >= 16],
+    [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 11;
+      [zoom >= 20] { text-size: 22; }
+      text-fill: @park-text;
+      text-dy: 10;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.6);
