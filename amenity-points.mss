@@ -325,6 +325,11 @@
     point-placement: centroid;
   }
 
+  [leisure = 'sports_centre'][zoom >= 15]::leisure {
+    point-file: url('symbols/leisure_sports_centre.png');
+    point-placement: centroid;
+  }
+
   [leisure = 'leisurenonspecific'][zoom >= 17]::leisure {
     point-file: url('symbols/leisure_nonspecific.p.16.png');
     point-placement: centroid;
@@ -6326,7 +6331,20 @@
     }
   }
 
-  [leisure = 'sports_centre']::leisure,
+  [leisure = 'sports_centre']::leisure {
+    [zoom >= 15] {
+      text-name: "[name]";
+      text-size: 9;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: darken(@stadium, 30%);
+      text-dy: 10;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-wrap-width: @default-wrap-width;
+      text-placement: interior;
+    }
+  }
+
   [leisure = 'stadium']::leisure,
   [leisure = 'track']::leisure,
   [leisure = 'pitch']::leisure {
