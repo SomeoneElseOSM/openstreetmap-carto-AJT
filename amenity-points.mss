@@ -5110,6 +5110,31 @@
     point-placement: interior;
   }
 
+  [shop = 'pet_food'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_pet_food.p.16.png');
+    point-placement: interior;
+  }
+
+  [shop = 'pet_grooming'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_pet_grooming.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'veterinary'][zoom >= 17]::amenity {
+    point-file: url('symbols/veterinary.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'animal_boarding'][zoom >= 17]::amenity {
+    point-file: url('symbols/animal_boarding.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'animal_shelter'][zoom >= 17]::amenity {
+    point-file: url('symbols/animal_shelter.p.16.png');
+    point-placement: interior;
+  }
+
   [shop = 'travel_agent'][zoom >= 17]::shop {
     point-file: url('symbols/travel_agent.p.16.png');
     point-placement: interior;
@@ -7421,6 +7446,11 @@
   [shop = 'gift']::shop,
   [shop = 'laundry']::shop,
   [shop = 'pet']::shop,
+  [shop = 'pet_food']::shop,
+  [shop = 'pet_grooming']::shop,
+  [amenity = 'veterinary']::amenity,
+  [amenity = 'animal_boarding']::amenity,
+  [amenity = 'animal_shelter']::amenity,
   [shop = 'travel_agent']::shop,
   [shop = 'books']::shop,
   [shop = 'stationery']::shop,
