@@ -5215,6 +5215,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'car_rental'][zoom >= 17]::shop {
+    point-file: url('symbols/amenity_car_rental.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'compressed_air'][zoom >= 19]::shop {
     point-file: url('symbols/amenity_compressed_air.png');
     point-placement: interior;
@@ -7418,6 +7423,7 @@
   [shop = 'car_repair']::shop,
   [shop = 'car_parts']::shop,
   [amenity = 'car_wash']::amenity,
+  [amenity = 'car_rental']::amenity,
   [shop = 'bicycle']::shop,
   [shop = 'deli']::shop,
   [shop = 'estate_agent']::shop,
