@@ -867,6 +867,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'waste_disposal'][zoom >= 19]::amenity {
+    point-file: url('symbols/waste_disposal.p.16.png');
+    point-placement: interior;
+  }
+
   [amenity = 'grit_bin'][zoom >= 19]::amenity {
     point-file: url('symbols/grit_bin.p.16.png');
     point-placement: interior;
