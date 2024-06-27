@@ -123,8 +123,13 @@
     point-placement: interior;
   }
 
+  [amenity = 'nightclub'][zoom >=17]::amenity {
+    point-file: url('symbols/nightclub.png');
+    point-placement: interior;
+  }
+
   [amenity = 'concert_hall'][zoom >=17]::amenity {
-    point-file: url('symbols/nightclub.18.svg');
+    point-file: url('symbols/concert_hall.png');
     point-placement: interior;
   }
 
@@ -5840,6 +5845,7 @@
     text-placement: interior;
   }
 
+  [amenity = 'nightclub'][zoom >= 17]::amenity,
   [amenity = 'concert_hall'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
