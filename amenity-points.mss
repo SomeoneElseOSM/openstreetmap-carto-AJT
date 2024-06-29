@@ -5888,13 +5888,28 @@
   }
 
   [amenity = 'library']::amenity,
-  [amenity = 'theatre']::amenity {
+  [amenity = 'theatre']::amenity,
+  [tourism = 'museum']::tourism {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 10;
       [zoom >= 20] { text-size: 18; }
       text-fill: #734a08;
       text-dy: 12;
+      text-face-name: @bold-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+    }
+  }
+
+  [tourism = 'zoo']::tourism,
+  [tourism = 'aquarium']::tourism {
+    [zoom >= 15] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-dy: 10;
+      text-fill: #734a08;
       text-face-name: @bold-fonts;
       text-halo-radius: 1;
       text-placement: interior;
@@ -7007,8 +7022,6 @@
     text-placement: interior;
   }
 
-  [tourism = 'aquarium']::tourism,
-  [tourism = 'museum']::tourism,
   [tourism = 'informationoffice']::tourism {
     [way_area >= 150000][zoom >= 14],
     [way_area >= 80000][zoom >= 15],
@@ -7125,17 +7138,6 @@
     [zoom >= 20] { text-size: 18; }
     text-dy: 10;
     text-fill: #008c27;
-    text-face-name: @book-fonts;
-    text-halo-radius: 1;
-    text-placement: interior;
-  }
-
-  [tourism = 'zoo'][zoom >= 15]::tourism {
-    text-name: "[name]";
-    text-size: 10;
-    [zoom >= 20] { text-size: 18; }
-    text-dy: 10;
-    text-fill: #734a08;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-placement: interior;
