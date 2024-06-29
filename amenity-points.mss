@@ -345,6 +345,11 @@
     point-placement: centroid;
   }
 
+  [leisure = 'bleachers'][zoom >= 17]::leisure {
+    point-file: url('symbols/bleachers.png');
+    point-placement: centroid;
+  }
+
   [leisure = 'fitness_station'][zoom >= 19]::leisure {
     point-file: url('symbols/leisure_fitnessstation.p.16.png');
     point-placement: interior;
@@ -6831,12 +6836,13 @@
 
   [leisure = 'fitness_station'][zoom >= 19]::leisure,
   [leisure = 'bandstand'][zoom >= 17]::leisure,
+  [leisure = 'bleachers'][zoom >= 17]::leisure,
   [leisure = 'leisurenonspecific'][zoom >= 17]::leisure {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
     text-fill: #044704;
-    text-dy: 9;
+    text-dy: 10;
     text-halo-radius: 1;
     text-wrap-width: @default-wrap-width;
     text-placement: interior;
