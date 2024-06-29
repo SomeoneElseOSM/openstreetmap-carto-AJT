@@ -839,6 +839,11 @@
     point-placement: interior;
   }
 
+  [amenity = 'zooenclosure'][zoom >= 17]::amenity {
+    point-file: url('symbols/zooenclosure.png');
+    point-placement: interior;
+  }
+
   [tourism = 'artwork'][zoom >= 17]::tourism {
     point-file: url('symbols/artwork.p16.png');
     [zoom >= 20] {
@@ -5895,7 +5900,8 @@
   [amenity = 'library']::amenity,
   [amenity = 'theatre']::amenity,
   [tourism = 'museum']::tourism,
-  [amenity = 'zooaviary']::amenity {
+  [amenity = 'zooaviary']::amenity,
+  [amenity = 'zooenclosure']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 10;
