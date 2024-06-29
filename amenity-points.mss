@@ -825,12 +825,12 @@
   }
 
   [tourism = 'zoo'][zoom >= 15]::tourism {
-    point-file: url('symbols/historic_nonspecific.p.16.png');
+    point-file: url('symbols/tourism_zoo.png');
     point-placement: interior;
   }
 
   [tourism = 'aquarium'][zoom >= 17]::tourism {
-    point-file: url('symbols/historic_nonspecific.p.16.png');
+    point-file: url('symbols/tourism_aquarium.png');
     point-placement: interior;
   }
 
