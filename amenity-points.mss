@@ -6046,6 +6046,19 @@
     }
   }
 
+  [leisure = 'schoolyard']::leisure {
+    [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: #51504f;
+      text-dy: 12;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-placement: interior;
+    }
+  }
+
   [amenity = 'holy_well']::man_made {
     [zoom >= 14] {
       text-name: "[name]";

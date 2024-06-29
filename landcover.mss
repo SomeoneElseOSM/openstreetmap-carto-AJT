@@ -55,6 +55,7 @@
 @heath: #E6E8C5;
 @parking: #f7efb7;
 @playground: #ccfff1;
+@schoolyard: #f1f1f1;
 @power: #bbb;
 @rest_area: #efc8c8; // also services
 @sand: #ffdf88;
@@ -72,6 +73,12 @@
   [feature = 'leisure_playground'][zoom >= 13] {
     polygon-fill: @playground;
     line-color: saturate(darken(@playground, 60%), 30%);
+    line-width: 0.3;
+  }
+
+  [feature = 'leisure_schoolyard'][zoom >= 13] {
+    polygon-fill: @schoolyard;
+    line-color: saturate(darken(@schoolyard, 60%), 30%);
     line-width: 0.3;
   }
 
