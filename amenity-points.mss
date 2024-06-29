@@ -5359,7 +5359,12 @@
   }
 
   [leisure = 'slipway'][zoom >= 17]::leisure {
-    point-file: url('symbols/transport_slipway.p.20.png');
+    point-file: url('symbols/slipway.p.16.png');
+    point-placement: interior;
+  }
+
+  [amenity = 'waterway_access_point'][zoom >= 17]::amenity {
+    point-file: url('symbols/waterway_access_point.p.16.png');
     point-placement: interior;
   }
 
@@ -6024,6 +6029,7 @@
   [leisure = 'picnic_table']::leisure,
   [amenity = 'bbq']::amenity,
   [leisure = 'slipway']::leisure,
+  [amenity = 'waterway_access_point']::amenity,
   [leisure = 'bird_hide']::leisure,
   [leisure = 'hunting_stand']::leisure,
   [leisure = 'grouse_butt']::leisure,
