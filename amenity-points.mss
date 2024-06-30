@@ -5822,7 +5822,6 @@
       text-face-name: @bold-fonts;
       text-halo-radius: 1;
       text-wrap-width: @default-wrap-width;
-      text-placement: interior;
     }
   }
 
