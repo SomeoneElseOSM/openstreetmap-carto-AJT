@@ -6845,7 +6845,6 @@
     text-dy: 10;
     text-halo-radius: 1;
     text-wrap-width: @default-wrap-width;
-    text-placement: interior;
     text-face-name: @book-fonts;
   }
 
