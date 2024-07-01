@@ -9,143 +9,115 @@
 .points {
   [tourism = 'alpine_hut'][zoom >= 13]::tourism {
     point-file: url('symbols/alpinehut.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'shelter'][zoom >= 16]::amenity {
     point-file: url('symbols/shelter2.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'atm'][zoom >=17]::amenity {
     point-file: url('symbols/atm2.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'bank'][zoom >= 17]::amenity {
     point-file: url('symbols/am_bank_d.png');
-    point-placement: interior;
   }
 
   [amenity = 'bank_l'][zoom >= 17]::amenity {
     point-file: url('symbols/am_bank_l.png');
-    point-placement: interior;
   }
 
   [amenity = 'bank_n'][zoom >= 17]::amenity {
     point-file: url('symbols/am_bank_n.png');
-    point-placement: interior;
   }
 
   [amenity = 'bank_y'][zoom >= 17]::amenity {
     point-file: url('symbols/am_bank_y.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar'][zoom >=17]::amenity,
   [amenity = 'bar_ddd'][zoom >=17]::amenity {
     point-file: url('symbols/am_bar_ddd.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_dld'][zoom >=17]::amenity {
     point-file: url('symbols/am_bar_dld.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_dnd'][zoom >=17]::amenity {
     point-file: url('symbols/am_bar_dnd.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_dyd'][zoom >=17]::amenity {
     point-file: url('symbols/am_bar_dyd.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_ydd'][zoom >= 17]::amenity {
     point-file: url('symbols/am_bar_ydd.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_yld'][zoom >= 17]::amenity {
     point-file: url('symbols/am_bar_yld.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_ynd'][zoom >= 17]::amenity {
     point-file: url('symbols/am_bar_ynd.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_yyd'][zoom >= 17]::amenity {
     point-file: url('symbols/am_bar_yyd.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_ddy'][zoom >=17]::amenity {
     point-file: url('symbols/am_bar_ddy.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_dly'][zoom >=17]::amenity {
     point-file: url('symbols/am_bar_dly.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_dny'][zoom >=17]::amenity {
     point-file: url('symbols/am_bar_dny.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_dyy'][zoom >=17]::amenity {
     point-file: url('symbols/am_bar_dyy.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_ydy'][zoom >= 17]::amenity {
     point-file: url('symbols/am_bar_ydy.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_yly'][zoom >= 17]::amenity {
     point-file: url('symbols/am_bar_yly.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_yny'][zoom >= 17]::amenity {
     point-file: url('symbols/am_bar_yny.png');
-    point-placement: interior;
   }
 
   [amenity = 'bar_yyy'][zoom >= 17]::amenity {
     point-file: url('symbols/am_bar_yyy.png');
-    point-placement: interior;
   }
 
   [amenity = 'nightclub'][zoom >=17]::amenity {
     point-file: url('symbols/nightclub.png');
-    point-placement: interior;
   }
 
   [amenity = 'concert_hall'][zoom >=17]::amenity {
     point-file: url('symbols/concert_hall.png');
-    point-placement: interior;
   }
 
   [amenity = 'taxi'][zoom >= 17]::amenity {
     point-file: url('symbols/taxi_stand.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'taxi_office'][zoom >= 17]::amenity {
     point-file: url('symbols/taxi_office.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'bicycle_rental'][zoom >= 17]::amenity {
     point-file: url('symbols/rental_bicycle.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -153,7 +125,6 @@
 
   [amenity = 'scooter_rental'][zoom >= 17]::amenity {
     point-file: url('symbols/rental_scooter.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -161,7 +132,6 @@
 
   [amenity = 'bicycle_parking'][zoom >= 19]::amenity {
     point-file: url('symbols/bicycle_parking.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -169,7 +139,6 @@
 
   [amenity = 'bicycle_parking_pay'][zoom >= 19]::amenity {
     point-file: url('symbols/bicycle_parking_pay.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -177,7 +146,6 @@
 
   [amenity = 'motorcycle_parking'][zoom >= 19]::amenity {
     point-file: url('symbols/motorcycle_parking.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -185,7 +153,6 @@
 
   [amenity = 'motorcycle_parking_pay'][zoom >= 19]::amenity {
     point-file: url('symbols/motorcycle_parking_pay.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -199,7 +166,6 @@
     [zoom >= 22] {
       point-file: url('symbols/entrancemain_22.png');
     }
-    point-placement: interior;
   }
 
   [highway = 'board_realtime']::highway {
@@ -214,7 +180,6 @@
   [highway = 'bus_stop_nothing']::highway {
     [zoom >= 16] {
       point-file: url('symbols/bus_stop_small.png');
-      point-placement: interior;
     }
     [zoom >= 17] {
       point-file: url('symbols/bus_stop_nothing.png');
@@ -227,7 +192,6 @@
   [highway = 'bus_stop_pole']::highway {
     [zoom >= 16] {
       point-file: url('symbols/bus_stop_small.png');
-      point-placement: interior;
     }
     [zoom >= 17] {
       point-file: url('symbols/bus_stop_pole.png');
@@ -249,7 +213,6 @@
   [highway = 'bus_stop_timetable']::highway {
     [zoom >= 16] {
       point-file: url('symbols/bus_stop_small.png');
-      point-placement: interior;
     }
     [zoom >= 17] {
       point-file: url('symbols/bus_stop_timetable.png');
@@ -262,7 +225,6 @@
   [highway = 'bus_stop_realtime']::highway {
     [zoom >= 16] {
       point-file: url('symbols/bus_stop_small.png');
-      point-placement: interior;
     }
     [zoom >= 17] {
       point-file: url('symbols/bus_stop_realtime.png');
@@ -275,7 +237,6 @@
   [highway = 'bus_stop_speech_timetable']::highway {
     [zoom >= 16] {
       point-file: url('symbols/bus_stop_small.png');
-      point-placement: interior;
     }
     [zoom >= 17] {
       point-file: url('symbols/bus_stop_speech_timetable.png');
@@ -288,7 +249,6 @@
   [highway = 'bus_stop_speech_realtime']::highway {
     [zoom >= 16] {
       point-file: url('symbols/bus_stop_small.png');
-      point-placement: interior;
     }
     [zoom >= 17] {
       point-file: url('symbols/bus_stop_speech_realtime.png');
@@ -300,180 +260,145 @@
 
   [amenity = 'bus_station'][zoom >= 16]::amenity {
     point-file: url('symbols/bus_station.n.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'ferry_terminal']::amenity {
     [zoom >= 16] {
       point-file: url('symbols/bus_stop_small.png');
-      point-placement: interior;
     }
   }
 
   [office = 'nonspecific'][zoom >= 17]::office {
     point-file: url('symbols/office_nonspecific.p.16.png');
-    point-placement: interior;
   }
 
   [office = 'craftbrewery'][zoom >= 17]::office {
     point-file: url('symbols/brewery_craft.p.16.png');
-    point-placement: centroid;
   }
 
   [office = 'craftcider'][zoom >= 17]::office {
     point-file: url('symbols/cider_craft.p.16.png');
-    point-placement: centroid;
   }
 
   [leisure = 'golf_course'][zoom >= 16]::leisure {
     point-file: url('symbols/leisure_golf.png');
-    point-placement: centroid;
   }
 
   [leisure = 'sports_centre'][zoom >= 15]::leisure {
     point-file: url('symbols/leisure_sports_centre.png');
-    point-placement: centroid;
   }
 
   [leisure = 'leisurenonspecific'][zoom >= 17]::leisure {
     point-file: url('symbols/leisure_nonspecific.p.16.png');
-    point-placement: centroid;
   }
 
   [leisure = 'bandstand'][zoom >= 17]::leisure {
     point-file: url('symbols/bandstand.png');
-    point-placement: centroid;
   }
 
   [leisure = 'bleachers'][zoom >= 17]::leisure {
     point-file: url('symbols/bleachers.png');
-    point-placement: centroid;
   }
 
   [leisure = 'fitness_station'][zoom >= 19]::leisure {
     point-file: url('symbols/leisure_fitnessstation.p.16.png');
-    point-placement: interior;
   }
 
   [highway = 'traffic_signals'][zoom >= 17]::highway {
     point-file: url('symbols/traffic_light.png');
-    point-placement: interior;
   }
 
   [highway = 'streetlamp_electric'][zoom >= 19]::highway {
     point-file: url('symbols/streetlamp_electric.png');
-    point-placement: interior;
   }
 
   [highway = 'streetlamp_gas'][zoom >= 19]::highway {
     point-file: url('symbols/streetlamp_gas.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe'][zoom >=17]::amenity,
   [amenity = 'cafe_ddd'][zoom >=17]::amenity {
     point-file: url('symbols/am_cafe_ddd.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_dld'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_dld.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_dnd'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_dnd.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_dyd'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_dyd.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_ydd'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_ydd.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_yld'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_yld.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_ynd'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_ynd.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_yyd'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_yyd.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_ddy'][zoom >=17]::amenity {
     point-file: url('symbols/am_cafe_ddy.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_dly'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_dly.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_dny'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_dny.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_dyy'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_dyy.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_ydy'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_ydy.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_yly'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_yly.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_yny'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_yny.png');
-    point-placement: interior;
   }
 
   [amenity = 'cafe_yyy'][zoom >= 17]::amenity {
     point-file: url('symbols/am_cafe_yyy.png');
-    point-placement: interior;
   }
 
   [tourism = 'camp_site'][zoom >= 16]::tourism {
     point-file: url('symbols/camping.n.16.png');
-    point-placement: interior;
   }
 
   [tourism = 'camp_pitch'][zoom >= 19]::tourism {
     point-file: url('symbols/camp_pitch.png');
-    point-placement: interior;
   }
 
   [highway = 'ford'][zoom >= 16]::highway {
     point-file: url('symbols/transport_ford.p.16.png');
-    point-placement: interior;
   }
 
   [tourism = 'caravan_site'][zoom >= 16]::tourism {
     point-file: url('symbols/caravan_park.p.24.png');
-    point-placement: interior;
   }
 
   [amenity = 'car_sharing'][zoom >= 16]::amenity {
     point-file: url('symbols/car_share.p.16.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -481,325 +406,261 @@
 
   [tourism = 'chalet'][zoom >= 16]::tourism {
     point-file: url('symbols/chalet.p.16.png');
-    point-placement: interior;
   }
 
   [tourism = 'singlechalet'][zoom >= 17]::tourism {
     point-file: url('symbols/chalet.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'cinema'][zoom >= 17]::amenity {
     point-file: url('symbols/cinema.p.24.png');
-    point-placement: interior;
   }
 
   [amenity = 'fire_station'][zoom >= 17]::amenity {
     point-file: url('symbols/firestation.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'lifeboat'][zoom >= 17]::amenity {
     point-file: url('symbols/lifeboat.png');
-    point-placement: interior;
   }
 
   [amenity = 'fuel'][zoom >= 17]::amenity {
     point-file: url('symbols/fuel.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'fuel_e'][zoom >= 17]::amenity {
     point-file: url('symbols/fuel_e.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'fuel_h'][zoom >= 17]::amenity {
     point-file: url('symbols/fuel_h.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'fuel_l'][zoom >= 17]::amenity {
     point-file: url('symbols/fuel_l.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'fuel_w'][zoom >= 17]::amenity {
     point-file: url('symbols/fuel_w.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'charging_station'][zoom >= 17]::amenity {
     point-file: url('symbols/charging_station.png');
-    point-placement: interior;
   }
 
   [tourism = 'guest_house'][zoom >= 17]::tourism {
     point-file: url('symbols/guest_house.p.16.png');
-    point-placement: interior;
   }
 
   [tourism = 'bed_and_breakfast'][zoom >= 17]::tourism {
     point-file: url('symbols/bandb.p.20.png');
-    point-placement: interior;
   }
 
   [tourism = 'tourism_guest_nydn'][zoom >= 17]::tourism {
     point-file: url('symbols/tourism_guest_nydn.png');
-    point-placement: interior;
   }
 
   [tourism = 'tourism_guest_yyyy'][zoom >= 17]::tourism {
     point-file: url('symbols/tourism_guest_yyyy.png');
-    point-placement: interior;
   }
 
   [tourism = 'tourism_guest_yyyn'][zoom >= 17]::tourism {
     point-file: url('symbols/tourism_guest_yyyn.png');
-    point-placement: interior;
   }
 
   [tourism = 'tourism_guest_dynd'][zoom >= 17]::tourism {
     point-file: url('symbols/tourism_guest_dynd.png');
-    point-placement: interior;
   }
 
   [tourism = 'tourism_guest_nynn'][zoom >= 17]::tourism {
     point-file: url('symbols/tourism_guest_nynn.png');
-    point-placement: interior;
   }
 
   [tourism = 'tourism_guest_yddd'][zoom >= 17]::tourism {
     point-file: url('symbols/tourism_guest_yddd.png');
-    point-placement: interior;
   }
 
   [tourism = 'tourism_guest_ynnn'][zoom >= 17]::tourism {
     point-file: url('symbols/tourism_guest_ynnn.png');
-    point-placement: interior;
   }
 
   [tourism = 'tourism_guest_ynyn'][zoom >= 17]::tourism {
     point-file: url('symbols/tourism_guest_ynyn.png');
-    point-placement: interior;
   }
 
   [tourism = 'tourism_guest_yynd'][zoom >= 17]::tourism {
     point-file: url('symbols/tourism_guest_yynd.png');
-    point-placement: interior;
   }
 
   [amenity = 'hospital'][zoom >= 15]::amenity {
     point-file: url('symbols/hospital.p.16.png');
-    point-placement: interior;
   }
 
   [tourism = 'hostel'][zoom >= 17]::tourism {
     point-file: url('symbols/tourism_guest_yyyy.png');
-    point-placement: interior;
   }
 
   [tourism = 'hotel'][zoom >= 17]::tourism {
     point-file: url('symbols/hotel2.p.20.png');
-    point-placement: interior;
   }
 
   [tourism = 'motel'][zoom >= 17]::tourism {
     point-file: url('symbols/motel.p.20.png');
-    point-placement: interior;
   }
 
   [tourism = 'information'][zoom >= 16]::tourism {
     point-file: url('symbols/information.p.16.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationboard'][zoom >= 16]::tourism {
     point-file: url('symbols/informationboard.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationpublictransport'][zoom >= 16]::tourism {
     point-file: url('symbols/informationpublictransport.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationsign'][zoom >= 16]::tourism {
     point-file: url('symbols/informationsign.png');
-    point-placement: interior;
   }
 
   [tourism = 'militarysign'][zoom >= 16]::tourism {
     point-file: url('symbols/militarysign.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationmarker'][zoom >= 16]::tourism {
     point-file: url('symbols/informationmarker.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationroutemarker'][zoom >= 16]::tourism {
     point-file: url('symbols/informationroutemarker.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationoffice'][zoom >= 16]::tourism {
     point-file: url('symbols/informationoffice.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationplaque'][zoom >= 16]::tourism {
     point-file: url('symbols/informationplaque.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationear'][zoom >= 16]::tourism {
     point-file: url('symbols/informationear.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationpnfs'][zoom >= 15]::tourism {
     point-file: url('symbols/informationpnfs.p.16.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationncndudgeon'][zoom >= 15]::tourism {
     point-file: url('symbols/informationncndudgeon.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationncnmccoll'][zoom >= 15]::tourism {
     point-file: url('symbols/informationncnmccoll.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationncnmills'][zoom >= 15]::tourism {
     point-file: url('symbols/informationncnmills.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationncnrowe'][zoom >= 15]::tourism {
     point-file: url('symbols/informationncnrowe.png');
-    point-placement: interior;
   }
 
   [tourism = 'informationncnunknown'][zoom >= 15]::tourism {
     point-file: url('symbols/informationncnunknown.png');
-    point-placement: interior;
   }
 
   [amenity = 'embassy'][zoom >= 17]::amenity {
     point-file: url('symbols/embassy.png');
-    point-placement: interior;
   }
 
   [amenity = 'library'][zoom >= 17]::amenity {
     point-file: url('symbols/library.p.20.png');
-    point-placement: interior;
   }
 
   [amenity = 'courthouse'][zoom > 17]::amenity {
     point-file: url('symbols/amenity_court.p.20.png');
-    point-placement: interior;
   }
 
   [amenity = 'monastery'][zoom > 17]::amenity {
     point-file: url('symbols/amenity_monastery.png');
-    point-placement: interior;
   }
 
   [waterway = 'lock']::waterway,
   [lock = 'yes']::lock {
     [zoom >= 15] {
       point-file: url('symbols/lock_gate.png');
-      point-placement: interior;
     }
   }
 
   [man_made = 'bigmast'][zoom >= 12]::man_made {
     point-file: url('symbols/communications.p.20.png');
-    point-placement: interior;
   }
 
   [man_made = 'mast'][zoom >= 17]::man_made {
     point-file: url('symbols/communications.p.20.png');
-    point-placement: interior;
   }
 
   [man_made = 'bigchimney'][zoom >= 13]::man_made {
     point-file: url('symbols/chimney.p.20.png');
-    point-placement: interior;
   }
 
   [man_made = 'chimney'][zoom >= 15]::man_made {
     point-file: url('symbols/chimney.p.20.png');
-    point-placement: interior;
   }
 
   [man_made = 'illuminationtower'][zoom >= 17]::man_made {
     point-file: url('symbols/illuminationtower.png');
-    point-placement: interior;
   }
 
   [man_made = 'defensivetower'][zoom >= 17]::man_made {
     point-file: url('symbols/defensivetower.png');
-    point-placement: interior;
   }
 
   [man_made = 'observationtower'][zoom >= 17]::man_made {
     point-file: url('symbols/observationtower.png');
-    point-placement: interior;
   }
 
   [man_made = 'bigobservationtower'][zoom >= 14]::man_made {
     point-file: url('symbols/observationtower.png');
-    point-placement: interior;
   }
 
   [man_made = 'clocktower'][zoom >= 17]::man_made {
     point-file: url('symbols/clocktower.png');
-    point-placement: interior;
   }
 
   [man_made = 'clockpedestal'][zoom >= 17]::man_made {
     point-file: url('symbols/clockpedestal.png');
-    point-placement: interior;
   }
 
   [man_made = 'aircraftcontroltower'][zoom >= 17]::man_made {
     point-file: url('symbols/aircraftcontroltower.png');
-    point-placement: interior;
   }
 
   [man_made = 'radartower'][zoom >= 17]::man_made {
     point-file: url('symbols/radartower.png');
-    point-placement: interior;
   }
 
   [man_made = 'squaretower'][zoom >= 17]::man_made {
     point-file: url('symbols/squaretower.png');
-    point-placement: interior;
   }
 
   [man_made = 'churchtower'][zoom >= 17]::man_made {
     point-file: url('symbols/churchtower.png');
-    point-placement: interior;
   }
 
   [man_made = 'churchspire'][zoom >= 17]::man_made {
     point-file: url('symbols/churchspire.png');
-    point-placement: interior;
   }
 
   [man_made = 'militarybunker'][zoom >= 17]::man_made {
     point-file: url('symbols/militarybunker.png');
-    point-placement: interior;
   }
 
   [man_made = 'maypole'][zoom >= 16]::man_made {
     point-file: url('symbols/maypole.png');
-    point-placement: interior;
     [zoom >= 18] {
       point-file: url('symbols/maypole_large.png');
     }
@@ -807,7 +668,6 @@
 
   [man_made = 'flagpole'][zoom >= 16]::man_made {
     point-file: url('symbols/flagpole.png');
-    point-placement: interior;
     [zoom >= 18] {
       point-file: url('symbols/flagpole_large.png');
     }
@@ -815,7 +675,6 @@
 
   [man_made = 'flagpole_red'][zoom >= 15]::man_made {
     point-file: url('symbols/flagpole_red.png');
-    point-placement: interior;
     [zoom >= 18] {
       point-file: url('symbols/flagpole_large_red.png');
     }
@@ -823,7 +682,6 @@
 
   [man_made = 'windsock'][zoom >= 15]::man_made {
     point-file: url('symbols/windsock.png');
-    point-placement: interior;
     [zoom >= 18] {
       point-file: url('symbols/windsock_large.png');
     }
@@ -831,22 +689,18 @@
 
   [tourism = 'zoo'][zoom >= 15]::tourism {
     point-file: url('symbols/tourism_zoo.png');
-    point-placement: interior;
   }
 
   [tourism = 'aquarium'][zoom >= 17]::tourism {
     point-file: url('symbols/tourism_aquarium.png');
-    point-placement: interior;
   }
 
   [amenity = 'zooaviary'][zoom >= 17]::amenity {
     point-file: url('symbols/zooaviary.png');
-    point-placement: interior;
   }
 
   [amenity = 'zooenclosure'][zoom >= 17]::amenity {
     point-file: url('symbols/zooenclosure.png');
-    point-placement: interior;
   }
 
   [tourism = 'artwork'][zoom >= 17]::tourism {
@@ -854,57 +708,46 @@
     [zoom >= 20] {
       point-file: url('symbols/artwork.p24.png');
     }
-    point-placement: interior;
   }
 
   [tourism = 'advertising_column'][zoom >= 17]::tourism {
     point-file: url('symbols/advertising.png');
-    point-placement: interior;
   }
 
   [amenity = 'vending_machine'][zoom >= 19]::amenity {
     point-file: url('symbols/vending.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'vending_excrement'][zoom >= 19]::amenity {
     point-file: url('symbols/vending_excrement.png');
-    point-placement: interior;
   }
 
   [amenity = 'bottle_return'][zoom >= 19]::amenity {
     point-file: url('symbols/bottle_return.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'waste_basket'][zoom >= 19]::amenity {
     point-file: url('symbols/waste_basket.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'waste_disposal'][zoom >= 19]::amenity {
     point-file: url('symbols/waste_disposal.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'grit_bin'][zoom >= 19]::amenity {
     point-file: url('symbols/grit_bin.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'left_luggage'][zoom >= 18]::amenity {
     point-file: url('symbols/left_luggage.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'parcel_locker'][zoom >= 18]::amenity {
     point-file: url('symbols/parcel_locker.p.16.png');
-    point-placement: interior;
   }
 
   [tourism = 'museum'][zoom >= 17]::tourism {
     point-file: url('symbols/museum.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'bench'][zoom >= 17]::amenity {
@@ -915,7 +758,6 @@
     [zoom >= 20] {
       point-file: url('symbols/bench.p21.png');
     }
-    point-placement: interior;
   }
 
   [amenity = 'playground_swing'][zoom >= 18]::amenity {
@@ -926,7 +768,6 @@
     [zoom >= 20] {
       point-file: url('symbols/playground_swing.p21.png');
     }
-    point-placement: interior;
   }
 
   [amenity = 'playground_structure'][zoom >= 18]::amenity {
@@ -937,7 +778,6 @@
     [zoom >= 20] {
       point-file: url('symbols/playground_structure.p21.png');
     }
-    point-placement: interior;
   }
 
   [amenity = 'playground_climbingframe'][zoom >= 18]::amenity {
@@ -948,7 +788,6 @@
     [zoom >= 20] {
       point-file: url('symbols/playground_climbingframe.p21.png');
     }
-    point-placement: interior;
   }
 
   [amenity = 'playground_slide'][zoom >= 18]::amenity {
@@ -959,7 +798,6 @@
     [zoom >= 20] {
       point-file: url('symbols/playground_slide.p21.png');
     }
-    point-placement: interior;
   }
 
   [amenity = 'playground_springy'][zoom >= 18]::amenity {
@@ -970,7 +808,6 @@
     [zoom >= 20] {
       point-file: url('symbols/playground_springy.p21.png');
     }
-    point-placement: interior;
   }
 
   [amenity = 'playground_zipwire'][zoom >= 18]::amenity {
@@ -981,7 +818,6 @@
     [zoom >= 20] {
       point-file: url('symbols/playground_zipwire.p21.png');
     }
-    point-placement: interior;
   }
 
   [amenity = 'playground_seesaw'][zoom >= 18]::amenity {
@@ -992,7 +828,6 @@
     [zoom >= 20] {
       point-file: url('symbols/playground_seesaw.p21.png');
     }
-    point-placement: interior;
   }
 
   [amenity = 'playground_roundabout'][zoom >= 18]::amenity {
@@ -1003,117 +838,94 @@
     [zoom >= 20] {
       point-file: url('symbols/playground_roundabout.p21.png');
     }
-    point-placement: interior;
   }
 
   [amenity = 'pitch_tabletennis'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_tabletennis.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_tennis'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_tennis.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_soccer'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_soccer.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_basketball'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_basketball.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_cricket'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_cricket.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_skateboard'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_skateboard.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_climbing'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_climbing.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_rugby'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_rugby.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_chess'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_chess.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_athletics'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_athletics.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_boules'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_boules.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_bowls'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_bowls.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_croquet'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_croquet.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_cycling'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_cycling.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_equestrian'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_equestrian.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_gaa'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_gaa.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_hockey'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_hockey.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_multi'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_multi.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_netball'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_netball.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_polo'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_polo.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_shooting'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_shooting.png');
-    point-placement: interior;
   }
 
   [amenity = 'pitch_baseball'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_baseball.png');
-    point-placement: interior;
   }
 
   [amenity = 'parking'][zoom >= 13]::amenity {
@@ -1138,52 +950,42 @@
 
   [amenity = 'doctors'][zoom >= 17]::amenity {
     point-file: url('symbols/health_doctors.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'dentist'][zoom >= 17]::amenity {
     point-file: url('symbols/health_dentist.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'pharmacy'][zoom >= 17]::amenity {
     point-file: url('symbols/am_pharmacy_d.png');
-    point-placement: interior;
   }
 
   [amenity = 'pharmacy_l'][zoom >= 17]::amenity {
     point-file: url('symbols/am_pharmacy_l.png');
-    point-placement: interior;
   }
 
   [amenity = 'pharmacy_n'][zoom >= 17]::amenity {
     point-file: url('symbols/am_pharmacy_n.png');
-    point-placement: interior;
   }
 
   [amenity = 'pharmacy_y'][zoom >= 17]::amenity {
     point-file: url('symbols/am_pharmacy_y.png');
-    point-placement: interior;
   }
 
   [amenity = 'ambulance_station'][zoom >= 17]::amenity {
     point-file: url('symbols/health_ambulance.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'mountain_rescue'][zoom >= 17]::amenity {
     point-file: url('symbols/health_mountainrescue.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'mountain_rescue_box'][zoom >= 17]::amenity {
     point-file: url('symbols/health_mountainrescuebox.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'place_of_worship'][zoom >= 16]::amenity {
     point-file: url('symbols/place_of_worship3.p.16.png');
-    point-placement: interior;
     [religion = 'christian'] {
       point-file: url('symbols/christian3.p.14.png');
     }
@@ -1212,32 +1014,26 @@
 
   [amenity = 'holy_spring'][zoom >= 14]::amenity {
     point-file: url('symbols/holy_spring.png');
-    point-placement: interior;
   }
 
   [amenity = 'holy_well'][zoom >= 14]::amenity {
     point-file: url('symbols/holy_well.png');
-    point-placement: interior;
   }
 
   [amenity = 'watering_place'][zoom >= 14]::amenity {
     point-file: url('symbols/wateringplace.png');
-    point-placement: interior;
   }
 
   [amenity = 'police'][zoom >= 17]::amenity {
     point-file: url('symbols/police.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'post_box'][zoom >= 17]::amenity {
     point-file: url('symbols/post_box.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'post_office'][zoom >= 17]::amenity {
     point-file: url('symbols/post_office.p.16.png');
-    point-placement: interior;
   }
 
 // Pubs
@@ -1259,25 +1055,21 @@
 // beer garden unchecked
   [amenity = 'pub_yyyyydyy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydyy.p.16.png');
-    point-placement: centroid;
   }
 
 // wheelchair limited
   [amenity = 'pub_yyyyydyl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydyl.p.16.png');
-    point-placement: centroid;
   }
 
 // wheelchair no
   [amenity = 'pub_yyyyydyn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydyn.p.16.png');
-    point-placement: centroid;
   }
 
 // wheelchair don't know
   [amenity = 'pub_yyyyydyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor, microbrewery yes
@@ -1287,19 +1079,16 @@
 // beer garden
   [amenity = 'pub_yyyyydnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydnyg.p.16.png');
-    point-placement: centroid;
   }
 
 // outside seating
   [amenity = 'pub_yyyyydnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydnyo.p.16.png');
-    point-placement: centroid;
   }
 
 // don't know
   [amenity = 'pub_yyyyydnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydnyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor, microbrewery yes
@@ -1308,17 +1097,14 @@
 // wheelchair limited
   [amenity = 'pub_yyyyydnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydnlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyyydnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydnlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyyydnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydnld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor, microbrewery yes
@@ -1327,7 +1113,6 @@
 // wheelchair no
   [amenity = 'pub_yyyyydnn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydnn.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor, microbrewery yes
@@ -1337,17 +1122,14 @@
 // beer garden
   [amenity = 'pub_yyyyydndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyyydndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyyydndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyyydndd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor yes
@@ -1358,17 +1140,14 @@
 // beer garden
   [amenity = 'pub_yyyynydyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynydyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynydyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynydyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynydyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynydyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor yes
@@ -1379,17 +1158,14 @@
 // beer garden
   [amenity = 'pub_yyyynydlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynydlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynydlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynydlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynydld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynydld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor yes
@@ -1400,17 +1176,14 @@
 // beer garden
   [amenity = 'pub_yyyynydng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynydng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynydno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynydno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynydnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynydnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor yes
@@ -1421,17 +1194,14 @@
 // beer garden
   [amenity = 'pub_yyyynyddg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynyddg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynyddo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynyddo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynyddd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynyddd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor yes
@@ -1442,17 +1212,14 @@
 // beer garden
   [amenity = 'pub_yyyynnyyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnyyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnyyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnyyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnyyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnyyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor yes
@@ -1463,17 +1230,14 @@
 // beer garden
   [amenity = 'pub_yyyynnylg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnylg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnylo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnylo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnyld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnyld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor yes
@@ -1484,17 +1248,14 @@
 // beer garden
   [amenity = 'pub_yyyynnyng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnyng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnyno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnyno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnynd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnynd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor yes
@@ -1505,17 +1266,14 @@
 // beer garden
   [amenity = 'pub_yyyynnydg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnydg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnydo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnydo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnydd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor yes
@@ -1526,17 +1284,14 @@
 // beer garden
   [amenity = 'pub_yyyynnnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor yes
@@ -1547,17 +1302,14 @@
 // beer garden
   [amenity = 'pub_yyyynnnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor yes
@@ -1568,17 +1320,14 @@
 // beer garden
   [amenity = 'pub_yyyynnnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnnnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food, floor yes
@@ -1589,17 +1338,14 @@
 // beer garden
   [amenity = 'pub_yyyynnndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyyynnndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyyynnndd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1611,17 +1357,14 @@
 // beer garden unchecked
   [amenity = 'pub_yyydydyy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydyy.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydydyl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydyl.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydydyn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydyn.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1633,17 +1376,14 @@
 // beer garden
   [amenity = 'pub_yyydydydg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydydg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydydydo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydydo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydydydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydydd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1655,7 +1395,6 @@
 // beer garden unchecked
   [amenity = 'pub_yyydydny'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydny.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1667,17 +1406,14 @@
 // beer garden
   [amenity = 'pub_yyydydnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydnlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydydnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydnlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydydnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydnld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1689,7 +1425,6 @@
 // beer garden unchecked
   [amenity = 'pub_yyydydnn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydnn.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1701,17 +1436,14 @@
 // beer garden
   [amenity = 'pub_yyydydndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydydndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydydndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydydndd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1723,17 +1455,14 @@
 // beer garden
   [amenity = 'pub_yyydnydyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnydyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnydyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnydyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnydyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnydyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1745,17 +1474,14 @@
 // beer garden
   [amenity = 'pub_yyydnydlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnydlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnydlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnydlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnydld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnydld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1767,17 +1493,14 @@
 // beer garden
   [amenity = 'pub_yyydnydng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnydng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnydno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnydno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnydnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnydnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1789,17 +1512,14 @@
 // beer garden
   [amenity = 'pub_yyydnyddg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnyddg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnyddo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnyddo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnyddd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnyddd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1811,17 +1531,14 @@
 // beer garden
   [amenity = 'pub_yyydnnyyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnyyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnyyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnyyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnyyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnyyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1833,17 +1550,14 @@
 // beer garden
   [amenity = 'pub_yyydnnylg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnylg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnylo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnylo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnyld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnyld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1855,17 +1569,14 @@
 // beer garden
   [amenity = 'pub_yyydnnyng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnyng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnyno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnyno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnynd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnynd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1877,17 +1588,14 @@
 // beer garden
   [amenity = 'pub_yyydnnydg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnydg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnydo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnydo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnydd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1899,17 +1607,14 @@
 // beer garden
   [amenity = 'pub_yyydnnnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1921,17 +1626,14 @@
 // beer garden
   [amenity = 'pub_yyydnnnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1943,17 +1645,14 @@
 // beer garden
   [amenity = 'pub_yyydnnnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnnnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale, food yes
@@ -1965,17 +1664,14 @@
 // beer garden
   [amenity = 'pub_yyydnnndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyydnnndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyydnnndd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -1988,22 +1684,18 @@
 // beer garden unchecked
   [amenity = 'pub_yydyydyy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydyy.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydyl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydyl.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydyn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydyn.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2016,7 +1708,6 @@
 // beer garden unchecked
   [amenity = 'pub_yydyydny'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydny.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2029,17 +1720,14 @@
 // beer garden
   [amenity = 'pub_yydyydnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydnlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydnlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydnld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2052,17 +1740,14 @@
 // beer garden
   [amenity = 'pub_yydyydnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydnng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydnno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydnno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydnnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2075,17 +1760,14 @@
 // beer garden
   [amenity = 'pub_yydyydndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydyydndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydyydndd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2098,7 +1780,6 @@
 // beer garden unchecked
   [amenity = 'pub_yydynydy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynydy.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2111,17 +1792,14 @@
 // beer garden 
   [amenity = 'pub_yydynydlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynydlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynydlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynydlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynydld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynydld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2134,17 +1812,14 @@
 // beer garden 
   [amenity = 'pub_yydynydng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynydng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynydno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynydno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynydnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynydnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2157,7 +1832,6 @@
 // beer garden unchecked
   [amenity = 'pub_yydynydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynydd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2170,17 +1844,14 @@
 // beer garden
   [amenity = 'pub_yydynnyyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnyyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnyyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnyyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnyyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnyyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2193,17 +1864,14 @@
 // beer garden
   [amenity = 'pub_yydynnylg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnylg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnylo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnylo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnyld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnyld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2216,17 +1884,14 @@
 // beer garden
   [amenity = 'pub_yydynnyng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnyng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnyno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnyno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnynd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnynd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2239,17 +1904,14 @@
 // beer garden
   [amenity = 'pub_yydynnydg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnydg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnydo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnydo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnydd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2262,17 +1924,14 @@
 // beer garden
   [amenity = 'pub_yydynnnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2285,17 +1944,14 @@
 // beer garden
   [amenity = 'pub_yydynnnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2308,17 +1964,14 @@
 // beer garden
   [amenity = 'pub_yydynnnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnnnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2331,17 +1984,14 @@
 // beer garden
   [amenity = 'pub_yydynnndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yydynnndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yydynnndd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2354,17 +2004,14 @@
 // beer garden 
   [amenity = 'pub_yyddyydyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyydyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddyydyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyydyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddyydyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyydyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2377,7 +2024,6 @@
 // beer garden unchecked
   [amenity = 'pub_yyddyydl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyydl.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2390,7 +2036,6 @@
 // beer garden unchecked
   [amenity = 'pub_yyddyydn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyydn.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2403,7 +2048,6 @@
 // beer garden unchecked
   [amenity = 'pub_yyddyydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddyydd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2416,17 +2060,14 @@
 // beer garden 
   [amenity = 'pub_yyddynyyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynyyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddynyyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynyyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddynyyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynyyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2439,7 +2080,6 @@
 // beer garden unchecked
   [amenity = 'pub_yyddynyl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynyl.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2452,7 +2092,6 @@
 // beer garden unchecked
   [amenity = 'pub_yyddynyn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynyn.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2465,17 +2104,14 @@
 // beer garden
   [amenity = 'pub_yyddynydg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynydg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddynydo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynydo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddynydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynydd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2488,17 +2124,14 @@
 // beer garden
   [amenity = 'pub_yyddynnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynnyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddynnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynnyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddynnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynnyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2511,17 +2144,14 @@
 // beer garden
   [amenity = 'pub_yyddynnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynnlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddynnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynnlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddynnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynnld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2534,17 +2164,14 @@
 // beer garden
   [amenity = 'pub_yyddynnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynnng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddynnno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynnno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddynnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynnnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2557,17 +2184,14 @@
 // beer garden 
   [amenity = 'pub_yyddynndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddynndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddynndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddynndd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2580,7 +2204,6 @@
 // beer garden unchecked
   [amenity = 'pub_yyddnydy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnydy.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2593,7 +2216,6 @@
 // beer garden unchecked
   [amenity = 'pub_yyddnydl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnydl.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2606,17 +2228,14 @@
 // beer garden 
   [amenity = 'pub_yyddnydng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnydng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnydno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnydno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnydnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnydnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2629,17 +2248,14 @@
 // beer garden 
   [amenity = 'pub_yyddnyddg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnyddg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnyddo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnyddo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnyddd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnyddd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2652,17 +2268,14 @@
 // beer garden 
   [amenity = 'pub_yyddnnyyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnyyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnyyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnyyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnyyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnyyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2675,17 +2288,14 @@
 // beer garden 
   [amenity = 'pub_yyddnnylg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnylg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnylo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnylo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnyld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnyld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2698,17 +2308,14 @@
 // beer garden 
   [amenity = 'pub_yyddnnyng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnyng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnyno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnyno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnynd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnynd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2721,17 +2328,14 @@
 // beer garden 
   [amenity = 'pub_yyddnnydg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnydg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnydo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnydo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnydd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2744,17 +2348,14 @@
 // beer garden 
   [amenity = 'pub_yyddnnnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2767,17 +2368,14 @@
 // beer garden 
   [amenity = 'pub_yyddnnnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnld.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2790,17 +2388,14 @@
 // beer garden 
   [amenity = 'pub_yyddnnnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnnnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open, ale yes
@@ -2813,17 +2408,14 @@
 // beer garden 
   [amenity = 'pub_yyddnnndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yyddnnndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yyddnnndd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -2837,17 +2429,14 @@
 // beer garden 
   [amenity = 'pub_ynyydddyg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynyydddyo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynyydddyd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -2861,17 +2450,14 @@
 // beer garden 
   [amenity = 'pub_ynyydddlg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynyydddlo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynyydddld'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddld.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -2885,17 +2471,14 @@
 // beer garden 
   [amenity = 'pub_ynyydddng'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynyydddno'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynyydddnd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyydddnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -2909,17 +2492,14 @@
 // beer garden 
   [amenity = 'pub_ynyyddddg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyyddddg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynyyddddo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyyddddo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynyyddddd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynyyddddd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -2933,17 +2513,14 @@
 // beer garden 
   [amenity = 'pub_ynydddyyg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddyyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynydddyyo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddyyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynydddyyd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddyyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -2957,7 +2534,6 @@
 // beer garden unchecked
   [amenity = 'pub_ynydddyl'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddyl.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -2971,7 +2547,6 @@
 // beer garden unchecked
   [amenity = 'pub_ynydddyn'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddyn.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -2985,17 +2560,14 @@
 // beer garden
   [amenity = 'pub_ynydddydg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddydg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynydddydo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddydo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynydddydd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddydd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3009,17 +2581,14 @@
 // beer garden
   [amenity = 'pub_ynydddnyg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddnyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynydddnyo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddnyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynydddnyd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddnyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3033,7 +2602,6 @@
 // beer garden
   [amenity = 'pub_ynydddnl'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddnl.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3047,7 +2615,6 @@
 // beer garden
   [amenity = 'pub_ynydddnn'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddnn.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3061,17 +2628,14 @@
 // beer garden
   [amenity = 'pub_ynydddndg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynydddndo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynydddndd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynydddndd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3085,22 +2649,18 @@
 // beer garden unchecked
   [amenity = 'pub_yndyddyy'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddyy.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddyl'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddyl.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddyn'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddyn.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddyd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3114,17 +2674,14 @@
 // beer garden
   [amenity = 'pub_yndyddnyg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnyo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnyd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3138,17 +2695,14 @@
 // beer garden
   [amenity = 'pub_yndyddnlg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnlo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnld'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnld.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3162,17 +2716,14 @@
 // beer garden
   [amenity = 'pub_yndyddnng'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnno'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddnnd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddnnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3186,17 +2737,14 @@
 // beer garden
   [amenity = 'pub_yndyddndg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddndo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yndyddndd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_yndyddndd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3210,7 +2758,6 @@
 // beer garden unchecked
   [amenity = 'pub_ynddddy'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddy.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3224,17 +2771,14 @@
 // beer garden
   [amenity = 'pub_ynddddnyg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddnyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynddddnyo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddnyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynddddnyd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddnyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3248,7 +2792,6 @@
 // beer garden unchecked
   [amenity = 'pub_ynddddnl'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddnl.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3262,17 +2805,14 @@
 // beer garden 
   [amenity = 'pub_ynddddnng'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddnng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynddddnno'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddnno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynddddnnd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddnnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3286,17 +2826,14 @@
 // beer garden 
   [amenity = 'pub_ynddddndg'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynddddndo'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ynddddndd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_ynddddndd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3310,7 +2847,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydyyydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyyydd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3324,17 +2860,14 @@
 // beer garden
   [amenity = 'pub_ydyynddyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyynddyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydyynddyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyynddyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydyynddyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyynddyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3348,17 +2881,14 @@
 // beer garden
   [amenity = 'pub_ydyynddlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyynddlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydyynddlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyynddlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydyynddld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyynddld.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3372,17 +2902,14 @@
 // beer garden
   [amenity = 'pub_ydyynddng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyynddng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydyynddno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyynddno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydyynddnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyynddnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3396,17 +2923,14 @@
 // beer garden
   [amenity = 'pub_ydyyndddg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyyndddg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydyyndddo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyyndddo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydyyndddd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydyyndddd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3420,7 +2944,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydydyddy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydyddy.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3434,7 +2957,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydydyddl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydyddl.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3448,7 +2970,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydydyddn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydyddn.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3462,17 +2983,14 @@
 // beer garden
   [amenity = 'pub_ydydydddg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydydddg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydydddo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydydddo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydydddd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydydddd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3486,7 +3004,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydydnydy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnydy.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3500,7 +3017,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydydnydl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnydl.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3514,7 +3030,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydydnydn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnydn.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3528,17 +3043,14 @@
 // beer garden unchecked
   [amenity = 'pub_ydydnyddg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnyddg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnyddo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnyddo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnyddd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnyddd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3552,17 +3064,14 @@
 // beer garden
   [amenity = 'pub_ydydnnyyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnyyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnyyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnyyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnyyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnyyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3576,7 +3085,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydydnnyl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnyl.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3590,17 +3098,14 @@
 // beer garden
   [amenity = 'pub_ydydnnyng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnyng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnyno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnyno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnynd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnynd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3614,17 +3119,14 @@
 // beer garden
   [amenity = 'pub_ydydnnydg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnydg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnydo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnydo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnydd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3638,17 +3140,14 @@
 // beer garden
   [amenity = 'pub_ydydnnyng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnyng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnyno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnyno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnynd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnynd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3662,17 +3161,14 @@
 // beer garden
   [amenity = 'pub_ydydnnnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnnyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnnyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnnyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3686,17 +3182,14 @@
 // beer garden
   [amenity = 'pub_ydydnnnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnnlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnnlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnnld.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3710,17 +3203,14 @@
 // beer garden
   [amenity = 'pub_ydydnnnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnnng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnnno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnnno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnnnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3734,17 +3224,14 @@
 // beer garden
   [amenity = 'pub_ydydnnndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydydnnndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydydnnndd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3758,7 +3245,6 @@
 // beer garden unchecked
   [amenity = 'pub_yddyydy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddyydy.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3772,17 +3258,14 @@
 // beer garden
   [amenity = 'pub_yddyydng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddyydng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yddyydno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddyydno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yddyydnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddyydnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3796,7 +3279,6 @@
 // beer garden unchecked
   [amenity = 'pub_yddynyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3810,17 +3292,14 @@
 // beer garden
   [amenity = 'pub_yddynndyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynndyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yddynndyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynndyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yddynndyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynndyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3834,17 +3313,14 @@
 // beer garden
   [amenity = 'pub_yddynndlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynndlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yddynndlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynndlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yddynndld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynndld.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3858,17 +3334,14 @@
 // beer garden
   [amenity = 'pub_yddynndng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynndng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yddynndno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynndno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yddynndnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynndnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3882,17 +3355,14 @@
 // beer garden
   [amenity = 'pub_yddynnddg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynnddg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yddynnddo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynnddo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_yddynnddd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_yddynnddd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3906,7 +3376,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydddydy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydy.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3920,17 +3389,14 @@
 // beer garden
   [amenity = 'pub_ydddydnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydnyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddydnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydnyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddydnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydnyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3944,7 +3410,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydddydnl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydnl.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3958,7 +3423,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydddydnn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydnn.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3972,17 +3436,14 @@
 // beer garden 
   [amenity = 'pub_ydddydndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddydndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddydndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddydndd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -3996,7 +3457,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydddnydy'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnydy.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -4010,7 +3470,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydddnydl'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnydl.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -4024,7 +3483,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydddnydn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnydn.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -4038,7 +3496,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydddnydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnydd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -4052,17 +3509,14 @@
 // beer garden 
   [amenity = 'pub_ydddnnyyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnyyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnyyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnyyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnyyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnyyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -4076,17 +3530,14 @@
 // beer garden 
   [amenity = 'pub_ydddnnylg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnylg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnylo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnylo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnyld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnyld.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -4100,7 +3551,6 @@
 // beer garden unchecked
   [amenity = 'pub_ydddnnyn'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnyn.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -4114,17 +3564,14 @@
 // beer garden
   [amenity = 'pub_ydddnnydg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnydg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnydo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnydo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnydd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnydd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -4138,17 +3585,14 @@
 // beer garden
   [amenity = 'pub_ydddnnnyg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnyg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnyo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnyo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnyd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnyd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -4162,17 +3606,14 @@
 // beer garden
   [amenity = 'pub_ydddnnnlg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnlg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnlo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnlo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnld'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnld.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -4186,17 +3627,14 @@
 // beer garden
   [amenity = 'pub_ydddnnnng'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnng.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnno'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnno.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnnnd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnnnd.p.16.png');
-    point-placement: centroid;
   }
 
 // open yes
@@ -4210,22 +3648,18 @@
 // beer garden
   [amenity = 'pub_ydddnnndg'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnndg.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnndo'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnndo.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub_ydddnnndd'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnndd.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'pub'][zoom >= 15]::amenity {
     point-file: url('symbols/pub_ydddnnndd.p.16.png');
-    point-placement: centroid;
   }
 
 // closed due to covid
@@ -4239,7 +3673,6 @@
 // beer garden unchecked
   [amenity = 'pub_cddddddd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_cddddddd.p.16.png');
-    point-placement: centroid;
   }
 
 // closed 
@@ -4253,217 +3686,174 @@
 // beer garden unchecked
   [amenity = 'pub_nddddddd'][zoom >= 16]::amenity {
     point-file: url('symbols/pub_nddddddd.p.16.png');
-    point-placement: centroid;
   }
 
   [amenity = 'biergarten'][zoom >= 17]::amenity {
     point-file: url('symbols/biergarten.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'boatyard'][zoom >= 17]::amenity {
     point-file: url('symbols/boatyard.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'tourismstation'][zoom >= 15]::amenity {
     point-file: url('symbols/station.png');
-    point-placement: interior;
   }
 
   [amenity = 'recycling'][zoom >= 19]::amenity {
     point-file: url('symbols/recycling.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'recyclingcentre'][zoom >= 16]::amenity {
     point-file: url('symbols/recyclingcentre.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'restaurant'][zoom >= 17]::amenity {
     point-file: url('symbols/restaurant.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'restaccomm'][zoom >= 17]::amenity {
     point-file: url('symbols/restaccomm.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'fast_food'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food.png');
-    point-placement: interior;
   }
 
   [amenity = 'fast_food_burger'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food_burger.png');
-    point-placement: interior;
   }
 
   [amenity = 'fast_food_chicken'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food_chicken.png');
-    point-placement: interior;
   }
 
   [amenity = 'fast_food_chinese'][zoom >= 17]::amenity {
     point-file: url('symbols/chinese.png');
-    point-placement: interior;
   }
 
   [amenity = 'fast_food_coffee'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food_coffee.png');
-    point-placement: interior;
   }
 
   [amenity = 'fast_food_fish_and_chips'][zoom >= 17]::amenity {
     point-file: url('symbols/fishnchips.png');
-    point-placement: interior;
   }
 
   [amenity = 'fast_food_ice_cream'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food_ice_cream.png');
-    point-placement: interior;
   }
 
   [amenity = 'fast_food_indian'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food_indian.png');
-    point-placement: interior;
   }
 
   [amenity = 'fast_food_kebab'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food_kebab.png');
-    point-placement: interior;
   }
 
   [amenity = 'fast_food_pie'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food_pie.png');
-    point-placement: interior;
   }
 
   [amenity = 'fast_food_pizza'][zoom >= 17]::amenity {
     point-file: url('symbols/pizza.png');
-    point-placement: interior;
   }
 
   [amenity = 'fast_food_sandwich'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food_sandwich.png');
-    point-placement: interior;
   }
 
   [amenity = 'telephone'][zoom >= 17]::amenity {
     point-file: url('symbols/telephone.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothtelephonered'][zoom >= 17]::amenity {
     point-file: url('symbols/boothtelephonered.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothtelephoneblack'][zoom >= 17]::amenity {
     point-file: url('symbols/boothtelephoneblack.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothtelephonewhite'][zoom >= 17]::amenity {
     point-file: url('symbols/boothtelephonewhite.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothtelephoneblue'][zoom >= 17]::amenity {
     point-file: url('symbols/boothtelephoneblue.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothtelephonegreen'][zoom >= 17]::amenity {
     point-file: url('symbols/boothtelephonegreen.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothtelephonegrey'][zoom >= 17]::amenity {
     point-file: url('symbols/boothtelephonegrey.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothtelephonegold'][zoom >= 17]::amenity {
     point-file: url('symbols/boothtelephonegold.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothdefibrillator'][zoom >= 17]::amenity {
     point-file: url('symbols/boothdefibrillator.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothlibrary'][zoom >= 17]::amenity {
     point-file: url('symbols/boothlibrary.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothbicyclerepairstation'][zoom >= 17]::amenity {
     point-file: url('symbols/boothbicyclerepairstation.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothatm'][zoom >= 17]::amenity {
     point-file: url('symbols/boothatm.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothinformation'][zoom >= 17]::amenity {
     point-file: url('symbols/boothinformation.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothartwork'][zoom >= 17]::amenity {
     point-file: url('symbols/boothartwork.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothmuseum'][zoom >= 17]::amenity {
     point-file: url('symbols/boothmuseum.png');
-    point-placement: interior;
   }
 
   [amenity = 'boothdisused'][zoom >= 17]::amenity {
     point-file: url('symbols/boothdisused.png');
-    point-placement: interior;
   }
 
   [amenity = 'public_bookcase'][zoom >= 17]::amenity {
     point-file: url('symbols/publicbookcase.png');
-    point-placement: interior;
   }
 
   [amenity = 'bicycle_repair_station'][zoom >= 19]::amenity {
     point-file: url('symbols/bicyclerepairstation.png');
-    point-placement: interior;
   }
 
   [amenity = 'sundial'][zoom >= 17]::amenity {
     point-file: url('symbols/sundial.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'shopmobility'][zoom >= 17]::amenity {
     point-file: url('symbols/shopmobility.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'emergency_phone'][zoom >= 17]::amenity {
     point-file: url('symbols/sosphone.png');
-    point-placement: interior;
   }
 
   [amenity = 'theatre'][zoom >= 17]::amenity {
     point-file: url('symbols/theatre.p.20.png');
-    point-placement: interior;
   }
 
   [amenity = 'toilets'][zoom >= 17]::amenity {
     point-file: url('symbols/toilets_free.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -4471,7 +3861,6 @@
 
   [amenity = 'toilets_free_m'][zoom >= 17]::amenity {
     point-file: url('symbols/toilets_free_m.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -4479,7 +3868,6 @@
 
   [amenity = 'toilets_free_w'][zoom >= 17]::amenity {
     point-file: url('symbols/toilets_free_w.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -4487,7 +3875,6 @@
 
   [amenity = 'toilets_pay'][zoom >= 17]::amenity {
     point-file: url('symbols/toilets_pay.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -4495,7 +3882,6 @@
 
   [amenity = 'toilets_pay_m'][zoom >= 17]::amenity {
     point-file: url('symbols/toilets_pay_m.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -4503,7 +3889,6 @@
 
   [amenity = 'toilets_pay_w'][zoom >= 17]::amenity {
     point-file: url('symbols/toilets_pay_w.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -4511,7 +3896,6 @@
 
   [amenity = 'shower'][zoom >= 17]::amenity {
     point-file: url('symbols/shower_free.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -4519,7 +3903,6 @@
 
   [amenity = 'shower_free_m'][zoom >= 17]::amenity {
     point-file: url('symbols/shower_free_m.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -4527,7 +3910,6 @@
 
   [amenity = 'shower_free_w'][zoom >= 17]::amenity {
     point-file: url('symbols/shower_free_w.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -4535,7 +3917,6 @@
 
   [amenity = 'shower_pay'][zoom >= 17]::amenity {
     point-file: url('symbols/shower_pay.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -4543,7 +3924,6 @@
 
   [amenity = 'shower_pay_m'][zoom >= 17]::amenity {
     point-file: url('symbols/shower_pay_m.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -4551,7 +3931,6 @@
 
   [amenity = 'shower_pay_w'][zoom >= 17]::amenity {
     point-file: url('symbols/shower_pay_w.p.20.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -4559,770 +3938,621 @@
 
   [amenity = 'musical_instrument'][zoom >= 21]::amenity {
     point-file: url('symbols/musical_instrument.p.20.png');
-    point-placement: interior;
   }
 
   [amenity = 'drinking_water'][zoom >= 17]::amenity {
     point-file: url('symbols/tap_drinking.p.20.png');
-    point-placement: interior;
   }
 
   [amenity = 'nondrinking_water'][zoom >= 17]::amenity {
     point-file: url('symbols/tap_nondrinking.p.20.png');
-    point-placement: interior;
   }
 
   [amenity = 'fountain'][zoom >= 17]::amenity {
     point-file: url('symbols/fountain.png');
-    point-placement: interior;
   }
 
   [amenity = 'prison'][zoom >= 15]::amenity {
     point-file: url('symbols/amenity_prison.p.20.png');
-    point-placement: interior;
   }
 
   [tourism = 'viewpoint'][zoom >= 16]::tourism {
     point-file: url('symbols/view_point.p.16.png');
-    point-placement: interior;
   }
 
   [man_made = 'water_tower'][zoom >= 15]::man_made {
     point-file: url('symbols/tower_water.p.20.png');
-    point-placement: interior;
   }
 
   [historic = 'warmemorial'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_warmemorial.png');
-    point-placement: interior;
   }
 
   [historic = 'memorialplaque'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_plaque.png');
-    point-placement: interior;
   }
 
   [historic = 'memorialpavementplaque'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_pavementplaque.png');
-    point-placement: interior;
   }
 
   [historic = 'memorialstatue'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_statue.png');
-    point-placement: interior;
   }
 
   [historic = 'memorialsculpture'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_sculpture.png');
-    point-placement: interior;
   }
 
   [historic = 'memorialcross'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_cross.png');
-    point-placement: interior;
   }
 
   [historic = 'memorialstone'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_stone.png');
-    point-placement: interior;
   }
 
   [historic = 'naturalstone'][zoom >= 16]::historic {
     point-file: url('symbols/natural_stone.png');
-    point-placement: interior;
   }
 
   [historic = 'historicstone'][zoom >= 16]::historic {
     point-file: url('symbols/historic_stone.png');
-    point-placement: interior;
   }
 
   [historic = 'historicstandingstone'][zoom >= 16]::historic {
     point-file: url('symbols/standing_stone.png');
-    point-placement: interior;
   }
 
   [historic = 'historicstonecircle'][zoom >= 16]::historic {
     point-file: url('symbols/historic_stone_circle.png');
-    point-placement: interior;
   }
 
   [historic = 'historicmegalithtomb'][zoom >= 16]::historic {
     point-file: url('symbols/historic_megalith_tomb.png');
-    point-placement: interior;
   }
 
   [historic = 'historicstonerow'][zoom >= 16]::historic {
     point-file: url('symbols/historic_stone_row.png');
-    point-placement: interior;
   }
 
   [historic = 'runestone'][zoom >= 16]::historic {
     point-file: url('symbols/rune_stone.png');
-    point-placement: interior;
   }
 
   [historic = 'massrock'][zoom >= 16]::historic {
     point-file: url('symbols/mass_rock.png');
-    point-placement: interior;
   }
 
   [historic = 'oghamstone'][zoom >= 16]::historic {
     point-file: url('symbols/ogham_stone.png');
-    point-placement: interior;
   }
 
   [historic = 'castle'][zoom >= 16]::historic {
     point-file: url('symbols/historic_castle.png');
-    point-placement: interior;
   }
 
   [historic = 'folly'][zoom >= 16]::historic {
     point-file: url('symbols/historic_folly.png');
-    point-placement: interior;
   }
 
   [historic = 'manor'][zoom >= 16]::historic {
     point-file: url('symbols/historic_manor.png');
-    point-placement: interior;
   }
 
   [historic = 'martello_tower'][zoom >= 16]::historic {
     point-file: url('symbols/historic_martello.png');
-    point-placement: interior;
   }
 
   [historic = 'monastery'][zoom >= 16]::historic {
     point-file: url('symbols/historic_monastery.png');
-    point-placement: interior;
   }
 
   [historic = 'city_gate'][zoom >= 16]::historic {
     point-file: url('symbols/historic_citygate.png');
-    point-placement: interior;
   }
 
   [historic = 'battlefield']::historic {
     [zoom >= 16] {
       point-file: url('symbols/historic_battlefield.png');
-      point-placement: interior;
     }
   }
 
   [historic = 'cannon'][zoom >= 17]::historic {
     point-file: url('symbols/historic_cannon.png');
-    point-placement: interior;
   }
 
   [historic = 'stocks'][zoom >= 17]::historic {
     point-file: url('symbols/historic_stocks.png');
-    point-placement: interior;
   }
 
   [historic = 'cross'][zoom >= 17]::historic {
     point-file: url('symbols/historic_cross.png');
-    point-placement: interior;
   }
 
   [historic = 'well'][zoom >= 17]::historic {
     point-file: url('symbols/historic_well.png');
-    point-placement: interior;
   }
 
   [historic = 'dovecote'][zoom >= 16]::historic {
     point-file: url('symbols/historic_dovecote.png');
-    point-placement: interior;
   }
 
   [historic = 'pinfold'][zoom >= 16]::historic {
     point-file: url('symbols/historic_pinfold.png');
-    point-placement: interior;
   }
 
   [historic = 'church'][zoom >= 16]::historic {
     point-file: url('symbols/historic_church.png');
-    point-placement: interior;
   }
 
   [historic = 'bunker'][zoom >= 17]::historic {
     point-file: url('symbols/historicbunker.png');
-    point-placement: interior;
   }
 
   [historic = 'historicsquaretower'][zoom >= 16]::historic {
     point-file: url('symbols/historicsquaretower.png');
-    point-placement: interior;
   }
 
   [historic = 'historicroundtower'][zoom >= 16]::historic {
     point-file: url('symbols/historicroundtower.png');
-    point-placement: interior;
   }
 
   [historic = 'historicdefensivetower'][zoom >= 16]::historic {
     point-file: url('symbols/historicdefensivetower.png');
-    point-placement: interior;
   }
 
   [historic = 'historicobservationtower'][zoom >= 16]::historic {
     point-file: url('symbols/historicobservationtower.png');
-    point-placement: interior;
   }
 
   [historic = 'historicchurchtower'][zoom >= 16]::historic {
     point-file: url('symbols/historicchurchtower.png');
-    point-placement: interior;
   }
 
   [historic = 'mineshaft'][zoom >= 17]::historic {
     point-file: url('symbols/historic_mine.png');
-    point-placement: interior;
   }
 
   [historic = 'kiln'][zoom >= 17]::historic {
     point-file: url('symbols/historic_kiln.png');
-    point-placement: interior;
   }
 
   [historic = 'ice_house'][zoom >= 17]::historic {
     point-file: url('symbols/historic_icehouse.png');
-    point-placement: interior;
   }
 
   [historic = 'memorialplate'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_plate.png');
-    point-placement: interior;
   }
 
   [historic = 'memorialbench'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_bench.png');
-    point-placement: interior;
   }
 
   [historic = 'memorialgrave'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_grave.png');
-    point-placement: interior;
   }
 
   [historic = 'memorialobelisk'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_obelisk.png');
-    point-placement: interior;
   }
 
   [historic = 'memorial'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_nonspecific.png');
-    point-placement: interior;
   }
 
   [historic = 'monument'][zoom >= 17]::historic {
     point-file: url('symbols/historic_monument.png');
-    point-placement: interior;
   }
 
   [historic = 'tomb'][zoom >= 17]::historic {
     point-file: url('symbols/historic_tomb.png');
-    point-placement: interior;
   }
 
   [historic = 'aircraft'][zoom >= 17]::historic {
     point-file: url('symbols/historic_aircraft.png');
-    point-placement: interior;
   }
 
   [historic = 'aircraft_wreck'][zoom >= 17]::historic {
     point-file: url('symbols/historic_aircraftwreck.png');
-    point-placement: interior;
   }
 
   [historic = 'water_pump'][zoom >= 17]::historic {
     point-file: url('symbols/historic_waterpump.png');
-    point-placement: interior;
   }
 
   [historic = 'windmill'][zoom >= 17]::historic {
     point-file: url('symbols/historic_windmill.png');
-    point-placement: interior;
   }
 
   [historic = 'watermill'][zoom >= 17]::historic {
     point-file: url('symbols/historic_watermill.png');
-    point-placement: interior;
   }
 
   [historic = 'mill'][zoom >= 17]::historic {
     point-file: url('symbols/historic_mill.png');
-    point-placement: interior;
   }
 
   [historic = 'tank'][zoom >= 17]::historic {
     point-file: url('symbols/historic_tank.png');
-    point-placement: interior;
   }
 
   [historic = 'ship'][zoom >= 17]::historic {
     point-file: url('symbols/historic_ship.png');
-    point-placement: interior;
   }
 
   [historic = 'wreck'][zoom >= 17]::historic {
     point-file: url('symbols/historic_wreck.png');
-    point-placement: interior;
   }
 
   [historic = 'nonspecific'][zoom >= 17]::historic {
     point-file: url('symbols/historic_nonspecific.p.16.png');
-    point-placement: interior;
   }
 
   [historic = 'archaeological_site'][zoom >= 16]::historic {
     point-file: url('symbols/historic_archaelogical.png');
-    point-placement: interior;
   }
 
   [historic = 'historicfortification'][zoom >= 16]::historic {
     point-file: url('symbols/historic_fortification.png');
-    point-placement: interior;
   }
 
   [historic = 'historicringfort'][zoom >= 16]::historic {
     point-file: url('symbols/historic_ringfort.png');
-    point-placement: interior;
   }
 
   [historic = 'historichillfort'][zoom >= 16]::historic {
     point-file: url('symbols/historic_hillfort.png');
-    point-placement: interior;
   }
 
   [historic = 'historicarchmotte'][zoom >= 16]::historic {
     point-file: url('symbols/historic_arch_motte.png');
-    point-placement: interior;
   }
 
   [historic = 'historicarchcastle'][zoom >= 16]::historic {
     point-file: url('symbols/historic_arch_castle.png');
-    point-placement: interior;
   }
 
   [historic = 'historicpromontoryfort'][zoom >= 16]::historic {
     point-file: url('symbols/historic_promontoryfort.png');
-    point-placement: interior;
   }
 
   [historic = 'historiccrannog'][zoom >= 16]::historic {
     point-file: url('symbols/historic_crannog.png');
-    point-placement: interior;
   }
 
   [historic = 'historictumulus'][zoom >= 16]::historic {
     point-file: url('symbols/historic_tumulus.png');
-    point-placement: interior;
   }
 
   [historic = 'palaeontological_site'][zoom >= 16]::historic {
     point-file: url('symbols/historic_palaeontological.png');
-    point-placement: interior;
   }
 
   [shop = 'supermarket'][zoom >= 16]::shop {
     point-file: url('symbols/shop_supermarket.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'ecosupermarket'][zoom >= 16]::shop {
     point-file: url('symbols/shop_ecosupermarket.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'antiques'][zoom >= 17]::shop {
     point-file: url('symbols/shop_antiques.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'bakery'][zoom >= 17]::shop {
     point-file: url('symbols/shop_bakery.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'seafood'][zoom >= 17]::shop {
     point-file: url('symbols/shop_seafood.png');
-    point-placement: interior;
   }
 
   [shop = 'coffee'][zoom >= 17]::shop {
     point-file: url('symbols/shop_coffee.png');
-    point-placement: interior;
   }
 
   [shop = 'optician'][zoom >= 17]::shop {
     point-file: url('symbols/shop_optician.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'butcher'][zoom >= 17]::shop {
     point-file: url('symbols/shop_butcher.png');
-    point-placement: interior;
   }
 
   [shop = 'copyshop'][zoom >= 17]::shop {
     point-file: url('symbols/shop_copyshop.png');
-    point-placement: interior;
   }
 
   [shop = 'clothes']::shop,
   [shop = 'fashion']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_clothes.p.16.png');
-      point-placement: interior;
     }
   }
 
   [shop = 'shoes']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_shoes.p.16.png');
-      point-placement: interior;
     }
   }
 
   [shop = 'shoe_repair_etc']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_shoe_repair_etc.p.16.png');
-      point-placement: interior;
     }
   }
 
   [shop = 'charity']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_charity.p.16.png');
-      point-placement: interior;
     }
   }
 
   [shop = 'discount']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_discount.p.16.png');
-      point-placement: interior;
     }
   }
 
   [shop = 'e-cigarette']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_ecig.p.16.png');
-      point-placement: interior;
     }
   }
 
   [shop = 'electrical']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_electrical.p.16.png');
-      point-placement: interior;
     }
   }
 
   [shop = 'electronics']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_electronics.p.16.png');
-      point-placement: interior;
     }
   }
 
   [shop = 'garden_centre']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_gardencentre.p.16.png');
-      point-placement: interior;
     }
   }
 
   [shop = 'jewellery']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_jewellery.p.16.png');
-      point-placement: interior;
     }
   }
 
   [shop = 'convenience'][zoom >= 17]::shop {
     point-file: url('symbols/shop_convenience.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'ecoconv'][zoom >= 17]::shop {
     point-file: url('symbols/shop_ecoconv.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'health_food'][zoom >= 17]::shop {
     point-file: url('symbols/shop_healthfood.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'ecohealth_food'][zoom >= 17]::shop {
     point-file: url('symbols/shop_ecohealthfood.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'catalogue'][zoom >= 17]::shop {
     point-file: url('symbols/shop_catalogue.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'department_store'][zoom >= 16]::shop {
     point-file: url('symbols/department_store.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'doityourself'][zoom >= 17]::shop {
     point-file: url('symbols/shop_diy.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'estate_agent'][zoom >= 17]::shop {
     point-file: url('symbols/estateagent.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'florist'][zoom >= 17]::shop {
     point-file: url('symbols/florist.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'funeral_directors'][zoom >= 17]::shop {
     point-file: url('symbols/shop_funeraldirectors.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'greengrocer'][zoom >= 17]::shop {
     point-file: url('symbols/shop_greengrocer.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'ecogreengrocer'][zoom >= 17]::shop {
     point-file: url('symbols/shop_ecogreengrocer.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'hairdresser'][zoom >= 17]::shop {
     point-file: url('symbols/shop_hairdresser.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'beauty'][zoom >= 17]::shop {
     point-file: url('symbols/shop_beauty.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'gift'][zoom >= 17]::shop {
     point-file: url('symbols/shop_gift.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'laundry'][zoom >= 17]::shop {
     point-file: url('symbols/shop_laundry.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'pet'][zoom >= 17]::shop {
     point-file: url('symbols/shop_pet.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'pet_food'][zoom >= 17]::shop {
     point-file: url('symbols/shop_pet_food.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'pet_grooming'][zoom >= 17]::shop {
     point-file: url('symbols/shop_pet_grooming.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'veterinary'][zoom >= 17]::amenity {
     point-file: url('symbols/veterinary.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'animal_boarding'][zoom >= 17]::amenity {
     point-file: url('symbols/animal_boarding.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'animal_shelter'][zoom >= 17]::amenity {
     point-file: url('symbols/animal_shelter.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'travel_agent'][zoom >= 17]::shop {
     point-file: url('symbols/travel_agent.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'books'][zoom >= 17]::shop {
     point-file: url('symbols/shop_book.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'stationery'][zoom >= 17]::shop {
     point-file: url('symbols/shop_stationery.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'bookmaker'][zoom >= 17]::shop {
     point-file: url('symbols/shop_bookmaker.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'furniture'][zoom >= 17]::shop {
     point-file: url('symbols/shop_furniture.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'homeware'][zoom >= 17]::shop {
     point-file: url('symbols/shop_homeware.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'storage_rental'][zoom >= 17]::shop {
     point-file: url('symbols/shop_storage_rental.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'outdoor'][zoom >= 17]::shop {
     point-file: url('symbols/shop_outdoor.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'art'][zoom >= 17]::shop {
     point-file: url('symbols/shop_art.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'pawnbroker'][zoom >= 17]::shop {
     point-file: url('symbols/shop_pawnbroker.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'music'][zoom >= 17]::shop {
     point-file: url('symbols/shop_music.png');
-    point-placement: interior;
   }
 
   [shop = 'musical_instrument'][zoom >= 17]::shop {
     point-file: url('symbols/shop_musical_instrument.png');
-    point-placement: interior;
   }
 
   [shop = 'locksmith'][zoom >= 17]::amenity {
     point-file: url('symbols/shop_locksmith.png');
-    point-placement: interior;
   }
 
   [shop = 'motorcycle'][zoom >= 17]::shop {
     point-file: url('symbols/shop_motorcycle.png');
-    point-placement: interior;
   }
 
   [shop = 'farm'][zoom >= 17]::shop {
     point-file: url('symbols/shop_farm.png');
-    point-placement: interior;
   }
 
   [shop = 'toys'][zoom >= 17]::shop {
     point-file: url('symbols/shop_toys.png');
-    point-placement: interior;
   }
 
   [shop = 'tattoo'][zoom >= 17]::shop {
     point-file: url('symbols/shop_tattoo.png');
-    point-placement: interior;
   }
 
   [shop = 'photo'][zoom >= 17]::shop {
     point-file: url('symbols/shop_photo.png');
-    point-placement: interior;
   }
 
   [shop = 'vacant'][zoom >= 18]::shop {
     point-file: url('symbols/office_nonspecific.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'car'][zoom >= 17]::shop {
     point-file: url('symbols/shopping_car.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'car_repair'][zoom >= 17]::shop {
     point-file: url('symbols/shopping_car_repair.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'car_parts'][zoom >= 17]::shop {
     point-file: url('symbols/shopping_car_parts.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'car_wash'][zoom >= 17]::shop {
     point-file: url('symbols/amenity_car_wash.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'car_rental'][zoom >= 17]::shop {
     point-file: url('symbols/amenity_car_rental.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'compressed_air'][zoom >= 19]::shop {
     point-file: url('symbols/amenity_compressed_air.png');
-    point-placement: interior;
   }
 
   [shop = 'bicycle'][zoom >= 17]::shop {
     point-file: url('symbols/shopping_bicycle.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'deli'][zoom >= 17]::shop {
     point-file: url('symbols/shop_deli.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'sports'][zoom >= 17]::shop {
     point-file: url('symbols/shop_sports.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'alcohol'][zoom >= 17]::shop {
     point-file: url('symbols/shop_alcohol.p.20.png');
-    point-placement: interior;
   }
 
   [shop = 'confectionery'][zoom >= 17]::shop {
     point-file: url('symbols/shop_confectionery.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'mobile_phone'][zoom >= 17]::shop {
     point-file: url('symbols/shop_mobilephone.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'computer'][zoom >= 17]::shop {
     point-file: url('symbols/shop_computer.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'shopnonspecific'][zoom >= 17]::shop {
     point-file: url('symbols/shopping_nonspecific.p.16.png');
-    point-placement: interior;
   }
 
   [shop = 'healthnonspecific'][zoom >= 17]::shop {
     point-file: url('symbols/health_nonspecific.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'defibrillator'][zoom >= 17]::amenity {
     point-file: url('symbols/health_defibrillator.p.16.png');
-    point-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       point-opacity: 0.33;
     }
@@ -5330,62 +4560,50 @@
 
   [amenity = 'life_ring'][zoom >= 19]::amenity {
     point-file: url('symbols/life_ring.png');
-        point-placement: interior;
   }
 
   [amenity = 'fire_extinguisher'][zoom >= 19]::amenity {
     point-file: url('symbols/fireextinguisher.png');
-    point-placement: interior;
   }
 
   [amenity = 'fire_hydrant'][zoom >= 22]::amenity {
     point-file: url('symbols/firehydrant.png');
-    point-placement: interior;
   }
 
   [leisure = 'playground'][zoom >= 17]::leisure {
     point-file: url('symbols/playground.p.20.png');
-    point-placement: interior;
   }
 
   [tourism = 'picnic_site'][zoom >= 16]::tourism {
     point-file: url('symbols/picnic.p.16.png');
-    point-placement: interior;
   }
 
   [leisure = 'picnic_table'][zoom >= 17]::leisure {
     point-file: url('symbols/picnic.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'bbq'][zoom >= 17]::amenity {
     point-file: url('symbols/bbq.png');
-    point-placement: interior;
   }
 
   [leisure = 'slipway'][zoom >= 17]::leisure {
     point-file: url('symbols/slipway.p.16.png');
-    point-placement: interior;
   }
 
   [amenity = 'waterway_access_point'][zoom >= 17]::amenity {
     point-file: url('symbols/waterway_access_point.p.16.png');
-    point-placement: interior;
   }
 
   [leisure = 'bird_hide'][zoom >= 17]::leisure {
     point-file: url('symbols/birdhide.p.16.png');
-    point-placement: interior;
   }
 
   [leisure = 'hunting_stand'][zoom >= 17]::leisure {
     point-file: url('symbols/huntingstand.p.16.png');
-    point-placement: interior;
   }
 
   [leisure = 'grouse_butt'][zoom >= 17]::leisure {
     point-file: url('symbols/grousebutt.p.16.png');
-    point-placement: interior;
   }
 }
 
@@ -5835,7 +5053,6 @@
       text-face-name: @bold-fonts;
       text-halo-radius: 1;
       text-wrap-width: 0;
-      text-placement: interior;
     }
   }
 
@@ -5849,7 +5066,6 @@
       text-fill: #734a08;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -5862,7 +5078,6 @@
       text-fill: #734a08;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -5891,7 +5106,6 @@
     text-dy: 11;
     text-face-name: @bold-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [amenity = 'nightclub'][zoom >= 17]::amenity,
@@ -5903,7 +5117,6 @@
     text-dy: 11;
     text-face-name: @bold-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [amenity = 'library']::amenity,
@@ -5919,7 +5132,6 @@
       text-dy: 12;
       text-face-name: @bold-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -5933,7 +5145,6 @@
       text-fill: #734a08;
       text-face-name: @bold-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -5950,7 +5161,6 @@
           text-halo-radius: 1;
           text-wrap-width: 20;
           text-halo-fill: rgba(255,255,255,0.5);
-          text-placement: interior;
         }
       }
     }
@@ -5966,7 +5176,6 @@
       text-dy: 12;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -5982,7 +5191,6 @@
       text-dy: 12;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -5995,7 +5203,6 @@
       text-dy: 12;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -6008,7 +5215,6 @@
       text-dy: 12;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -6046,7 +5252,6 @@
       text-dy: 12;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -6059,7 +5264,6 @@
       text-dy: 12;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -6072,7 +5276,6 @@
       text-dy: 12;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -6085,7 +5288,6 @@
       text-dy: 12;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -6097,7 +5299,6 @@
     text-dy: 14;
     text-face-name: @bold-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [amenity = 'parking'][zoom >= 17]::amenity,
@@ -6110,7 +5311,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: @default-wrap-width;
-    text-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       text-fill: #66ccaf;
     }
@@ -6134,7 +5334,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: @default-wrap-width;
-    text-placement: interior;
     [access != ''][access != 'public'][access != 'yes'] {
       text-fill: #66ccaf;
     }
@@ -6149,7 +5348,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: @default-wrap-width;
-    text-placement: interior;
   }
 
   [natural = 'wood'][zoom >= 15]::natural,
@@ -6179,7 +5377,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 10;
-    text-placement: interior;
   }
 
   [natural = 'heath'][zoom >= 13]::natural {
@@ -6190,7 +5387,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 10;
-    text-placement: interior;
   }
 
   [natural = 'bigprompeak']::natural {
@@ -6201,14 +5397,12 @@
       text-dy: 7;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
       ele/text-name: "[ele]";
       ele/text-size: 9;
       ele/text-fill: brown;
       ele/text-dy: 6;
       ele/text-face-name: @oblique-fonts;
       ele/text-halo-radius: 1;
-      ele/text-placement: interior;
       [name != ''] {
         ele/text-dy: 19;
       }
@@ -6223,14 +5417,12 @@
       text-dy: 7;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
       ele/text-name: "[ele]";
       ele/text-size: 9;
       ele/text-fill: brown;
       ele/text-dy: 6;
       ele/text-face-name: @oblique-fonts;
       ele/text-halo-radius: 1;
-      ele/text-placement: interior;
       [name != ''] {
         ele/text-dy: 19;
       }
@@ -6248,14 +5440,12 @@
       text-dy: 7;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
       ele/text-name: "[ele]";
       ele/text-size: 9;
       ele/text-fill: brown;
       ele/text-dy: 6;
       ele/text-face-name: @oblique-fonts;
       ele/text-halo-radius: 1;
-      ele/text-placement: interior;
       [name != ''] {
         ele/text-dy: 19;
       }
@@ -6278,7 +5468,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 20;
-    text-placement: interior;
   }
 
   [historic = 'warmemorial'][zoom >= 17]::historic, 
@@ -6331,7 +5520,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 20;
-    text-placement: interior;
   }
 
   [historic = 'archaeological_site']::historic, 
@@ -6361,7 +5549,6 @@
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-wrap-width: 20;
-      text-placement: interior;
     }
   }
 
@@ -6382,7 +5569,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: @default-wrap-width;
-    text-placement: interior;
   }
 
   [natural = 'water']::natural,
@@ -6405,7 +5591,6 @@
       text-face-name: @oblique-fonts;
       text-halo-radius: 1;
       text-wrap-width: 20;
-      text-placement: interior;
     }
   }
 
@@ -6418,7 +5603,6 @@
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-wrap-width: 10;
-      text-placement: interior;
     }
   }
 
@@ -6432,7 +5616,6 @@
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-wrap-width: @default-wrap-width;
-      text-placement: interior;
     }
   }
 
@@ -6447,7 +5630,6 @@
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-wrap-width: @default-wrap-width;
-      text-placement: interior;
     }
   }
 
@@ -6472,7 +5654,6 @@
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.6);
       text-wrap-width: @default-wrap-width;
-      text-placement: interior;
     }
   }
 
@@ -6490,7 +5671,6 @@
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.6);
       text-wrap-width: @default-wrap-width;
-      text-placement: interior;
     }
   }
 
@@ -6708,7 +5888,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 20;
-    text-placement: interior;
   }
 
   [natural = 'spring'][zoom >= 16]::natural {
@@ -6719,7 +5898,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 20;
-    text-placement: interior;
     text-dy: 6;
   }
 
@@ -6731,7 +5909,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 20;
-    text-placement: interior;
     text-dy: 6;
   }
 
@@ -6743,7 +5920,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 20;
-    text-placement: interior;
     text-dy: 6;
   }
 
@@ -6755,7 +5931,6 @@
     text-dy: 10;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
     [zoom >= 16] {
       ele/text-name: "[ele]";
       ele/text-size: 8;
@@ -6764,7 +5939,6 @@
       ele/text-dy: 22;
       ele/text-face-name: @oblique-fonts;
       ele/text-halo-radius: 1;
-      ele/text-placement: interior;
     }
   }
 
@@ -6776,7 +5950,6 @@
     text-dy: 10;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
     ele/text-name: "[ele]";
     ele/text-size: 8;
     [zoom >= 20] { ele/text-size: 16; }
@@ -6784,7 +5957,6 @@
     ele/text-dy: 22;
     ele/text-face-name: @oblique-fonts;
     ele/text-halo-radius: 1;
-    ele/text-placement: interior;
   }
 
   [amenity = 'atm'][zoom >= 17]::amenity,
@@ -6798,7 +5970,6 @@
     text-fill: black;
     text-dy: 9;
     text-halo-radius: 1;
-    text-placement: interior;
     text-face-name: @book-fonts;
   }
 
@@ -6812,7 +5983,6 @@
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-wrap-width: @default-wrap-width;
-      text-placement: interior;
     }
   }
 
@@ -6828,7 +5998,6 @@
       text-dy: 9;
       text-halo-radius: 1;
       text-wrap-width: @default-wrap-width;
-      text-placement: interior;
       text-face-name: @book-fonts;
     }
   }
@@ -6856,7 +6025,6 @@
       text-dy: 11;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -6872,7 +6040,6 @@
       text-dy: 11;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -6894,7 +6061,6 @@
     text-dy: 10;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [amenity = 'fuel']::amenity,
@@ -7027,7 +6193,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: @default-wrap-width;
-    text-placement: interior;
     [zoom >= 17] { text-size: 10; }
     [zoom >= 20] { text-size: 18; }
   }
@@ -7039,7 +6204,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: @default-wrap-width;
-    text-placement: interior;
     [zoom >= 16] { text-size: 10; }
     [zoom >= 20] { text-size: 18; }
   }
@@ -7054,7 +6218,6 @@
     text-fill: #734a08;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [tourism = 'informationoffice']::tourism {
@@ -7069,7 +6232,6 @@
       text-fill: #734a08;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-placement: interior;
     }
   }
 
@@ -7111,7 +6273,6 @@
     text-fill: #734a08;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [tourism = 'artwork'][zoom >= 17]::tourism {
@@ -7122,7 +6283,6 @@
     text-fill: #734a08;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [tourism = 'informationmarker'][zoom >= 17]::tourism {
@@ -7136,7 +6296,6 @@
     text-fill: #734a08;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [amenity = 'playground_swing'][zoom >= 18]::amenity,
@@ -7175,7 +6334,6 @@
     text-fill: #008c27;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [amenity = 'bicycle_repair_station'][zoom >= 19]::amenity {
@@ -7186,7 +6344,6 @@
     text-fill: #734a08;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [tourism = 'informationncndudgeon'][zoom >= 17]::tourism,
@@ -7201,7 +6358,6 @@
     text-fill: #4b00a2;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [amenity = 'drinking_water'][zoom >= 17]::amenity,
@@ -7213,7 +6369,6 @@
     text-fill: #734a08;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [amenity = 'fountain'][zoom >= 17]::amenity {
@@ -7224,7 +6379,6 @@
     text-fill: #3e2bf6;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
-    text-placement: interior;
   }
 
   [tourism = 'attraction'][zoom >= 14]::tourism {
@@ -7235,7 +6389,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 2;
     text-wrap-width: 10;
-    text-placement: interior;
   }
 
   [amenity = 'university'][zoom >= 15]::amenity {
@@ -7246,7 +6399,6 @@
     text-face-name: @bold-fonts;
     text-halo-radius: 1;
     text-wrap-width: 16;
-    text-placement: interior;
   }
 
   [amenity = 'school']::amenity,
@@ -7259,7 +6411,6 @@
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-wrap-width: 14;
-      text-placement: interior;
     }
   }
 
@@ -7271,7 +6422,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 14;
-    text-placement: interior;
   }
 
   [amenity  = 'emergency_phone'][zoom >= 17]::barrier,
@@ -7300,7 +6450,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 12;
-    text-placement: interior;
   }
 
   [highway  = 'milestone'][zoom >= 17]::highway {
@@ -7315,7 +6464,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 12;
-    text-placement: interior;
   }
 
   [man_made = 'sluice_gate'][zoom >= 15]::man_made {
@@ -7327,7 +6475,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 2;
     text-wrap-width: 12;
-    text-placement: interior;
   }
 
   [amenity = 'lifeboat'][zoom >= 17]::amenity,
@@ -7370,7 +6517,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 2;
     text-wrap-width: 12;
-    text-placement: interior;
   }
 
   [man_made = 'flagpole'][zoom >= 17]::man_made,
@@ -7385,7 +6531,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 2;
     text-wrap-width: 12;
-    text-placement: interior;
   }
 
   [man_made = 'flagpole_red'][zoom >= 15]::man_made {
@@ -7398,7 +6543,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 2;
     text-wrap-width: 12;
-    text-placement: interior;
   }
 
   [man_made = 'lcn_ref'][zoom >= 17]::man_made {
@@ -7419,7 +6563,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 2;
     text-wrap-width: 12;
-    text-placement: interior;
   }
 
   [amenity = 'hospital'][zoom >= 16]::amenity {
@@ -7431,7 +6574,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 2;
     text-wrap-width: 24;
-    text-placement: interior;
   }
 
   [amenity = 'doctors']::amenity,
@@ -7452,7 +6594,6 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 12;
-    text-placement: interior;
     }
   }
 
@@ -7535,7 +6676,6 @@
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-wrap-width: @default-wrap-width;
-      text-placement: interior;
     }
   }
 
@@ -7549,7 +6689,6 @@
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-wrap-width: @default-wrap-width;
-      text-placement: interior;
     }
   }
 
@@ -7582,7 +6721,6 @@
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-wrap-width: 12;
-      text-placement: interior;
     }
   }
 
@@ -7598,7 +6736,6 @@
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-wrap-width: 20;
-      text-placement: interior;
     }
   }
 
@@ -7610,7 +6747,6 @@
     text-face-name: @bold-fonts;
     text-halo-radius: 1;
     text-wrap-width: 10;
-    text-placement: interior;
   }
 
   [landuse = 'military']::landuse {
@@ -7622,7 +6758,6 @@
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-wrap-width: 10;
-      text-placement: interior;
     }
   }
 
@@ -7634,6 +6769,5 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 10;
-    text-placement: interior;
   }
 }
