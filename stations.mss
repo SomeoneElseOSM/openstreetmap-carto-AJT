@@ -1,12 +1,10 @@
 .stations {
   [railway = 'subway_entrance'][zoom >= 18] {
     point-file: url('symbols/walking.n.12.png');
-    point-placement: interior;
   }
 
   [railway = 'station'][zoom >= 12] {
     point-file: url('symbols/halt.png');
-    point-placement: interior;
     [zoom >= 13] {
       point-file: url('symbols/station_small.png');
     }
@@ -18,7 +16,6 @@
       text-dy: -8;
       text-halo-radius: 1;
       text-wrap-width: 0;
-      text-placement: interior;
     }
     [zoom >= 15] {
       point-file: url('symbols/station.png');
@@ -45,7 +42,6 @@
       text-dy: -8;
       text-halo-radius: 1;
       text-wrap-width: 0;
-      text-placement: interior;
       [zoom >= 15] {
         text-size: 10;
         text-dy: -10;
