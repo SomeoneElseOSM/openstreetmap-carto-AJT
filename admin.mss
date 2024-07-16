@@ -87,7 +87,8 @@
 }
 
 #nature-reserve-boundaries {
-  [zoom >= 7] {
+  [boundary = 'national_park'][zoom >= 7],
+  [leisure = 'nature_reserve'][zoom >= 7] {
     ::fill [zoom < 13] {
       opacity: 0.05;
       polygon-fill: green;
@@ -105,7 +106,25 @@
       }
     }
   }
-  [way_area > 200000000][zoom >= 8][zoom < 12] {
+  [boundary = 'access_land'][zoom >= 7] {
+    ::fill {
+      opacity: 0.05;
+      polygon-fill: yellow;
+    }
+    ::line {
+      [zoom >= 14] {
+        opacity: 0.15;
+        line-color: yellow;
+        line-width: 3;
+        line-dasharray: 6,2;
+        line-join: bevel;
+        [zoom >= 17] {
+          line-width: 6;
+	}
+      }
+    }
+  }
+  [boundary = 'national_park'][way_area > 200000000][zoom >= 8][zoom < 12] {
     text-name: "[name]";
     text-size: 8;
     text-fill: #9c9;
