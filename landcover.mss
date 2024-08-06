@@ -569,7 +569,17 @@
 
 /* man_made=cutline */
 #landcover-line {
-  [zoom >= 14] {
+  [amenity = 'bench'][zoom >= 17]::amenity {
+    point-file: url('symbols/bench.p07.png');
+    [zoom >= 19] {
+      point-file: url('symbols/bench.p14.png');
+    }
+    [zoom >= 20] {
+      point-file: url('symbols/bench.p21.png');
+    }
+  }
+
+  [man_made = 'cutline'][zoom >= 14] {
     line-width: 3;
     line-join: round;
     line-cap: square;

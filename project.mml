@@ -106,7 +106,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select way\nfrom planet_osm_line\nwhere man_made='cutline'\n) as landcover_line",
+        "table": "(select way, amenity, man_made \nfrom planet_osm_line\nwhere amenity='bench' or man_made='cutline'\n) as landcover_line",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
