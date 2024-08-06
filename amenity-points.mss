@@ -5764,6 +5764,9 @@
   }
 
   [landuse = 'meadow']::landuse,
+  [landuse = 'meadowtransitional']::landuse,
+  [landuse = 'meadowwildflower']::landuse,
+  [landuse = 'meadowperpetual']::landuse,
   [landuse = 'wetmeadow']::landuse,
   [landuse = 'farmgrass']::landuse,
   [landuse = 'grass']::landuse  {

@@ -203,6 +203,36 @@
     }
   }
 
+  [feature = 'landuse_meadowtransitional'],
+  [feature = 'landuse_unnamedmeadowtransitional'] {
+    [zoom >= 10] {
+      polygon-fill: @meadow;
+    }
+    [zoom >= 14] {
+      polygon-pattern-file: url('symbols/meadowtransitional_pattern.png');
+    }
+  }
+
+  [feature = 'landuse_meadowwildflower'],
+  [feature = 'landuse_unnamedmeadowwildflower'] {
+    [zoom >= 10] {
+      polygon-fill: @meadow;
+    }
+    [zoom >= 14] {
+      polygon-pattern-file: url('symbols/meadowwildflower_pattern.png');
+    }
+  }
+
+  [feature = 'landuse_meadowperpetual'],
+  [feature = 'landuse_unnamedmeadowperpetual'] {
+    [zoom >= 10] {
+      polygon-fill: @meadow;
+    }
+    [zoom >= 14] {
+      polygon-pattern-file: url('symbols/meadowperpetual_pattern.png');
+    }
+  }
+
   [feature = 'landuse_wetmeadow'] {
     [zoom >= 10] {
       polygon-fill: @meadow;
