@@ -209,7 +209,7 @@
       polygon-fill: @meadow;
     }
     [zoom >= 14] {
-      polygon-pattern-file: url('symbols/meadowtransitional_pattern.png');
+      polygon-pattern-file: url('symbols/scrub_pattern.png');
     }
   }
 
@@ -482,11 +482,11 @@
   }
 
   [feature = 'natural_scrub'] {
-    [zoom >= 10][zoom < 14] {
+    [zoom >= 10] {
       polygon-fill: #b5e3b5;
     }
     [zoom >= 14] {
-      polygon-pattern-file: url('symbols/scrub.png');
+      polygon-pattern-file: url('symbols/scrub_pattern.png');
     }
   }
 
