@@ -505,7 +505,9 @@
   }
 
   [feature = 'amenity_parking'][zoom >= 10],
-  [feature = 'amenity_parking_pay'][zoom >= 10] {
+  [feature = 'amenity_parking_pay'][zoom >= 10],
+  [feature = 'amenity_parking_freedisabled'][zoom >= 10],
+  [feature = 'amenity_parking_paydisabled'][zoom >= 10] {
     polygon-fill: @parking;
     [zoom >= 15] {
       line-width: 0.3;

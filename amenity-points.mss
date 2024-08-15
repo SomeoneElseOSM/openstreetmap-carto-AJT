@@ -948,6 +948,26 @@
     }
   }
 
+  [amenity = 'parking_freedisabled'][zoom >= 13]::amenity {
+    marker-file: url('symbols/parking_freedisabled.png');
+    marker-placement: interior;
+    marker-clip: false;
+    marker-fill: @transportation-icon;
+    [access != ''][access != 'public'][access != 'yes'] {
+      marker-opacity: 0.33;
+    }
+  }
+
+  [amenity = 'parking_paydisabled'][zoom >= 13]::amenity {
+    marker-file: url('symbols/parking_paydisabled.png');
+    marker-placement: interior;
+    marker-clip: false;
+    marker-fill: @transportation-icon;
+    [access != ''][access != 'public'][access != 'yes'] {
+      marker-opacity: 0.33;
+    }
+  }
+
   [amenity = 'doctors'][zoom >= 17]::amenity {
     point-file: url('symbols/health_doctors.p.16.png');
   }
@@ -5302,7 +5322,9 @@
   }
 
   [amenity = 'parking'][zoom >= 17]::amenity,
-  [amenity = 'parking_pay'][zoom >= 17]::amenity {
+  [amenity = 'parking_pay'][zoom >= 17]::amenity, 
+  [amenity = 'parking_freedisabled'][zoom >= 17]::amenity, 
+  [amenity = 'parking_paydisabled'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
