@@ -129,6 +129,7 @@
 @unclassified-width-z17:          11;
 @living_street-width-z17:         11;
 @service-width-z17:               7;
+@minor-service-width-z17:         5;
 
 @motorway-width-z18:             20;
 @motorway-link-width-z18:        13.5;
@@ -139,6 +140,7 @@
 @unclassified-width-z18:          13;
 @living_street-width-z18:         13;
 @service-width-z18:               8;
+@minor-service-width-z18:         6;
 
 @motorway-width-z19:             36;
 @motorway-link-width-z19:        23;
@@ -149,7 +151,7 @@
 @unclassified-width-z19:         20;
 @living_street-width-z19:        20;
 @service-width-z19:              14;
-
+@minor-service-width-z19:        10;
 
 @casing-width-z12:                0.5;
 @casing-width-z13:                0.6;
@@ -952,6 +954,9 @@
         }
         [service = 'INT-minor'] {
           line-width: @minor-service-width-z16;
+          [zoom >= 17] { line-width: @minor-service-width-z17; }
+          [zoom >= 18] { line-width: @minor-service-width-z18; }
+          [zoom >= 19] { line-width: @minor-service-width-z19; }
         }
         .roads-casing {
           line-join: round;
@@ -983,6 +988,9 @@
         }
         [service = 'INT-minor'] {
           line-width: @minor-service-width-z16;
+          [zoom >= 17] { line-width: @minor-service-width-z17; }
+          [zoom >= 18] { line-width: @minor-service-width-z18; }
+          [zoom >= 19] { line-width: @minor-service-width-z19; }
         }
         .roads-casing {
           line-join: round;
@@ -2494,7 +2502,10 @@
           [zoom >= 19] { line-width: @service-width-z19 - 2 * @casing-unc-width-z19; }
         }
         [service = 'INT-minor'] {
-          line-width: @minor-service-width-z16 - 2 * @casing-width-z16;
+          line-width: @minor-service-width-z16 - 2 * @casing-unc-width-z16;
+          [zoom >= 17] { line-width: @minor-service-width-z17 - 2 * @casing-unc-width-z17; }
+          [zoom >= 18] { line-width: @minor-service-width-z18 - 2 * @casing-unc-width-z18; }
+          [zoom >= 19] { line-width: @minor-service-width-z19 - 2 * @casing-unc-width-z19; }
         }
         line-join: round;
         line-cap: round;
@@ -2511,6 +2522,9 @@
           }
           [service = 'INT-minor'] {
             line-width: @minor-service-width-z16 - 2 * @bridge-casing-width-z16;
+            [zoom >= 17] { line-width: @minor-service-width-z17 - 2 * @bridge-casing-width-z17; }
+            [zoom >= 18] { line-width: @minor-service-width-z18 - 2 * @bridge-casing-width-z18; }
+            [zoom >= 19] { line-width: @minor-service-width-z19 - 2 * @bridge-casing-width-z19; }
           }
         }
       }
@@ -2534,6 +2548,9 @@
         }
         [service = 'INT-minor'] {
           line-width: @minor-service-width-z16 - 2 * @ford-service-width-z16;
+          [zoom >= 17] { line-width: @minor-service-width-z17 - 2 * @ford-service-width-z17; }
+          [zoom >= 18] { line-width: @minor-service-width-z18 - 2 * @ford-service-width-z18; }
+          [zoom >= 19] { line-width: @minor-service-width-z19 - 2 * @ford-service-width-z19; }
         }
         line-join: round;
         line-cap: round;
@@ -2550,6 +2567,9 @@
           }
           [service = 'INT-minor'] {
             line-width: @minor-service-width-z16 - 2 * @bridge-casing-width-z16;
+            [zoom >= 17] { line-width: @minor-service-width-z17 - 2 * @bridge-casing-width-z17; }
+            [zoom >= 18] { line-width: @minor-service-width-z18 - 2 * @bridge-casing-width-z18; }
+            [zoom >= 19] { line-width: @minor-service-width-z19 - 2 * @bridge-casing-width-z19; }
           }
         }
       }
