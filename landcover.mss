@@ -48,7 +48,6 @@
 @campsite: #ccff99; // also caravan_site, picnic_site
 @cemetery: #aacbaf;
 @construction: #9d9d6c;
-@danger_area: #fff4f8;
 @desert: #e3b57a;
 @field: #660;
 @garages: #996;
@@ -179,13 +178,6 @@
         line-opacity: 0.4;
         line-color: saturate(darken(@field, 40%), 20%);
       }
-    }
-  }
-
-  [feature = 'military_danger_area'] {
-    [zoom >= 9] {
-      polygon-fill: @danger_area;
-      polygon-opacity: 0.3;
     }
   }
 
