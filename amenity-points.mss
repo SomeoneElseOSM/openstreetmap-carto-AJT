@@ -5717,13 +5717,15 @@
       [zoom >= 20] { text-size: 18; }
       text-fill: darken(@vineyard, 50%);
       text-face-name: @book-fonts;
-      // extra halo needed to overpower the cemetery polygon pattern
+      // extra halo needed to overpower the polygon pattern
       text-halo-radius: 1.5;
       text-wrap-width: 10;
     }
   }
 
-  [landuse = 'cemetery']::landuse {
+  [landuse = 'christiancemetery']::landuse,
+  [landuse = 'jewishcemetery']::landuse,
+  [landuse = 'othercemetery']::landuse {
     [zoom >= 15] {
       text-name: "[name]";
       text-size: 9;
