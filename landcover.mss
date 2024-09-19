@@ -491,7 +491,8 @@
     polygon-fill: #c6e4b4;
   }
 
-  [feature = 'natural_scrub'] {
+  [feature = 'natural_scrub'],
+  [feature = 'natural_unnamedscrub'] {
     [zoom >= 10] {
       polygon-fill: #b5e3b5;
     }
