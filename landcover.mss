@@ -554,11 +554,11 @@
     polygon-pattern-file: url('symbols/tidal_rocks_pattern.png');
   }
 
-  [feature = 'natural_reef'][zoom >= 10] {
+  [feature = 'natural_reef'][zoom >= 13] {
     polygon-pattern-file: url('symbols/reef_pattern.png');
   }
 
-  [feature = 'natural_reefsand'][zoom >= 10] {
+  [feature = 'natural_reefsand'][zoom >= 13] {
     polygon-pattern-file: url('symbols/reefsand_pattern.png');
   }
 
