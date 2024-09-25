@@ -13,8 +13,7 @@
     }
   }
 
-  [waterway = 'dock'],
-  [waterway = 'canal'] {
+  [waterway = 'dock'] {
     [zoom >= 10]::waterway {
       polygon-fill: @water-color;
       [way_pixels >= 4] {
