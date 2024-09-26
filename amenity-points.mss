@@ -5376,13 +5376,32 @@
   [natural = 'broadleaved'][zoom >= 15]::natural,
   [natural = 'needleleaved'][zoom >= 15]::natural,
   [natural = 'mixedleaved'][zoom >= 15]::natural,
+  [natural = 'grassland'][zoom >= 15]::natural,
+  [natural = 'scrub'][zoom >= 15]::natural,
+  [natural = 'wetland'][zoom >= 15]::natural {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-fill: darken(@wood, 50%);
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-wrap-width: 10;
+  }
+
   [natural = 'desert'][zoom >= 13]::natural,
   [natural = 'sand'][zoom >= 13]::natural,
   [natural = 'tidal_sand'][zoom >= 13]::natural,
-  [natural = 'grassland'][zoom >= 15]::natural,
-  [natural = 'scrub'][zoom >= 15]::natural,
   [natural = 'beach'][zoom >= 13]::natural,
-  [natural = 'tidal_beach'][zoom >= 13]::natural,
+  [natural = 'tidal_beach'][zoom >= 13]::natural {
+    text-name: "[name]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-fill: darken(@sand, 60%);
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-wrap-width: 10;
+  }
+
   [natural = 'bare_rock'][zoom >= 15]::natural,
   [natural = 'tidal_rock'][zoom >= 15]::natural,
   [natural = 'reef'][zoom >= 13]::natural,
@@ -5390,12 +5409,11 @@
   [natural = 'scree'][zoom >= 15]::natural,
   [natural = 'tidal_scree'][zoom >= 15]::natural,
   [natural = 'shingle'][zoom >= 15]::natural,
-  [natural = 'tidal_shingle'][zoom >= 15]::natural,
-  [natural = 'wetland'][zoom >= 15]::natural {
+  [natural = 'tidal_shingle'][zoom >= 15]::natural {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
-    text-fill: darken(@wood, 50%);
+    text-fill: "#6a6965";
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 10;
