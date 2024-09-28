@@ -5706,7 +5706,7 @@
       text-size: 11;
       [zoom >= 20] { text-size: 22; }
       text-fill: @park-text;
-      text-dy: 10;
+      text-dy: 20;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.6);
