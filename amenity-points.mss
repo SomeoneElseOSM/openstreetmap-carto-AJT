@@ -5612,7 +5612,6 @@
   }
 
   [natural = 'water']::natural,
-  [landuse = 'reservoir']::landuse,
   [natural = 'intermittentwater']::natural,
   [natural = 'flood_prone']::natural,
   [landuse = 'basin']::landuse {

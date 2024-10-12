@@ -37,7 +37,6 @@
 
   [natural = 'lake']::natural,
   [natural = 'water']::natural,
-  [landuse = 'reservoir']::landuse,
   [waterway = 'riverbank']::waterway {
     [zoom >= 6] {
       polygon-fill: @water-color;
