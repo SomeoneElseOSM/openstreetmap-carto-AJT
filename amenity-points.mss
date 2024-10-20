@@ -4282,8 +4282,7 @@
     point-file: url('symbols/shop_copyshop.png');
   }
 
-  [shop = 'clothes']::shop,
-  [shop = 'fashion']::shop {
+  [shop = 'clothes']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_clothes.p.16.png');
     }
@@ -6660,7 +6659,6 @@
   [shop = 'electronics']::shop,
   [shop = 'garden_centre']::shop,
   [shop = 'jewellery']::shop,
-  [shop = 'fashion']::shop,
   [shop = 'convenience']::shop,
   [shop = 'ecoconv']::shop,
   [shop = 'health_food']::shop,
