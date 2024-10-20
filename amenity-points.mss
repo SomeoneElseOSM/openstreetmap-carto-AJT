@@ -448,10 +448,6 @@
     point-file: url('symbols/charging_station.png');
   }
 
-  [tourism = 'guest_house'][zoom >= 17]::tourism {
-    point-file: url('symbols/guest_house.p.16.png');
-  }
-
   [tourism = 'bed_and_breakfast'][zoom >= 17]::tourism {
     point-file: url('symbols/bandb.p.20.png');
   }
@@ -6087,7 +6083,6 @@
     }
   }
 
-  [tourism = 'guest_house'][zoom >= 17]::tourism,
   [tourism = 'bed_and_breakfast'][zoom >= 17]::tourism,
   [tourism = 'tourism_guest_nydn'][zoom >= 17]::tourism,
   [tourism = 'tourism_guest_yyyy'][zoom >= 17]::tourism,
