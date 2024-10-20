@@ -6631,13 +6631,14 @@
   [amenity = 'pharmacy_n']::amenity,
   [amenity = 'pharmacy_y']::amenity,
   [amenity = 'ambulance_station']::amenity,
+  [shop = 'optician']::shop,
   [amenity = 'mountain_rescue']::amenity,
   [amenity = 'mountain_rescue_box']::amenity { 
     [zoom >= 17] {
     text-name: "[name]";
     text-size: 8;
     [zoom >= 20] { text-size: 16; }
-    text-dy: 10;
+    text-dy: 12;
     text-fill: #da0092;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -6649,7 +6650,6 @@
   [shop = 'bakery']::shop,
   [shop = 'seafood']::shop,
   [shop = 'coffee']::shop,
-  [shop = 'optician']::shop,
   [shop = 'clothes']::shop,
   [shop = 'shoes']::shop,
   [shop = 'shoe_repair_etc']::shop,
