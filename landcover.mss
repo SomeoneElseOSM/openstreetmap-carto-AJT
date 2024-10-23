@@ -154,7 +154,6 @@
     }
   }
 
-  [feature = 'landuse_cemetery'],
   [feature = 'landuse_othercemetery'],
   [feature = 'landuse_unnamedothercemetery'] {
     [zoom >= 10][zoom < 14] {
