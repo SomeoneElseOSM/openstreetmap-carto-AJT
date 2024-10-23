@@ -5745,6 +5745,7 @@
     }
   }
 
+  [landuse = 'cemetery']::landuse,
   [landuse = 'christiancemetery']::landuse,
   [landuse = 'jewishcemetery']::landuse,
   [landuse = 'othercemetery']::landuse {
