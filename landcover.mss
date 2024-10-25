@@ -728,6 +728,13 @@
     }
   }
 
+  [barrier = 'tree_row'][zoom >= 16] {
+    line-pattern-file: url('symbols/tree_row.png');
+    [zoom >= 17] {
+      line-pattern-file: url('symbols/tree_row2.png');
+    }
+  }
+
 }
 
 .barriers {
