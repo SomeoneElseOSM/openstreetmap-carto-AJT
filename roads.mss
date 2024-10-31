@@ -1266,53 +1266,6 @@
       }
     }
 
-    [feature = 'highway_track'] {
-      .bridges-casing {
-        [zoom >= 13] {
-          line-color: @bridge-casing;
-          line-join: round;
-          line-width: 4.4;
-          [tracktype = 'grade1'] {
-            line-width: 5.2;
-          }
-          [tracktype = 'grade2'] {
-            line-width: 4.8;
-          }
-        }
-        [zoom >= 15] {
-          line-width: 5;
-          [tracktype = 'grade1'] {
-            line-width: 6;
-          }
-          [tracktype = 'grade2'] {
-            line-width: 5.5;
-          }
-        }
-      }
-      .levees-casing {
-        [zoom >= 13] {
-          line-color: @levee-casing;
-          line-join: round;
-          line-width: 4.4;
-          [tracktype = 'grade1'] {
-            line-width: 5.2;
-          }
-          [tracktype = 'grade2'] {
-            line-width: 4.8;
-          }
-        }
-        [zoom >= 15] {
-          line-width: 5;
-          [tracktype = 'grade1'] {
-            line-width: 6;
-          }
-          [tracktype = 'grade2'] {
-            line-width: 5.5;
-          }
-        }
-      }
-    }
-
     [feature = 'railway_subway'] {
       .bridges-casing {
         [zoom >= 14] {
@@ -1527,54 +1480,6 @@
           line-width: 2.5;
           line-color: @path-casing;
           line-join: round;
-        }
-      }
-    }
-
-    [feature = 'highway_track'] {
-      /* We don't set opacity here, so it's 1.0. Aside from that, it's basically a copy of roads-fill::background in the track part of ::fill */
-      .bridges-casing {
-        [zoom >= 13] {
-          line-color: @track-casing;
-          line-join: round;
-          line-width: 2.4;
-          [tracktype = 'grade1'] {
-            line-width: 3.2;
-          }
-          [tracktype = 'grade2'] {
-            line-width: 2.8;
-          }
-        }
-        [zoom >= 15] {
-          line-width: 3;
-          [tracktype = 'grade1'] {
-            line-width: 4;
-          }
-          [tracktype = 'grade2'] {
-            line-width: 3.5;
-          }
-        }
-      }
-      .levees-casing {
-        [zoom >= 13] {
-          line-color: @track-casing;
-          line-join: round;
-          line-width: 2.4;
-          [tracktype = 'grade1'] {
-            line-width: 3.2;
-          }
-          [tracktype = 'grade2'] {
-            line-width: 2.8;
-          }
-        }
-        [zoom >= 15] {
-          line-width: 3;
-          [tracktype = 'grade1'] {
-            line-width: 4;
-          }
-          [tracktype = 'grade2'] {
-            line-width: 3.5;
-          }
         }
       }
     }
@@ -3497,103 +3402,6 @@
       }
     }
 
-    [feature = 'highway_track'] {
-      [zoom >= 13] {
-        .tunnels-fill {
-          tunnelcasing/line-color: @tunnel-casing;
-          tunnelcasing/line-dasharray: 4,2;
-          tunnelcasing/line-width: 4.4;
-          [tracktype = 'grade1'] {
-            tunnelcasing/line-width: 5.2;
-          }
-          [tracktype = 'grade2'] {
-            tunnelcasing/line-width: 5.2;
-          }
-          [zoom >= 15]{
-            tunnelcasing/line-width: 5;
-            [tracktype = 'grade1'] {
-              tunnelcasing/line-width: 6;
-            }
-            [tracktype = 'grade2'] {
-              tunnelcasing/line-width: 5.5;
-            }
-          }
-        }
-
-        /* The white casing that you mainly see against forests and other dark features */
-        .roads-fill, .tunnels-fill {
-          background/line-opacity: 0.4;
-          background/line-color: @track-casing;
-          background/line-join: round;
-          background/line-cap: round;
-          background/line-width: 2.4;
-          /* With the heavier dasharrays on grade1 and grade2 it helps to make the casing a bit larger */
-          [tracktype = 'grade1'] {
-            background/line-width: 3.2;
-          }
-          [tracktype = 'grade2'] {
-            background/line-width: 2.8;
-          }
-
-          [zoom >= 15] {
-            background/line-width: 3;
-            [tracktype = 'grade1'] {
-              background/line-width: 4;
-            }
-            [tracktype = 'grade2'] {
-              background/line-width: 3.5;
-            }
-          }
-        }
-
-        /* Set the properties of the brown inside */
-        line/line-color: @track-fill;
-        line/line-dasharray: 5,4,2,4;
-        line/line-cap: round;
-        line/line-join: round;
-        line/line-opacity: 0.8;
-        line/line-clip:false;
-
-        /* ~80% of higher zoom sizes */
-        line/line-width: 1.2;
-
-        [tracktype = 'grade1'] {
-          line/line-dasharray: 100,0;
-        }
-        [tracktype = 'grade2'] {
-          line/line-dasharray: 8.8,3.2;
-        }
-        [tracktype = 'grade3'] {
-          line/line-dasharray: 5.6,4.0;
-        }
-        [tracktype = 'grade4'] {
-          line/line-dasharray: 3.2,4.8;
-        }
-        [tracktype = 'grade5'] {
-          line/line-dasharray: 1.6,6.4;
-        }
-
-        [zoom >= 15] {
-          line/line-width: 1.5;
-          [tracktype = 'grade1'] {
-            line/line-dasharray: 100,0;
-          }
-          [tracktype = 'grade2'] {
-            line/line-dasharray: 11,4;
-          }
-          [tracktype = 'grade3'] {
-            line/line-dasharray: 7,5;
-          }
-          [tracktype = 'grade4'] {
-            line/line-dasharray: 4,6;
-          }
-          [tracktype = 'grade5'] {
-            line/line-dasharray: 2,8;
-          }
-        }
-      }
-    }
-
     [feature = 'highway_gallop'] {
       [zoom >= 13] {
         .tunnels-fill {
@@ -4171,13 +3979,6 @@
     }
   }
 
-  [feature = 'highway_track'] {
-    [zoom >= 14] {
-      line-color: @track-fill;
-      line-width: 2;
-    }
-  }
-
   [feature = 'highway_platform'],
   [feature = 'railway_platform'] {
     [zoom >= 16] {
@@ -4211,12 +4012,6 @@
   [feature = 'highway_pathnarrow'] {
     [zoom >= 14] {
       polygon-fill: #ededed;
-    }
-  }
-
-  [feature = 'highway_track'] {
-    [zoom >= 14] {
-      polygon-fill: #dfcc66;
     }
   }
 
@@ -4288,7 +4083,6 @@
     [feature = 'highway_living_street_sidewalk'],
     [feature = 'highway_living_street_verge'],
     [feature = 'highway_living_street_ford'],
-    [feature = 'highway_track'],
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
     [feature = 'highway_intpathnarrow'],
@@ -4379,7 +4173,6 @@
         access/line-cap: round;
       }
     }
-    [feature = 'highway_track'],
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_pathwide'],
     [feature = 'highway_intpathnarrow'],
@@ -4906,23 +4699,6 @@
 }
 
 #paths-text-name {
-  [highway = 'track'] {
-    [zoom >= 15] {
-      text-name: "[name]";
-      text-size: 8;
-      text-spacing: 300;
-      text-clip: false;
-      text-placement: line;
-      text-face-name: @book-fonts;
-    }
-    [zoom >= 16] {
-      text-size: 9;
-    }
-    [zoom >= 17] {
-      text-size: 11;
-    }
-  }
-
   /* Text for most highway types is displayed in the same way */
   [highway = 'footwaynarrow'],
   [highway = 'footwaywide'],
