@@ -4182,6 +4182,10 @@
     point-file: url('symbols/historic_aircraftwreck.png');
   }
 
+  [historic = 'milk_churn_stand'][zoom >= 17]::historic {
+    point-file: url('symbols/historic_milk_churn_stand.png');
+  }
+
   [historic = 'water_pump'][zoom >= 17]::historic {
     point-file: url('symbols/historic_waterpump.png');
   }
@@ -5599,6 +5603,7 @@
 
   [historic = 'aircraft_wreck'][zoom >= 17]::historic, 
   [historic = 'aircraft'][zoom >= 17]::historic, 
+  [historic = 'milk_churn_stand'][zoom >= 17]::historic, 
   [historic = 'water_pump'][zoom >= 17]::historic, 
   [historic = 'windmill'][zoom >= 17]::historic, 
   [historic = 'watermill'][zoom >= 17]::historic, 
