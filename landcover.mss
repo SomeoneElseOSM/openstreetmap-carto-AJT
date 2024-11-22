@@ -666,7 +666,8 @@
   [man_made = 'embankment'][zoom >= 17],
   [man_made = 'levee'][zoom >= 14],
   [barrier = 'wall'][zoom >= 17],
-  [barrier = 'gate'][zoom >= 17] {
+  [barrier = 'gate'][zoom >= 17],
+  [barrier = 'gate_locked'][zoom >= 17] {
     text-name: "[name]";
     text-dy: 9;
     text-face-name: @oblique-fonts;
@@ -815,6 +816,7 @@
     }
   }
 
+  [barrier = 'gate_locked'],
   [barrier = 'gate'] {
     [zoom >= 14]
     {
