@@ -817,7 +817,8 @@
   }
 
   [barrier = 'gate_locked'],
-  [barrier = 'gate'] {
+  [barrier = 'gate'],
+  [barrier = 'lift_gate'] {
     [zoom >= 14]
     {
       line-width: 1;
