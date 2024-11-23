@@ -502,6 +502,18 @@
       line-dasharray: 32,64;
     }
   }
+  [waterway = 'pipeline'][zoom >= 15] {
+    line-color: #9900cc;
+    line-width: 0.3;
+    [bridge = 'yes'] {
+      bridgecasing/line-color: black;
+      bridgecasing/line-join: round;
+      bridgecasing/line-width: 3;
+      bridgeglow/line-color: white;
+      bridgeglow/line-join: round;
+      bridgeglow/line-width: 2;
+    }
+  }
 }
 
 #water-lines-text {
@@ -584,6 +596,16 @@
     text-halo-radius: 1;
     [zoom >= 14] { text-size: 12; }
     [zoom >= 20] { text-size: 18; }
+  }
+
+  [waterway = 'pipeline'][zoom >= 15] {
+    text-name: "[name]";
+    text-size: 10;
+    text-fill: #9900cc;
+    text-face-name: @oblique-fonts;
+    text-placement: line;
+    text-spacing: 600;
+    text-halo-radius: 1;
   }
 
   [waterway = 'weir'][zoom >= 15] {
