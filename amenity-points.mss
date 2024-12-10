@@ -288,6 +288,10 @@
     point-file: url('symbols/leisure_sports_centre.png');
   }
 
+  [leisure = 'dog_park'][zoom >= 15]::leisure {
+    point-file: url('symbols/leisure_dog_park.png');
+  }
+
   [leisure = 'leisurenonspecific'][zoom >= 17]::leisure {
     point-file: url('symbols/leisure_nonspecific.p.16.png');
   }
@@ -5670,10 +5674,12 @@
 
   [leisure = 'stadium']::leisure,
   [leisure = 'track']::leisure,
-  [leisure = 'pitch']::leisure {
+  [leisure = 'pitch']::leisure,
+  [leisure = 'dog_park']::leisure {
     [zoom >= 15] {
       text-name: "[name]";
       text-size: 9;
+      text-dy: 20;
       [zoom >= 20] { text-size: 18; }
       text-fill: darken(@stadium, 30%);
       text-face-name: @book-fonts;
