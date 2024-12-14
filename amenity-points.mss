@@ -4190,6 +4190,10 @@
     point-file: url('symbols/historic_milk_churn_stand.png');
   }
 
+  [historic = 'water_crane'][zoom >= 17]::historic {
+    point-file: url('symbols/historic_watercrane.png');
+  }
+
   [historic = 'water_pump'][zoom >= 17]::historic {
     point-file: url('symbols/historic_waterpump.png');
   }
