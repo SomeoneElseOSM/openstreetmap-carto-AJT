@@ -3737,13 +3737,6 @@
       }
     }
 
-    [feature = 'railway_turntable'] {
-      [zoom >= 16] {
-        line-width: 1.5;
-        line-color: #999;
-      }
-    }
-
     [feature = 'aeroway_grass_runway'] {
       [zoom >= 13][zoom < 14] {
         line-width: 2;
@@ -4020,6 +4013,13 @@
     [zoom >= 16] {
       polygon-fill: #bbbbbb;
       polygon-gamma: 0.65;
+    }
+  }
+
+  [feature = 'railway_turntable'] {
+    [zoom >= 16] {
+      line-width: 1.5;
+      line-color: #999;
     }
   }
 
