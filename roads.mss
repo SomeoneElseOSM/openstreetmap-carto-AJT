@@ -21,6 +21,7 @@
 @track-fill: #996600;
 @aeroway-fill: #bbc;
 @runway-fill: @aeroway-fill;
+@grassrunway-fill: #cfeca8;
 @taxiway-fill: @aeroway-fill;
 @helipad-fill: @aeroway-fill;
 
@@ -4023,7 +4024,10 @@
     }
   }
 
-  [feature = 'aeroway_grass_runway'][zoom >= 11], 
+  [feature = 'aeroway_grass_runway'][zoom >= 11] {
+    polygon-fill: @grassrunway-fill;
+  }
+
   [feature = 'aeroway_runway'][zoom >= 11] {
     polygon-fill: @runway-fill;
   }
