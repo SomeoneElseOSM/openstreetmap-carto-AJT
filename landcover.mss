@@ -55,7 +55,7 @@
 @parking: #f7efb7;
 @playground: #ccfff1;
 @schoolyard: #f1f1f1;
-@power: #bbb;
+@power: #d0c3c3;
 @rest_area: #efc8c8; // also services
 @sand: #ffdf88;
 @school: #f0f0d8; // also university, college, hospital, kindergarten

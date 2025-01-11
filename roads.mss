@@ -3793,7 +3793,10 @@
 }
 
 #turning-circle-casing {
-  [int_tc_type = 'tertiary'][zoom >= 15] {
+  [int_tc_type = 'tertiary'][zoom >= 15],
+  [int_tc_type = 'tertiary_sidewalk'][zoom >= 15],
+  [int_tc_type = 'tertiary_verge'][zoom >= 15],
+  [int_tc_type = 'tertiary_ford'][zoom >= 15] {
     marker-fill: @tertiary-sidewalk-casing;
     marker-width: (@tertiary-width-z15 - 2 * @casing-width-z15) * 1.8 + 2 * @casing-width-z15;
     marker-height: (@tertiary-width-z15 - 2 * @casing-width-z15) * 1.8 + 2 * @casing-width-z15;
@@ -3811,7 +3814,10 @@
   }
 
   [int_tc_type = 'residential'],
-  [int_tc_type = 'unclassified'] {
+  [int_tc_type = 'unclassified'],
+  [int_tc_type = 'unclassified_sidewalk'],
+  [int_tc_type = 'unclassified_verge'],
+  [int_tc_type = 'unclassified_ford'] {
     [zoom >= 15] {
       marker-fill: @unclassified-sidewalk-casing;
       marker-width: (@unclassified-width-z15 - 2 * @casing-width-z15) * 1.8 + 2 * @casing-width-z15;
@@ -3834,7 +3840,10 @@
     }
   }
 
-  [int_tc_type = 'living_street'][zoom >= 15] {
+  [int_tc_type = 'living_street'][zoom >= 15],
+  [int_tc_type = 'living_street_sidewalk'][zoom >= 15],
+  [int_tc_type = 'living_street_verge'][zoom >= 15],
+  [int_tc_type = 'living_street_ford'][zoom >= 15] {
     marker-fill: @living_street-sidewalk-casing;
     marker-width: 14;
     marker-height: 14;
@@ -3851,7 +3860,8 @@
     marker-line-width: 0;
   }
 
-  [int_tc_type = 'service'][zoom >= 16] {
+  [int_tc_type = 'service'][zoom >= 16],
+  [int_tc_type = 'service_ford'][zoom >= 16] {
     marker-fill: @service-casing;
     [int_tc_service = 'INT-normal'] {
       marker-width: 14;
@@ -3872,7 +3882,10 @@
 }
 
 #turning-circle-fill {
-  [int_tc_type = 'tertiary'][zoom >= 15] {
+  [int_tc_type = 'tertiary'][zoom >= 15],
+  [int_tc_type = 'tertiary_sidewalk'][zoom >= 15],
+  [int_tc_type = 'tertiary_verge'][zoom >= 15],
+  [int_tc_type = 'tertiary_ford'][zoom >= 15] {
     marker-fill: @tertiary-fill;
     marker-width: (@tertiary-width-z15 - 2 * @casing-width-z15) * 1.8;
     marker-height: (@tertiary-width-z15 - 2 * @casing-width-z15) * 1.8;
@@ -3890,7 +3903,10 @@
   }
 
   [int_tc_type = 'residential'],
-  [int_tc_type = 'unclassified'] {
+  [int_tc_type = 'unclassified'],
+  [int_tc_type = 'unclassified_sidewalk'],
+  [int_tc_type = 'unclassified_verge'],
+  [int_tc_type = 'unclassified_ford'] {
     [zoom >= 15] {
       marker-fill: @unclassified-fill;
       marker-width: (@unclassified-width-z15 - 2 * @casing-width-z15) * 1.8;
@@ -3913,7 +3929,10 @@
     }
   }
 
-  [int_tc_type = 'living_street'][zoom >= 15] {
+  [int_tc_type = 'living_street'][zoom >= 15],
+  [int_tc_type = 'living_street_sidewalk'][zoom >= 15],
+  [int_tc_type = 'living_street_verge'][zoom >= 15],
+  [int_tc_type = 'living_street_ford'][zoom >= 15] {
     marker-fill: @living_street-fill;
     marker-width: 12;
     marker-height: 12;
@@ -3930,7 +3949,8 @@
     marker-line-width: 0;
   }
 
-  [int_tc_type = 'service'][zoom >= 16] {
+  [int_tc_type = 'service'][zoom >= 16],
+  [int_tc_type = 'service_ford'][zoom >= 16] {
     marker-fill: @service-fill;
     [int_tc_service = 'INT-normal'] {
       marker-width: 12;
