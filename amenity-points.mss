@@ -4605,6 +4605,10 @@
     point-file: url('symbols/firehydrant.png');
   }
 
+  [amenity = 'emergency_access_point'][zoom >= 17]::amenity {
+    point-file: url('symbols/emergency_access_point.png');
+  }
+
   [leisure = 'playground'][zoom >= 17]::leisure {
     point-file: url('symbols/playground.p.20.png');
   }
@@ -6496,7 +6500,18 @@
     text-wrap-width: 14;
   }
 
-  [amenity  = 'emergency_phone'][zoom >= 17]::barrier,
+  [amenity  = 'emergency_phone'][zoom >= 17]::amenity,
+  [amenity  = 'emergency_access_point'][zoom >= 17]::amenity {
+    text-name: "[name]";
+    text-size: 9;
+    [zoom >= 20] { text-size: 18; }
+    text-fill: #da0092;
+    text-dy: 16;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+    text-wrap-width: 12;
+  }
+
   [barrier  = 'gate'][zoom >= 15]::barrier,
   [barrier  = 'gate_locked'][zoom >= 15]::barrier,
   [barrier  = 'kissing_gate'][zoom >= 15]::barrier,
