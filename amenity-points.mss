@@ -5399,7 +5399,10 @@
   [natural = 'mixedleaved'][zoom >= 15]::natural,
   [natural = 'grassland'][zoom >= 15]::natural,
   [natural = 'scrub'][zoom >= 15]::natural,
-  [natural = 'wetland'][zoom >= 15]::natural {
+  [natural = 'wetland'][zoom >= 15]::natural,
+  [natural = 'swamp'][zoom >= 15]::natural,
+  [natural = 'bog'][zoom >= 15]::natural,
+  [natural = 'string_bog'][zoom >= 15]::natural {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
