@@ -73,9 +73,7 @@
 #water-areas-overlay {
   [natural = 'marsh'],
   [natural = 'wetland'],
-  [natural = 'swamp'],
-  [natural = 'bog'],
-  [natural = 'string_bog'] {
+  [natural = 'unnamedwetland'] {
     [zoom >= 13] {
       polygon-pattern-file: url('symbols/marsh.png');
     }
@@ -105,11 +103,13 @@
     }
   }
 
-  [natural = 'mud'][zoom >= 10]::natural {
+  [natural = 'mud'][zoom >= 10]::natural,
+  [natural = 'unnamedmud'][zoom >= 10]::natural {
     polygon-pattern-file: url('symbols/mud.png');
   }
 
-  [natural = 'tidal_mud'][zoom >= 10]::natural {
+  [natural = 'tidal_mud'][zoom >= 10]::natural,
+  [natural = 'unnamedtidal_mud'][zoom >= 10]::natural {
     polygon-pattern-file: url('symbols/tidal_mud.png');
   }
 }

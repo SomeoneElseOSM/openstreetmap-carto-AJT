@@ -472,11 +472,13 @@
     polygon-fill: @desert;
   }
 
-  [feature = 'natural_sand'][zoom >= 10] {
+  [feature = 'natural_sand'][zoom >= 10],
+  [feature = 'natural_unnamedsand'][zoom >= 10] {
     polygon-fill: @sand;
   }
 
-  [feature = 'natural_tidal_sand'][zoom >= 10] {
+  [feature = 'natural_tidal_sand'][zoom >= 10],
+  [feature = 'natural_unnamedtidal_sand'][zoom >= 10] {
     polygon-pattern-file: url('symbols/tidal_sand.png');
   }
 
@@ -487,7 +489,8 @@
     }
   }
 
-  [feature = 'natural_grassland'][zoom >= 10] {
+  [feature = 'natural_grassland'][zoom >= 10],
+  [feature = 'natural_unnamedgrassland'][zoom >= 10] {
     polygon-fill: #c6e4b4;
   }
 
@@ -538,15 +541,18 @@
     line-color: saturate(darken(@aerodrome, 40%), 20%);
   }
 
-  [feature = 'natural_beach'][zoom >= 10] {
+  [feature = 'natural_beach'][zoom >= 10],
+  [feature = 'natural_unnamedbeach'][zoom >= 10] {
     polygon-pattern-file: url('symbols/beach.png');
   }
 
-  [feature = 'natural_tidal_beach'][zoom >= 10] {
+  [feature = 'natural_tidal_beach'][zoom >= 10],
+  [feature = 'natural_unnamedtidal_beach'][zoom >= 10] {
     polygon-pattern-file: url('symbols/tidal_beach.png');
   }
 
-  [feature = 'natural_bare_rock'][zoom >= 10] {
+  [feature = 'natural_bare_rock'][zoom >= 10],
+  [feature = 'natural_unnamedbare_rock'][zoom >= 10] {
     polygon-pattern-file: url('symbols/rocks_pattern.png');
   }
 
