@@ -198,7 +198,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "      (select way,\"natural\"\n      from planet_osm_polygon\n      where \"natural\" in ('marsh','wetland','intermittentwetland','swamp','bog','string_bog','unnamedwetland','mud','tidal_mud') and building is null\n      order by z_order,way_area desc\n      ) as water_areas_overlay",
+        "table": "      (select way,\"natural\"\n      from planet_osm_polygon\n      where \"natural\" in ('marsh','wetland','intermittentwetland','swamp','unnamedswamp','bog','unnamedbog','string_bog','unnamedstring_bog','unnamedwetland','mud','tidal_mud') and building is null\n      order by z_order,way_area desc\n      ) as water_areas_overlay",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",

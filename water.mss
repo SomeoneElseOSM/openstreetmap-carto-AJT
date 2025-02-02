@@ -85,19 +85,22 @@
     }
   }
 
-  [natural = 'swamp'] {
+  [natural = 'swamp'],
+  [natural = 'unnamedswamp'] {
     [zoom >= 13] {
       polygon-pattern-file: url('symbols/wetland_swamp.png');
     }
   }
 
-  [natural = 'bog'] {
+  [natural = 'bog'],
+  [natural = 'unnamedbog'] {
     [zoom >= 13] {
       polygon-pattern-file: url('symbols/wetland_bog.png');
     }
   }
 
-  [natural = 'string_bog'] {
+  [natural = 'string_bog'],
+  [natural = 'unnamedstring_bog'] {
     [zoom >= 13] {
       polygon-pattern-file: url('symbols/wetland_string_bog.png');
     }
