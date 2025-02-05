@@ -6333,13 +6333,22 @@
   [tourism = 'informationroutemarker'][zoom >= 17]::tourism,
   [tourism = 'informationplaque'][zoom >= 17]::tourism,
   [tourism = 'informationear'][zoom >= 17]::tourism,
-  [tourism = 'informationpnfs'][zoom >= 17]::tourism,
   [amenity = 'bench'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
     text-dy: 10;
     text-fill: #734a08;
+    text-face-name: @book-fonts;
+    text-halo-radius: 1;
+  }
+
+  [tourism = 'informationpnfs'][zoom >= 17]::tourism {
+    text-name: "[ref]";
+    text-size: 10;
+    [zoom >= 20] { text-size: 18; }
+    text-dy: 10;
+    text-fill: #2c4b2c;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
   }
