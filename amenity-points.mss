@@ -5,6 +5,7 @@
 @transportation-text: #0066ff;
 @amenity-brown: #734a08;
 @default-wrap-width: 68;
+@water-text: #6699cc;
 
 .points {
   [tourism = 'alpine_hut'][zoom >= 13]::tourism {
@@ -4673,6 +4674,18 @@
         text-placement: interior;
       }
     }
+  }
+
+  [place = 'sea']::place {
+      [zoom >= 8] {
+        text-name: "[name]";
+        text-fill: @water-text;
+        text-size: 9;
+        [zoom >= 20] { text-size: 18; }
+        text-face-name: @oblique-fonts;
+        text-halo-radius: 1;
+        text-placement: interior;
+      }
   }
 
   [amenity = 'pub_yyyyydyy']::amenity,
