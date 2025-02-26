@@ -265,7 +265,8 @@
   }
 
   [feature = 'landuse_farmgrass'],
-  [feature = 'landuse_unnamedfarmgrass'] {
+  [feature = 'landuse_unnamedfarmgrass'],
+  [feature = 'landuse_greenfield'] {
     [zoom >= 10] {
       polygon-fill: @farmgrass;
       [zoom >= 16] {
@@ -451,7 +452,6 @@
   }
 
   [feature = 'landuse_brownfield'],
-  [feature = 'landuse_greenfield'],
   [feature = 'landuse_construction'],
   [feature = 'landuse_unnamedconstruction'] {
     [zoom >= 10] {

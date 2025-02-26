@@ -5850,6 +5850,7 @@
   [landuse = 'meadowperpetual']::landuse,
   [landuse = 'wetmeadow']::landuse,
   [landuse = 'farmgrass']::landuse,
+  [landuse = 'greenfield']::landuse,
   [landuse = 'grass']::landuse  {
     [zoom >= 15] {
       text-name: "[name]";
@@ -5951,7 +5952,6 @@
 
   [landuse = 'brownfield']::landuse,
   [landuse = 'landfill']::landuse,
-  [landuse = 'greenfield']::landuse,
   [landuse = 'construction']::landuse {
     [zoom >= 15] {
       text-name: "[name]";
