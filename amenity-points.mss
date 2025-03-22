@@ -6203,8 +6203,7 @@
   [highway = 'bus_stop_timetable']::highway,
   [highway = 'bus_stop_realtime']::highway,
   [highway = 'bus_stop_speech_timetable']::highway,
-  [highway = 'bus_stop_speech_realtime']::highway,
-  [highway = 'elevator']::highway {
+  [highway = 'bus_stop_speech_realtime']::highway {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 9;
@@ -6218,6 +6217,21 @@
       }
       [zoom >= 21] { 
         text-name: "[ele]";
+      }
+    }
+  }
+
+  [highway = 'elevator']::highway {
+    [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 9;
+      text-fill: @transportation-text;
+      text-dy: 9;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      [zoom >= 19] { 
+        text-size: 18;
+        text-dy: 18;
       }
     }
   }
