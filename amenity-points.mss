@@ -259,6 +259,15 @@
     }
   }
 
+  [highway = 'elevator']::highway {
+    [zoom >= 17] {
+      point-file: url('symbols/elevator.png');
+    }
+    [zoom >= 19] {
+      point-file: url('symbols/elevator_24.png');
+    }
+  }
+
   [amenity = 'bus_station'][zoom >= 16]::amenity {
     point-file: url('symbols/bus_station.n.16.png');
   }
@@ -6194,7 +6203,8 @@
   [highway = 'bus_stop_timetable']::highway,
   [highway = 'bus_stop_realtime']::highway,
   [highway = 'bus_stop_speech_timetable']::highway,
-  [highway = 'bus_stop_speech_realtime']::highway {
+  [highway = 'bus_stop_speech_realtime']::highway,
+  [highway = 'elevator']::highway {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 9;
