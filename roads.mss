@@ -4702,6 +4702,22 @@
       text-size: 11;
     }
   }
+
+  [aeroway = 'runway'] {
+    [zoom >= 15] {
+      text-name: "[name]";
+      text-size: 8;
+      text-face-name: @book-fonts;
+      text-placement: interior;
+      text-wrap-width: 30;
+    }
+    [zoom >= 16] {
+      text-size: 9;
+    }
+    [zoom >= 17] {
+      text-size: 11;
+    }
+  }
 }
 
 #railways-area-text-name {

@@ -1450,7 +1450,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "      (select way, highway, name\n       from planet_osm_polygon\n       where highway='pedestrian'\n         and name is not null\n      ) as roads_area_text_name",
+        "table": "      (select way, aeroway, highway, name\n       from planet_osm_polygon\n       where aeroway='runway' or highway='pedestrian'\n         and name is not null\n      ) as roads_area_text_name",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
