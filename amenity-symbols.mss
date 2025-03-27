@@ -327,6 +327,10 @@
     point-file: url('symbols/tollbooth.png');
   }
 
+  [barrier = 'toll_gantry'][zoom >= 16]::barrier {
+    point-file: url('symbols/tollgantry.png');
+  }
+
   [barrier = 'bollard'],
   [barrier = 'block'] {
     [zoom >= 16] {

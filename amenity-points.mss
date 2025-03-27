@@ -6572,6 +6572,7 @@
   [barrier  = 'stepping_stones'][zoom >= 15]::barrier,
   [barrier  = 'lift_gate'][zoom >= 16]::barrier,
   [barrier  = 'toll_booth'][zoom >= 16]::barrier,
+  [barrier  = 'toll_gantry'][zoom >= 16]::barrier,
   [barrier  = 'bollard'][zoom >= 16]::barrier,
   [barrier  = 'block'][zoom >= 16]::barrier,
   [barrier  = 'door'][zoom >= 19]::barrier,
