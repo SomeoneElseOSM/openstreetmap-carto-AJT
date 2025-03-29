@@ -6169,6 +6169,9 @@
       text-dy: 9;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
+      [zoom >= 21] { 
+        text-name: "[ele]";
+      }
     }
   }
 
