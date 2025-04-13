@@ -4066,7 +4066,7 @@
     point-file: url('symbols/ogham_stone.png');
   }
 
-  [historic = 'castle'][zoom >= 16]::historic {
+  [historic = 'castle'][zoom >= 15]::historic {
     point-file: url('symbols/historic_castle.png');
   }
 
@@ -4074,7 +4074,7 @@
     point-file: url('symbols/historic_folly.png');
   }
 
-  [historic = 'manor'][zoom >= 16]::historic {
+  [historic = 'manor'][zoom >= 15]::historic {
     point-file: url('symbols/historic_manor.png');
   }
 
@@ -4082,7 +4082,7 @@
     point-file: url('symbols/historic_martello.png');
   }
 
-  [historic = 'monastery'][zoom >= 16]::historic {
+  [historic = 'monastery'][zoom >= 15]::historic {
     point-file: url('symbols/historic_monastery.png');
   }
 
@@ -4091,7 +4091,7 @@
   }
 
   [historic = 'battlefield']::historic {
-    [zoom >= 16] {
+    [zoom >= 15] {
       point-file: url('symbols/historic_battlefield.png');
     }
   }
@@ -5572,7 +5572,7 @@
   [historic = 'runestone'][zoom >= 16]::historic, 
   [historic = 'massrock'][zoom >= 16]::historic, 
   [historic = 'oghamstone'][zoom >= 16]::historic, 
-  [historic = 'castle'][zoom >= 16]::historic, 
+  [historic = 'castle'][zoom >= 15]::historic, 
   [historic = 'folly'][zoom >= 17]::historic, 
   [historic = 'martello_tower'][zoom >= 16]::historic, 
   [historic = 'city_gate'][zoom >= 16]::historic, 
@@ -5608,6 +5608,23 @@
     text-wrap-width: 20;
   }
 
+  [historic = 'manor']::historic, 
+  [historic = 'monastery']::historic, 
+  [historic = 'battlefield']::historic {
+    [way_area >= 1700000][zoom >= 13],
+    [way_area >= 1100000][zoom >= 14],
+    [zoom >= 15] {
+      text-name: "[name]";
+      text-size: 9;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: brown;
+      text-dy: 13;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-wrap-width: 20;
+    }
+  }
+
   [historic = 'archaeological_site']::historic, 
   [historic = 'palaeontological_site']::historic, 
   [historic = 'historicfortification']::historic, 
@@ -5618,10 +5635,7 @@
   [historic = 'historicpromontoryfort']::historic, 
   [historic = 'historiccrannog']::historic, 
   [historic = 'historictumulus']::historic, 
-  [historic = 'manor']::historic, 
   [historic = 'mineshaft']::historic, 
-  [historic = 'monastery']::historic, 
-  [historic = 'battlefield']::historic,
   [historic = 'nonspecific']::historic {
     [way_area >= 1700000][zoom >= 13],
     [way_area >= 1100000][zoom >= 14],
