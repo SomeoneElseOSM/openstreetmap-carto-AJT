@@ -428,7 +428,6 @@
 
   [feature = 'power_station'][zoom >= 10],
   [feature = 'power_generator'][zoom >= 10],
-  [feature = 'power_sub_station'][zoom >= 13],
   [feature = 'power_substation'][zoom >= 13] {
       polygon-fill: @power;
       [zoom >= 12] {
