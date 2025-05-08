@@ -542,6 +542,10 @@
     point-file: url('symbols/informationmarker.png');
   }
 
+  [tourism = 'informationprowmarker'][zoom >= 16]::tourism {
+    point-file: url('symbols/informationprowmarker.png');
+  }
+
   [tourism = 'informationroutemarker'][zoom >= 16]::tourism {
     point-file: url('symbols/informationroutemarker.png');
   }
@@ -6427,7 +6431,8 @@
     text-halo-radius: 1;
   }
 
-  [tourism = 'informationmarker'][zoom >= 17]::tourism {
+  [tourism = 'informationmarker'][zoom >= 17]::tourism,
+  [tourism = 'informationprowmarker'][zoom >= 17]::tourism {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { 
