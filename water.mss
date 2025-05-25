@@ -25,16 +25,6 @@
     }
   }
 
-  [landuse = 'basin'][zoom >= 7]::landuse {
-    polygon-fill: @water-color;
-    [way_pixels >= 4] {
-      polygon-gamma: 0.75;
-    }
-    [way_pixels >= 64] {
-      polygon-gamma: 0.6;
-    }
-  }
-
   [natural = 'lake']::natural,
   [natural = 'water']::natural,
   [waterway = 'riverbank']::waterway {
