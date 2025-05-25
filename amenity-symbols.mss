@@ -96,6 +96,10 @@
     point-file: url('symbols/markeraerial.png');
   }
 
+  [man_made = 'markermilitary'][zoom >= 17]::man_made {
+    point-file: url('symbols/markermilitary.png');
+  }
+
   [man_made = 'survey_point'][zoom >= 15]::man_made {
     point-file: url('symbols/survey_point.png');
   }

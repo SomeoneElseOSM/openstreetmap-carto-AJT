@@ -5273,6 +5273,18 @@
     }
   }
 
+  [man_made = 'markermilitary']::man_made {
+    [zoom >= 19] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: @military-text;
+      text-dy: 12;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+    }
+  }
+
   [tourism = 'viewpoint']::tourism {
     [zoom >= 16] {
       text-name: "[name]";
