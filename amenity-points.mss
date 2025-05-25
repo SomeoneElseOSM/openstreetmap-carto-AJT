@@ -5243,6 +5243,15 @@
       text-dy: 12;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
+      ele/text-name: "[ele]";
+      ele/text-size: 9;
+      ele/text-fill: brown;
+      ele/text-dy: 12;
+      ele/text-face-name: @oblique-fonts;
+      ele/text-halo-radius: 1;
+      [name != ''] {
+        ele/text-dy: 36;
+      }
     }
   }
 
