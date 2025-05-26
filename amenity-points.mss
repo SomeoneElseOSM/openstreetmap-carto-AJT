@@ -558,6 +558,14 @@
     point-file: url('symbols/informationplaque.png');
   }
 
+  [tourism = 'informationstele'][zoom >= 16]::tourism {
+    point-file: url('symbols/informationstele.png');
+  }
+
+  [tourism = 'informationartwork'][zoom >= 16]::tourism {
+    point-file: url('symbols/informationartwork.png');
+  }
+
   [tourism = 'informationear'][zoom >= 16]::tourism {
     point-file: url('symbols/informationear.png');
   }
@@ -6411,6 +6419,8 @@
   [tourism = 'informationsign'][zoom >= 17]::tourism,
   [tourism = 'informationroutemarker'][zoom >= 17]::tourism,
   [tourism = 'informationplaque'][zoom >= 17]::tourism,
+  [tourism = 'informationstele'][zoom >= 17]::tourism,
+  [tourism = 'informationartwork'][zoom >= 17]::tourism,
   [tourism = 'informationear'][zoom >= 17]::tourism,
   [amenity = 'bench'][zoom >= 17]::amenity {
     text-name: "[name]";
