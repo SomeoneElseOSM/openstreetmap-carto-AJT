@@ -184,6 +184,10 @@
     point-file: url('symbols/golfballwasher.png');
   }
 
+  [man_made = 'golfpin'][zoom >= 18]::man_made {
+    point-file: url('symbols/golfpin.png');
+  }
+
   [man_made = 'mounting_block'][zoom >= 17]::railway {
     point-file: url('symbols/mountingblock.png');
   }

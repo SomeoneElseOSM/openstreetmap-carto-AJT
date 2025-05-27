@@ -6145,6 +6145,7 @@
   [leisure = 'fitness_station'][zoom >= 19]::leisure,
   [leisure = 'bandstand'][zoom >= 17]::leisure,
   [leisure = 'bleachers'][zoom >= 17]::leisure,
+  [man_made = 'golfpin'][zoom >= 17]::man_made,
   [leisure = 'leisurenonspecific'][zoom >= 17]::leisure {
     text-name: "[name]";
     text-size: 9;
