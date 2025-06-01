@@ -3766,6 +3766,10 @@
     point-file: url('symbols/restaccomm.p.16.png');
   }
 
+  [amenity = 'restaurant_indian'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_indian.png');
+  }
+
   [amenity = 'fast_food'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food.png');
   }
@@ -5073,6 +5077,7 @@
   [amenity = 'pub_nddddddd']::amenity,
   [amenity = 'restaurant']::amenity,
   [amenity = 'restaccomm']::amenity,
+  [amenity = 'restaurant_indian']::amenity,
   [amenity = 'cafe']::amenity,
   [amenity = 'cafe_ddd']::amenity,
   [amenity = 'cafe_dld']::amenity,
