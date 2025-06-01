@@ -3770,6 +3770,18 @@
     point-file: url('symbols/restaurant_indian.png');
   }
 
+  [amenity = 'restaurant_chinese'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_chinese.png');
+  }
+
+  [amenity = 'restaurant_italian'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_italian.png');
+  }
+
+  [amenity = 'restaurant_fish_and_chips'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_fish_and_chips.png');
+  }
+
   [amenity = 'fast_food'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food.png');
   }
@@ -5078,6 +5090,9 @@
   [amenity = 'restaurant']::amenity,
   [amenity = 'restaccomm']::amenity,
   [amenity = 'restaurant_indian']::amenity,
+  [amenity = 'restaurant_chinese']::amenity,
+  [amenity = 'restaurant_italian']::amenity,
+  [amenity = 'restaurant_fish_and_chips']::amenity,
   [amenity = 'cafe']::amenity,
   [amenity = 'cafe_ddd']::amenity,
   [amenity = 'cafe_dld']::amenity,
