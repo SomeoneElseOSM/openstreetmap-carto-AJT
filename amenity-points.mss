@@ -3782,6 +3782,10 @@
     point-file: url('symbols/restaurant_fish_and_chips.png');
   }
 
+  [amenity = 'restaurant_burger'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_burger.png');
+  }
+
   [amenity = 'fast_food'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food.png');
   }
@@ -5093,6 +5097,7 @@
   [amenity = 'restaurant_chinese']::amenity,
   [amenity = 'restaurant_italian']::amenity,
   [amenity = 'restaurant_fish_and_chips']::amenity,
+  [amenity = 'restaurant_burger']::amenity,
   [amenity = 'cafe']::amenity,
   [amenity = 'cafe_ddd']::amenity,
   [amenity = 'cafe_dld']::amenity,
