@@ -3794,6 +3794,14 @@
     point-file: url('symbols/restaurant_sandwich.png');
   }
 
+  [amenity = 'restaurant_chicken'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_chicken.png');
+  }
+
+  [amenity = 'restaurant_kebab'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_kebab.png');
+  }
+
   [amenity = 'fast_food'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food.png');
   }
@@ -5108,6 +5116,8 @@
   [amenity = 'restaurant_burger']::amenity,
   [amenity = 'restaurant_coffee']::amenity,
   [amenity = 'restaurant_sandwich']::amenity,
+  [amenity = 'restaurant_chicken']::amenity,
+  [amenity = 'restaurant_kebab']::amenity,
   [amenity = 'cafe']::amenity,
   [amenity = 'cafe_ddd']::amenity,
   [amenity = 'cafe_dld']::amenity,
