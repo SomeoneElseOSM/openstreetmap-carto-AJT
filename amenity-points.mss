@@ -3826,6 +3826,10 @@
     point-file: url('symbols/restaurant_seafood.png');
   }
 
+  [amenity = 'restaurant_ice_cream'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_ice_cream.png');
+  }
+
   [amenity = 'fast_food'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food.png');
   }
@@ -5172,6 +5176,7 @@
   [amenity = 'restaurant_greek']::amenity,
   [amenity = 'restaurant_french']::amenity,
   [amenity = 'restaurant_seafood']::amenity,
+  [amenity = 'restaurant_ice_cream']::amenity,
   [amenity = 'cafe']::amenity,
   [amenity = 'cafe_ddd']::amenity,
   [amenity = 'cafe_dld']::amenity,
