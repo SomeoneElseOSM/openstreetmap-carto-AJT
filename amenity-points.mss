@@ -3842,6 +3842,10 @@
     point-file: url('symbols/restaurant_dessert.png');
   }
 
+  [amenity = 'restaurant_spanish'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_spanish.png');
+  }
+
   [amenity = 'fast_food'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food.png');
   }
@@ -3924,6 +3928,10 @@
 
   [amenity = 'fast_food_dessert'][zoom >= 17]::amenity {
     point-file: url('symbols/fast_food_dessert.png');
+  }
+
+  [amenity = 'fast_food_spanish'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_spanish.png');
   }
 
   [amenity = 'telephone'][zoom >= 17]::amenity {
@@ -5204,6 +5212,7 @@
   [amenity = 'restaurant_caribbean']::amenity,
   [amenity = 'restaurant_lebanese']::amenity,
   [amenity = 'restaurant_dessert']::amenity,
+  [amenity = 'restaurant_spanish']::amenity,
   [amenity = 'cafe']::amenity,
   [amenity = 'cafe_ddd']::amenity,
   [amenity = 'cafe_dld']::amenity,
@@ -5245,6 +5254,7 @@
   [amenity = 'fast_food_caribbean']::amenity,
   [amenity = 'fast_food_lebanese']::amenity,
   [amenity = 'fast_food_dessert']::amenity,
+  [amenity = 'fast_food_spanish']::amenity,
   [amenity = 'biergarten']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
