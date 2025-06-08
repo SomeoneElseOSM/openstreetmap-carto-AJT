@@ -3934,6 +3934,10 @@
     point-file: url('symbols/fast_food_spanish.png');
   }
 
+  [amenity = 'fast_food_donut'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_donut.png');
+  }
+
   [amenity = 'telephone'][zoom >= 17]::amenity {
     point-file: url('symbols/telephone.p.16.png');
   }
@@ -5255,6 +5259,7 @@
   [amenity = 'fast_food_lebanese']::amenity,
   [amenity = 'fast_food_dessert']::amenity,
   [amenity = 'fast_food_spanish']::amenity,
+  [amenity = 'fast_food_donut']::amenity,
   [amenity = 'biergarten']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
