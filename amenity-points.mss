@@ -5743,6 +5743,9 @@
   [natural = 'mud'][zoom >= 13]::natural,
   [natural = 'tidal_mud'][zoom >= 13]::natural,
   [natural = 'tree'][zoom >= 18]::natural,
+  [natural = 'tree_10m'][zoom >= 18]::natural,
+  [natural = 'tree_20m'][zoom >= 18]::natural,
+  [natural = 'tree_30m'][zoom >= 18]::natural,
   [natural = 'shrub'][zoom >= 19]::natural {
     text-name: "[name]";
     text-size: 10;

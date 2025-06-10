@@ -141,16 +141,58 @@
   }
 
   [natural = 'tree'][zoom >= 16]::natural {
-    point-file: url('symbols/tree.p03.png');
+    point-file: url('symbols/tree.p10.png');
     point-ignore-placement: true;
     [zoom >= 17] {
-      point-file: url('symbols/tree.p05.png');
-    }
-    [zoom >= 18] {
       point-file: url('symbols/tree.p15.png');
     }
-    [zoom >= 20] {
+    [zoom >= 18] {
       point-file: url('symbols/tree.p20.png');
+    }
+    [zoom >= 19] {
+      point-file: url('symbols/tree.p40.png');
+    }
+  }
+
+  [natural = 'tree_10m'][zoom >= 16]::natural {
+    point-file: url('symbols/tree.p15.png');
+    point-ignore-placement: true;
+    [zoom >= 17] {
+      point-file: url('symbols/tree.p20.png');
+    }
+    [zoom >= 18] {
+      point-file: url('symbols/tree.p40.png');
+    }
+    [zoom >= 19] {
+      point-file: url('symbols/tree.p60.png');
+    }
+  }
+
+  [natural = 'tree_20m'][zoom >= 16]::natural {
+    point-file: url('symbols/tree.p20.png');
+    point-ignore-placement: true;
+    [zoom >= 17] {
+      point-file: url('symbols/tree.p40.png');
+    }
+    [zoom >= 18] {
+      point-file: url('symbols/tree.p60.png');
+    }
+    [zoom >= 19] {
+      point-file: url('symbols/tree.p100.png');
+    }
+  }
+
+  [natural = 'tree_30m'][zoom >= 16]::natural {
+    point-file: url('symbols/tree.p40.png');
+    point-ignore-placement: true;
+    [zoom >= 17] {
+      point-file: url('symbols/tree.p60.png');
+    }
+    [zoom >= 18] {
+      point-file: url('symbols/tree.p100.png');
+    }
+    [zoom >= 19] {
+      point-file: url('symbols/tree.p140.png');
     }
   }
 
