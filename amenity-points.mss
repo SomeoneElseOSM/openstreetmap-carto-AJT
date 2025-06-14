@@ -3929,8 +3929,21 @@
     point-file: url('symbols/fast_food_pie.png');
   }
 
-  [amenity = 'fast_food_pizza'][zoom >= 17]::amenity {
-    point-file: url('symbols/pizza.png');
+  [amenity = 'fast_food_pizza_y'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_pizza_y.png');
+  }
+
+  [amenity = 'fast_food_pizza_l'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_pizza_l.png');
+  }
+
+  [amenity = 'fast_food_pizza_n'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_pizza_n.png');
+  }
+
+  [amenity = 'fast_food_pizza'][zoom >= 17]::amenity,
+  [amenity = 'fast_food_pizza_d'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_pizza_d.png');
   }
 
   [amenity = 'fast_food_sandwich'][zoom >= 17]::amenity {
@@ -5308,6 +5321,10 @@
   [amenity = 'fast_food_kebab']::amenity,
   [amenity = 'fast_food_pie']::amenity,
   [amenity = 'fast_food_pizza']::amenity,
+  [amenity = 'fast_food_pizza_y']::amenity,
+  [amenity = 'fast_food_pizza_l']::amenity,
+  [amenity = 'fast_food_pizza_n']::amenity,
+  [amenity = 'fast_food_pizza_d']::amenity,
   [amenity = 'fast_food_sandwich']::amenity,
   [amenity = 'fast_food_british']::amenity,
   [amenity = 'fast_food_regional']::amenity,
