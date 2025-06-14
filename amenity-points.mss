@@ -3875,8 +3875,21 @@
     point-file: url('symbols/fast_food_chicken.png');
   }
 
-  [amenity = 'fast_food_chinese'][zoom >= 17]::amenity {
-    point-file: url('symbols/chinese.png');
+  [amenity = 'fast_food_chinese_y'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_chinese_y.png');
+  }
+
+  [amenity = 'fast_food_chinese_l'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_chinese_l.png');
+  }
+
+  [amenity = 'fast_food_chinese_n'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_chinese_n.png');
+  }
+
+  [amenity = 'fast_food_chinese'][zoom >= 17]::amenity,
+  [amenity = 'fast_food_chinese_d'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_chinese_d.png');
   }
 
   [amenity = 'fast_food_coffee'][zoom >= 17]::amenity {
@@ -5280,6 +5293,10 @@
   [amenity = 'fast_food_burger']::amenity,
   [amenity = 'fast_food_chicken']::amenity,
   [amenity = 'fast_food_chinese']::amenity,
+  [amenity = 'fast_food_chinese_y']::amenity,
+  [amenity = 'fast_food_chinese_l']::amenity,
+  [amenity = 'fast_food_chinese_n']::amenity,
+  [amenity = 'fast_food_chinese_d']::amenity,
   [amenity = 'fast_food_coffee']::amenity,
   [amenity = 'fast_food_fish_and_chips']::amenity,
   [amenity = 'fast_food_fish_and_chips_y']::amenity,
