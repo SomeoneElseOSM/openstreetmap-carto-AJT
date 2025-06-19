@@ -3758,8 +3758,21 @@
     point-file: url('symbols/recyclingcentre.p.16.png');
   }
 
-  [amenity = 'restaurant'][zoom >= 17]::amenity {
-    point-file: url('symbols/restaurant.p.16.png');
+  [amenity = 'restaurant_y'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_y.png');
+  }
+
+  [amenity = 'restaurant_l'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_l.png');
+  }
+
+  [amenity = 'restaurant_n'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_n.png');
+  }
+
+  [amenity = 'restaurant'][zoom >= 17]::amenity,
+  [amenity = 'restaurant_d'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_d.png');
   }
 
   [amenity = 'restaccomm'][zoom >= 17]::amenity {
@@ -5321,6 +5334,10 @@
   [amenity = 'pub_cddddddd']::amenity,
   [amenity = 'pub_nddddddd']::amenity,
   [amenity = 'restaurant']::amenity,
+  [amenity = 'restaurant_y']::amenity,
+  [amenity = 'restaurant_l']::amenity,
+  [amenity = 'restaurant_n']::amenity,
+  [amenity = 'restaurant_d']::amenity,
   [amenity = 'restaccomm']::amenity,
   [amenity = 'restaurant_indian']::amenity,
   [amenity = 'restaurant_indian_y']::amenity,
