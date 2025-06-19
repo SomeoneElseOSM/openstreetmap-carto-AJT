@@ -3766,8 +3766,21 @@
     point-file: url('symbols/restaccomm.p.16.png');
   }
 
-  [amenity = 'restaurant_indian'][zoom >= 17]::amenity {
-    point-file: url('symbols/restaurant_indian.png');
+  [amenity = 'restaurant_indian_y'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_indian_y.png');
+  }
+
+  [amenity = 'restaurant_indian_l'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_indian_l.png');
+  }
+
+  [amenity = 'restaurant_indian_n'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_indian_n.png');
+  }
+
+  [amenity = 'restaurant_indian'][zoom >= 17]::amenity,
+  [amenity = 'restaurant_indian_d'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_indian_d.png');
   }
 
   [amenity = 'restaurant_chinese'][zoom >= 17]::amenity {
@@ -5310,6 +5323,10 @@
   [amenity = 'restaurant']::amenity,
   [amenity = 'restaccomm']::amenity,
   [amenity = 'restaurant_indian']::amenity,
+  [amenity = 'restaurant_indian_y']::amenity,
+  [amenity = 'restaurant_indian_l']::amenity,
+  [amenity = 'restaurant_indian_n']::amenity,
+  [amenity = 'restaurant_indian_d']::amenity,
   [amenity = 'restaurant_chinese']::amenity,
   [amenity = 'restaurant_italian']::amenity,
   [amenity = 'restaurant_fish_and_chips']::amenity,
