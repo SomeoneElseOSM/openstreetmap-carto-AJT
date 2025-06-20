@@ -3830,8 +3830,21 @@
     point-file: url('symbols/restaurant_italian_d.png');
   }
 
-  [amenity = 'restaurant_fish_and_chips'][zoom >= 17]::amenity {
-    point-file: url('symbols/restaurant_fish_and_chips.png');
+  [amenity = 'restaurant_fish_and_chips_y'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_fish_and_chips_y.png');
+  }
+
+  [amenity = 'restaurant_fish_and_chips_l'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_fish_and_chips_l.png');
+  }
+
+  [amenity = 'restaurant_fish_and_chips_n'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_fish_and_chips_n.png');
+  }
+
+  [amenity = 'restaurant_fish_and_chips'][zoom >= 17]::amenity,
+  [amenity = 'restaurant_fish_and_chips_d'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_fish_and_chips_d.png');
   }
 
   [amenity = 'restaurant_burger'][zoom >= 17]::amenity {
@@ -5381,6 +5394,10 @@
   [amenity = 'restaurant_italian_n']::amenity,
   [amenity = 'restaurant_italian_d']::amenity,
   [amenity = 'restaurant_fish_and_chips']::amenity,
+  [amenity = 'restaurant_fish_and_chips_y']::amenity,
+  [amenity = 'restaurant_fish_and_chips_l']::amenity,
+  [amenity = 'restaurant_fish_and_chips_n']::amenity,
+  [amenity = 'restaurant_fish_and_chips_d']::amenity,
   [amenity = 'restaurant_burger']::amenity,
   [amenity = 'restaurant_coffee']::amenity,
   [amenity = 'restaurant_sandwich']::amenity,
