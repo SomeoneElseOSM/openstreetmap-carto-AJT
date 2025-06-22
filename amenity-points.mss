@@ -3898,8 +3898,21 @@
     point-file: url('symbols/restaurant_sandwich_d.png');
   }
 
-  [amenity = 'restaurant_chicken'][zoom >= 17]::amenity {
-    point-file: url('symbols/restaurant_chicken.png');
+  [amenity = 'restaurant_chicken_y'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_chicken_y.png');
+  }
+
+  [amenity = 'restaurant_chicken_l'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_chicken_l.png');
+  }
+
+  [amenity = 'restaurant_chicken_n'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_chicken_n.png');
+  }
+
+  [amenity = 'restaurant_chicken'][zoom >= 17]::amenity,
+  [amenity = 'restaurant_chicken_d'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_chicken_d.png');
   }
 
   [amenity = 'restaurant_kebab'][zoom >= 17]::amenity {
@@ -5453,6 +5466,10 @@
   [amenity = 'restaurant_sandwich_n']::amenity,
   [amenity = 'restaurant_sandwich_d']::amenity,
   [amenity = 'restaurant_chicken']::amenity,
+  [amenity = 'restaurant_chicken_y']::amenity,
+  [amenity = 'restaurant_chicken_l']::amenity,
+  [amenity = 'restaurant_chicken_n']::amenity,
+  [amenity = 'restaurant_chicken_d']::amenity,
   [amenity = 'restaurant_kebab']::amenity,
   [amenity = 'restaurant_british']::amenity,
   [amenity = 'restaurant_regional']::amenity,
