@@ -4103,8 +4103,21 @@
     point-file: url('symbols/fast_food_indian_d.png');
   }
 
-  [amenity = 'fast_food_kebab'][zoom >= 17]::amenity {
-    point-file: url('symbols/fast_food_kebab.png');
+  [amenity = 'fast_food_kebab_y'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_kebab_y.png');
+  }
+
+  [amenity = 'fast_food_kebab_l'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_kebab_l.png');
+  }
+
+  [amenity = 'fast_food_kebab_n'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_kebab_n.png');
+  }
+
+  [amenity = 'fast_food_kebab'][zoom >= 17]::amenity,
+  [amenity = 'fast_food_kebab_d'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_kebab_d.png');
   }
 
   [amenity = 'fast_food_pie'][zoom >= 17]::amenity {
@@ -5570,6 +5583,10 @@
   [amenity = 'fast_food_indian_n']::amenity,
   [amenity = 'fast_food_indian_d']::amenity,
   [amenity = 'fast_food_kebab']::amenity,
+  [amenity = 'fast_food_kebab_y']::amenity,
+  [amenity = 'fast_food_kebab_l']::amenity,
+  [amenity = 'fast_food_kebab_n']::amenity,
+  [amenity = 'fast_food_kebab_d']::amenity,
   [amenity = 'fast_food_pie']::amenity,
   [amenity = 'fast_food_pizza']::amenity,
   [amenity = 'fast_food_pizza_y']::amenity,
