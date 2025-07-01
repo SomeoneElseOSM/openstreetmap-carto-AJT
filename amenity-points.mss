@@ -3966,8 +3966,21 @@
     point-file: url('symbols/restaurant_regional_d.png');
   }
 
-  [amenity = 'restaurant_mexican'][zoom >= 17]::amenity {
-    point-file: url('symbols/restaurant_mexican.png');
+  [amenity = 'restaurant_mexican_y'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_mexican_y.png');
+  }
+
+  [amenity = 'restaurant_mexican_l'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_mexican_l.png');
+  }
+
+  [amenity = 'restaurant_mexican_n'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_mexican_n.png');
+  }
+
+  [amenity = 'restaurant_mexican'][zoom >= 17]::amenity,
+  [amenity = 'restaurant_mexican_d'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_mexican_d.png');
   }
 
   [amenity = 'restaurant_greek'][zoom >= 17]::amenity {
@@ -5551,6 +5564,10 @@
   [amenity = 'restaurant_regional_n']::amenity,
   [amenity = 'restaurant_regional_d']::amenity,
   [amenity = 'restaurant_mexican']::amenity,
+  [amenity = 'restaurant_mexican_y']::amenity,
+  [amenity = 'restaurant_mexican_l']::amenity,
+  [amenity = 'restaurant_mexican_n']::amenity,
+  [amenity = 'restaurant_mexican_d']::amenity,
   [amenity = 'restaurant_greek']::amenity,
   [amenity = 'restaurant_french']::amenity,
   [amenity = 'restaurant_french_y']::amenity,
