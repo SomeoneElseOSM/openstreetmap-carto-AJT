@@ -4205,8 +4205,21 @@
     point-file: url('symbols/fast_food_regional.png');
   }
 
-  [amenity = 'fast_food_mexican'][zoom >= 17]::amenity {
-    point-file: url('symbols/fast_food_mexican.png');
+  [amenity = 'fast_food_mexican_y'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_mexican_y.png');
+  }
+
+  [amenity = 'fast_food_mexican_l'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_mexican_l.png');
+  }
+
+  [amenity = 'fast_food_mexican_n'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_mexican_n.png');
+  }
+
+  [amenity = 'fast_food_mexican'][zoom >= 17]::amenity,
+  [amenity = 'fast_food_mexican_d'][zoom >= 17]::amenity {
+    point-file: url('symbols/fast_food_mexican_d.png');
   }
 
   [amenity = 'fast_food_greek'][zoom >= 17]::amenity {
@@ -5652,6 +5665,10 @@
   [amenity = 'fast_food_british']::amenity,
   [amenity = 'fast_food_regional']::amenity,
   [amenity = 'fast_food_mexican']::amenity,
+  [amenity = 'fast_food_mexican_y']::amenity,
+  [amenity = 'fast_food_mexican_l']::amenity,
+  [amenity = 'fast_food_mexican_n']::amenity,
+  [amenity = 'fast_food_mexican_d']::amenity,
   [amenity = 'fast_food_greek']::amenity,
   [amenity = 'fast_food_french']::amenity,
   [amenity = 'fast_food_seafood']::amenity,
