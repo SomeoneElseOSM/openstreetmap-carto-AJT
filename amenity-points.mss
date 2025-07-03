@@ -4004,8 +4004,21 @@
     point-file: url('symbols/restaurant_french_d.png');
   }
 
-  [amenity = 'restaurant_seafood'][zoom >= 17]::amenity {
-    point-file: url('symbols/restaurant_seafood.png');
+  [amenity = 'restaurant_seafood_y'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_seafood_y.png');
+  }
+
+  [amenity = 'restaurant_seafood_l'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_seafood_l.png');
+  }
+
+  [amenity = 'restaurant_seafood_n'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_seafood_n.png');
+  }
+
+  [amenity = 'restaurant_seafood'][zoom >= 17]::amenity,
+  [amenity = 'restaurant_seafood_d'][zoom >= 17]::amenity {
+    point-file: url('symbols/restaurant_seafood_d.png');
   }
 
   [amenity = 'restaurant_ice_cream'][zoom >= 17]::amenity {
@@ -5588,6 +5601,10 @@
   [amenity = 'restaurant_french_n']::amenity,
   [amenity = 'restaurant_french_d']::amenity,
   [amenity = 'restaurant_seafood']::amenity,
+  [amenity = 'restaurant_seafood_y']::amenity,
+  [amenity = 'restaurant_seafood_l']::amenity,
+  [amenity = 'restaurant_seafood_n']::amenity,
+  [amenity = 'restaurant_seafood_d']::amenity,
   [amenity = 'restaurant_ice_cream']::amenity,
   [amenity = 'restaurant_caribbean']::amenity,
   [amenity = 'restaurant_lebanese']::amenity,
