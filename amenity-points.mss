@@ -330,6 +330,10 @@
     point-file: url('symbols/streetlamp_gas.png');
   }
 
+  [amenity = 'bubble_tea'][zoom >=17]::amenity {
+    point-file: url('symbols/amenity_bubble_tea.png');
+  }
+
   [amenity = 'cafe'][zoom >=17]::amenity,
   [amenity = 'cafe_ddd'][zoom >=17]::amenity {
     point-file: url('symbols/am_cafe_ddd.png');
@@ -5611,6 +5615,7 @@
   [amenity = 'restaurant_dessert']::amenity,
   [amenity = 'restaurant_spanish']::amenity,
   [amenity = 'restaurant_african']::amenity,
+  [amenity = 'bubble_tea']::amenity,
   [amenity = 'cafe']::amenity,
   [amenity = 'cafe_ddd']::amenity,
   [amenity = 'cafe_dld']::amenity,
