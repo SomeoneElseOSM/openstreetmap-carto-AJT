@@ -334,6 +334,10 @@
     point-file: url('symbols/amenity_bubble_tea.png');
   }
 
+  [amenity = 'cafe_indian'][zoom >=17]::amenity {
+    point-file: url('symbols/am_cafe_indian.png');
+  }
+
   [amenity = 'cafe'][zoom >=17]::amenity,
   [amenity = 'cafe_ddd'][zoom >=17]::amenity {
     point-file: url('symbols/am_cafe_ddd.png');
@@ -5616,6 +5620,7 @@
   [amenity = 'restaurant_spanish']::amenity,
   [amenity = 'restaurant_african']::amenity,
   [amenity = 'bubble_tea']::amenity,
+  [amenity = 'cafe_indian']::amenity,
   [amenity = 'cafe']::amenity,
   [amenity = 'cafe_ddd']::amenity,
   [amenity = 'cafe_dld']::amenity,
