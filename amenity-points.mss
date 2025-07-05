@@ -780,6 +780,10 @@
     point-file: url('symbols/museum.p.16.png');
   }
 
+  [tourism = 'gallery'][zoom >= 17]::tourism {
+    point-file: url('symbols/gallery.png');
+  }
+
   [amenity = 'bench'][zoom >= 17]::amenity {
     point-file: url('symbols/bench.p07.png');
     [zoom >= 19] {
@@ -5797,6 +5801,7 @@
   [amenity = 'library']::amenity,
   [amenity = 'theatre']::amenity,
   [tourism = 'museum']::tourism,
+  [tourism = 'gallery']::tourism,
   [amenity = 'zooaviary']::amenity,
   [amenity = 'zooenclosure']::amenity {
     [zoom >= 17] {
