@@ -686,6 +686,7 @@
     [zoom >= 20] { text-size: 18; }
   }
 
+  [natural = 'gully'][zoom >= 11],
   [natural = 'mountain_range'][zoom >= 11],
   [natural = 'strait'][zoom >= 11],
   [natural = 'valley'][zoom >= 11] {

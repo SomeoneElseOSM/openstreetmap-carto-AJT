@@ -526,7 +526,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select way,\"natural\",man_made,barrier,name from planet_osm_line where \"natural\" = 'cliff' or \"natural\" = 'strait' or \"natural\" = 'mountain_range' or \"natural\" = 'valley' or man_made = 'embankment' or man_made = 'levee' or barrier = 'wall' or barrier = 'gate' or barrier = 'gate_locked') as lineartext",
+        "table": "(select way,\"natural\",man_made,barrier,name from planet_osm_line where \"natural\" = 'cliff' or \"natural\" = 'gully' or \"natural\" = 'strait' or \"natural\" = 'mountain_range' or \"natural\" = 'valley' or man_made = 'embankment' or man_made = 'levee' or barrier = 'wall' or barrier = 'gate' or barrier = 'gate_locked') as lineartext",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
