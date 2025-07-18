@@ -5139,6 +5139,13 @@
 
 
 .text {
+  [natural = 'cliff']::natural,
+  [natural = 'ridge']::natural,
+  [natural = 'arch']::natural,
+  [natural = 'strait']::natural,
+  [natural = 'mountain_range']::natural,
+  [natural = 'gully']::natural,
+  [place = 'locality']::place,
   [place = 'island']::place {
     [way_area < 600000000000] {
       [way_area >= 100000000000][zoom >= 7],

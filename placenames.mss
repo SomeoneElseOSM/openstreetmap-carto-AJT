@@ -128,8 +128,17 @@
 }
 
 #placenames-small::hamlet {
+  [place = 'locality'] {
+    [zoom >= 14] {
+      text-name: "[name]";
+      text-fill: #000;
+      text-size: 9;
+      text-face-name: @oblique-fonts;
+      text-halo-radius: 1;
+      [zoom >= 20] { text-size: 18; }
+    }
+  }
   [place = 'hamlet'],
-  [place = 'locality'],
   [place = 'neighbourhood'],
   [place = 'isolated_dwelling'],
   [place = 'farm'] {
