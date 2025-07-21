@@ -719,7 +719,7 @@
     [zoom >= 15] {
       line-color: #444;
       line-width: 0.4;
-      polygon-fill: #aed1a0;
+      polygon-fill: #90c8a1;
     }
   }
 
@@ -733,7 +733,7 @@
       [zoom >= 21] { line-width: 24; }
       [zoom >= 22] { line-width: 48; }
 
-      line-color: #aed1a0;
+      line-color: #90c8a1;
       line-cap: round;
     }
   }
@@ -820,7 +820,7 @@
       [zoom >= 21] { line-width: 24; }
       [zoom >= 22] { line-width: 48; }
 
-      line-color: #aed1a0;
+      line-color: #90c8a1;
       line-cap: round;
     }
   }
