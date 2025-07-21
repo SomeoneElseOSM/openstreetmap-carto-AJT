@@ -6947,7 +6947,8 @@
     text-wrap-width: 70;
   }
 
-  [waterway = 'lock'][zoom >= 15]::waterway {
+  [waterway = 'lock'][zoom >= 15]::waterway,
+  [waterway = 'lock_gate'][zoom >= 15]::waterway {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
