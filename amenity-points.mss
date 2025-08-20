@@ -4827,6 +4827,12 @@
     }
   }
 
+  [shop = 'ecodiscount']::shop {
+    [zoom >= 17] {
+      point-file: url('symbols/shop_ecodiscount.p.16.png');
+    }
+  }
+
   [shop = 'e-cigarette']::shop {
     [zoom >= 17] {
       point-file: url('symbols/shop_ecig.p.16.png');
@@ -4885,6 +4891,10 @@
     point-file: url('symbols/shop_diy.p.16.png');
   }
 
+  [shop = 'ecodoityourself'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_ecodiy.p.16.png');
+  }
+
   [shop = 'estate_agent'][zoom >= 17]::shop {
     point-file: url('symbols/estateagent.p.16.png');
   }
@@ -4913,8 +4923,16 @@
     point-file: url('symbols/shop_beauty.p.16.png');
   }
 
+  [shop = 'ecobeauty'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_ecobeauty.p.16.png');
+  }
+
   [shop = 'gift'][zoom >= 17]::shop {
     point-file: url('symbols/shop_gift.p.16.png');
+  }
+
+  [shop = 'ecogift'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_ecogift.p.16.png');
   }
 
   [shop = 'laundry'][zoom >= 17]::shop {
@@ -4923,6 +4941,10 @@
 
   [shop = 'pet'][zoom >= 17]::shop {
     point-file: url('symbols/shop_pet.p.16.png');
+  }
+
+  [shop = 'ecopet'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_ecopet.p.16.png');
   }
 
   [shop = 'pet_food'][zoom >= 17]::shop {
@@ -7420,6 +7442,7 @@
   [shop = 'shoe_repair_etc']::shop,
   [shop = 'charity']::shop,
   [shop = 'discount']::shop,
+  [shop = 'ecodiscount']::shop,
   [shop = 'e-cigarette']::shop,
   [shop = 'electrical']::shop,
   [shop = 'electronics']::shop,
@@ -7431,11 +7454,15 @@
   [shop = 'ecohealth_food']::shop,
   [shop = 'catalogue']::shop,
   [shop = 'doityourself']::shop,
+  [shop = 'ecodoityourself']::shop,
   [shop = 'hairdresser']::shop,
   [shop = 'beauty']::shop,
+  [shop = 'ecobeauty']::shop,
   [shop = 'gift']::shop,
+  [shop = 'ecogift']::shop,
   [shop = 'laundry']::shop,
   [shop = 'pet']::shop,
+  [shop = 'ecopet']::shop,
   [shop = 'pet_food']::shop,
   [shop = 'pet_grooming']::shop,
   [amenity = 'veterinary']::amenity,
