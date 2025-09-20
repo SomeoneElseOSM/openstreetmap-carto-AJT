@@ -7342,6 +7342,8 @@
   [man_made = 'mounting_block'][zoom >= 17]::man_made,
   [man_made = 'footwear_decontamination'][zoom >= 17]::man_made,
   [man_made = 'monitoringwater'][zoom >= 17]::man_made,
+  [man_made = 'monitoringwaterquality'][zoom >= 17]::man_made,
+  [man_made = 'monitoringwind'][zoom >= 17]::man_made,
   [man_made = 'monitoringweather'][zoom >= 17]::man_made,
   [man_made = 'monitoringearthquake'][zoom >= 17]::man_made,
   [man_made = 'monitoringrainfall'][zoom >= 17]::man_made,

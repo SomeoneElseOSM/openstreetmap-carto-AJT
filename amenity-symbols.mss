@@ -242,6 +242,14 @@
     point-file: url('symbols/monitoringwater.png');
   }
 
+  [man_made = 'monitoringwaterquality'][zoom >= 17]::man_made {
+    point-file: url('symbols/monitoringwaterquality.png');
+  }
+
+  [man_made = 'monitoringwind'][zoom >= 17]::man_made {
+    point-file: url('symbols/monitoringwind.png');
+  }
+
   [man_made = 'monitoringweather'][zoom >= 17]::man_made {
     point-file: url('symbols/monitoringweather.png');
   }
