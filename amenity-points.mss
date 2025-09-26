@@ -7324,7 +7324,7 @@
   [man_made = 'bigchimney'][zoom >= 13]::man_made,
   [man_made = 'chimney'][zoom >= 15]::man_made,
   [man_made = 'water_tower'][zoom >= 15]::man_made,
-  [man_made = 'power'][zoom >= 15]::man_made,
+  [man_made = 'power'][zoom >= 16]::man_made,
   [man_made = 'ventilation_shaft'][zoom >= 15]::man_made,
   [man_made = 'illuminationtower'][zoom >= 17]::man_made,
   [man_made = 'defensivetower'][zoom >= 17]::man_made,
