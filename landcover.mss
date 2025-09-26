@@ -528,6 +528,14 @@
     }
   }
 
+  [feature = 'amenity_parking_space'][zoom >= 19] {
+    polygon-fill: @parking;
+    [zoom >= 19] {
+      line-width: 0.3;
+      line-color: saturate(darken(@parking, 40%), 20%);
+    }
+  }
+
   [feature = 'aeroway_apron'][zoom >= 12] {
     polygon-fill: @apron;
   }
