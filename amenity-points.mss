@@ -466,6 +466,10 @@
     point-file: url('symbols/fuel_w.16.png');
   }
 
+  [man_made = 'fuel_pump'][zoom >= 19]::amenity {
+    point-file: url('symbols/fuel_pump.png');
+  }
+
   [amenity = 'charging_station'][zoom >= 17]::amenity {
     point-file: url('symbols/charging_station.png');
   }
@@ -6868,6 +6872,7 @@
   [amenity = 'fuel_h']::amenity,
   [amenity = 'fuel_l']::amenity,
   [amenity = 'fuel_w']::amenity,
+  [man_made = 'fuel_pump']::man_made,
   [amenity = 'charging_station']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
