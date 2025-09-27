@@ -629,6 +629,10 @@
     point-file: url('symbols/beehive.png');
   }
 
+  [man_made = 'satellite_dish'][zoom >= 16]::man_made {
+    point-file: url('symbols/satellite_dish.png');
+  }
+
   [man_made = 'bigmast'][zoom >= 12]::man_made {
     point-file: url('symbols/communications.p.20.png');
   }
@@ -7330,6 +7334,7 @@
   [man_made = 'cross'][zoom >= 16]::man_made,
   [man_made = 'lighthouse'][zoom >= 15]::man_made,
   [man_made = 'beehive'][zoom >= 18]::man_made,
+  [man_made = 'satellite_dish'][zoom >= 16]::man_made,
   [man_made = 'bigmast'][zoom >= 13]::man_made,
   [man_made = 'mast'][zoom >= 16]::man_made,
   [man_made = 'bigchimney'][zoom >= 13]::man_made,
