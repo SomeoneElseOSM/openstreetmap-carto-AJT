@@ -1,4 +1,5 @@
 @water-text: #6699cc;
+@dam-colour: #c2cfcf;
 
 #water-areas {
   [natural = 'glacier']::natural {
@@ -22,6 +23,13 @@
       [way_pixels >= 64] {
         polygon-gamma: 0.6;
       }
+    }
+  }
+
+  [waterway = 'dam'] {
+    [zoom >= 11]::waterway {
+      polygon-fill: @dam-colour;
+      polygon-opacity: 0.7;
     }
   }
 
