@@ -470,6 +470,10 @@
     point-file: url('symbols/fuel_pump.png');
   }
 
+  [man_made = 'charge_point'][zoom >= 19]::amenity {
+    point-file: url('symbols/charge_point.png');
+  }
+
   [amenity = 'charging_station'][zoom >= 17]::amenity {
     point-file: url('symbols/charging_station.png');
   }
@@ -6876,7 +6880,6 @@
   [amenity = 'fuel_h']::amenity,
   [amenity = 'fuel_l']::amenity,
   [amenity = 'fuel_w']::amenity,
-  [man_made = 'fuel_pump']::man_made,
   [amenity = 'charging_station']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
@@ -6889,6 +6892,19 @@
       [zoom >= 21] { 
         text-name: "[ele]";
       }
+    }
+  }
+
+  [man_made = 'fuel_pump']::man_made,
+  [man_made = 'charge_point']::man_made {
+    [zoom >= 19] {
+      text-name: "[name]";
+      text-size: 9;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: #939;
+      text-dy: 9;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
     }
   }
 
