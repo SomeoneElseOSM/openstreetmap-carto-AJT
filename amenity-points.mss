@@ -760,6 +760,13 @@
     }
   }
 
+  [tourism = 'penguinartwork'][zoom >= 17]::tourism {
+    point-file: url('symbols/artwork.p16.png');
+    [zoom >= 20] {
+      point-file: url('symbols/penguinartwork.png');
+    }
+  }
+
   [tourism = 'advertising_column'][zoom >= 17]::tourism {
     point-file: url('symbols/advertising.png');
   }
@@ -7139,7 +7146,8 @@
     text-halo-radius: 1;
   }
 
-  [tourism = 'artwork'][zoom >= 17]::tourism {
+  [tourism = 'artwork'][zoom >= 17]::tourism,
+  [tourism = 'penguinartwork'][zoom >= 17]::tourism {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
