@@ -310,6 +310,10 @@
     point-file: url('symbols/bandstand.png');
   }
 
+  [leisure = 'outdoor_seating'][zoom >= 17]::leisure {
+    point-file: url('symbols/outdoor_seating.png');
+  }
+
   [leisure = 'bleachers'][zoom >= 17]::leisure {
     point-file: url('symbols/bleachers.png');
   }
@@ -6823,6 +6827,7 @@
 
   [leisure = 'fitness_station'][zoom >= 19]::leisure,
   [leisure = 'bandstand'][zoom >= 17]::leisure,
+  [leisure = 'outdoor_seating'][zoom >= 17]::leisure,
   [leisure = 'bleachers'][zoom >= 17]::leisure,
   [man_made = 'golfpin'][zoom >= 17]::man_made,
   [leisure = 'leisurenonspecific'][zoom >= 17]::leisure {
