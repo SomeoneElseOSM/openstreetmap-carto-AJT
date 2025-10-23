@@ -100,6 +100,10 @@
     point-file: url('symbols/markermilitary.png');
   }
 
+  [man_made = 'manhole'][zoom >= 19]::man_made {
+    point-file: url('symbols/manhole.png');
+  }
+
   [man_made = 'survey_point'][zoom >= 15]::man_made {
     point-file: url('symbols/survey_point.png');
   }
