@@ -7387,6 +7387,7 @@
   [man_made = 'bigobservationtower'][zoom >= 14]::man_made,
   [man_made = 'clockface'][zoom >= 17]::man_made,
   [man_made = 'clockpedestal'][zoom >= 17]::man_made,
+  [man_made = 'dovecote'][zoom >= 17]::man_made,
   [man_made = 'clocktower'][zoom >= 17]::man_made,
   [man_made = 'aircraftcontroltower'][zoom >= 17]::man_made,
   [man_made = 'radartower'][zoom >= 17]::man_made,

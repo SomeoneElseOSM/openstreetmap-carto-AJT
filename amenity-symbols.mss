@@ -104,6 +104,10 @@
     point-file: url('symbols/manhole.png');
   }
 
+  [man_made = 'dovecote'][zoom >= 17]::man_made {
+    point-file: url('symbols/dovecote.png');
+  }
+
   [man_made = 'survey_point'][zoom >= 15]::man_made {
     point-file: url('symbols/survey_point.png');
   }
