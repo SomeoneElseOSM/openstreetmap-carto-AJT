@@ -105,7 +105,7 @@
   }
 
   [man_made = 'dovecote'][zoom >= 17]::man_made {
-    point-file: url('symbols/dovecote.png');
+    point-file: url('symbols/manmade_dovecote.png');
   }
 
   [man_made = 'survey_point'][zoom >= 15]::man_made {

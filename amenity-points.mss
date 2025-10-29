@@ -7388,6 +7388,7 @@
   [man_made = 'clockface'][zoom >= 17]::man_made,
   [man_made = 'clockpedestal'][zoom >= 17]::man_made,
   [man_made = 'dovecote'][zoom >= 17]::man_made,
+  [man_made = 'manhole'][zoom >= 19]::man_made,
   [man_made = 'clocktower'][zoom >= 17]::man_made,
   [man_made = 'aircraftcontroltower'][zoom >= 17]::man_made,
   [man_made = 'radartower'][zoom >= 17]::man_made,
