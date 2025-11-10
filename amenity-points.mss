@@ -5206,6 +5206,23 @@
 
 
 .text {
+  [tourism = 'theme_park']::tourism {
+    [way_area >= 1000000][zoom >= 12],
+    [way_area >=  500000][zoom >= 13],
+    [way_area >=  250000][zoom >= 14],
+    [way_area >=  130000][zoom >= 15],
+    [zoom >= 16] {
+      text-name: "[name]";
+      text-size: 8;
+      text-fill: #734a08;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+      text-wrap-width: @default-wrap-width;
+      [zoom >= 16] { text-size: 10; }
+      [zoom >= 20] { text-size: 18; }
+    }
+  }
+
   [natural = 'cliff']::natural,
   [natural = 'ridge']::natural,
   [natural = 'arch']::natural,
@@ -7050,17 +7067,6 @@
     text-halo-radius: 1;
     text-wrap-width: @default-wrap-width;
     [zoom >= 17] { text-size: 10; }
-    [zoom >= 20] { text-size: 18; }
-  }
-
-  [tourism = 'theme_park'][zoom >= 14]::tourism {
-    text-name: "[name]";
-    text-size: 8;
-    text-fill: #734a08;
-    text-face-name: @book-fonts;
-    text-halo-radius: 1;
-    text-wrap-width: @default-wrap-width;
-    [zoom >= 16] { text-size: 10; }
     [zoom >= 20] { text-size: 18; }
   }
 
