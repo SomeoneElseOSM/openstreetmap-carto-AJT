@@ -7331,6 +7331,7 @@
   [barrier  = 'cattle_grid'][zoom >= 15]::barrier,
   [barrier  = 'stepping_stones'][zoom >= 15]::barrier,
   [barrier  = 'lift_gate'][zoom >= 16]::barrier,
+  [barrier  = 'height_restrictor'][zoom >= 16]::barrier,
   [barrier  = 'toll_booth'][zoom >= 16]::barrier,
   [barrier  = 'toll_gantry'][zoom >= 16]::barrier,
   [barrier  = 'bollard'][zoom >= 16]::barrier,

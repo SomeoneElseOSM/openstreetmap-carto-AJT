@@ -389,6 +389,10 @@
     point-file: url('symbols/liftgate.png');
   }
 
+  [barrier = 'height_restrictor'][zoom >= 16]::barrier {
+    point-file: url('symbols/height_restrictor.png');
+  }
+
   [barrier = 'toll_booth'][zoom >= 16]::barrier {
     point-file: url('symbols/tollbooth.png');
   }
