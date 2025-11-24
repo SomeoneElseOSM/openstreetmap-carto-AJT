@@ -454,6 +454,10 @@
     point-file: url('symbols/loading_dock.png');
   }
 
+  [amenity = 'weighbridge'][zoom >= 17]::amenity {
+    point-file: url('symbols/weighbridge.png');
+  }
+
   [amenity = 'fuel'][zoom >= 17]::amenity {
     point-file: url('symbols/fuel.p.16.png');
   }
@@ -7381,6 +7385,7 @@
 
   [amenity = 'lifeboat'][zoom >= 17]::amenity,
   [amenity = 'loading_dock'][zoom >= 17]::amenity,
+  [amenity = 'weighbridge'][zoom >= 17]::amenity,
   [man_made = 'crane'][zoom >= 16]::man_made,
   [man_made = 'cross'][zoom >= 16]::man_made,
   [man_made = 'lighthouse'][zoom >= 15]::man_made,
