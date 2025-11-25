@@ -454,6 +454,10 @@
     point-file: url('symbols/leisure_marina.png');
   }
 
+  [amenity = 'boat_storage'][zoom >= 17]::amenity {
+    point-file: url('symbols/amenity_boat_storage.png');
+  }
+
   [amenity = 'loading_dock'][zoom >= 17]::amenity {
     point-file: url('symbols/loading_dock.png');
   }
@@ -7391,6 +7395,7 @@
 
   [amenity = 'lifeboat'][zoom >= 17]::amenity,
   [amenity = 'loading_dock'][zoom >= 17]::amenity,
+  [amenity = 'boat_storage'][zoom >= 17]::amenity,
   [amenity = 'weighbridge'][zoom >= 17]::amenity,
   [man_made = 'crane'][zoom >= 16]::man_made,
   [man_made = 'cross'][zoom >= 16]::man_made,
