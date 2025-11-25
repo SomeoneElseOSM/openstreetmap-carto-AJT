@@ -450,6 +450,10 @@
     point-file: url('symbols/lifeboat.png');
   }
 
+  [leisure = 'marina'][zoom >= 17]::amenity {
+    point-file: url('symbols/leisure_marina.png');
+  }
+
   [amenity = 'loading_dock'][zoom >= 17]::amenity {
     point-file: url('symbols/loading_dock.png');
   }
@@ -7069,8 +7073,10 @@
   [landuse = 'harbour'][zoom >= 15]::landuse, 
   [leisure = 'marina'][zoom >= 15]::leisure {
     text-name: "[name]";
-    text-size: 8;
+    text-size: 9;
+    [zoom >= 20] { text-size: 18; }
     text-fill: @marina-text;
+    text-dy: 16;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: @default-wrap-width;
