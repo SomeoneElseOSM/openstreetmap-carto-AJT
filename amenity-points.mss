@@ -5207,6 +5207,10 @@
     point-file: url('symbols/waterway_access_point.p.16.png');
   }
 
+  [amenity = 'waterway_turning_point'][zoom >= 17]::amenity {
+    point-file: url('symbols/waterway_turning_point.png');
+  }
+
   [leisure = 'bird_hide'][zoom >= 17]::leisure {
     point-file: url('symbols/birdhide.p.16.png');
   }
@@ -6045,9 +6049,6 @@
   [amenity = 'embassy']::amenity,
   [leisure = 'playground']::leisure, 
   [leisure = 'picnic_table']::leisure,
-  [amenity = 'bbq']::amenity,
-  [leisure = 'slipway']::leisure,
-  [amenity = 'waterway_access_point']::amenity,
   [leisure = 'bird_hide']::leisure,
   [leisure = 'hunting_stand']::leisure,
   [leisure = 'grouse_butt']::leisure,
@@ -6057,6 +6058,21 @@
       text-size: 10;
       [zoom >= 20] { text-size: 18; }
       text-fill: #734a08;
+      text-dy: 12;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+    }
+  }
+
+  [amenity = 'bbq']::amenity,
+  [leisure = 'slipway']::leisure,
+  [amenity = 'waterway_access_point']::amenity,
+  [amenity = 'waterway_turning_point']::amenity {
+    [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: #000;
       text-dy: 12;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
