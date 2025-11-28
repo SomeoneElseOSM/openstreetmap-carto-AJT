@@ -5211,6 +5211,10 @@
     point-file: url('symbols/waterway_turning_point.png');
   }
 
+  [amenity = 'waterway_junction'][zoom >= 17]::amenity {
+    point-file: url('symbols/manhole.png');
+  }
+
   [leisure = 'bird_hide'][zoom >= 17]::leisure {
     point-file: url('symbols/birdhide.p.16.png');
   }
@@ -6067,7 +6071,8 @@
   [amenity = 'bbq']::amenity,
   [leisure = 'slipway']::leisure,
   [amenity = 'waterway_access_point']::amenity,
-  [amenity = 'waterway_turning_point']::amenity {
+  [amenity = 'waterway_turning_point']::amenity,
+  [amenity = 'waterway_junction']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 10;
