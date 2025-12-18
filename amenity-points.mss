@@ -811,6 +811,10 @@
     point-file: url('symbols/waste_disposal.p.16.png');
   }
 
+  [amenity = 'smoking_area'][zoom >= 19]::amenity {
+    point-file: url('symbols/smoking_area.png');
+  }
+
   [amenity = 'grit_bin'][zoom >= 19]::amenity {
     point-file: url('symbols/grit_bin.p.16.png');
   }
@@ -5757,9 +5761,6 @@
   [amenity = 'cafe_yly']::amenity,
   [amenity = 'cafe_yny']::amenity,
   [amenity = 'cafe_yyy']::amenity,
-  [amenity = 'vending_machine']::amenity,
-  [amenity = 'vending_excrement']::amenity,
-  [amenity = 'bottle_return']::amenity,
   [amenity = 'fast_food']::amenity,
   [amenity = 'fast_food_y']::amenity,
   [amenity = 'fast_food_l']::amenity,
@@ -5826,6 +5827,25 @@
   [amenity = 'fast_food_african']::amenity,
   [amenity = 'biergarten']::amenity {
     [zoom >= 17] {
+      text-name: "[name]";
+      text-fill: #734a08;
+      text-size: 10;
+      [zoom >= 20] { text-size: 18; }
+      text-dy: 9;
+      text-face-name: @bold-fonts;
+      text-halo-radius: 1;
+      text-wrap-width: @default-wrap-width;
+    }
+  }
+
+  [amenity = 'vending_machine']::amenity,
+  [amenity = 'vending_excrement']::amenity,
+  [amenity = 'bottle_return']::amenity,
+  [amenity = 'waste_basket']::amenity,
+  [amenity = 'waste_disposal']::amenity,
+  [amenity = 'smoking_area']::amenity,
+  [amenity = 'grit_bin']::amenity {
+    [zoom >= 19] {
       text-name: "[name]";
       text-fill: #734a08;
       text-size: 10;
