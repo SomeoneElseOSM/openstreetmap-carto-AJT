@@ -431,7 +431,8 @@
   [feature = 'power_generator'][way_area >= 200000][zoom >= 12],
   [feature = 'power_generator'][way_area >= 20000][zoom >= 14],
   [feature = 'power_generator'][way_area >= 2000][zoom >= 16],
-  [feature = 'power_generator'][way_area >= 200][zoom >= 18],
+  [feature = 'power_generator'][way_area >= 200][zoom >= 17],
+  [feature = 'power_generator'][way_area >= 20][zoom >= 18],
   [feature = 'power_generator'][zoom >= 19],
   [feature = 'power_substation'][zoom >= 13] {
       polygon-fill: @power;
