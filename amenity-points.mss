@@ -5850,10 +5850,9 @@
       text-fill: #734a08;
       text-size: 10;
       [zoom >= 20] { text-size: 18; }
-      text-dy: 9;
-      text-face-name: @bold-fonts;
+      text-dy: 10;
+      text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-wrap-width: @default-wrap-width;
     }
   }
 
