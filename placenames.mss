@@ -129,7 +129,7 @@
 
 #placenames-small::hamlet {
   [place = 'locality'] {
-    [zoom >= 14] {
+    [zoom >= 15] {
       text-name: "[name]";
       text-fill: #000;
       text-size: 9;
