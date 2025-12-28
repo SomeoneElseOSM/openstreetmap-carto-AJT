@@ -4794,6 +4794,10 @@
     point-file: url('symbols/historic_ringfort.png');
   }
 
+  [historic = 'historicenclosure'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_enclosure.png');
+  }
+
   [historic = 'historichillfort'][zoom >= 16]::historic {
     point-file: url('symbols/historic_hillfort.png');
   }
@@ -6418,6 +6422,7 @@
   [historic = 'palaeontological_site']::historic, 
   [historic = 'historicfortification']::historic, 
   [historic = 'historicringfort']::historic, 
+  [historic = 'historicenclosure']::historic, 
   [historic = 'historichillfort']::historic, 
   [historic = 'historicarchmotte']::historic, 
   [historic = 'historicarchcastle']::historic, 
