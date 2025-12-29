@@ -4798,6 +4798,10 @@
     point-file: url('symbols/historic_enclosure.png');
   }
 
+  [historic = 'historichutcircle'][zoom >= 16]::historic {
+    point-file: url('symbols/historic_hutcircle.png');
+  }
+
   [historic = 'historichillfort'][zoom >= 16]::historic {
     point-file: url('symbols/historic_hillfort.png');
   }
@@ -6423,6 +6427,7 @@
   [historic = 'historicfortification']::historic, 
   [historic = 'historicringfort']::historic, 
   [historic = 'historicenclosure']::historic, 
+  [historic = 'historichutcircle']::historic, 
   [historic = 'historichillfort']::historic, 
   [historic = 'historicarchmotte']::historic, 
   [historic = 'historicarchcastle']::historic, 
