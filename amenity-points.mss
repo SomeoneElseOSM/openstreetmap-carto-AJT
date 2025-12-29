@@ -431,7 +431,7 @@
   }
 
   [tourism = 'chalet'][zoom >= 16]::tourism {
-    point-file: url('symbols/chalet.p.16.png');
+    point-file: url('symbols/tourism_guest_yynd.png');
   }
 
   [tourism = 'singlechalet'][zoom >= 17]::tourism {
