@@ -7448,6 +7448,7 @@
   [amenity = 'boat_storage'][zoom >= 17]::amenity,
   [amenity = 'weighbridge'][zoom >= 17]::amenity,
   [man_made = 'crane'][zoom >= 16]::man_made,
+  [man_made = 'pointpier'][zoom >= 18]::man_made,
   [man_made = 'cross'][zoom >= 16]::man_made,
   [man_made = 'lighthouse'][zoom >= 15]::man_made,
   [man_made = 'beehive'][zoom >= 18]::man_made,

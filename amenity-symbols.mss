@@ -52,6 +52,10 @@
     point-file: url('symbols/manmade_crane.png');
   }
 
+  [man_made = 'pointpier'][zoom >= 18]::man_made {
+    point-file: url('symbols/manmade_pointpier.png');
+  }
+
   [man_made = 'cross'][zoom >= 16]::man_made {
     point-file: url('symbols/manmade_cross.png');
   }
