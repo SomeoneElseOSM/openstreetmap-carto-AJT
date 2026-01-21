@@ -5172,6 +5172,13 @@
     point-file: url('symbols/health_nonspecific.p.16.png');
   }
 
+  [amenity = 'bleed_control_kit'][zoom >= 17]::amenity {
+    point-file: url('symbols/health_bleedcontrolkit.p.16.png');
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
   [amenity = 'defibrillator'][zoom >= 17]::amenity {
     point-file: url('symbols/health_defibrillator.p.16.png');
     [access != ''][access != 'public'][access != 'yes'] {
