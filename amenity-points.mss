@@ -5190,6 +5190,10 @@
     point-file: url('symbols/life_ring.png');
   }
 
+  [amenity = 'emergency_throw_bag'][zoom >= 19]::amenity {
+    point-file: url('symbols/emergency_throw_bag.png');
+  }
+
   [amenity = 'fire_extinguisher'][zoom >= 19]::amenity {
     point-file: url('symbols/fireextinguisher.png');
   }
