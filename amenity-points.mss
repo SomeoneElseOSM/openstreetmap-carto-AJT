@@ -290,6 +290,10 @@
     point-file: url('symbols/amenity_reception_desk.png');
   }
 
+  [amenity = 'payment_terminal'][zoom >= 20]::amenity {
+    point-file: url('symbols/amenity_payment_terminal.png');
+  }
+
   [office = 'craftbrewery'][zoom >= 17]::office {
     point-file: url('symbols/brewery_craft.p.16.png');
   }
@@ -6928,7 +6932,8 @@
   }
 
   [amenity = 'dressing_room']::amenity,
-  [amenity = 'reception_desk']::amenity {
+  [amenity = 'reception_desk']::amenity,
+  [amenity = 'payment_terminal']::amenity {
     [zoom >= 20] {
       text-name: "[name]";
       text-size: 9;
