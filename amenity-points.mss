@@ -282,6 +282,10 @@
     point-file: url('symbols/office_nonspecific.p.16.png');
   }
 
+  [amenity = 'dressing_room'][zoom >= 20]::amenity {
+    point-file: url('symbols/amenity_dressing_room.png');
+  }
+
   [office = 'craftbrewery'][zoom >= 17]::office {
     point-file: url('symbols/brewery_craft.p.16.png');
   }
@@ -6908,6 +6912,19 @@
   [office = 'craftcider']::office,
   [amenity = 'monastery']::amenity {
     [zoom >= 17] {
+      text-name: "[name]";
+      text-size: 9;
+      [zoom >= 20] { text-size: 18; }
+      text-fill: black;
+      text-dy: 9;
+      text-halo-radius: 1;
+      text-wrap-width: @default-wrap-width;
+      text-face-name: @book-fonts;
+    }
+  }
+
+  [amenity = 'dressing_room']::amenity {
+    [zoom >= 20] {
       text-name: "[name]";
       text-size: 9;
       [zoom >= 20] { text-size: 18; }
