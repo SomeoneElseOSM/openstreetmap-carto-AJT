@@ -286,6 +286,10 @@
     point-file: url('symbols/amenity_dressing_room.png');
   }
 
+  [amenity = 'reception_desk'][zoom >= 20]::amenity {
+    point-file: url('symbols/amenity_reception_desk.png');
+  }
+
   [office = 'craftbrewery'][zoom >= 17]::office {
     point-file: url('symbols/brewery_craft.p.16.png');
   }
@@ -6923,7 +6927,8 @@
     }
   }
 
-  [amenity = 'dressing_room']::amenity {
+  [amenity = 'dressing_room']::amenity,
+  [amenity = 'reception_desk']::amenity {
     [zoom >= 20] {
       text-name: "[name]";
       text-size: 9;
