@@ -4726,6 +4726,10 @@
     point-file: url('symbols/memorial_bench.png');
   }
 
+  [historic = 'memorialghostbike'][zoom >= 17]::historic {
+    point-file: url('symbols/memorial_ghostbike.png');
+  }
+
   [historic = 'memorialgrave'][zoom >= 17]::historic {
     point-file: url('symbols/memorial_grave.png');
   }
@@ -6413,6 +6417,7 @@
   [historic = 'kiln'][zoom >= 17]::historic, 
   [historic = 'memorialplate'][zoom >= 17]::historic, 
   [historic = 'memorialbench'][zoom >= 17]::historic, 
+  [historic = 'memorialghostbike'][zoom >= 17]::historic, 
   [historic = 'memorialgrave'][zoom >= 17]::historic, 
   [historic = 'memorialobelisk'][zoom >= 17]::historic, 
   [historic = 'memorial'][zoom >= 17]::historic,
