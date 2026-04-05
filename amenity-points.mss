@@ -338,6 +338,10 @@
     point-file: url('symbols/traffic_light.png');
   }
 
+  [highway = 'signalised_crossing'][zoom >= 17]::highway {
+    point-file: url('symbols/signalised_crossing.png');
+  }
+
   [highway = 'streetlamp_electric'][zoom >= 19]::highway {
     point-file: url('symbols/streetlamp_electric.png');
   }
@@ -7450,7 +7454,8 @@
   [barrier  = 'door'][zoom >= 19]::barrier,
   [highway  = 'crossing'][zoom >= 17]::highway,
   [highway  = 'mini_roundabout'][zoom >= 15]::highway,
-  [highway  = 'traffic_signals'][zoom >= 17]::highway {
+  [highway  = 'traffic_signals'][zoom >= 17]::highway,
+  [highway  = 'signalised_crossing'][zoom >= 17]::highway {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
