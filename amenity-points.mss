@@ -342,6 +342,18 @@
     point-file: url('symbols/signalised_crossing.png');
   }
 
+  [highway = 'signalised_sound_crossing'][zoom >= 17]::highway {
+    point-file: url('symbols/signalised_sound_crossing.png');
+  }
+
+  [highway = 'signalised_vibration_crossing'][zoom >= 17]::highway {
+    point-file: url('symbols/signalised_vibration_crossing.png');
+  }
+
+  [highway = 'signalised_soundvibration_crossing'][zoom >= 17]::highway {
+    point-file: url('symbols/signalised_soundvibration_crossing.png');
+  }
+
   [highway = 'streetlamp_electric'][zoom >= 19]::highway {
     point-file: url('symbols/streetlamp_electric.png');
   }
@@ -7460,7 +7472,10 @@
   [highway  = 'crossing'][zoom >= 17]::highway,
   [highway  = 'mini_roundabout'][zoom >= 15]::highway,
   [highway  = 'traffic_signals'][zoom >= 17]::highway,
-  [highway  = 'signalised_crossing'][zoom >= 17]::highway {
+  [highway  = 'signalised_crossing'][zoom >= 17]::highway,
+  [highway  = 'signalised_sound_crossing'][zoom >= 17]::highway,
+  [highway  = 'signalised_vibration_crossing'][zoom >= 17]::highway,
+  [highway  = 'signalised_soundvibration_crossing'][zoom >= 17]::highway {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
