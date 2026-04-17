@@ -1323,7 +1323,7 @@
       }
     }
 
-    [feature = 'railway_INT-spur-siding-yard'] {
+    [feature = 'railway_railminor'] {
       .bridges-casing {
         [zoom >= 13] {
           line-width: 5.7;
@@ -1496,7 +1496,7 @@
       }
     }
 
-    [feature = 'railway_INT-spur-siding-yard'] {
+    [feature = 'railway_railminor'] {
       .bridges-casing, .levees-casing {
         [zoom >= 13] {
           line-width: 4;
@@ -3466,19 +3466,19 @@
     }
 
     [feature = 'railway_rail'],
-    [feature = 'railway_INT-spur-siding-yard'] {
+    [feature = 'railway_railminor'] {
       [zoom >= 13] {
         .roads-fill, .bridges-fill, .levees-fill {
           dark/line-color: #999999;
           [feature = 'railway_rail']                               { dark/line-width: 3; }
-          [feature = 'railway_INT-spur-siding-yard']               { dark/line-width: 2; }
+          [feature = 'railway_railminor']                          { dark/line-width: 2; }
           [feature = 'railway_rail']                               { dark/line-join: round; }
-          [feature = 'railway_INT-spur-siding-yard'] .bridges-fill, .levees-fill { dark/line-join: round; }
+          [feature = 'railway_railminor']            .bridges-fill, .levees-fill { dark/line-join: round; }
           light/line-color: white;
           [feature = 'railway_rail']                               { light/line-width: 1; }
-          [feature = 'railway_INT-spur-siding-yard']               { light/line-width: 0.8; }
+          [feature = 'railway_railminor']                          { light/line-width: 0.8; }
           [feature = 'railway_rail']                               { light/line-dasharray: 8,12; }
-          [feature = 'railway_INT-spur-siding-yard']               { light/line-dasharray: 0,8,11,1; }
+          [feature = 'railway_railminor']                          { light/line-dasharray: 0,8,11,1; }
           light/line-join: round;
           [feature = 'railway_rail'][zoom >= 14]                   { light/line-dasharray: 0,11,8,1; }
         }
@@ -3511,7 +3511,7 @@
           e/line-join: round;
           f/line-join: round;
           g/line-join: round;
-          [feature = 'railway_INT-spur-siding-yard'] {
+          [feature = 'railway_railminor'] {
             a/line-width: 2;
             b/line-width: 2;
             c/line-width: 2;
@@ -3565,7 +3565,7 @@
           e/line-join: round;
           f/line-join: round;
           g/line-join: round;
-          [feature = 'railway_INT-spur-siding-yard'] {
+          [feature = 'railway_railminor'] {
             a/line-width: 2;
             b/line-width: 2;
             c/line-width: 2;
@@ -4337,14 +4337,6 @@
       .tunnels-casing {
         line-dasharray: 5,2;
       }
-    }
-  }
-
-  [feature = 'railway_INT-spur-siding-yard'] {
-    [zoom >= 11] {
-      line-width: 1;
-      line-color: #aaa;
-      line-join: round;
     }
   }
 
