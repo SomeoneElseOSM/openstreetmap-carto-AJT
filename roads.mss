@@ -2848,6 +2848,9 @@
         }
         line/line-color: @bridleway-fill;
         line/line-dasharray: 3,2;
+          [zoom >= 16] { line/line-dasharray: 6,4; }
+          [zoom >= 19] { line/line-dasharray: 8,6; }
+          [zoom >= 22] { line/line-dasharray: 12,8; }
         .roads-fill {
           line/line-width: 1.2;
         }
@@ -2884,6 +2887,9 @@
         }
         line/line-color: @bridleway-fill;
         line/line-dasharray: 2,6;
+          [zoom >= 16] { line/line-dasharray: 4,12; }
+          [zoom >= 19] { line/line-dasharray: 6,18; }
+          [zoom >= 22] { line/line-dasharray: 8,24; }
         .roads-fill {
           line/line-width: 1.2;
         }
@@ -2920,6 +2926,9 @@
         }
         line/line-color: @bridleway-fill;
         line/line-dasharray: 6,3;
+          [zoom >= 16] { line/line-dasharray: 12,6; }
+          [zoom >= 19] { line/line-dasharray: 18,9; }
+          [zoom >= 22] { line/line-dasharray: 24,12; }
         .roads-fill {
           line/line-width: 1.2;
         }
@@ -2956,6 +2965,9 @@
         }
         line/line-color: @bridleway-fill;
         line/line-dasharray: 6,9;
+          [zoom >= 16] { line/line-dasharray: 12,18; }
+          [zoom >= 19] { line/line-dasharray: 18,24; }
+          [zoom >= 22] { line/line-dasharray: 24,36; }
         .roads-fill {
           line/line-width: 1.2;
         }
@@ -2994,6 +3006,9 @@
         }
         line/line-color: @footway-fill;
         line/line-dasharray: 1,3;
+          [zoom >= 16] { line/line-dasharray: 2,6; }
+          [zoom >= 19] { line/line-dasharray: 3,8; }
+          [zoom >= 22] { line/line-dasharray: 4,12; }
         line/line-join: round;
         line/line-cap: round;
         .roads-fill {
@@ -3031,6 +3046,9 @@
         }
         line/line-color: @footway-fill;
         line/line-dasharray: 2,6;
+          [zoom >= 16] { line/line-dasharray: 4,12; }
+          [zoom >= 19] { line/line-dasharray: 6,18; }
+          [zoom >= 22] { line/line-dasharray: 8,24; }
         line/line-join: round;
         line/line-cap: round;
         .roads-fill {
@@ -3068,6 +3086,9 @@
         }
         line/line-color: @footway-fill;
         line/line-dasharray: 6,3;
+          [zoom >= 16] { line/line-dasharray: 12,6; }
+          [zoom >= 19] { line/line-dasharray: 18,9; }
+          [zoom >= 22] { line/line-dasharray: 24,12; }
         line/line-join: round;
         line/line-cap: round;
         .roads-fill {
@@ -3105,6 +3126,9 @@
         }
         line/line-color: @footway-fill;
         line/line-dasharray: 6,9;
+          [zoom >= 16] { line/line-dasharray: 12,18; }
+          [zoom >= 19] { line/line-dasharray: 18,24; }
+          [zoom >= 22] { line/line-dasharray: 24,36; }
         line/line-join: round;
         line/line-cap: round;
         .roads-fill {
@@ -3304,6 +3328,9 @@
         line/line-width: 0.5;
         line/line-color: @path-fill;
         line/line-dasharray: 3,2;
+          [zoom >= 16] { line/line-dasharray: 6,4; line/line-width: 1; }
+          [zoom >= 19] { line/line-dasharray: 9,6; line/line-width: 1.5; }
+          [zoom >= 22] { line/line-dasharray: 12,8; line/line-width: 2; }
         line/line-join: round;
         line/line-cap: round;
         [access = 'no'] {
@@ -3333,6 +3360,9 @@
         line/line-width: 0.5;
         line/line-color: @path-fill;
         line/line-dasharray: 3,6;
+          [zoom >= 16] { line/line-dasharray: 6,12; line/line-width: 1; }
+          [zoom >= 19] { line/line-dasharray: 9,18; line/line-width: 1.5; }
+          [zoom >= 22] { line/line-dasharray: 12,24; line/line-width: 2; }
         line/line-join: round;
         line/line-cap: round;
         [access = 'no'] {
@@ -3362,6 +3392,9 @@
         line/line-width: 0.5;
         line/line-color: @path-fill;
         line/line-dasharray: 6,3;
+          [zoom >= 16] { line/line-dasharray: 12,6; line/line-width: 1; }
+          [zoom >= 19] { line/line-dasharray: 18,9; line/line-width: 1.5; }
+          [zoom >= 22] { line/line-dasharray: 24,12; line/line-width: 2; }
         line/line-join: round;
         line/line-cap: round;
         [access = 'no'] {
@@ -3391,6 +3424,9 @@
         line/line-width: 0.5;
         line/line-color: @path-fill;
         line/line-dasharray: 6,9;
+          [zoom >= 16] { line/line-dasharray: 12,18; line/line-width: 1; }
+          [zoom >= 19] { line/line-dasharray: 18,24; line/line-width: 1.5; }
+          [zoom >= 22] { line/line-dasharray: 24,36; line/line-width: 2; }
         line/line-join: round;
         line/line-cap: round;
         [access = 'no'] {
