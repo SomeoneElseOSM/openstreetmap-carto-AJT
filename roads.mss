@@ -3510,27 +3510,6 @@
       }
     }
 
-    /* The new bit */
-    [feature = 'highway_pathnarrow'] {
-      [tracktype = 'grade5'] {
-        [zoom >= 13] {
-          line/line-color: @track-fill;
-          line/line-cap: round;
-          line/line-join: round;
-          line/line-opacity: 0.8;
-          line/line-clip:false;
-
-          line/line-width: 1.2;
-          line/line-dasharray: 1.6,6.4;
-
-          [zoom >= 15] {
-            line/line-width: 1.5;
-            line/line-dasharray: 2,8;
-          }
-        }
-      }
-    }
-
     [feature = 'railway_rail'],
     [feature = 'railway_railminor'] {
       [zoom >= 13] {
