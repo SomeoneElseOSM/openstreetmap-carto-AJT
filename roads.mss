@@ -2704,8 +2704,14 @@
         }
         line/line-color: @track-fill;
         line/line-dasharray: 6,2,3,2;
+          [zoom >= 16] { line/line-dasharray: 12,4,6,4; }
+          [zoom >= 19] { line/line-dasharray: 18,6,9,6; }
+          [zoom >= 22] { line/line-dasharray: 24,8,12,8; }
         .roads-fill {
           line/line-width: 1.2;
+          [zoom >= 16] { line/line-width: 2.4; }
+          [zoom >= 19] { line/line-width: 3.6; }
+          [zoom >= 22] { line/line-width: 4.8; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.2; }
@@ -2740,8 +2746,14 @@
         }
         line/line-color: @track-fill;
         line/line-dasharray: 12,3,6,3;
+          [zoom >= 16] { line/line-dasharray: 24,6,12,6; }
+          [zoom >= 19] { line/line-dasharray: 36,9,18,9; }
+          [zoom >= 22] { line/line-dasharray: 48,12,24,12; }
         .roads-fill {
           line/line-width: 1.2;
+          [zoom >= 16] { line/line-width: 2.4; }
+          [zoom >= 19] { line/line-width: 3.6; }
+          [zoom >= 22] { line/line-width: 4.8; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.2; }
@@ -2777,8 +2789,14 @@
         }
         line/line-color: @bridleway-fill;
         line/line-dasharray: 6,2,3,2;
+          [zoom >= 16] { line/line-dasharray: 12,4,6,4; }
+          [zoom >= 19] { line/line-dasharray: 18,6,9,6; }
+          [zoom >= 22] { line/line-dasharray: 24,8,12,8; }
         .roads-fill {
           line/line-width: 1.2;
+          [zoom >= 16] { line/line-width: 2.4; }
+          [zoom >= 19] { line/line-width: 3.6; }
+          [zoom >= 22] { line/line-width: 4.8; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.2; }
@@ -2813,8 +2831,14 @@
         }
         line/line-color: @bridleway-fill;
         line/line-dasharray: 12,3,6,3;
+          [zoom >= 16] { line/line-dasharray: 24,6,12,6; }
+          [zoom >= 19] { line/line-dasharray: 36,9,18,9; }
+          [zoom >= 22] { line/line-dasharray: 48,12,24,12; }
         .roads-fill {
           line/line-width: 1.2;
+          [zoom >= 16] { line/line-width: 2.4; }
+          [zoom >= 19] { line/line-width: 3.6; }
+          [zoom >= 22] { line/line-width: 4.8; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.2; }
@@ -2851,10 +2875,13 @@
         line/line-color: @bridleway-fill;
         line/line-dasharray: 3,2;
           [zoom >= 16] { line/line-dasharray: 6,4; }
-          [zoom >= 19] { line/line-dasharray: 8,6; }
+          [zoom >= 19] { line/line-dasharray: 9,6; }
           [zoom >= 22] { line/line-dasharray: 12,8; }
         .roads-fill {
           line/line-width: 1.2;
+          [zoom >= 16] { line/line-width: 2.4; }
+          [zoom >= 19] { line/line-width: 3.6; }
+          [zoom >= 22] { line/line-width: 4.8; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.2; }
@@ -2894,6 +2921,9 @@
           [zoom >= 22] { line/line-dasharray: 8,24; }
         .roads-fill {
           line/line-width: 1.2;
+          [zoom >= 16] { line/line-width: 2.4; }
+          [zoom >= 19] { line/line-width: 3.6; }
+          [zoom >= 22] { line/line-width: 4.8; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.2; }
@@ -2933,6 +2963,9 @@
           [zoom >= 22] { line/line-dasharray: 24,12; }
         .roads-fill {
           line/line-width: 1.2;
+          [zoom >= 16] { line/line-width: 2.4; }
+          [zoom >= 19] { line/line-width: 3.6; }
+          [zoom >= 22] { line/line-width: 4.8; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.2; }
@@ -2972,6 +3005,9 @@
           [zoom >= 22] { line/line-dasharray: 24,36; }
         .roads-fill {
           line/line-width: 1.2;
+          [zoom >= 16] { line/line-width: 2.4; }
+          [zoom >= 19] { line/line-width: 3.6; }
+          [zoom >= 22] { line/line-width: 4.8; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.2; }
@@ -3015,6 +3051,9 @@
         line/line-cap: round;
         .roads-fill {
           line/line-width: 1.5;
+          [zoom >= 16] { line/line-width: 3; }
+          [zoom >= 19] { line/line-width: 4.5; }
+          [zoom >= 22] { line/line-width: 6; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.5; }
@@ -3055,6 +3094,9 @@
         line/line-cap: round;
         .roads-fill {
           line/line-width: 1.5;
+          [zoom >= 16] { line/line-width: 3; }
+          [zoom >= 19] { line/line-width: 4.5; }
+          [zoom >= 22] { line/line-width: 6; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.5; }
@@ -3095,6 +3137,9 @@
         line/line-cap: round;
         .roads-fill {
           line/line-width: 1.5;
+          [zoom >= 16] { line/line-width: 3; }
+          [zoom >= 19] { line/line-width: 4.5; }
+          [zoom >= 22] { line/line-width: 6; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.5; }
@@ -3135,6 +3180,9 @@
         line/line-cap: round;
         .roads-fill {
           line/line-width: 1.5;
+          [zoom >= 16] { line/line-width: 3; }
+          [zoom >= 19] { line/line-width: 4.5; }
+          [zoom >= 22] { line/line-width: 6; }
         }
         .bridges-fill {
           [zoom >= 13] { line/line-width: 1.5; }
