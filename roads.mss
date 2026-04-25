@@ -1247,6 +1247,7 @@
     /* casing for normal and wide paths the same; fill different */
     [feature = 'highway_goodpathnarrow'],
     [feature = 'highway_pathnarrow'],
+    [feature = 'highway_goodpathwide'],
     [feature = 'highway_pathwide'],
     [feature = 'highway_intpathnarrow'],
     [feature = 'highway_intpathwide'],
@@ -1466,6 +1467,7 @@
     /* casing for normal and wide paths the same; fill different */
     [feature = 'highway_goodpathnarrow'],
     [feature = 'highway_pathnarrow'],
+    [feature = 'highway_goodpathwide'],
     [feature = 'highway_pathwide'],
     [feature = 'highway_intpathnarrow'],
     [feature = 'highway_intpathwide'],
@@ -3453,6 +3455,7 @@
       }
     }
 
+    [feature = 'highway_goodpathwide'],
     [feature = 'highway_pathwide'] {
       [zoom >= 13] {
         .tunnels-fill {
@@ -4204,6 +4207,7 @@
     [feature = 'highway_living_street_ford'],
     [feature = 'highway_goodpathnarrow'],
     [feature = 'highway_pathnarrow'],
+    [feature = 'highway_goodpathwide'],
     [feature = 'highway_pathwide'],
     [feature = 'highway_intpathnarrow'],
     [feature = 'highway_intpathwide'],
@@ -4296,6 +4300,7 @@
     }
     [feature = 'highway_goodpathnarrow'],
     [feature = 'highway_pathnarrow'],
+    [feature = 'highway_goodpathwide'],
     [feature = 'highway_pathwide'],
     [feature = 'highway_intpathnarrow'],
     [feature = 'highway_intpathwide'],
@@ -4850,6 +4855,7 @@
   [highway = 'unpaved'],
   [highway = 'goodpathnarrow'],
   [highway = 'pathnarrow'],
+  [highway = 'goodpathwide'],
   [highway = 'pathwide'],
   [highway = 'intpathnarrow'],
   [highway = 'intpathwide'],
