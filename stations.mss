@@ -3,7 +3,8 @@
     point-file: url('symbols/walking.n.12.png');
   }
 
-  [railway = 'station'][zoom >= 12] {
+  [railway = 'station'][zoom >= 12],
+  [railway = 'tubestation'][zoom >= 12] {
     point-file: url('symbols/halt.png');
     [zoom >= 13] {
       point-file: url('symbols/station_small.png');
