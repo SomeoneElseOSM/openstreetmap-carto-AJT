@@ -2531,7 +2531,10 @@
       [zoom >= 15] {
         line-width: 2.0;
         line-color: @path-fill;
-        line-dasharray: 2,1;
+        line-dasharray: 4,2;
+        [zoom >= 19] {
+          line-width: 4.0;
+        }
       }
     }
 
