@@ -1179,6 +1179,9 @@
           [zoom >= 15] { line-width: 9.5; }
           line-color: @bridge-casing;
           line-join: round;
+          [zoom >= 19] {
+            line-width: 19.0;
+          }
         }
       }
       .levees-casing {
@@ -1187,6 +1190,9 @@
           [zoom >= 15] { line-width: 9.5; }
           line-color: @levee-casing;
           line-join: round;
+          [zoom >= 19] {
+            line-width: 19.0;
+          }
         }
       }
     }
@@ -1453,6 +1459,9 @@
           [zoom >= 15] { line-width: 8; }
           line-color: @steps-casing;
           line-join: round;
+          [zoom >= 19] {
+            line-width: 16.0;
+          }
         }
       }
       .levees-casing {
@@ -1461,6 +1470,9 @@
           [zoom >= 15] { line-width: 8; }
           line-color: @steps-casing;
           line-join: round;
+          [zoom >= 19] {
+            line-width: 16.0;
+          }
         }
       }
     }
