@@ -890,9 +890,13 @@
       line-width: 3;
       b/line-width: 1;
 
-      [zoom >= 19] {
+      [zoom >= 18] {
         line-width: 6;
         b/line-width: 2;
+      }
+      [zoom >= 19] {
+        line-width: 9;
+        b/line-width: 3;
       }
       [zoom >= 20] {
         line-width: 12;
