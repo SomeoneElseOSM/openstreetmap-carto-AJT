@@ -963,6 +963,16 @@
     }
   }
 
+  [amenity = 'playground_playhouse'][zoom >= 18]::amenity {
+    point-file: url('symbols/playground_playhouse.p07.png');
+    [zoom >= 19] {
+      point-file: url('symbols/playground_playhouse.p14.png');
+    }
+    [zoom >= 20] {
+      point-file: url('symbols/playground_playhouse.p21.png');
+    }
+  }
+
   [amenity = 'pitch_tabletennis'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_tabletennis.png');
   }
@@ -7332,6 +7342,7 @@
   [amenity = 'playground_seesaw'][zoom >= 18]::amenity,
   [amenity = 'playground_roundabout'][zoom >= 18]::amenity,
   [amenity = 'playground_balancebeam'][zoom >= 18]::amenity,
+  [amenity = 'playground_playhouse'][zoom >= 18]::amenity,
   [amenity = 'pitch_tabletennis'][zoom >= 18]::amenity,
   [amenity = 'pitch_soccer'][zoom >= 18]::amenity,
   [amenity = 'pitch_basketball'][zoom >= 18]::amenity,
