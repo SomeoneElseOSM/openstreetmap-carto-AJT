@@ -5208,6 +5208,10 @@
     point-file: url('symbols/shop_alcohol.p.20.png');
   }
 
+  [shop = 'ticket'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_ticket.png');
+  }
+
   [shop = 'confectionery'][zoom >= 17]::shop {
     point-file: url('symbols/shop_confectionery.p.16.png');
   }
@@ -7735,6 +7739,7 @@
   [shop = 'photo']::shop,
   [shop = 'sports']::shop,
   [shop = 'alcohol']::shop,
+  [shop = 'ticket']::shop,
   [shop = 'confectionery']::shop,
   [shop = 'mobile_phone']::shop,
   [shop = 'computer']::shop,
