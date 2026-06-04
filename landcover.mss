@@ -164,6 +164,16 @@
     }
   }
 
+  [feature = 'landuse_historiccemetery'],
+  [feature = 'landuse_unnamedhistoriccemetery'] {
+    [zoom >= 10][zoom < 14] {
+      polygon-fill: @cemetery;
+    }
+    [zoom >= 14] {
+      polygon-pattern-file: url('symbols/historic_grave_yard.png');
+    }
+  }
+
   [feature = 'landuse_residential'],
   [feature = 'landuse_unnamedresidential'] {
     [zoom >= 10] {

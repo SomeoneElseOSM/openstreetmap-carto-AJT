@@ -6677,7 +6677,8 @@
 
   [landuse = 'christiancemetery']::landuse,
   [landuse = 'jewishcemetery']::landuse,
-  [landuse = 'othercemetery']::landuse {
+  [landuse = 'othercemetery']::landuse,
+  [landuse = 'historiccemetery']::landuse {
     [zoom >= 15] {
       text-name: "[name]";
       text-size: 9;
