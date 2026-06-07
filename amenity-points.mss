@@ -989,6 +989,10 @@
     point-file: url('symbols/pitch_basketball.png');
   }
 
+  [amenity = 'pitch_archery'][zoom >= 18]::amenity {
+    point-file: url('symbols/pitch_archery.png');
+  }
+
   [amenity = 'pitch_cricket'][zoom >= 18]::amenity {
     point-file: url('symbols/pitch_cricket.png');
   }
@@ -7360,6 +7364,7 @@
   [amenity = 'playground_playhouse'][zoom >= 18]::amenity,
   [amenity = 'pitch_tabletennis'][zoom >= 18]::amenity,
   [amenity = 'pitch_soccer'][zoom >= 18]::amenity,
+  [amenity = 'pitch_archery'][zoom >= 18]::amenity,
   [amenity = 'pitch_basketball'][zoom >= 18]::amenity,
   [amenity = 'pitch_cricket'][zoom >= 18]::amenity,
   [amenity = 'pitch_skateboard'][zoom >= 18]::amenity,
