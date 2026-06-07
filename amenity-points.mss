@@ -5298,6 +5298,14 @@
     point-file: url('symbols/manhole.png');
   }
 
+  [amenity = 'binoculars_free'][zoom >= 18]::amenity {
+    point-file: url('symbols/binoculars_free.20.png');
+  }
+
+  [amenity = 'binoculars_pay'][zoom >= 18]::amenity {
+    point-file: url('symbols/binoculars_pay.20.png');
+  }
+
   [leisure = 'bird_hide'][zoom >= 17]::leisure {
     point-file: url('symbols/birdhide.p.16.png');
   }
@@ -6151,6 +6159,8 @@
   [amenity = 'embassy']::amenity,
   [leisure = 'playground']::leisure, 
   [leisure = 'picnic_table']::leisure,
+  [amenity = 'binoculars_free']::amenity,
+  [amenity = 'binoculars_pay']::amenity,
   [leisure = 'bird_hide']::leisure,
   [leisure = 'hunting_stand']::leisure,
   [leisure = 'grouse_butt']::leisure,
