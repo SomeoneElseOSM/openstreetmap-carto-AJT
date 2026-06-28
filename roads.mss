@@ -4329,6 +4329,10 @@
           [feature = 'highway_bus_guideway']                       { light/line-dasharray: 8,12; }
           light/line-join: round;
           [feature = 'highway_bus_guideway'][zoom >= 14]           { light/line-dasharray: 0,11,8,1; }
+          dots/line-color: #666;
+          [feature = 'highway_bus_guideway']                       { dots/line-width: 1; }
+          [feature = 'highway_bus_guideway']                       { dots/line-dasharray: 4.0,24.0; }
+          dots/line-join: round;
         }
         .tunnels-fill {
           a/line-width: 3;
