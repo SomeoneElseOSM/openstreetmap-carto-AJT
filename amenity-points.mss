@@ -5048,6 +5048,10 @@
     point-file: url('symbols/marketplace.png');
   }
 
+  [amenity = 'food_court'][zoom >= 17]::amenity {
+    point-file: url('symbols/food_court.png');
+  }
+
   [shop = 'hairdresser'][zoom >= 17]::shop {
     point-file: url('symbols/shop_hairdresser.p.16.png');
   }
@@ -7748,6 +7752,7 @@
   [shop = 'greengrocer']::shop,
   [shop = 'ecogreengrocer']::shop,
   [amenity = 'marketplace']::amenity,
+  [amenity = 'food_court']::amenity,
   [shop = 'outdoor']::shop,
   [shop = 'art']::shop,
   [shop = 'pawnbroker']::shop,
