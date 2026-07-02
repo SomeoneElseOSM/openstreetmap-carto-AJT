@@ -5044,6 +5044,10 @@
     point-file: url('symbols/shop_ecogreengrocer.p.16.png');
   }
 
+  [amenity = 'marketplace'][zoom >= 17]::amenity {
+    point-file: url('symbols/marketplace.png');
+  }
+
   [shop = 'hairdresser'][zoom >= 17]::shop {
     point-file: url('symbols/shop_hairdresser.p.16.png');
   }
@@ -7743,6 +7747,7 @@
   [shop = 'funeral_directors']::shop,
   [shop = 'greengrocer']::shop,
   [shop = 'ecogreengrocer']::shop,
+  [amenity = 'marketplace']::amenity,
   [shop = 'outdoor']::shop,
   [shop = 'art']::shop,
   [shop = 'pawnbroker']::shop,
