@@ -36,6 +36,22 @@
     point-file: url('symbols/am_bank3_y.png');
   }
 
+  [amenity = 'bankatm'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bankatm3.png');
+  }
+
+  [amenity = 'bankatm_l'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bankatm3_l.png');
+  }
+
+  [amenity = 'bankatm_n'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bankatm3_n.png');
+  }
+
+  [amenity = 'bankatm_y'][zoom >= 17]::amenity {
+    point-file: url('symbols/am_bankatm3_y.png');
+  }
+
   [amenity = 'bar'][zoom >=17]::amenity,
   [amenity = 'bar_ddd'][zoom >=17]::amenity {
     point-file: url('symbols/am_bar_ddd.png');
@@ -6965,7 +6981,11 @@
   [amenity = 'bank'][zoom >= 17]::amenity,
   [amenity = 'bank_l'][zoom >= 17]::amenity,
   [amenity = 'bank_n'][zoom >= 17]::amenity,
-  [amenity = 'bank_y'][zoom >= 17]::amenity {
+  [amenity = 'bank_y'][zoom >= 17]::amenity,
+  [amenity = 'bankatm'][zoom >= 17]::amenity,
+  [amenity = 'bankatm_l'][zoom >= 17]::amenity,
+  [amenity = 'bankatm_n'][zoom >= 17]::amenity,
+  [amenity = 'bankatm_y'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 9;
     [zoom >= 20] { text-size: 18; }
