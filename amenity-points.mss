@@ -17,23 +17,23 @@
   }
 
   [amenity = 'atm'][zoom >=17]::amenity {
-    point-file: url('symbols/atm2.p.16.png');
+    point-file: url('symbols/am_atm3.png');
   }
 
   [amenity = 'bank'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_bank_d.png');
+    point-file: url('symbols/am_bank3.png');
   }
 
   [amenity = 'bank_l'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_bank_l.png');
+    point-file: url('symbols/am_bank3_l.png');
   }
 
   [amenity = 'bank_n'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_bank_n.png');
+    point-file: url('symbols/am_bank3_n.png');
   }
 
   [amenity = 'bank_y'][zoom >= 17]::amenity {
-    point-file: url('symbols/am_bank_y.png');
+    point-file: url('symbols/am_bank3_y.png');
   }
 
   [amenity = 'bar'][zoom >=17]::amenity,
