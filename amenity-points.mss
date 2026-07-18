@@ -4600,6 +4600,10 @@
     point-file: url('symbols/tap_nondrinking.p.20.png');
   }
 
+  [amenity = 'kitchen'][zoom >= 17]::amenity {
+    point-file: url('symbols/kitchen.png');
+  }
+
   [amenity = 'sanitary_dump_station'][zoom >= 17]::amenity {
     point-file: url('symbols/sanitary_dump_station.png');
   }
@@ -7452,7 +7456,8 @@
 
   [amenity = 'drinking_water'][zoom >= 17]::amenity,
   [amenity = 'nondrinking_water'][zoom >= 17]::amenity,
-  [amenity = 'sanitary_dump_station'][zoom >= 17]::amenity {
+  [amenity = 'sanitary_dump_station'][zoom >= 17]::amenity,
+  [amenity = 'kitchen'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }
