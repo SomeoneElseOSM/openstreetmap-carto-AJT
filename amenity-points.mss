@@ -5282,6 +5282,13 @@
     }
   }
 
+  [amenity = 'help_point'][zoom >= 17]::amenity {
+    point-file: url('symbols/help_point.png');
+    [access != ''][access != 'public'][access != 'yes'] {
+      point-opacity: 0.33;
+    }
+  }
+
   [amenity = 'life_ring'][zoom >= 19]::amenity {
     point-file: url('symbols/life_ring.png');
   }
