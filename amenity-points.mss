@@ -1174,7 +1174,7 @@
   [amenity = 'place_of_worship'][zoom >= 16]::amenity {
     point-file: url('symbols/place_of_worship3.p.16.png');
     [religion = 'christian'] {
-      point-file: url('symbols/christian3.p.14.png');
+      point-file: url('symbols/christian_cross.png');
     }
     [religion = 'muslim'] {
       point-file: url('symbols/islamic3.p.16.png');
