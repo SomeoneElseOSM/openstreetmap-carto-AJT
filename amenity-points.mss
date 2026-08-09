@@ -1199,6 +1199,46 @@
     }
   }
 
+  [amenity = 'place_of_worship_christian'][zoom >= 16]::amenity {
+    point-file: url('symbols/christian_cross.png');
+  }
+
+  [amenity = 'place_of_worship_christian_jehovahs_witness'][zoom >= 16]::amenity {
+    point-file: url('symbols/place_of_worship3.p.16.png');
+  }
+
+  [amenity = 'place_of_worship_muslim'][zoom >= 16]::amenity {
+    point-file: url('symbols/islamic3.p.16.png');
+  }
+
+  [amenity = 'place_of_worship_sikh'][zoom >= 16]::amenity {
+    point-file: url('symbols/sikh3.p.16.png');
+  }
+
+  [amenity = 'place_of_worship_jewish'][zoom >= 16]::amenity {
+    point-file: url('symbols/jewish3.p.16.png');
+  }
+
+  [amenity = 'place_of_worship_hindu'][zoom >= 16]::amenity {
+    point-file: url('symbols/hindu.png');
+  }
+
+  [amenity = 'place_of_worship_buddhist'][zoom >= 16]::amenity {
+    point-file: url('symbols/buddhist.png');
+  }
+
+  [amenity = 'place_of_worship_shinto'][zoom >= 16]::amenity {
+    point-file: url('symbols/shinto.png');
+  }
+
+  [amenity = 'place_of_worship_taoist'][zoom >= 16]::amenity {
+    point-file: url('symbols/taoist.png');
+  }
+
+  [amenity = 'place_of_worship_other'][zoom >= 16]::amenity {
+    point-file: url('symbols/place_of_worship3.p.16.png');
+  }
+
   [amenity = 'holy_spring'][zoom >= 14]::amenity {
     point-file: url('symbols/holy_spring.png');
   }
@@ -6322,7 +6362,17 @@
     }
   }
 
-  [amenity = 'place_of_worship'][zoom >= 17]::amenity {
+  [amenity = 'place_of_worship'][zoom >= 17]::amenity,
+  [amenity = 'place_of_worship_christian'][zoom >= 17]::amenity,
+  [amenity = 'place_of_worship_christian_jehovahs_witness'][zoom >= 17]::amenity,
+  [amenity = 'place_of_worship_muslim'][zoom >= 17]::amenity,
+  [amenity = 'place_of_worship_sikh'][zoom >= 17]::amenity,
+  [amenity = 'place_of_worship_jewish'][zoom >= 17]::amenity,
+  [amenity = 'place_of_worship_hindu'][zoom >= 17]::amenity,
+  [amenity = 'place_of_worship_buddhist'][zoom >= 17]::amenity,
+  [amenity = 'place_of_worship_shinto'][zoom >= 17]::amenity,
+  [amenity = 'place_of_worship_taoist'][zoom >= 17]::amenity,
+  [amenity = 'place_of_worship_other'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
     [zoom >= 20] { text-size: 18; }

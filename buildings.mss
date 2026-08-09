@@ -48,7 +48,17 @@
       line-width: 0.2;
     }
   }
-  [amenity = 'place_of_worship']::amenity {
+  [amenity = 'place_of_worship']::amenity,
+  [amenity = 'place_of_worship_christian']::amenity,
+  [amenity = 'place_of_worship_christian_jehovahs_witness']::amenity,
+  [amenity = 'place_of_worship_muslim']::amenity,
+  [amenity = 'place_of_worship_sikh']::amenity,
+  [amenity = 'place_of_worship_jewish']::amenity,
+  [amenity = 'place_of_worship_hindu']::amenity,
+  [amenity = 'place_of_worship_buddhist']::amenity,
+  [amenity = 'place_of_worship_shinto']::amenity,
+  [amenity = 'place_of_worship_taoist']::amenity,
+  [amenity = 'place_of_worship_other']::amenity {
     polygon-opacity: 0.5;
     polygon-fill: @placeOfWorship;
     polygon-clip: false;
