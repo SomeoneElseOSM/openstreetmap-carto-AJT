@@ -4965,6 +4965,7 @@
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_goodpathwide'],
     [feature = 'highway_pathwide'],
+    [feature = 'highway_steps'],
     [feature = 'highway_intpathnarrow'],
     [feature = 'highway_intpathwide'],
     [feature = 'highway_goodfootwaynarrow'],
@@ -4973,6 +4974,7 @@
     [feature = 'highway_footwaywide'],
     [feature = 'highway_intfootwaynarrow'],
     [feature = 'highway_intfootwaywide'],
+    [feature = 'highway_footwaysteps'],
     [feature = 'highway_leisuretrack'],
     [feature = 'highway_gallop'],
     [feature = 'highway_ldpnwn'],
@@ -4998,7 +5000,8 @@
     [feature = 'highway_bridlewaynarrow'],
     [feature = 'highway_bridlewaywide'],
     [feature = 'highway_intbridlewaynarrow'],
-    [feature = 'highway_intbridlewaywide'] {
+    [feature = 'highway_intbridlewaywide'],
+    [feature = 'highway_bridlewaysteps'] {
     [zoom >= 15] {
         access/line-width: 6;
         access/line-color: @destination-marking;
@@ -5068,6 +5071,7 @@
     [feature = 'highway_pathnarrow'],
     [feature = 'highway_goodpathwide'],
     [feature = 'highway_pathwide'],
+    [feature = 'highway_steps'],
     [feature = 'highway_intpathnarrow'],
     [feature = 'highway_intpathwide'],
     [feature = 'highway_goodfootwaynarrow'],
@@ -5076,6 +5080,7 @@
     [feature = 'highway_footwaywide'],
     [feature = 'highway_intfootwaynarrow'],
     [feature = 'highway_intfootwaywide'],
+    [feature = 'highway_footwaysteps'],
     [feature = 'highway_gooducrnarrow'],
     [feature = 'highway_gooducrwide'],
     [feature = 'highway_ucrnarrow'],
@@ -5095,6 +5100,7 @@
     [feature = 'highway_bridlewaywide'],
     [feature = 'highway_intbridlewaynarrow'],
     [feature = 'highway_intbridlewaywide'],
+    [feature = 'highway_bridlewaysteps'],
     [feature = 'highway_leisuretrack'],
     [feature = 'highway_gallop'] {
       [zoom >= 13] {
