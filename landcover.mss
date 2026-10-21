@@ -1,17 +1,21 @@
 // --- Parks, woods, other green things ---
 
 @forest: #bedab3;
-@grass: #cfeca8; // also common, garden, village_green
+@grass: #D8E9C5;
+@garden: #cfeca8; // also common
+@village_green: #CBE1BC;
 @golfgreen: #b9e382;
-@golf_course: #b5e3b5;
-@natural: #c6e4b4; // also grassland
-@park: #b6fdb6; // also recreation_ground
+@golf_course: #CDE5B4;
+@grassland: #E0EFCD;
+@scrub: #b5e3b5;
+@park: #B8DDB2;
+@recreation_ground: #CBE1BC;
 @wood: #aed1a0;
 @vineyard: #abdf96;
 
 // --- sports ---
 
-@stadium: #3c9; // also sports_centre
+@stadium: #B7D9C3; // also sports_centre
 @track: #74dcba;
 @pitch: #8ad3af;
 
@@ -286,8 +290,7 @@
     }
   }
 
-  [feature = 'leisure_park'],
-  [feature = 'leisure_recreation_ground'] {
+  [feature = 'leisure_park'] {
     [zoom >= 10] {
       polygon-fill: @park;
       polygon-opacity: 0.6;
@@ -299,11 +302,11 @@
   }
 
   [feature = 'leisure_common'][zoom >= 10] {
-    polygon-fill: @grass;
+    polygon-fill: @garden;
   }
 
   [feature = 'leisure_garden'][zoom >= 10] {
-    polygon-fill: @grass;
+    polygon-fill: @garden;
   }
 
   [feature = 'leisure_golfgreen'][zoom >= 10] {
@@ -395,12 +398,12 @@
 
   [feature = 'landuse_recreation_ground'] {
     [zoom >= 10] {
-      polygon-fill: @grass;
+      polygon-fill: @recreation_ground;
     }
   }
 
   [feature = 'landuse_village_green'][zoom >= 11] {
-    polygon-fill: @grass;
+    polygon-fill: @village_green;
   }
 
   [feature = 'landuse_retail'][zoom >= 10] {
@@ -506,13 +509,13 @@
 
   [feature = 'natural_grassland'][zoom >= 10],
   [feature = 'natural_unnamedgrassland'][zoom >= 10] {
-    polygon-fill: #c6e4b4;
+    polygon-fill: @grassland;
   }
 
   [feature = 'natural_scrub'],
   [feature = 'natural_unnamedscrub'] {
     [zoom >= 10] {
-      polygon-fill: #b5e3b5;
+      polygon-fill: @scrub;
     }
     [zoom >= 14] {
       polygon-pattern-file: url('symbols/scrub_pattern.png');

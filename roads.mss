@@ -22,7 +22,7 @@
 @track-fill: #996600;
 @aeroway-fill: #bbc;
 @runway-fill: @aeroway-fill;
-@grassrunway-fill: #cfeca8;
+@grassrunway-fill: #D8E9C5;
 @taxiway-fill: @aeroway-fill;
 @helipad-fill: @aeroway-fill;
 
