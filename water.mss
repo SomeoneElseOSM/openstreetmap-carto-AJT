@@ -1,5 +1,6 @@
 @water-text: #6699cc;
 @dam-colour: #c2cfcf;
+@tidalwater-color: #bad0d0;
 
 #water-areas {
   [natural = 'glacier']::natural {
@@ -38,6 +39,18 @@
   [waterway = 'riverbank']::waterway {
     [zoom >= 6] {
       polygon-fill: @water-color;
+      [way_pixels >= 4] {
+        polygon-gamma: 0.75;
+      }
+      [way_pixels >= 64] {
+        polygon-gamma: 0.6;
+      }
+    }
+  }
+
+  [natural = 'tidalwater']::natural {
+    [zoom >= 6] {
+      polygon-fill: @tidalwater-color;
       [way_pixels >= 4] {
         polygon-gamma: 0.75;
       }
